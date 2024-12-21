@@ -34,6 +34,7 @@ class PlanetaryScene extends SceneBase {
   constructor(webGlCanvas: HTMLCanvasElement, labelsCanvas: HTMLCanvasElement) {
     super(webGlCanvas, labelsCanvas);
     this.clock = new THREE.Clock();
+    this.scale = 2100000;
 
     this.scene.add(background(this.textureLoader));
 
@@ -41,13 +42,12 @@ class PlanetaryScene extends SceneBase {
       this.scenario.masses,
       this.scene,
       this.textureLoader,
+      this.scale,
     );
     this.manifestationManager.addManifestations();
 
     this.utilVector = new H3();
     this.threeUtilityVector = new THREE.Vector3();
-
-    this.scale = 2100000;
 
     this.integrator = getIntegrator(this.scenario.integrator.name, {
       g: this.scenario.integrator.g,

@@ -8,6 +8,7 @@ class ManifestationManager {
 
   private scene: THREE.Scene;
   private textureLoader: THREE.TextureLoader;
+  private scale: number;
 
   public manifestations: Manifestation[];
 
@@ -15,7 +16,9 @@ class ManifestationManager {
     masses: ScenarioMassesType,
     scene: THREE.Scene,
     textureLoader: THREE.TextureLoader,
+    scale: number,
   ) {
+    this.scale = scale;
     this.masses = masses;
 
     this.scene = scene;
@@ -27,11 +30,16 @@ class ManifestationManager {
   public createManifestation(mass: ScenarioMassType): Manifestation {
     switch (mass.type) {
       case "star":
-        return new Star(mass, this.textureLoader).createManifestation();
+        return new Star(
+          mass,
+          this.scale,
+          this.textureLoader,
+        ).createManifestation();
 
       default:
         return new Manifestation(
           mass,
+          this.scale,
           this.textureLoader,
         ).createManifestation();
     }

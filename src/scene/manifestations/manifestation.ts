@@ -6,13 +6,19 @@ import { ElementsType, VectorType } from "../../types/physics";
 
 class Manifestation {
   public mass: ScenarioMassType;
+  protected scale: number;
   protected textureLoader: THREE.TextureLoader;
   protected trailVertices: number;
   public object3D: THREE.Object3D | undefined;
   public orbit: EllipseCurve | undefined;
 
-  constructor(mass: ScenarioMassType, textureLoader: THREE.TextureLoader) {
+  constructor(
+    mass: ScenarioMassType,
+    scale: number,
+    textureLoader: THREE.TextureLoader,
+  ) {
     this.mass = mass;
+    this.scale = scale;
 
     this.textureLoader = textureLoader;
 
@@ -33,7 +39,7 @@ class Manifestation {
       segments,
     );
 
-    const material = new THREE.MeshBasicMaterial({
+    const material = new THREE.MeshStandardMaterial({
       map: this.textureLoader.load(`/textures/${this.mass.name}.jpg`),
     });
 

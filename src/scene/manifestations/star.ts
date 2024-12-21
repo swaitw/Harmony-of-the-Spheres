@@ -3,18 +3,19 @@ import Manifestation from "./manifestation";
 
 class Star extends Manifestation {
   override createManifestation() {
-    const segments = 32;
+    if (this.object3D) {
+      const segments = 32;
 
-    const geometry = new THREE.SphereGeometry(1, segments, segments);
+      const geometry = new THREE.SphereGeometry(1, segments, segments);
 
-    const material = new THREE.ShaderMaterial({
-      uniforms: {
-        time: { value: 1.0 },
-        scale: { value: 60 },
-        highTemp: { value: 5000 },
-        lowTemp: { value: 5000 / 2 },
-      },
-      vertexShader: `
+      const material = new THREE.ShaderMaterial({
+        uniforms: {
+          time: { value: 1.0 },
+          scale: { value: 60 },
+          highTemp: { value: 5000 },
+          lowTemp: { value: 5000 / 2 },
+        },
+        vertexShader: `
   
       uniform float time;
       uniform float scale;
@@ -26,7 +27,7 @@ class Star extends Manifestation {
         gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
       }
       `,
-      fragmentShader: `	
+        fragmentShader: `	
       varying vec3 vTexCoord3D;
     
     uniform float highTemp;
@@ -224,20 +225,32 @@ class Star extends Manifestation {
       }
       
       `,
-      transparent: false,
-      depthTest: true,
-      depthWrite: true,
-      polygonOffset: true,
-      polygonOffsetFactor: -4,
-    });
+        transparent: false,
+        depthTest: true,
+        depthWrite: true,
+        polygonOffset: true,
+        polygonOffsetFactor: -4,
+      });
 
-    const mesh = new THREE.Mesh(geometry, material);
+      const mesh = new THREE.Mesh(geometry, material);
 
-    mesh.name = "sphere";
+      const color = 0xffffff;
+      const lightIntensity = 5;
+      const light = new THREE.PointLight(
+        color,
+        lightIntensity,
+        this.scale * 1000,
+        0,
+      );
 
-    mesh.scale.x = mesh.scale.y = mesh.scale.z = this.mass.radius;
+      mesh.add(light);
 
-    this.object3D.add(mesh);
+      mesh.name = "sphere";
+
+      mesh.scale.x = mesh.scale.y = mesh.scale.z = this.mass.radius;
+
+      this.object3D.add(mesh);
+    }
 
     return this;
   }
