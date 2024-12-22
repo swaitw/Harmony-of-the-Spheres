@@ -40,8 +40,13 @@ class Manifestation {
     );
 
     const material = new THREE.MeshStandardMaterial({
-      map: this.textureLoader.load(`/textures/${this.mass.name}.jpg`),
+      map: this.textureLoader.load(`/textures/maps/${this.mass.name}.jpg`)
     });
+
+    if (this.mass.type === "terrestial planet"  || this.mass.type ===  "moon") {
+      material.bumpMap = this.textureLoader.load(`/textures/bump-maps/${this.mass.name}Bump.jpg`);
+      material.bumpScale = 2;
+    }
 
     const sphere = new THREE.Mesh(geometry, material);
     sphere.name = "sphere";
