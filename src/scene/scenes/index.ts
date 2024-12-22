@@ -51,6 +51,7 @@ class SceneBase {
     );
 
     this.controls = new OrbitControls(this.camera, this.labelsCanvas);
+    this.controls.zoomSpeed = 4;
 
     this.textureLoader = new THREE.TextureLoader();
 
