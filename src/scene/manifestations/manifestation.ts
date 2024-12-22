@@ -31,7 +31,7 @@ class Manifestation {
   }
 
   public createManifestation() {
-    const segments = 32;
+    const segments = 40;
 
     const geometry = new THREE.SphereGeometry(
       this.mass.radius,

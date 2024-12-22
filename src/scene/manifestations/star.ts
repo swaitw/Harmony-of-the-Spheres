@@ -4,7 +4,7 @@ import Manifestation from "./manifestation";
 class Star extends Manifestation {
   override createManifestation() {
     if (this.object3D) {
-      const segments = 32;
+      const segments = 40;
 
       const geometry = new THREE.SphereGeometry(1, segments, segments);
 
@@ -234,10 +234,10 @@ class Star extends Manifestation {
 
       const mesh = new THREE.Mesh(geometry, material);
 
-      const color = 0xffffff;
-      const lightIntensity = 3;
+      const lightColor = 0xffffff;
+      const lightIntensity = 4;
       const light = new THREE.PointLight(
-        color,
+        lightColor,
         lightIntensity,
         this.scale * 1000,
         0,
