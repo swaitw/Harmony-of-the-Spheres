@@ -235,7 +235,7 @@ class Star extends Manifestation {
       const mesh = new THREE.Mesh(geometry, material);
 
       const color = 0xffffff;
-      const lightIntensity = 5;
+      const lightIntensity = 3;
       const light = new THREE.PointLight(
         color,
         lightIntensity,
