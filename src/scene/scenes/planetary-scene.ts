@@ -208,23 +208,13 @@ class PlanetaryScene extends SceneBase {
 
       if (manifestationObject3D) {
         if (mass.type === "star") {
-          /*
-           * Object3D (the expected return type of getObjectByName as per the THREE.js typings)
-           * does not have the material property, so we must tell the TypeScript compiler
-           * that a mesh will be returned by the getObjectByName method
-           */
-          const starSphere = manifestationObject3D.getObjectByName(
-            "sphere",
-          ) as THREE.Mesh;
+          const starSphere = manifestation.sphere;
 
-          /*
-           * The type for THREE.Mesh.material is THREE.Material, but it can also be, and in this case is,
-           * THREE.ShaderMaterial, so we cast material as THREE.ShaderMaterial
-           * This is necessary since the THREE.Material type does not have the uniforms property
-           */
-          const starMaterial = starSphere.material as THREE.ShaderMaterial;
+          if (starSphere) {
+            const starMaterial = starSphere.material as THREE.ShaderMaterial;
 
-          starMaterial.uniforms["time"].value += 0.007 * delta;
+            starMaterial.uniforms["time"].value += 0.007 * delta;
+          }
         }
 
         manifestation.setPosition();
@@ -249,7 +239,7 @@ class PlanetaryScene extends SceneBase {
           manifestation.removeOrbit();
         }
 
-        const trail = manifestationObject3D.getObjectByName("trail");
+        const trail = manifestation.trail;
 
         if (
           (!this.scenario.graphics.trails && trail) ||
@@ -261,8 +251,6 @@ class PlanetaryScene extends SceneBase {
         }
 
         if (this.scenario.graphics.trails) {
-          const trail = manifestationObject3D.getObjectByName("trail");
-
           if (!trail) {
             manifestation.addTrail();
           }

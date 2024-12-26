@@ -30,18 +30,18 @@ class ManifestationManager {
   public createManifestation(mass: ScenarioMassType): Manifestation {
     switch (mass.type) {
       case "star":
-        return new Star(
-          mass,
-          this.scale,
-          this.textureLoader,
-        ).createManifestation();
+        const star = new Star(mass, this.scale, this.textureLoader);
+
+        star.createManifestation();
+
+        return star;
 
       default:
-        return new Manifestation(
-          mass,
-          this.scale,
-          this.textureLoader,
-        ).createManifestation();
+        const sphere = new Manifestation(mass, this.scale, this.textureLoader);
+
+        sphere.createManifestation();
+
+        return sphere;
     }
   }
 
@@ -68,15 +68,13 @@ class ManifestationManager {
         ++i;
       else {
         const massToBeDeleted = this.scene.getObjectByName(
-          this.manifestations[i]!.mass.name,
+          this.manifestations[i].mass.name,
         ) as THREE.Object3D;
 
         this.scene.remove(massToBeDeleted);
 
-        this.manifestations[i]?.dispose();
-        if (this.manifestations[i]!.object3D) {
-          this.manifestations[i]!.object3D = undefined;
-        }
+        this.manifestations[i].dispose();
+
         this.manifestations.splice(i, 1);
       }
     }

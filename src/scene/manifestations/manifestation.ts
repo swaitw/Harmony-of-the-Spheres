@@ -2,15 +2,17 @@ import * as THREE from "three";
 import EllipseCurve from "../misc/ellipse-curve";
 import { getEllipse } from "../../physics/utils/misc";
 import { ScenarioMassType } from "../../types/scenario";
-import { ElementsType, VectorType } from "../../types/physics";
+import { VectorType } from "../../types/physics";
 
 class Manifestation {
   public mass: ScenarioMassType;
   protected scale: number;
   protected textureLoader: THREE.TextureLoader;
   protected trailVertices: number;
-  public object3D: THREE.Object3D | undefined;
+  public object3D: THREE.Object3D;
+  public sphere: THREE.Mesh | undefined;
   public orbit: EllipseCurve | undefined;
+  public trail: THREE.Line | undefined;
 
   constructor(
     mass: ScenarioMassType,
@@ -25,12 +27,14 @@ class Manifestation {
     this.object3D = new THREE.Object3D();
     this.object3D.name = this.mass.name;
 
+    this.sphere = undefined;
     this.orbit = undefined;
+    this.trail = undefined;
 
     this.trailVertices = 3000;
   }
 
-  public createManifestation() {
+  public createManifestation(): void {
     const segments = 40;
 
     const geometry = new THREE.SphereGeometry(
@@ -40,26 +44,27 @@ class Manifestation {
     );
 
     const material = new THREE.MeshStandardMaterial({
-      map: this.textureLoader.load(`/textures/maps/${this.mass.name}.jpg`)
+      map: this.textureLoader.load(`/textures/maps/${this.mass.name}.jpg`),
     });
 
-    if (this.mass.type === "terrestial planet"  || this.mass.type ===  "moon") {
-      material.bumpMap = this.textureLoader.load(`/textures/bump-maps/${this.mass.name}Bump.jpg`);
-      material.bumpScale = 2;
+    if (this.mass.type === "terrestial planet" || this.mass.type === "moon") {
+      material.bumpMap = this.textureLoader.load(
+        `/textures/bump-maps/${this.mass.name}Bump.jpg`,
+      );
+      material.bumpScale = 1;
     }
 
     const sphere = new THREE.Mesh(geometry, material);
+
     sphere.name = "sphere";
 
-    if (this.object3D) {
-      this.object3D.add(sphere);
-    }
+    this.object3D.add(sphere);
 
-    return this;
+    this.sphere = sphere;
   }
 
-  public addOrbit() {
-    this.orbit = new EllipseCurve(
+  public addOrbit(): void {
+    const orbit = new EllipseCurve(
       0,
       0,
       0,
@@ -72,17 +77,20 @@ class Manifestation {
       "green",
     );
 
-    this.object3D!.add(this.orbit.object3D!);
+    if (orbit.object3D) {
+      this.object3D.add(orbit.object3D);
+    }
 
-    return this;
+    this.orbit = orbit;
   }
 
-  public removeOrbit() {
-    if (this.orbit) {
-      this.orbit.dispose();
+  public removeOrbit(): void {
+    let orbit = this.orbit;
 
-      this.object3D!.remove(this.orbit.object3D!);
-      this.orbit.object3D = undefined;
+    if (orbit) {
+      orbit.dispose();
+
+      this.object3D.remove(orbit.object3D);
 
       this.orbit = undefined;
     }
@@ -92,8 +100,12 @@ class Manifestation {
     rotatingReferenceFrame: VectorType,
     primaryPosition: VectorType,
     scale: number,
-  ) {
-    const elements = this.mass.elements as ElementsType;
+  ): void {
+    if (!this.orbit) {
+      return;
+    }
+
+    const elements = this.mass.elements;
 
     const a = elements.a;
     const e = elements.e;
@@ -103,11 +115,13 @@ class Manifestation {
 
     const ellipse = getEllipse(a, e);
 
-    const orbit = this.object3D!.getObjectByName("ellipse") as THREE.Object3D;
+    const orbit = this.orbit.ellipse;
 
-    orbit.position.z = (rotatingReferenceFrame.z - primaryPosition.z) * scale;
+    if (orbit) {
+      orbit.position.z = (rotatingReferenceFrame.z - primaryPosition.z) * scale;
+    }
 
-    this.orbit!.update(
+    this.orbit.update(
       (rotatingReferenceFrame.x - primaryPosition.x + ellipse.focus) * scale,
       (rotatingReferenceFrame.y - primaryPosition.y) * scale,
       ellipse.xRadius * scale,
@@ -120,12 +134,18 @@ class Manifestation {
     );
   }
 
-  public addTrail() {
+  public addTrail(): void {
+    const sphere = this.sphere;
+
+    if (!sphere) {
+      return;
+    }
+
+    const spherePosition = sphere.position;
+
     const verticesLength = this.trailVertices;
 
     const points = [];
-
-    const spherePosition = this.object3D!.getObjectByName("sphere")!.position;
 
     for (let i = 0; i < verticesLength; i++) {
       points.push(spherePosition);
@@ -137,54 +157,49 @@ class Manifestation {
       color: "red",
     });
 
-    const mesh = new THREE.Line(geometry, material);
+    const trail = new THREE.Line(geometry, material);
 
-    mesh.name = "trail";
+    trail.name = "trail";
 
-    mesh.frustumCulled = false;
+    trail.frustumCulled = false;
 
-    this.object3D!.add(mesh);
+    this.object3D.add(trail);
+
+    this.trail = trail;
   }
 
-  public removeTrail() {
-    let trail = this.object3D!.getObjectByName("trail") as
-      | THREE.Line
-      | undefined;
+  public removeTrail(): void {
+    let trail = this.trail;
 
-    if (trail) {
-      let geometry = trail.geometry as
-        | THREE.BufferGeometry<THREE.NormalBufferAttributes>
-        | undefined;
-
-      if (geometry) {
-        geometry.dispose();
-        geometry = undefined;
-      }
-
-      let material = trail.material as THREE.Material | undefined;
-
-      if (material) {
-        material.dispose();
-        material = undefined;
-      }
-
-      this.object3D!.remove(trail);
-
-      trail = undefined;
+    if (!trail) {
+      return;
     }
+
+    let geometry = trail.geometry;
+
+    geometry.dispose();
+
+    this.object3D.remove(trail);
+
+    this.trail = undefined;
   }
 
-  public drawTrail() {
-    const trail = this.object3D!.getObjectByName("trail") as THREE.Line;
+  public drawTrail(): void {
+    const trail = this.trail;
+    const massRotatedPosition = this.mass.rotatedPosition;
+
+    if (!trail || !massRotatedPosition) {
+      return;
+    }
 
     const geometry = trail.geometry;
-    const positions = geometry.attributes["position"]!.array;
+    const positions = geometry.attributes["position"].array;
 
     for (let i = positions.length - 1; i > 2; i--) {
-      positions[i] = positions[i - 3] as number;
+      positions[i] = positions[i - 3];
     }
 
-    const { x, y, z } = this.mass.rotatedPosition as VectorType;
+    const { x, y, z } = massRotatedPosition;
 
     positions[0] = x;
     positions[1] = y;
@@ -193,53 +208,50 @@ class Manifestation {
     geometry.getAttribute("position").needsUpdate = true;
   }
 
-  public setPosition() {
-    const { x, y, z } = this.mass.rotatedPosition as VectorType;
+  public setPosition(): void {
+    const massRotatedPosition = this.mass.rotatedPosition;
 
-    const sphere = this.object3D!.getObjectByName("sphere") as THREE.Mesh;
-    sphere.position.set(x, y, z);
+    if (!massRotatedPosition) {
+      return;
+    }
 
-    return this;
+    const { x, y, z } = massRotatedPosition;
+
+    const sphere = this.sphere;
+
+    if (sphere) {
+      sphere.position.set(x, y, z);
+    }
   }
 
-  public dispose() {
+  public dispose(): void {
     this.removeOrbit();
 
     this.removeTrail();
 
-    let sphereMesh = this.object3D!.getObjectByName("sphere") as
-      | THREE.Mesh
-      | undefined;
+    let sphere = this.sphere;
 
-    if (sphereMesh) {
-      let sphereMaterial = sphereMesh.material as THREE.Material | undefined;
-
-      if (sphereMaterial) {
-        //@ts-ignore
-        let sphereMaterialMap = sphereMesh.material.map;
-
-        if (sphereMaterialMap) {
-          sphereMaterialMap.dispose();
-          sphereMaterialMap = undefined;
-        }
-
-        sphereMaterial.dispose();
-        sphereMaterial = undefined;
-      }
-
-      let sphereGeometry = sphereMesh.geometry as
-        | THREE.BufferGeometry<THREE.NormalBufferAttributes>
-        | undefined;
-
-      if (sphereGeometry) {
-        sphereGeometry.dispose();
-        sphereGeometry = undefined;
-      }
-
-      this.object3D!.remove(sphereMesh);
-
-      sphereMesh = undefined;
+    if (!sphere) {
+      return;
     }
+
+    sphere.geometry.dispose();
+
+    const material = sphere.material as THREE.MeshStandardMaterial;
+
+    if (material.map) {
+      material.map.dispose();
+    }
+
+    if (material.bumpMap) {
+      material.bumpMap.dispose();
+    }
+
+    material.dispose();
+
+    this.object3D.remove(sphere);
+
+    this.sphere = undefined;
   }
 }
 

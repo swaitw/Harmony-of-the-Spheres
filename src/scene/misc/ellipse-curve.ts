@@ -18,7 +18,9 @@ class EllipseCurve {
   private verticesIndices: Float32Array;
   private color: string;
 
-  public object3D: THREE.Object3D | undefined;
+  public object3D: THREE.Object3D;
+
+  public ellipse: THREE.Line;
 
   constructor(
     aX: number,
@@ -51,12 +53,6 @@ class EllipseCurve {
     };
 
     this.object3D = new THREE.Object3D();
-
-    this.addEllipseCurve();
-  }
-
-  private addEllipseCurve(): void {
-    const verticesNumber = this.verticesNumber;
 
     const vector = new THREE.Vector3();
 
@@ -143,30 +139,22 @@ class EllipseCurve {
       );
     };
 
-    const mesh = new THREE.Line(ellipseGeometry, ellipseMaterial);
-    mesh.frustumCulled = false;
-    mesh.name = "ellipse";
+    this.ellipse = new THREE.Line(ellipseGeometry, ellipseMaterial);
+    this.ellipse.frustumCulled = false;
+    this.ellipse.name = "ellipse";
 
-    if (this.object3D) {
-      this.object3D.add(mesh);
-    }
+    this.object3D.add(this.ellipse);
   }
 
   private rotateAroundFocus(axisRotations: VectorType): void {
-    if (this.object3D) {
-      const ellipse = this.object3D.getObjectByName("ellipse");
+    this.ellipse.rotation.z = degreesToRadians(axisRotations.z);
+    this.ellipse.rotation.x = degreesToRadians(axisRotations.x);
 
-      if (!ellipse) return;
+    //No can do ZXZ rotations, so we rotate the z axis of the parent object
+    //of the ellipse instead to give the ellipse the correct orientation in 3D space around
+    //its focus
 
-      ellipse.rotation.z = degreesToRadians(axisRotations.z);
-      ellipse.rotation.x = degreesToRadians(axisRotations.x);
-
-      //No can do ZXZ rotations, so we rotate the z axis of the parent object
-      //of the ellipse instead to give the ellipse the correct orientation in 3D space around
-      //its focus
-
-      this.object3D.rotation.z = degreesToRadians(axisRotations.y);
-    }
+    this.object3D.rotation.z = degreesToRadians(axisRotations.y);
   }
 
   public update(
@@ -192,34 +180,18 @@ class EllipseCurve {
     this.rotateAroundFocus(axisRotations);
   }
 
-  public dispose() {
-    if (this.object3D) {
-      let ellipse = this.object3D.getObjectByName("ellipse") as
-        | THREE.Line
-        | undefined;
+  public dispose(): void {
+    let ellipse = this.ellipse;
 
-      if (ellipse) {
-        let geometry = ellipse.geometry as
-          | THREE.BufferGeometry<THREE.NormalBufferAttributes>
-          | undefined;
+    let geometry = ellipse.geometry;
 
-        if (geometry) {
-          geometry.dispose();
-          geometry = undefined;
-        }
+    geometry.dispose();
 
-        let material = ellipse.material as THREE.LineBasicMaterial | undefined;
+    let material = ellipse.material as THREE.LineBasicMaterial;
 
-        if (material) {
-          material.dispose();
-          material = undefined;
-        }
+    material.dispose();
 
-        this.object3D.remove(ellipse);
-
-        ellipse = undefined;
-      }
-    }
+    this.object3D.remove(ellipse);
   }
 }
 
