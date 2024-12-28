@@ -259,6 +259,34 @@ class PlanetaryScene extends SceneBase {
             manifestation.drawTrail();
           }
         }
+
+        const atmosphere = manifestation.atmosphere;
+
+        if (atmosphere) {
+          const distanceFromMassToCamera = this.camera.position.distanceTo(
+            atmosphere.position,
+          );
+
+          if (distanceFromMassToCamera > mass.radius * 35) {
+            atmosphere.visible = false;
+          } else {
+            atmosphere.visible = true;
+
+            const atmosphereMaterial =
+              atmosphere.material as THREE.ShaderMaterial;
+
+            atmosphereMaterial.uniforms["lightPosition"].value
+              .copy(
+                this.manifestationManager.manifestations
+                  .find((manifestation) => manifestation.mass.type === "star")
+                  ?.object3D.getObjectByName("sphere")?.position,
+              )
+              .applyMatrix4(this.camera.matrixWorldInverse);
+
+            atmosphereMaterial.uniforms["intensityConstant"].value =
+              1 + (1 / distanceFromMassToCamera) * mass.radius;
+          }
+        }
       }
 
       if (this.previous.cameraFocus !== cameraFocus && cameraFocus === name) {

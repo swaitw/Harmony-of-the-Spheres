@@ -71,7 +71,7 @@
     },
     {
       "name": "Earth",
-      "type": "planet",
+      "type": "terrestial-planet",
       "m": 0.000003003,
       "radius": 91.74311926605505,
       "tilt": -23.44,
