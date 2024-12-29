@@ -233,6 +233,7 @@ export const pageQuery = graphql`
             m
             radius
             tilt
+            temperature
             elements {
               a
               e

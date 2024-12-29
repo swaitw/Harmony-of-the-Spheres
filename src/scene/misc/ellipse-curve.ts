@@ -139,6 +139,8 @@ class EllipseCurve {
       );
     };
 
+    ellipseMaterial.depthWrite = false;
+
     this.ellipse = new THREE.Line(ellipseGeometry, ellipseMaterial);
     this.ellipse.frustumCulled = false;
     this.ellipse.name = "ellipse";

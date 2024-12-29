@@ -219,6 +219,7 @@ class Manifestation {
 
     const material = new THREE.LineBasicMaterial({
       color: "red",
+      depthWrite: false,
     });
 
     const trail = new THREE.Line(geometry, material);

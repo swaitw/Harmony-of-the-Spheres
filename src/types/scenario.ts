@@ -52,6 +52,7 @@ export type ScenarioMassType = {
   m: number;
   radius: number;
   tilt: number;
+  temperature?: number;
   atmosphere: string;
   position: VectorType;
   velocity: VectorType;
