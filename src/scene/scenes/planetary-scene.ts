@@ -149,7 +149,9 @@ class PlanetaryScene extends SceneBase {
       );
 
       this.controls.target.set(0, 0, 0);
+    }
 
+    if (cameraFocus === "Origo") {
       this.controls.update();
     }
 
