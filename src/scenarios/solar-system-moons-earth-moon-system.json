@@ -1,5 +1,5 @@
 {
-  "name": "The Sun, Earth and Moon System",
+  "name": "The Earth and Moon System",
   "playing": false,
   "isLoaded": false,
   "elapsedTime": 0,
@@ -18,7 +18,11 @@
     "cameraFocus": "Earth",
     "logarithmicDepthBuffer": false,
     "rotatingReferenceFrame": "Earth",
-    "cameraDistanceToOrigoInAu": 0
+    "customOrigoCameraPosition": {
+      "x": 0,
+      "y": 40000,
+      "z": 0
+    }
   },
   "integrator": {
     "name": "RK4",
@@ -96,6 +100,11 @@
         "x": -0.9740470647877054,
         "y": 6.197562901988265,
         "z": 0.00041377604204935426
+      },
+      "customMassCameraPosition": {
+        "x": 700,
+        "y": -500,
+        "z": 1000
       }
     },
     {

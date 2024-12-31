@@ -125,13 +125,32 @@ class PlanetaryScene extends SceneBase {
     if (this.previous.cameraFocus !== cameraFocus && cameraFocus === "Origo") {
       this.previous.cameraFocus = cameraFocus;
 
-      if (cameraFocus === "Origo") {
-        this.camera.position.set(0, 0, 10000);
+      let cameraPosition = {
+        x: 0,
+        y: 100000,
+        z: 0,
+      };
 
-        this.controls.target.set(0, 0, 0);
+      const customOrigoCameraPosition =
+        this.scenario.camera.customOrigoCameraPosition;
 
-        this.controls.update();
+      if (customOrigoCameraPosition) {
+        cameraPosition = {
+          x: customOrigoCameraPosition.x,
+          y: customOrigoCameraPosition.y,
+          z: customOrigoCameraPosition.z,
+        };
       }
+
+      this.camera.position.set(
+        cameraPosition.x,
+        cameraPosition.y,
+        cameraPosition.z,
+      );
+
+      this.controls.target.set(0, 0, 0);
+
+      this.controls.update();
     }
 
     const rotatingReferenceFrameMass = this.integrator.masses.find(
@@ -267,7 +286,7 @@ class PlanetaryScene extends SceneBase {
             atmosphere.position,
           );
 
-          if (distanceFromMassToCamera > mass.radius * 35) {
+          if (distanceFromMassToCamera > mass.radius * 45) {
             atmosphere.visible = false;
           } else {
             atmosphere.visible = true;
@@ -292,10 +311,26 @@ class PlanetaryScene extends SceneBase {
       if (this.previous.cameraFocus !== cameraFocus && cameraFocus === name) {
         this.previous.cameraFocus = cameraFocus;
 
+        let cameraPosition = {
+          x: rotatedPosition.x,
+          y: rotatedPosition.y + mass.radius * 10,
+          z: rotatedPosition.z,
+        };
+
+        const customMassCameraPosition = mass.customMassCameraPosition;
+
+        if (customMassCameraPosition) {
+          cameraPosition = {
+            x: rotatedPosition.x + customMassCameraPosition.x,
+            y: rotatedPosition.y + customMassCameraPosition.y,
+            z: rotatedPosition.z + customMassCameraPosition.z,
+          };
+        }
+
         this.camera.position.set(
-          rotatedPosition.x,
-          rotatedPosition.y + mass.radius * 100,
-          rotatedPosition.z,
+          cameraPosition.x,
+          cameraPosition.y + mass.radius * 10,
+          cameraPosition.z,
         );
 
         this.controls.target.copy(rotatedPosition);

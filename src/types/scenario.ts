@@ -10,7 +10,7 @@ export type ScenarioCameraType = {
   cameraPosition: string;
   logarithmicDepthBuffer: boolean;
   rotatingReferenceFrame: string;
-  cameraDistanceToOrigoInAu: number;
+  customOrigoCameraPosition?: VectorType;
 };
 
 export type ScenarioIntegratorType = {
@@ -52,13 +52,14 @@ export type ScenarioMassType = {
   m: number;
   radius: number;
   tilt: number;
-  temperature?: number;
   atmosphere: string;
   position: VectorType;
   velocity: VectorType;
   primary: PrimaryType;
   elements: ElementsType;
   rotatedPosition?: VectorType;
+  temperature?: number;
+  customMassCameraPosition?: VectorType;
 };
 
 export type SOITree = {

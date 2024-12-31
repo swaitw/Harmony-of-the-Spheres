@@ -202,7 +202,11 @@ export const pageQuery = graphql`
             cameraFocus
             logarithmicDepthBuffer
             rotatingReferenceFrame
-            cameraDistanceToOrigoInAu
+            customOrigoCameraPosition {
+              x
+              y
+              z
+            }
           }
           integrator {
             name
@@ -234,6 +238,7 @@ export const pageQuery = graphql`
             radius
             tilt
             temperature
+            atmosphere
             elements {
               a
               e
@@ -252,7 +257,11 @@ export const pageQuery = graphql`
               y
               z
             }
-            atmosphere
+            customMassCameraPosition {
+              x
+              y
+              z
+            }
           }
           particlesConfiguration {
             max
