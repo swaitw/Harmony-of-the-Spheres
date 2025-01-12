@@ -1,4 +1,6 @@
 import { ScenarioMassType } from "../../types/scenario";
+import H3 from "../../physics/utils/vector";
+import { ScenarioMassesType } from "../../types/scenario";
 
 const degreesToRadians = (degrees: number) => (Math.PI / 180) * degrees;
 
@@ -81,6 +83,52 @@ const temperatureToRGB = (
   };
 };
 
+const getBarycenter = (
+  masses: ScenarioMassesType,
+  position = new H3(),
+  velocity = new H3(),
+) => {
+  const massesLen = masses.length;
+  let systemMass = 0;
+
+  position.set({ x: 0, y: 0, z: 0 });
+  velocity.set({ x: 0, y: 0, z: 0 });
+
+  const massPosition = new H3();
+  const massVelocity = new H3();
+
+  for (let i = 0; i < massesLen; i++) {
+    const mass = masses[i];
+
+    position.add(
+      massPosition
+        .set({ x: mass.position.x, y: mass.position.y, z: mass.position.z })
+        .multiplyByScalar(mass.m),
+    );
+
+    velocity.add(
+      massVelocity
+        .set({ x: mass.velocity.x, y: mass.velocity.y, z: mass.velocity.z })
+        .multiplyByScalar(mass.m),
+    );
+
+    systemMass += mass.m;
+  }
+
+  position.divideByScalar(systemMass);
+  velocity.divideByScalar(systemMass);
+
+  return {
+    m: systemMass,
+    x: position.x,
+    y: position.y,
+    z: position.z,
+    vx: velocity.x,
+    vy: velocity.y,
+    vz: velocity.z,
+  };
+};
+
 export {
   degreesToRadians,
   getRandomNumberInRange,
@@ -92,4 +140,5 @@ export {
   radiansToDegrees,
   clamp,
   temperatureToRGB,
+  getBarycenter,
 };

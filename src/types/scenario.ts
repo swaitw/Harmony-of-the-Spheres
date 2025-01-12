@@ -11,6 +11,7 @@ export type ScenarioCameraType = {
   logarithmicDepthBuffer: boolean;
   rotatingReferenceFrame: string;
   customOrigoCameraPosition?: VectorType;
+  customBarycenterCameraPosition?: VectorType;
 };
 
 export type ScenarioIntegratorType = {

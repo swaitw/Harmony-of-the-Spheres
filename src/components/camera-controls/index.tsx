@@ -59,6 +59,18 @@ const CameraControls = () => {
             >
               Origo
             </div>
+            <div
+              onClick={() =>
+                dispatch(
+                  modifyScenarioProperty({
+                    key: "camera",
+                    value: { ...camera, rotatingReferenceFrame: "Barycenter" },
+                  }),
+                )
+              }
+            >
+              Barycenter
+            </div>
             {masses.map((mass) => {
               return (
                 <div
@@ -96,6 +108,18 @@ const CameraControls = () => {
               }
             >
               Origo
+            </div>
+            <div
+              onClick={() =>
+                dispatch(
+                  modifyScenarioProperty({
+                    key: "camera",
+                    value: { ...camera, cameraFocus: "Barycenter" },
+                  }),
+                )
+              }
+            >
+              Barycenter
             </div>
             {masses.map((mass) => {
               return (

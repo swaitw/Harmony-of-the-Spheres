@@ -3,7 +3,7 @@ import SceneBase from ".";
 import ManifestationManager from "../manifestations";
 import background from "../misc/background";
 import getIntegrator from "../../physics/integrators";
-import { drawMassLabel } from "../labels/labelCallbacks";
+import { drawMassLabel, drawBarycenterLabel } from "../labels/labelCallbacks";
 import addParticleSystems from "../../physics/particles/particle-system";
 import ParticleIntegrator from "../../physics/particles/particles-integrator";
 import collisionsCheck from "../../physics/collisions/collisions-check";
@@ -15,6 +15,7 @@ import {
 } from "../../physics/utils/elements";
 import H3 from "../../physics/utils/vector";
 import { modifyScenarioProperty } from "../../state/creators";
+import { getBarycenter } from "../../physics/utils/misc";
 
 class PlanetaryScene extends SceneBase {
   manifestationManager: ManifestationManager;
@@ -27,7 +28,7 @@ class PlanetaryScene extends SceneBase {
     integrator: string;
   };
   utilVector: H3;
-  threeUtilityVector: THREE.Vector3;
+  threeUtilVector: THREE.Vector3;
   clock: THREE.Clock;
   particles: Particles | undefined;
 
@@ -47,7 +48,7 @@ class PlanetaryScene extends SceneBase {
     this.manifestationManager.addManifestations();
 
     this.utilVector = new H3();
-    this.threeUtilityVector = new THREE.Vector3();
+    this.threeUtilVector = new THREE.Vector3();
 
     this.integrator = getIntegrator(this.scenario.integrator.name, {
       g: this.scenario.integrator.g,
@@ -122,46 +123,33 @@ class PlanetaryScene extends SceneBase {
 
     const { cameraFocus } = this.scenario.camera;
 
-    if (this.previous.cameraFocus !== cameraFocus && cameraFocus === "Origo") {
-      this.previous.cameraFocus = cameraFocus;
-
-      let cameraPosition = {
-        x: 0,
-        y: 100000,
-        z: 0,
-      };
-
-      const customOrigoCameraPosition =
-        this.scenario.camera.customOrigoCameraPosition;
-
-      if (customOrigoCameraPosition) {
-        cameraPosition = {
-          x: customOrigoCameraPosition.x,
-          y: customOrigoCameraPosition.y,
-          z: customOrigoCameraPosition.z,
-        };
-      }
-
-      this.camera.position.set(
-        cameraPosition.x,
-        cameraPosition.y,
-        cameraPosition.z,
-      );
-
-      this.controls.target.set(0, 0, 0);
-    }
-
-    if (cameraFocus === "Origo") {
-      this.controls.update();
-    }
-
     const rotatingReferenceFrameMass = this.integrator.masses.find(
       (mass) => this.scenario.camera.rotatingReferenceFrame === mass.name,
     );
 
-    const rotatingReferenceFrame = rotatingReferenceFrameMass
-      ? rotatingReferenceFrameMass.position
-      : { x: 0, y: 0, z: 0 };
+    let barycenterMasses;
+
+    if (this.scenario.barycenter.systemBarycenter) {
+      barycenterMasses = this.integrator.masses;
+    } else {
+      barycenterMasses = this.integrator.masses.filter(
+        (mass) =>
+          mass.name === this.scenario.barycenter.barycenterMassOne ||
+          mass.name === this.scenario.barycenter.barycenterMassTwo,
+      );
+    }
+
+    const barycenterPosition = getBarycenter(barycenterMasses);
+
+    let rotatingReferenceFrame = { x: 0, y: 0, z: 0 };
+
+    if (rotatingReferenceFrameMass) {
+      rotatingReferenceFrame = rotatingReferenceFrameMass.position;
+    }
+
+    if (this.scenario.camera.rotatingReferenceFrame === "Barycenter") {
+      rotatingReferenceFrame = barycenterPosition;
+    }
 
     if (this.particles) {
       if (this.scenario.playing) {
@@ -182,6 +170,135 @@ class PlanetaryScene extends SceneBase {
     this.labels.clear();
 
     const manifestations = this.manifestationManager.manifestations;
+
+    if (this.previous.cameraFocus !== cameraFocus && cameraFocus === "Origo") {
+      this.previous.cameraFocus = cameraFocus;
+
+      const rotatedOrigo = this.utilVector
+        .set({
+          x: 0,
+          y: 0,
+          z: 0,
+        })
+        .subtractFrom(rotatingReferenceFrame)
+        .multiplyByScalar(this.scale)
+        .toObject();
+
+      let cameraPosition = {
+        x: rotatedOrigo.x,
+        y: rotatedOrigo.y + 100000,
+        z: rotatedOrigo.z,
+      };
+
+      const customOrigoCameraPosition =
+        this.scenario.camera.customOrigoCameraPosition;
+
+      if (customOrigoCameraPosition) {
+        cameraPosition = {
+          x: rotatedOrigo.x + customOrigoCameraPosition.x,
+          y: rotatedOrigo.y + customOrigoCameraPosition.y,
+          z: rotatedOrigo.z + customOrigoCameraPosition.z,
+        };
+      }
+
+      this.camera.position.set(
+        cameraPosition.x,
+        cameraPosition.y,
+        cameraPosition.z,
+      );
+
+      this.controls.target.set(rotatedOrigo.x, rotatedOrigo.y, rotatedOrigo.z);
+    }
+
+    if (cameraFocus === "Origo") {
+      const rotatedOrigo = this.utilVector
+        .set({
+          x: 0,
+          y: 0,
+          z: 0,
+        })
+        .subtractFrom(rotatingReferenceFrame)
+        .multiplyByScalar(this.scale)
+        .toObject();
+
+      this.controls._panOffset.add(
+        new THREE.Vector3(rotatedOrigo.x, rotatedOrigo.y, rotatedOrigo.z)
+          .clone()
+          .sub(this.controls.target),
+      );
+
+      this.controls.update();
+    }
+
+    if (
+      this.previous.cameraFocus !== cameraFocus &&
+      cameraFocus === "Barycenter"
+    ) {
+      this.previous.cameraFocus = cameraFocus;
+
+      const rotatedBarycenter = this.utilVector
+        .set({
+          x: barycenterPosition.x,
+          y: barycenterPosition.y,
+          z: barycenterPosition.z,
+        })
+        .subtractFrom(rotatingReferenceFrame)
+        .multiplyByScalar(this.scale)
+        .toObject();
+
+      let cameraPosition = {
+        x: rotatedBarycenter.x,
+        y: rotatedBarycenter.y + 100000,
+        z: rotatedBarycenter.z,
+      };
+
+      const customBarycenterCameraPosition =
+        this.scenario.camera.customBarycenterCameraPosition;
+
+      if (customBarycenterCameraPosition) {
+        cameraPosition = {
+          x: rotatedBarycenter.x + customBarycenterCameraPosition.x,
+          y: rotatedBarycenter.y + customBarycenterCameraPosition.y,
+          z: rotatedBarycenter.z + customBarycenterCameraPosition.z,
+        };
+      }
+
+      this.camera.position.set(
+        cameraPosition.x,
+        cameraPosition.y,
+        cameraPosition.z,
+      );
+
+      this.controls.target.set(
+        rotatedBarycenter.x,
+        rotatedBarycenter.y,
+        rotatedBarycenter.z,
+      );
+    }
+
+    if (cameraFocus === "Barycenter") {
+      const rotatedBarycenter = this.utilVector
+        .set({
+          x: barycenterPosition.x,
+          y: barycenterPosition.y,
+          z: barycenterPosition.z,
+        })
+        .subtractFrom(rotatingReferenceFrame)
+        .multiplyByScalar(this.scale)
+        .toObject();
+
+      this.controls._panOffset.add(
+        new THREE.Vector3(
+          rotatedBarycenter.x,
+          rotatedBarycenter.y,
+          rotatedBarycenter.z,
+        )
+          .clone()
+          .sub(this.controls.target),
+      );
+
+      this.controls.update();
+    }
 
     let massesLength = this.integrator.masses.length;
 
@@ -355,7 +472,7 @@ class PlanetaryScene extends SceneBase {
       if (this.scenario.graphics.labels) {
         this.labels.drawLabel(
           mass.name,
-          this.threeUtilityVector.set(
+          this.threeUtilVector.set(
             rotatedPosition.x,
             rotatedPosition.y,
             rotatedPosition.z,
@@ -367,6 +484,32 @@ class PlanetaryScene extends SceneBase {
           drawMassLabel,
         );
       }
+    }
+
+    if (this.scenario.barycenter.display) {
+      const rotatedBarycenter = this.utilVector
+        .set({
+          x: barycenterPosition.x,
+          y: barycenterPosition.y,
+          z: barycenterPosition.z,
+        })
+        .subtractFrom(rotatingReferenceFrame)
+        .multiplyByScalar(this.scale)
+        .toObject();
+
+      this.labels.drawLabel(
+        "Barycenter",
+        this.threeUtilVector.set(
+          rotatedBarycenter.x,
+          rotatedBarycenter.y,
+          rotatedBarycenter.z,
+        ),
+        this.camera,
+        false,
+        "left",
+        "limegreen",
+        drawBarycenterLabel,
+      );
     }
 
     if (
