@@ -1,4 +1,4 @@
-import React, { Fragment, memo } from "react";
+import React, { Fragment } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import {
   ScenarioType,
@@ -145,4 +145,4 @@ const CameraControls = () => {
   );
 };
 
-export default memo(CameraControls, () => true);
+export default CameraControls;
