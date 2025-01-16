@@ -15,7 +15,10 @@ import {
 } from "../../physics/utils/elements";
 import H3 from "../../physics/utils/vector";
 import { modifyScenarioProperty } from "../../state/creators";
-import { getBarycenter } from "../../physics/utils/misc";
+import { getBarycenter, radiansToDegrees } from "../../physics/utils/misc";
+import { getClosestPointOnSphere } from "../../physics/collisions/collision-utils";
+import { ScenarioMassType } from "../../types/scenario";
+import * as TWEEN from "@tweenjs/tween.js";
 
 class PlanetaryScene extends SceneBase {
   manifestationManager: ManifestationManager;
@@ -89,6 +92,74 @@ class PlanetaryScene extends SceneBase {
     this.controls.noPan = true;
   }
 
+  collisionCallback = (
+    looser: ScenarioMassType,
+    survivor: ScenarioMassType,
+  ): void => {
+    const survivingManifestation =
+      this.manifestationManager.manifestations.find(
+        (manifestation) => manifestation.mass.name === survivor.name,
+      );
+
+    if (survivingManifestation && survivingManifestation.materialShader) {
+      if (survivingManifestation.sphere) {
+        const survivingManifestationRotation =
+          survivingManifestation.sphere.rotation;
+
+        const hitPoint = getClosestPointOnSphere(
+          new H3().set({
+            x:
+              looser.position.x -
+              survivor.position.x -
+              looser.velocity.x * this.scenario.integrator.dt,
+            y:
+              looser.position.y -
+              survivor.position.y -
+              looser.velocity.y * this.scenario.integrator.dt,
+            z:
+              looser.position.z -
+              survivor.position.z -
+              looser.velocity.z * this.scenario.integrator.dt,
+          }),
+          survivor.radius,
+          {
+            x: radiansToDegrees(survivingManifestationRotation.x),
+            y: radiansToDegrees(survivingManifestationRotation.y),
+            z: radiansToDegrees(survivingManifestationRotation.z),
+          },
+        );
+
+        const impactIndex = survivingManifestation.ongoingImpacts + 1;
+
+        survivingManifestation.ongoingImpacts++;
+
+        const uniforms = survivingManifestation.materialShader.uniforms;
+
+        uniforms["impacts"].value[impactIndex].impactPoint.set(
+          -hitPoint.x,
+          -hitPoint.y,
+          -hitPoint.z,
+        );
+
+        uniforms["impacts"].value[impactIndex].impactRadius =
+          looser.m === 0
+            ? survivor.radius * 2
+            : Math.min(Math.max(looser.radius * 10, 300), survivor.radius * 2);
+
+        new TWEEN.Tween({ value: 0 })
+          .to({ value: 1 }, 0.001 / this.scenario.integrator.dt)
+          .onUpdate(({ value }: { value: number }) => {
+            uniforms["impacts"].value[impactIndex].impactRatio = value;
+          })
+          .onComplete(() => {
+            survivingManifestation.ongoingImpacts > 0 &&
+              survivingManifestation.ongoingImpacts--;
+          })
+          .start();
+      }
+    }
+  };
+
   iterate = () => {
     const delta = this.clock.getDelta();
 
@@ -111,7 +182,7 @@ class PlanetaryScene extends SceneBase {
 
     if (this.scenario.playing) {
       if (this.scenario.collisions) {
-        collisionsCheck(this.integrator.masses, scale);
+        collisionsCheck(this.integrator.masses, scale, this.collisionCallback);
       }
 
       this.integrator.iterate();
@@ -519,6 +590,8 @@ class PlanetaryScene extends SceneBase {
       this.previous.rotatingReferenceFrame =
         this.scenario.camera.rotatingReferenceFrame;
     }
+
+    TWEEN.update();
 
     this.store.dispatch(
       modifyScenarioProperty({ key: "masses", value: this.integrator.masses }),

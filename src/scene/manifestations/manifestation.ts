@@ -14,6 +14,8 @@ class Manifestation {
   public orbit: EllipseCurve | undefined;
   public trail: THREE.Line | undefined;
   public atmosphere: THREE.Mesh | undefined;
+  public ongoingImpacts: number;
+  public materialShader: THREE.Shader | undefined;
 
   constructor(
     mass: ScenarioMassType,
@@ -32,6 +34,9 @@ class Manifestation {
     this.orbit = undefined;
     this.trail = undefined;
     this.atmosphere = undefined;
+
+    this.ongoingImpacts = 0;
+    this.materialShader = undefined;
 
     this.trailVertices = 3000;
   }
@@ -53,8 +58,67 @@ class Manifestation {
       material.bumpMap = this.textureLoader.load(
         `/textures/bump-maps/${this.mass.name}Bump.jpg`,
       );
-      material.bumpScale = 1;
+      material.bumpScale = 3;
     }
+
+    material.onBeforeCompile = (shader: THREE.Shader) => {
+      this.ongoingImpacts = 0;
+
+      const impacts = [];
+
+      const maxImpactAmount = 7;
+
+      for (let i = 0; i < maxImpactAmount; i++)
+        impacts.push({
+          impactPoint: new THREE.Vector3(0, 0, 0), //The point on the sphere where the impact takes place.
+          //This point is the origin from which the shockwave radiates outwards
+          impactRadius: 0, //The radius of the impact
+          impactRatio: 0.25, //How far the impact shockwave has propagated outwards
+        });
+
+      shader.uniforms["impacts"] = { value: impacts };
+
+      shader.vertexShader = `varying vec3 vPosition;
+        ${shader.vertexShader}`;
+
+      shader.vertexShader = shader.vertexShader.replace(
+        "#include <worldpos_vertex>",
+        `#include <worldpos_vertex>
+        vPosition = transformed.xyz;`,
+      );
+
+      shader.fragmentShader = `struct impact {
+            vec3 impactPoint;
+            float impactRadius;
+            float impactRatio;
+          };
+
+         uniform impact impacts[${maxImpactAmount}];
+
+         varying vec3 vPosition;
+        ${shader.fragmentShader}`;
+
+      shader.fragmentShader = shader.fragmentShader.replace(
+        "#include <dithering_fragment>",
+        `#include <dithering_fragment>
+          float finalStep = 0.0;
+          for (int i = 0; i < ${maxImpactAmount};i++){
+            
+            float dist = distance(vPosition, impacts[i].impactPoint);
+            float currentRadius = impacts[i].impactRadius * impacts[i].impactRatio;
+            float increment = smoothstep(0., currentRadius, dist) - smoothstep(currentRadius - ( 0.25 * impacts[i].impactRatio ), currentRadius, dist);
+            increment *= 1. - impacts[i].impactRatio;
+            finalStep += increment;   
+    
+          }
+          finalStep = 1. - clamp(finalStep, 0., 1.);      
+    
+          vec3 color = mix(vec3(1., 0.5, 0.0625), vec3(1.,0.125, 0.0625), finalStep);
+          gl_FragColor = vec4( mix( color, gl_FragColor.rgb, finalStep), diffuseColor.a );`,
+      );
+
+      this.materialShader = shader;
+    };
 
     const sphere = new THREE.Mesh(geometry, material);
 
