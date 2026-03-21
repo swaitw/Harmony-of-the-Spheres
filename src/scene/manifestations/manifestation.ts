@@ -58,7 +58,7 @@ class Manifestation {
       material.bumpMap = this.textureLoader.load(
         `/textures/bump-maps/${this.mass.name}Bump.jpg`,
       );
-      material.bumpScale = 3;
+      material.bumpScale = 2;
     }
 
     material.onBeforeCompile = (shader: THREE.Shader) => {
@@ -68,13 +68,14 @@ class Manifestation {
 
       const maxImpactAmount = 7;
 
-      for (let i = 0; i < maxImpactAmount; i++)
+      for (let i = 0; i < maxImpactAmount; i++) {
         impacts.push({
           impactPoint: new THREE.Vector3(0, 0, 0), //The point on the sphere where the impact takes place.
           //This point is the origin from which the shockwave radiates outwards
           impactRadius: 0, //The radius of the impact
           impactRatio: 0.25, //How far the impact shockwave has propagated outwards
         });
+      }
 
       shader.uniforms["impacts"] = { value: impacts };
 
