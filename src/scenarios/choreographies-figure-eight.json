@@ -38,6 +38,7 @@
     "systemBarycenter": true
   },
   "graphics": {
+    "background": true,
     "orbits": true,
     "habitableZone": false,
     "trails": false,
@@ -50,6 +51,11 @@
       "m": 10000,
       "radius": 6000000,
       "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
       "elements": {
         "a": 0,
         "e": 0,
@@ -75,6 +81,11 @@
       "m": 10000,
       "radius": 6000000,
       "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
       "elements": {
         "a": 0,
         "e": 0,
@@ -100,6 +111,11 @@
       "m": 10000,
       "radius": 6000000,
       "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
       "elements": {
         "a": 0,
         "e": 0,

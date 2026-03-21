@@ -36,12 +36,13 @@
     "softeningConstant": 0
   },
   "barycenter": {
-    "display": false,
+    "display": true,
     "barycenterMassOne": "Earth",
     "barycenterMassTwo": "Moon",
     "systemBarycenter": false
   },
   "graphics": {
+    "background": true,
     "orbits": true,
     "habitableZone": false,
     "trails": true,
@@ -55,6 +56,11 @@
       "radius": 10270,
       "tilt": 0,
       "temperature": 5778,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
       "elements": {
         "a": 0,
         "e": 0,
@@ -76,11 +82,16 @@
     },
     {
       "name": "Earth",
-      "type": "terrestial-planet",
+      "type": "terrestial planet",
       "m": 0.000003003,
       "radius": 91.74311926605505,
       "tilt": -23.44,
       "atmosphere": "skyblue",
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
       "elements": {
         "a": 0,
         "e": 0,
@@ -113,6 +124,11 @@
       "m": 3.69396868e-8,
       "radius": 22.93577981651376,
       "tilt": -1.54,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
       "elements": {
         "a": 0,
         "e": 0,
