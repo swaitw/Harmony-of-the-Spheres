@@ -34,6 +34,7 @@ export type ScenarioBarycenterType = {
 };
 
 export type ScenarioGraphicsType = {
+  background: boolean;
   orbits: boolean;
   habitableZone: boolean;
   trails: boolean;
@@ -45,6 +46,12 @@ export type PrimaryType = {
   position: VectorType;
   velocity: VectorType;
   name: string;
+};
+
+export type ScenarioMassGraphicsType = {
+  orbit: boolean;
+  trail: boolean;
+  label: boolean;
 };
 
 export type ScenarioMassType = {
@@ -61,6 +68,7 @@ export type ScenarioMassType = {
   rotatedPosition?: VectorType;
   temperature?: number;
   customMassCameraPosition?: VectorType;
+  graphics: ScenarioMassGraphicsType;
 };
 
 export type SOITree = {
