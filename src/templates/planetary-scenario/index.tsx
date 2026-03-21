@@ -16,6 +16,8 @@ import Tabs from "../../components/tabs";
 import CameraControls from "../../components/camera-controls";
 import IntegratorControls from "../../components/integrator-controls";
 import MassControls from "../../components/mass-controls";
+import GraphicsControls from "../../components/graphics-controls";
+import BarycenterControls from "../../components/barycenter-controls";
 import Button from "../../components/button";
 import { modifyScenarioProperty } from "../../state/creators";
 import { getRendererDimensions } from "../../utils/renderer-utils";
@@ -152,8 +154,7 @@ const Scenario = ({
       <section className={planetaryScenarioFooter}>
         <Button
           callback={handlePlayButtonClick}
-          cssModifier={playButtonModifier}
-        >
+          cssModifier={playButtonModifier}>
           <i className={`fa-solid fa-${playing ? "pause" : "play"}`} />
         </Button>
         <Tabs
@@ -164,8 +165,7 @@ const Scenario = ({
           navigationMenuCssModifier={simulationControlsTabs}
           navigationMenuItemCssModifier={simulationControlTab}
           closeButton
-          onTabIndexChangeCallback={onTabIndexChangeCallback}
-        >
+          onTabIndexChangeCallback={onTabIndexChangeCallback}>
           <div data-label="Integrator" data-icon="fa-solid fa-gear">
             <IntegratorControls />
           </div>
@@ -174,6 +174,12 @@ const Scenario = ({
           </div>
           <div data-label="Masses" data-icon="fa-solid fa-globe">
             <MassControls />
+          </div>
+          <div data-label="Graphics" data-icon="fa-solid fa-palette">
+            <GraphicsControls />
+          </div>
+          <div data-label="Barycenter" data-icon="fa-solid fa-crosshairs">
+            <BarycenterControls />
           </div>
           <div data-label="Add Mass" data-icon="fa-solid fa-plus"></div>
         </Tabs>
@@ -226,6 +232,7 @@ export const pageQuery = graphql`
             barycenterMassTwo
           }
           graphics {
+            background
             orbits
             trails
             labels
@@ -261,6 +268,11 @@ export const pageQuery = graphql`
               x
               y
               z
+            }
+            graphics {
+              orbit
+              trail
+              label
             }
           }
           particlesConfiguration {

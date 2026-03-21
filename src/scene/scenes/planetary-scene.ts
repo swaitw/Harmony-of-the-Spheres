@@ -1,7 +1,7 @@
 import * as THREE from "three";
 import SceneBase from ".";
 import ManifestationManager from "../manifestations";
-import background from "../misc/background";
+import createBackground from "../misc/background";
 import getIntegrator from "../../physics/integrators";
 import { drawMassLabel, drawBarycenterLabel } from "../labels/labelCallbacks";
 import addParticleSystems from "../../physics/particles/particle-system";
@@ -29,18 +29,25 @@ class PlanetaryScene extends SceneBase {
     cameraFocus: string | undefined;
     rotatingReferenceFrame: string | undefined;
     integrator: string;
+    background: boolean;
   };
   utilVector: H3;
   threeUtilVector: THREE.Vector3;
   clock: THREE.Clock;
   particles: Particles | undefined;
+  backgroundMesh: THREE.Mesh | null;
 
   constructor(webGlCanvas: HTMLCanvasElement, labelsCanvas: HTMLCanvasElement) {
     super(webGlCanvas, labelsCanvas);
     this.clock = new THREE.Clock();
     this.scale = 2100000;
 
-    this.scene.add(background(this.textureLoader));
+    if (this.scenario.graphics.background) {
+      this.backgroundMesh = createBackground(this.textureLoader);
+      this.scene.add(this.backgroundMesh);
+    } else {
+      this.backgroundMesh = null;
+    }
 
     this.manifestationManager = new ManifestationManager(
       this.scenario.masses,
@@ -87,6 +94,7 @@ class PlanetaryScene extends SceneBase {
       cameraFocus: undefined,
       rotatingReferenceFrame: undefined,
       integrator: this.scenario.integrator.name,
+      background: this.scenario.graphics.background,
     };
 
     this.controls.noPan = true;
@@ -178,6 +186,22 @@ class PlanetaryScene extends SceneBase {
       });
 
       this.previous.integrator = this.scenario.integrator.name;
+    }
+
+    if (this.scenario.graphics.background !== this.previous.background) {
+      if (this.scenario.graphics.background) {
+        this.backgroundMesh = createBackground(this.textureLoader);
+        this.scene.add(this.backgroundMesh);
+      } else if (this.backgroundMesh) {
+        this.scene.remove(this.backgroundMesh);
+        this.backgroundMesh.geometry.dispose();
+        (
+          this.backgroundMesh.material as THREE.MeshBasicMaterial
+        ).map?.dispose();
+        (this.backgroundMesh.material as THREE.MeshBasicMaterial).dispose();
+        this.backgroundMesh = null;
+      }
+      this.previous.background = this.scenario.graphics.background;
     }
 
     if (this.scenario.playing) {
@@ -431,7 +455,7 @@ class PlanetaryScene extends SceneBase {
         const orbit = manifestation.orbit;
 
         if (
-          this.scenario.graphics.orbits &&
+          mass.graphics.orbit &&
           this.scenario.camera.rotatingReferenceFrame !== mass.name &&
           currentSOI.name === this.scenario.camera.rotatingReferenceFrame
         ) {
@@ -451,7 +475,7 @@ class PlanetaryScene extends SceneBase {
         const trail = manifestation.trail;
 
         if (
-          (!this.scenario.graphics.trails && trail) ||
+          (!mass.graphics.trail && trail) ||
           (trail &&
             this.scenario.camera.rotatingReferenceFrame !==
               this.previous.rotatingReferenceFrame)
@@ -459,7 +483,7 @@ class PlanetaryScene extends SceneBase {
           manifestation.removeTrail();
         }
 
-        if (this.scenario.graphics.trails) {
+        if (mass.graphics.trail) {
           if (!trail) {
             manifestation.addTrail();
           }
@@ -540,7 +564,7 @@ class PlanetaryScene extends SceneBase {
         this.controls.update();
       }
 
-      if (this.scenario.graphics.labels) {
+      if (mass.graphics.label) {
         this.labels.drawLabel(
           mass.name,
           this.threeUtilVector.set(

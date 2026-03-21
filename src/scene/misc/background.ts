@@ -28,6 +28,7 @@ export default (textureLoader: THREE.TextureLoader): THREE.Mesh => {
   mesh.rotateX(degreesToRadians(90 + solarSystemTilt));
 
   mesh.name = "background";
+  mesh.renderOrder = -1;
 
   return mesh;
 };
