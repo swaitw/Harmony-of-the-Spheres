@@ -19,7 +19,7 @@ class Star extends Manifestation {
         time: { value: 1.0 },
         scale: { value: 60 },
         highTemp: { value: temperature },
-        lowTemp: { value: temperature / 2 },
+        lowTemp: { value: temperature / 6 },
       },
       vertexShader: `
       uniform float time;
@@ -253,13 +253,13 @@ class Star extends Manifestation {
       map: spriteMap,
       color: new THREE.Color(`rgb(${rgb.r}, ${rgb.g}, ${rgb.b})`),
       blending: THREE.AdditiveBlending,
-      opacity: 0.2,
+      opacity: 0.7,
       depthTest: true,
       depthWrite: false,
     });
 
     const halo = new THREE.Sprite(haloMaterial);
-    halo.scale.set(35, 35, 35);
+    halo.scale.set(70, 70, 70);
 
     sphere.add(halo);
 
