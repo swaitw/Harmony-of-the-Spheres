@@ -18,6 +18,7 @@ import IntegratorControls from "../../components/integrator-controls";
 import MassControls from "../../components/mass-controls";
 import GraphicsControls from "../../components/graphics-controls";
 import BarycenterControls from "../../components/barycenter-controls";
+import LagrangeControls from "../../components/lagrange-controls";
 import Button from "../../components/button";
 import { modifyScenarioProperty } from "../../state/creators";
 import { getRendererDimensions } from "../../utils/renderer-utils";
@@ -180,6 +181,9 @@ const Scenario = ({
           </div>
           <div data-label="Barycenter" data-icon="fa-solid fa-crosshairs">
             <BarycenterControls />
+          </div>
+          <div data-label="Lagrange" data-icon="fa-solid fa-atom">
+            <LagrangeControls />
           </div>
           <div data-label="Add Mass" data-icon="fa-solid fa-plus"></div>
         </Tabs>

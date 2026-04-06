@@ -3,7 +3,11 @@ import SceneBase from ".";
 import ManifestationManager from "../manifestations";
 import createBackground from "../misc/background";
 import getIntegrator from "../../physics/integrators";
-import { drawMassLabel, drawBarycenterLabel } from "../labels/labelCallbacks";
+import {
+  drawMassLabel,
+  drawBarycenterLabel,
+  drawLagrangeLabel,
+} from "../labels/labelCallbacks";
 import addParticleSystems from "../../physics/particles/particle-system";
 import ParticleIntegrator from "../../physics/particles/particles-integrator";
 import collisionsCheck from "../../physics/collisions/collisions-check";
@@ -15,7 +19,11 @@ import {
 } from "../../physics/utils/elements";
 import H3 from "../../physics/utils/vector";
 import { modifyScenarioProperty } from "../../state/creators";
-import { getBarycenter, radiansToDegrees } from "../../physics/utils/misc";
+import {
+  getBarycenter,
+  getLagrangePoints,
+  radiansToDegrees,
+} from "../../physics/utils/misc";
 import { getClosestPointOnSphere } from "../../physics/collisions/collision-utils";
 import { ScenarioMassType } from "../../types/scenario";
 import * as TWEEN from "@tweenjs/tween.js";
@@ -605,6 +613,79 @@ class PlanetaryScene extends SceneBase {
         "limegreen",
         drawBarycenterLabel,
       );
+    }
+
+    if (this.scenario.lagrangePoints?.display) {
+      const selectedMassName = this.scenario.lagrangePoints.selectedMassName;
+
+      const secondary = this.integrator.masses.find(
+        (mass) => mass.name === selectedMassName,
+      );
+
+      let primary;
+
+      if (secondary) {
+        if (secondary.primary.name !== selectedMassName) {
+          primary = this.integrator.masses.find(
+            (mass) => mass.name === secondary.primary.name,
+          );
+        }
+      }
+
+      if (secondary && primary) {
+        const relativePosition = this.utilVector
+          .set(secondary.position)
+          .subtract(primary.position)
+          .toObject();
+
+        const relativeVelocity = this.utilVector
+          .set(secondary.velocity)
+          .subtract(primary.velocity)
+          .toObject();
+
+        const normal = this.utilVector
+          .set(relativePosition)
+          .cross(relativeVelocity)
+          .toObject();
+
+        const lagrangePoints = getLagrangePoints(
+          primary.position,
+          primary.m,
+          secondary.position,
+          secondary.m,
+          normal,
+        );
+
+        const lagrangePointEntries = [
+          { name: "L1", position: lagrangePoints.L1 },
+          { name: "L2", position: lagrangePoints.L2 },
+          { name: "L3", position: lagrangePoints.L3 },
+          { name: "L4", position: lagrangePoints.L4 },
+          { name: "L5", position: lagrangePoints.L5 },
+        ];
+
+        for (const lagrangePoint of lagrangePointEntries) {
+          const rotatedLagrangePointPosition = this.utilVector
+            .set(lagrangePoint.position)
+            .subtractFrom(rotatingReferenceFrame)
+            .multiplyByScalar(scale)
+            .toObject();
+
+          this.labels.drawLabel(
+            lagrangePoint.name,
+            this.threeUtilVector.set(
+              rotatedLagrangePointPosition.x,
+              rotatedLagrangePointPosition.y,
+              rotatedLagrangePointPosition.z,
+            ),
+            this.camera,
+            false,
+            "right",
+            "yellow",
+            drawLagrangeLabel,
+          );
+        }
+      }
     }
 
     if (

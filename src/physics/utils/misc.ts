@@ -1,6 +1,6 @@
-import { ScenarioMassType } from "../../types/scenario";
+import { ScenarioMassType, ScenarioMassesType } from "../../types/scenario";
 import H3 from "../../physics/utils/vector";
-import { ScenarioMassesType } from "../../types/scenario";
+import { VectorType } from "../../types/physics";
 
 const degreesToRadians = (degrees: number) => (Math.PI / 180) * degrees;
 
@@ -129,6 +129,66 @@ const getBarycenter = (
   };
 };
 
+const getLagrangePoints = (
+  p1: VectorType,
+  m1: number,
+  p2: VectorType,
+  m2: number,
+  normalInput?: VectorType,
+): {
+  L1: VectorType;
+  L2: VectorType;
+  L3: VectorType;
+  L4: VectorType;
+  L5: VectorType;
+} => {
+  const mu = m2 / (m1 + m2);
+  const hillFactor = Math.cbrt(mu / 3);
+
+  const axis = new H3().set(p2).subtract(p1);
+  const distance = axis.getLength();
+  const unitVector = new H3().set(axis).normalise();
+
+  const L1 = new H3()
+    .set(p1)
+    .addScaledVector(distance * (1 - hillFactor), unitVector)
+    .toObject();
+  const L2 = new H3()
+    .set(p1)
+    .addScaledVector(distance * (1 + hillFactor), unitVector)
+    .toObject();
+  const L3 = new H3()
+    .set(p1)
+    .subtractScaledVector(distance * (1 + (5 * mu) / 12), unitVector)
+    .toObject();
+
+  const normal = new H3();
+  if (normalInput) {
+    normal.set(normalInput).normalise();
+  } else {
+    normal.set(
+      Math.abs(unitVector.z) < 0.9
+        ? { x: 0, y: 0, z: 1 }
+        : { x: 0, y: 1, z: 0 },
+    );
+  }
+
+  const perpendicular = new H3().set(normal).cross(unitVector).normalise();
+  const triangleHeight = (Math.sqrt(3) / 2) * distance;
+  const midpoint = new H3().set(p1).add(p2).multiplyByScalar(0.5);
+
+  const L4 = new H3()
+    .set(midpoint)
+    .addScaledVector(triangleHeight, perpendicular)
+    .toObject();
+  const L5 = new H3()
+    .set(midpoint)
+    .subtractScaledVector(triangleHeight, perpendicular)
+    .toObject();
+
+  return { L1, L2, L3, L4, L5 };
+};
+
 export {
   degreesToRadians,
   getRandomNumberInRange,
@@ -141,4 +201,5 @@ export {
   clamp,
   temperatureToRGB,
   getBarycenter,
+  getLagrangePoints,
 };

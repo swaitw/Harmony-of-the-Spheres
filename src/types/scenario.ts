@@ -97,6 +97,11 @@ export type ParticlesConfigurationType = {
   shapes: ShapesType;
 };
 
+export type ScenarioLagrangePointsType = {
+  selectedMassName: string;
+  display: boolean;
+};
+
 export type ScenarioType = {
   name: string;
   playing: boolean;
@@ -111,4 +116,5 @@ export type ScenarioType = {
   graphics: ScenarioGraphicsType;
   masses: ScenarioMassesType;
   particlesConfiguration?: ParticlesConfigurationType;
+  lagrangePoints?: ScenarioLagrangePointsType;
 };
