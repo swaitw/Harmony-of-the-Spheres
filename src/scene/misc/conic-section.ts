@@ -2,7 +2,7 @@ import * as THREE from "three";
 import { degreesToRadians } from "../../physics/utils/misc";
 import { VectorType } from "../../types/physics";
 
-class EllipseCurve {
+class ConicSection {
   private uniforms: {
     aX: { value: number };
     aY: { value: number };
@@ -12,6 +12,7 @@ class EllipseCurve {
     aEndAngle: { value: number };
     aClockwise: { value: boolean };
     aRotation: { value: number };
+    e: { value: number };
   };
   private verticesNumber: number;
   private vertices: THREE.Vector3[];
@@ -20,7 +21,7 @@ class EllipseCurve {
 
   public object3D: THREE.Object3D;
 
-  public ellipse: THREE.Line;
+  public conicSection: THREE.Line;
 
   constructor(
     aX: number,
@@ -33,6 +34,7 @@ class EllipseCurve {
     aRotation: number,
     verticesNumber: number,
     color: string,
+    e: number = 0,
   ) {
     this.verticesNumber = verticesNumber;
 
@@ -50,6 +52,7 @@ class EllipseCurve {
       aEndAngle: { value: aEndAngle },
       aClockwise: { value: aClockwise },
       aRotation: { value: aRotation },
+      e: { value: e },
     };
 
     this.object3D = new THREE.Object3D();
@@ -61,18 +64,20 @@ class EllipseCurve {
       this.verticesIndices[i] = i;
     }
 
-    const ellipseGeometry = new THREE.BufferGeometry().setFromPoints(
+    const conicSectionGeometry = new THREE.BufferGeometry().setFromPoints(
       this.vertices,
     );
 
-    ellipseGeometry.setAttribute(
+    conicSectionGeometry.setAttribute(
       "vertIndex",
       new THREE.Float32BufferAttribute(this.verticesIndices, 1),
     );
 
-    const ellipseMaterial = new THREE.LineBasicMaterial({ color: this.color });
+    const conicSectionMaterial = new THREE.LineBasicMaterial({
+      color: this.color,
+    });
 
-    ellipseMaterial.onBeforeCompile = (shader: any) => {
+    conicSectionMaterial.onBeforeCompile = (shader: any) => {
       shader.uniforms.aX = this.uniforms.aX;
       shader.uniforms.aY = this.uniforms.aY;
       shader.uniforms.xRadius = this.uniforms.xRadius;
@@ -81,6 +86,7 @@ class EllipseCurve {
       shader.uniforms.aEndAngle = this.uniforms.aEndAngle;
       shader.uniforms.aClockwise = this.uniforms.aClockwise;
       shader.uniforms.aRotation = this.uniforms.aRotation;
+      shader.uniforms.e = this.uniforms.e;
       shader.uniforms.vertCount = { value: this.verticesNumber };
 
       shader.vertexShader = `
@@ -92,26 +98,38 @@ class EllipseCurve {
           uniform float aEndAngle;
           uniform float aClockwise;
           uniform float aRotation;
+          uniform float e;
         
           uniform float vertCount;
         
           attribute float vertIndex;
+
+          float myCosh(float x) { return (exp(x) + exp(-x)) * 0.5; }
+          float mySinh(float x) { return (exp(x) - exp(-x)) * 0.5; }
+
           vec3 getPoint(float t){
             vec3 point = vec3(0);
-            
-            float eps = 0.00001;
-      
-            float twoPi = 3.1415926 * 2.0;
-            float deltaAngle = aEndAngle - aStartAngle;
-            bool samePoints = abs( deltaAngle ) < eps;
-      
-            if (deltaAngle < eps) deltaAngle = samePoints ? 0.0 : twoPi;
-            if ( floor(aClockwise + 0.5) == 1.0 && ! samePoints ) deltaAngle = deltaAngle == twoPi ? - twoPi : deltaAngle - twoPi;
-      
-            float angle = aStartAngle + t * deltaAngle;
-              float x = aX + xRadius * cos( angle );
-            float y = aY + yRadius * sin( angle );
-      
+            float x = aX;
+            float y = aY;
+
+            if (e < 1.0) {
+              float eps = 0.00001;
+              float twoPi = 3.1415926 * 2.0;
+              float deltaAngle = aEndAngle - aStartAngle;
+              bool samePoints = abs( deltaAngle ) < eps;
+
+              if (deltaAngle < eps) deltaAngle = samePoints ? 0.0 : twoPi;
+              if ( floor(aClockwise + 0.5) == 1.0 && ! samePoints ) deltaAngle = deltaAngle == twoPi ? - twoPi : deltaAngle - twoPi;
+
+              float angle = aStartAngle + t * deltaAngle;
+              x = aX + xRadius * cos( angle );
+              y = aY + yRadius * sin( angle );
+            } else {
+              float tParam = aStartAngle + t * (aEndAngle - aStartAngle);
+              x = aX + xRadius * myCosh(tParam);
+              y = aY + yRadius * mySinh(tParam);
+            }
+        
             if ( aRotation != 0. ) {
       
                 float c = cos( aRotation );
@@ -139,21 +157,24 @@ class EllipseCurve {
       );
     };
 
-    ellipseMaterial.depthWrite = false;
+    conicSectionMaterial.depthWrite = false;
 
-    this.ellipse = new THREE.Line(ellipseGeometry, ellipseMaterial);
-    this.ellipse.frustumCulled = false;
-    this.ellipse.name = "ellipse";
+    this.conicSection = new THREE.Line(
+      conicSectionGeometry,
+      conicSectionMaterial,
+    );
+    this.conicSection.frustumCulled = false;
+    this.conicSection.name = "conicSection";
 
-    this.object3D.add(this.ellipse);
+    this.object3D.add(this.conicSection);
   }
 
   private rotateAroundFocus(axisRotations: VectorType): void {
-    this.ellipse.rotation.z = degreesToRadians(axisRotations.z);
-    this.ellipse.rotation.x = degreesToRadians(axisRotations.x);
+    this.conicSection.rotation.z = degreesToRadians(axisRotations.z);
+    this.conicSection.rotation.x = degreesToRadians(axisRotations.x);
 
     //No can do ZXZ rotations, so we rotate the z axis of the parent object
-    //of the ellipse instead to give the ellipse the correct orientation in 3D space around
+    //of the conic instead to give the conic the correct orientation in 3D space around
     //its focus
 
     this.object3D.rotation.z = degreesToRadians(axisRotations.y);
@@ -168,6 +189,7 @@ class EllipseCurve {
     aEndAngle: number,
     aClockwise: boolean,
     aRotation: number,
+    e: number,
     axisRotations: VectorType,
   ): void {
     this.uniforms.aX.value = aX;
@@ -178,23 +200,24 @@ class EllipseCurve {
     this.uniforms.aEndAngle.value = aEndAngle;
     this.uniforms.aClockwise.value = aClockwise;
     this.uniforms.aRotation.value = aRotation;
+    this.uniforms.e.value = e;
 
     this.rotateAroundFocus(axisRotations);
   }
 
   public dispose(): void {
-    let ellipse = this.ellipse;
+    const conicSection = this.conicSection;
 
-    let geometry = ellipse.geometry;
+    const geometry = conicSection.geometry;
 
     geometry.dispose();
 
-    let material = ellipse.material as THREE.LineBasicMaterial;
+    const material = conicSection.material as THREE.LineBasicMaterial;
 
     material.dispose();
 
-    this.object3D.remove(ellipse);
+    this.object3D.remove(conicSection);
   }
 }
 
-export default EllipseCurve;
+export default ConicSection;

@@ -1,6 +1,6 @@
 import * as THREE from "three";
-import EllipseCurve from "../misc/ellipse-curve";
-import { getEllipse } from "../../physics/utils/misc";
+import ConicSection from "../misc/conic-section";
+import { getConicSection } from "../../physics/utils/misc";
 import { ScenarioMassType } from "../../types/scenario";
 import { VectorType } from "../../types/physics";
 
@@ -11,7 +11,7 @@ class Manifestation {
   protected trailVertices: number;
   public object3D: THREE.Object3D;
   public sphere: THREE.Mesh | undefined;
-  public orbit: EllipseCurve | undefined;
+  public orbit: ConicSection | undefined;
   public trail: THREE.Line | undefined;
   public atmosphere: THREE.Mesh | undefined;
   public ongoingImpacts: number;
@@ -135,7 +135,7 @@ class Manifestation {
   }
 
   public addOrbit(): void {
-    const orbit = new EllipseCurve(
+    const orbit = new ConicSection(
       0,
       0,
       0,
@@ -184,24 +184,39 @@ class Manifestation {
     const i = elements.i * (180 / Math.PI);
     const o = elements.lAn * (180 / Math.PI);
 
-    const ellipse = getEllipse(a, e);
+    const conicSection = getConicSection(a, e);
 
-    const orbit = this.orbit.ellipse;
+    // For elliptic orbits use a full [0, 2π] angle sweep.
+    // For hyperbolic / parabolic orbits use the hyperbolic parameter range
+    // [-tMax, tMax] fed into cosh / sinh in the shader.  tMax = 4 gives
+    // cosh(4) ≈ 27, showing the curve out to ~27× the semi-transverse axis.
+    const aStartAngle = e < 1 ? 0 : -4;
+    const aEndAngle = e < 1 ? 2 * Math.PI : 4;
+
+    const orbit = this.orbit.conicSection;
 
     if (orbit) {
       orbit.position.z = (rotatingReferenceFrame.z - primaryPosition.z) * scale;
     }
 
+    // For elliptic orbits the shader places periapsis at angle = π (negative x),
+    // so we need to rotate by argP - 180° to align it with the perifocal argP direction.
+    // For hyperbolic/parabolic orbits the cosh parametrisation places periapsis at t = 0
+    // (positive x, since a < 0 makes aX + xRadius = |a|(e-1) > 0), so we rotate by argP directly.
+    const zRotation = e < 1 ? w - 180 : w;
+
     this.orbit.update(
-      (rotatingReferenceFrame.x - primaryPosition.x + ellipse.focus) * scale,
+      (rotatingReferenceFrame.x - primaryPosition.x + conicSection.focus) *
+        scale,
       (rotatingReferenceFrame.y - primaryPosition.y) * scale,
-      ellipse.xRadius * scale,
-      ellipse.yRadius * scale,
-      0,
-      2 * Math.PI,
+      conicSection.xRadius * scale,
+      conicSection.yRadius * scale,
+      aStartAngle,
+      aEndAngle,
       false,
       0,
-      { x: i, y: o, z: w - 180 },
+      e,
+      { x: i, y: o, z: zRotation },
     );
   }
 

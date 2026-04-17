@@ -36,6 +36,26 @@ const getEllipse = (a: number, e: number) => {
   };
 };
 
+const getConicSection = (a: number, e: number) => {
+  if (e < 1) {
+    const b = getSemiMinorAxis(a, e);
+
+    return {
+      focus: getFocusOfEllipse(a, b),
+      xRadius: a,
+      yRadius: b,
+    };
+  }
+
+  const b = a * Math.sqrt(e * e - 1);
+
+  return {
+    focus: -(a * e),
+    xRadius: a,
+    yRadius: b,
+  };
+};
+
 const clamp = (x: number, min: number, max: number): number => {
   if (x < min) {
     return min;
@@ -197,6 +217,7 @@ export {
   getFocusOfEllipse,
   getSemiMinorAxis,
   getEllipse,
+  getConicSection,
   radiansToDegrees,
   clamp,
   temperatureToRGB,
