@@ -242,6 +242,10 @@ export const pageQuery = graphql`
             labels
             habitableZone
           }
+          lagrangePoints {
+            display
+            selectedMassName
+          }
           masses {
             name
             type
