@@ -1,11 +1,11 @@
 {
-  "name": "The Figure Eight N-body Choreography",
+  "name": "The Star of David N-body Choreography",
   "playing": false,
   "isLoaded": false,
   "elapsedTime": 0,
   "collisions": true,
   "massBeingModified": {
-    "name": "Eva",
+    "name": "Oppenheimer",
     "unitName": "Solar Units",
     "unitMassQuantity": 1,
     "m": 10000
@@ -20,7 +20,7 @@
     "rotatingReferenceFrame": "Origo"
   },
   "integrator": {
-    "name": "PEFRL",
+    "name": "RK4",
     "g": 100,
     "dt": 0.005,
     "tol": 0.01,
@@ -32,8 +32,8 @@
   },
   "barycenter": {
     "display": false,
-    "barycenterMassOne": "Earth",
-    "barycenterMassTwo": "Moon",
+    "barycenterMassOne": "Feynman",
+    "barycenterMassTwo": "Sagan",
     "systemBarycenter": true
   },
   "graphics": {
@@ -45,7 +45,7 @@
   },
   "masses": [
     {
-      "name": "Eva",
+      "name": "Feynman",
       "type": "star",
       "m": 10000,
       "radius": 6000000,
@@ -65,18 +65,18 @@
         "eccAnom": 0
       },
       "position": {
-        "x": -100,
-        "y": 0,
+        "x": -123.5888490363221,
+        "y": -71.3583166852466,
         "z": 0
       },
       "velocity": {
-        "x": 34.7111,
-        "y": 53.2728,
+        "x": -1.0702760715048,
+        "y": 2.8615747036639,
         "z": 0
       }
     },
     {
-      "name": "Sarada",
+      "name": "Sagan",
       "type": "star",
       "m": 10000,
       "radius": 6000000,
@@ -96,18 +96,18 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 100,
-        "y": 0,
+        "x": -46.030435228601405,
+        "y": -27.134665595805902,
         "z": 0
       },
       "velocity": {
-        "x": 34.7111,
-        "y": 53.2728,
+        "x": 77.7912175865836,
+        "y": -134.7833138138306,
         "z": 0
       }
     },
     {
-      "name": "Arjuna",
+      "name": "Einstein",
       "type": "star",
       "m": 10000,
       "radius": 6000000,
@@ -127,13 +127,44 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0,
-        "y": 0,
+        "x": 46.030435228601405,
+        "y": 27.134665595805902,
         "z": 0
       },
       "velocity": {
-        "x": -69.4222,
-        "y": -106.5456,
+        "x": -77.7912175865836,
+        "y": 134.7833138138306,
+        "z": 0
+      }
+    },
+    {
+      "name": "Oppenheimer",
+      "type": "star",
+      "m": 10000,
+      "radius": 6000000,
+      "tilt": 0,
+      "temperature": 45000,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 123.5888490363221,
+        "y": 71.3583166852466,
+        "z": 0
+      },
+      "velocity": {
+        "x": 1.0702760715048,
+        "y": -2.8615747036639,
         "z": 0
       }
     }

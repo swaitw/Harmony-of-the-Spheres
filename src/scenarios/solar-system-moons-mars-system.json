@@ -1,0 +1,176 @@
+{
+  "name": "Mars and Its Moons Phobos and Deimos",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Mars",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1,
+    "m": 3.213e-7
+  },
+  "category": {
+    "name": "Solar System",
+    "subCategory": "Moons"
+  },
+  "camera": {
+    "cameraFocus": "Mars",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Mars"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.00000001,
+    "tol": 1e-4,
+    "maxDt": 0.00001,
+    "minDt": 0.00000001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Mars",
+    "barycenterMassTwo": "Sun",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": false,
+    "trails": false,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Sun",
+      "type": "star",
+      "m": 1,
+      "radius": 10270,
+      "tilt": 0,
+      "temperature": 5778,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.108041512617234,
+        "y": 1.460180703405564,
+        "z": 0.02794742929920126
+      },
+      "velocity": {
+        "x": -5.2899724205543155,
+        "y": -0.06249167561447718,
+        "z": 0.1285180929683702
+      }
+    },
+    {
+      "name": "Mars",
+      "type": "terrestial planet",
+      "m": 3.213e-7,
+      "radius": 48.62385321100918,
+      "tilt": 25.19,
+      "atmosphere": "orange",
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 9.383482325412062e-13,
+        "y": -8.140364473231114e-14,
+        "z": -4.768852787982284e-13
+      },
+      "velocity": {
+        "x": 2.307996983376931e-9,
+        "y": 7.145816858964172e-9,
+        "z": -8.124324279984234e-10
+      }
+    },
+    {
+      "name": "Phobos",
+      "type": "moon",
+      "m": 5.359189909029e-15,
+      "radius": 1,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.00004950224547596924,
+        "y": 0.00002488266909607153,
+        "z": 0.00002730097984848412
+      },
+      "velocity": {
+        "x": -0.17192317024186732,
+        "y": -0.4188471330676279,
+        "z": 0.06563852508203072
+      }
+    },
+    {
+      "name": "Deimos",
+      "type": "moon",
+      "m": 5.359189909029e-15,
+      "radius": 1,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.00005307001408938901,
+        "y": -0.0001471501029650768,
+        "z": 0.00001117485182006874
+      },
+      "velocity": {
+        "x": 0.23923264692446428,
+        "y": -0.09551050573749158,
+        "z": -0.12195270680186761
+      }
+    }
+  ]
+}
