@@ -102,20 +102,52 @@ class Manifestation {
       shader.fragmentShader = shader.fragmentShader.replace(
         "#include <dithering_fragment>",
         `#include <dithering_fragment>
-          float finalStep = 0.0;
-          for (int i = 0; i < ${maxImpactAmount};i++){
-            
-            float dist = distance(vPosition, impacts[i].impactPoint);
-            float currentRadius = impacts[i].impactRadius * impacts[i].impactRatio;
-            float increment = smoothstep(0., currentRadius, dist) - smoothstep(currentRadius - ( 0.25 * impacts[i].impactRatio ), currentRadius, dist);
-            increment *= 1. - impacts[i].impactRatio;
-            finalStep += increment;   
-    
+          float ringIntensity = 0.0;
+          vec3 ringAccumColor = vec3(0.0);
+          for (int i = 0; i < ${maxImpactAmount}; i++) {
+            float impRad = impacts[i].impactRadius;
+            float impRatio = impacts[i].impactRatio;
+
+            if (impRad > 0.001 && impRatio > 0.001) {
+              float dist = distance(vPosition, impacts[i].impactPoint);
+              float currentRadius = impRad * impRatio;
+
+              vec3 dir = normalize(vPosition - impacts[i].impactPoint + vec3(0.0001));
+
+              float n1 = fract(sin(dot(dir.xy, vec2(127.1, 311.7))) * 43758.5453);
+              float n2 = fract(sin(dot(dir.yz, vec2(269.5, 183.3))) * 31415.9265);
+              float n3 = fract(sin(dot(dir.xz, vec2(419.2, 127.6))) * 27836.6349);
+              float jag = ((n1 + n2 + n3) / 3.0 * 2.0 - 1.0) * impRad * 0.06;
+
+              float ringWidth = impRad * 0.035;
+              float soft = max(ringWidth * 0.25, impRad * 0.001);
+              float innerR = currentRadius - ringWidth * 0.5 + jag;
+              float outerR = currentRadius + ringWidth * 0.5 + jag;
+
+              float ring = smoothstep(innerR - soft, innerR + soft, dist)
+                         * (1.0 - smoothstep(outerR - soft, outerR + soft, dist));
+
+              ring *= 1.0 - impRatio;
+
+              float ringPos = 1.0 - clamp(abs(dist - currentRadius) / (ringWidth * 0.5 + soft), 0.0, 1.0);
+              float heat = clamp((ringPos + n1 * 0.25) * (1.0 - impRatio * 0.5), 0.0, 1.0);
+
+              vec3 lavaHot  = vec3(1.0,  1.0,  0.80);
+              vec3 lavaMid  = vec3(1.0,  0.55, 0.05);
+              vec3 lavaCool = vec3(0.80, 0.10, 0.00);
+              vec3 c = mix(lavaCool, lavaMid, clamp(heat * 2.0, 0.0, 1.0));
+              c      = mix(c, lavaHot,        clamp(heat * 2.0 - 1.0, 0.0, 1.0));
+              c     *= 1.35;
+
+              ringIntensity += ring;
+              ringAccumColor += c * ring;
+            }
           }
-          finalStep = 1. - clamp(finalStep, 0., 1.);      
-    
-          vec3 color = mix(vec3(1., 0.5, 0.0625), vec3(1.,0.125, 0.0625), finalStep);
-          gl_FragColor = vec4( mix( color, gl_FragColor.rgb, finalStep), diffuseColor.a );`,
+          ringIntensity = clamp(ringIntensity, 0.0, 1.0);
+          if (ringIntensity > 0.0) {
+            vec3 finalRingColor = ringAccumColor / ringIntensity;
+            gl_FragColor = vec4(mix(gl_FragColor.rgb, finalRingColor, ringIntensity), gl_FragColor.a);
+          }`,
       );
 
       this.materialShader = shader;
