@@ -24,7 +24,10 @@ import {
   getLagrangePoints,
   radiansToDegrees,
 } from "../../physics/utils/misc";
-import { getClosestPointOnSphere } from "../../physics/collisions/collision-utils";
+import {
+  getClosestPointOnSphere,
+  generateImpactParticles,
+} from "../../physics/collisions/collision-utils";
 import { ScenarioMassType } from "../../types/scenario";
 import * as TWEEN from "@tweenjs/tween.js";
 
@@ -91,9 +94,8 @@ class PlanetaryScene extends SceneBase {
         this.particleIntegrator.particles,
         this.scale,
         this.textureLoader,
+        this.scenario.particlesConfiguration.max,
       );
-
-      this.particles.createParticleSystem();
 
       this.scene.add(this.particles.mesh);
     }
@@ -172,6 +174,45 @@ class PlanetaryScene extends SceneBase {
               survivingManifestation.ongoingImpacts--;
           })
           .start();
+      }
+    }
+
+    const impactParticleCount = 1000;
+    const defaultParticleMax = 10000;
+
+    const impactParticles = generateImpactParticles(
+      looser,
+      survivor,
+      this.scenario.integrator.g,
+      this.scale,
+      impactParticleCount,
+    );
+
+    if (!this.particles) {
+      for (const particle of impactParticles) {
+        this.particleIntegrator.particles.push(particle);
+      }
+
+      this.particles = new Particles(
+        this.particleIntegrator.particles,
+        this.scale,
+        this.textureLoader,
+        defaultParticleMax,
+      );
+
+      this.scene.add(this.particles.mesh);
+    } else {
+      const excess =
+        this.particleIntegrator.particles.length +
+        impactParticleCount -
+        this.particles.max;
+
+      if (excess > 0) {
+        this.particleIntegrator.particles.splice(0, excess);
+      }
+
+      for (const particle of impactParticles) {
+        this.particleIntegrator.particles.push(particle);
       }
     }
   };
