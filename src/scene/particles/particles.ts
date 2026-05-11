@@ -7,12 +7,14 @@ class Particles {
   textureLoader: THREE.TextureLoader;
   mesh: THREE.Points;
   max: number;
+  defaultSize: number;
 
   constructor(
     particles: ParticlesType,
     scale: number,
     textureLoader: THREE.TextureLoader,
     max: number = 10000,
+    defaultSize: number = 40,
   ) {
     this.particles = particles;
 
@@ -22,6 +24,8 @@ class Particles {
 
     this.max = max;
 
+    this.defaultSize = defaultSize;
+
     this.mesh = this.createParticleSystem();
   }
 
@@ -30,6 +34,7 @@ class Particles {
 
     const positions = new Float32Array(this.max * 3);
     const colours = new Float32Array(this.max * 3);
+    const sizes = new Float32Array(this.max);
 
     const particlesLength = this.particles.length;
 
@@ -54,6 +59,8 @@ class Particles {
       colours[i * 3] = colour.r;
       colours[i * 3 + 1] = colour.g;
       colours[i * 3 + 2] = colour.b;
+
+      sizes[i] = particle.size ?? this.defaultSize;
     }
 
     geometry.setAttribute(
@@ -66,19 +73,30 @@ class Particles {
       new THREE.Float32BufferAttribute(colours, 3),
     );
 
+    geometry.setAttribute("aSize", new THREE.Float32BufferAttribute(sizes, 1));
+
     geometry.setDrawRange(0, particlesLength);
 
     const particleTexture = this.textureLoader.load("/textures/particle.png");
 
     const material = new THREE.PointsMaterial({
-      size: 40,
+      size: 1,
       map: particleTexture,
       blending: THREE.AdditiveBlending,
       depthTest: true,
       depthWrite: false,
       transparent: true,
       vertexColors: true,
+      sizeAttenuation: true,
     });
+
+    material.onBeforeCompile = (shader) => {
+      shader.vertexShader = `attribute float aSize;\n` + shader.vertexShader;
+      shader.vertexShader = shader.vertexShader.replace(
+        `gl_PointSize = size;`,
+        `gl_PointSize = size * aSize;`,
+      );
+    };
 
     const mesh = new THREE.Points(geometry, material);
     mesh.name = "particles";
@@ -97,6 +115,7 @@ class Particles {
 
     const positions = geometry.attributes["position"].array;
     const colours = geometry.attributes["color"].array;
+    const sizes = geometry.attributes["aSize"].array as Float32Array;
 
     let j = 0;
 
@@ -123,11 +142,14 @@ class Particles {
       colours[j + 1] = colour.g;
       colours[j + 2] = colour.b;
 
+      sizes[i] = particle.size ?? this.defaultSize;
+
       j += 3;
     }
 
     geometry.getAttribute("position").needsUpdate = true;
     geometry.getAttribute("color").needsUpdate = true;
+    geometry.getAttribute("aSize").needsUpdate = true;
   }
 }
 

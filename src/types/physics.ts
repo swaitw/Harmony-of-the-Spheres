@@ -27,6 +27,7 @@ export type ParticleType = {
   position: VectorType;
   velocity: VectorType;
   hsl?: [number, number, number];
+  size?: number;
 };
 
 export type ParticlesType = ParticleType[];

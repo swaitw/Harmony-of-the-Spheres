@@ -92,6 +92,7 @@ const generateImpactParticles = (
       },
       hsl: [hue, 100, Math.min(lightness, 90)],
       lives: 10,
+      size: survivor.radius / 15,
     });
   }
 
