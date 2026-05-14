@@ -22,10 +22,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 0.00005,
-    "tol": 1e-2,
+    "dt": 5e-5,
+    "tol": 0.01,
     "maxDt": 0.01,
-    "minDt": 0.00005,
+    "minDt": 5e-5,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -67,12 +67,12 @@
       "position": {
         "x": 0.004494747940528018,
         "y": 0.0009145777867796766,
-        "z": -0.00006127893755128986
+        "z": -6.127893755128986e-5
       },
       "velocity": {
         "x": -0.00017443876658803292,
         "y": 0.002043973630637931,
-        "z": -0.000004697196039923407
+        "z": -4.697196039923407e-6
       }
     },
     {
@@ -110,7 +110,7 @@
     {
       "name": "Venus",
       "type": "terrestial planet",
-      "m": 0.000002447,
+      "m": 2.447e-6,
       "radius": 86.95652173913044,
       "tilt": 2.63,
       "atmosphere": "beige",
@@ -143,7 +143,7 @@
     {
       "name": "Earth",
       "type": "terrestial planet",
-      "m": 0.000003003,
+      "m": 3.003e-6,
       "radius": 91.74311926605505,
       "tilt": -23.44,
       "atmosphere": "skyblue",
@@ -463,7 +463,7 @@
       }
     },
     {
-      "name": "Churyumov–Gerasimenko",
+      "name": "Churyumov\u2013Gerasimenko",
       "type": "asteroid",
       "m": 5.018804172242e-18,
       "radius": 0.013959347041280806,
@@ -559,5 +559,21 @@
         "z": 0.00019409944701970284
       }
     }
-  ]
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Sun",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
 }

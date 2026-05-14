@@ -29,6 +29,7 @@ import {
   generateImpactParticles,
 } from "../../physics/collisions/collision-utils";
 import { ScenarioMassType } from "../../types/scenario";
+import RingPreview from "../ring-preview/ring-preview";
 import * as TWEEN from "@tweenjs/tween.js";
 
 class PlanetaryScene extends SceneBase {
@@ -41,12 +42,14 @@ class PlanetaryScene extends SceneBase {
     rotatingReferenceFrame: string | undefined;
     integrator: string;
     background: boolean;
+    particlesShapesCount: number;
   };
   utilVector: H3;
   threeUtilVector: THREE.Vector3;
   clock: THREE.Clock;
   particles: Particles | undefined;
   backgroundMesh: THREE.Mesh | null;
+  ringPreview: RingPreview | null;
 
   constructor(webGlCanvas: HTMLCanvasElement, labelsCanvas: HTMLCanvasElement) {
     super(webGlCanvas, labelsCanvas);
@@ -105,9 +108,13 @@ class PlanetaryScene extends SceneBase {
       rotatingReferenceFrame: undefined,
       integrator: this.scenario.integrator.name,
       background: this.scenario.graphics.background,
+      particlesShapesCount:
+        this.scenario.particlesConfiguration?.shapes?.length ?? 0,
     };
 
     this.controls.noPan = true;
+
+    this.ringPreview = null;
   }
 
   collisionCallback = (
@@ -293,6 +300,35 @@ class PlanetaryScene extends SceneBase {
 
     if (this.scenario.camera.rotatingReferenceFrame === "Barycenter") {
       rotatingReferenceFrame = barycenterPosition;
+    }
+
+    const currentShapesCount =
+      this.scenario.particlesConfiguration?.shapes?.length ?? 0;
+
+    if (currentShapesCount > this.previous.particlesShapesCount) {
+      const newShapes = this.scenario.particlesConfiguration!.shapes.slice(
+        this.previous.particlesShapesCount,
+      );
+
+      addParticleSystems(
+        newShapes,
+        this.integrator.masses,
+        this.integrator.g,
+        this.particleIntegrator.particles,
+      );
+
+      if (!this.particles) {
+        this.particles = new Particles(
+          this.particleIntegrator.particles,
+          this.scale,
+          this.textureLoader,
+          this.scenario.particlesConfiguration!.max,
+        );
+
+        this.scene.add(this.particles.mesh);
+      }
+
+      this.previous.particlesShapesCount = currentShapesCount;
     }
 
     if (this.particles) {
@@ -628,6 +664,34 @@ class PlanetaryScene extends SceneBase {
           drawMassLabel,
         );
       }
+    }
+
+    const ringToBeAdded = this.scenario.ringToBeAdded;
+    if (ringToBeAdded?.ringsAreBeingAdded) {
+      if (!this.ringPreview) {
+        this.ringPreview = new RingPreview();
+        this.scene.add(this.ringPreview.mesh);
+      }
+      const ringPrimary = this.integrator.masses.find(
+        (m) => m.name === ringToBeAdded.primary,
+      );
+      const ringPrimaryRotatedPos = ringPrimary?.rotatedPosition ?? {
+        x: 0,
+        y: 0,
+        z: 0,
+      };
+      this.ringPreview.update(
+        ringPrimaryRotatedPos,
+        ringToBeAdded.a,
+        ringToBeAdded.aInterval,
+        ringToBeAdded.i,
+        ringToBeAdded.lAn,
+        this.scale,
+      );
+    } else if (this.ringPreview) {
+      this.scene.remove(this.ringPreview.mesh);
+      this.ringPreview.dispose();
+      this.ringPreview = null;
     }
 
     if (this.scenario.barycenter.display) {

@@ -10,6 +10,7 @@ export type ScenarioCameraType = {
   cameraPosition: string;
   logarithmicDepthBuffer: boolean;
   rotatingReferenceFrame: string;
+  cameraDistanceToOrigoInAu?: number;
   customOrigoCameraPosition?: VectorType;
   customBarycenterCameraPosition?: VectorType;
 };
@@ -97,6 +98,17 @@ export type ParticlesConfigurationType = {
   shapes: ShapesType;
 };
 
+export type RingToBeAddedType = {
+  primary: string;
+  a: number;
+  aInterval: number;
+  i: number;
+  lAn: number;
+  number: number;
+  size: number;
+  ringsAreBeingAdded: boolean;
+};
+
 export type ScenarioLagrangePointsType = {
   selectedMassName: string;
   display: boolean;
@@ -117,4 +129,5 @@ export type ScenarioType = {
   masses: ScenarioMassesType;
   particlesConfiguration?: ParticlesConfigurationType;
   lagrangePoints?: ScenarioLagrangePointsType;
+  ringToBeAdded: RingToBeAddedType;
 };

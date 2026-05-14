@@ -23,7 +23,7 @@
     "name": "RK4",
     "g": 39.5,
     "dt": 0.0001,
-    "tol": 1e-2,
+    "tol": 0.01,
     "maxDt": 0.01,
     "minDt": 0.0001,
     "useBarnesHut": false,
@@ -67,12 +67,12 @@
       "position": {
         "x": -0.002032845625658788,
         "y": -0.002206073207737345,
-        "z": -0.00002596538210853694
+        "z": -2.596538210853694e-5
       },
       "velocity": {
         "x": 0.0020869837917339754,
         "y": -0.0009759759745137204,
-        "z": -0.00004519598528871196
+        "z": -4.519598528871196e-5
       }
     },
     {
@@ -110,7 +110,7 @@
     {
       "name": "Venus",
       "type": "terrestial planet",
-      "m": 0.000002447,
+      "m": 2.447e-6,
       "radius": 86.95652173913044,
       "tilt": 2.63,
       "atmosphere": "beige",
@@ -143,7 +143,7 @@
     {
       "name": "Earth",
       "type": "terrestial planet",
-      "m": 0.000003003,
+      "m": 3.003e-6,
       "radius": 91.74311926605505,
       "tilt": -23.44,
       "atmosphere": "skyblue",
@@ -165,7 +165,7 @@
       "position": {
         "x": 0.9197324105567349,
         "y": -0.4147318273536994,
-        "z": -0.00001750037390352759
+        "z": -1.750037390352759e-5
       },
       "velocity": {
         "x": 2.4645428337894026,
@@ -307,7 +307,7 @@
     {
       "name": "Uranus",
       "type": "gas giant planet",
-      "m": 0.00004365,
+      "m": 4.365e-5,
       "radius": 370.6422018348624,
       "tilt": -82.23,
       "atmosphere": "skyblue",
@@ -340,7 +340,7 @@
     {
       "name": "Neptune",
       "type": "gas giant planet",
-      "m": 0.00005149,
+      "m": 5.149e-5,
       "radius": 355.9633027522936,
       "tilt": -28.32,
       "atmosphere": "skyblue",
@@ -370,5 +370,21 @@
         "z": -0.033446435472504955
       }
     }
-  ]
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Sun",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
 }

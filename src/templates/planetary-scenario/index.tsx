@@ -19,6 +19,7 @@ import MassControls from "../../components/mass-controls";
 import GraphicsControls from "../../components/graphics-controls";
 import BarycenterControls from "../../components/barycenter-controls";
 import LagrangeControls from "../../components/lagrange-controls";
+import RingControls from "../../components/ring-controls";
 import Button from "../../components/button";
 import { modifyScenarioProperty } from "../../state/creators";
 import { getRendererDimensions } from "../../utils/renderer-utils";
@@ -155,7 +156,8 @@ const Scenario = ({
       <section className={planetaryScenarioFooter}>
         <Button
           callback={handlePlayButtonClick}
-          cssModifier={playButtonModifier}>
+          cssModifier={playButtonModifier}
+        >
           <i className={`fa-solid fa-${playing ? "pause" : "play"}`} />
         </Button>
         <Tabs
@@ -166,7 +168,8 @@ const Scenario = ({
           navigationMenuCssModifier={simulationControlsTabs}
           navigationMenuItemCssModifier={simulationControlTab}
           closeButton
-          onTabIndexChangeCallback={onTabIndexChangeCallback}>
+          onTabIndexChangeCallback={onTabIndexChangeCallback}
+        >
           <div data-label="Integrator" data-icon="fa-solid fa-gear">
             <IntegratorControls />
           </div>
@@ -186,6 +189,9 @@ const Scenario = ({
             <LagrangeControls />
           </div>
           <div data-label="Add Mass" data-icon="fa-solid fa-plus"></div>
+          <div data-label="Rings" data-icon="fa-solid fa-ring">
+            <RingControls />
+          </div>
         </Tabs>
       </section>
     </Fragment>
@@ -302,6 +308,15 @@ export const pageQuery = graphql`
             unitName
             unitMassQuantity
             m
+          }
+          ringToBeAdded {
+            primary
+            a
+            aInterval
+            i
+            lAn
+            number
+            size
           }
         }
       }

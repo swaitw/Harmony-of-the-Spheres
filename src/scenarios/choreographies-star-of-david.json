@@ -168,5 +168,21 @@
         "z": 0
       }
     }
-  ]
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Feynman",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
 }

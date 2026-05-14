@@ -22,10 +22,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 0.0000201,
-    "tol": 1e-2,
+    "dt": 2.01e-5,
+    "tol": 0.01,
     "maxDt": 0.00501,
-    "minDt": 0.0000201,
+    "minDt": 2.01e-5,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -51,7 +51,7 @@
     {
       "name": "Earth",
       "type": "terrestial planet",
-      "m": 0.000003003,
+      "m": 3.003e-6,
       "radius": 91.74311926605505,
       "tilt": -23.44,
       "atmosphere": "skyblue",
@@ -114,7 +114,7 @@
       "velocity": {
         "x": -0.0015302219105728125,
         "y": -0.0029886563680599134,
-        "z": 0.000059718901629735255
+        "z": 5.9718901629735255e-5
       }
     },
     {
@@ -181,5 +181,21 @@
         "z": 0.6376301228299784
       }
     }
-  ]
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Sun",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
 }

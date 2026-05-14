@@ -42,6 +42,7 @@ export type ShapeType = {
   maxD: number;
   verticalDispersion?: number;
   hsl?: [number, number, number];
+  size?: number;
 };
 
 export type ShapesType = ShapeType[];
