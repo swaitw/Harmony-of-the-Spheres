@@ -84,7 +84,8 @@ const BarycenterControls = () => {
                           },
                         }),
                       )
-                    }>
+                    }
+                  >
                     {mass.name}
                   </div>
                 ))}
@@ -110,7 +111,8 @@ const BarycenterControls = () => {
                           },
                         }),
                       )
-                    }>
+                    }
+                  >
                     {mass.name}
                   </div>
                 ))}
