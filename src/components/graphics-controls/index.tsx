@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { ScenarioType } from "../../types/scenario";
 import Toggle from "../toggle";
 import Dropdown from "../dropdown";
+import Tooltip from "../tooltip";
 import {
   modifyScenarioProperty,
   modifyScenarioMassProperty,
@@ -31,6 +32,7 @@ const GraphicsControls = () => {
       <div className={control}>
         <div className={controlLabel}>
           <label htmlFor="background">Background</label>
+          <Tooltip text="Shows or hides the starfield backdrop." />
         </div>
         <div className={controlInput}>
           <Toggle
@@ -50,6 +52,7 @@ const GraphicsControls = () => {
       <div className={control}>
         <div className={controlLabel}>
           <label>Mass</label>
+          <Tooltip text="Target a specific body to configure its graphics individually, or choose 'All' to apply settings to every body." />
         </div>
         <div className={controlInput}>
           <Dropdown selectedOption={selectedMass}>
@@ -67,6 +70,7 @@ const GraphicsControls = () => {
       <div className={control}>
         <div className={controlLabel}>
           <label htmlFor="orbits">Orbits</label>
+          <Tooltip text="Shows or hides the predicted orbital ellipses for bodies in the simulation." />
         </div>
         <div className={controlInput}>
           <Toggle
@@ -115,6 +119,7 @@ const GraphicsControls = () => {
       <div className={control}>
         <div className={controlLabel}>
           <label htmlFor="trails">Trails</label>
+          <Tooltip text="Shows or hides the motion trails that trace each body's recent path through space." />
         </div>
         <div className={controlInput}>
           <Toggle
@@ -163,6 +168,7 @@ const GraphicsControls = () => {
       <div className={control}>
         <div className={controlLabel}>
           <label htmlFor="labels">Labels</label>
+          <Tooltip text="Shows or hides the name labels displayed next to each body." />
         </div>
         <div className={controlInput}>
           <Toggle

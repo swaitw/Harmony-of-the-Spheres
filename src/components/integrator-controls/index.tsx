@@ -5,6 +5,7 @@ import Dropdown from "../dropdown";
 import { modifyScenarioProperty } from "../../state/creators";
 import { integrators } from "../../physics/integrators";
 import Slider from "../slider";
+import Tooltip from "../tooltip";
 import {
   control,
   controlLabel,
@@ -26,6 +27,7 @@ const IntegratorControls = () => {
       <div className={control}>
         <div className={controlLabel}>
           <label>Integrator</label>
+          <Tooltip text="The numerical method used to compute gravitational interactions each step. Different integrators trade accuracy for performance." />
         </div>
         <div className={controlInput}>
           <Dropdown selectedOption={integrator.name}>
@@ -52,6 +54,7 @@ const IntegratorControls = () => {
       <div className={control}>
         <div className={controlLabel}>
           <label>Gravitational Constant</label>
+          <Tooltip text="Scales the strength of gravity. Negative values invert gravitational attraction into repulsion." />
         </div>
         <div className={controlInput}>
           <Slider
@@ -73,6 +76,7 @@ const IntegratorControls = () => {
       <div className={control}>
         <div className={controlLabel}>
           <label>Time Step</label>
+          <Tooltip text="Duration of each simulation step. Smaller steps increase accuracy at the cost of simulation speed." />
         </div>
         <div className={controlInput}>
           <Slider
@@ -94,6 +98,7 @@ const IntegratorControls = () => {
       <div className={control}>
         <div className={controlLabel}>
           <label>Softening Constant</label>
+          <Tooltip text="Limits gravitational force at very close distances to prevent numerical instability when bodies pass near each other." />
         </div>
         <div className={controlInput}>
           <Slider

@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { ScenarioType } from "../../types/scenario";
 import Toggle from "../toggle";
 import Dropdown from "../dropdown";
+import Tooltip from "../tooltip";
 import { modifyScenarioProperty } from "../../state/creators";
 import {
   control,
@@ -25,6 +26,7 @@ const BarycenterControls = () => {
       <div className={control}>
         <div className={controlLabel}>
           <label htmlFor="barycenter-label">Display Label</label>
+          <Tooltip text="Shows a labelled marker at the barycenter position in the scene." />
         </div>
         <div className={controlInput}>
           <Toggle
@@ -44,6 +46,7 @@ const BarycenterControls = () => {
       <div className={control}>
         <div className={controlLabel}>
           <label htmlFor="system-barycenter">System Barycenter</label>
+          <Tooltip text="When enabled, uses the center of mass of the entire system. When disabled, you can choose two specific masses to compute a two-body barycenter." />
         </div>
         <div className={controlInput}>
           <Toggle
@@ -68,6 +71,7 @@ const BarycenterControls = () => {
           <div className={control}>
             <div className={controlLabel}>
               <label>Mass One</label>
+              <Tooltip text="First body used to compute the two-body barycenter." />
             </div>
             <div className={controlInput}>
               <Dropdown selectedOption={barycenter.barycenterMassOne}>
@@ -95,6 +99,7 @@ const BarycenterControls = () => {
           <div className={control}>
             <div className={controlLabel}>
               <label>Mass Two</label>
+              <Tooltip text="Second body used to compute the two-body barycenter." />
             </div>
             <div className={controlInput}>
               <Dropdown selectedOption={barycenter.barycenterMassTwo}>

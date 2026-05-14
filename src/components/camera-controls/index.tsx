@@ -7,6 +7,7 @@ import {
 } from "../../types/scenario";
 import Dropdown from "../dropdown";
 import { modifyScenarioProperty } from "../../state/creators";
+import Tooltip from "../tooltip";
 import {
   control,
   controlLabel,
@@ -44,6 +45,7 @@ const CameraControls = () => {
       <div className={control}>
         <div className={controlLabel}>
           <label>Rotating Reference Frame</label>
+          <Tooltip text="The body the simulation co-rotates with. Choosing a body here makes orbital motion visible relative to that body." />
         </div>
         <div className={controlInput}>
           <Dropdown selectedOption={camera.rotatingReferenceFrame}>
@@ -94,6 +96,7 @@ const CameraControls = () => {
       <div className={control}>
         <div className={controlLabel}>
           <label>Camera Focus</label>
+          <Tooltip text="The body the camera tracks. The camera will orbit around and point toward this body." />
         </div>
         <div className={controlInput}>
           <Dropdown selectedOption={camera.cameraFocus}>

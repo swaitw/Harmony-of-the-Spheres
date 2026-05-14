@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { ScenarioType } from "../../types/scenario";
 import Toggle from "../toggle";
 import Dropdown from "../dropdown";
+import Tooltip from "../tooltip";
 import { modifyScenarioProperty } from "../../state/creators";
 import {
   control,
@@ -51,6 +52,7 @@ const LagrangeControls = () => {
       <div className={control}>
         <div className={controlLabel}>
           <label>Mass</label>
+          <Tooltip text="Select a body to visualise its Lagrange points relative to its primary body." />
         </div>
         <div className={controlInput}>
           <Dropdown selectedOption={selectedMassName || "Select a mass"}>
@@ -86,6 +88,7 @@ const LagrangeControls = () => {
             <div className={control}>
               <div className={controlLabel}>
                 <label>Show Lagrange Points</label>
+                <Tooltip text="Displays L1–L5, the five gravitational equilibrium points of the two-body system formed by the selected mass and its primary." />
               </div>
               <div className={controlInput}>
                 <Toggle

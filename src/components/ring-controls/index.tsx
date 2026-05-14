@@ -10,6 +10,7 @@ import {
 import Dropdown from "../dropdown";
 import Slider from "../slider";
 import Button from "../button";
+import Tooltip from "../tooltip";
 import { modifyScenarioProperty } from "../../state/creators";
 import {
   control,
@@ -183,6 +184,7 @@ const RingControls = () => {
       <div className={control}>
         <div className={controlLabel}>
           <label>Primary</label>
+          <Tooltip text="The body around which the ring system will orbit." />
         </div>
         <div className={controlInput}>
           <Dropdown selectedOption={camera.cameraFocus}>
@@ -197,6 +199,7 @@ const RingControls = () => {
       <div className={control}>
         <div className={controlLabel}>
           <label>Semi-major Axis</label>
+          <Tooltip text="Average orbital radius of ring particles from the primary." />
         </div>
         <div className={controlInput}>
           <Slider
@@ -213,6 +216,7 @@ const RingControls = () => {
       <div className={control}>
         <div className={controlLabel}>
           <label>Semi-major Axis Interval</label>
+          <Tooltip text="Half-width of the ring; particles are spread from (a − interval) to (a + interval), giving the ring its radial thickness." />
         </div>
         <div className={controlInput}>
           <Slider
@@ -229,6 +233,7 @@ const RingControls = () => {
       <div className={control}>
         <div className={controlLabel}>
           <label>Inclination</label>
+          <Tooltip text="Tilt of the ring plane relative to the reference plane, in degrees." />
         </div>
         <div className={controlInput}>
           <Slider
@@ -245,6 +250,7 @@ const RingControls = () => {
       <div className={control}>
         <div className={controlLabel}>
           <label>Longitude of Ascending Node</label>
+          <Tooltip text="Rotates the ring around the primary's polar axis, determining where the ring plane crosses the reference plane." />
         </div>
         <div className={controlInput}>
           <Slider
@@ -261,6 +267,7 @@ const RingControls = () => {
       <div className={control}>
         <div className={controlLabel}>
           <label>Particle Size</label>
+          <Tooltip text="Visual radius of each ring particle." />
         </div>
         <div className={controlInput}>
           <Slider
@@ -277,6 +284,7 @@ const RingControls = () => {
       <div className={control}>
         <div className={controlLabel}>
           <label>Number of Particles</label>
+          <Tooltip text="Total particle count in the ring. More particles produce a denser appearance but require more computing power." />
         </div>
         <div className={controlInput}>
           <Slider
