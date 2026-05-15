@@ -224,7 +224,8 @@ const MassControls = () => {
                         value: { ...massBeingModified, name: mass.name },
                       }),
                     )
-                  }>
+                  }
+                >
                   {mass.name}
                 </div>
               );
@@ -238,7 +239,8 @@ const MassControls = () => {
       <Tabs
         navigationMenuCssModifier={massControlTabsMenuModifier}
         navigationMenuItemCssModifier={massControlTabsMenuItemModifier}
-        onOpenTabIndex={0}>
+        onOpenTabIndex={0}
+      >
         <div data-label="Mass">
           <div className={control}>
             <div className={controlLabel}>
@@ -261,7 +263,8 @@ const MassControls = () => {
                             },
                           }),
                         )
-                      }>
+                      }
+                    >
                       {massData.unitName}
                     </div>
                   );
@@ -305,7 +308,8 @@ const MassControls = () => {
                     name: massBeingModified.name,
                   }),
                 )
-              }>
+              }
+            >
               Update Mass
             </Button>
           </div>

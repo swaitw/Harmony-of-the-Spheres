@@ -58,7 +58,8 @@ const CameraControls = () => {
                     value: { ...camera, rotatingReferenceFrame: "Origo" },
                   }),
                 )
-              }>
+              }
+            >
               Origo
             </div>
             <div
@@ -69,7 +70,8 @@ const CameraControls = () => {
                     value: { ...camera, rotatingReferenceFrame: "Barycenter" },
                   }),
                 )
-              }>
+              }
+            >
               Barycenter
             </div>
             {masses.map((mass) => {
@@ -83,7 +85,8 @@ const CameraControls = () => {
                         value: { ...camera, rotatingReferenceFrame: mass.name },
                       }),
                     )
-                  }>
+                  }
+                >
                   {mass.name}
                 </div>
               );
@@ -106,7 +109,8 @@ const CameraControls = () => {
                     value: { ...camera, cameraFocus: "Origo" },
                   }),
                 )
-              }>
+              }
+            >
               Origo
             </div>
             <div
@@ -117,7 +121,8 @@ const CameraControls = () => {
                     value: { ...camera, cameraFocus: "Barycenter" },
                   }),
                 )
-              }>
+              }
+            >
               Barycenter
             </div>
             {masses.map((mass) => {
@@ -131,7 +136,8 @@ const CameraControls = () => {
                         value: { ...camera, cameraFocus: mass.name },
                       }),
                     )
-                  }>
+                  }
+                >
                   {mass.name}
                 </div>
               );

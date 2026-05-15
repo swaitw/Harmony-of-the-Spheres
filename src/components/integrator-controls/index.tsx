@@ -43,7 +43,8 @@ const IntegratorControls = () => {
                         value: { ...integrator, name: integratorName },
                       }),
                     )
-                  }>
+                  }
+                >
                   {integratorName}
                 </div>
               );

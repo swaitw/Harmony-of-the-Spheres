@@ -67,7 +67,8 @@ const LagrangeControls = () => {
                       value: { selectedMassName: mass.name, display: false },
                     }),
                   )
-                }>
+                }
+              >
                 {mass.name}
               </div>
             ))}
