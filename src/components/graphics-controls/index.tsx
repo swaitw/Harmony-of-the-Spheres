@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { ScenarioType } from "../../types/scenario";
 import Toggle from "../toggle";
@@ -12,6 +12,7 @@ import {
   control,
   controlLabel,
   controlInput,
+  controlsGrid,
 } from "../../theme/controls.module.css";
 
 const GraphicsControls = () => {
@@ -27,7 +28,7 @@ const GraphicsControls = () => {
   const currentMass = masses.find((mass) => mass.name === selectedMass);
 
   return (
-    <Fragment>
+    <div className={controlsGrid}>
       <h2>Graphics</h2>
       <div className={control}>
         <div className={controlLabel}>
@@ -214,7 +215,7 @@ const GraphicsControls = () => {
           />
         </div>
       </div>
-    </Fragment>
+    </div>
   );
 };
 

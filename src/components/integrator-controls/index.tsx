@@ -1,4 +1,4 @@
-import React, { Fragment, memo } from "react";
+import React, { memo } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { ScenarioType } from "../../types/scenario";
 import Dropdown from "../dropdown";
@@ -10,6 +10,7 @@ import {
   control,
   controlLabel,
   controlInput,
+  controlsGrid,
 } from "../../theme/controls.module.css";
 
 const IntegratorControls = () => {
@@ -22,7 +23,7 @@ const IntegratorControls = () => {
   });
 
   return (
-    <Fragment>
+    <div className={controlsGrid}>
       <h2>Integrator</h2>
       <div className={control}>
         <div className={controlLabel}>
@@ -42,8 +43,7 @@ const IntegratorControls = () => {
                         value: { ...integrator, name: integratorName },
                       }),
                     )
-                  }
-                >
+                  }>
                   {integratorName}
                 </div>
               );
@@ -120,7 +120,7 @@ const IntegratorControls = () => {
           />
         </div>
       </div>
-    </Fragment>
+    </div>
   );
 };
 

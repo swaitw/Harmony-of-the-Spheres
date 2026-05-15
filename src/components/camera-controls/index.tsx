@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import {
   ScenarioType,
@@ -12,6 +12,7 @@ import {
   control,
   controlLabel,
   controlInput,
+  controlsGrid,
 } from "../../theme/controls.module.css";
 
 const shouldSelectorNotRun = (
@@ -40,7 +41,7 @@ const CameraControls = () => {
   }, shouldSelectorNotRun);
 
   return (
-    <Fragment>
+    <div className={controlsGrid}>
       <h2>Camera</h2>
       <div className={control}>
         <div className={controlLabel}>
@@ -57,8 +58,7 @@ const CameraControls = () => {
                     value: { ...camera, rotatingReferenceFrame: "Origo" },
                   }),
                 )
-              }
-            >
+              }>
               Origo
             </div>
             <div
@@ -69,8 +69,7 @@ const CameraControls = () => {
                     value: { ...camera, rotatingReferenceFrame: "Barycenter" },
                   }),
                 )
-              }
-            >
+              }>
               Barycenter
             </div>
             {masses.map((mass) => {
@@ -84,8 +83,7 @@ const CameraControls = () => {
                         value: { ...camera, rotatingReferenceFrame: mass.name },
                       }),
                     )
-                  }
-                >
+                  }>
                   {mass.name}
                 </div>
               );
@@ -108,8 +106,7 @@ const CameraControls = () => {
                     value: { ...camera, cameraFocus: "Origo" },
                   }),
                 )
-              }
-            >
+              }>
               Origo
             </div>
             <div
@@ -120,8 +117,7 @@ const CameraControls = () => {
                     value: { ...camera, cameraFocus: "Barycenter" },
                   }),
                 )
-              }
-            >
+              }>
               Barycenter
             </div>
             {masses.map((mass) => {
@@ -135,8 +131,7 @@ const CameraControls = () => {
                         value: { ...camera, cameraFocus: mass.name },
                       }),
                     )
-                  }
-                >
+                  }>
                   {mass.name}
                 </div>
               );
@@ -144,7 +139,7 @@ const CameraControls = () => {
           </Dropdown>
         </div>
       </div>
-    </Fragment>
+    </div>
   );
 };
 

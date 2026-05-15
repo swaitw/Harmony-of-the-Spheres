@@ -9,6 +9,7 @@ import {
   control,
   controlLabel,
   controlInput,
+  controlsGrid,
 } from "../../theme/controls.module.css";
 
 const LagrangeControls = () => {
@@ -47,7 +48,7 @@ const LagrangeControls = () => {
   });
 
   return (
-    <Fragment>
+    <div className={controlsGrid}>
       <h2>Lagrange Points</h2>
       <div className={control}>
         <div className={controlLabel}>
@@ -66,8 +67,7 @@ const LagrangeControls = () => {
                       value: { selectedMassName: mass.name, display: false },
                     }),
                   )
-                }
-              >
+                }>
                 {mass.name}
               </div>
             ))}
@@ -115,7 +115,7 @@ const LagrangeControls = () => {
             points.
           </p>
         ))}
-    </Fragment>
+    </div>
   );
 };
 

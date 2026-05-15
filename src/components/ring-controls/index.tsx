@@ -1,4 +1,4 @@
-import React, { ChangeEvent, Fragment, useEffect, useRef } from "react";
+import React, { ChangeEvent, useEffect, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import {
   ScenarioType,
@@ -16,6 +16,7 @@ import {
   control,
   controlLabel,
   controlInput,
+  controlsGrid,
 } from "../../theme/controls.module.css";
 
 const SCENE_SCALE = 2100000;
@@ -179,7 +180,7 @@ const RingControls = () => {
   };
 
   return (
-    <Fragment>
+    <div className={controlsGrid}>
       <h2>Rings</h2>
       <div className={control}>
         <div className={controlLabel}>
@@ -299,7 +300,7 @@ const RingControls = () => {
         </div>
       </div>
       <Button callback={onAddRing}>Add Ring</Button>
-    </Fragment>
+    </div>
   );
 };
 

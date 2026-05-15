@@ -9,6 +9,7 @@ import {
   control,
   controlLabel,
   controlInput,
+  controlsGrid,
 } from "../../theme/controls.module.css";
 
 const BarycenterControls = () => {
@@ -21,7 +22,7 @@ const BarycenterControls = () => {
   });
 
   return (
-    <Fragment>
+    <div className={controlsGrid}>
       <h2>Barycenter</h2>
       <div className={control}>
         <div className={controlLabel}>
@@ -88,8 +89,7 @@ const BarycenterControls = () => {
                           },
                         }),
                       )
-                    }
-                  >
+                    }>
                     {mass.name}
                   </div>
                 ))}
@@ -116,8 +116,7 @@ const BarycenterControls = () => {
                           },
                         }),
                       )
-                    }
-                  >
+                    }>
                     {mass.name}
                   </div>
                 ))}
@@ -126,7 +125,7 @@ const BarycenterControls = () => {
           </div>
         </Fragment>
       )}
-    </Fragment>
+    </div>
   );
 };
 

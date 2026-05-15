@@ -1,4 +1,4 @@
-import React, { useCallback, Fragment, ChangeEvent } from "react";
+import React, { useCallback, ChangeEvent } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import Dropdown from "../dropdown";
 import {
@@ -10,6 +10,8 @@ import {
   control,
   controlLabel,
   controlInput,
+  controlsGrid,
+  controlFullWidth,
 } from "../../theme/controls.module.css";
 import { ScenarioStateType } from "../../state/index";
 import massesData from "../../physics/masses";
@@ -194,15 +196,15 @@ const MassControls = () => {
 
   if (!masses.length) {
     return (
-      <Fragment>
+      <div className={controlsGrid}>
         <h2>Masses</h2>
         <p>There are no masses to modify.</p>
-      </Fragment>
+      </div>
     );
   }
 
   return (
-    <Fragment>
+    <div className={controlsGrid}>
       <h2>Masses</h2>
       <div className={control}>
         <div className={controlLabel}>
@@ -222,8 +224,7 @@ const MassControls = () => {
                         value: { ...massBeingModified, name: mass.name },
                       }),
                     )
-                  }
-                >
+                  }>
                   {mass.name}
                 </div>
               );
@@ -231,14 +232,13 @@ const MassControls = () => {
           </Dropdown>
         </div>
       </div>
-      <div className={control}>
+      <div className={`${control} ${controlFullWidth}`}>
         <Button callback={deleteMassCallback}>Delete Mass</Button>
       </div>
       <Tabs
         navigationMenuCssModifier={massControlTabsMenuModifier}
         navigationMenuItemCssModifier={massControlTabsMenuItemModifier}
-        onOpenTabIndex={0}
-      >
+        onOpenTabIndex={0}>
         <div data-label="Mass">
           <div className={control}>
             <div className={controlLabel}>
@@ -261,8 +261,7 @@ const MassControls = () => {
                             },
                           }),
                         )
-                      }
-                    >
+                      }>
                       {massData.unitName}
                     </div>
                   );
@@ -295,7 +294,7 @@ const MassControls = () => {
               />
             </div>
           </div>
-          <div className={control}>
+          <div className={`${control} ${controlFullWidth}`}>
             <Button
               callback={() =>
                 dispatch(
@@ -306,8 +305,7 @@ const MassControls = () => {
                     name: massBeingModified.name,
                   }),
                 )
-              }
-            >
+              }>
               Update Mass
             </Button>
           </div>
@@ -417,7 +415,7 @@ const MassControls = () => {
           </div>
         </div>
       </Tabs>
-    </Fragment>
+    </div>
   );
 };
 
