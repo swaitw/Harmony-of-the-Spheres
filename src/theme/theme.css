@@ -11,9 +11,9 @@
   /* Font variables */
 
   --font-family: Verdana, Geneva, Tahoma, sans-serif;
-  --root-font-size: 62.5%;
+  --root-font-size: 68.75%;
   --bread-text-font-size: 1.2rem;
-  --tab-font-size: 1.2rem;
+  --tab-font-size: 1.5rem;
   --font-color: var(--theme-color-5);
 
   /* Font header variables */
@@ -29,11 +29,11 @@
   /* Layout variables */
 
   --page-header-height: 5rem;
-  --page-footer-height: 6rem;
+  --page-footer-height: 7.5rem;
   --scenario-controls-tabs-width-small-screens: 30rem;
   --scenario-controls-width-small-screens: 100%;
   --scenario-controls-width-medium-screens: 20rem;
-  --scenario-controls-width-large-screens: 40rem;
+  --scenario-controls-width-large-screens: 55rem;
   --padding: 1rem;
   --border: 1px solid var(--theme-color-4);
 

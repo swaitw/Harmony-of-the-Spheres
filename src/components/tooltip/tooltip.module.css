@@ -8,7 +8,7 @@
 }
 
 .tooltipIcon {
-  font-size: 1.1rem;
+  font-size: 1.8rem;
   opacity: 0.5;
   color: var(--font-color);
   transition: opacity 0.15s ease;
@@ -21,9 +21,9 @@
 .tooltipBox {
   background: #1a1a26;
   color: #d9d9d9;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   line-height: 1.5;
-  padding: 0.7rem 1rem;
+  padding: 0.8rem 1.1rem;
   border-radius: 4px;
   width: 220px;
   pointer-events: none;

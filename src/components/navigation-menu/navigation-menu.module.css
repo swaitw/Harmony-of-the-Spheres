@@ -9,6 +9,7 @@
 
 .navigation-menu-item {
   padding: 1rem;
+  gap: 0.35rem;
   cursor: pointer;
   display: flex;
   flex-direction: column;
