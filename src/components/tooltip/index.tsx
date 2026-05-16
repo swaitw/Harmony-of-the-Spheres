@@ -1,55 +1,16 @@
-import React, { useRef, useState, useCallback, useEffect } from "react";
-import { createPortal } from "react-dom";
+import React, { useState, useCallback } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 import { tooltipWrapper, tooltipIcon, tooltipBox } from "./tooltip.module.css";
 
 type Props = {
   text: string;
 };
 
-const TOOLTIP_WIDTH = 220;
-const TOOLTIP_MARGIN = 8;
-
 const Tooltip = ({ text }: Props) => {
-  const iconRef = useRef<HTMLElement>(null);
-  const [style, setStyle] = useState<React.CSSProperties | null>(null);
+  const [visible, setVisible] = useState(false);
 
-  const show = useCallback(() => {
-    if (!iconRef.current) return;
-    const rect = iconRef.current.getBoundingClientRect();
-    const viewportWidth = window.innerWidth;
-    const viewportHeight = window.innerHeight;
-
-    const rawLeft = rect.left + rect.width / 2 - TOOLTIP_WIDTH / 2;
-    const clampedLeft = Math.max(
-      TOOLTIP_MARGIN,
-      Math.min(rawLeft, viewportWidth - TOOLTIP_WIDTH - TOOLTIP_MARGIN),
-    );
-
-    const spaceAbove = rect.top;
-    const spaceBelow = viewportHeight - rect.bottom;
-    const placement = spaceAbove >= spaceBelow ? "above" : "below";
-
-    setStyle({
-      position: "fixed",
-      left: clampedLeft,
-      ...(placement === "above"
-        ? { bottom: viewportHeight - rect.top + TOOLTIP_MARGIN }
-        : { top: rect.bottom + TOOLTIP_MARGIN }),
-    });
-  }, []);
-
-  const hide = useCallback(() => setStyle(null), []);
-
-  useEffect(() => hide, [hide]);
-
-  const portal =
-    style !== null &&
-    createPortal(
-      <span className={tooltipBox} style={style}>
-        {text}
-      </span>,
-      document.body,
-    );
+  const show = useCallback(() => setVisible(true), []);
+  const hide = useCallback(() => setVisible(false), []);
 
   return (
     <span
@@ -59,8 +20,20 @@ const Tooltip = ({ text }: Props) => {
       onFocus={show}
       onBlur={hide}
     >
-      <i ref={iconRef} className={`fa-solid fa-circle-info ${tooltipIcon}`} />
-      {portal}
+      <i className={`fa-solid fa-circle-info ${tooltipIcon}`} />
+      <AnimatePresence>
+        {visible && (
+          <motion.span
+            className={tooltipBox}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.15 }}
+          >
+            {text}
+          </motion.span>
+        )}
+      </AnimatePresence>
     </span>
   );
 };

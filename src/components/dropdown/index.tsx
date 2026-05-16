@@ -10,6 +10,7 @@ import {
   dropdownWrapper,
   dropdownSelectedOption,
   dropdownOptionsWrapper,
+  dropdownOptionsWrapperClosing,
   rotatedChevron,
 } from "./dropdown.module.css";
 
@@ -20,10 +21,22 @@ type DropdownProps = {
 
 export default ({ children, selectedOption }: DropdownProps): ReactElement => {
   const [displayOptions, setDisplayOptions] = useState(false);
+  const [isClosing, setIsClosing] = useState(false);
 
   const handleOpenOptions = useCallback(() => {
-    setDisplayOptions(!displayOptions);
-  }, [displayOptions, setDisplayOptions]);
+    if (displayOptions) {
+      setIsClosing(true);
+    } else {
+      setDisplayOptions(true);
+    }
+  }, [displayOptions]);
+
+  const handleAnimationEnd = useCallback(() => {
+    if (isClosing) {
+      setIsClosing(false);
+      setDisplayOptions(false);
+    }
+  }, [isClosing]);
 
   const optionsWrapper = useRef(null);
   const selectedOptionRef = useRef(null);
@@ -31,7 +44,9 @@ export default ({ children, selectedOption }: DropdownProps): ReactElement => {
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (event.target !== selectedOptionRef.current) {
-        setDisplayOptions(false);
+        if (displayOptions && !isClosing) {
+          setIsClosing(true);
+        }
       }
     };
 
@@ -39,7 +54,7 @@ export default ({ children, selectedOption }: DropdownProps): ReactElement => {
     return () => {
       document.removeEventListener("click", handleClickOutside);
     };
-  }, [selectedOptionRef, setDisplayOptions, displayOptions]);
+  }, [selectedOptionRef, displayOptions, isClosing]);
 
   return (
     <div className={dropdownWrapper}>
@@ -56,7 +71,13 @@ export default ({ children, selectedOption }: DropdownProps): ReactElement => {
         />
       </div>
       {displayOptions && (
-        <div ref={optionsWrapper} className={dropdownOptionsWrapper}>
+        <div
+          ref={optionsWrapper}
+          className={`${dropdownOptionsWrapper} ${
+            isClosing ? dropdownOptionsWrapperClosing : ""
+          }`}
+          onAnimationEnd={handleAnimationEnd}
+        >
           {children}
         </div>
       )}

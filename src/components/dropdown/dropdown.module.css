@@ -31,6 +31,28 @@
   transform: rotate(180deg);
 }
 
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+  to {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  to {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+}
+
 .dropdown-options-wrapper {
   position: absolute;
   z-index: 2;
@@ -41,6 +63,12 @@
   max-height: 150px;
   overflow: auto;
   cursor: pointer;
+  transform-origin: top;
+  animation: slideDown 0.2s ease forwards;
+}
+
+.dropdown-options-wrapper-closing {
+  animation: slideUp 0.2s ease forwards;
 }
 
 .dropdown-options-wrapper * {

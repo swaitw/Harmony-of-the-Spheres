@@ -7,6 +7,7 @@ import React, {
   Fragment,
   useEffect,
 } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 import NavigationMenu from "../navigation-menu";
 import NavigationMenuItem from "../navigation-menu/navigation-menu-item";
 
@@ -19,6 +20,7 @@ type Props = {
   closeButton?: boolean;
   onOpenTabIndex?: number;
   onTabIndexChangeCallback?: (selectedTabIndex: number) => void;
+  animate?: boolean;
 };
 
 const Tabs = ({
@@ -30,6 +32,7 @@ const Tabs = ({
   closeButton,
   onOpenTabIndex,
   onTabIndexChangeCallback,
+  animate = false,
 }: Props): ReactElement => {
   const [selectedTabIndex, setSelectedTabIndex] = useState(
     typeof onOpenTabIndex !== "undefined" ? onOpenTabIndex : -1,
@@ -74,25 +77,30 @@ const Tabs = ({
           );
         })}
       </NavigationMenu>
-      {selectedTabIndex !== -1 ? (
-        <div
-          className={
-            contentWrapperCssClassName ? contentWrapperCssClassName : ""
-          }
-        >
-          {closeButton && (
-            <i
-              className={`fa-solid fa-xmark ${
-                contentWrapperCloseButtonCssClassName
-                  ? contentWrapperCloseButtonCssClassName
-                  : ""
-              }`}
-              onClick={() => setSelectedTabIndex(-1)}
-            />
-          )}
-          {content[selectedTabIndex]}
-        </div>
-      ) : null}
+      <AnimatePresence>
+        {selectedTabIndex !== -1 && (
+          <motion.div
+            key="tab-content"
+            className={contentWrapperCssClassName ?? ""}
+            initial={animate ? { x: "100%" } : false}
+            animate={animate ? { x: 0 } : {}}
+            exit={animate ? { x: "100%" } : {}}
+            transition={{ duration: 0.35, ease: [0.4, 0, 0.2, 1] }}
+          >
+            {closeButton && (
+              <i
+                className={`fa-solid fa-xmark ${
+                  contentWrapperCloseButtonCssClassName
+                    ? contentWrapperCloseButtonCssClassName
+                    : ""
+                }`}
+                onClick={() => setSelectedTabIndex(-1)}
+              />
+            )}
+            {content[selectedTabIndex]}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </Fragment>
   );
 };

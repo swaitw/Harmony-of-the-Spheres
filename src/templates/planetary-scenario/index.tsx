@@ -168,6 +168,7 @@ const Scenario = ({
           navigationMenuCssModifier={simulationControlsTabs}
           navigationMenuItemCssModifier={simulationControlTab}
           closeButton
+          animate
           onTabIndexChangeCallback={onTabIndexChangeCallback}
         >
           <div data-label="Integrator" data-icon="fa-solid fa-gear">
