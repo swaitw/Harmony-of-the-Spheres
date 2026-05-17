@@ -2,13 +2,13 @@
   position: relative;
   display: inline-flex;
   align-items: center;
-  margin-left: 0.6rem;
+  margin-left: 0.45rem;
   cursor: default;
   vertical-align: middle;
 }
 
 .tooltipIcon {
-  font-size: 1.8rem;
+  font-size: 1.35rem;
   opacity: 0.5;
   color: var(--font-color);
   transition: opacity 0.15s ease;
@@ -21,14 +21,14 @@
 .tooltipBox {
   position: absolute;
   top: 0;
-  left: 4rem;
+  left: 3rem;
   background: #1a1a26;
   color: #d9d9d9;
-  font-size: 1.3rem;
+  font-size: 0.975rem;
   line-height: 1.5;
-  padding: 0.8rem 1.1rem;
+  padding: 0.6rem 0.825rem;
   border-radius: 4px;
-  width: 220px;
+  width: 165px;
   pointer-events: none;
   white-space: normal;
   z-index: 99999;

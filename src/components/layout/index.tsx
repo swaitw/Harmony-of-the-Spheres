@@ -20,11 +20,18 @@ import "../../assets/fontawesome/css/solid.min.css";
 type Props = {
   children: ReactNode;
   currentPage: string;
+  cssModifier?: string;
 };
 
-const Layout = ({ children, currentPage }: Props): ReactElement => {
+const Layout = ({
+  children,
+  currentPage,
+  cssModifier,
+}: Props): ReactElement => {
   return (
-    <section className={pageWrapper}>
+    <section
+      className={`${pageWrapper}${cssModifier ? ` ${cssModifier}` : ""}`}
+    >
       <header className={pageHeader}>
         <Link to="/scenarios/all/" className={pageTitle}>
           <h1>Gravity Simulator</h1>

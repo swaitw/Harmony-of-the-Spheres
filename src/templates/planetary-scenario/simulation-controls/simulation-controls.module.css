@@ -28,13 +28,13 @@
 .simulation-control-tab {
   height: var(--page-footer-height);
   flex-shrink: 0;
-  min-width: 7rem;
-  padding: 1.1rem 1.5rem;
+  min-width: 5.25rem;
+  padding: 0.825rem 1.125rem;
   border-right: var(--border);
 }
 
 .simulation-control-tab i {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .simulation-control-tab:last-child {
@@ -53,6 +53,7 @@
   border-top: var(--border);
   font-size: 1.2rem;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .full-screen-canvas-element {
@@ -99,7 +100,17 @@
 }
 
 .simulation-controls-content-wrapper-close-button {
-  float: right;
-  margin-bottom: 2rem;
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  font-size: 1.75rem;
+  color: var(--theme-color-5);
   cursor: pointer;
+  line-height: 1;
+  z-index: 2;
+  transition: color 0.15s;
+}
+
+.simulation-controls-content-wrapper-close-button:hover {
+  color: var(--theme-color-6);
 }

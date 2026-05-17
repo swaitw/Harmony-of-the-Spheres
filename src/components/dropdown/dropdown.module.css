@@ -8,8 +8,8 @@
   box-sizing: border-box;
   background-color: var(--theme-color-3);
   border: var(--border);
-  padding: 0.9rem 1.2rem;
-  font-size: 1.3rem;
+  padding: 0.675rem 0.9rem;
+  font-size: 0.975rem;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
@@ -22,7 +22,7 @@
 }
 
 .dropdown-selected-option i {
-  font-size: 1rem;
+  font-size: 0.75rem;
   color: var(--theme-color-5);
   transition: transform 0.15s;
 }
@@ -60,7 +60,7 @@
   background-color: var(--theme-color-2);
   border: var(--border);
   border-top: none;
-  max-height: 150px;
+  max-height: 113px;
   overflow: auto;
   cursor: pointer;
   transform-origin: top;
@@ -73,8 +73,8 @@
 
 .dropdown-options-wrapper * {
   display: block;
-  padding: 0.9rem 1.2rem;
-  font-size: 1.3rem;
+  padding: 0.675rem 0.9rem;
+  font-size: 0.975rem;
   border-bottom: 1px solid var(--theme-color-4);
   transition:
     background-color 0.15s,

@@ -18,8 +18,10 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, 200px);
   justify-content: center;
-  grid-gap: 10rem;
+  column-gap: 10rem;
+  row-gap: 5rem;
   margin-top: 4rem;
+  padding: 0 2rem 4rem;
 }
 
 .scenarios-list-item {
@@ -42,4 +44,15 @@
   text-align: center;
   padding: 0.5rem;
   border-radius: 0.5rem;
+}
+
+@media only screen and (max-width: 599px) {
+  .scenarios-list-wrapper {
+    grid-template-columns: repeat(auto-fit, 250px);
+    row-gap: 3rem;
+  }
+
+  .scenarios-list-item {
+    height: 250px;
+  }
 }

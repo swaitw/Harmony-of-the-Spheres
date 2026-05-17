@@ -12,8 +12,8 @@
 
   --font-family: Verdana, Geneva, Tahoma, sans-serif;
   --root-font-size: 68.75%;
-  --bread-text-font-size: 1.2rem;
-  --tab-font-size: 1.5rem;
+  --bread-text-font-size: 1.1rem;
+  --tab-font-size: 1.25rem;
   --font-color: var(--theme-color-5);
 
   /* Font header variables */
@@ -28,12 +28,12 @@
 
   /* Layout variables */
 
-  --page-header-height: 5rem;
-  --page-footer-height: 7.5rem;
+  --page-header-height: 4.625rem;
+  --page-footer-height: 5.625rem;
   --scenario-controls-tabs-width-small-screens: 30rem;
   --scenario-controls-width-small-screens: 100%;
-  --scenario-controls-width-medium-screens: 20rem;
-  --scenario-controls-width-large-screens: 55rem;
+  --scenario-controls-width-medium-screens: 15rem;
+  --scenario-controls-width-large-screens: 41.25rem;
   --padding: 1rem;
   --border: 1px solid var(--theme-color-4);
 
