@@ -151,6 +151,18 @@ class Particles {
     geometry.getAttribute("color").needsUpdate = true;
     geometry.getAttribute("aSize").needsUpdate = true;
   }
+
+  public dispose(): void {
+    this.mesh.geometry.dispose();
+
+    const material = this.mesh.material as THREE.PointsMaterial;
+
+    if (material.map) {
+      material.map.dispose();
+    }
+
+    material.dispose();
+  }
 }
 
 export default Particles;

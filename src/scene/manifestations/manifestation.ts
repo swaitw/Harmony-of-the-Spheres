@@ -352,9 +352,8 @@ class Manifestation {
       return;
     }
 
-    let geometry = trail.geometry;
-
-    geometry.dispose();
+    trail.geometry.dispose();
+    (trail.material as THREE.LineBasicMaterial).dispose();
 
     this.object3D.remove(trail);
 

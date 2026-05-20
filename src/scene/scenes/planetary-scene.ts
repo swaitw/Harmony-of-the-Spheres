@@ -33,28 +33,38 @@ import RingPreview from "../ring-preview/ring-preview";
 import * as TWEEN from "@tweenjs/tween.js";
 
 class PlanetaryScene extends SceneBase {
-  manifestationManager: ManifestationManager;
+  manifestationManager!: ManifestationManager;
   scale: number;
-  integrator: ReturnType<typeof getIntegrator>;
-  particleIntegrator: ParticleIntegrator;
-  previous: {
+  integrator!: ReturnType<typeof getIntegrator>;
+  particleIntegrator!: ParticleIntegrator;
+  previous!: {
     cameraFocus: string | undefined;
     rotatingReferenceFrame: string | undefined;
     integrator: string;
     background: boolean;
     particlesShapesCount: number;
   };
-  utilVector: H3;
-  threeUtilVector: THREE.Vector3;
-  clock: THREE.Clock;
-  particles: Particles | undefined;
-  backgroundMesh: THREE.Mesh | null;
-  ringPreview: RingPreview | null;
+  utilVector!: H3;
+  threeUtilVector!: THREE.Vector3;
+  clock!: THREE.Clock;
+  particles!: Particles | undefined;
+  backgroundMesh!: THREE.Mesh | null;
+  ringPreview!: RingPreview | null;
 
   constructor(webGlCanvas: HTMLCanvasElement, labelsCanvas: HTMLCanvasElement) {
     super(webGlCanvas, labelsCanvas);
-    this.clock = new THREE.Clock();
+
     this.scale = 2100000;
+
+    this.init();
+  }
+
+  private init(): void {
+    this.utilVector = new H3();
+    this.threeUtilVector = new THREE.Vector3();
+    this.controls.noPan = true;
+    this.particleIntegrator = new ParticleIntegrator(this.scale);
+    this.ringPreview = null;
 
     if (this.scenario.graphics.background) {
       this.backgroundMesh = createBackground(this.textureLoader);
@@ -71,17 +81,12 @@ class PlanetaryScene extends SceneBase {
     );
     this.manifestationManager.addManifestations();
 
-    this.utilVector = new H3();
-    this.threeUtilVector = new THREE.Vector3();
-
     this.integrator = getIntegrator(this.scenario.integrator.name, {
       g: this.scenario.integrator.g,
       dt: this.scenario.integrator.dt,
       masses: this.scenario.masses,
       elapsedTime: this.scenario.elapsedTime,
     });
-
-    this.particleIntegrator = new ParticleIntegrator(this.scale);
 
     this.particles = undefined;
 
@@ -112,9 +117,9 @@ class PlanetaryScene extends SceneBase {
         this.scenario.particlesConfiguration?.shapes?.length ?? 0,
     };
 
-    this.controls.noPan = true;
+    this.clock = new THREE.Clock();
 
-    this.ringPreview = null;
+    this.iterate();
   }
 
   collisionCallback = (
@@ -823,6 +828,76 @@ class PlanetaryScene extends SceneBase {
 
     this.requestAnimationFrameId = requestAnimationFrame(this.iterate);
   };
+
+  public reset(): void {
+    if (this.requestAnimationFrameId !== null) {
+      cancelAnimationFrame(this.requestAnimationFrameId);
+      this.requestAnimationFrameId = null;
+    }
+
+    for (const manifestation of this.manifestationManager.manifestations) {
+      this.scene.remove(manifestation.object3D);
+      manifestation.dispose();
+    }
+
+    this.manifestationManager.manifestations = [];
+
+    if (this.backgroundMesh) {
+      this.scene.remove(this.backgroundMesh);
+      this.backgroundMesh.geometry.dispose();
+      (this.backgroundMesh.material as THREE.MeshBasicMaterial).map?.dispose();
+      (this.backgroundMesh.material as THREE.MeshBasicMaterial).dispose();
+      this.backgroundMesh = null;
+    }
+
+    if (this.particles) {
+      this.scene.remove(this.particles.mesh);
+      this.particles.dispose();
+      this.particles = undefined;
+    }
+
+    if (this.ringPreview) {
+      this.scene.remove(this.ringPreview.mesh);
+      this.ringPreview.dispose();
+      this.ringPreview = null;
+    }
+
+    this.scene.traverse((object) => {
+      const node = object as THREE.Mesh | THREE.Line | THREE.Points;
+
+      if ("geometry" in node && node.geometry) {
+        node.geometry.dispose();
+      }
+
+      if ("material" in node && node.material) {
+        const materials = Array.isArray(node.material)
+          ? node.material
+          : [node.material];
+
+        for (const material of materials) {
+          if (!material) continue;
+
+          for (const key of Object.keys(material)) {
+            const value = (material as unknown as Record<string, unknown>)[key];
+
+            if (value instanceof THREE.Texture) {
+              value.dispose();
+            }
+          }
+
+          material.dispose();
+        }
+      }
+    });
+
+    this.scene.clear();
+
+    TWEEN.removeAll();
+
+    this.scenario = JSON.parse(JSON.stringify(this.store.getState()));
+
+    this.init();
+  }
 }
 
 export default PlanetaryScene;

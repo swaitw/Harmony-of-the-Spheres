@@ -3,10 +3,10 @@ import { useDispatch } from "react-redux";
 import { ScenarioType } from "../types/scenario";
 import { setScenario } from "../state/creators";
 
-const useHydrateStore = (scenario: ScenarioType): void => {
+const useHydrateStore = (scenario: ScenarioType): ScenarioType | null => {
   const dispatch = useDispatch();
 
-  useMemo(() => {
+  return useMemo(() => {
     if (scenario) {
       const processedScenario = {
         ...scenario,
@@ -30,7 +30,10 @@ const useHydrateStore = (scenario: ScenarioType): void => {
       };
 
       dispatch(setScenario(processedScenario));
+      return processedScenario;
     }
+
+    return null;
   }, [dispatch]);
 };
 

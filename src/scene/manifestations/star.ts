@@ -273,6 +273,26 @@ class Star extends Manifestation {
 
     this.sphere = sphere;
   }
+
+  public override dispose(): void {
+    const sphere = this.sphere;
+
+    if (sphere) {
+      sphere.traverse((child) => {
+        if (child instanceof THREE.Sprite) {
+          const spriteMaterial = child.material as THREE.SpriteMaterial;
+
+          if (spriteMaterial.map) {
+            spriteMaterial.map.dispose();
+          }
+
+          spriteMaterial.dispose();
+        }
+      });
+    }
+
+    super.dispose();
+  }
 }
 
 export default Star;

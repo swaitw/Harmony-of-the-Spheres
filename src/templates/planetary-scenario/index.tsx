@@ -21,12 +21,13 @@ import BarycenterControls from "../../components/barycenter-controls";
 import LagrangeControls from "../../components/lagrange-controls";
 import RingControls from "../../components/ring-controls";
 import Button from "../../components/button";
-import { modifyScenarioProperty } from "../../state/creators";
+import { modifyScenarioProperty, setScenario } from "../../state/creators";
 import { getRendererDimensions } from "../../utils/renderer-utils";
 
 import {
   planetaryScenarioFooter,
   playButtonModifier,
+  resetButtonModifier,
   simulationControlsTabs,
   simulationControlTab,
   simulationControlsContentWrapper,
@@ -78,7 +79,7 @@ const Scenario = ({
 
   const scenario = scenarios[0].scenario;
 
-  useHydrateStore(scenario);
+  const originalScenario = useHydrateStore(scenario);
   const dispatch = useDispatch();
 
   const playing = useSelector((state: ScenarioStateType) => {
@@ -107,8 +108,6 @@ const Scenario = ({
         webGlCanvas.current,
         labelsCanvas.current,
       );
-
-      planetaryScene.current.iterate();
     }
   }, []);
 
@@ -126,6 +125,14 @@ const Scenario = ({
 
   const handlePlayButtonClick = () =>
     dispatch(modifyScenarioProperty({ key: "playing", value: !playing }));
+
+  const handleResetButtonClick = () => {
+    if (originalScenario) {
+      dispatch(setScenario(originalScenario));
+
+      planetaryScene.current?.reset();
+    }
+  };
 
   const onTabIndexChangeCallback = (selectedTabIndex: number) => {
     setSelectedTabIndex(selectedTabIndex);
@@ -159,6 +166,12 @@ const Scenario = ({
           cssModifier={playButtonModifier}
         >
           <i className={`fa-solid fa-${playing ? "pause" : "play"}`} />
+        </Button>
+        <Button
+          callback={handleResetButtonClick}
+          cssModifier={resetButtonModifier}
+        >
+          <i className="fa-solid fa-rotate-left" />
         </Button>
         <Tabs
           contentWrapperCssClassName={simulationControlsContentWrapper}
