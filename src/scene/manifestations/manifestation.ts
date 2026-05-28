@@ -41,7 +41,7 @@ class Manifestation {
     this.trailVertices = 3000;
   }
 
-  public createManifestation(): void {
+  public createManifestation(cloudDensity = 0): void {
     const segments = 40;
 
     const geometry = new THREE.SphereGeometry(
@@ -79,6 +79,10 @@ class Manifestation {
 
       shader.uniforms["impacts"] = { value: impacts };
 
+      if (cloudDensity > 0) {
+        shader.uniforms["cloudDensity"] = { value: cloudDensity };
+      }
+
       shader.vertexShader = `varying vec3 vPosition;
         ${shader.vertexShader}`;
 
@@ -88,6 +92,113 @@ class Manifestation {
         vPosition = transformed.xyz;`,
       );
 
+      const clouds =
+        cloudDensity > 0
+          ? `
+        uniform float cloudDensity;
+
+        vec4 permute(vec4 x) {
+          return mod(((x * 34.0) + 1.0) * x, 289.0);
+        }
+
+        vec4 taylorInvSqrt(vec4 r) {
+          return 1.79284291400159 - 0.85373472095314 * r;
+        }
+
+        float simplexNoise(vec3 v) {
+          const vec2 C = vec2(1.0 / 6.0, 1.0 / 3.0);
+          const vec4 D = vec4(0.0, 0.5, 1.0, 2.0);
+
+          vec3 i  = floor(v + dot(v, C.yyy));
+          vec3 x0 = v - i + dot(i, C.xxx);
+
+          vec3 g  = step(x0.yzx, x0.xyz);
+          vec3 l  = 1.0 - g;
+          vec3 i1 = min(g.xyz, l.zxy);
+          vec3 i2 = max(g.xyz, l.zxy);
+
+          vec3 x1 = x0 - i1 + C.xxx;
+          vec3 x2 = x0 - i2 + C.yyy;
+          vec3 x3 = x0 - D.yyy;
+
+          i = mod(i, 289.0);
+          vec4 p = permute(
+            permute(
+              permute(i.z + vec4(0.0, i1.z, i2.z, 1.0))
+              + i.y + vec4(0.0, i1.y, i2.y, 1.0)
+            ) + i.x + vec4(0.0, i1.x, i2.x, 1.0)
+          );
+
+          float skewFactor = 1.0 / 7.0;
+          vec3  ns         = skewFactor * D.wyz - D.xzx;
+
+          vec4 j  = p - 49.0 * floor(p * ns.z * ns.z);
+          vec4 x_ = floor(j * ns.z);
+          vec4 y_ = floor(j - 7.0 * x_);
+          vec4 x  = x_ * ns.x + ns.yyyy;
+          vec4 y  = y_ * ns.x + ns.yyyy;
+          vec4 h  = 1.0 - abs(x) - abs(y);
+
+          vec4 b0 = vec4(x.xy, y.xy);
+          vec4 b1 = vec4(x.zw, y.zw);
+          vec4 s0 = floor(b0) * 2.0 + 1.0;
+          vec4 s1 = floor(b1) * 2.0 + 1.0;
+          vec4 sh = -step(h, vec4(0.0));
+
+          vec4 a0 = b0.xzyw + s0.xzyw * sh.xxyy;
+          vec4 a1 = b1.xzyw + s1.xzyw * sh.zzww;
+
+          vec3 grad0 = vec3(a0.xy, h.x);
+          vec3 grad1 = vec3(a0.zw, h.y);
+          vec3 grad2 = vec3(a1.xy, h.z);
+          vec3 grad3 = vec3(a1.zw, h.w);
+
+          vec4 norm = taylorInvSqrt(vec4(
+            dot(grad0, grad0),
+            dot(grad1, grad1),
+            dot(grad2, grad2),
+            dot(grad3, grad3)
+          ));
+
+          grad0 *= norm.x;
+          grad1 *= norm.y;
+          grad2 *= norm.z;
+          grad3 *= norm.w;
+
+          vec4 m = max(0.6 - vec4(
+            dot(x0, x0),
+            dot(x1, x1),
+            dot(x2, x2),
+            dot(x3, x3)
+          ), 0.0);
+          m = m * m;
+
+          return 42.0 * dot(m * m, vec4(
+            dot(grad0, x0),
+            dot(grad1, x1),
+            dot(grad2, x2),
+            dot(grad3, x3)
+          ));
+        }
+
+        float fbm(vec3 position) {
+          float value     = 0.0;
+          float amplitude = 0.5;
+          float frequency = 1.0;
+          float maxValue  = 0.0;
+
+          for (int i = 0; i < 6; i++) {
+            value     += amplitude * (simplexNoise(position * frequency) * 0.5 + 0.5);
+            maxValue  += amplitude;
+            amplitude *= 0.5;
+            frequency *= 2.1;
+          }
+
+          return value / maxValue;
+        }
+      `
+          : "";
+
       shader.fragmentShader = `struct impact {
             vec3 impactPoint;
             float impactRadius;
@@ -95,6 +206,8 @@ class Manifestation {
           };
 
          uniform impact impacts[${maxImpactAmount}];
+
+         ${clouds}
 
          varying vec3 vPosition;
         ${shader.fragmentShader}`;
@@ -147,6 +260,21 @@ class Manifestation {
           if (ringIntensity > 0.0) {
             vec3 finalRingColor = ringAccumColor / ringIntensity;
             gl_FragColor = vec4(mix(gl_FragColor.rgb, finalRingColor, ringIntensity), gl_FragColor.a);
+          }
+          ${
+            cloudDensity > 0
+              ? `
+          float cloudFrequency = mix(4.0, 2.0, cloudDensity);
+          vec3  cloudPos       = normalize(vPosition) * cloudFrequency;
+          float cloudNoise     = fbm(cloudPos);
+          float cloudThreshold = mix(0.72, 0.46, cloudDensity);
+          float cloudEdge      = mix(0.06, 0.20, cloudDensity);
+          float cloudAlpha     = smoothstep(cloudThreshold, cloudThreshold + cloudEdge, cloudNoise) * mix(0.35, 0.92, cloudDensity);
+          float litFactor      = smoothstep(0.0, 0.15, dot(gl_FragColor.rgb, vec3(0.299, 0.587, 0.114)));
+          cloudAlpha          *= litFactor;
+          gl_FragColor.rgb     = mix(gl_FragColor.rgb, vec3(1.0), cloudAlpha);
+          `
+              : ""
           }`,
       );
 

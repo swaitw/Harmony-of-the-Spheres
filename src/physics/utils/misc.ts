@@ -209,6 +209,57 @@ const getLagrangePoints = (
   return { L1, L2, L3, L4, L5 };
 };
 
+const EARTH_MASS_SOLAR = 3.003e-6;
+
+const snowLineAU = (starMass: number): number => {
+  return 2.7 * Math.pow(starMass, 1.75);
+};
+
+const computeCloudDensity = (
+  mass: ScenarioMassType,
+  allMasses: ScenarioMassesType,
+): number => {
+  if (
+    (mass.type !== "terrestial planet" && mass.type !== "moon") ||
+    !mass.atmosphere
+  ) {
+    return 0;
+  }
+
+  const stars = allMasses.filter((m) => m.type === "star");
+  if (stars.length === 0) {
+    return 0;
+  }
+
+  let minDSq = Infinity;
+  let nearestStar: ScenarioMassType | undefined;
+  const h3 = new H3();
+
+  for (const star of stars) {
+    const { dSquared } = h3
+      .set(mass.position)
+      .getDistanceParameters(star.position);
+    if (dSquared < minDSq) {
+      minDSq = dSquared;
+      nearestStar = star;
+    }
+  }
+
+  if (!nearestStar) {
+    return 0;
+  }
+
+  const dist = Math.sqrt(minDSq);
+  const snowLine = snowLineAU(nearestStar.m);
+
+  if (dist >= snowLine) {
+    return 0;
+  }
+
+  const massRatio = mass.m / EARTH_MASS_SOLAR;
+  return Math.min(1.0, Math.max(0.1, Math.pow(massRatio, 0.7)));
+};
+
 export {
   degreesToRadians,
   getRandomNumberInRange,
@@ -223,4 +274,6 @@ export {
   temperatureToRGB,
   getBarycenter,
   getLagrangePoints,
+  snowLineAU,
+  computeCloudDensity,
 };

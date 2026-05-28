@@ -2,6 +2,7 @@ import * as THREE from "three";
 import Manifestation from "./manifestation";
 import Star from "./star";
 import { ScenarioMassesType, ScenarioMassType } from "../../types/scenario";
+import { computeCloudDensity } from "../../physics/utils/misc";
 
 class ManifestationManager {
   private masses: ScenarioMassesType;
@@ -27,7 +28,10 @@ class ManifestationManager {
     this.manifestations = [];
   }
 
-  public createManifestation(mass: ScenarioMassType): Manifestation {
+  public createManifestation(
+    mass: ScenarioMassType,
+    cloudDensity = 0,
+  ): Manifestation {
     switch (mass.type) {
       case "star":
         const star = new Star(mass, this.scale, this.textureLoader);
@@ -39,7 +43,7 @@ class ManifestationManager {
       default:
         const sphere = new Manifestation(mass, this.scale, this.textureLoader);
 
-        sphere.createManifestation();
+        sphere.createManifestation(cloudDensity);
 
         return sphere;
     }
@@ -47,7 +51,8 @@ class ManifestationManager {
 
   public addManifestations() {
     this.masses.forEach((mass) => {
-      const manifestation = this.createManifestation(mass);
+      const cloudDensity = computeCloudDensity(mass, this.masses);
+      const manifestation = this.createManifestation(mass, cloudDensity);
 
       this.manifestations.push(manifestation);
       this.scene.add(manifestation.object3D);
@@ -76,6 +81,17 @@ class ManifestationManager {
         this.manifestations[i].dispose();
 
         this.manifestations.splice(i, 1);
+      }
+    }
+
+    for (const mass of updatedMasses) {
+      if (!this.manifestations.some((m) => m.mass.name === mass.name)) {
+        const cloudDensity = computeCloudDensity(mass, updatedMasses);
+        const manifestation = this.createManifestation(mass, cloudDensity);
+
+        this.scene.add(manifestation.object3D);
+
+        this.manifestations.push(manifestation);
       }
     }
   }

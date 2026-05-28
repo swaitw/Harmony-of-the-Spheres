@@ -30,6 +30,7 @@ import {
 } from "../../physics/collisions/collision-utils";
 import { ScenarioMassType } from "../../types/scenario";
 import RingPreview from "../ring-preview/ring-preview";
+import AddMassOrbitPreview from "../misc/add-mass-orbit-preview";
 import * as TWEEN from "@tweenjs/tween.js";
 
 class PlanetaryScene extends SceneBase {
@@ -50,6 +51,7 @@ class PlanetaryScene extends SceneBase {
   particles!: Particles | undefined;
   backgroundMesh!: THREE.Mesh | null;
   ringPreview!: RingPreview | null;
+  addMassOrbitPreview!: AddMassOrbitPreview | null;
 
   constructor(webGlCanvas: HTMLCanvasElement, labelsCanvas: HTMLCanvasElement) {
     super(webGlCanvas, labelsCanvas);
@@ -65,6 +67,7 @@ class PlanetaryScene extends SceneBase {
     this.controls.noPan = true;
     this.particleIntegrator = new ParticleIntegrator(this.scale);
     this.ringPreview = null;
+    this.addMassOrbitPreview = null;
 
     if (this.scenario.graphics.background) {
       this.backgroundMesh = createBackground(this.textureLoader);
@@ -525,6 +528,9 @@ class PlanetaryScene extends SceneBase {
       mass.rotatedPosition = rotatedPosition;
 
       const manifestation = manifestations[i];
+
+      if (!manifestation) continue;
+
       const manifestationObject3D = manifestation.object3D;
 
       manifestation.mass = mass;
@@ -699,6 +705,48 @@ class PlanetaryScene extends SceneBase {
       this.ringPreview = null;
     }
 
+    const massToBeAdded = this.scenario.massToBeAdded;
+    if (massToBeAdded?.isBeingAdded) {
+      const addPrimary = this.integrator.masses.find(
+        (m) => m.name === massToBeAdded.primary,
+      );
+
+      if (addPrimary) {
+        if (!this.addMassOrbitPreview) {
+          this.addMassOrbitPreview = new AddMassOrbitPreview();
+          this.scene.add(this.addMassOrbitPreview.object3D);
+        }
+
+        const gm = this.integrator.g * addPrimary.m;
+
+        const massRotatedPos = this.addMassOrbitPreview.update(
+          massToBeAdded.elements,
+          addPrimary.position,
+          rotatingReferenceFrame,
+          gm,
+          scale,
+        );
+
+        this.labels.drawLabel(
+          massToBeAdded.type === "star" ? "New Star" : "New Mass",
+          this.threeUtilVector.set(
+            massRotatedPos.x,
+            massRotatedPos.y,
+            massRotatedPos.z,
+          ),
+          this.camera,
+          false,
+          "right",
+          "cyan",
+          drawMassLabel,
+        );
+      }
+    } else if (this.addMassOrbitPreview) {
+      this.scene.remove(this.addMassOrbitPreview.object3D);
+      this.addMassOrbitPreview.dispose();
+      this.addMassOrbitPreview = null;
+    }
+
     if (this.scenario.barycenter.display) {
       const rotatedBarycenter = this.utilVector
         .set({
@@ -860,6 +908,12 @@ class PlanetaryScene extends SceneBase {
       this.scene.remove(this.ringPreview.mesh);
       this.ringPreview.dispose();
       this.ringPreview = null;
+    }
+
+    if (this.addMassOrbitPreview) {
+      this.scene.remove(this.addMassOrbitPreview.object3D);
+      this.addMassOrbitPreview.dispose();
+      this.addMassOrbitPreview = null;
     }
 
     this.scene.traverse((object) => {
