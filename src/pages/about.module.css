@@ -1,0 +1,71 @@
+.page {
+  max-width: 52rem;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.intro {
+  margin-bottom: 4rem;
+}
+
+.intro h1 {
+  margin-bottom: 1.5rem;
+}
+
+.intro p {
+  color: var(--theme-color-6);
+  line-height: 1.8;
+  font-size: 1.2rem;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.feature {
+  border: var(--border);
+  padding: 1.5rem;
+  background-color: var(--theme-color-2);
+}
+
+.featureIcon {
+  font-size: 2rem;
+  color: var(--theme-color-6);
+  margin-bottom: 0.75rem;
+}
+
+.feature h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.75rem;
+  color: var(--theme-color-6);
+}
+
+.feature p {
+  color: var(--theme-color-5);
+  line-height: 1.7;
+}
+
+.cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--theme-color-2);
+  border: var(--border);
+  color: var(--theme-color-6);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.cta:hover {
+  background-color: var(--theme-color-4);
+  color: #fff;
+}
