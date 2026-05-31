@@ -7,7 +7,8 @@ import React, {
 } from "react";
 import { useSelector, useDispatch } from "react-redux";
 
-import { graphql } from "gatsby";
+import { graphql, HeadFC } from "gatsby";
+import Seo from "../../components/seo";
 import { ScenarioType } from "../../types/scenario";
 import { ScenarioStateType } from "../../state";
 import useHydrateStore from "../../hooks/useHydrateStore";
@@ -20,6 +21,7 @@ import GraphicsControls from "../../components/graphics-controls";
 import BarycenterControls from "../../components/barycenter-controls";
 import LagrangeControls from "../../components/lagrange-controls";
 import RingControls from "../../components/ring-controls";
+import AddMassControls from "../../components/add-mass-controls";
 import Button from "../../components/button";
 import { modifyScenarioProperty, setScenario } from "../../state/creators";
 import { getRendererDimensions } from "../../utils/renderer-utils";
@@ -202,7 +204,9 @@ const Scenario = ({
           <div data-label="Lagrange" data-icon="fa-solid fa-atom">
             <LagrangeControls />
           </div>
-          <div data-label="Add Mass" data-icon="fa-solid fa-plus"></div>
+          <div data-label="Add Mass" data-icon="fa-solid fa-plus">
+            <AddMassControls />
+          </div>
           <div data-label="Rings" data-icon="fa-solid fa-ring">
             <RingControls />
           </div>
@@ -214,12 +218,47 @@ const Scenario = ({
 
 export default Scenario;
 
+type ScenarioHeadData = {
+  scenariosJson: {
+    scenarios: {
+      scenario: {
+        name: string;
+        description?: string;
+        category: {
+          name: string;
+          subCategory: string | null;
+        };
+      };
+    }[];
+  };
+};
+
+export const Head: HeadFC<ScenarioHeadData> = ({ data, location }) => {
+  const { name, description, category } =
+    data.scenariosJson.scenarios[0].scenario;
+  const categoryLabel = [category.name, category.subCategory]
+    .filter(Boolean)
+    .join(" › ");
+  const metaDescription =
+    description ??
+    `Explore ${name} — an interactive 3D Newtonian gravity simulation in the ${categoryLabel} category.`;
+
+  return (
+    <Seo
+      title={name}
+      description={metaDescription}
+      pathname={location.pathname}
+    />
+  );
+};
+
 export const pageQuery = graphql`
   query ($scenarioName: String) {
     scenariosJson: allScenariosJson(filter: { name: { eq: $scenarioName } }) {
       scenarios: edges {
         scenario: node {
           name
+          description
           playing
           isLoaded
           elapsedTime
@@ -302,6 +341,7 @@ export const pageQuery = graphql`
               trail
               label
             }
+            nonStellarProceduralManifestation
           }
           particlesConfiguration {
             max

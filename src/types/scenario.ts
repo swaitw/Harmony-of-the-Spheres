@@ -70,6 +70,7 @@ export type ScenarioMassType = {
   temperature?: number;
   customMassCameraPosition?: VectorType;
   graphics: ScenarioMassGraphicsType;
+  nonStellarProceduralManifestation?: boolean;
 };
 
 export type SOITree = {
@@ -96,6 +97,17 @@ export type ParticlesConfigurationType = {
   softening: number;
   size: number;
   shapes: ShapesType;
+};
+
+export type MassToBeAddedType = {
+  name: string;
+  type: string;
+  primary: string;
+  m: number;
+  unitName: string;
+  unitMassQuantity: number;
+  elements: ElementsType;
+  isBeingAdded: boolean;
 };
 
 export type RingToBeAddedType = {
@@ -130,4 +142,5 @@ export type ScenarioType = {
   particlesConfiguration?: ParticlesConfigurationType;
   lagrangePoints?: ScenarioLagrangePointsType;
   ringToBeAdded: RingToBeAddedType;
+  massToBeAdded?: MassToBeAddedType;
 };
