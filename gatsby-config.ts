@@ -3,14 +3,27 @@ import type { GatsbyConfig } from "gatsby";
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `Gravity Simulator`,
-    siteUrl: `https://www.yourdomain.tld`,
-    description: `3D gravity and space simulator. Simulate the solar system, exoplanets and even colliding galaxies. Add, delete and modify planets, stars and moons, and change the laws of physics.`,
+    siteUrl: `https://gravitysimulator.org`,
+    description: `A 3D interactive Newtonian gravity simulator. Explore the Solar System, model exoplanets, and watch galaxies collide. Add, remove, and tweak planets, stars, and moons — and even change the laws of physics.`,
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: false,
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [`UA-153406767-1`],
+        gtagConfig: {
+          anonymize_ip: true,
+        },
+        pluginConfig: {
+          head: false,
+          respectDNT: true,
+        },
+      },
+    },
     `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,

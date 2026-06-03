@@ -29,16 +29,7 @@ export const createPages: GatsbyNode["createPages"] = async ({
   graphql,
 }) => {
   const { createPage } = actions;
-
-  createPage({
-    path: `/scenarios/all`,
-    component: path.resolve("./src/templates/scenarios-menu/index.tsx"),
-    context: {
-      category: "all",
-      subCategory: "all",
-    },
-    defer: true,
-  });
+  const SCENARIOS_PER_PAGE = 12;
 
   const { data } = await graphql<FetchedScenariosJsonType>(`
     {
@@ -62,6 +53,26 @@ export const createPages: GatsbyNode["createPages"] = async ({
   `);
 
   const categoryTree = data?.categoryTree;
+  const allScenarios = data?.scenariosJson.scenarios || [];
+
+  const allScenariosCount = allScenarios.length;
+  const allNumPages = Math.ceil(allScenariosCount / SCENARIOS_PER_PAGE);
+
+  for (let i = 0; i < allNumPages; i++) {
+    createPage({
+      path: i === 0 ? `/scenarios/all` : `/scenarios/all/${i + 1}`,
+      component: path.resolve("./src/templates/scenarios-menu/index.tsx"),
+      context: {
+        category: "all",
+        subCategory: "all",
+        limit: SCENARIOS_PER_PAGE,
+        skip: i * SCENARIOS_PER_PAGE,
+        numPages: allNumPages,
+        currentPage: i + 1,
+      },
+      defer: true,
+    });
+  }
 
   categoryTree?.forEach(
     (scenarioCategoryBranch: ScenarioCategoryBranchType) => {
@@ -72,30 +83,66 @@ export const createPages: GatsbyNode["createPages"] = async ({
       const withSubCategories = subCategories.length;
       const categoryRegex = `/${name}/g`;
 
-      createPage({
-        path: `/scenarios/${kebabCase(name)}${withSubCategories ? "/all" : ""}`,
-        component,
-        context: {
-          category: name,
-          categoryRegex,
-          subCategory: "all",
-        },
-        defer: true,
-      });
+      const categoryScenariosCount = allScenarios.filter(
+        ({ scenario }) => scenario.category.name === name,
+      ).length;
+      const categoryNumPages = Math.ceil(
+        categoryScenariosCount / SCENARIOS_PER_PAGE,
+      );
+
+      for (let i = 0; i < categoryNumPages; i++) {
+        const basePath = `/scenarios/${kebabCase(name)}${
+          withSubCategories ? "/all" : ""
+        }`;
+        createPage({
+          path: i === 0 ? basePath : `${basePath}/${i + 1}`,
+          component,
+          context: {
+            category: name,
+            categoryRegex,
+            subCategory: "all",
+            limit: SCENARIOS_PER_PAGE,
+            skip: i * SCENARIOS_PER_PAGE,
+            numPages: categoryNumPages,
+            currentPage: i + 1,
+          },
+          defer: true,
+        });
+      }
 
       if (withSubCategories) {
         subCategories.forEach((subCategory: string) => {
-          createPage({
-            path: `/scenarios/${kebabCase(name)}/${kebabCase(subCategory)}`,
-            component,
-            context: {
-              category: name,
-              categoryRegex,
+          const subCategoryScenariosCount = allScenarios.filter(
+            ({ scenario }) =>
+              scenario.category.name === name &&
+              scenario.category.subCategory === subCategory,
+          ).length;
+
+          const subCategoryNumPages = Math.ceil(
+            subCategoryScenariosCount / SCENARIOS_PER_PAGE,
+          );
+
+          for (let i = 0; i < subCategoryNumPages; i++) {
+            const basePath = `/scenarios/${kebabCase(name)}/${kebabCase(
               subCategory,
-              subCategoryRegex: `/${subCategory}/g`,
-            },
-            defer: true,
-          });
+            )}`;
+
+            createPage({
+              path: i === 0 ? basePath : `${basePath}/${i + 1}`,
+              component,
+              context: {
+                category: name,
+                categoryRegex,
+                subCategory,
+                subCategoryRegex: `/${subCategory}/g`,
+                limit: SCENARIOS_PER_PAGE,
+                skip: i * SCENARIOS_PER_PAGE,
+                numPages: subCategoryNumPages,
+                currentPage: i + 1,
+              },
+              defer: true,
+            });
+          }
         });
       }
     },
