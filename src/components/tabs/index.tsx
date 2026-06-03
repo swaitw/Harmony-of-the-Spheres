@@ -10,6 +10,7 @@ import React, {
 import { AnimatePresence, motion } from "framer-motion";
 import NavigationMenu from "../navigation-menu";
 import NavigationMenuItem from "../navigation-menu/navigation-menu-item";
+import * as icons from "../../theme/icons.module.css";
 
 type Props = {
   children: ReactNode;
@@ -66,7 +67,11 @@ const Tabs = ({
               }>(child) && (
                 <Fragment>
                   {child.props["data-icon"] ? (
-                    <i className={child.props["data-icon"]} />
+                    <i
+                      className={`${icons.icon} ${
+                        icons[child.props["data-icon"]]
+                      }`}
+                    />
                   ) : null}
                   {child.props["data-label"] ? (
                     <span>{child.props["data-label"]}</span>
@@ -89,10 +94,8 @@ const Tabs = ({
           >
             {closeButton && (
               <i
-                className={`fa-solid fa-xmark ${
-                  contentWrapperCloseButtonCssClassName
-                    ? contentWrapperCloseButtonCssClassName
-                    : ""
+                className={`${icons.icon} ${icons.xmark} ${
+                  contentWrapperCloseButtonCssClassName ?? ""
                 }`}
                 onClick={() => setSelectedTabIndex(-1)}
               />

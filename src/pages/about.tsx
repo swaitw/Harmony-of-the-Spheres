@@ -2,6 +2,7 @@ import React from "react";
 import { Link, HeadFC } from "gatsby";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
+import * as iconStyles from "../theme/icons.module.css";
 import {
   page,
   intro,
@@ -13,49 +14,49 @@ import {
 
 const features_data = [
   {
-    icon: "fa-solid fa-sun",
+    icon: "sun",
     title: "Ready-made scenarios",
     description:
       'Choose from a curated library of simulations spanning the Solar System, moon systems, asteroid families, interstellar objects, and hypothetical "what if" scenarios — each based on real orbital data.',
   },
   {
-    icon: "fa-solid fa-atom",
+    icon: "atom",
     title: "Newtonian N-body physics",
     description:
       "Every body exerts a gravitational pull on every other. The simulation solves the full N-body problem each time step using either an Euler or fourth-order Runge-Kutta (RK4) integrator.",
   },
   {
-    icon: "fa-solid fa-globe",
+    icon: "globe",
     title: "Add and modify masses",
     description:
       "Inject new bodies into any running simulation, adjust their mass, and watch how the system responds. Remove bodies to see how orbits change without a major gravitational influence.",
   },
   {
-    icon: "fa-solid fa-ring",
+    icon: "ring",
     title: "Particle ring systems",
     description:
       "Some scenarios include tens of thousands of ring particles, each governed by gravity. Watch Saturn's rings interact with a passing body, or build your own ring configuration.",
   },
   {
-    icon: "fa-solid fa-explosion",
+    icon: "explosion",
     title: "Collision detection",
     description:
       "When two bodies get close enough, they merge and conserve momentum. Impact shockwaves ripple across the surviving body's surface in real time.",
   },
   {
-    icon: "fa-solid fa-video",
+    icon: "video",
     title: "Flexible camera",
     description:
       "Lock the camera to any body or the system barycenter, switch rotating reference frames mid-simulation, and orbit the scene freely in three dimensions.",
   },
   {
-    icon: "fa-solid fa-crosshairs",
+    icon: "crosshairs",
     title: "Barycenter and Lagrange points",
     description:
       "Visualise the system's centre of mass and the five Lagrange points for any chosen pair of bodies — the gravitational sweet spots where a small body can maintain a stable position.",
   },
   {
-    icon: "fa-solid fa-palette",
+    icon: "palette",
     title: "Graphics controls",
     description:
       "Toggle orbital paths, motion trails, body labels, and the stellar background independently. Adjust what you see to focus on the physics that interests you.",
@@ -79,10 +80,10 @@ const AboutPage = () => {
         </div>
 
         <div className={features}>
-          {features_data.map(({ icon, title, description }) => (
+          {features_data.map(({ icon: iconName, title, description }) => (
             <div key={title} className={feature}>
               <div className={featureIcon}>
-                <i className={icon} />
+                <i className={`${iconStyles.icon} ${iconStyles[iconName]}`} />
               </div>
               <h2>{title}</h2>
               <p>{description}</p>
@@ -91,7 +92,8 @@ const AboutPage = () => {
         </div>
 
         <Link to="/scenarios/all" className={cta}>
-          <i className="fa-solid fa-sun" /> Browse scenarios
+          <i className={`${iconStyles.icon} ${iconStyles.sun}`} /> Browse
+          scenarios
         </Link>
       </div>
     </Layout>

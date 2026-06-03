@@ -2,6 +2,7 @@ import React from "react";
 import { Link, HeadFC } from "gatsby";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
+import { icon, sun } from "../theme/icons.module.css";
 import { container, link } from "./404.module.css";
 
 const NotFoundPage = () => {
@@ -14,7 +15,7 @@ const NotFoundPage = () => {
           page to find a gravitational simulation to explore.
         </p>
         <Link to="/scenarios/all" className={link}>
-          <i className="fa-solid fa-sun" /> Browse scenarios
+          <i className={`${icon} ${sun}`} /> Browse scenarios
         </Link>
       </div>
     </Layout>

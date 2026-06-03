@@ -6,6 +6,7 @@ import React, {
   useCallback,
   ReactNode,
 } from "react";
+import { icon, chevronDown } from "../../theme/icons.module.css";
 import {
   dropdownWrapper,
   dropdownSelectedOption,
@@ -65,7 +66,7 @@ export default ({ children, selectedOption }: DropdownProps): ReactElement => {
       >
         {selectedOption}
         <i
-          className={`fa fa-chevron-down ${
+          className={`${icon} ${chevronDown} ${
             displayOptions ? rotatedChevron : ""
           }`}
         />

@@ -1,5 +1,6 @@
 import React, { useState, useCallback } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { icon, circleInfo } from "../../theme/icons.module.css";
 import { tooltipWrapper, tooltipIcon, tooltipBox } from "./tooltip.module.css";
 
 type Props = {
@@ -20,7 +21,7 @@ const Tooltip = ({ text }: Props) => {
       onFocus={show}
       onBlur={hide}
     >
-      <i className={`fa-solid fa-circle-info ${tooltipIcon}`} />
+      <i className={`${icon} ${circleInfo} ${tooltipIcon}`} />
       <AnimatePresence>
         {visible && (
           <motion.span

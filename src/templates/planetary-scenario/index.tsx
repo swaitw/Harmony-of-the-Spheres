@@ -40,9 +40,7 @@ import {
 } from "./simulation-controls/simulation-controls.module.css";
 
 import "../../theme/theme.css";
-import "../../assets/fontawesome/css/fontawesome.min.css";
-import "../../assets/fontawesome/css/regular.min.css";
-import "../../assets/fontawesome/css/solid.min.css";
+import { icon, play, pause, rotateLeft } from "../../theme/icons.module.css";
 
 type Props = {
   data: {
@@ -167,13 +165,13 @@ const Scenario = ({
           callback={handlePlayButtonClick}
           cssModifier={playButtonModifier}
         >
-          <i className={`fa-solid fa-${playing ? "pause" : "play"}`} />
+          <i className={`${icon} ${playing ? pause : play}`} />
         </Button>
         <Button
           callback={handleResetButtonClick}
           cssModifier={resetButtonModifier}
         >
-          <i className="fa-solid fa-rotate-left" />
+          <i className={`${icon} ${rotateLeft}`} />
         </Button>
         <Tabs
           contentWrapperCssClassName={simulationControlsContentWrapper}
@@ -186,28 +184,28 @@ const Scenario = ({
           animate
           onTabIndexChangeCallback={onTabIndexChangeCallback}
         >
-          <div data-label="Integrator" data-icon="fa-solid fa-gear">
+          <div data-label="Integrator" data-icon="gear">
             <IntegratorControls />
           </div>
-          <div data-label="Camera" data-icon="fa-solid fa-video">
+          <div data-label="Camera" data-icon="video">
             <CameraControls />
           </div>
-          <div data-label="Masses" data-icon="fa-solid fa-globe">
+          <div data-label="Masses" data-icon="globe">
             <MassControls />
           </div>
-          <div data-label="Graphics" data-icon="fa-solid fa-palette">
+          <div data-label="Graphics" data-icon="palette">
             <GraphicsControls />
           </div>
-          <div data-label="Barycenter" data-icon="fa-solid fa-crosshairs">
+          <div data-label="Barycenter" data-icon="crosshairs">
             <BarycenterControls />
           </div>
-          <div data-label="Lagrange" data-icon="fa-solid fa-atom">
+          <div data-label="Lagrange" data-icon="atom">
             <LagrangeControls />
           </div>
-          <div data-label="Add Mass" data-icon="fa-solid fa-plus">
+          <div data-label="Add Mass" data-icon="plus">
             <AddMassControls />
           </div>
-          <div data-label="Rings" data-icon="fa-solid fa-ring">
+          <div data-label="Rings" data-icon="ring">
             <RingControls />
           </div>
         </Tabs>
