@@ -24,6 +24,12 @@
   margin-left: var(--padding);
 }
 
+.save-button-modifier {
+  width: fit-content;
+  padding: var(--padding) calc(2 * var(--padding));
+  margin-left: var(--padding);
+}
+
 .simulation-controls-tabs {
   display: flex;
   align-items: center;

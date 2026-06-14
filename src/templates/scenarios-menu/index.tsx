@@ -10,6 +10,7 @@ import {
   getPaginationRange,
   scenariosPaginationPagePath,
 } from "../../utils/pagination-utils";
+import useSavedScenarios from "../../hooks/useSavedScenarios";
 import { ScenariosCategoryTreeType } from "../../types/category";
 import { ScenarioCategoryType } from "../../types/scenario";
 
@@ -42,12 +43,35 @@ type Props = {
   };
 };
 
+type SavedScenariosNavigationItemProps = {
+  active?: boolean;
+};
+
+const SavedScenariosNavigationItem = ({
+  active = false,
+}: SavedScenariosNavigationItemProps) => {
+  const savedScenarios = useSavedScenarios();
+
+  if (savedScenarios.length === 0) {
+    return null;
+  }
+
+  return (
+    <Link to="/scenarios/saved">
+      <NavigationMenuItem active={active} cssModifier={scenariosMenuItem}>
+        Saved Scenarios
+      </NavigationMenuItem>
+    </Link>
+  );
+};
+
 const ScenarioMenu = ({
   data: { categoryTree, scenariosJson },
   pageContext: { category, subCategory, currentPage, numPages },
 }: Props) => {
-  const subCategories = categoryTree?.find(({ name }) => name === category)
-    ?.subCategories;
+  const subCategories = categoryTree?.find(({ name: categoryName }) => {
+    return categoryName === category;
+  })?.subCategories;
 
   const basePath = buildScenariosPaginationBasePath(category, subCategory);
   const pageNumbers = getPaginationRange(currentPage, numPages);
@@ -56,7 +80,7 @@ const ScenarioMenu = ({
     <Layout currentPage="scenarios">
       <section className={scenariosMenuWrapper}>
         <NavigationMenu cssModifier={navigationMenuCssModifier}>
-          <Link to={`/scenarios/all`}>
+          <Link to="/scenarios/all">
             <NavigationMenuItem
               active={category === "all"}
               cssModifier={scenariosMenuItem}
@@ -78,6 +102,7 @@ const ScenarioMenu = ({
               </NavigationMenuItem>
             </Link>
           ))}
+          <SavedScenariosNavigationItem active={category === "saved"} />
         </NavigationMenu>{" "}
         {subCategories?.length ? (
           <NavigationMenu cssModifier={navigationMenuCssModifier}>
@@ -115,16 +140,16 @@ const ScenarioMenu = ({
                 First
               </NavigationMenuItem>
             </Link>
-            {pageNumbers.map((pageNum) => (
+            {pageNumbers.map((pageNumber) => (
               <Link
-                key={pageNum}
-                to={scenariosPaginationPagePath(basePath, pageNum)}
+                key={pageNumber}
+                to={scenariosPaginationPagePath(basePath, pageNumber)}
               >
                 <NavigationMenuItem
-                  active={currentPage === pageNum}
+                  active={currentPage === pageNumber}
                   cssModifier={scenariosMenuItem}
                 >
-                  {pageNum}
+                  {pageNumber}
                 </NavigationMenuItem>
               </Link>
             ))}
@@ -160,6 +185,8 @@ const ScenarioMenu = ({
   );
 };
 
+export default ScenarioMenu;
+
 type ScenarioMenuPageContext = {
   category: string;
   subCategory: string;
@@ -167,7 +194,7 @@ type ScenarioMenuPageContext = {
   numPages: number;
 };
 
-export const Head: HeadFC<object, ScenarioMenuPageContext> = ({
+const Head: HeadFC<object, ScenarioMenuPageContext> = ({
   pageContext,
   location,
 }) => {
@@ -192,7 +219,7 @@ export const Head: HeadFC<object, ScenarioMenuPageContext> = ({
   );
 };
 
-export const pageQuery = graphql`
+const pageQuery = graphql`
   query (
     $categoryRegex: String = "//g"
     $subCategoryRegex: String = "//g"
@@ -228,4 +255,4 @@ export const pageQuery = graphql`
   }
 `;
 
-export default ScenarioMenu;
+export { Head, pageQuery };

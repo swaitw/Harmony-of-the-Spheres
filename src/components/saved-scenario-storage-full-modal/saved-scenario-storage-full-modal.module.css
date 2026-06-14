@@ -1,0 +1,27 @@
+.storage-full-message {
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.saved-scenario-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 0;
+  border-top: var(--border);
+}
+
+.saved-scenario-item:first-of-type {
+  border-top: none;
+}
+
+.saved-scenario-title {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.delete-button-modifier {
+  width: fit-content;
+  padding: 0.5rem 1.5rem;
+}

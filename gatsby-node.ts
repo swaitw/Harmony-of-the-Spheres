@@ -24,7 +24,7 @@ type FetchedScenariosJsonType = {
   categoryTree: ScenariosCategoryTreeType;
 };
 
-export const createPages: GatsbyNode["createPages"] = async ({
+const createPages: GatsbyNode["createPages"] = async ({
   actions,
   graphql,
 }) => {
@@ -148,6 +148,20 @@ export const createPages: GatsbyNode["createPages"] = async ({
     },
   );
 
+  createPage({
+    path: "/scenarios/saved",
+    component: path.resolve("./src/templates/saved-scenarios-menu/index.tsx"),
+    defer: true,
+  });
+
+  createPage({
+    path: "/scenarios/saved/view",
+    matchPath: "/scenarios/saved/:slug",
+    component: path.resolve(
+      "./src/templates/saved-planetary-scenario/index.tsx",
+    ),
+  });
+
   data?.scenariosJson.scenarios.forEach(({ scenario }) => {
     const component = path.resolve(
       "./src/templates/planetary-scenario/index.tsx",
@@ -167,7 +181,7 @@ export const createPages: GatsbyNode["createPages"] = async ({
   });
 };
 
-export const createResolvers: GatsbyNode["createResolvers"] = ({
+const createResolvers: GatsbyNode["createResolvers"] = ({
   createResolvers,
   getNodesByType,
 }) => {
@@ -221,7 +235,7 @@ export const createResolvers: GatsbyNode["createResolvers"] = ({
   });
 };
 
-export const createSchemaCustomization: GatsbyNode["createSchemaCustomization"] =
+const createSchemaCustomization: GatsbyNode["createSchemaCustomization"] =
   ({ actions }) => {
     const { createTypes } = actions;
 
@@ -236,3 +250,5 @@ export const createSchemaCustomization: GatsbyNode["createSchemaCustomization"] 
     }
 `);
   };
+
+export { createPages, createResolvers, createSchemaCustomization };
