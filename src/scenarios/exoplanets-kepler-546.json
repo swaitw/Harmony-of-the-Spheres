@@ -1,0 +1,131 @@
+{
+  "name": "Kepler-546 - System",
+  "description": "Kepler-546 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-546",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.11,
+    "m": 1.11
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-546",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-546"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 1e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-546",
+    "barycenterMassTwo": "Kepler-546 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-546",
+      "type": "star",
+      "m": 1.11,
+      "radius": 11810.5,
+      "tilt": 0,
+      "temperature": 5967,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": -0.00312191946642307,
+        "z": -0.00016361286633573006
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-546 b",
+      "type": "gas giant planet",
+      "m": 0.0001174173,
+      "radius": 658.0621,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.0502,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": 29.512947476475855,
+        "z": 1.5467080373391346
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-546",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

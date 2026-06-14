@@ -1,0 +1,267 @@
+{
+  "name": "Kepler-84 - System",
+  "description": "Kepler-84 is a Sun-like G/F-type star with 5 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-84",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.06,
+    "m": 1.06
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "5-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-84",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-84"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 1e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-84",
+    "barycenterMassTwo": "Kepler-84 d",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-84",
+      "type": "star",
+      "m": 1.06,
+      "radius": 12005.63,
+      "tilt": 0,
+      "temperature": 6031,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.0027108615831609156,
+        "y": 0.00011885916327622964,
+        "z": -0.0002299812675151697
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-84 d",
+      "type": "terrestial planet",
+      "m": 7.4474399999999995e-6,
+      "radius": 129.7322,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.052,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": 28.33702249420725,
+        "z": 1.4850804204149874
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-84 b",
+      "type": "super-Earth",
+      "m": 0.00012012,
+      "radius": 209.6398,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.025555705434808153,
+        "y": 0.07865237389760919,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -21.370242851070735,
+        "y": 6.943612815593343,
+        "z": 1.1776029619425168
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-84 c",
+      "type": "super-Earth",
+      "m": 6.066059999999999e-5,
+      "radius": 221.8609,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.08672662179699436,
+        "y": 0.06301057904575313,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -11.600512579398302,
+        "y": -15.966735782482239,
+        "z": 1.0343184019335327
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-84 e",
+      "type": "sub-Neptune",
+      "m": 2.1831809999999997e-5,
+      "radius": 244.423,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.14643207598186547,
+        "y": -0.10638913066493762,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 8.927611533866463,
+        "y": -12.287803108203725,
+        "z": 0.795998696746475
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-84 f",
+      "type": "super-Earth",
+      "m": 1.645644e-5,
+      "radius": 206.8195,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.07725424859373681,
+        "y": -0.2377641290737884,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 12.291141202636359,
+        "y": 3.993633865916362,
+        "z": 0.677300879861226
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-84",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

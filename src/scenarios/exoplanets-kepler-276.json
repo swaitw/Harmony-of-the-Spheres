@@ -1,0 +1,199 @@
+{
+  "name": "Kepler-276 - System",
+  "description": "Kepler-276 is a Sun-like G/F-type star with 3 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-276",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.845,
+    "m": 0.845
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "3-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-276",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-276"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-276",
+    "barycenterMassTwo": "Kepler-276 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-276",
+      "type": "star",
+      "m": 0.845,
+      "radius": 10742.42,
+      "tilt": 0,
+      "temperature": 6105,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.00010033756634172608,
+        "y": -0.04272996906598903,
+        "z": -0.002354290605460972
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-276 b",
+      "type": "sub-Neptune",
+      "m": 0.002195820627,
+      "radius": 269.8054,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.119,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": 16.724680419583628,
+        "z": 0.8765033600089398
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-276 c",
+      "type": "sub-Neptune",
+      "m": 4.9849800000000005e-5,
+      "radius": 272.6257,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.09309499999999996,
+        "y": 0.16124526993062466,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -11.579338884429413,
+        "y": -6.685334421963219,
+        "z": 0.7007270616391328
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-276 d",
+      "type": "sub-Neptune",
+      "m": 4.89489e-5,
+      "radius": 263.2248,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.1233300000000001,
+        "y": -0.21361382609746957,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 10.060338106929287,
+        "y": -5.80833891417428,
+        "z": 0.6088042876302894
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-276",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

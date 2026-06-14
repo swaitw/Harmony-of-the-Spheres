@@ -1,0 +1,131 @@
+{
+  "name": "Kepler-1524 - System",
+  "description": "Kepler-1524 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-1524",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.17,
+    "m": 1.17
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-1524",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-1524"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-1524",
+    "barycenterMassTwo": "Kepler-1524 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-1524",
+      "type": "star",
+      "m": 1.17,
+      "radius": 12837.5,
+      "tilt": 0,
+      "temperature": 6179,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": -0.0003679955314398349,
+        "z": -1.9285828588844322e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-1524 b",
+      "type": "sub-Neptune",
+      "m": 3.69369e-5,
+      "radius": 332.7914,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.3392,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": 11.656494502370442,
+        "z": 0.6108909910942134
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-1524",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

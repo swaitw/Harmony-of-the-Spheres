@@ -1,0 +1,165 @@
+{
+  "name": "GJ 15 A - System",
+  "description": "GJ 15 A is a cool M-dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "GJ 15 A",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.38,
+    "m": 0.38
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "GJ 15 A",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "GJ 15 A"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "GJ 15 A",
+    "barycenterMassTwo": "GJ 15 A b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "GJ 15 A",
+      "type": "star",
+      "m": 0.38,
+      "radius": 3902.6,
+      "tilt": 0,
+      "temperature": 3607,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.0008440600487883999,
+        "y": 0.00010975498302981489,
+        "z": -2.8560922472433632e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "GJ 15 A b",
+      "type": "super-Earth",
+      "m": 9.099089999999998e-6,
+      "radius": 145.7137,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.03741553809605144,
+        "y": 0.053361695443874826,
+        "z": 0.0027965679569914577
+      },
+      "velocity": {
+        "x": -12.996702548590738,
+        "y": 9.087917329416122,
+        "z": 0.4762775655425654
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "GJ 15 A c",
+      "type": "gas giant planet",
+      "m": 0.00010810799999999999,
+      "radius": 627.0391,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -2.0655524413340514,
+        "y": 3.3529062269499357,
+        "z": -0.17571836949872666
+      },
+      "velocity": {
+        "x": -1.872984907192211,
+        "y": -1.1506888596981406,
+        "z": 0.06030504778251454
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "GJ 15 A",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

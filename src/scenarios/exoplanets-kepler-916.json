@@ -1,0 +1,131 @@
+{
+  "name": "Kepler-916 - System",
+  "description": "Kepler-916 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-916",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.85,
+    "m": 0.85
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-916",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-916"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-916",
+    "barycenterMassTwo": "Kepler-916 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-916",
+      "type": "star",
+      "m": 0.85,
+      "radius": 8318.7,
+      "tilt": 0,
+      "temperature": 5248,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": -0.00017657304801763597,
+        "z": -9.253801327842102e-6
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-916 b",
+      "type": "super-Earth",
+      "m": 1.126125e-5,
+      "radius": 165.4556,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.1885,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": 13.327746992118154,
+        "z": 0.6984776227031446
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-916",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "name": "HATS-58 A - System",
+  "description": "HATS-58 A is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HATS-58 A",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.461,
+    "m": 1.461
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HATS-58 A",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HATS-58 A"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 1e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HATS-58 A",
+    "barycenterMassTwo": "HATS-58 A b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HATS-58 A",
+      "type": "star",
+      "m": 1.461,
+      "radius": 14716.91,
+      "tilt": 0,
+      "temperature": 7175,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": -0.025118051333968064,
+        "z": -0.0013163812903306971
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HATS-58 A b",
+      "type": "gas giant planet",
+      "m": 0.0009830767946999999,
+      "radius": 1153.8512,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.048239359999999995,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": 37.329202760936,
+        "z": 1.9563406191070263
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HATS-58 A",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

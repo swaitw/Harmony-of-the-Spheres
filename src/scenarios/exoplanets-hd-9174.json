@@ -1,0 +1,131 @@
+{
+  "name": "HD 9174 - System",
+  "description": "HD 9174 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 9174",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.03,
+    "m": 1.03
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 9174",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 9174"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 9174",
+    "barycenterMassTwo": "HD 9174 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 9174",
+      "type": "star",
+      "m": 1.03,
+      "radius": 17150.9,
+      "tilt": 0,
+      "temperature": 5577,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.004881237822749748,
+        "y": 0.001035228042793498,
+        "z": 5.425400277433639e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 9174 b",
+      "type": "gas giant planet",
+      "m": 0.0010594322738999998,
+      "radius": 1287.9214,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.4021865153836791,
+        "y": 1.8911686409371882,
+        "z": 0.09911194872124517
+      },
+      "velocity": {
+        "x": -4.745631298284202,
+        "y": -1.006468190884989,
+        "z": -0.0527467628033023
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 9174",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

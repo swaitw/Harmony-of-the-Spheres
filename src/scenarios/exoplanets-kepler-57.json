@@ -1,0 +1,165 @@
+{
+  "name": "Kepler-57 - System",
+  "description": "Kepler-57 is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-57",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.859,
+    "m": 0.859
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-57",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-57"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-57",
+    "barycenterMassTwo": "Kepler-57 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-57",
+      "type": "star",
+      "m": 0.859,
+      "radius": 8483.02,
+      "tilt": 0,
+      "temperature": 5188,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 5.933000028473031e-20,
+        "y": -0.001632130222535245,
+        "z": -0.00013631591768236562
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-57 b",
+      "type": "sub-Neptune",
+      "m": 7.525518e-5,
+      "radius": 294.7178,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.058909944000000006,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": 24.15988297675087,
+        "z": 1.2661658145496641
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-57 c",
+      "type": "super-Earth",
+      "m": 2.060058e-5,
+      "radius": 206.4435,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.0889287,
+        "y": 1.0890624780733523e-17,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -2.4739337554856875e-15,
+        "y": -20.201202152393137,
+        "z": 1.0587001436547163
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-57",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

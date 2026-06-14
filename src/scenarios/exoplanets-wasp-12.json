@@ -1,0 +1,131 @@
+{
+  "name": "WASP-12 - System",
+  "description": "WASP-12 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "WASP-12",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.325,
+    "m": 1.325
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "WASP-12",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "WASP-12"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-6,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-7,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "WASP-12",
+    "barycenterMassTwo": "WASP-12 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "WASP-12",
+      "type": "star",
+      "m": 1.325,
+      "radius": 17356.3,
+      "tilt": 0,
+      "temperature": 6265,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.052311088175015584,
+        "y": -0.0024635474560600235,
+        "z": -0.00012910905133049137
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "WASP-12 b",
+      "type": "gas giant planet",
+      "m": 0.0014030319303,
+      "radius": 2070.6061,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.0010530185412923564,
+        "y": -0.02229860284432474,
+        "z": -0.0011686202561855658
+      },
+      "velocity": {
+        "x": 49.40172089816597,
+        "y": 2.326533209106347,
+        "z": 0.12192843891751098
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "WASP-12",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

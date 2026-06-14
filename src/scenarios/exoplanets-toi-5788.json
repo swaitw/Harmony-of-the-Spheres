@@ -1,0 +1,165 @@
+{
+  "name": "TOI-5788 - System",
+  "description": "TOI-5788 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-5788",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.87,
+    "m": 0.87
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-5788",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-5788"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-5788",
+    "barycenterMassTwo": "TOI-5788 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-5788",
+      "type": "star",
+      "m": 0.87,
+      "radius": 8934.9,
+      "tilt": 0,
+      "temperature": 5615,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.00010685147173114561,
+        "y": -0.0002989128705758204,
+        "z": 1.9125843601131785e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-5788 b",
+      "type": "super-Earth",
+      "m": 1.117116e-5,
+      "radius": 143.6455,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.006281742528532908,
+        "y": 0.059684879518508135,
+        "z": 0.003127951992340881
+      },
+      "velocity": {
+        "x": -24.496691443992773,
+        "y": -2.5711774756414614,
+        "z": -0.13474970164094477
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "TOI-5788 c",
+      "type": "super-Earth",
+      "m": 1.92192e-5,
+      "radius": 213.5881,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.09684183468286767,
+        "y": -0.060430562834935135,
+        "z": 0.0031670315990032323
+      },
+      "velocity": {
+        "x": 9.401831459445638,
+        "y": 15.025455397193982,
+        "z": -0.7874507500833227
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-5788",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

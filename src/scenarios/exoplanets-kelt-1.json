@@ -1,0 +1,131 @@
+{
+  "name": "KELT-1 - System",
+  "description": "KELT-1 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "KELT-1",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.335,
+    "m": 1.335
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "KELT-1",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "KELT-1"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-6,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-7,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "KELT-1",
+    "barycenterMassTwo": "KELT-1 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "KELT-1",
+      "type": "star",
+      "m": 1.335,
+      "radius": 15107.17,
+      "tilt": 0,
+      "temperature": 6516,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.7951701049602662,
+        "y": -0.4401659266762287,
+        "z": -0.023068118733163095
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "KELT-1 b",
+      "type": "gas giant planet",
+      "m": 0.025988412449999998,
+      "radius": 1169.6583,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.011837046723445457,
+        "y": 0.021325331836674333,
+        "z": 0.0011176132840340402
+      },
+      "velocity": {
+        "x": -40.84713108829991,
+        "y": 22.610904503817256,
+        "z": 1.184987292625977
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "KELT-1",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

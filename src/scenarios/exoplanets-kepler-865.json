@@ -1,0 +1,165 @@
+{
+  "name": "Kepler-865 - System",
+  "description": "Kepler-865 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-865",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.782,
+    "m": 0.782
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-865",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-865"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-865",
+    "barycenterMassTwo": "Kepler-865 c",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-865",
+      "type": "star",
+      "m": 0.782,
+      "radius": 9088.95,
+      "tilt": 0,
+      "temperature": 5440,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 5.427189222250716e-20,
+        "y": 0.0003879342766618217,
+        "z": -2.6119669573736657e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-865 c",
+      "type": "terrestial planet",
+      "m": 1.92192e-6,
+      "radius": 83.6679,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.061,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": 22.47198380097028,
+        "z": 1.1777067670933277
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-865 b",
+      "type": "super-Earth",
+      "m": 2.0300279999999998e-5,
+      "radius": 234.0821,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.1057,
+        "y": 1.2944516666987524e-17,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -2.090642085626435e-15,
+        "y": -17.071388151114437,
+        "z": 0.8946735422787303
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-865",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "name": "Kepler-232 - System",
+  "description": "Kepler-232 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-232",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.97,
+    "m": 0.97
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-232",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-232"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 1e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-232",
+    "barycenterMassTwo": "Kepler-232 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-232",
+      "type": "star",
+      "m": 0.97,
+      "radius": 9941.36,
+      "tilt": 0,
+      "temperature": 5847,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 1.0324062373070947e-19,
+        "y": 4.503023753532516e-5,
+        "z": -8.600206195469855e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-232 b",
+      "type": "sub-Neptune",
+      "m": 2.909907e-5,
+      "radius": 289.5473,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.054,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": 26.60063115740959,
+        "z": 1.3940800064871108
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-232 c",
+      "type": "sub-Neptune",
+      "m": 4.2042e-5,
+      "radius": 360.054,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.101,
+        "y": 1.2368932671388268e-17,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -2.381984801360263e-15,
+        "y": -19.45038196334399,
+        "z": 1.0193513249057775
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-232",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

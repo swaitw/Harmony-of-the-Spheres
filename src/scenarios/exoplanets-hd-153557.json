@@ -1,0 +1,199 @@
+{
+  "name": "HD 153557 - System",
+  "description": "HD 153557 is a orange K-type dwarf star with 3 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 153557",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.79,
+    "m": 0.79
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "3-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 153557",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 153557"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 153557",
+    "barycenterMassTwo": "HD 153557 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 153557",
+      "type": "star",
+      "m": 0.79,
+      "radius": 7652.9062,
+      "tilt": 0,
+      "temperature": 4837,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.04367392692457664,
+        "y": 0.019945819701786296,
+        "z": -0.0022689354174773627
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 153557 b",
+      "type": "gas giant planet",
+      "m": 6.108407720414999e-5,
+      "radius": 448.4223,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.05009010732276443,
+        "y": 0.03910495483040321,
+        "z": 0.002049403841625068
+      },
+      "velocity": {
+        "x": -14.080999862926577,
+        "y": -17.98715513978503,
+        "z": -0.9426668564956742
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 153557 c",
+      "type": "gas giant planet",
+      "m": 5.249412882713999e-5,
+      "radius": 409.8787,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.007219171717950509,
+        "y": -0.053768741952143144,
+        "z": 0.0017366028879930446
+      },
+      "velocity": {
+        "x": 29.18087085005625,
+        "y": -3.95734795982472,
+        "z": -1.2207187581109658
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 153557 d",
+      "type": "gas giant planet",
+      "m": 0.02620316024059734,
+      "radius": 1118.7055,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -7.150087746756851,
+        "y": -16.724054913035538,
+        "z": 0.11371805904697668
+      },
+      "velocity": {
+        "x": 1.2910924655205622,
+        "y": -0.5514881077269341,
+        "z": 0.07304926066251617
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 153557",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

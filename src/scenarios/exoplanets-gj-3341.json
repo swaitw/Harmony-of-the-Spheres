@@ -1,0 +1,131 @@
+{
+  "name": "GJ 3341 - System",
+  "description": "GJ 3341 is a cool M-dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "GJ 3341",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.47,
+    "m": 0.47
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "GJ 3341",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "GJ 3341"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "GJ 3341",
+    "barycenterMassTwo": "GJ 3341 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "GJ 3341",
+      "type": "star",
+      "m": 0.47,
+      "radius": 4508.53,
+      "tilt": 0,
+      "temperature": 3526,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.0005650080947630647,
+        "y": -0.0006196501537287177,
+        "z": -3.2474488489317194e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "GJ 3341 b",
+      "type": "super-Earth",
+      "m": 1.98198e-5,
+      "radius": 231.2618,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.04540631598940156,
+        "y": 0.04128888812715269,
+        "z": 0.0021638589358099988
+      },
+      "velocity": {
+        "x": -13.398409900132211,
+        "y": 14.694173112367295,
+        "z": 0.7700889812197439
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "GJ 3341",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

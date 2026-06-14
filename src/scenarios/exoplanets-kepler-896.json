@@ -1,0 +1,165 @@
+{
+  "name": "Kepler-896 - System",
+  "description": "Kepler-896 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-896",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.877,
+    "m": 0.877
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-896",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-896"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-896",
+    "barycenterMassTwo": "Kepler-896 c",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-896",
+      "type": "star",
+      "m": 0.877,
+      "radius": 8246.81,
+      "tilt": 0,
+      "temperature": 5510,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 2.2781062689486186e-20,
+        "y": -0.0002941660175371391,
+        "z": -3.4914534492473425e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-896 c",
+      "type": "sub-Neptune",
+      "m": 3.0330299999999997e-5,
+      "radius": 296.1279,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.1792,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": 13.884612001851705,
+        "z": 0.7276616812237091
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-896 b",
+      "type": "sub-Neptune",
+      "m": 2.084082e-5,
+      "radius": 237.8424,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.56378,
+        "y": 6.904313724232947e-17,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -9.586471155491667e-16,
+        "y": -7.82794774964189,
+        "z": 0.4102453579024113
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-896",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

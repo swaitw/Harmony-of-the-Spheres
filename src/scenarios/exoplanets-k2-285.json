@@ -1,0 +1,233 @@
+{
+  "name": "K2-285 - System",
+  "description": "K2-285 is a orange K-type dwarf star with 4 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "K2-285",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.83,
+    "m": 0.83
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "4-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "K2-285",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "K2-285"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-6,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-7,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "K2-285",
+    "barycenterMassTwo": "K2-285 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "K2-285",
+      "type": "star",
+      "m": 0.83,
+      "radius": 8082.49,
+      "tilt": 0,
+      "temperature": 4975,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.0006088985270390295,
+        "y": -0.0006332268222936557,
+        "z": -0.00016078922603273124
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "K2-285 b",
+      "type": "sub-Neptune",
+      "m": 2.906904e-5,
+      "radius": 243.483,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.03817,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": 29.267182812459954,
+        "z": 1.5338280570718186
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "K2-285 c",
+      "type": "sub-Neptune",
+      "m": 4.7087039999999994e-5,
+      "radius": 331.8513,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 5.045544812487095e-18,
+        "y": 0.0824,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -19.91949823233422,
+        "y": 1.2197174875424733e-15,
+        "z": 1.0439366667891015
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "K2-285 d",
+      "type": "super-Earth",
+      "m": 1.95195e-5,
+      "radius": 233.142,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.1178,
+        "y": 1.442633929395582e-17,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -2.0402350621252223e-15,
+        "y": -16.659783568174216,
+        "z": 0.873102260144111
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "K2-285 e",
+      "type": "super-Earth",
+      "m": 3.21321e-5,
+      "radius": 183.3173,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -3.3140779355126094e-17,
+        "y": -0.18041,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 13.462065430004769,
+        "y": -2.4729413008151364e-15,
+        "z": 0.7055169537495491
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "K2-285",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

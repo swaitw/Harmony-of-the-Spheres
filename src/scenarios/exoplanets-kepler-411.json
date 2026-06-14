@@ -1,0 +1,233 @@
+{
+  "name": "Kepler-411 - System",
+  "description": "Kepler-411 is a orange K-type dwarf star with 4 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-411",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.87,
+    "m": 0.87
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "4-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-411",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-411"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-6,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-7,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-411",
+    "barycenterMassTwo": "Kepler-411 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-411",
+      "type": "star",
+      "m": 0.87,
+      "radius": 8421.4,
+      "tilt": 0,
+      "temperature": 4974,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.001492513460246472,
+        "y": -0.0006380682844289491,
+        "z": -0.00011934247599127994
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-411 b",
+      "type": "super-Earth",
+      "m": 7.68768e-5,
+      "radius": 225.7153,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.02398530695826779,
+        "y": 0.021191325213761245,
+        "z": 0.0011105902945179452
+      },
+      "velocity": {
+        "x": -23.236487826793642,
+        "y": 26.228077751852144,
+        "z": 1.3745553098375107
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-411 c",
+      "type": "gas giant planet",
+      "m": 7.92792e-5,
+      "radius": 415.6132,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.06414128139573999,
+        "y": -0.014828503561082366,
+        "z": 0.0033615021183193788
+      },
+      "velocity": {
+        "x": 5.399031325330708,
+        "y": -23.417867303435735,
+        "z": -0.2829512420401573
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-411 e",
+      "type": "sub-Neptune",
+      "m": 3.24324e-5,
+      "radius": 308.3491,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.042104623099115626,
+        "y": 0.17787098947060756,
+        "z": -0.009321823557031749
+      },
+      "velocity": {
+        "x": -13.441374418277261,
+        "y": 3.1730517453191665,
+        "z": -0.16629259552235548
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-411 d",
+      "type": "sub-Neptune",
+      "m": 4.5645599999999995e-5,
+      "radius": 312.0154,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.12330877094966243,
+        "y": -0.209624035185498,
+        "z": 0.006462338851592994
+      },
+      "velocity": {
+        "x": 10.861184087504517,
+        "y": 6.406506253335524,
+        "z": 0.569210538410416
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-411",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

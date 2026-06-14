@@ -1,0 +1,165 @@
+{
+  "name": "HD 104067 - System",
+  "description": "HD 104067 is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 104067",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.82,
+    "m": 0.82
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 104067",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 104067"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 104067",
+    "barycenterMassTwo": "HD 104067 c",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 104067",
+      "type": "star",
+      "m": 0.82,
+      "radius": 8010.6,
+      "tilt": 0,
+      "temperature": 4952,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0006870231866134522,
+        "y": 0.00156456180278508,
+        "z": -0.00017730170674472458
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 104067 c",
+      "type": "sub-Neptune",
+      "m": 3.96396e-5,
+      "radius": 346.8927,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.05999190224373255,
+        "y": 0.04514518609367451,
+        "z": 0.002365958948489115
+      },
+      "velocity": {
+        "x": -14.193560255767986,
+        "y": 18.809677252474547,
+        "z": 0.9857734138329272
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 104067 b",
+      "type": "gas giant planet",
+      "m": 0.0001864863,
+      "radius": 864.8816,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.20510689259731832,
+        "y": -0.11353679531537661,
+        "z": 0.005950211309392085
+      },
+      "velocity": {
+        "x": 6.037902323857416,
+        "y": -10.877736116277473,
+        "z": 0.5700779934810356
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 104067",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

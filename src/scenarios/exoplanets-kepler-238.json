@@ -1,0 +1,267 @@
+{
+  "name": "Kepler-238 - System",
+  "description": "Kepler-238 is a Sun-like G/F-type star with 5 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-238",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.229,
+    "m": 1.229
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "5-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-238",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-238"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-6,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-7,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-238",
+    "barycenterMassTwo": "Kepler-238 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-238",
+      "type": "star",
+      "m": 1.229,
+      "radius": 14686.1,
+      "tilt": 0,
+      "temperature": 5751,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.005582472805118431,
+        "y": -0.3013633426685998,
+        "z": -0.016934485457199663
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-238 b",
+      "type": "super-Earth",
+      "m": 0.009924975059999999,
+      "radius": 162.6353,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.034,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": 37.73457274787556,
+        "z": 1.9775851599105243
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-238 c",
+      "type": "super-Earth",
+      "m": 0.00045802356599999996,
+      "radius": 224.6812,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.021322172611871377,
+        "y": 0.0656228996243656,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -25.191885616633357,
+        "y": 8.185339822090635,
+        "z": 1.3881938228688937
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-238 d",
+      "type": "sub-Neptune",
+      "m": 6.93693e-5,
+      "radius": 288.6072,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.09303695435311894,
+        "y": 0.06759530401363442,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -12.060037567957982,
+        "y": -16.599217668740504,
+        "z": 1.0752903114558467
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-238 e",
+      "type": "gas giant planet",
+      "m": 0.0005096091,
+      "radius": 526.4496,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.13984667764765343,
+        "y": -0.1016045587112769,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 9.83672038597685,
+        "y": -13.539084095988764,
+        "z": 0.8770561507738398
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-238 f",
+      "type": "super-Earth",
+      "m": 4.0540499999999996e-5,
+      "radius": 188.0177,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.08848701633926613,
+        "y": -0.27233503344111726,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 12.366210286444412,
+        "y": 4.018025289823758,
+        "z": 0.681437546723589
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-238",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

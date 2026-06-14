@@ -1,0 +1,165 @@
+{
+  "name": "iot Dra - System",
+  "description": "iot Dra is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "iot Dra",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.54,
+    "m": 1.54
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "iot Dra",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "iot Dra"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "iot Dra",
+    "barycenterMassTwo": "iot Dra b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "iot Dra",
+      "type": "star",
+      "m": 1.54,
+      "radius": 121083.3,
+      "tilt": 0,
+      "temperature": 4504,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.08835529622916784,
+        "y": 0.012917609472805734,
+        "z": -0.0006976367789147398
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "iot Dra b",
+      "type": "gas giant planet",
+      "m": 0.011281465507532219,
+      "radius": 1165.7099,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.0007582526725794021,
+        "y": 0.433850944691905,
+        "z": 0.022737164551152277
+      },
+      "velocity": {
+        "x": -15.432703139350439,
+        "y": 0.026898261854196845,
+        "z": 0.001409678170352195
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "iot Dra c",
+      "type": "gas giant planet",
+      "m": 0.014889243817047598,
+      "radius": 1146.9082,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -4.963722833335224,
+        "y": -9.322611051330965,
+        "z": 0.488577342319794
+      },
+      "velocity": {
+        "x": 2.554619457443336,
+        "y": -1.356453735972625,
+        "z": 0.07108872800250997
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "iot Dra",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

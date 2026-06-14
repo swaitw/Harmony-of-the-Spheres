@@ -1,0 +1,233 @@
+{
+  "name": "Kepler-24 - System",
+  "description": "Kepler-24 is a Sun-like G/F-type star with 4 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-24",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.046,
+    "m": 1.046
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "4-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-24",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-24"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 1e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-24",
+    "barycenterMassTwo": "Kepler-24 d",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-24",
+      "type": "star",
+      "m": 1.046,
+      "radius": 13238.03,
+      "tilt": 0,
+      "temperature": 5897,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0005596819560021611,
+        "y": -0.02341489182552263,
+        "z": -0.0013941555057668908
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-24 d",
+      "type": "super-Earth",
+      "m": 0.0008827588769999999,
+      "radius": 156.9948,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.051,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": 28.423902733047665,
+        "z": 1.4896336207961938
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-24 b",
+      "type": "super-Earth",
+      "m": 3.345342e-5,
+      "radius": 220.7328,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 4.812840489330113e-18,
+        "y": 0.07859965,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -23.15774711878398,
+        "y": 1.418003044224132e-15,
+        "z": 1.2136460996937142
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-24 c",
+      "type": "sub-Neptune",
+      "m": 2.999997e-5,
+      "radius": 236.3383,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.10463432,
+        "y": 1.2814008506895989e-17,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -2.447155391770174e-15,
+        "y": -19.982540218730648,
+        "z": 1.04724055729773
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-24 e",
+      "type": "sub-Neptune",
+      "m": 7.87140354e-5,
+      "radius": 261.3446,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -2.535018874235021e-17,
+        "y": -0.138,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 17.279423671838977,
+        "y": -3.174178633624291e-15,
+        "z": 0.9055762219318947
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-24",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

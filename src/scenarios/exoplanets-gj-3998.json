@@ -1,0 +1,199 @@
+{
+  "name": "GJ 3998 - System",
+  "description": "GJ 3998 is a orange K-type dwarf star with 3 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "GJ 3998",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.52,
+    "m": 0.52
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "3-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "GJ 3998",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "GJ 3998"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-6,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-7,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "GJ 3998",
+    "barycenterMassTwo": "GJ 3998 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "GJ 3998",
+      "type": "star",
+      "m": 0.52,
+      "radius": 5135.0,
+      "tilt": 0,
+      "temperature": 3726,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.0001985348245170974,
+        "y": 0.00010230233717475045,
+        "z": -7.003630232429783e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "GJ 3998 b",
+      "type": "terrestial planet",
+      "m": 7.5075e-6,
+      "radius": 130.6723,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.03,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": 26.130276095895717,
+        "z": 1.3694297422386303
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "GJ 3998 c",
+      "type": "super-Earth",
+      "m": 2.048046e-5,
+      "radius": 235.0222,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.04499999999999998,
+        "y": 0.07794228634059949,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -13.065138047947858,
+        "y": -7.543160968982313,
+        "z": 0.790640630317753
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "GJ 3998 d",
+      "type": "super-Earth",
+      "m": 1.822821e-5,
+      "radius": 219.9807,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.09450000000000008,
+        "y": -0.16367880131525886,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 9.015801794942208,
+        "y": -5.205275593270201,
+        "z": 0.5455938687990116
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "GJ 3998",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

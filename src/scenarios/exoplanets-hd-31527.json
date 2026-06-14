@@ -1,0 +1,199 @@
+{
+  "name": "HD 31527 - System",
+  "description": "HD 31527 is a Sun-like G/F-type star with 3 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 31527",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.96,
+    "m": 0.96
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "3-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 31527",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 31527"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 31527",
+    "barycenterMassTwo": "HD 31527 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 31527",
+      "type": "star",
+      "m": 0.96,
+      "radius": 11026.8374,
+      "tilt": 0,
+      "temperature": 5898,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.0012364457566858874,
+        "y": -0.0005755927748701367,
+        "z": -3.436696152827465e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 31527 b",
+      "type": "sub-Neptune",
+      "m": 3.144141e-5,
+      "radius": 302.7085,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.08502126160057409,
+        "y": 0.074119335407192,
+        "z": 0.003884429770625819
+      },
+      "velocity": {
+        "x": -12.642924610906237,
+        "y": 14.462800291653991,
+        "z": 0.7579632454997063
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 31527 c",
+      "type": "sub-Neptune",
+      "m": 4.252248e-5,
+      "radius": 361.9341,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.030167972898469265,
+        "y": 0.253806814306364,
+        "z": -0.005281508009281262
+      },
+      "velocity": {
+        "x": -12.320594583933433,
+        "y": -1.4520218972784404,
+        "z": 0.5972368960274629
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 31527 d",
+      "type": "sub-Neptune",
+      "m": 3.5495459999999996e-5,
+      "radius": 325.2707,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.3169664050307739,
+        "y": 0.5275492609994418,
+        "z": 0.0005621430514700552
+      },
+      "velocity": {
+        "x": -7.481923416246495,
+        "y": 4.495836995601776,
+        "z": -0.4573864957978607
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 31527",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

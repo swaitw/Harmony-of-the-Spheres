@@ -1,0 +1,131 @@
+{
+  "name": "eps Eri - System",
+  "description": "eps Eri is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "eps Eri",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.82,
+    "m": 0.82
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "eps Eri",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "eps Eri"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "eps Eri",
+    "barycenterMassTwo": "eps Eri b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "eps Eri",
+      "type": "star",
+      "m": 0.82,
+      "radius": 7796.0186,
+      "tilt": 0,
+      "temperature": 5020,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0008187977489586603,
+        "y": -0.00235465874404601,
+        "z": -0.00012340243574484632
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "eps Eri b",
+      "type": "gas giant planet",
+      "m": 0.00062992954610586,
+      "radius": 1325.525,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 3.1012341656496543,
+        "y": -1.075454491964972,
+        "z": -0.056362181643855466
+      },
+      "velocity": {
+        "x": 1.065855948965553,
+        "y": 3.065136699895726,
+        "z": 0.16063700764048452
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "eps Eri",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

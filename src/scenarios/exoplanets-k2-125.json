@@ -1,0 +1,130 @@
+{
+  "name": "K2-125 - System",
+  "description": "K2-125 is a cool M-dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "K2-125",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.494727,
+    "m": 0.494727
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "K2-125",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "K2-125"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "K2-125",
+    "barycenterMassTwo": "K2-125 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "K2-125",
+      "type": "star",
+      "m": 0.494727,
+      "radius": 4129.0432,
+      "tilt": 0,
+      "temperature": 3654,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -2.9384995723145194e-5,
+        "y": -0.0004489144972494236,
+        "z": -2.35266118888052e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "K2-125 b",
+      "type": "super-Earth",
+      "m": 1.618617e-5,
+      "radius": 204.9393,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.11108292436078461,
+        "y": -0.0072513374848883535,
+        "z": -0.000380026494414872
+      },
+      "velocity": {
+        "x": 0.8981464286563439,
+        "y": 13.720980471644348,
+        "z": 0.7190861161048556
+      },
+      "nonStellarProceduralManifestation": true
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "K2-125",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

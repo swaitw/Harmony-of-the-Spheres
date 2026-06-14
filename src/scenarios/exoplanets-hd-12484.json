@@ -1,0 +1,131 @@
+{
+  "name": "HD 12484 - System",
+  "description": "HD 12484 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 12484",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.01,
+    "m": 1.01
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 12484",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 12484"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 12484",
+    "barycenterMassTwo": "HD 12484 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 12484",
+      "type": "star",
+      "m": 1.01,
+      "radius": 10288.979,
+      "tilt": 0,
+      "temperature": 5920,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.020080190857352874,
+        "y": -0.028638183052030555,
+        "z": -0.0015008635764581489
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 12484 b",
+      "type": "gas giant planet",
+      "m": 0.0028442416002,
+      "radius": 1240.917,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.2262579861530624,
+        "y": -0.15821042803677676,
+        "z": -0.008291457192826871
+      },
+      "velocity": {
+        "x": 7.130545015761071,
+        "y": 10.169517554527351,
+        "z": 0.5329618314126824
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 12484",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

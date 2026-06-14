@@ -1,0 +1,131 @@
+{
+  "name": "HD 150010 - System",
+  "description": "HD 150010 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 150010",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.3,
+    "m": 1.3
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 150010",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 150010"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 150010",
+    "barycenterMassTwo": "HD 150010 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 150010",
+      "type": "star",
+      "m": 1.3,
+      "radius": 166374.0,
+      "tilt": 0,
+      "temperature": 4153,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.008913558082327872,
+        "y": 0.009545521024899431,
+        "z": 0.0005002595590145588
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 150010 b",
+      "type": "gas giant planet",
+      "m": 0.0022906528949304,
+      "radius": 1250.3179,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.8191161458134708,
+        "y": 0.7627913496141066,
+        "z": 0.039976200689589216
+      },
+      "velocity": {
+        "x": -5.058656216606016,
+        "y": -5.417310217463701,
+        "z": -0.28390919818460164
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 150010",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

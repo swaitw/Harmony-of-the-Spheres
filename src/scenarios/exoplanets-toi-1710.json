@@ -1,0 +1,131 @@
+{
+  "name": "TOI-1710 - System",
+  "description": "TOI-1710 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-1710",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.0258,
+    "m": 1.0258
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-1710",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-1710"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-1710",
+    "barycenterMassTwo": "TOI-1710 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-1710",
+      "type": "star",
+      "m": 1.0258,
+      "radius": 9832.498,
+      "tilt": 0,
+      "temperature": 5684,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.0010245107198739805,
+        "y": -6.264721503445762e-20,
+        "z": -3.283201418223075e-21
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-1710 b",
+      "type": "gas giant planet",
+      "m": 6.726719999999999e-5,
+      "radius": 489.1424,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 1.0164568432923032e-17,
+        "y": 0.16577250276925926,
+        "z": 0.008687768736328677
+      },
+      "velocity": {
+        "x": -15.623410762551874,
+        "y": 9.553469325666392e-16,
+        "z": 5.0067611180682877e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-1710",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

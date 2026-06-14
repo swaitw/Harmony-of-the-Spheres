@@ -1,0 +1,199 @@
+{
+  "name": "Kepler-149 - System",
+  "description": "Kepler-149 is a Sun-like G/F-type star with 3 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-149",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.013,
+    "m": 1.013
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "3-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-149",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-149"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-149",
+    "barycenterMassTwo": "Kepler-149 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-149",
+      "type": "star",
+      "m": 1.013,
+      "radius": 9787.31,
+      "tilt": 0,
+      "temperature": 5381,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.00022126932401897076,
+        "y": -0.00047882400049400743,
+        "z": -6.306372404504835e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-149 b",
+      "type": "gas giant planet",
+      "m": 4.95495e-5,
+      "radius": 395.7773,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.184,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": 14.72647367139681,
+        "z": 0.7717817817880815
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-149 c",
+      "type": "super-Earth",
+      "m": 9.66966e-6,
+      "radius": 151.3543,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.14049999999999996,
+        "y": 0.24335313846342732,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -10.320129536832788,
+        "y": -5.958329566162214,
+        "z": 0.6245256415980963
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-149 d",
+      "type": "sub-Neptune",
+      "m": 4.47447e-5,
+      "radius": 372.2751,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.28550000000000025,
+        "y": -0.4945005055609143,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 7.239694734981973,
+        "y": -4.179839704092564,
+        "z": 0.43811223330115034
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-149",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,232 @@
+{
+  "name": "GJ 887 - System",
+  "description": "GJ 887 is a cool M-dwarf star with 4 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "GJ 887",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.495,
+    "m": 0.495
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "4-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "GJ 887",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "GJ 887"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 1e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "GJ 887",
+    "barycenterMassTwo": "GJ 887 e",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "GJ 887",
+      "type": "star",
+      "m": 0.495,
+      "radius": 4806.36,
+      "tilt": 0,
+      "temperature": 3688,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0006116269679780588,
+        "y": -0.0007500224809831165,
+        "z": 2.4753254902367763e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "GJ 887 e",
+      "type": "terrestial planet",
+      "m": 4.384379999999999e-6,
+      "radius": 105.2899,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.0417,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": 21.624074357918502,
+        "z": 1.1332697161498637
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "GJ 887 b",
+      "type": "super-Earth",
+      "m": 1.17117e-5,
+      "radius": 169.216,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -1.0780137343978233e-17,
+        "y": -0.058738,
+        "z": 3.764698234242161e-19
+      },
+      "velocity": {
+        "x": 19.453529226307523,
+        "y": -3.576824781118135e-15,
+        "z": -1.0195162659685162
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "GJ 887 c",
+      "type": "super-Earth",
+      "m": 1.95195e-5,
+      "radius": 228.4415,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.09437332990552877,
+        "y": 0.03430200876974108,
+        "z": -0.0017976921045695351
+      },
+      "velocity": {
+        "x": -5.1619528278089275,
+        "y": 14.162912418518511,
+        "z": -0.7422467880347614
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "GJ 887 d",
+      "type": "super-Earth",
+      "m": 1.8318299999999997e-5,
+      "radius": 219.9807,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -3.8943768212885826e-17,
+        "y": -0.212,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 9.59041991515641,
+        "y": -1.761731557736299e-15,
+        "z": 0.5026126101451999
+      },
+      "nonStellarProceduralManifestation": true
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "GJ 887",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

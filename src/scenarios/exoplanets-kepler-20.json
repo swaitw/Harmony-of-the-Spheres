@@ -1,0 +1,301 @@
+{
+  "name": "Kepler-20 - System",
+  "description": "Kepler-20 is a Sun-like G/F-type star with 6 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-20",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.929,
+    "m": 0.929
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "6-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-20",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-20"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 1e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-20",
+    "barycenterMassTwo": "Kepler-20 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-20",
+      "type": "star",
+      "m": 0.929,
+      "radius": 9411.428,
+      "tilt": 0,
+      "temperature": 5495,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.000566340942870753,
+        "y": -0.00027407699865870136,
+        "z": -0.00017608384794287295
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-20 b",
+      "type": "super-Earth",
+      "m": 2.9129099999999995e-5,
+      "radius": 166.6777,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.041861050000000004,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": 30.769467520110567,
+        "z": 1.6125594624506598
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-20 e",
+      "type": "terrestial planet",
+      "m": 2.28228e-6,
+      "radius": 77.1813,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.02891980000000001,
+        "y": 0.05009056294473042,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -22.76355680664001,
+        "y": 13.142545650026953,
+        "z": 1.3775432632878115
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-20 c",
+      "type": "sub-Neptune",
+      "m": 3.3333299999999995e-5,
+      "radius": 272.0617,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.04324319999999998,
+        "y": 0.07489941948186249,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -18.478795892177843,
+        "y": -10.668737782649023,
+        "z": 1.1182497098834254
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-20 f",
+      "type": "terrestial planet",
+      "m": 4.2041999999999995e-6,
+      "radius": 89.4964,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.1256622,
+        "y": 1.5389181100381453e-17,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -2.1858884456377558e-15,
+        "y": -17.849133702547185,
+        "z": 0.935433459476585
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-20 g",
+      "type": "gas giant planet",
+      "m": 5.993988e-5,
+      "radius": 442.7818,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.08733750000000008,
+        "y": -0.15127298740604678,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 13.44234343892905,
+        "y": -7.760940603005096,
+        "z": 0.813467324302167
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-20 d",
+      "type": "sub-Neptune",
+      "m": 4.02402e-5,
+      "radius": 244.9871,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.15945659999999978,
+        "y": -0.2761869328021876,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 9.649811403027938,
+        "y": 5.57132121116729,
+        "z": 0.5839611446995631
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-20",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

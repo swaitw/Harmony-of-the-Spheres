@@ -1,0 +1,131 @@
+{
+  "name": "TOI-3862 - System",
+  "description": "TOI-3862 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-3862",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.9,
+    "m": 0.9
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-3862",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-3862"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-6,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-7,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-3862",
+    "barycenterMassTwo": "TOI-3862 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-3862",
+      "type": "star",
+      "m": 0.9,
+      "radius": 9448.4,
+      "tilt": 0,
+      "temperature": 5300,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.00678271804390594,
+        "y": -0.0010388991641250196,
+        "z": -5.444639809080002e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-3862 b",
+      "type": "gas giant planet",
+      "m": 0.0001612611,
+      "radius": 519.869,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.003759969668784588,
+        "y": -0.024480682488907547,
+        "z": -0.0012829782045768786
+      },
+      "velocity": {
+        "x": 37.854425149743776,
+        "y": 5.7981078369955155,
+        "z": 0.30386595578053244
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-3862",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

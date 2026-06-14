@@ -1,0 +1,301 @@
+{
+  "name": "HD 34445 - System",
+  "description": "HD 34445 is a Sun-like G/F-type star with 6 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 34445",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.07,
+    "m": 1.07
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "6-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 34445",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 34445"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 34445",
+    "barycenterMassTwo": "HD 34445 e",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 34445",
+      "type": "star",
+      "m": 1.07,
+      "radius": 14172.6,
+      "tilt": 0,
+      "temperature": 5836,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0032172914747094395,
+        "y": -0.004608433269726397,
+        "z": 0.00015994411310400972
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 34445 e",
+      "type": "gas giant planet",
+      "m": 5.04504e-5,
+      "radius": 400.4778,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.13566889486630235,
+        "y": -0.20314813654880143,
+        "z": -0.010646542702010701
+      },
+      "velocity": {
+        "x": 11.41953800351197,
+        "y": 7.605447821359611,
+        "z": 0.3985846307705011
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 34445 d",
+      "type": "gas giant planet",
+      "m": 9.21921e-5,
+      "radius": 570.6338,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.27762218294285335,
+        "y": -0.37695467078100664,
+        "z": -0.02247796897492748
+      },
+      "velocity": {
+        "x": 7.741284717141312,
+        "y": 5.713378597784581,
+        "z": -0.2016368305015477
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 34445 c",
+      "type": "gas giant planet",
+      "m": 0.0001606605,
+      "radius": 791.5546,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.01165824496666162,
+        "y": -0.6918986582936698,
+        "z": 0.018659562649666048
+      },
+      "velocity": {
+        "x": 7.943850610131484,
+        "y": -0.1434730134991404,
+        "z": -0.35678377220950286
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 34445 f",
+      "type": "gas giant planet",
+      "m": 0.0001138137,
+      "radius": 646.781,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 1.2679735277859152,
+        "y": 0.7912319525422693,
+        "z": -0.041466709530524996
+      },
+      "velocity": {
+        "x": -2.860781084140818,
+        "y": 4.571932475742195,
+        "z": -0.2396048280856651
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 34445 b",
+      "type": "gas giant planet",
+      "m": 0.0007826436618000001,
+      "radius": 1306.7232,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 1.4508223614828708,
+        "y": -0.41551091079811586,
+        "z": 0.07673570504651529
+      },
+      "velocity": {
+        "x": 1.6445077758702644,
+        "y": 5.728124244773319,
+        "z": -0.07546073566403444
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 34445 g",
+      "type": "gas giant planet",
+      "m": 0.00036216179999999995,
+      "radius": 1278.5206,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -6.126128788189828,
+        "y": 0.5507274242999124,
+        "z": -0.26361214887751466
+      },
+      "velocity": {
+        "x": -0.23479614736582552,
+        "y": -2.650143931491788,
+        "z": -0.0801006469943895
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 34445",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

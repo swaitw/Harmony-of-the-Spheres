@@ -1,0 +1,199 @@
+{
+  "name": "TOI-1260 - System",
+  "description": "TOI-1260 is a orange K-type dwarf star with 3 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-1260",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.679,
+    "m": 0.679
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "3-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-1260",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-1260"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-6,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-7,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-1260",
+    "barycenterMassTwo": "TOI-1260 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-1260",
+      "type": "star",
+      "m": 0.679,
+      "radius": 6901.44,
+      "tilt": 0,
+      "temperature": 4227,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.00031804690187780307,
+        "y": -2.773873177749148e-5,
+        "z": -0.00015777969777618387
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-1260 b",
+      "type": "super-Earth",
+      "m": 2.570568e-5,
+      "radius": 226.5614,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.0367,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": 26.996335025939402,
+        "z": 1.4148179674904666
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "TOI-1260 c",
+      "type": "sub-Neptune",
+      "m": 3.96396e-5,
+      "radius": 259.4645,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.03284999999999998,
+        "y": 0.056897869028637624,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -17.473736733352467,
+        "y": -10.088466606749694,
+        "z": 1.0574282624617397
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "TOI-1260 d",
+      "type": "sub-Neptune",
+      "m": 3.555552e-5,
+      "radius": 293.3077,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.05580000000000005,
+        "y": -0.09664843506234333,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 13.407147138907552,
+        "y": -7.740620009713206,
+        "z": 0.8113374099658833
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-1260",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "name": "TOI-969 - System",
+  "description": "TOI-969 is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-969",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.734,
+    "m": 0.734
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-969",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-969"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-6,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-7,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-969",
+    "barycenterMassTwo": "TOI-969 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-969",
+      "type": "star",
+      "m": 0.734,
+      "radius": 6891.17,
+      "tilt": 0,
+      "temperature": 4435,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.049750261309119026,
+        "y": -0.09273605411802376,
+        "z": 0.004730848349660684
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-969 b",
+      "type": "sub-Neptune",
+      "m": 2.73273e-5,
+      "radius": 259.9345,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.02636,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": 33.119081288278466,
+        "z": 1.735697502213198
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "TOI-969 c",
+      "type": "gas giant planet",
+      "m": 0.0107851573802973,
+      "radius": 1165.7099,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.823838314093833,
+        "y": 0.44669468854964356,
+        "z": -0.02341027664441656
+      },
+      "velocity": {
+        "x": -3.3858283670114373,
+        "y": 6.227373999681853,
+        "z": -0.32636284208827604
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-969",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

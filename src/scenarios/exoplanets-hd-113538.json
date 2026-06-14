@@ -1,0 +1,165 @@
+{
+  "name": "HD 113538 - System",
+  "description": "HD 113538 is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 113538",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.585,
+    "m": 0.585
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 113538",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 113538"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 113538",
+    "barycenterMassTwo": "HD 113538 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 113538",
+      "type": "star",
+      "m": 0.585,
+      "radius": 5443.1,
+      "tilt": 0,
+      "temperature": 4462,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.00843759776813942,
+        "y": 0.00018817794077422722,
+        "z": -9.407913490838109e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 113538 b",
+      "type": "gas giant planet",
+      "m": 0.00034357322999999996,
+      "radius": 1240.917,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.2939396762432479,
+        "y": 1.0236846230530432,
+        "z": 0.053649037780407124
+      },
+      "velocity": {
+        "x": -4.777607582857266,
+        "y": 1.3680794509912069,
+        "z": 0.07169800590921137
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    },
+    {
+      "name": "HD 113538 c",
+      "type": "gas giant planet",
+      "m": 0.0008875967099999999,
+      "radius": 1297.3223,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.33896124280584705,
+        "y": 1.9197102272323199,
+        "z": -0.10060774987618831
+      },
+      "velocity": {
+        "x": -3.7117494784842067,
+        "y": -0.653584634429975,
+        "z": 0.034252919263993334
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 113538",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

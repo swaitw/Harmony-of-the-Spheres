@@ -1,0 +1,165 @@
+{
+  "name": "TOI-286 - System",
+  "description": "TOI-286 is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-286",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.832,
+    "m": 0.832
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-286",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-286"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 1e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-286",
+    "barycenterMassTwo": "TOI-286 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-286",
+      "type": "star",
+      "m": 0.832,
+      "radius": 8010.6,
+      "tilt": 0,
+      "temperature": 5152,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.00025115223884069433,
+        "y": 5.06716109792226e-21,
+        "z": -1.8738032784014657e-21
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-286 b",
+      "type": "terrestial planet",
+      "m": 1.360359e-5,
+      "radius": 133.4926,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 3.0799866998555933e-18,
+        "y": 0.05023106559815506,
+        "z": 0.002632498599020075
+      },
+      "velocity": {
+        "x": -25.560904541003126,
+        "y": 1.5630090073166207e-15,
+        "z": 8.19138310728548e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "TOI-286 c",
+      "type": "super-Earth",
+      "m": 1.117116e-5,
+      "radius": 176.7367,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -3.909171667859586e-17,
+        "y": -0.21270809090272422,
+        "z": 0.011147558679747037
+      },
+      "velocity": {
+        "x": 12.421396049245294,
+        "y": -2.280731073166406e-15,
+        "z": 3.980626491659259e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-286",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

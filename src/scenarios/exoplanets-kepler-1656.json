@@ -1,0 +1,165 @@
+{
+  "name": "Kepler-1656 - System",
+  "description": "Kepler-1656 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-1656",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.03,
+    "m": 1.03
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-1656",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-1656"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-1656",
+    "barycenterMassTwo": "Kepler-1656 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-1656",
+      "type": "star",
+      "m": 1.03,
+      "radius": 11297.0,
+      "tilt": 0,
+      "temperature": 5569,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.0029527044889312197,
+        "y": -0.003972024923587287,
+        "z": -0.00021831875875522402
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-1656 b",
+      "type": "gas giant planet",
+      "m": 0.0001435434,
+      "radius": 429.9965,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.01933435417436092,
+        "y": 0.02543716235455643,
+        "z": 0.0013331051902644782
+      },
+      "velocity": {
+        "x": -38.5177513259457,
+        "y": 29.196496846659624,
+        "z": 1.5301235625777463
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-1656 c",
+      "type": "gas giant planet",
+      "m": 0.0003795792,
+      "radius": 1316.1241,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.05795307751070118,
+        "y": -1.440928198911455,
+        "z": 0.07551584701126164
+      },
+      "velocity": {
+        "x": 6.5537926263651896,
+        "y": -0.2628667592004405,
+        "z": 0.013776263097024982
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-1656",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "name": "GJ 251 - System",
+  "description": "GJ 251 is a cool M-dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "GJ 251",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.35,
+    "m": 0.35
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "GJ 251",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "GJ 251"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "GJ 251",
+    "barycenterMassTwo": "GJ 251 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "GJ 251",
+      "type": "star",
+      "m": 0.35,
+      "radius": 3697.2,
+      "tilt": 0,
+      "temperature": 3342,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 3.4193125931972584e-20,
+        "y": -0.00015229046085469752,
+        "z": -3.724655382510703e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "GJ 251 b",
+      "type": "super-Earth",
+      "m": 1.156155e-5,
+      "radius": 168.2759,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.0808,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": 13.062650161026712,
+        "z": 0.6845844864906706
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "GJ 251 c",
+      "type": "super-Earth",
+      "m": 1.165164e-5,
+      "radius": 169.216,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.196,
+        "y": 2.4003077263288125e-17,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -1.0271167042742827e-15,
+        "y": -8.387044370584247,
+        "z": 0.4395463702106525
+      },
+      "nonStellarProceduralManifestation": true
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "GJ 251",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

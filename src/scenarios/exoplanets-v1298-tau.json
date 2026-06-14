@@ -1,0 +1,233 @@
+{
+  "name": "V1298 Tau - System",
+  "description": "V1298 Tau is a orange K-type dwarf star with 4 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "V1298 Tau",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.1,
+    "m": 1.1
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "4-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "V1298 Tau",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "V1298 Tau"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "V1298 Tau",
+    "barycenterMassTwo": "V1298 Tau c",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "V1298 Tau",
+      "type": "star",
+      "m": 1.1,
+      "radius": 13556.4,
+      "tilt": 0,
+      "temperature": 4970,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0002606279159080446,
+        "y": -0.00022771373592909717,
+        "z": -1.720131613356004e-7
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "V1298 Tau c",
+      "type": "gas giant planet",
+      "m": 1.41141e-5,
+      "radius": 477.565,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.003076477744113777,
+        "y": 0.08145565754601476,
+        "z": 0.004268910122026532
+      },
+      "velocity": {
+        "x": -23.16354817895625,
+        "y": 0.872461801395373,
+        "z": 0.045723785520413236
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "V1298 Tau d",
+      "type": "gas giant planet",
+      "m": 1.8018e-5,
+      "radius": 613.8779,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.10694748236027277,
+        "y": 0.0037398136638765725,
+        "z": 0.005604880050414118
+      },
+      "velocity": {
+        "x": -0.7048294969863727,
+        "y": -20.21137498394945,
+        "z": 0.03693854871023872
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "V1298 Tau b",
+      "type": "gas giant planet",
+      "m": 3.93393e-5,
+      "radius": 884.6234,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.0029174987138532553,
+        "y": -0.1669143251683041,
+        "z": 0.008747609112598252
+      },
+      "velocity": {
+        "x": 16.18302799378431,
+        "y": 0.282088681094107,
+        "z": -0.014783641337024263
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "V1298 Tau e",
+      "type": "gas giant planet",
+      "m": 4.59459e-5,
+      "radius": 956.0702,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.2651613000178489,
+        "y": 0.004634759485057256,
+        "z": 0.013896514885739697
+      },
+      "velocity": {
+        "x": -0.2243079889113754,
+        "y": 12.868231542304498,
+        "z": -0.011755483574290342
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "V1298 Tau",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

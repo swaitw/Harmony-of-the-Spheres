@@ -1,0 +1,233 @@
+{
+  "name": "Kepler-139 - System",
+  "description": "Kepler-139 is a Sun-like G/F-type star with 4 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-139",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.078,
+    "m": 1.078
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "4-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-139",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-139"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-139",
+    "barycenterMassTwo": "Kepler-139 d",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-139",
+      "type": "star",
+      "m": 1.078,
+      "radius": 10732.15,
+      "tilt": 0,
+      "temperature": 5622,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0035084237088862844,
+        "y": 0.00017619413607391298,
+        "z": -0.00024432125918400974
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-139 d",
+      "type": "super-Earth",
+      "m": 6.006e-6,
+      "radius": 159.345,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.0755533961,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": 23.707477075390376,
+        "z": 1.2424562259248182
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-139 b",
+      "type": "sub-Neptune",
+      "m": 2.1021e-5,
+      "radius": 276.3861,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 7.776507174585693e-18,
+        "y": 0.127,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -18.285652999464812,
+        "y": 1.119673320805689e-15,
+        "z": 0.9583104664422323
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-139 c",
+      "type": "sub-Neptune",
+      "m": 3.9039e-5,
+      "radius": 317.75,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.586,
+        "y": 7.17643024300349e-17,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -1.0424959542932372e-15,
+        "y": -8.512625477150339,
+        "z": 0.4461277971256883
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-139 e",
+      "type": "gas giant planet",
+      "m": 0.0011351339999999999,
+      "radius": 1287.9214,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -5.866069506124777e-16,
+        "y": -3.1933395055668097,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 3.670459584402516,
+        "y": -6.742524872157397e-16,
+        "z": 0.1923606357666902
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-139",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

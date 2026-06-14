@@ -1,0 +1,165 @@
+{
+  "name": "HD 25912 - System",
+  "description": "HD 25912 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 25912",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.08,
+    "m": 1.08
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 25912",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 25912"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 25912",
+    "barycenterMassTwo": "HD 25912 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 25912",
+      "type": "star",
+      "m": 1.08,
+      "radius": 10227.8519,
+      "tilt": 0,
+      "temperature": 5921,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.01968150104021305,
+        "y": 0.013547633963976919,
+        "z": -0.0008254840829577121
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 25912 b",
+      "type": "gas giant planet",
+      "m": 0.00011453264474652,
+      "radius": 648.6612,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.17135015981238258,
+        "y": -0.1530646393281405,
+        "z": -0.008021777833947497
+      },
+      "velocity": {
+        "x": 9.306086487156348,
+        "y": 10.389282087516463,
+        "z": 0.5444792025518165
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 25912 c",
+      "type": "gas giant planet",
+      "m": 0.01577400849771747,
+      "radius": 1146.9082,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -10.456085226897855,
+        "y": -13.306817224443568,
+        "z": 0.6973807400584097
+      },
+      "velocity": {
+        "x": 1.2799644699530737,
+        "y": -1.0030016554058128,
+        "z": 0.05256508937703278
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 25912",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

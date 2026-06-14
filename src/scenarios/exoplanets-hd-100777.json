@@ -1,0 +1,131 @@
+{
+  "name": "HD 100777 - System",
+  "description": "HD 100777 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 100777",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.08,
+    "m": 1.08
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 100777",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 100777"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 100777",
+    "barycenterMassTwo": "HD 100777 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 100777",
+      "type": "star",
+      "m": 1.08,
+      "radius": 10680.8,
+      "tilt": 0,
+      "temperature": 5533,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.004184503068151645,
+        "y": 0.00938566738850518,
+        "z": 0.0004918819849208173
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 100777 b",
+      "type": "gas giant planet",
+      "m": 0.00117395960865183,
+      "radius": 1287.9214,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.6003820747627173,
+        "y": -0.26694098643500075,
+        "z": -0.013989784298682816
+      },
+      "velocity": {
+        "x": 3.849590122435029,
+        "y": -8.634471497044375,
+        "z": -0.45251347644281203
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 100777",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

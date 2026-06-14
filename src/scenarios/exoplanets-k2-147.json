@@ -1,0 +1,131 @@
+{
+  "name": "K2-147 - System",
+  "description": "K2-147 is a cool M-dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "K2-147",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.563,
+    "m": 0.563
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "K2-147",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "K2-147"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-6,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-7,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "K2-147",
+    "barycenterMassTwo": "K2-147 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "K2-147",
+      "type": "star",
+      "m": 0.563,
+      "radius": 5936.06,
+      "tilt": 0,
+      "temperature": 3690,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.0005324151044696986,
+        "y": -0.0006336380428709205,
+        "z": -3.32075626961174e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "K2-147 b",
+      "type": "terrestial planet",
+      "m": 8.31831e-6,
+      "radius": 138.4619,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.00748042398705682,
+        "y": 0.006268218843545024,
+        "z": 0.0003285034296503074
+      },
+      "velocity": {
+        "x": -36.03492822657971,
+        "y": 42.885900878463076,
+        "z": 2.2475548275928756
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "K2-147",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

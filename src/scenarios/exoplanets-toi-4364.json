@@ -1,0 +1,131 @@
+{
+  "name": "TOI-4364 - System",
+  "description": "TOI-4364 is a cool M-dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-4364",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.487,
+    "m": 0.487
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-4364",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-4364"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 1e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-4364",
+    "barycenterMassTwo": "TOI-4364 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-4364",
+      "type": "star",
+      "m": 0.487,
+      "radius": 4810.468,
+      "tilt": 0,
+      "temperature": 3528,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.00013647065029118502,
+        "y": 0.0007729028278052828,
+        "z": 4.050612080685766e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-4364 b",
+      "type": "super-Earth",
+      "m": 1.41141e-5,
+      "radius": 188.9578,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.03323361787547587,
+        "y": 0.0058519525942787535,
+        "z": 0.00030668783993578134
+      },
+      "velocity": {
+        "x": -4.708851906377814,
+        "y": -26.668627623523477,
+        "z": -1.3976435502752342
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-4364",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

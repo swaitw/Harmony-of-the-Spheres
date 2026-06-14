@@ -1,0 +1,165 @@
+{
+  "name": "HIP 5158 - System",
+  "description": "HIP 5158 is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HIP 5158",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.78,
+    "m": 0.78
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HIP 5158",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HIP 5158"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HIP 5158",
+    "barycenterMassTwo": "HIP 5158 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HIP 5158",
+      "type": "star",
+      "m": 0.78,
+      "radius": 7702.5,
+      "tilt": 0,
+      "temperature": 4962,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.043332037341653175,
+        "y": -0.027784396134685363,
+        "z": 0.0020441516583820955
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HIP 5158 b",
+      "type": "gas giant planet",
+      "m": 0.001354353,
+      "radius": 1278.5206,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.1320120599969775,
+        "y": -0.40573453559514727,
+        "z": -0.021263645988977706
+      },
+      "velocity": {
+        "x": 9.957684149794774,
+        "y": -3.2310136404957803,
+        "z": -0.1693302497315983
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HIP 5158 c",
+      "type": "gas giant planet",
+      "m": 0.0143548300896,
+      "radius": 1146.9082,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 5.22460476575398,
+        "y": -4.0631324989493685,
+        "z": 0.2129397512026901
+      },
+      "velocity": {
+        "x": 1.4150477294662633,
+        "y": 1.814564285297423,
+        "z": -0.09509728455875678
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HIP 5158",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

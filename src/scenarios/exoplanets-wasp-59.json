@@ -1,0 +1,131 @@
+{
+  "name": "WASP-59 - System",
+  "description": "WASP-59 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "WASP-59",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.719,
+    "m": 0.719
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "WASP-59",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "WASP-59"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "WASP-59",
+    "barycenterMassTwo": "WASP-59 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "WASP-59",
+      "type": "star",
+      "m": 0.719,
+      "radius": 6295.51,
+      "tilt": 0,
+      "temperature": 4650,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.02457409754322414,
+        "y": -0.00703685208391106,
+        "z": -0.00036878579086101947
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "WASP-59 b",
+      "type": "gas giant planet",
+      "m": 0.000823650828,
+      "radius": 816.655,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.017290731330400357,
+        "y": 0.06021730720566147,
+        "z": 0.0031558553450533934
+      },
+      "velocity": {
+        "x": -21.451779726224174,
+        "y": 6.1427688485636445,
+        "z": 0.3219288740022647
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "WASP-59",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "name": "HD 72659 - System",
+  "description": "HD 72659 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 72659",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.033,
+    "m": 1.033
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 72659",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 72659"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 72659",
+    "barycenterMassTwo": "HD 72659 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 72659",
+      "type": "star",
+      "m": 1.033,
+      "radius": 13967.2,
+      "tilt": 0,
+      "temperature": 5929,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.030681735505770903,
+        "y": -0.017781356305200148,
+        "z": 0.0010447157066075954
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 72659 b",
+      "type": "gas giant planet",
+      "m": 0.00285186285420036,
+      "radius": 1240.917,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.3602410605558081,
+        "y": -3.4812032693689576,
+        "z": -0.18244213258048977
+      },
+      "velocity": {
+        "x": 3.778456851288596,
+        "y": -0.3899304127772675,
+        "z": -0.020435387008576184
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    },
+    {
+      "name": "HD 72659 c",
+      "type": "gas giant planet",
+      "m": 0.0185161109006874,
+      "radius": 1137.5073,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 12.99138676083053,
+        "y": -13.912463947923428,
+        "z": 0.729121339866039
+      },
+      "velocity": {
+        "x": 1.1297508504496996,
+        "y": 1.0520659131757018,
+        "z": -0.055136438168923385
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 72659",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

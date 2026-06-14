@@ -1,0 +1,131 @@
+{
+  "name": "Luhman 16 A - System",
+  "description": "Luhman 16 A is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Luhman 16 A",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.0338,
+    "m": 0.0338
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Luhman 16 A",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Luhman 16 A"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Luhman 16 A",
+    "barycenterMassTwo": "Luhman 16 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Luhman 16 A",
+      "type": "star",
+      "m": 0.0338,
+      "radius": 10270.0,
+      "tilt": 0,
+      "temperature": 5778,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.5021832668945198,
+        "y": 0.5316156480389616,
+        "z": 0.027860795545836824
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Luhman 16 b",
+      "type": "gas giant planet",
+      "m": 0.0280604979628974,
+      "radius": 1118.7055,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -1.6796852095091963,
+        "y": 1.5823450484980333,
+        "z": 0.08292719005129806
+      },
+      "velocity": {
+        "x": -0.6048999716069946,
+        "y": -0.6403524601550422,
+        "z": -0.0335594503951579
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Luhman 16 A",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

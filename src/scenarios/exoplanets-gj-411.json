@@ -1,0 +1,165 @@
+{
+  "name": "GJ 411 - System",
+  "description": "GJ 411 is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "GJ 411",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.3899,
+    "m": 0.3899
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "GJ 411",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "GJ 411"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "GJ 411",
+    "barycenterMassTwo": "GJ 411 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "GJ 411",
+      "type": "star",
+      "m": 0.3899,
+      "radius": 3784.495,
+      "tilt": 0,
+      "temperature": 3719,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0003982047563112388,
+        "y": -0.00014270023844239945,
+        "z": -2.0488766884682352e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "GJ 411 b",
+      "type": "terrestial planet",
+      "m": 8.07807e-6,
+      "radius": 136.3129,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.06393539064563285,
+        "y": -0.03686252685879208,
+        "z": -0.0019318831714307536
+      },
+      "velocity": {
+        "x": 7.445715816624048,
+        "y": 12.878684082552867,
+        "z": 0.6749432328544467
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "HD 95735 c",
+      "type": "sub-Neptune",
+      "m": 4.08408e-5,
+      "radius": 353.4733,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -1.1585474360953445,
+        "y": -2.270661236346445,
+        "z": 0.11900031290100198
+      },
+      "velocity": {
+        "x": 2.328872620491171,
+        "y": -1.1849936474813496,
+        "z": 0.0621028855290085
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "GJ 411",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

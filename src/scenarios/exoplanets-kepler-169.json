@@ -1,0 +1,267 @@
+{
+  "name": "Kepler-169 - System",
+  "description": "Kepler-169 is a orange K-type dwarf star with 5 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-169",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.825,
+    "m": 0.825
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "5-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-169",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-169"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-6,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-7,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-169",
+    "barycenterMassTwo": "Kepler-169 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-169",
+      "type": "star",
+      "m": 0.825,
+      "radius": 7836.01,
+      "tilt": 0,
+      "temperature": 4997,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.00019705879803310025,
+        "y": 0.00012968304161350478,
+        "z": -5.6358304406549045e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-169 b",
+      "type": "terrestial planet",
+      "m": 4.53453e-6,
+      "radius": 106.23,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.04,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": 28.50361430268835,
+        "z": 1.4938111271442276
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-169 c",
+      "type": "terrestial planet",
+      "m": 5.76576e-6,
+      "radius": 113.7507,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.019159053651246743,
+        "y": 0.05896550401029952,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -21.77410982889762,
+        "y": 7.0748371513473565,
+        "z": 1.199857971051872
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-169 d",
+      "type": "terrestial planet",
+      "m": 6.3063e-6,
+      "radius": 117.5111,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.060676274578121046,
+        "y": 0.04408389392193549,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -12.235394649777593,
+        "y": -16.840575985783598,
+        "z": 1.090925401318815
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-169 e",
+      "type": "super-Earth",
+      "m": 1.645644e-5,
+      "radius": 206.8195,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.08494678440936948,
+        "y": -0.06171745149070967,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 10.340795846542054,
+        "y": -14.232884446463892,
+        "z": 0.9220002445160109
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-169 f",
+      "type": "sub-Neptune",
+      "m": 2.156154e-5,
+      "radius": 242.5429,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.11093710098060605,
+        "y": -0.34142928934996014,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 9.048759167638135,
+        "y": 2.9401200800337075,
+        "z": 0.498630065740281
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-169",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

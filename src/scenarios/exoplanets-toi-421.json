@@ -1,0 +1,165 @@
+{
+  "name": "TOI-421 - System",
+  "description": "TOI-421 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-421",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.833,
+    "m": 0.833
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-421",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-421"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 1e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-421",
+    "barycenterMassTwo": "TOI-421 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-421",
+      "type": "star",
+      "m": 0.833,
+      "radius": 8893.82,
+      "tilt": 0,
+      "temperature": 5291,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0005794122229378804,
+        "y": 0.0002986810905308377,
+        "z": 3.813845652690163e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-421 b",
+      "type": "sub-Neptune",
+      "m": 2.01201e-5,
+      "radius": 248.1834,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.036921810069448495,
+        "y": 0.03093861872208737,
+        "z": 0.0016214243013093212
+      },
+      "velocity": {
+        "x": -17.853084409532027,
+        "y": -21.247318811010626,
+        "z": -1.1135247946038545
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "TOI-421 c",
+      "type": "gas giant planet",
+      "m": 4.2342299999999996e-5,
+      "radius": 478.5051,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.019703790938799044,
+        "y": -0.09257200729780811,
+        "z": 0.0048514933262516075
+      },
+      "velocity": {
+        "x": 19.882156267738875,
+        "y": 4.220291075289418,
+        "z": -0.22117608318395657
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-421",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

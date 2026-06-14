@@ -1,0 +1,165 @@
+{
+  "name": "K2-21 - System",
+  "description": "K2-21 is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "K2-21",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.676023,
+    "m": 0.676023
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "K2-21",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "K2-21"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "K2-21",
+    "barycenterMassTwo": "K2-21 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "K2-21",
+      "type": "star",
+      "m": 0.676023,
+      "radius": 6642.4614,
+      "tilt": 0,
+      "temperature": 4222,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0002976947715904158,
+        "y": -1.264479095882985e-5,
+        "z": -3.142591878075142e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "K2-21 b",
+      "type": "super-Earth",
+      "m": 1.213212e-5,
+      "radius": 172.9763,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.0563837514415142,
+        "y": 0.03866943947252072,
+        "z": 0.002026579448874787
+      },
+      "velocity": {
+        "x": -11.731537802554428,
+        "y": 17.058853831902226,
+        "z": 0.8940166464439938
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "K2-21 c",
+      "type": "super-Earth",
+      "m": 2.0300279999999998e-5,
+      "radius": 234.0821,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.04231609651621101,
+        "y": -0.07307531838758033,
+        "z": 0.0038297151570942734
+      },
+      "velocity": {
+        "x": 16.924738820350967,
+        "y": -9.77385002732655,
+        "z": 0.512225774977676
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "K2-21",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

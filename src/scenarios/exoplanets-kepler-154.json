@@ -1,0 +1,267 @@
+{
+  "name": "Kepler-154 - System",
+  "description": "Kepler-154 is a Sun-like G/F-type star with 5 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-154",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.98,
+    "m": 0.98
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "5-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-154",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-154"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 1e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-154",
+    "barycenterMassTwo": "Kepler-154 e",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-154",
+      "type": "star",
+      "m": 0.98,
+      "radius": 10064.6,
+      "tilt": 0,
+      "temperature": 5769,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.000150246965189602,
+        "y": 0.00036924338440967754,
+        "z": -8.898915735468318e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-154 e",
+      "type": "terrestial planet",
+      "m": 8.58858e-6,
+      "radius": 141.0133,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.04766,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": 28.460267186496168,
+        "z": 1.4915394010462713
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-154 f",
+      "type": "terrestial planet",
+      "m": 8.58858e-6,
+      "radius": 141.0133,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.027292380943195357,
+        "y": 0.08399731151918796,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -19.88349787917994,
+        "y": 6.460540090950785,
+        "z": 1.0956761773592512
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-154 d",
+      "type": "sub-Neptune",
+      "m": 4.2342299999999996e-5,
+      "radius": 360.994,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.11612629937257994,
+        "y": 0.08437069511406162,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -9.639360137214588,
+        "y": -13.267441017772688,
+        "z": 0.8594592268700187
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-154 b",
+      "type": "super-Earth",
+      "m": 1.720719e-5,
+      "radius": 212.46,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.1601853648862396,
+        "y": -0.11638147995390967,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 8.207333519707504,
+        "y": -11.296425471802454,
+        "z": 0.7317776720759087
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-154 c",
+      "type": "sub-Neptune",
+      "m": 2.7057029999999997e-5,
+      "radius": 277.3262,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.09363214929560901,
+        "y": -0.28817012443743156,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 10.734974156452605,
+        "y": 3.488004541982678,
+        "z": 0.5915486057464979
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-154",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

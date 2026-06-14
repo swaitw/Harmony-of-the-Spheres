@@ -1,0 +1,131 @@
+{
+  "name": "bet Cnc - System",
+  "description": "bet Cnc is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "bet Cnc",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.7,
+    "m": 1.7
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "bet Cnc",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "bet Cnc"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "bet Cnc",
+    "barycenterMassTwo": "bet Cnc b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "bet Cnc",
+      "type": "star",
+      "m": 1.7,
+      "radius": 484744.0,
+      "tilt": 0,
+      "temperature": 4092,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.025533402965838985,
+        "y": -0.015381624498455614,
+        "z": -0.0008061167817296813
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "bet Cnc b",
+      "type": "gas giant planet",
+      "m": 0.007444437,
+      "radius": 1184.5117,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.807858126347428,
+        "y": 1.3373663909006068,
+        "z": 0.07008840263487641
+      },
+      "velocity": {
+        "x": -5.830768000578992,
+        "y": 3.5125237338128517,
+        "z": 0.18408356856810773
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "bet Cnc",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

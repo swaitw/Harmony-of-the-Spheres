@@ -1,0 +1,131 @@
+{
+  "name": "NGTS-21 - System",
+  "description": "NGTS-21 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "NGTS-21",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.72,
+    "m": 0.72
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "NGTS-21",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "NGTS-21"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-6,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-7,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "NGTS-21",
+    "barycenterMassTwo": "NGTS-21 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "NGTS-21",
+      "type": "star",
+      "m": 0.72,
+      "radius": 8832.2,
+      "tilt": 0,
+      "temperature": 4660,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.10860163020531682,
+        "y": -6.640818440047169e-18,
+        "z": -3.4803054706474203e-19
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "NGTS-21 b",
+      "type": "gas giant planet",
+      "m": 0.00225247534668156,
+      "radius": 1401.4789,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 1.4450832229938767e-18,
+        "y": 0.023567657020207942,
+        "z": 0.0012351285673334745
+      },
+      "velocity": {
+        "x": -34.71433055328465,
+        "y": 2.1227265745119486e-15,
+        "z": 1.1124738579526832e-16
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "NGTS-21",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

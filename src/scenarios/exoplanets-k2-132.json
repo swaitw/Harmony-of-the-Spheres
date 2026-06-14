@@ -1,0 +1,131 @@
+{
+  "name": "K2-132 - System",
+  "description": "K2-132 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "K2-132",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.08,
+    "m": 1.08
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "K2-132",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "K2-132"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "K2-132",
+    "barycenterMassTwo": "K2-132 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "K2-132",
+      "type": "star",
+      "m": 1.08,
+      "radius": 39539.5,
+      "tilt": 0,
+      "temperature": 4840,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.012491615225750317,
+        "y": -0.0016201541423686839,
+        "z": -8.49086806977629e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "K2-132 b",
+      "type": "gas giant planet",
+      "m": 0.00046767731010000004,
+      "radius": 1369.869,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.008376350419018373,
+        "y": 0.06440593848482466,
+        "z": 0.0033753722086298206
+      },
+      "velocity": {
+        "x": -28.84669440329631,
+        "y": 3.741396976013309,
+        "z": 0.1960783069291433
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "K2-132",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

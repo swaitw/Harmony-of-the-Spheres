@@ -1,0 +1,165 @@
+{
+  "name": "75 Cet - System",
+  "description": "75 Cet is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "75 Cet",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.92,
+    "m": 1.92
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "75 Cet",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "75 Cet"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "75 Cet",
+    "barycenterMassTwo": "75 Cet b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "75 Cet",
+      "type": "star",
+      "m": 1.92,
+      "radius": 106602.6,
+      "tilt": 0,
+      "temperature": 4809,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0049560381542377565,
+        "y": 0.006757708135738055,
+        "z": 0.00047034928774257955
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "75 Cet b",
+      "type": "gas giant planet",
+      "m": 0.0023660535527128502,
+      "radius": 1250.3179,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -1.6033329387539355,
+        "y": -0.659940482860105,
+        "z": -0.03458601516567602
+      },
+      "velocity": {
+        "x": 2.634613085545034,
+        "y": -6.383290387222097,
+        "z": -0.3345340737130943
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "75 Cet c",
+      "type": "gas giant planet",
+      "m": 0.0008704481000615399,
+      "radius": 1306.7232,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 2.090669372896838,
+        "y": -3.2149365129868794,
+        "z": 0.1684876831816065
+      },
+      "velocity": {
+        "x": 3.7704230784430086,
+        "y": 2.4451857358492557,
+        "z": -0.12814675435042852
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "75 Cet",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "name": "WASP-148 - System",
+  "description": "WASP-148 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "WASP-148",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.954,
+    "m": 0.954
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "WASP-148",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "WASP-148"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "WASP-148",
+    "barycenterMassTwo": "WASP-148 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "WASP-148",
+      "type": "star",
+      "m": 0.954,
+      "radius": 9366.24,
+      "tilt": 0,
+      "temperature": 5555,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.003803907485450713,
+        "y": 0.002010651555700312,
+        "z": -0.0004956282700508892
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "WASP-148 b",
+      "type": "gas giant planet",
+      "m": 0.00027392390868843,
+      "radius": 796.6301,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.0319395727407112,
+        "y": 0.05660592703272869,
+        "z": 0.0029665909300431808
+      },
+      "velocity": {
+        "x": -23.044356180071933,
+        "y": 12.96703212532805,
+        "z": 0.6795733575802972
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "WASP-148 c",
+      "type": "gas giant planet",
+      "m": 0.00037413997282662,
+      "radius": 1306.7232,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.15035140476524833,
+        "y": -0.0735554496445785,
+        "z": 0.003854877770037923
+      },
+      "velocity": {
+        "x": 7.172375506044226,
+        "y": -14.62057546716964,
+        "z": 0.7662318920744736
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "WASP-148",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

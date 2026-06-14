@@ -1,0 +1,199 @@
+{
+  "name": "GJ 3138 - System",
+  "description": "GJ 3138 is a orange K-type dwarf star with 3 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "GJ 3138",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.681,
+    "m": 0.681
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "3-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "GJ 3138",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "GJ 3138"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-6,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-7,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "GJ 3138",
+    "barycenterMassTwo": "GJ 3138 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "GJ 3138",
+      "type": "star",
+      "m": 0.681,
+      "radius": 5135.0,
+      "tilt": 0,
+      "temperature": 3717,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 4.039600493960456e-5,
+        "y": 7.217072496111293e-5,
+        "z": -6.276213960574655e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "GJ 3138 b",
+      "type": "terrestial planet",
+      "m": 5.34534e-6,
+      "radius": 110.9305,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.015957,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": 44.72747361982814,
+        "z": 2.3440675653560015
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "GJ 3138 c",
+      "type": "super-Earth",
+      "m": 1.2552539999999998e-5,
+      "radius": 176.7367,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.02536499999999999,
+        "y": 0.043933468733984585,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -20.981483894765315,
+        "y": -12.113665374640545,
+        "z": 1.2697006025255613
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "GJ 3138 d",
+      "type": "sub-Neptune",
+      "m": 3.15315e-5,
+      "radius": 303.6486,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.2373200000000002,
+        "y": -0.41105029765224577,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 7.48017812297311,
+        "y": -4.318682852884881,
+        "z": 0.45266515549489067
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "GJ 3138",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

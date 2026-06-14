@@ -1,0 +1,131 @@
+{
+  "name": "GJ 3021 - System",
+  "description": "GJ 3021 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "GJ 3021",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.9,
+    "m": 0.9
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "GJ 3021",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "GJ 3021"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "GJ 3021",
+    "barycenterMassTwo": "GJ 3021 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "GJ 3021",
+      "type": "star",
+      "m": 0.9,
+      "radius": 9243.0,
+      "tilt": 0,
+      "temperature": 5540,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.05005366545896622,
+        "y": -0.018887783501806053,
+        "z": -0.0009898667889085186
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "GJ 3021 b",
+      "type": "gas giant planet",
+      "m": 0.0032163331199999996,
+      "radius": 1231.5161,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.08469610731794769,
+        "y": -0.22383456575663202,
+        "z": -0.011730672518088944
+      },
+      "velocity": {
+        "x": 14.006104850566475,
+        "y": 5.285212854950003,
+        "z": 0.2769862687661118
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "GJ 3021",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

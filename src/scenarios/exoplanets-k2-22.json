@@ -1,0 +1,131 @@
+{
+  "name": "K2-22 - System",
+  "description": "K2-22 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "K2-22",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.595292,
+    "m": 0.595292
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "K2-22",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "K2-22"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 1e-6,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-7,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "K2-22",
+    "barycenterMassTwo": "K2-22 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "K2-22",
+      "type": "star",
+      "m": 0.595292,
+      "radius": 5956.6,
+      "tilt": 0,
+      "temperature": 3879,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.10120857074728751,
+        "y": -0.09524342539230961,
+        "z": -0.004991496416120965
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "K2-22 b",
+      "type": "super-Earth",
+      "m": 0.0013362208859999999,
+      "radius": 216.2204,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.0049996157928405725,
+        "y": 0.0052981924501159326,
+        "z": 0.0002776665005247511
+      },
+      "velocity": {
+        "x": -45.08884206835717,
+        "y": 42.43134483428422,
+        "z": 2.223732554757778
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "K2-22",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

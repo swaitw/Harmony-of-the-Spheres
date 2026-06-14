@@ -1,0 +1,165 @@
+{
+  "name": "KOBE-1 - System",
+  "description": "KOBE-1 is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "KOBE-1",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.629,
+    "m": 0.629
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "KOBE-1",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "KOBE-1"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "KOBE-1",
+    "barycenterMassTwo": "KOBE-1 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "KOBE-1",
+      "type": "star",
+      "m": 0.629,
+      "radius": 6357.13,
+      "tilt": 0,
+      "temperature": 4135,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 9.002104496383111e-20,
+        "y": -5.5019668576316735e-5,
+        "z": -7.99310295642032e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "KOBE-1 b",
+      "type": "sub-Neptune",
+      "m": 2.64264e-5,
+      "radius": 273.5658,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.07006,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": 18.805860504612873,
+        "z": 0.9855733865534134
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "KOBE-1 c",
+      "type": "sub-Neptune",
+      "m": 3.7237199999999996e-5,
+      "radius": 334.6716,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.16071,
+        "y": 1.9681298709097113e-17,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -1.5206094250440362e-15,
+        "y": -12.416718241559474,
+        "z": 0.6507326290233605
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "KOBE-1",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

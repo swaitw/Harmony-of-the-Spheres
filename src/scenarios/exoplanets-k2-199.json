@@ -1,0 +1,165 @@
+{
+  "name": "K2-199 - System",
+  "description": "K2-199 is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "K2-199",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.711,
+    "m": 0.711
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "K2-199",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "K2-199"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-6,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-7,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "K2-199",
+    "barycenterMassTwo": "K2-199 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "K2-199",
+      "type": "star",
+      "m": 0.711,
+      "radius": 7004.14,
+      "tilt": 0,
+      "temperature": 4491,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -5.30365728124465e-5,
+        "y": -0.0003003731352959519,
+        "z": 9.884267951998554e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "K2-199 b",
+      "type": "super-Earth",
+      "m": 2.07207e-5,
+      "radius": 162.6353,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.03686726304176502,
+        "y": 0.006491784205066011,
+        "z": 0.00034021999377223264
+      },
+      "velocity": {
+        "x": -4.80351271657796,
+        "y": -27.20474002373502,
+        "z": -1.4257400106164222
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "K2-199 c",
+      "type": "sub-Neptune",
+      "m": 3.7237199999999996e-5,
+      "radius": 267.9253,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.06323844505192593,
+        "y": -0.011135362510527541,
+        "z": 0.0005835796206883787
+      },
+      "velocity": {
+        "x": 3.68559261212031,
+        "y": 20.873388863964745,
+        "z": -1.0939279564717546
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "K2-199",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

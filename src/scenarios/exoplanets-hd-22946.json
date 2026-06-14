@@ -1,0 +1,199 @@
+{
+  "name": "HD 22946 - System",
+  "description": "HD 22946 is a Sun-like G/F-type star with 3 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 22946",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.098,
+    "m": 1.098
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "3-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 22946",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 22946"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 1e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 22946",
+    "barycenterMassTwo": "TOI-411 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 22946",
+      "type": "star",
+      "m": 1.098,
+      "radius": 11471.59,
+      "tilt": 0,
+      "temperature": 6169,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0010203957492437657,
+        "y": -4.237435590056542e-5,
+        "z": -0.00012625859854787784
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-411 b",
+      "type": "terrestial planet",
+      "m": 4.117113e-5,
+      "radius": 128.0401,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.03834357323498846,
+        "y": -0.03212998470357663,
+        "z": -0.0016838611467125339
+      },
+      "velocity": {
+        "x": 20.077845223294787,
+        "y": 23.89505189757032,
+        "z": 1.2522866058046802
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "TOI-411 c",
+      "type": "super-Earth",
+      "m": 2.9189160000000002e-5,
+      "radius": 218.8526,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.0548944535785676,
+        "y": 0.06545180971290768,
+        "z": 0.0007763733739708917
+      },
+      "velocity": {
+        "x": -18.561770949141664,
+        "y": -15.582599608362587,
+        "z": 1.2507779476636343
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "HD 22946 d",
+      "type": "sub-Neptune",
+      "m": 7.978971e-5,
+      "radius": 245.0811,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.14790000000000014,
+        "y": -0.2561703144394369,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 10.47214558091957,
+        "y": -6.046096070136871,
+        "z": 0.6337249367355914
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 22946",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

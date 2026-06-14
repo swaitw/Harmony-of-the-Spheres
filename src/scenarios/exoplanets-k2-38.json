@@ -1,0 +1,165 @@
+{
+  "name": "K2-38 - System",
+  "description": "K2-38 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "K2-38",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.03,
+    "m": 1.03
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "K2-38",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "K2-38"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 1e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "K2-38",
+    "barycenterMassTwo": "K2-38 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "K2-38",
+      "type": "star",
+      "m": 1.03,
+      "radius": 10886.2,
+      "tilt": 0,
+      "temperature": 5731,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -6.280970046842214e-5,
+        "y": -0.0012357662862546484,
+        "z": -9.86305697960426e-6
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "K2-38 b",
+      "type": "super-Earth",
+      "m": 2.1921899999999998e-5,
+      "radius": 144.7737,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.03854834350341319,
+        "y": 0.01103841110894049,
+        "z": 0.0005784986130328234
+      },
+      "velocity": {
+        "x": -9.605506468672639,
+        "y": 33.452473630948255,
+        "z": 1.7531698545224923
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "K2-38 c",
+      "type": "super-Earth",
+      "m": 2.4924900000000003e-5,
+      "radius": 215.2803,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.07112233263676501,
+        "y": -0.03618897471122618,
+        "z": 0.0018965837991455014
+      },
+      "velocity": {
+        "x": 11.043773244348802,
+        "y": 21.64492106897133,
+        "z": -1.1343622459814977
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "K2-38",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

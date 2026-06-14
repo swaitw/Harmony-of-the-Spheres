@@ -1,0 +1,131 @@
+{
+  "name": "GJ 508.2 - System",
+  "description": "GJ 508.2 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "GJ 508.2",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.54,
+    "m": 0.54
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "GJ 508.2",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "GJ 508.2"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "GJ 508.2",
+    "barycenterMassTwo": "GJ 508.2 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "GJ 508.2",
+      "type": "star",
+      "m": 0.54,
+      "radius": 5443.1,
+      "tilt": 0,
+      "temperature": 3720,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0076702847038522225,
+        "y": -0.004786357293579699,
+        "z": -0.0002508423566116993
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "GJ 508.2 b",
+      "type": "terrestial planet",
+      "m": 0.00176571160650885,
+      "radius": 94.0089,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 1.876179155017661,
+        "y": -2.9983994429661034,
+        "z": -0.15713945620936126
+      },
+      "velocity": {
+        "x": 2.3457702406281604,
+        "y": 1.463791102128706,
+        "z": 0.07671404099684084
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "GJ 508.2",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "name": "WISEP J121756.91+162640.2 A - System",
+  "description": "WISEP J121756.91+162640.2 A is a cool M-dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "WISEP J121756.91+162640.2 A",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.029,
+    "m": 0.029
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "WISEP J121756.91+162640.2 A",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "WISEP J121756.91+162640.2 A"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "WISEP J121756.91+162640.2 A",
+    "barycenterMassTwo": "WISEP J121756.91+162640.2 A b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "WISEP J121756.91+162640.2 A",
+      "type": "star",
+      "m": 0.029,
+      "radius": 934.57,
+      "tilt": 0,
+      "temperature": 575,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": -0.273599760880733,
+        "z": -0.014338755880130309
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "WISEP J121756.91+162640.2 A b",
+      "type": "gas giant planet",
+      "m": 0.020996976,
+      "radius": 984.0848,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 8.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": 0.3778826563187603,
+        "z": 0.019803990847242905
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "WISEP J121756.91+162640.2 A",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

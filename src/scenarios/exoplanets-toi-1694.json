@@ -1,0 +1,165 @@
+{
+  "name": "TOI-1694 - System",
+  "description": "TOI-1694 is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-1694",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.853,
+    "m": 0.853
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-1694",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-1694"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 1e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-1694",
+    "barycenterMassTwo": "TOI-1694 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-1694",
+      "type": "star",
+      "m": 0.853,
+      "radius": 8252.972,
+      "tilt": 0,
+      "temperature": 5058,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.01617747928886225,
+        "y": 3.339653797962177e-18,
+        "z": -7.116860718918989e-20
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-1694 b",
+      "type": "gas giant planet",
+      "m": 9.39939e-5,
+      "radius": 502.2167,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 2.7554552980815448e-18,
+        "y": 0.04493832906395582,
+        "z": 0.0023551180309324725
+      },
+      "velocity": {
+        "x": -27.363195070101817,
+        "y": 1.673216231253624e-15,
+        "z": 8.768954694034195e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "TOI-1694 c",
+      "type": "gas giant planet",
+      "m": 0.000891891,
+      "radius": 1297.3223,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -1.8352918628448762e-17,
+        "y": -0.09986295347545739,
+        "z": 0.005233595624294384
+      },
+      "velocity": {
+        "x": 18.35578927750044,
+        "y": -3.3703634286931553e-15,
+        "z": 5.8823936362429e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-1694",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "name": "HD 165155 - System",
+  "description": "HD 165155 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 165155",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.02,
+    "m": 1.02
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 165155",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 165155"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 165155",
+    "barycenterMassTwo": "HD 165155 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 165155",
+      "type": "star",
+      "m": 1.02,
+      "radius": 9756.5,
+      "tilt": 0,
+      "temperature": 5426,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0104771054140311,
+        "y": 0.01675039980691648,
+        "z": 0.000877851255983575
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 165155 b",
+      "type": "gas giant planet",
+      "m": 0.0027583416861,
+      "radius": 1240.917,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.7667190767252712,
+        "y": -0.47825687053623633,
+        "z": -0.025064380511661082
+      },
+      "velocity": {
+        "x": 3.874301569005941,
+        "y": -6.194086791042827,
+        "z": -0.3246183334049735
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 165155",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "name": "HATS-22 - System",
+  "description": "HATS-22 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HATS-22",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.759,
+    "m": 0.759
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HATS-22",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HATS-22"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 1e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HATS-22",
+    "barycenterMassTwo": "HATS-22 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HATS-22",
+      "type": "star",
+      "m": 0.759,
+      "radius": 7076.03,
+      "tilt": 0,
+      "temperature": 4803,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.07552061717932233,
+        "y": -0.05086948894507932,
+        "z": -0.002665956948874822
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HATS-22 b",
+      "type": "gas giant planet",
+      "m": 0.0026151751626,
+      "radius": 1004.2193,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.025879587370852036,
+        "y": 0.03831548401609258,
+        "z": 0.0020080294294382733
+      },
+      "velocity": {
+        "x": -21.918282667581668,
+        "y": 14.76380728200604,
+        "z": 0.7737383534127291
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HATS-22",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

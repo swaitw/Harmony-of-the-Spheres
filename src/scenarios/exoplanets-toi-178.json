@@ -1,0 +1,301 @@
+{
+  "name": "TOI-178 - System",
+  "description": "TOI-178 is a orange K-type dwarf star with 6 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-178",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.647,
+    "m": 0.647
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "6-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-178",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-178"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-6,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-7,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-178",
+    "barycenterMassTwo": "TOI-178 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-178",
+      "type": "star",
+      "m": 0.647,
+      "radius": 6798.74,
+      "tilt": 0,
+      "temperature": 4316,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.00017109279893289753,
+        "y": -0.0006143841264829036,
+        "z": -3.912000637405774e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-178 b",
+      "type": "terrestial planet",
+      "m": 2.88288e-6,
+      "radius": 112.8106,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.02607,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": 31.266882304087034,
+        "z": 1.6386278666614202
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "TOI-178 c",
+      "type": "super-Earth",
+      "m": 1.3933919999999999e-5,
+      "radius": 164.8915,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.0025994079663312773,
+        "y": 0.036886947968037626,
+        "z": 0.0008486035667251506
+      },
+      "velocity": {
+        "x": -26.197806547987675,
+        "y": 1.817698656502597,
+        "z": 1.2366566891905828
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "TOI-178 d",
+      "type": "sub-Neptune",
+      "m": 1.56156e-5,
+      "radius": 253.3539,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.05267238772932304,
+        "y": -0.026073806398038083,
+        "z": -0.0017073785060986993
+      },
+      "velocity": {
+        "x": 9.247996643015563,
+        "y": 18.74176742650793,
+        "z": -0.9108411110222956
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "TOI-178 e",
+      "type": "super-Earth",
+      "m": 1.045044e-5,
+      "radius": 216.3144,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.07822256588092806,
+        "y": -0.002727848640016868,
+        "z": 0.00014296048944354865
+      },
+      "velocity": {
+        "x": 0.6307452707648304,
+        "y": -18.03742773885273,
+        "z": 0.9453015317715989
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "TOI-178 f",
+      "type": "super-Earth",
+      "m": 1.690689e-5,
+      "radius": 227.2194,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.08727050321511749,
+        "y": -0.05603462573052493,
+        "z": 0.005429225069030194
+      },
+      "velocity": {
+        "x": 8.47579403086263,
+        "y": 13.204278937922457,
+        "z": 0.03868288829380986
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "TOI-178 g",
+      "type": "sub-Neptune",
+      "m": 1.32132e-5,
+      "radius": 276.2921,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.03072670478946206,
+        "y": -0.12359884440526013,
+        "z": -0.004633347088894791
+      },
+      "velocity": {
+        "x": 13.731063042728826,
+        "y": -3.433535109217698,
+        "z": 0.5332324812653163
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-178",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

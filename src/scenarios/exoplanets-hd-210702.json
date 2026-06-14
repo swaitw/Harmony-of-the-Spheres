@@ -1,0 +1,131 @@
+{
+  "name": "HD 210702 - System",
+  "description": "HD 210702 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 210702",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.33,
+    "m": 1.33
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 210702",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 210702"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 210702",
+    "barycenterMassTwo": "HD 210702 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 210702",
+      "type": "star",
+      "m": 1.33,
+      "radius": 46625.8,
+      "tilt": 0,
+      "temperature": 4912,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.007530747726786881,
+        "y": 0.003099696370596485,
+        "z": 0.00016244820323466446
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 210702 b",
+      "type": "gas giant planet",
+      "m": 0.0014459746399097999,
+      "radius": 1278.5206,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.38198151562012767,
+        "y": 0.9254865354356454,
+        "z": 0.0485026940785378
+      },
+      "velocity": {
+        "x": -6.926742835027414,
+        "y": -2.8510847003170765,
+        "z": -0.14941901769147303
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 210702",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

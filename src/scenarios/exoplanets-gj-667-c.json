@@ -1,0 +1,265 @@
+{
+  "name": "GJ 667 C - System",
+  "description": "GJ 667 C is a cool M-dwarf star with 5 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "GJ 667 C",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.33,
+    "m": 0.33
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "5-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "GJ 667 C",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "GJ 667 C"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "GJ 667 C",
+    "barycenterMassTwo": "GJ 667 C b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "GJ 667 C",
+      "type": "star",
+      "m": 0.33,
+      "radius": 10270.0,
+      "tilt": 0,
+      "temperature": 3350,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0004887406729973092,
+        "y": -0.0014075046502364781,
+        "z": -7.37792267626225e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "GJ 667 C b",
+      "type": "super-Earth",
+      "m": 1.705704e-5,
+      "radius": 211.5199,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.040300012227365685,
+        "y": -0.0018978957629356555,
+        "z": -9.946450224615093e-5
+      },
+      "velocity": {
+        "x": 0.9275401982233654,
+        "y": 19.641487486958273,
+        "z": 1.0293667410071248
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "GJ 667 C c",
+      "type": "super-Earth",
+      "m": 1.1411399999999999e-5,
+      "radius": 166.3957,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.12202319408957099,
+        "y": 0.009019711822267674,
+        "z": -0.005935899495622477
+      },
+      "velocity": {
+        "x": -0.757870539909644,
+        "y": 10.388431885577475,
+        "z": 0.2060139171670717
+      },
+      "nonStellarProceduralManifestation": true
+    },
+    {
+      "name": "GJ 667 C f",
+      "type": "terrestial planet",
+      "m": 8.1081e-6,
+      "radius": 136.3129,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.05876351411305753,
+        "y": -0.13923036872534417,
+        "z": 0.0077133801727381586
+      },
+      "velocity": {
+        "x": 8.675348460594659,
+        "y": -3.6677041886028667,
+        "z": -0.11173374519595718
+      },
+      "nonStellarProceduralManifestation": true
+    },
+    {
+      "name": "GJ 667 C e",
+      "type": "terrestial planet",
+      "m": 8.1081e-6,
+      "radius": 136.3129,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.08961641095202245,
+        "y": -0.18845142239234736,
+        "z": 0.005229520664391846
+      },
+      "velocity": {
+        "x": 7.2037989932119855,
+        "y": -3.4155264707222717,
+        "z": 0.3667237378337912
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    },
+    {
+      "name": "GJ 667 C g",
+      "type": "super-Earth",
+      "m": 1.3813799999999998e-5,
+      "radius": 187.0776,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.47288646917594246,
+        "y": -0.17622440160603972,
+        "z": 0.020716031205414934
+      },
+      "velocity": {
+        "x": 1.8359886660675164,
+        "y": 4.94692899443212,
+        "z": 0.1716257352770502
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "GJ 667 C",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

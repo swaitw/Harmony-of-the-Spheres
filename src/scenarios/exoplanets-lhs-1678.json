@@ -1,0 +1,199 @@
+{
+  "name": "LHS 1678 - System",
+  "description": "LHS 1678 is a cool M-dwarf star with 3 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "LHS 1678",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.345,
+    "m": 0.345
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "3-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "LHS 1678",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "LHS 1678"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-6,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-7,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "LHS 1678",
+    "barycenterMassTwo": "LHS 1678 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "LHS 1678",
+      "type": "star",
+      "m": 0.345,
+      "radius": 3378.83,
+      "tilt": 0,
+      "temperature": 3490,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -3.518824413444372e-5,
+        "y": 0.000128740039275956,
+        "z": -2.4769964740648604e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "LHS 1678 b",
+      "type": "terrestial planet",
+      "m": 1.0510499999999999e-6,
+      "radius": 64.3961,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.011028688314844637,
+        "y": -0.004674984748866244,
+        "z": -0.00024500556887016594
+      },
+      "velocity": {
+        "x": 13.393293237818241,
+        "y": 31.50937978923465,
+        "z": 1.651336621339729
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "LHS 1678 c",
+      "type": "terrestial planet",
+      "m": 4.2041999999999995e-6,
+      "radius": 88.4623,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.02508230835133204,
+        "y": 0.018920270261147405,
+        "z": 0.0006426127168367512
+      },
+      "velocity": {
+        "x": -12.751292509962962,
+        "y": -16.93892228276673,
+        "z": 1.0226017823480442
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "LHS 1678 d",
+      "type": "terrestial planet",
+      "m": 2.723721e-6,
+      "radius": 92.2227,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.004717163783068096,
+        "y": -0.038262255486722324,
+        "z": 0.0007885245161043741
+      },
+      "velocity": {
+        "x": 18.971072051491507,
+        "y": -2.319852186208505,
+        "z": 0.9218191093423292
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "LHS 1678",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

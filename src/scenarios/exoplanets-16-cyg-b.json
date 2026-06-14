@@ -1,0 +1,131 @@
+{
+  "name": "16 Cyg B - System",
+  "description": "16 Cyg B is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "16 Cyg B",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.08,
+    "m": 1.08
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "16 Cyg B",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "16 Cyg B"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "16 Cyg B",
+    "barycenterMassTwo": "16 Cyg B b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "16 Cyg B",
+      "type": "star",
+      "m": 1.08,
+      "radius": 11605.1,
+      "tilt": 0,
+      "temperature": 5750,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.018125362027696736,
+        "y": -0.002305887553978811,
+        "z": -0.00012084644598043329
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "16 Cyg B b",
+      "type": "gas giant planet",
+      "m": 0.0016989094121999998,
+      "radius": 1269.1197,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.06712886203709684,
+        "y": 0.5262191663320974,
+        "z": 0.02757797792363851
+      },
+      "velocity": {
+        "x": -11.52232770584475,
+        "y": 1.4658571789723802,
+        "z": 0.07682231949604593
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "16 Cyg B",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

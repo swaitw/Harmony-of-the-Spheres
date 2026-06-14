@@ -1,0 +1,233 @@
+{
+  "name": "Kepler-338 - System",
+  "description": "Kepler-338 is a Sun-like G/F-type star with 4 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-338",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.14,
+    "m": 1.14
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "4-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-338",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-338"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-338",
+    "barycenterMassTwo": "Kepler-338 e",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-338",
+      "type": "star",
+      "m": 1.14,
+      "radius": 17818.45,
+      "tilt": 0,
+      "temperature": 5999,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.001311050336506484,
+        "y": -0.00025976132295876575,
+        "z": -0.00014513818593151113
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-338 e",
+      "type": "super-Earth",
+      "m": 2.5525499999999998e-5,
+      "radius": 146.6538,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.08530049999999999,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": 23.51116995526907,
+        "z": 1.2321682057018113
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-338 b",
+      "type": "super-Earth",
+      "m": 9.18918e-5,
+      "radius": 229.3816,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 6.877616424011536e-18,
+        "y": 0.11232,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -20.39123369976183,
+        "y": 1.2486029540539484e-15,
+        "z": 1.0686592750460298
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-338 c",
+      "type": "super-Earth",
+      "m": 1.825824e-5,
+      "radius": 219.9807,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.16684,
+        "y": 2.043200719697444e-17,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -2.039082292686552e-15,
+        "y": -16.650370491363226,
+        "z": 0.8726089416922265
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-338 d",
+      "type": "sub-Neptune",
+      "m": 2.7837809999999997e-5,
+      "radius": 282.0266,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -4.579383008391655e-17,
+        "y": -0.24929,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 13.621394257464312,
+        "y": -2.5022095315991707e-15,
+        "z": 0.7138670237724746
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-338",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

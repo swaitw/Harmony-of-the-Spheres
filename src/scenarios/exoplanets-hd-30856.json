@@ -1,0 +1,131 @@
+{
+  "name": "HD 30856 - System",
+  "description": "HD 30856 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 30856",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.17,
+    "m": 1.17
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 30856",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 30856"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 30856",
+    "barycenterMassTwo": "HD 30856 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 30856",
+      "type": "star",
+      "m": 1.17,
+      "radius": 45188.0,
+      "tilt": 0,
+      "temperature": 4895,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.001048860242756063,
+        "y": 0.006613167392578733,
+        "z": 0.0003465814170720714
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 30856 b",
+      "type": "gas giant planet",
+      "m": 0.00147652407903,
+      "radius": 1269.1197,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -1.7157628008648436,
+        "y": 0.27137770683473766,
+        "z": 0.014222302962132794
+      },
+      "velocity": {
+        "x": -0.8311185042310847,
+        "y": -5.240284231869888,
+        "z": -0.2746316594042382
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 30856",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "name": "HD 83443 - System",
+  "description": "HD 83443 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 83443",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.0,
+    "m": 1.0
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 83443",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 83443"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-6,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-7,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 83443",
+    "barycenterMassTwo": "HD 83443 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 83443",
+      "type": "star",
+      "m": 1.0,
+      "radius": 9653.8,
+      "tilt": 0,
+      "temperature": 5442,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.010930786802895748,
+        "y": -0.01569233017702304,
+        "z": -0.00039628971209264654
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 83443 b",
+      "type": "gas giant planet",
+      "m": 0.00038368435988883,
+      "radius": 1325.525,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.038558898156834595,
+        "y": -0.0110414334593968,
+        "z": -0.0005786570077084536
+      },
+      "velocity": {
+        "x": 8.701324998702814,
+        "y": 30.303539539819887,
+        "z": 1.5881412116977927
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 83443 c",
+      "type": "gas giant planet",
+      "m": 0.0014316580593315,
+      "radius": 1278.5206,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.9072974685485833,
+        "y": -1.6897836601214653,
+        "z": 0.08855780909573527
+      },
+      "velocity": {
+        "x": 5.3030990473583515,
+        "y": 2.8395998470610135,
+        "z": -0.1488171220369312
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 83443",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

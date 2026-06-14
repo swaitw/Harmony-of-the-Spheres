@@ -1,0 +1,131 @@
+{
+  "name": "TOI-2981 - System",
+  "description": "TOI-2981 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-2981",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.03,
+    "m": 1.03
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-2981",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-2981"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-6,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-7,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-2981",
+    "barycenterMassTwo": "TOI-2981 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-2981",
+      "type": "star",
+      "m": 1.03,
+      "radius": 11091.6,
+      "tilt": 0,
+      "temperature": 5940,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.02633001684044753,
+        "y": -0.049451694669574074,
+        "z": -0.0025916534994153834
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-2981 b",
+      "type": "gas giant planet",
+      "m": 0.001915914,
+      "radius": 1259.7188,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.040898132501225495,
+        "y": 0.021716120756831454,
+        "z": 0.0011380936635078927
+      },
+      "velocity": {
+        "x": -14.15508073204797,
+        "y": 26.585350652305532,
+        "z": 1.3932791891482839
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-2981",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

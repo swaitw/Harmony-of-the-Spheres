@@ -1,0 +1,165 @@
+{
+  "name": "K2-141 - System",
+  "description": "K2-141 is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "K2-141",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.708,
+    "m": 0.708
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "K2-141",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "K2-141"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-7,
+    "tol": 0.001,
+    "maxDt": 5e-5,
+    "minDt": 5e-8,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "K2-141",
+    "barycenterMassTwo": "K2-141 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "K2-141",
+      "type": "star",
+      "m": 0.708,
+      "radius": 6993.87,
+      "tilt": 0,
+      "temperature": 4570,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.0005368493785981297,
+        "y": 5.938635244250385e-20,
+        "z": -6.546515785287112e-21
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "K2-141 b",
+      "type": "super-Earth",
+      "m": 1.4924909999999999e-5,
+      "radius": 141.9534,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 4.574055794815364e-19,
+        "y": 0.0074597626246166665,
+        "z": 0.00039094959313479044
+      },
+      "velocity": {
+        "x": -61.18639636717957,
+        "y": 3.741451656913604e-15,
+        "z": 1.9608117263369702e-16
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "K2-141 c",
+      "type": "gas giant planet",
+      "m": 2.4024e-5,
+      "radius": 658.0621,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -1.1381819428293298e-17,
+        "y": -0.06193140867915355,
+        "z": 0.003245687596744902
+      },
+      "velocity": {
+        "x": 22.190813309898694,
+        "y": -4.074524091661636e-15,
+        "z": 7.111385788090594e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "K2-141",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

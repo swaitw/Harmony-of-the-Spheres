@@ -1,0 +1,199 @@
+{
+  "name": "HD 136352 - System",
+  "description": "HD 136352 is a Sun-like G/F-type star with 3 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 136352",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.87,
+    "m": 0.87
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "3-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 136352",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 136352"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 136352",
+    "barycenterMassTwo": "HD 136352 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 136352",
+      "type": "star",
+      "m": 0.87,
+      "radius": 10865.66,
+      "tilt": 0,
+      "temperature": 5664,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.0003356815650847685,
+        "y": -0.00040694758113973915,
+        "z": 4.0084653665680805e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 136352 b",
+      "type": "super-Earth",
+      "m": 1.417416e-5,
+      "radius": 156.4308,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.09593333065980496,
+        "y": 0.00946098419558952,
+        "z": 0.0004958291715227968
+      },
+      "velocity": {
+        "x": -1.8555580006216161,
+        "y": -18.763616685636205,
+        "z": -0.9833594818124114
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "HD 136352 c",
+      "type": "sub-Neptune",
+      "m": 3.3753719999999996e-5,
+      "radius": 274.1299,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.16940724392532444,
+        "y": 0.029123194513684652,
+        "z": -0.008451937466859651
+      },
+      "velocity": {
+        "x": -2.406137698343932,
+        "y": 13.922125714642418,
+        "z": -0.25560775363496585
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 136352 d",
+      "type": "sub-Neptune",
+      "m": 2.648646e-5,
+      "radius": 240.8507,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.2680149143217779,
+        "y": 0.32981904625162034,
+        "z": 0.0035217085003733917
+      },
+      "velocity": {
+        "x": -6.966800677867567,
+        "y": 5.666267500285441,
+        "z": -0.46467672578338043
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 136352",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "name": "TOI-469 - System",
+  "description": "TOI-469 is a Sun-like G/F-type star with 3 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-469",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.901,
+    "m": 0.901
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "3-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-469",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-469"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-6,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-7,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-469",
+    "barycenterMassTwo": "HIP 29442 c",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-469",
+      "type": "star",
+      "m": 0.901,
+      "radius": 10064.6,
+      "tilt": 0,
+      "temperature": 5289,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 6.916308781818613e-5,
+        "y": -0.0006939949899497278,
+        "z": -4.264887283065022e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HIP 29442 c",
+      "type": "super-Earth",
+      "m": 1.3513499999999999e-5,
+      "radius": 145.8077,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.04518,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": 28.028008227275762,
+        "z": 1.4688856689183312
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "HIP 29442 d",
+      "type": "super-Earth",
+      "m": 1.543542e-5,
+      "radius": 144.5856,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.033649999999999985,
+        "y": 0.05828350967469273,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -19.887878091832558,
+        "y": -11.482271769929982,
+        "z": 1.2035207291727714
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "TOI-469.01",
+      "type": "sub-Neptune",
+      "m": 2.73273e-5,
+      "radius": 320.5702,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.09599707861342541,
+        "y": -0.0554239391788789,
+        "z": 0.0058092911429667654
+      },
+      "velocity": {
+        "x": 8.953018012465497,
+        "y": 15.507082078669551,
+        "z": 5.738263322324065e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-469",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

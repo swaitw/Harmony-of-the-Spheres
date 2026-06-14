@@ -1,0 +1,131 @@
+{
+  "name": "HATS-43 - System",
+  "description": "HATS-43 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HATS-43",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.837,
+    "m": 0.837
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HATS-43",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HATS-43"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 1e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HATS-43",
+    "barycenterMassTwo": "HATS-43 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HATS-43",
+      "type": "star",
+      "m": 0.837,
+      "radius": 8339.24,
+      "tilt": 0,
+      "temperature": 5099,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.004583039188686432,
+        "y": -0.00792717789702235,
+        "z": -0.00041544578956455015
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HATS-43 b",
+      "type": "gas giant planet",
+      "m": 0.00024910975089,
+      "radius": 1243.4195,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.03540907676148587,
+        "y": -0.02041542297598306,
+        "z": -0.0010699269812952485
+      },
+      "velocity": {
+        "x": 15.398850455373854,
+        "y": 26.63503887785413,
+        "z": 1.3958832387058009
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HATS-43",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

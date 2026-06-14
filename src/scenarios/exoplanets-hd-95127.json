@@ -1,0 +1,131 @@
+{
+  "name": "HD 95127 - System",
+  "description": "HD 95127 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 95127",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 3.7,
+    "m": 3.7
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 95127",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 95127"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 95127",
+    "barycenterMassTwo": "HD 95127 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 95127",
+      "type": "star",
+      "m": 3.7,
+      "radius": 421172.7,
+      "tilt": 0,
+      "temperature": 4218,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.021033433289190294,
+        "y": -0.025032316687358596,
+        "z": -0.0013118881278942785
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 95127 b",
+      "type": "gas giant planet",
+      "m": 0.0101457342987,
+      "radius": 1165.7099,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.8726778296011397,
+        "y": 0.7312601030790058,
+        "z": 0.03832371808065849
+      },
+      "velocity": {
+        "x": -7.670583604774259,
+        "y": 9.128917534839681,
+        "z": 0.47842629525896263
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 95127",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

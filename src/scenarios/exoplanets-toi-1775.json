@@ -1,0 +1,131 @@
+{
+  "name": "TOI-1775 - System",
+  "description": "TOI-1775 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-1775",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.9218,
+    "m": 0.9218
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-1775",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-1775"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-1775",
+    "barycenterMassTwo": "TOI-1775 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-1775",
+      "type": "star",
+      "m": 0.9218,
+      "radius": 8511.776,
+      "tilt": 0,
+      "temperature": 5284,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.006672088030187967,
+        "y": -4.0798766225445717e-19,
+        "z": -2.138172735363555e-20
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-1775 b",
+      "type": "gas giant planet",
+      "m": 0.000288288,
+      "radius": 756.5165,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 4.898587196589413e-18,
+        "y": 0.0798903627803659,
+        "z": 0.004186876499435507
+      },
+      "velocity": {
+        "x": -21.333981109956948,
+        "y": 1.3045393046750424e-15,
+        "z": 6.836800794546166e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-1775",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

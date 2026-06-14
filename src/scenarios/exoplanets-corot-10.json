@@ -1,0 +1,131 @@
+{
+  "name": "CoRoT-10 - System",
+  "description": "CoRoT-10 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "CoRoT-10",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.89,
+    "m": 0.89
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "CoRoT-10",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "CoRoT-10"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "CoRoT-10",
+    "barycenterMassTwo": "CoRoT-10 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "CoRoT-10",
+      "type": "star",
+      "m": 0.89,
+      "radius": 8113.3,
+      "tilt": 0,
+      "temperature": 5075,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.06099229306453175,
+        "y": 0.07548498588632642,
+        "z": 0.0039560004795140755
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "CoRoT-10 b",
+      "type": "gas giant planet",
+      "m": 0.002624622,
+      "radius": 1021.8764,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.03858918651966274,
+        "y": -0.031094875285887988,
+        "z": -0.0016296133608165104
+      },
+      "velocity": {
+        "x": 20.682269990662753,
+        "y": -25.596690662057437,
+        "z": -1.3414657145933881
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "CoRoT-10",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

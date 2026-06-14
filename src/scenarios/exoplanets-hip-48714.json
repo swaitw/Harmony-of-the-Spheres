@@ -1,0 +1,131 @@
+{
+  "name": "HIP 48714 - System",
+  "description": "HIP 48714 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HIP 48714",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.58,
+    "m": 0.58
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HIP 48714",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HIP 48714"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HIP 48714",
+    "barycenterMassTwo": "HIP 48714 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HIP 48714",
+      "type": "star",
+      "m": 0.58,
+      "radius": 6115.3331,
+      "tilt": 0,
+      "temperature": 4016,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0011002779222921218,
+        "y": 0.002719551255288092,
+        "z": 0.00014252564193605597
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HIP 48714 b",
+      "type": "gas giant planet",
+      "m": 6.87687e-5,
+      "radius": 480.3853,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.0519222958557401,
+        "y": -0.02094921965353997,
+        "z": -0.0010979020797546716
+      },
+      "velocity": {
+        "x": 9.279820542331477,
+        "y": -22.936884484759684,
+        "z": -1.2020711795178978
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HIP 48714",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

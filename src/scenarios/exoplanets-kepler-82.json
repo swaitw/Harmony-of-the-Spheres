@@ -1,0 +1,267 @@
+{
+  "name": "Kepler-82 - System",
+  "description": "Kepler-82 is a Sun-like G/F-type star with 5 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-82",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.946,
+    "m": 0.946
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "5-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-82",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-82"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-6,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-7,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-82",
+    "barycenterMassTwo": "Kepler-82 d",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-82",
+      "type": "star",
+      "m": 0.946,
+      "radius": 9705.15,
+      "tilt": 0,
+      "temperature": 5428,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.018891873234132397,
+        "y": -0.10080907719521105,
+        "z": -0.005876502403064466
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-82 d",
+      "type": "super-Earth",
+      "m": 0.002657949294,
+      "radius": 166.3957,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.034,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": 33.106179373482675,
+        "z": 1.7350213415102513
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-82 e",
+      "type": "super-Earth",
+      "m": 0.00076282206,
+      "radius": 232.2019,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.01946807064562169,
+        "y": 0.05991656052659467,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -23.1304761573914,
+        "y": 7.515547286782097,
+        "z": 1.274600266544005
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-82 b",
+      "type": "gas giant planet",
+      "m": 3.648645e-5,
+      "radius": 382.6161,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.1575163486002099,
+        "y": 0.05721784830568616,
+        "z": -0.0072781826699217424
+      },
+      "velocity": {
+        "x": -5.119865163020264,
+        "y": 14.038943186742218,
+        "z": -0.4375191332264114
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-82 c",
+      "type": "gas giant planet",
+      "m": 4.17417e-5,
+      "radius": 502.0073,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.24793429887608695,
+        "y": 0.08066916892985981,
+        "z": 0.004217222335723373
+      },
+      "velocity": {
+        "x": -3.7028932555984233,
+        "y": 11.411990708807188,
+        "z": -0.5979203784471387
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-82 f",
+      "type": "gas giant planet",
+      "m": 6.276269999999999e-5,
+      "radius": 455.0029,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.33348399493021263,
+        "y": -0.058997791387951484,
+        "z": 0.015666299716898275
+      },
+      "velocity": {
+        "x": 1.8178974989514245,
+        "y": 10.344178617996818,
+        "z": 0.25813190947440395
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-82",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

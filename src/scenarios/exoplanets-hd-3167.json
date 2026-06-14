@@ -1,0 +1,233 @@
+{
+  "name": "HD 3167 - System",
+  "description": "HD 3167 is a Sun-like G/F-type star with 4 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 3167",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.837,
+    "m": 0.837
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "4-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 3167",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 3167"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-6,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-7,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 3167",
+    "barycenterMassTwo": "HD 3167 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 3167",
+      "type": "star",
+      "m": 0.837,
+      "radius": 9037.6,
+      "tilt": 0,
+      "temperature": 5261,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 2.0811018765073437e-5,
+        "y": -0.001341431908062905,
+        "z": -4.581667567492847e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 3167 b",
+      "type": "super-Earth",
+      "m": 1.4924909999999999e-5,
+      "radius": 156.9948,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.01796,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": 42.846220347879665,
+        "z": 2.2454752591042264
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "HD 3167 d",
+      "type": "super-Earth",
+      "m": 1.300299e-5,
+      "radius": 180.497,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 4.111384234097495e-18,
+        "y": 0.06714400000000001,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -23.45152501193627,
+        "y": 1.4359917520495925e-15,
+        "z": 1.2290423466762763
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "HD 3167 c",
+      "type": "sub-Neptune",
+      "m": 3.342339e-5,
+      "radius": 282.0266,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.16684230222587593,
+        "y": -0.005818276888499643,
+        "z": 0.00030492297098010795
+      },
+      "velocity": {
+        "x": 0.5056476181234457,
+        "y": 14.460009128828007,
+        "z": -0.7578169668543792
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 3167 e",
+      "type": "sub-Neptune",
+      "m": 2.525523e-5,
+      "radius": 266.0451,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -6.06613483872652e-17,
+        "y": -0.330225,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 10.71543062428969,
+        "y": -1.968392672328284e-15,
+        "z": 0.5615719230805145
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 3167",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

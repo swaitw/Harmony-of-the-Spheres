@@ -1,0 +1,131 @@
+{
+  "name": "HD 149806 - System",
+  "description": "HD 149806 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 149806",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.93,
+    "m": 0.93
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 149806",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 149806"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 149806",
+    "barycenterMassTwo": "HD 149806 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 149806",
+      "type": "star",
+      "m": 0.93,
+      "radius": 9140.3,
+      "tilt": 0,
+      "temperature": 5352,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.025818952388990447,
+        "y": -0.019415205263901666,
+        "z": -0.0010175077922054984
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 149806 b",
+      "type": "gas giant planet",
+      "m": 0.012023064382268939,
+      "radius": 1156.309,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 4.797715661578015,
+        "y": 6.3626780503143605,
+        "z": 0.333453826909926
+      },
+      "velocity": {
+        "x": -1.9971302621628106,
+        "y": 1.5017919160490327,
+        "z": 0.07870557926535326
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 149806",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

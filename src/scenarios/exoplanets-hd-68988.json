@@ -1,0 +1,165 @@
+{
+  "name": "HD 68988 - System",
+  "description": "HD 68988 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 68988",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.28,
+    "m": 1.28
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 68988",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 68988"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 68988",
+    "barycenterMassTwo": "HD 68988 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 68988",
+      "type": "star",
+      "m": 1.28,
+      "radius": 12221.3,
+      "tilt": 0,
+      "temperature": 5932,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.033482600893578955,
+        "y": 0.001393971025614592,
+        "z": -0.003623236603628639
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 68988 b",
+      "type": "gas giant planet",
+      "m": 0.0018802536752999999,
+      "radius": 1259.7188,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.046910759744262995,
+        "y": 0.03986947119625346,
+        "z": 0.0020894704465848203
+      },
+      "velocity": {
+        "x": -19.650678255770863,
+        "y": 23.05782552644816,
+        "z": 1.2084094309369684
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 68988 c",
+      "type": "gas giant planet",
+      "m": 0.014345213754501629,
+      "radius": 1146.9082,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -7.198738549020522,
+        "y": 0.9398601762070505,
+        "z": -0.04925598467157928
+      },
+      "velocity": {
+        "x": -0.41194709485424563,
+        "y": -3.1466135587663935,
+        "z": 0.16490702887685396
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 68988",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

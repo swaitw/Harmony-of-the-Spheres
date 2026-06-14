@@ -1,0 +1,165 @@
+{
+  "name": "HIP 8152 - System",
+  "description": "HIP 8152 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HIP 8152",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.9373,
+    "m": 0.9373
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HIP 8152",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HIP 8152"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HIP 8152",
+    "barycenterMassTwo": "HIP 8152 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HIP 8152",
+      "type": "star",
+      "m": 0.9373,
+      "radius": 9862.281,
+      "tilt": 0,
+      "temperature": 5618,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -7.497029365991173e-5,
+        "y": -0.00023404139040405627,
+        "z": 1.226558953139186e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HIP 8152 b",
+      "type": "sub-Neptune",
+      "m": 2.67267e-5,
+      "radius": 238.4308,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 5.694607616035192e-18,
+        "y": 0.09287254673217536,
+        "z": 0.004867243930593777
+      },
+      "velocity": {
+        "x": -19.952456932278007,
+        "y": 1.2200612796476412e-15,
+        "z": 6.394070225555839e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HIP 8152 c",
+      "type": "sub-Neptune",
+      "m": 3.21321e-5,
+      "radius": 237.3183,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.038032639937814354,
+        "y": -0.10435061428350048,
+        "z": 0.00546878396141946
+      },
+      "velocity": {
+        "x": 18.78286781565319,
+        "y": 6.827035743873632,
+        "z": -0.35778978242236253
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HIP 8152",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

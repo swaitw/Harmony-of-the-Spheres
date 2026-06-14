@@ -1,0 +1,165 @@
+{
+  "name": "OGLE-2006-BLG-109L - System",
+  "description": "OGLE-2006-BLG-109L is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "OGLE-2006-BLG-109L",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.51,
+    "m": 0.51
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "OGLE-2006-BLG-109L",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "OGLE-2006-BLG-109L"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "OGLE-2006-BLG-109L",
+    "barycenterMassTwo": "OGLE-2006-BLG-109L b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "OGLE-2006-BLG-109L",
+      "type": "star",
+      "m": 0.51,
+      "radius": 10270.0,
+      "tilt": 0,
+      "temperature": 5778,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 1.5241078559946213e-19,
+        "y": -0.0027754271250488294,
+        "z": -0.00027589992309357404
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "OGLE-2006-BLG-109L b",
+      "type": "gas giant planet",
+      "m": 0.000693693,
+      "radius": 1316.1241,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 2.3,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": 2.955453455320162,
+        "z": 0.15488875236772054
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "OGLE-2006-BLG-109L c",
+      "type": "gas giant planet",
+      "m": 0.000258258,
+      "radius": 1043.4984,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -3.8249999999999997,
+        "y": 4.684274006738626e-16,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -3.0097615816635186e-16,
+        "y": -2.4576568393099394,
+        "z": 0.12880033718801198
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "OGLE-2006-BLG-109L",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,233 @@
+{
+  "name": "Kepler-402 - System",
+  "description": "Kepler-402 is a Sun-like G/F-type star with 4 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-402",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.072,
+    "m": 1.072
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "4-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-402",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-402"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 1e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-402",
+    "barycenterMassTwo": "Kepler-402 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-402",
+      "type": "star",
+      "m": 1.072,
+      "radius": 12981.28,
+      "tilt": 0,
+      "temperature": 6090,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 5.731004207947678e-5,
+        "y": -6.546067548032525e-6,
+        "z": -3.5699124159687846e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-402 b",
+      "type": "terrestial planet",
+      "m": 5.9459399999999995e-6,
+      "radius": 114.6908,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.051,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": 28.774995125717062,
+        "z": 1.5080335934191664
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-402 c",
+      "type": "super-Earth",
+      "m": 9.159149999999999e-6,
+      "radius": 146.6538,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 4.163799117101001e-18,
+        "y": 0.068,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -24.919876772644372,
+        "y": 1.5259023662382704e-15,
+        "z": 1.3059954016613315
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-402 d",
+      "type": "terrestial planet",
+      "m": 7.4474399999999995e-6,
+      "radius": 129.7322,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.087,
+        "y": 1.0654427152581972e-17,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -2.6980598063276355e-15,
+        "y": -22.03133024318628,
+        "z": 1.154613092696697
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-402 e",
+      "type": "terrestial planet",
+      "m": 8.19819e-6,
+      "radius": 137.2529,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -1.8737096026954503e-17,
+        "y": -0.102,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 20.34699418200439,
+        "y": -3.7376821945892236e-15,
+        "z": 1.0663407801638096
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-402",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

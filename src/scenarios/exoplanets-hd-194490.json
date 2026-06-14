@@ -1,0 +1,131 @@
+{
+  "name": "HD 194490 - System",
+  "description": "HD 194490 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 194490",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.06,
+    "m": 1.06
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 194490",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 194490"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 194490",
+    "barycenterMassTwo": "HD 194490 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 194490",
+      "type": "star",
+      "m": 1.06,
+      "radius": 11801.3597,
+      "tilt": 0,
+      "temperature": 5861,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.02500592528881982,
+        "y": 0.003907777792652932,
+        "z": 0.00020479795604452482
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 194490 b",
+      "type": "gas giant planet",
+      "m": 0.01069639458062175,
+      "radius": 1165.7099,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -1.2872393359365173,
+        "y": -8.21450094604393,
+        "z": -0.4305037525006035
+      },
+      "velocity": {
+        "x": 2.478057499315651,
+        "y": -0.38725613841101697,
+        "z": -0.02029523422784743
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 194490",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

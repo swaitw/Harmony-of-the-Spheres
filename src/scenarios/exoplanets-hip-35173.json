@@ -1,0 +1,131 @@
+{
+  "name": "HIP 35173 - System",
+  "description": "HIP 35173 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HIP 35173",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.79,
+    "m": 0.79
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HIP 35173",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HIP 35173"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HIP 35173",
+    "barycenterMassTwo": "HIP 35173 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HIP 35173",
+      "type": "star",
+      "m": 0.79,
+      "radius": 7942.8591,
+      "tilt": 0,
+      "temperature": 4881,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.00012665988702985028,
+        "y": -0.0006674939493955339,
+        "z": -3.498187557268662e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HIP 35173 b",
+      "type": "sub-Neptune",
+      "m": 3.813809999999999e-5,
+      "radius": 339.372,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.1790929156866583,
+        "y": 0.03389057853177743,
+        "z": 0.0017761299594679667
+      },
+      "velocity": {
+        "x": -2.623657464676577,
+        "y": 13.82659912325134,
+        "z": 0.7246213550864473
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HIP 35173",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

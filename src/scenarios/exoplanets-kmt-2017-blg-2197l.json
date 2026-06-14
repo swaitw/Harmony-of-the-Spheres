@@ -1,0 +1,131 @@
+{
+  "name": "KMT-2017-BLG-2197L - System",
+  "description": "KMT-2017-BLG-2197L is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "KMT-2017-BLG-2197L",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.36,
+    "m": 0.36
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "KMT-2017-BLG-2197L",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "KMT-2017-BLG-2197L"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "KMT-2017-BLG-2197L",
+    "barycenterMassTwo": "KMT-2017-BLG-2197L b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "KMT-2017-BLG-2197L",
+      "type": "star",
+      "m": 0.36,
+      "radius": 10270.0,
+      "tilt": 0,
+      "temperature": 5778,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": -0.02212671399371477,
+        "z": -0.0011596119432415828
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "KMT-2017-BLG-2197L b",
+      "type": "gas giant planet",
+      "m": 0.008437238162993639,
+      "radius": 1175.1108,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 15.91,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": 0.9441024282892845,
+        "z": 0.049478311682368055
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "KMT-2017-BLG-2197L",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

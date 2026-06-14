@@ -1,0 +1,131 @@
+{
+  "name": "LTT 9779 - System",
+  "description": "LTT 9779 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "LTT 9779",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.02,
+    "m": 1.02
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "LTT 9779",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "LTT 9779"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-6,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-7,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "LTT 9779",
+    "barycenterMassTwo": "LTT 9779 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "LTT 9779",
+      "type": "star",
+      "m": 1.02,
+      "radius": 9746.23,
+      "tilt": 0,
+      "temperature": 5443,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.004228559170022352,
+        "y": -2.585697255006787e-19,
+        "z": -1.3551065103316123e-20
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "LTT 9779 b",
+      "type": "gas giant planet",
+      "m": 8.804795999999999e-5,
+      "radius": 443.7218,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 1.028090987884203e-18,
+        "y": 0.016766989888529295,
+        "z": 0.000878720705319027
+      },
+      "velocity": {
+        "x": -48.98614747488527,
+        "y": 2.9954256749468393e-15,
+        "z": 1.569836076313687e-16
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "LTT 9779",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

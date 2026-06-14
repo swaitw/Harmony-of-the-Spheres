@@ -1,0 +1,165 @@
+{
+  "name": "GJ 317 - System",
+  "description": "GJ 317 is a cool M-dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "GJ 317",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.402,
+    "m": 0.402
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "GJ 317",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "GJ 317"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "GJ 317",
+    "barycenterMassTwo": "GJ 317 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "GJ 317",
+      "type": "star",
+      "m": 0.402,
+      "radius": 4138.81,
+      "tilt": 0,
+      "temperature": 3496,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0024771546421743776,
+        "y": -0.025740202280668038,
+        "z": -0.0011230037190035464
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "GJ 317 b",
+      "type": "gas giant planet",
+      "m": 0.0023858835,
+      "radius": 1250.3179,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 1.023762880260254,
+        "y": 0.20428765637690804,
+        "z": 0.010706262405650762
+      },
+      "velocity": {
+        "x": -0.7951184094120124,
+        "y": 3.973725598296886,
+        "z": 0.20825413408691407
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    },
+    {
+      "name": "GJ 317 c",
+      "type": "gas giant planet",
+      "m": 0.0013648473498960299,
+      "radius": 1278.5206,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 1.134016566693315,
+        "y": -3.774693881815876,
+        "z": 0.19782332381925247
+      },
+      "velocity": {
+        "x": 2.1195601544281386,
+        "y": 0.6350270441528918,
+        "z": -0.03328035716872683
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "GJ 317",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

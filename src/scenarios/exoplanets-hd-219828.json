@@ -1,0 +1,165 @@
+{
+  "name": "HD 219828 - System",
+  "description": "HD 219828 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 219828",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.04,
+    "m": 1.04
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 219828",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 219828"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 1e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 219828",
+    "barycenterMassTwo": "HD 219828 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 219828",
+      "type": "star",
+      "m": 1.04,
+      "radius": 16021.2,
+      "tilt": 0,
+      "temperature": 5891,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.07083981775534733,
+        "y": -0.10056847720339386,
+        "z": 0.0053542687397907
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 219828 b",
+      "type": "gas giant planet",
+      "m": 5.726632237326e-5,
+      "radius": 431.5007,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.020390706423276738,
+        "y": -0.03954522234689242,
+        "z": -0.0020724772844547272
+      },
+      "velocity": {
+        "x": 28.201828246107485,
+        "y": -14.501880633193736,
+        "z": -0.7600113594134271
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 219828 c",
+      "type": "gas giant planet",
+      "m": 0.01532255898967794,
+      "radius": 1146.9082,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.8830631855686749,
+        "y": -0.6019427991792153,
+        "z": 0.03154648536040031
+      },
+      "velocity": {
+        "x": 4.7027650881452985,
+        "y": 6.8801618407151235,
+        "z": -0.36057400317980076
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 219828",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "name": "HD 80606 - System",
+  "description": "HD 80606 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 80606",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.05,
+    "m": 1.05
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 80606",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 80606"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 80606",
+    "barycenterMassTwo": "HD 80606 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 80606",
+      "type": "star",
+      "m": 1.05,
+      "radius": 10783.5,
+      "tilt": 0,
+      "temperature": 5565,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.1637533536866411,
+        "y": -0.0986975729407199,
+        "z": -0.0051725206184491095
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 80606 b",
+      "type": "gas giant planet",
+      "m": 0.00397437821657877,
+      "radius": 1087.4633,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.016214214909757167,
+        "y": -0.026828010500490055,
+        "z": -0.0014059964529127948
+      },
+      "velocity": {
+        "x": 43.26237011206842,
+        "y": 26.075135767265987,
+        "z": 1.3665399600662094
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 80606",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

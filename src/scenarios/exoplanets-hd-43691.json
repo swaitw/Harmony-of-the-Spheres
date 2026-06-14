@@ -1,0 +1,131 @@
+{
+  "name": "HD 43691 - System",
+  "description": "HD 43691 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 43691",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.32,
+    "m": 1.32
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 43691",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 43691"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 43691",
+    "barycenterMassTwo": "HD 43691 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 43691",
+      "type": "star",
+      "m": 1.32,
+      "radius": 16432.0,
+      "tilt": 0,
+      "temperature": 6093,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.027267225097913707,
+        "y": -0.011390495637124637,
+        "z": -0.0005969505812748717
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 43691 b",
+      "type": "gas giant planet",
+      "m": 0.0024338308994999998,
+      "radius": 1240.917,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.08453472528256208,
+        "y": -0.20180981280451246,
+        "z": -0.010576404126610752
+      },
+      "velocity": {
+        "x": 14.788511862775822,
+        "y": 6.177690588156049,
+        "z": 0.3237590448230032
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 43691",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

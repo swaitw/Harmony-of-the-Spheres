@@ -1,0 +1,131 @@
+{
+  "name": "K2-95 - System",
+  "description": "K2-95 is a cool M-dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "K2-95",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.41,
+    "m": 0.41
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "K2-95",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "K2-95"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "K2-95",
+    "barycenterMassTwo": "K2-95 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "K2-95",
+      "type": "star",
+      "m": 0.41,
+      "radius": 4108.0,
+      "tilt": 0,
+      "temperature": 3566,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -5.8034132986134326e-5,
+        "y": -0.0016596025822834138,
+        "z": -8.697608582987438e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "K2-95 b",
+      "type": "sub-Neptune",
+      "m": 3.3033e-5,
+      "radius": 311.1693,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.04407313547154212,
+        "y": -0.0015369585656437607,
+        "z": -8.054858527543782e-5
+      },
+      "velocity": {
+        "x": 0.7203098272731835,
+        "y": 20.59870610408378,
+        "z": 1.0795324430190565
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "K2-95",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

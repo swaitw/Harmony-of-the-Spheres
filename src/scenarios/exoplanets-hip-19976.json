@@ -1,0 +1,131 @@
+{
+  "name": "HIP 19976 - System",
+  "description": "HIP 19976 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HIP 19976",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.67,
+    "m": 0.67
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HIP 19976",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HIP 19976"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HIP 19976",
+    "barycenterMassTwo": "HIP 19976 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HIP 19976",
+      "type": "star",
+      "m": 0.67,
+      "radius": 7931.7161,
+      "tilt": 0,
+      "temperature": 4316,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.00021861628030387672,
+        "y": 0.001391122841427757,
+        "z": 7.290565882914302e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HIP 19976 b",
+      "type": "gas giant planet",
+      "m": 6.490183203504e-5,
+      "radius": 464.4038,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.16089473117231418,
+        "y": -0.02521550405890914,
+        "z": -0.0013214885712299399
+      },
+      "velocity": {
+        "x": 2.2568377996559144,
+        "y": -14.360955223165186,
+        "z": -0.7526257716292789
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HIP 19976",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

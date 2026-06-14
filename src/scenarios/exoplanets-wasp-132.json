@@ -1,0 +1,199 @@
+{
+  "name": "WASP-132 - System",
+  "description": "WASP-132 is a orange K-type dwarf star with 3 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "WASP-132",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.789,
+    "m": 0.789
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "3-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "WASP-132",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "WASP-132"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-6,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-7,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "WASP-132",
+    "barycenterMassTwo": "WASP-132 c",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "WASP-132",
+      "type": "star",
+      "m": 0.789,
+      "radius": 7784.66,
+      "tilt": 0,
+      "temperature": 4686,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.015460219003306446,
+        "y": -0.024817859093044497,
+        "z": 0.00043073617891674685
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "WASP-132 c",
+      "type": "super-Earth",
+      "m": 1.879878e-5,
+      "radius": 173.0703,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.018151613700032983,
+        "y": -0.0025475468249083217,
+        "z": -0.00013351127171300773
+      },
+      "velocity": {
+        "x": 5.738668274382325,
+        "y": -40.77678662641197,
+        "z": -2.137020833388665
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "WASP-132 b",
+      "type": "gas giant planet",
+      "m": 0.00040849976627459997,
+      "radius": 949.4229,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.013732177928161556,
+        "y": 0.0648221359186183,
+        "z": -0.0023218471529989205
+      },
+      "velocity": {
+        "x": -21.359906000741827,
+        "y": 4.555415891200546,
+        "z": 0.8500810794946948
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "WASP-132 d",
+      "type": "gas giant planet",
+      "m": 0.004924903724100359,
+      "radius": 1203.3135,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 2.338848363290416,
+        "y": 0.4562745953693844,
+        "z": 0.09419589775699344
+      },
+      "velocity": {
+        "x": -0.7270144448753606,
+        "y": 3.7537705047923535,
+        "z": -0.1313600060413856
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "WASP-132",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

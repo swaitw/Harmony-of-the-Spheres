@@ -1,0 +1,131 @@
+{
+  "name": "HD 457 - System",
+  "description": "HD 457 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 457",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.15,
+    "m": 1.15
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 457",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 457"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 457",
+    "barycenterMassTwo": "HD 457 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 457",
+      "type": "star",
+      "m": 1.15,
+      "radius": 13165.5238,
+      "tilt": 0,
+      "temperature": 6114,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.06247769921160888,
+        "y": 0.035561838176550356,
+        "z": 0.0018637169660558801
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 457 b",
+      "type": "gas giant planet",
+      "m": 0.0253613453016924,
+      "radius": 1118.7055,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -3.3105717951690483,
+        "y": -5.800329293969609,
+        "z": -0.3039823774073175
+      },
+      "velocity": {
+        "x": 2.8330261363759592,
+        "y": -1.6125372458181015,
+        "z": -0.08450949606451823
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 457",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

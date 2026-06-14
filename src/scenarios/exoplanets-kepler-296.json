@@ -1,0 +1,267 @@
+{
+  "name": "Kepler-296 - System",
+  "description": "Kepler-296 is a orange K-type dwarf star with 5 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-296",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.498,
+    "m": 0.498
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "5-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-296",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-296"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-296",
+    "barycenterMassTwo": "Kepler-296 c",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-296",
+      "type": "star",
+      "m": 0.498,
+      "radius": 4929.6,
+      "tilt": 0,
+      "temperature": 3740,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.00029828311829066545,
+        "y": -0.0003269479360539523,
+        "z": -0.00012106586028576222
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-296 c",
+      "type": "super-Earth",
+      "m": 1.399398e-5,
+      "radius": 188.0177,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.034906999999999994,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": 27.339286927801965,
+        "z": 1.432791315067979
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-296 b",
+      "type": "super-Earth",
+      "m": 9.66966e-6,
+      "radius": 151.3543,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.01635626951226597,
+        "y": 0.05033942140750247,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -21.115376254671308,
+        "y": 6.860801638511326,
+        "z": 1.1635585890773232
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-296 d",
+      "type": "super-Earth",
+      "m": 1.5075059999999998e-5,
+      "radius": 196.4785,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.06396088357528333,
+        "y": 0.04647030204624293,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -10.677847801116293,
+        "y": -14.696796662999338,
+        "z": 0.9520522820132953
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-296 e",
+      "type": "super-Earth",
+      "m": 8.88888e-6,
+      "radius": 143.8336,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.0916049942730753,
+        "y": -0.06655492411707672,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 8.922393598613164,
+        "y": -12.280621236458895,
+        "z": 0.7955334581274359
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "skyblue"
+    },
+    {
+      "name": "Kepler-296 f",
+      "type": "super-Earth",
+      "m": 1.168167e-5,
+      "radius": 169.216,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.05279555348895973,
+        "y": -0.16248800580902698,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 11.7528252816463,
+        "y": 3.818724420390936,
+        "z": 0.6476370886054825
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "skyblue"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-296",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

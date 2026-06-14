@@ -1,0 +1,233 @@
+{
+  "name": "HD 20794 - System",
+  "description": "HD 20794 is a Sun-like G/F-type star with 4 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 20794",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.79,
+    "m": 0.79
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "4-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 20794",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 20794"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 20794",
+    "barycenterMassTwo": "HD 20794 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 20794",
+      "type": "star",
+      "m": 0.79,
+      "radius": 9551.1,
+      "tilt": 0,
+      "temperature": 5368,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.00019926458680237576,
+        "y": -1.4305357384333083e-5,
+        "z": -2.25031587252191e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 20794 b",
+      "type": "terrestial planet",
+      "m": 8.1081e-6,
+      "radius": 136.3129,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.10663182394535446,
+        "y": 0.04965509214177718,
+        "z": 0.002602313109245332
+      },
+      "velocity": {
+        "x": -7.099464691852577,
+        "y": 15.203986034204624,
+        "z": 0.7968071443030369
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "HD 20794 d",
+      "type": "super-Earth",
+      "m": 1.4414399999999999e-5,
+      "radius": 191.7781,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.27031600651571186,
+        "y": 0.19666559810140788,
+        "z": 0.014166661606148557
+      },
+      "velocity": {
+        "x": -5.8828554965170285,
+        "y": -8.108167908473147,
+        "z": 0.30830739241549027
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "HD 20794 e",
+      "type": "super-Earth",
+      "m": 1.4324309999999998e-5,
+      "radius": 190.838,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.01172978791234985,
+        "y": 0.36070457901201897,
+        "z": -0.01890372596324419
+      },
+      "velocity": {
+        "x": -10.548482854067696,
+        "y": 0.3420875888321321,
+        "z": -0.017928050850982064
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "HD 20794 f",
+      "type": "super-Earth",
+      "m": 1.747746e-5,
+      "radius": 214.3402,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -1.3680927403484806e-16,
+        "y": -0.7447550000000001,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 7.783837971563287,
+        "y": -1.4298678385434907e-15,
+        "z": 0.4079336623886439
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "skyblue"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 20794",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

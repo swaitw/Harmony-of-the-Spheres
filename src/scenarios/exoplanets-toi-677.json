@@ -1,0 +1,131 @@
+{
+  "name": "TOI-677 - System",
+  "description": "TOI-677 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-677",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.181,
+    "m": 1.181
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-677",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-677"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-677",
+    "barycenterMassTwo": "TOI-677 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-677",
+      "type": "star",
+      "m": 1.181,
+      "radius": 13145.6,
+      "tilt": 0,
+      "temperature": 6295,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.03317835407286889,
+        "y": -0.010193006144823928,
+        "z": -0.0005341928162686152
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-677 b",
+      "type": "gas giant planet",
+      "m": 0.00117777736348272,
+      "radius": 1232.88,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.01652918284260873,
+        "y": 0.053655314877234364,
+        "z": 0.0028119558994481758
+      },
+      "velocity": {
+        "x": -33.26913674430885,
+        "y": 10.22089626637121,
+        "z": 0.5356544756028423
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-677",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

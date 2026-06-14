@@ -1,0 +1,267 @@
+{
+  "name": "Kepler-80 - System",
+  "description": "Kepler-80 is a orange K-type dwarf star with 5 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-80",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.73,
+    "m": 0.73
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "5-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-80",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-80"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-6,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-7,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-80",
+    "barycenterMassTwo": "Kepler-80 f",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-80",
+      "type": "star",
+      "m": 0.73,
+      "radius": 6963.06,
+      "tilt": 0,
+      "temperature": 4540,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0001518943463670183,
+        "y": -0.8971632906089715,
+        "z": -0.047043594882018376
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-80 f",
+      "type": "terrestial planet",
+      "m": 0.013392569189999998,
+      "radius": 113.7507,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.014245000000000002,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": 48.930032237284756,
+        "z": 2.5643143298037105
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-80 d",
+      "type": "super-Earth",
+      "m": 2.0270249999999998e-5,
+      "radius": 143.8336,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.03266342956892206,
+        "y": -0.01737728719308744,
+        "z": -0.0019094588121839591
+      },
+      "velocity": {
+        "x": 13.118041282013087,
+        "y": 24.68540304590061,
+        "z": -0.2540618867442415
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-80 e",
+      "type": "super-Earth",
+      "m": 1.240239e-5,
+      "radius": 150.4142,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.040042327856145206,
+        "y": -0.028012741335774298,
+        "z": 0.002421190851312624
+      },
+      "velocity": {
+        "x": 13.95497614193712,
+        "y": -19.911884753749156,
+        "z": 0.41436336382305283
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-80 b",
+      "type": "sub-Neptune",
+      "m": 2.0810789999999997e-5,
+      "radius": 251.0037,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.064414152763828,
+        "y": -0.0022903848337084624,
+        "z": -0.0018871375101317898
+      },
+      "velocity": {
+        "x": 0.7256524692809684,
+        "y": -21.165877221304335,
+        "z": 0.9197608339501535
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-80 c",
+      "type": "sub-Neptune",
+      "m": 2.024022e-5,
+      "radius": 257.5843,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.03687062497871776,
+        "y": 0.06938278502003807,
+        "z": -0.0007140868324889798
+      },
+      "velocity": {
+        "x": -16.956315749186004,
+        "y": -9.020937862282192,
+        "z": -0.9912427126226404
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-80",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

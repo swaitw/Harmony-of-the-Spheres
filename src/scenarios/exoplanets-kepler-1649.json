@@ -1,0 +1,163 @@
+{
+  "name": "Kepler-1649 - System",
+  "description": "Kepler-1649 is a cool M-dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-1649",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.1977,
+    "m": 0.1977
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-1649",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-1649"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-1649",
+    "barycenterMassTwo": "Kepler-1649 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-1649",
+      "type": "star",
+      "m": 0.1977,
+      "radius": 2379.559,
+      "tilt": 0,
+      "temperature": 3240,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 2.4452580708419465e-20,
+        "y": 7.090724943061465e-6,
+        "z": -2.055696313216681e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-1649 b",
+      "type": "terrestial planet",
+      "m": 3.09309e-6,
+      "radius": 95.607,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.0514,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": 12.309055482835587,
+        "z": 0.6450902629271557
+      },
+      "nonStellarProceduralManifestation": true
+    },
+    {
+      "name": "Kepler-1649 c",
+      "type": "terrestial planet",
+      "m": 3.6035999999999997e-6,
+      "radius": 99.6494,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.0649,
+        "y": 7.947957726466322e-18,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -1.3415127111928428e-15,
+        "y": -10.954282590922183,
+        "z": 0.5740896242291106
+      },
+      "nonStellarProceduralManifestation": true
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-1649",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

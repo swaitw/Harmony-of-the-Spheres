@@ -1,0 +1,233 @@
+{
+  "name": "GJ 876 - System",
+  "description": "GJ 876 is a cool M-dwarf star with 4 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "GJ 876",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.32,
+    "m": 0.32
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "4-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "GJ 876",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "GJ 876"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-6,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-7,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "GJ 876",
+    "barycenterMassTwo": "GJ 876 d",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "GJ 876",
+      "type": "star",
+      "m": 0.32,
+      "radius": 3081.0,
+      "tilt": 0,
+      "temperature": 3294,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.025142847084658724,
+        "y": 0.0572935031808363,
+        "z": -0.002684598274218218
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "GJ 876 d",
+      "type": "sub-Neptune",
+      "m": 2.051049e-5,
+      "radius": 235.9623,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.009698264721551674,
+        "y": -0.01333022254512592,
+        "z": -0.000698607360938779
+      },
+      "velocity": {
+        "x": 24.600681714034714,
+        "y": -17.8489465528012,
+        "z": -0.9354236513740044
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "GJ 876 c",
+      "type": "gas giant planet",
+      "m": 0.0006816347537999999,
+      "radius": 1316.1241,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.07240909884599325,
+        "y": 0.06356583625821569,
+        "z": 0.003794800070404728
+      },
+      "velocity": {
+        "x": -8.446670065021474,
+        "y": -9.64819551724019,
+        "z": 0.44267122044431684
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "GJ 876 b",
+      "type": "gas giant planet",
+      "m": 0.0021718401705,
+      "radius": 1250.3179,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.12875485070909556,
+        "y": -0.1548734273501737,
+        "z": 0.008116572397376022
+      },
+      "velocity": {
+        "x": 6.190691744747886,
+        "y": -5.1325676509046945,
+        "z": 0.26898647260389047
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "GJ 876 e",
+      "type": "sub-Neptune",
+      "m": 4.3843799999999995e-5,
+      "radius": 368.5148,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.27041961277700277,
+        "y": 0.1627074808780975,
+        "z": -0.014172091380222632
+      },
+      "velocity": {
+        "x": -3.341638120408113,
+        "y": -5.569051953387656,
+        "z": -0.175127833058145
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "GJ 876",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

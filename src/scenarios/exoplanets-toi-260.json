@@ -1,0 +1,131 @@
+{
+  "name": "TOI-260 - System",
+  "description": "TOI-260 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-260",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.616,
+    "m": 0.616
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-260",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-260"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-260",
+    "barycenterMassTwo": "TOI-260 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-260",
+      "type": "star",
+      "m": 0.616,
+      "radius": 6233.89,
+      "tilt": 0,
+      "temperature": 4026,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.00033124401870857897,
+        "y": -2.025504942639036e-20,
+        "z": -1.0615221597053564e-21
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-260 b",
+      "type": "super-Earth",
+      "m": 1.270269e-5,
+      "radius": 160.7552,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 5.77420965797977e-18,
+        "y": 0.09417076512735631,
+        "z": 0.004935280673709603
+      },
+      "velocity": {
+        "x": -16.063236647079055,
+        "y": 9.822415918719942e-16,
+        "z": 5.147710054945051e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-260",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

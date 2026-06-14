@@ -1,0 +1,165 @@
+{
+  "name": "TOI-6054 - System",
+  "description": "TOI-6054 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-6054",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.107,
+    "m": 1.107
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-6054",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-6054"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-6054",
+    "barycenterMassTwo": "TOI-6054.01",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-6054",
+      "type": "star",
+      "m": 1.107,
+      "radius": 17068.74,
+      "tilt": 0,
+      "temperature": 6047,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -5.793835067738215e-6,
+        "y": -0.001616912976825101,
+        "z": -1.295233949654634e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-6054.01",
+      "type": "sub-Neptune",
+      "m": 3.75375e-5,
+      "radius": 248.1834,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.06215194844844285,
+        "y": -0.014329243233616359,
+        "z": -0.0007509638166803778
+      },
+      "velocity": {
+        "x": 6.3543549966309065,
+        "y": 27.486015041802332,
+        "z": 1.4404810096811276
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "TOI-6054.02",
+      "type": "sub-Neptune",
+      "m": 2.79279e-5,
+      "radius": 265.105,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.0689277691564989,
+        "y": 0.02104445356401461,
+        "z": -0.001102893077515088
+      },
+      "velocity": {
+        "x": -8.31114495776791,
+        "y": 27.147274793798726,
+        "z": -1.4227283855294715
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-6054",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

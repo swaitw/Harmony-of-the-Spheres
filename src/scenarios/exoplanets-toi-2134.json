@@ -1,0 +1,165 @@
+{
+  "name": "TOI-2134 - System",
+  "description": "TOI-2134 is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-2134",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.744,
+    "m": 0.744
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-2134",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-2134"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-2134",
+    "barycenterMassTwo": "TOI-2134 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-2134",
+      "type": "star",
+      "m": 0.744,
+      "radius": 7281.43,
+      "tilt": 0,
+      "temperature": 4580,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0017576151993524427,
+        "y": -0.0020586182299349443,
+        "z": 0.00013377283642814142
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-2134 b",
+      "type": "sub-Neptune",
+      "m": 2.7417390000000002e-5,
+      "radius": 252.8838,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.023870657084798724,
+        "y": 0.0692304138815172,
+        "z": 0.003628212250376145
+      },
+      "velocity": {
+        "x": -19.489324442978656,
+        "y": -6.701515771729437,
+        "z": -0.3512115594266159
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "TOI-2134 c",
+      "type": "gas giant planet",
+      "m": 0.00012579567,
+      "radius": 683.4444,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.08349705922245165,
+        "y": -0.08941692273317577,
+        "z": 0.004686142350769025
+      },
+      "velocity": {
+        "x": 14.642889675041246,
+        "y": 13.636002213559935,
+        "z": -0.7146325943113105
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-2134",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

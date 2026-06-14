@@ -1,0 +1,267 @@
+{
+  "name": "HD 134606 - System",
+  "description": "HD 134606 is a Sun-like G/F-type star with 5 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 134606",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.046,
+    "m": 1.046
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "5-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 134606",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 134606"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 1e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 134606",
+    "barycenterMassTwo": "HD 134606 e",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 134606",
+      "type": "star",
+      "m": 1.046,
+      "radius": 11892.66,
+      "tilt": 0,
+      "temperature": 5576,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.0003761100940027602,
+        "y": 0.0004652235493540166,
+        "z": 6.786509208681272e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 134606 e",
+      "type": "terrestial planet",
+      "m": 7.0270199999999995e-6,
+      "radius": 125.0318,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.024781026236650672,
+        "y": 0.034061412439802485,
+        "z": 0.0017850829852138026
+      },
+      "velocity": {
+        "x": -27.74357076057967,
+        "y": 20.129259727259353,
+        "z": 1.0549298009172186
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "HD 134606 b",
+      "type": "sub-Neptune",
+      "m": 2.7297269999999998e-5,
+      "radius": 279.2063,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.06226201787411444,
+        "y": -0.07169561700058044,
+        "z": 0.00194220786465617
+      },
+      "velocity": {
+        "x": 16.42312694294322,
+        "y": -14.290641501649645,
+        "z": -1.0500094050709154
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 134606 f",
+      "type": "super-Earth",
+      "m": 1.690689e-5,
+      "radius": 210.5799,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.14596248993147182,
+        "y": -0.07426959742437049,
+        "z": 0.007645245031189894
+      },
+      "velocity": {
+        "x": 7.499261912093513,
+        "y": -14.697975761477212,
+        "z": 0.3921651388699223
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "HD 134606 c",
+      "type": "sub-Neptune",
+      "m": 3.396393e-5,
+      "radius": 316.8099,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.25086785523383315,
+        "y": 0.13344959112739396,
+        "z": 0.0020697634062670917
+      },
+      "velocity": {
+        "x": -5.804686055463412,
+        "y": 10.922009503148823,
+        "z": -0.6418904889580495
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 134606 d",
+      "type": "gas giant planet",
+      "m": 0.00013453439999999998,
+      "radius": 713.5273,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.9333888227723337,
+        "y": 1.4948042764176575,
+        "z": -0.02231447761343938
+      },
+      "velocity": {
+        "x": -4.284423221836896,
+        "y": -2.679124079577651,
+        "z": -0.2569356099983262
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 134606",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "name": "K2-290 - System",
+  "description": "K2-290 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "K2-290",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.194,
+    "m": 1.194
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "K2-290",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "K2-290"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "K2-290",
+    "barycenterMassTwo": "K2-290 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "K2-290",
+      "type": "star",
+      "m": 1.194,
+      "radius": 15517.97,
+      "tilt": 0,
+      "temperature": 6302,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.007074048371425743,
+        "y": 1.3747786128796412e-18,
+        "z": -2.6641680011332703e-20
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "K2-290 b",
+      "type": "sub-Neptune",
+      "m": 3.27327e-5,
+      "radius": 287.6671,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 5.651744978065035e-18,
+        "y": 0.09217350605784716,
+        "z": 0.004830608761223715
+      },
+      "velocity": {
+        "x": -22.604757934045022,
+        "y": 1.3822453036608246e-15,
+        "z": 7.244040678927677e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "K2-290 c",
+      "type": "gas giant planet",
+      "m": 0.0007387392612599999,
+      "radius": 1060.0678,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -5.597640181676872e-17,
+        "y": -0.304582008100145,
+        "z": 0.015962466654097868
+      },
+      "velocity": {
+        "x": 12.435143219329879,
+        "y": -2.2832552337241816e-15,
+        "z": 3.985031982733459e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "K2-290",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

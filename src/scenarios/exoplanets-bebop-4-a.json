@@ -1,0 +1,131 @@
+{
+  "name": "BEBOP-4 A - System",
+  "description": "BEBOP-4 A is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "BEBOP-4 A",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.507,
+    "m": 1.507
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "BEBOP-4 A",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "BEBOP-4 A"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "BEBOP-4 A",
+    "barycenterMassTwo": "BEBOP-4 AB b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "BEBOP-4 A",
+      "type": "star",
+      "m": 1.507,
+      "radius": 28308.7415,
+      "tilt": 0,
+      "temperature": 5701,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.0007436236139111912,
+        "y": 0.10636853163339823,
+        "z": 0.005574538528504321
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "BEBOP-4 AB b",
+      "type": "terrestial planet",
+      "m": 0.0251017379736123,
+      "radius": 94.0089,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -2.078597344814508,
+        "y": 0.01449169513601446,
+        "z": 0.0007594775601253677
+      },
+      "velocity": {
+        "x": -0.04464395203799101,
+        "y": -6.385907515250159,
+        "z": -0.3346712315811445
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "skyblue"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "BEBOP-4 A",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

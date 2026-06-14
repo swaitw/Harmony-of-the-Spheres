@@ -1,0 +1,131 @@
+{
+  "name": "NY Vir - System",
+  "description": "NY Vir is a massive O/B-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "NY Vir",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.459,
+    "m": 0.459
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "NY Vir",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "NY Vir"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "NY Vir",
+    "barycenterMassTwo": "NY Vir b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "NY Vir",
+      "type": "star",
+      "m": 0.459,
+      "radius": 1550.77,
+      "tilt": 0,
+      "temperature": 32780,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0027108983999818434,
+        "y": -0.012736295631952662,
+        "z": -0.0006674809703629372
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "NY Vir b",
+      "type": "gas giant planet",
+      "m": 0.0021951269339999997,
+      "radius": 1250.3179,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 2.7437040200583245,
+        "y": -0.5823930479752106,
+        "z": -0.030521926314262465
+      },
+      "velocity": {
+        "x": 0.5668475687300124,
+        "y": 2.6631533714606928,
+        "z": 0.13956995408839906
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "NY Vir",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

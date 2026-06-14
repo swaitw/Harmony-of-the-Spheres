@@ -1,0 +1,165 @@
+{
+  "name": "HD 203387 - System",
+  "description": "HD 203387 is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 203387",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 2.817,
+    "m": 2.817
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 203387",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 203387"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 203387",
+    "barycenterMassTwo": "HD 203387 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 203387",
+      "type": "star",
+      "m": 2.817,
+      "radius": 108710.004,
+      "tilt": 0,
+      "temperature": 5174,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.018653796849090153,
+        "y": -0.02244316970845438,
+        "z": -0.001273441060804567
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 203387 b",
+      "type": "gas giant planet",
+      "m": 0.00332144669764908,
+      "radius": 1231.5161,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.4675148209756052,
+        "y": -0.08175129623109266,
+        "z": -0.004284403888981623
+      },
+      "velocity": {
+        "x": 3.4755706691630746,
+        "y": 19.82146143695684,
+        "z": 1.038798776055347
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 203387 c",
+      "type": "gas giant planet",
+      "m": 0.0071439737160792,
+      "radius": 1184.5117,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.2575537177269704,
+        "y": -4.029724880261816,
+        "z": 0.21118893209614092
+      },
+      "velocity": {
+        "x": 5.73963799867579,
+        "y": -0.3658354114266329,
+        "z": 0.019172621495967507
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 203387",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

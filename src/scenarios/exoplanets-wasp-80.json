@@ -1,0 +1,131 @@
+{
+  "name": "WASP-80 - System",
+  "description": "WASP-80 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "WASP-80",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.577,
+    "m": 0.577
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "WASP-80",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "WASP-80"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-6,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-7,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "WASP-80",
+    "barycenterMassTwo": "WASP-80 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "WASP-80",
+      "type": "star",
+      "m": 0.577,
+      "radius": 6018.22,
+      "tilt": 0,
+      "temperature": 4143,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.022896721182487825,
+        "y": 0.0015989004715875612,
+        "z": 8.379482301051143e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "WASP-80 b",
+      "type": "gas giant planet",
+      "m": 0.00051349059762,
+      "radius": 1052.6916,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.0023948234514043158,
+        "y": 0.03420063581659082,
+        "z": 0.0017923793732155656
+      },
+      "velocity": {
+        "x": -25.728627132667295,
+        "y": -1.7966552384446033,
+        "z": -0.09415871118412455
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "WASP-80",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

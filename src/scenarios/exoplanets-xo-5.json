@@ -1,0 +1,131 @@
+{
+  "name": "XO-5 - System",
+  "description": "XO-5 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "XO-5",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.04,
+    "m": 1.04
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "XO-5",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "XO-5"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 1e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "XO-5",
+    "barycenterMassTwo": "XO-5 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "XO-5",
+      "type": "star",
+      "m": 1.04,
+      "radius": 11605.1,
+      "tilt": 0,
+      "temperature": 5430,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.01494822330124785,
+        "y": -0.02694143925034277,
+        "z": -0.0014119410017994273
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "XO-5 b",
+      "type": "gas giant planet",
+      "m": 0.0011357346,
+      "radius": 1201.4333,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.045047271916535035,
+        "y": -0.02492562700627868,
+        "z": -0.0013062967586364644
+      },
+      "velocity": {
+        "x": 13.688191090856758,
+        "y": 24.67046158526515,
+        "z": 1.292924105571323
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "XO-5",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

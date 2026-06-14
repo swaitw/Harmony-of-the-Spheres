@@ -1,0 +1,165 @@
+{
+  "name": "K2-117 - System",
+  "description": "K2-117 is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "K2-117",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.54,
+    "m": 0.54
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "K2-117",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "K2-117"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-6,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-7,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "K2-117",
+    "barycenterMassTwo": "K2-117 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "K2-117",
+      "type": "star",
+      "m": 0.54,
+      "radius": 5237.7,
+      "tilt": 0,
+      "temperature": 3778,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.00027830578975214585,
+        "y": -0.0007265041320837826,
+        "z": -5.354315824463995e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "K2-117 b",
+      "type": "super-Earth",
+      "m": 1.435434e-5,
+      "radius": 190.838,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.016398175655663504,
+        "y": -0.0068266092338766515,
+        "z": -0.0003577674299805786
+      },
+      "velocity": {
+        "x": 13.72664845132539,
+        "y": 32.88242318180099,
+        "z": 1.723294776403384
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "K2-117 c",
+      "type": "super-Earth",
+      "m": 1.47147e-5,
+      "radius": 193.6583,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.009364776572953152,
+        "y": 0.04070212782445817,
+        "z": -0.002133108131374334
+      },
+      "velocity": {
+        "x": -23.603750358278244,
+        "y": -5.415893701550867,
+        "z": 0.283834961731291
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "K2-117",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

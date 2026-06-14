@@ -1,0 +1,131 @@
+{
+  "name": "TOI-4552 - System",
+  "description": "TOI-4552 is a cool M-dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-4552",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.2619,
+    "m": 0.2619
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-4552",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-4552"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-7,
+    "tol": 0.001,
+    "maxDt": 5e-5,
+    "minDt": 5e-8,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-4552",
+    "barycenterMassTwo": "TOI-4552 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-4552",
+      "type": "star",
+      "m": 0.2619,
+      "radius": 2946.463,
+      "tilt": 0,
+      "temperature": 3258,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.0008998221012596217,
+        "y": -5.502270261974705e-20,
+        "z": -2.8836176544521166e-21
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-4552 b",
+      "type": "terrestial planet",
+      "m": 5.49549e-6,
+      "radius": 104.3498,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 3.444625284301718e-19,
+        "y": 0.0056177904477618555,
+        "z": 0.0002944159218446806
+      },
+      "velocity": {
+        "x": -42.88305652815216,
+        "y": 2.622231287130311e-15,
+        "z": 1.374253185250104e-16
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-4552",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

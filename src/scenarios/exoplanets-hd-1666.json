@@ -1,0 +1,131 @@
+{
+  "name": "HD 1666 - System",
+  "description": "HD 1666 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 1666",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.5,
+    "m": 1.5
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 1666",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 1666"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 1666",
+    "barycenterMassTwo": "HD 1666 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 1666",
+      "type": "star",
+      "m": 1.5,
+      "radius": 19821.1,
+      "tilt": 0,
+      "temperature": 6317,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.06217239446612422,
+        "y": -0.02764299769338111,
+        "z": -0.0014487081218363344
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 1666 b",
+      "type": "gas giant planet",
+      "m": 0.00612612,
+      "radius": 1193.9126,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.14146300446176316,
+        "y": -0.3172956707242206,
+        "z": -0.016628761478779473
+      },
+      "velocity": {
+        "x": 15.22310886812311,
+        "y": 6.768476056634814,
+        "z": 0.35472079925866645
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 1666",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

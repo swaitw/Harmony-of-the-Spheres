@@ -1,0 +1,165 @@
+{
+  "name": "HD 66428 - System",
+  "description": "HD 66428 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 66428",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.01,
+    "m": 1.01
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 66428",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 66428"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 66428",
+    "barycenterMassTwo": "HD 66428 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 66428",
+      "type": "star",
+      "m": 1.01,
+      "radius": 11605.1,
+      "tilt": 0,
+      "temperature": 5716,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.00432335108356134,
+        "y": 0.0548166202532119,
+        "z": 0.0032858361273817877
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 66428 b",
+      "type": "gas giant planet",
+      "m": 0.01044728607828906,
+      "radius": 1165.7099,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -1.7871092385262892,
+        "y": -0.1777867191980044,
+        "z": -0.009317407139185038
+      },
+      "velocity": {
+        "x": 0.5666531463260766,
+        "y": -5.680386692255177,
+        "z": -0.29769645201003386
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    },
+    {
+      "name": "HD 66428 c",
+      "type": "gas giant planet",
+      "m": 0.00168362987777985,
+      "radius": 1269.1197,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 6.9511598679815485,
+        "y": 2.7057319947083376,
+        "z": -0.1418014051777374
+      },
+      "velocity": {
+        "x": -0.9226510843835719,
+        "y": 2.3638439814337437,
+        "z": -0.123883813638525
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 66428",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

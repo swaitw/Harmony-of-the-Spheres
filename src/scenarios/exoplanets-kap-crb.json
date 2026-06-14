@@ -1,0 +1,131 @@
+{
+  "name": "kap CrB - System",
+  "description": "kap CrB is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "kap CrB",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.33,
+    "m": 1.33
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "kap CrB",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "kap CrB"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "kap CrB",
+    "barycenterMassTwo": "kap CrB b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "kap CrB",
+      "type": "star",
+      "m": 1.33,
+      "radius": 48063.6,
+      "tilt": 0,
+      "temperature": 4840,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.0002867646353517238,
+        "y": 0.00683262020594134,
+        "z": 0.0003580824516778213
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "kap CrB b",
+      "type": "gas giant planet",
+      "m": 0.0019088869799999998,
+      "radius": 1259.7188,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -2.39789479223726,
+        "y": 0.10036383504272266,
+        "z": 0.005259845714918565
+      },
+      "velocity": {
+        "x": -0.19980070533971203,
+        "y": -4.760567267267957,
+        "z": -0.24949075860504974
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "kap CrB",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

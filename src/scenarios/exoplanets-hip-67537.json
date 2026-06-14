@@ -1,0 +1,131 @@
+{
+  "name": "HIP 67537 - System",
+  "description": "HIP 67537 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HIP 67537",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 2.316,
+    "m": 2.316
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HIP 67537",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HIP 67537"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HIP 67537",
+    "barycenterMassTwo": "HIP 67537 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HIP 67537",
+      "type": "star",
+      "m": 2.316,
+      "radius": 89246.3,
+      "tilt": 0,
+      "temperature": 4985,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.04157330096503424,
+        "y": 0.02337034123599087,
+        "z": 0.001224787685265166
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HIP 67537 b",
+      "type": "gas giant planet",
+      "m": 0.012940279978956328,
+      "radius": 1156.309,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.9762202397686467,
+        "y": 1.7318332589484478,
+        "z": 0.0907615351900002
+      },
+      "velocity": {
+        "x": -7.440624560797553,
+        "y": -4.18273100663779,
+        "z": -0.2192076433962061
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HIP 67537",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

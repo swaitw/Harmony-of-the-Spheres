@@ -1,0 +1,131 @@
+{
+  "name": "HD 42618 - System",
+  "description": "HD 42618 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 42618",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.015,
+    "m": 1.015
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 42618",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 42618"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 42618",
+    "barycenterMassTwo": "HD 42618 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 42618",
+      "type": "star",
+      "m": 1.015,
+      "radius": 10259.73,
+      "tilt": 0,
+      "temperature": 5727,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.00043122707075003214,
+        "y": 8.370717611280837e-5,
+        "z": 4.38690721012672e-6
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 42618 b",
+      "type": "sub-Neptune",
+      "m": 4.32432e-5,
+      "radius": 365.6945,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.08562362858527073,
+        "y": 0.4398916986880915,
+        "z": 0.023053747053287568
+      },
+      "velocity": {
+        "x": -10.121718022978934,
+        "y": -1.964766339089163,
+        "z": -0.10296904064173375
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 42618",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

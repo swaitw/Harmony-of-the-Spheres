@@ -1,0 +1,165 @@
+{
+  "name": "Kepler-278 - System",
+  "description": "Kepler-278 is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-278",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.227,
+    "m": 1.227
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-278",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-278"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-278",
+    "barycenterMassTwo": "Kepler-278 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-278",
+      "type": "star",
+      "m": 1.227,
+      "radius": 29382.47,
+      "tilt": 0,
+      "temperature": 4965,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.0009965789019142678,
+        "y": -0.002546082102357828,
+        "z": -0.0003562431012966031
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-278 b",
+      "type": "sub-Neptune",
+      "m": 0.000168168,
+      "radius": 371.8051,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.05729081066656364,
+        "y": 0.022076387550932032,
+        "z": 0.0011569744461361246
+      },
+      "velocity": {
+        "x": -13.171035695563313,
+        "y": 34.086758006401936,
+        "z": 1.7864112900739504
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-278 c",
+      "type": "sub-Neptune",
+      "m": 0.00010480469999999999,
+      "radius": 307.221,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.10302526814425196,
+        "y": -0.039081994094889064,
+        "z": 0.0020482005204660665
+      },
+      "velocity": {
+        "x": 9.46660233942452,
+        "y": -24.886853173832346,
+        "z": 1.3042647081836591
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-278",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

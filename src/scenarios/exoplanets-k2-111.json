@@ -1,0 +1,165 @@
+{
+  "name": "K2-111 - System",
+  "description": "K2-111 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "K2-111",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.84,
+    "m": 0.84
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "K2-111",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "K2-111"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 1e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "K2-111",
+    "barycenterMassTwo": "K2-111 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "K2-111",
+      "type": "star",
+      "m": 0.84,
+      "radius": 12837.5,
+      "tilt": 0,
+      "temperature": 5775,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.0002122637822713098,
+        "y": -5.738160932187235e-5,
+        "z": -1.6616418921597994e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "K2-111 b",
+      "type": "super-Earth",
+      "m": 1.606605e-5,
+      "radius": 172.6943,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.017295170631275274,
+        "y": -0.045707614322884046,
+        "z": -0.0023954345629880803
+      },
+      "velocity": {
+        "x": 25.940560533949693,
+        "y": 9.788687537427279,
+        "z": 0.513003375932145
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "K2-111 c",
+      "type": "sub-Neptune",
+      "m": 3.3333299999999995e-5,
+      "radius": 313.9896,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.01943652344699958,
+        "y": 0.10575615376382459,
+        "z": -0.0055424451642778864
+      },
+      "velocity": {
+        "x": -17.851935442166326,
+        "y": -3.2719530193623423,
+        "z": 0.17147579166322202
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "K2-111",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

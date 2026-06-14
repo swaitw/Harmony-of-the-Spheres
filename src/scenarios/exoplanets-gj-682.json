@@ -1,0 +1,165 @@
+{
+  "name": "GJ 682 - System",
+  "description": "GJ 682 is a cool M-dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "GJ 682",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.27,
+    "m": 0.27
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "GJ 682",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "GJ 682"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "GJ 682",
+    "barycenterMassTwo": "GJ 682 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "GJ 682",
+      "type": "star",
+      "m": 0.27,
+      "radius": 3063.0788,
+      "tilt": 0,
+      "temperature": 3028,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.001145990452968979,
+        "y": 0.0005943956446062656,
+        "z": -3.56210051506058e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "GJ 682 b",
+      "type": "super-Earth",
+      "m": 1.32132e-5,
+      "radius": 181.4371,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.005134076467567617,
+        "y": 0.07332009356215584,
+        "z": 0.0038425432804173936
+      },
+      "velocity": {
+        "x": -12.47941393697862,
+        "y": 0.8714497010267325,
+        "z": 0.04567074358768125
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    },
+    {
+      "name": "GJ 682 c",
+      "type": "sub-Neptune",
+      "m": 2.6126099999999997e-5,
+      "radius": 271.6856,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.12134143979004607,
+        "y": 0.10167801995059216,
+        "z": -0.005328719227507293
+      },
+      "velocity": {
+        "x": -5.531802682740188,
+        "y": -6.5835108658888295,
+        "z": 0.34502718436700536
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "GJ 682",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "name": "HD 164604 - System",
+  "description": "HD 164604 is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 164604",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.77,
+    "m": 0.77
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 164604",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 164604"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 164604",
+    "barycenterMassTwo": "HD 164604 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 164604",
+      "type": "star",
+      "m": 0.77,
+      "radius": 8010.6,
+      "tilt": 0,
+      "temperature": 4663,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.08408136678292376,
+        "y": -0.05521610111201392,
+        "z": -0.0029551388757713447
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 164604 b",
+      "type": "gas giant planet",
+      "m": 0.0125985909221172,
+      "radius": 1156.309,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.3043732285331393,
+        "y": 0.6401300505733307,
+        "z": 0.03354779440288912
+      },
+      "velocity": {
+        "x": -7.192329248483048,
+        "y": 3.4104886482442027,
+        "z": 0.17873613632449975
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 164604 c",
+      "type": "gas giant planet",
+      "m": 0.0090671677090995,
+      "radius": 1175.1108,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.07796031841310087,
+        "y": -4.460222681860995,
+        "z": 0.23375036586418518
+      },
+      "velocity": {
+        "x": 2.853213085493329,
+        "y": -0.04973476635376356,
+        "z": 0.0026064886577616465
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 164604",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

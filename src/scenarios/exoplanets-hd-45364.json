@@ -1,0 +1,165 @@
+{
+  "name": "HD 45364 - System",
+  "description": "HD 45364 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 45364",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.82,
+    "m": 0.82
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 45364",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 45364"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 45364",
+    "barycenterMassTwo": "HD 45364 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 45364",
+      "type": "star",
+      "m": 0.82,
+      "radius": 9140.3,
+      "tilt": 0,
+      "temperature": 5466,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.005133751210584732,
+        "y": -0.001651765934498712,
+        "z": 9.2508992853306e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 45364 b",
+      "type": "gas giant planet",
+      "m": 0.00018067524710235,
+      "radius": 848.9001,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.022118843826638306,
+        "y": 0.6325327603426588,
+        "z": 0.03314963729333087
+      },
+      "velocity": {
+        "x": -7.379915912734919,
+        "y": -0.2573591566484422,
+        "z": -0.013487621878101189
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 45364 c",
+      "type": "gas giant planet",
+      "m": 0.00052398684970632,
+      "radius": 1334.9259,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.387897969690077,
+        "y": 0.7942187544672066,
+        "z": -0.04162324118656925
+      },
+      "velocity": {
+        "x": -5.489274899100281,
+        "y": 2.673629111676457,
+        "z": -0.14011896436945326
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 45364",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

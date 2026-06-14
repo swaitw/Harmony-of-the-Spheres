@@ -1,0 +1,131 @@
+{
+  "name": "TOI-1278 - System",
+  "description": "TOI-1278 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-1278",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.54,
+    "m": 0.54
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-1278",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-1278"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-1278",
+    "barycenterMassTwo": "TOI-1278 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-1278",
+      "type": "star",
+      "m": 0.54,
+      "radius": 5884.71,
+      "tilt": 0,
+      "temperature": 3799,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.45345682816804794,
+        "y": 0.2016153014973092,
+        "z": 0.010566210220954789
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-1278 b",
+      "type": "gas giant planet",
+      "m": 0.017657116065088498,
+      "radius": 1148.5805,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.03813766133800239,
+        "y": -0.08554119771551622,
+        "z": -0.004483024209481763
+      },
+      "velocity": {
+        "x": 13.867875496094985,
+        "y": -6.165914207462696,
+        "z": -0.32314187086287294
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-1278",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

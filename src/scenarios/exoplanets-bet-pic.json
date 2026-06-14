@@ -1,0 +1,165 @@
+{
+  "name": "bet Pic - System",
+  "description": "bet Pic is a bright A/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "bet Pic",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.795,
+    "m": 1.795
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "bet Pic",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "bet Pic"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "bet Pic",
+    "barycenterMassTwo": "bet Pic c",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "bet Pic",
+      "type": "star",
+      "m": 1.795,
+      "radius": 15858.5232,
+      "tilt": 0,
+      "temperature": 8039,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.04132492501257069,
+        "y": 0.03397340845615307,
+        "z": -1.2581067786577289e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "bet Pic c",
+      "type": "gas giant planet",
+      "m": 0.009677054042365709,
+      "radius": 1175.1108,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.809107507537101,
+        "y": -1.6486020942429085,
+        "z": -0.08639957468064186
+      },
+      "velocity": {
+        "x": 6.392217344447558,
+        "y": -3.128604960025558,
+        "z": -0.1639632382088474
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "bet Pic b",
+      "type": "gas giant planet",
+      "m": 0.0111946115852571,
+      "radius": 1738.6799,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -8.31357119432591,
+        "y": -3.3265184595732813,
+        "z": 0.1743354452102788
+      },
+      "velocity": {
+        "x": 1.100565893775491,
+        "y": -2.742979394108992,
+        "z": 0.14375345866439415
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "bet Pic",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

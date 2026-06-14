@@ -1,0 +1,199 @@
+{
+  "name": "HD 11506 - System",
+  "description": "HD 11506 is a Sun-like G/F-type star with 3 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 11506",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.22,
+    "m": 1.22
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "3-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 11506",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 11506"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 11506",
+    "barycenterMassTwo": "HD 11506 c",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 11506",
+      "type": "star",
+      "m": 1.22,
+      "radius": 12734.8,
+      "tilt": 0,
+      "temperature": 6123,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.014344895481357558,
+        "y": -0.04186805895694455,
+        "z": 0.0014352683725394164
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 11506 c",
+      "type": "gas giant planet",
+      "m": 0.0003817754824884,
+      "radius": 1316.1241,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.2976059999999999,
+        "y": -0.5147622806815694,
+        "z": -0.0269775479891946
+      },
+      "velocity": {
+        "x": 8.635200762216604,
+        "y": -4.97870298146077,
+        "z": -0.2609227669682152
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 11506 b",
+      "type": "gas giant planet",
+      "m": 0.00465766088635848,
+      "radius": 1212.7144,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 1.674580700449048,
+        "y": -0.6340577995966237,
+        "z": -0.059388523127477354
+      },
+      "velocity": {
+        "x": 2.1471901050947753,
+        "y": 5.693947308920137,
+        "z": -0.24665694236411206
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 11506 d",
+      "type": "gas giant planet",
+      "m": 0.0122168154396288,
+      "radius": 1156.309,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 12.748590810543073,
+        "y": -2.0131796984573644,
+        "z": 0.6313666502562099
+      },
+      "velocity": {
+        "x": 0.3440488401066163,
+        "y": 2.1658101590709204,
+        "z": -0.04113748864685779
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 11506",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

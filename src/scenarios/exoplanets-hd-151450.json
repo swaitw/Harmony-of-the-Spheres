@@ -1,0 +1,165 @@
+{
+  "name": "HD 151450 - System",
+  "description": "HD 151450 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 151450",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.14,
+    "m": 1.14
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 151450",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 151450"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 151450",
+    "barycenterMassTwo": "HD 151450 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 151450",
+      "type": "star",
+      "m": 1.14,
+      "radius": 12034.7968,
+      "tilt": 0,
+      "temperature": 6092,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.007440685824924632,
+        "y": 0.008161012303938077,
+        "z": -0.0003639643398569241
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 151450 b",
+      "type": "gas giant planet",
+      "m": 0.00011548708346174999,
+      "radius": 652.4215,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.016770128757689233,
+        "y": -0.07876884643823853,
+        "z": -0.004128100318514971
+      },
+      "velocity": {
+        "x": 28.270993491680535,
+        "y": -6.0024948336418955,
+        "z": -0.31457742438909964
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 151450 c",
+      "type": "gas giant planet",
+      "m": 0.004913450459637719,
+      "radius": 1203.3135,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -10.42143738758759,
+        "y": -6.297584897001202,
+        "z": 0.3300424392982529
+      },
+      "velocity": {
+        "x": 1.0618703288764764,
+        "y": -1.7524026089992861,
+        "z": 0.09183952914746014
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 151450",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

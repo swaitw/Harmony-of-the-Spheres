@@ -1,0 +1,165 @@
+{
+  "name": "HD 216520 - System",
+  "description": "HD 216520 is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 216520",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.82,
+    "m": 0.82
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 216520",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 216520"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 216520",
+    "barycenterMassTwo": "HD 216520 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 216520",
+      "type": "star",
+      "m": 0.82,
+      "radius": 7805.2,
+      "tilt": 0,
+      "temperature": 5103,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.00024971159273307845,
+        "y": 0.00010678127485783162,
+        "z": 3.598468964430619e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 216520 b",
+      "type": "sub-Neptune",
+      "m": 3.081078e-5,
+      "radius": 298.9482,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.13608667693754442,
+        "y": -0.11792816455022434,
+        "z": -0.006180353219002322
+      },
+      "velocity": {
+        "x": 9.174279815614922,
+        "y": -10.557932100933163,
+        "z": -0.5533177752310408
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 216520 c",
+      "type": "sub-Neptune",
+      "m": 2.834832e-5,
+      "radius": 284.8469,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.44159721404116603,
+        "y": 0.1443088099536021,
+        "z": -0.007562904260646722
+      },
+      "velocity": {
+        "x": -2.748071526504131,
+        "y": 8.386298653090115,
+        "z": -0.43950728881281254
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 216520",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

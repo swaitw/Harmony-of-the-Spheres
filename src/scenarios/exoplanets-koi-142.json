@@ -1,0 +1,199 @@
+{
+  "name": "KOI-142 - System",
+  "description": "KOI-142 is a Sun-like G/F-type star with 3 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "KOI-142",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.99,
+    "m": 0.99
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "3-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "KOI-142",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "KOI-142"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "KOI-142",
+    "barycenterMassTwo": "KOI-142 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "KOI-142",
+      "type": "star",
+      "m": 0.99,
+      "radius": 9212.19,
+      "tilt": 0,
+      "temperature": 5466,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.009367628777725559,
+        "y": -0.000409167612768074,
+        "z": -0.000950438602545899
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "KOI-142 b",
+      "type": "sub-Neptune",
+      "m": 2.85285e-5,
+      "radius": 323.2025,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.0009322030260581084,
+        "y": 0.09040036512472814,
+        "z": 0.004737682382563088
+      },
+      "velocity": {
+        "x": -21.35258525939972,
+        "y": -0.21958344837438895,
+        "z": -0.01150788089661405
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "KOI-142 c",
+      "type": "gas giant planet",
+      "m": 0.0006429423,
+      "radius": 1316.1241,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.1246855903174304,
+        "y": 0.0742126718588985,
+        "z": -0.0076036992452087
+      },
+      "velocity": {
+        "x": -8.626912311875055,
+        "y": 14.495377475961051,
+        "z": 0.011709809744600733
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-88 d",
+      "type": "gas giant planet",
+      "m": 0.00289833643066968,
+      "radius": 1231.5161,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.7275673104700008,
+        "y": -1.2601835476602794,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 5.323645798652579,
+        "y": -3.0736083349222905,
+        "z": 0.3221619744382461
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "KOI-142",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

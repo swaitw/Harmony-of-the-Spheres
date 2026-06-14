@@ -1,0 +1,301 @@
+{
+  "name": "Kepler-11 - System",
+  "description": "Kepler-11 is a Sun-like G/F-type star with 6 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-11",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.961,
+    "m": 0.961
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "6-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-11",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-11"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-11",
+    "barycenterMassTwo": "Kepler-11 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-11",
+      "type": "star",
+      "m": 0.961,
+      "radius": 10937.55,
+      "tilt": 0,
+      "temperature": 5663,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.0005165530621581614,
+        "y": -0.0005624019753351347,
+        "z": 2.0961369015121897e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-11 b",
+      "type": "super-Earth",
+      "m": 5.7056999999999994e-6,
+      "radius": 169.216,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.027632890313205684,
+        "y": 0.0822818767354215,
+        "z": 0.004312210434944373
+      },
+      "velocity": {
+        "x": -20.25587570978936,
+        "y": 6.783939410301952,
+        "z": 0.35553119928462945
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-11 c",
+      "type": "sub-Neptune",
+      "m": 8.7087e-6,
+      "radius": 269.8054,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.09540041042709027,
+        "y": 0.0416026009536629,
+        "z": 0.005420037659741049
+      },
+      "velocity": {
+        "x": -7.732586939308283,
+        "y": -17.717110170166258,
+        "z": -0.11330238832473857
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-11 d",
+      "type": "sub-Neptune",
+      "m": 2.1921899999999998e-5,
+      "radius": 293.3077,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.11360559156033068,
+        "y": -0.10423407021928564,
+        "z": 0.007887494643316605
+      },
+      "velocity": {
+        "x": 10.614876480384245,
+        "y": -11.582732374870787,
+        "z": -0.17825911308516942
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-11 e",
+      "type": "gas giant planet",
+      "m": 2.4024e-5,
+      "radius": 393.8971,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.17504723381119558,
+        "y": 0.08036543098104262,
+        "z": -0.004211773768840964
+      },
+      "velocity": {
+        "x": -5.898315996632936,
+        "y": 12.812173833575113,
+        "z": -0.6714575784059604
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-11 f",
+      "type": "super-Earth",
+      "m": 6.006e-6,
+      "radius": 234.0821,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.09015722616033077,
+        "y": -0.22968135575221138,
+        "z": 0.0019266268193636263
+      },
+      "velocity": {
+        "x": 11.606594754232656,
+        "y": -4.550538015381703,
+        "z": 0.6460241398624542
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-11 g",
+      "type": "sub-Neptune",
+      "m": 7.5075e-5,
+      "radius": 313.0495,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.31587291534883016,
+        "y": 0.2381095331569752,
+        "z": 0.020575751961911543
+      },
+      "velocity": {
+        "x": -6.316338170155723,
+        "y": 8.384955584866939,
+        "z": -0.06695783080032149
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-11",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

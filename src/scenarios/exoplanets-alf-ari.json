@@ -1,0 +1,131 @@
+{
+  "name": "alf Ari - System",
+  "description": "alf Ari is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "alf Ari",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.5,
+    "m": 1.5
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "alf Ari",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "alf Ari"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "alf Ari",
+    "barycenterMassTwo": "alf Ari b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "alf Ari",
+      "type": "star",
+      "m": 1.5,
+      "radius": 142753.0,
+      "tilt": 0,
+      "temperature": 4553,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.010388300427827327,
+        "y": -0.000152102614012067,
+        "z": -7.971360223518019e-6
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "alf Ari b",
+      "type": "gas giant planet",
+      "m": 0.00171792621,
+      "radius": 1259.7188,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.01319421647669463,
+        "y": 0.898669993440346,
+        "z": 0.047097298664513745
+      },
+      "velocity": {
+        "x": -9.070500555283449,
+        "y": 0.13280775372657042,
+        "z": 0.006960159444378596
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "alf Ari",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

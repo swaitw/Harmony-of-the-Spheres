@@ -1,0 +1,165 @@
+{
+  "name": "KOI-12 - System",
+  "description": "KOI-12 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "KOI-12",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.5,
+    "m": 1.5
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "KOI-12",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "KOI-12"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "KOI-12",
+    "barycenterMassTwo": "KOI-12 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "KOI-12",
+      "type": "star",
+      "m": 1.5,
+      "radius": 14378.0,
+      "tilt": 0,
+      "temperature": 6635,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.09960385438398006,
+        "y": 0.01506128772441242,
+        "z": 0.0005807861302187454
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "KOI-12 b",
+      "type": "gas giant planet",
+      "m": 0.001049887839,
+      "radius": 1296.1068,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.06801043483031433,
+        "y": -0.0754297243811436,
+        "z": -0.003953104346747605
+      },
+      "velocity": {
+        "x": 20.770057865220156,
+        "y": -18.675814422963114,
+        "z": -0.9787579602096884
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-448 c",
+      "type": "gas giant planet",
+      "m": 0.02099775678,
+      "radius": 1128.1064,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.02565503746280671,
+        "y": 1.467761834800006,
+        "z": -0.07692213827827031
+      },
+      "velocity": {
+        "x": -8.153823979286564,
+        "y": -0.14213047478345248,
+        "z": 0.007448742551845083
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "KOI-12",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "name": "HD 37124 - System",
+  "description": "HD 37124 is a Sun-like G/F-type star with 3 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 37124",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.85,
+    "m": 0.85
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "3-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 37124",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 37124"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 37124",
+    "barycenterMassTwo": "HD 37124 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 37124",
+      "type": "star",
+      "m": 0.85,
+      "radius": 9747.9554,
+      "tilt": 0,
+      "temperature": 5699,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.0025599487966412107,
+        "y": 0.009308918055376345,
+        "z": -6.860836972673793e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 37124 b",
+      "type": "gas giant planet",
+      "m": 0.0006442493557499999,
+      "radius": 1316.1241,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.32449425231133605,
+        "y": 0.38618720849817606,
+        "z": 0.02023921398490623
+      },
+      "velocity": {
+        "x": -6.413757370070253,
+        "y": -5.374405899259459,
+        "z": -0.2816606781458643
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 37124 c",
+      "type": "gas giant planet",
+      "m": 0.0006222971554799999,
+      "radius": 1325.525,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -1.4836789338156178,
+        "y": 0.18316582953602042,
+        "z": 0.06253928958768976
+      },
+      "velocity": {
+        "x": -0.6087287300357546,
+        "y": -4.984853757286757,
+        "z": 0.1582506048924118
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 37124 d",
+      "type": "gas giant planet",
+      "m": 0.00066429266904,
+      "radius": 1316.1241,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -1.178940000000001,
+        "y": -2.041983979075251,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 3.5148855955222844,
+        "y": -2.0293201447455314,
+        "z": 0.21270432448090593
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 37124",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

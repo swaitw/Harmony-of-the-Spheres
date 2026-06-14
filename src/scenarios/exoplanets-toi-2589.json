@@ -1,0 +1,131 @@
+{
+  "name": "TOI-2589 - System",
+  "description": "TOI-2589 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-2589",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.93,
+    "m": 0.93
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-2589",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-2589"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-2589",
+    "barycenterMassTwo": "TOI-2589 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-2589",
+      "type": "star",
+      "m": 0.93,
+      "radius": 10988.9,
+      "tilt": 0,
+      "temperature": 5579,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.043666450449249126,
+        "y": 0.05581391186151867,
+        "z": 0.0029250831737615865
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-2589 b",
+      "type": "gas giant planet",
+      "m": 0.0033405354717734996,
+      "radius": 1138.043,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.11300074206720394,
+        "y": -0.08816486286498935,
+        "z": -0.004620524673547958
+      },
+      "velocity": {
+        "x": 12.156673461767445,
+        "y": -15.538508263064433,
+        "z": -0.8143387114383929
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-2589",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

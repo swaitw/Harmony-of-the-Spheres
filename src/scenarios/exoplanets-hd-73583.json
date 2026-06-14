@@ -1,0 +1,165 @@
+{
+  "name": "HD 73583 - System",
+  "description": "HD 73583 is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 73583",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.73,
+    "m": 0.73
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 73583",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 73583"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 73583",
+    "barycenterMassTwo": "HD 73583 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 73583",
+      "type": "star",
+      "m": 0.73,
+      "radius": 6675.5,
+      "tilt": 0,
+      "temperature": 4511,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0005362160419495223,
+        "y": 0.0002495300709522114,
+        "z": -3.8485408184115145e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 73583 b",
+      "type": "sub-Neptune",
+      "m": 3.06306e-5,
+      "radius": 262.2847,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.013296995069740136,
+        "y": -0.053258245558884844,
+        "z": -0.0027911463782520464
+      },
+      "velocity": {
+        "x": 23.202681570104257,
+        "y": 5.777150007787792,
+        "z": 0.3027676024931624
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 73583 c",
+      "type": "super-Earth",
+      "m": 2.9129099999999995e-5,
+      "radius": 224.6812,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.08544640101272423,
+        "y": 0.07575889734292028,
+        "z": -0.003970355570674343
+      },
+      "velocity": {
+        "x": -10.960666394707841,
+        "y": -12.328376874797339,
+        "z": 0.6461028541725284
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 73583",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

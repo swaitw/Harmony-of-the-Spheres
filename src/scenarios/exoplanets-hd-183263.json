@@ -1,0 +1,165 @@
+{
+  "name": "HD 183263 - System",
+  "description": "HD 183263 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 183263",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.06,
+    "m": 1.06
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 183263",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 183263"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 183263",
+    "barycenterMassTwo": "HD 183263 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 183263",
+      "type": "star",
+      "m": 1.06,
+      "radius": 12632.1,
+      "tilt": 0,
+      "temperature": 5948,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.0017314764015353237,
+        "y": 0.026400707824555055,
+        "z": 0.000229370036162256
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 183263 b",
+      "type": "gas giant planet",
+      "m": 0.0033128567493021,
+      "radius": 1231.5161,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.5539804930181168,
+        "y": -0.7093660609847798,
+        "z": -0.03717629995497069
+      },
+      "velocity": {
+        "x": 6.322248188531242,
+        "y": -4.923845526026308,
+        "z": -0.25804780955177664
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 183263 c",
+      "type": "gas giant planet",
+      "m": 0.008885824354917509,
+      "radius": 1175.1108,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -2.4196497266788195,
+        "y": 4.709154467621452,
+        "z": -0.24679632794885242
+      },
+      "velocity": {
+        "x": -2.563641442581454,
+        "y": -1.3136378735813443,
+        "z": 0.0688448437364947
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 183263",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

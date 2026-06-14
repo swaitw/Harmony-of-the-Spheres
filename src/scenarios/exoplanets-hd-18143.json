@@ -1,0 +1,165 @@
+{
+  "name": "HD 18143 - System",
+  "description": "HD 18143 is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 18143",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.85,
+    "m": 0.85
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 18143",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 18143"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 18143",
+    "barycenterMassTwo": "HD 18143 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 18143",
+      "type": "star",
+      "m": 0.85,
+      "radius": 8934.9,
+      "tilt": 0,
+      "temperature": 5078,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.014570270645195052,
+        "y": 0.012489543539782842,
+        "z": -0.0007033825189862551
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 18143 b",
+      "type": "sub-Neptune",
+      "m": 3.245091601752e-5,
+      "radius": 308.3491,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.034016964171001564,
+        "y": 0.059131156839924065,
+        "z": 0.003098932616417633
+      },
+      "velocity": {
+        "x": -21.271303235622977,
+        "y": 12.203434889357055,
+        "z": 0.639554922176389
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 18143 c",
+      "type": "gas giant planet",
+      "m": 0.00954247818480957,
+      "radius": 1175.1108,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -9.693280924615111,
+        "y": 10.265699473769502,
+        "z": -0.5380025122073443
+      },
+      "velocity": {
+        "x": -1.2255156938319756,
+        "y": -1.1540109850148925,
+        "z": 0.06047915299286548
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 18143",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

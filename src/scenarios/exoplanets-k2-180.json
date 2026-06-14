@@ -1,0 +1,131 @@
+{
+  "name": "K2-180 - System",
+  "description": "K2-180 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "K2-180",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.735,
+    "m": 0.735
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "K2-180",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "K2-180"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "K2-180",
+    "barycenterMassTwo": "K2-180 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "K2-180",
+      "type": "star",
+      "m": 0.735,
+      "radius": 7384.13,
+      "tilt": 0,
+      "temperature": 5365,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.000754438433637028,
+        "y": 0.0006321814397420052,
+        "z": 3.313122536083423e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "K2-180 b",
+      "type": "super-Earth",
+      "m": 3.426434954943e-5,
+      "radius": 231.8236,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.044950137545379694,
+        "y": 0.05349607278591789,
+        "z": 0.0028036103750738923
+      },
+      "velocity": {
+        "x": -16.18335838896554,
+        "y": -13.560839891037812,
+        "z": -0.7106935039021702
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "K2-180",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

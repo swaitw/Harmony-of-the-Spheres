@@ -1,0 +1,165 @@
+{
+  "name": "HIP 97166 - System",
+  "description": "HIP 97166 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HIP 97166",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.9342,
+    "m": 0.9342
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HIP 97166",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HIP 97166"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HIP 97166",
+    "barycenterMassTwo": "HIP 97166 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HIP 97166",
+      "type": "star",
+      "m": 0.9342,
+      "radius": 8645.286,
+      "tilt": 0,
+      "temperature": 5216,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.0012066862514762446,
+        "y": 0.00023161784187325033,
+        "z": 1.2138576734907637e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HIP 97166 b",
+      "type": "super-Earth",
+      "m": 5.73573e-5,
+      "radius": 233.1546,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.008991974053029823,
+        "y": 0.06389353588313063,
+        "z": 0.003348518326176183
+      },
+      "velocity": {
+        "x": -26.879193846862517,
+        "y": -3.7724472364980635,
+        "z": -0.19770558212730927
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "HIP 97166 c",
+      "type": "sub-Neptune",
+      "m": 2.4024e-5,
+      "radius": 258.5244,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -2.2757619099276464e-17,
+        "y": -0.12383006230956715,
+        "z": 0.006489658574125035
+      },
+      "velocity": {
+        "x": 17.250736309671147,
+        "y": -3.1674612242041397e-15,
+        "z": 5.5282624982461185e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HIP 97166",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

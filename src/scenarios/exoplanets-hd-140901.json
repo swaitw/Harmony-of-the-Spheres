@@ -1,0 +1,165 @@
+{
+  "name": "HD 140901 - System",
+  "description": "HD 140901 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 140901",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.99,
+    "m": 0.99
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 140901",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 140901"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 140901",
+    "barycenterMassTwo": "HD 140901 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 140901",
+      "type": "star",
+      "m": 0.99,
+      "radius": 9756.5,
+      "tilt": 0,
+      "temperature": 5610,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.009277405427755625,
+        "y": 0.004753854418599596,
+        "z": -0.00019557893529490177
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 140901 b",
+      "type": "gas giant planet",
+      "m": 4.6767496595819995e-5,
+      "radius": 382.6161,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.013574093834413044,
+        "y": 0.04271938699051357,
+        "z": 0.002238828204505657
+      },
+      "velocity": {
+        "x": -34.13590203772715,
+        "y": -10.816980108335342,
+        "z": -0.5668939060266858
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 140901 c",
+      "type": "gas giant planet",
+      "m": 0.0017179896711978,
+      "radius": 1259.7188,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -1.3157733093485589,
+        "y": 2.3704647873122395,
+        "z": -0.12423079537168105
+      },
+      "velocity": {
+        "x": -4.416895408831452,
+        "y": -2.4449697599703195,
+        "z": 0.12813543553423476
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 140901",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

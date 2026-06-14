@@ -1,0 +1,131 @@
+{
+  "name": "bet UMi - System",
+  "description": "bet UMi is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "bet UMi",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.4,
+    "m": 1.4
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "bet UMi",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "bet UMi"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "bet UMi",
+    "barycenterMassTwo": "bet UMi b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "bet UMi",
+      "type": "star",
+      "m": 1.4,
+      "radius": 393341.0,
+      "tilt": 0,
+      "temperature": 4126,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.025166026772273347,
+        "y": -0.019214511368676277,
+        "z": -0.0010069898708410722
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "bet UMi b",
+      "type": "gas giant planet",
+      "m": 0.0058219160999999995,
+      "radius": 1193.9126,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.6887642022462063,
+        "y": -0.8996315738971236,
+        "z": -0.04714769296085543
+      },
+      "velocity": {
+        "x": 6.051691037111079,
+        "y": 4.620526207196079,
+        "z": 0.2421515176382396
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "bet UMi",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "name": "HD 45652 - System",
+  "description": "HD 45652 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 45652",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.92,
+    "m": 0.92
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 45652",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 45652"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 45652",
+    "barycenterMassTwo": "HD 45652 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 45652",
+      "type": "star",
+      "m": 0.92,
+      "radius": 9653.8,
+      "tilt": 0,
+      "temperature": 5294,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.00831946505568926,
+        "y": 0.007559756138686248,
+        "z": 0.00039619003114988485
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 45652 b",
+      "type": "gas giant planet",
+      "m": 0.00041327403116999995,
+      "radius": 1344.3268,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.06268505852081382,
+        "y": -0.06879556849430479,
+        "z": -0.003605422969300869
+      },
+      "velocity": {
+        "x": 18.520176139704482,
+        "y": -16.828968488296873,
+        "z": -0.8819688660959184
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 45652",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

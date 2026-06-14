@@ -1,0 +1,165 @@
+{
+  "name": "HIP 38594 - System",
+  "description": "HIP 38594 is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HIP 38594",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.61,
+    "m": 0.61
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HIP 38594",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HIP 38594"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HIP 38594",
+    "barycenterMassTwo": "HIP 38594 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HIP 38594",
+      "type": "star",
+      "m": 0.61,
+      "radius": 6435.6544,
+      "tilt": 0,
+      "temperature": 4086,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.0005704621813674732,
+        "y": -0.00041329299460698114,
+        "z": 4.9235645728910235e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HIP 38594 b",
+      "type": "sub-Neptune",
+      "m": 2.4324299999999997e-5,
+      "radius": 260.4046,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.12187352119587029,
+        "y": 0.17381489219883683,
+        "z": 0.009109252506462242
+      },
+      "velocity": {
+        "x": -9.435434122647486,
+        "y": -6.5977077611174675,
+        "z": -0.3457712121186522
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HIP 38594 c",
+      "type": "gas giant planet",
+      "m": 0.0001453452,
+      "radius": 746.4304,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 3.072384632558055,
+        "y": 0.8797847475849118,
+        "z": -0.0461075648680162
+      },
+      "velocity": {
+        "x": -0.8151050079716734,
+        "y": 2.8387132812367257,
+        "z": -0.148770659090892
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HIP 38594",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,233 @@
+{
+  "name": "K2-187 - System",
+  "description": "K2-187 is a Sun-like G/F-type star with 4 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "K2-187",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.966999,
+    "m": 0.966999
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "4-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "K2-187",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "K2-187"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-6,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-7,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "K2-187",
+    "barycenterMassTwo": "K2-187 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "K2-187",
+      "type": "star",
+      "m": 0.966999,
+      "radius": 8524.1,
+      "tilt": 0,
+      "temperature": 5438,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -2.036974022507031e-7,
+        "y": 0.00017370325573511347,
+        "z": -6.422219538075642e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "K2-187 b",
+      "type": "terrestial planet",
+      "m": 5.61561e-6,
+      "radius": 112.8106,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.0164,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": 48.194118655203255,
+        "z": 2.525746733222591
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "K2-187 c",
+      "type": "terrestial planet",
+      "m": 7.62762e-6,
+      "radius": 131.6124,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 2.400307726328812e-18,
+        "y": 0.0392,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -31.17259327256848,
+        "y": 1.9087708286186654e-15,
+        "z": 1.6336863879087842
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "K2-187 d",
+      "type": "super-Earth",
+      "m": 1.9069049999999997e-5,
+      "radius": 225.6213,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.072,
+        "y": 8.817456953860942e-18,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -2.81682956320355e-15,
+        "y": -23.001158906916967,
+        "z": 1.2054396592478618
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "K2-187 e",
+      "type": "super-Earth",
+      "m": 1.2822809999999998e-5,
+      "radius": 178.6168,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -2.031689039785459e-17,
+        "y": -0.1106,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 18.55830906657651,
+        "y": -3.409106069395534e-15,
+        "z": 0.9725997654276043
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "K2-187",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

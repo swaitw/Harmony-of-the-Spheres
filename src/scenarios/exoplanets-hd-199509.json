@@ -1,0 +1,131 @@
+{
+  "name": "HD 199509 - System",
+  "description": "HD 199509 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 199509",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.04,
+    "m": 1.04
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 199509",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 199509"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 199509",
+    "barycenterMassTwo": "HD 199509 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 199509",
+      "type": "star",
+      "m": 1.04,
+      "radius": 9448.4,
+      "tilt": 0,
+      "temperature": 5796,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0012378201078661684,
+        "y": -0.001323819039765111,
+        "z": -6.937841604669749e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 199509 b",
+      "type": "gas giant planet",
+      "m": 0.00012980366404005,
+      "radius": 698.4859,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.19522517829524283,
+        "y": -0.182042818560202,
+        "z": -0.009540459855165783
+      },
+      "velocity": {
+        "x": 9.91753909029577,
+        "y": 10.606571174531117,
+        "z": 0.5558668410646939
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 199509",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "name": "TOI-4600 - System",
+  "description": "TOI-4600 is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-4600",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.89,
+    "m": 0.89
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-4600",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-4600"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-4600",
+    "barycenterMassTwo": "TOI-4600 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-4600",
+      "type": "star",
+      "m": 0.89,
+      "radius": 8318.7,
+      "tilt": 0,
+      "temperature": 5170,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.08316916256463554,
+        "y": -0.046206743725950704,
+        "z": 0.003184322392640914
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-4600 b",
+      "type": "gas giant planet",
+      "m": 0.00288240489278742,
+      "radius": 639.2603,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.04545241050431901,
+        "y": -0.25742015982482563,
+        "z": -0.013490818919104655
+      },
+      "velocity": {
+        "x": 12.76017620042994,
+        "y": -2.2468798461651294,
+        "z": -0.1177539830533357
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "TOI-4600 c",
+      "type": "gas giant planet",
+      "m": 0.00884764680666867,
+      "radius": 885.5635,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.7171528266424053,
+        "y": -0.5595333221490206,
+        "z": 0.02932389884869266
+      },
+      "velocity": {
+        "x": 4.209092110402478,
+        "y": 5.380008992030564,
+        "z": -0.2819543237951148
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-4600",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

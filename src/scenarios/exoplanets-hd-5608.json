@@ -1,0 +1,131 @@
+{
+  "name": "HD 5608 - System",
+  "description": "HD 5608 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 5608",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.29,
+    "m": 1.29
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 5608",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 5608"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 5608",
+    "barycenterMassTwo": "HD 5608 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 5608",
+      "type": "star",
+      "m": 1.29,
+      "radius": 55766.1,
+      "tilt": 0,
+      "temperature": 4807,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.005146307299870315,
+        "y": 0.00017048662938794803,
+        "z": 8.934825643673226e-6
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 5608 b",
+      "type": "gas giant planet",
+      "m": 0.0011147844088781399,
+      "radius": 1287.9214,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.05281951469076136,
+        "y": -1.5900420511713622,
+        "z": -0.08333057286854285
+      },
+      "velocity": {
+        "x": 5.955175156704587,
+        "y": -0.19728276620927684,
+        "z": -0.010339151667843601
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 5608",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

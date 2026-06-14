@@ -1,0 +1,131 @@
+{
+  "name": "WTS-2 - System",
+  "description": "WTS-2 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "WTS-2",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.82,
+    "m": 0.82
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "WTS-2",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "WTS-2"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-6,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-7,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "WTS-2",
+    "barycenterMassTwo": "WTS-2 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "WTS-2",
+      "type": "star",
+      "m": 0.82,
+      "radius": 7723.04,
+      "tilt": 0,
+      "temperature": 5000,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0501434244693231,
+        "y": -0.02125545105255013,
+        "z": -0.001113950987323533
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "WTS-2 b",
+      "type": "gas giant planet",
+      "m": 0.0010689767088,
+      "radius": 1436.2549,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.007248062433476024,
+        "y": -0.01705196383721408,
+        "z": -0.0008936555571231157
+      },
+      "velocity": {
+        "x": 38.464456452940205,
+        "y": 16.304817232787876,
+        "z": 0.8544992627862736
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "WTS-2",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

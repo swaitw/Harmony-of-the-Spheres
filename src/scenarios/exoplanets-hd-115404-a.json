@@ -1,0 +1,165 @@
+{
+  "name": "HD 115404 A - System",
+  "description": "HD 115404 A is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 115404 A",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.83,
+    "m": 0.83
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 115404 A",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 115404 A"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 115404 A",
+    "barycenterMassTwo": "HD 115404 A b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 115404 A",
+      "type": "star",
+      "m": 0.83,
+      "radius": 7466.3619,
+      "tilt": 0,
+      "temperature": 5019,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.015861000550466558,
+        "y": 0.017212423388935222,
+        "z": -0.0008486891293833878
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 115404 A b",
+      "type": "gas giant planet",
+      "m": 9.258055450644e-5,
+      "radius": 572.514,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.012638487091761613,
+        "y": -0.06630077167935293,
+        "z": -0.003474676208466838
+      },
+      "velocity": {
+        "x": 24.01548084140318,
+        "y": -4.565376564794988,
+        "z": -0.23926124735174464
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 115404 A c",
+      "type": "gas giant planet",
+      "m": 0.00984885300948549,
+      "radius": 1175.1108,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -6.006065789720327,
+        "y": 6.648191488473778,
+        "z": -0.3484169521593269
+      },
+      "velocity": {
+        "x": -1.5624151335290375,
+        "y": -1.40764069740554,
+        "z": 0.07377132297945575
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 115404 A",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

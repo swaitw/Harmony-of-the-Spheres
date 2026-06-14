@@ -1,0 +1,165 @@
+{
+  "name": "TOI-1422 - System",
+  "description": "TOI-1422 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-1422",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.9903,
+    "m": 0.9903
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-1422",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-1422"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-1422",
+    "barycenterMassTwo": "TOI-1422 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-1422",
+      "type": "star",
+      "m": 0.9903,
+      "radius": 10465.13,
+      "tilt": 0,
+      "temperature": 5840,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -4.363376285782334e-5,
+        "y": 9.06266889347071e-20,
+        "z": -4.463563916423829e-21
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-1422 b",
+      "type": "sub-Neptune",
+      "m": 2.85285e-5,
+      "radius": 360.054,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 5.241488300350672e-18,
+        "y": 0.08548268817499154,
+        "z": 0.004479957854395993
+      },
+      "velocity": {
+        "x": -23.417238438269493,
+        "y": 1.431927205345285e-15,
+        "z": 7.504412492711772e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "TOI-1422 c",
+      "type": "sub-Neptune",
+      "m": 4.2042e-5,
+      "radius": 245.3631,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -3.009878655065597e-17,
+        "y": -0.1637752436997501,
+        "z": 0.00858309682384279
+      },
+      "velocity": {
+        "x": 16.918062940494593,
+        "y": -3.1063780345781213e-15,
+        "z": 5.4216522250398154e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-1422",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

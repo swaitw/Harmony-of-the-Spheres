@@ -1,0 +1,131 @@
+{
+  "name": "TOI-5218 - System",
+  "description": "TOI-5218 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-5218",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.739,
+    "m": 0.739
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-5218",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-5218"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 1e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-5218",
+    "barycenterMassTwo": "TOI-5218 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-5218",
+      "type": "star",
+      "m": 0.739,
+      "radius": 7271.16,
+      "tilt": 0,
+      "temperature": 4230,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.0666055791620127,
+        "y": -4.072826139652745e-18,
+        "z": -2.1344777338512183e-19
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-5218 b",
+      "type": "gas giant planet",
+      "m": 0.001972971,
+      "radius": 926.9274,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 2.871796744000543e-18,
+        "y": 0.04683572517998951,
+        "z": 0.0024545563477940658
+      },
+      "velocity": {
+        "x": -24.947920167466926,
+        "y": 1.5255259794509795e-15,
+        "z": 7.994942882161219e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-5218",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

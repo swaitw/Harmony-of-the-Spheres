@@ -1,0 +1,197 @@
+{
+  "name": "GJ 1061 - System",
+  "description": "GJ 1061 is a cool M-dwarf star with 3 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "GJ 1061",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.12,
+    "m": 0.12
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "3-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "GJ 1061",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "GJ 1061"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-6,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-7,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "GJ 1061",
+    "barycenterMassTwo": "GJ 1061 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "GJ 1061",
+      "type": "star",
+      "m": 0.12,
+      "radius": 1602.12,
+      "tilt": 0,
+      "temperature": 2953,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.00024104206457738805,
+        "y": 0.0005140191454079087,
+        "z": 3.744886776164192e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "GJ 1061 b",
+      "type": "terrestial planet",
+      "m": 3.3333300000000003e-6,
+      "radius": 97.7692,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.016342083283565387,
+        "y": 0.011427167877099657,
+        "z": 0.0005988724919332973
+      },
+      "velocity": {
+        "x": -9.059488368027727,
+        "y": -12.920558777772598,
+        "z": -0.6771377926390669
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "GJ 1061 c",
+      "type": "terrestial planet",
+      "m": 5.43543e-6,
+      "radius": 111.8705,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.029553117031122067,
+        "y": -0.015711856632172037,
+        "z": 0.0017530233640412527
+      },
+      "velocity": {
+        "x": 5.639112674051049,
+        "y": -10.604405588045333,
+        "z": 0.021937265601208504
+      },
+      "nonStellarProceduralManifestation": true
+    },
+    {
+      "name": "GJ 1061 d",
+      "type": "terrestial planet",
+      "m": 5.015009999999999e-6,
+      "radius": 109.0503,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.041377224442335284,
+        "y": 0.03121197053075703,
+        "z": 0.0010600910506963369
+      },
+      "velocity": {
+        "x": -5.857971487475797,
+        "y": 7.7817777047688725,
+        "z": -0.46978548091154876
+      },
+      "nonStellarProceduralManifestation": true
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "GJ 1061",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

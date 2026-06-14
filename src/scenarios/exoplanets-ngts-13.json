@@ -1,0 +1,131 @@
+{
+  "name": "NGTS-13 - System",
+  "description": "NGTS-13 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "NGTS-13",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.3,
+    "m": 1.3
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "NGTS-13",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "NGTS-13"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 1e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "NGTS-13",
+    "barycenterMassTwo": "NGTS-13 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "NGTS-13",
+      "type": "star",
+      "m": 1.3,
+      "radius": 18362.76,
+      "tilt": 0,
+      "temperature": 5819,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.06555572409514333,
+        "y": 0.09853407401221252,
+        "z": 0.00516395200269088
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "NGTS-13 b",
+      "type": "gas giant planet",
+      "m": 0.0046195064916,
+      "radius": 1203.3772,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.04179482176909579,
+        "y": -0.027730357547660615,
+        "z": -0.0014532864577976134
+      },
+      "velocity": {
+        "x": 18.448386527576655,
+        "y": -27.729000153760985,
+        "z": -1.4532153197977213
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "NGTS-13",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

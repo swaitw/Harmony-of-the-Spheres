@@ -1,0 +1,165 @@
+{
+  "name": "HD 215497 - System",
+  "description": "HD 215497 is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 215497",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.67,
+    "m": 0.67
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 215497",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 215497"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 1e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 215497",
+    "barycenterMassTwo": "HD 215497 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 215497",
+      "type": "star",
+      "m": 0.67,
+      "radius": 8729.5,
+      "tilt": 0,
+      "temperature": 5110,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.18897722128821506,
+        "y": 0.022866951851500693,
+        "z": 0.0009080935313293208
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 215497 b",
+      "type": "terrestial planet",
+      "m": 0.0047712390923897695,
+      "radius": 94.0089,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.00439019545724145,
+        "y": 0.041712675382343946,
+        "z": 0.0021860686847430277
+      },
+      "velocity": {
+        "x": -26.887761522486173,
+        "y": -2.822144653905451,
+        "z": -0.1479023341266916
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "HD 215497 c",
+      "type": "gas giant planet",
+      "m": 0.00033405354717735,
+      "radius": 1222.1152,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.515965452328955,
+        "y": -0.46394069284186096,
+        "z": 0.02431410143087747
+      },
+      "velocity": {
+        "x": 5.008779682100165,
+        "y": -5.555189756532562,
+        "z": 0.29113515863576994
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 215497",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

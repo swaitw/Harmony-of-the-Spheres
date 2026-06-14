@@ -1,0 +1,165 @@
+{
+  "name": "TOI-2322 - System",
+  "description": "TOI-2322 is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-2322",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.703,
+    "m": 0.703
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-2322",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-2322"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-2322",
+    "barycenterMassTwo": "TOI-2322 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-2322",
+      "type": "star",
+      "m": 0.703,
+      "radius": 6798.74,
+      "tilt": 0,
+      "temperature": 4664,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0009329313190535755,
+        "y": 1.922474031988822e-19,
+        "z": -4.086106569200955e-21
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-2322 b",
+      "type": "terrestial planet",
+      "m": 6.93693e-6,
+      "radius": 93.4448,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 5.657868212060772e-18,
+        "y": 0.09227336901132262,
+        "z": 0.00483584235684801
+      },
+      "velocity": {
+        "x": -17.335653774083394,
+        "y": 1.0600478927946168e-15,
+        "z": 5.555475599503321e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "TOI-2322 c",
+      "type": "super-Earth",
+      "m": 5.43543e-5,
+      "radius": 176.1726,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -2.499667517194721e-17,
+        "y": -0.13601334263357295,
+        "z": 0.00712815724028895
+      },
+      "velocity": {
+        "x": 14.278666711368112,
+        "y": -2.621750302695057e-15,
+        "z": 4.5758173035871037e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-2322",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

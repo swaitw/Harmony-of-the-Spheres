@@ -1,0 +1,165 @@
+{
+  "name": "Kepler-419 - System",
+  "description": "Kepler-419 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-419",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.39,
+    "m": 1.39
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-419",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-419"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-419",
+    "barycenterMassTwo": "Kepler-419 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-419",
+      "type": "star",
+      "m": 1.39,
+      "radius": 17869.8,
+      "tilt": 0,
+      "temperature": 6430,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.10335679930456085,
+        "y": 0.009453723757606997,
+        "z": 0.00016172025768443067
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-419 b",
+      "type": "gas giant planet",
+      "m": 0.0023858835,
+      "radius": 1015.2957,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.005600187130420841,
+        "y": 0.061451364456402285,
+        "z": 0.0032205295450728547
+      },
+      "velocity": {
+        "x": -40.1917588198746,
+        "y": -3.6527237894316653,
+        "z": -0.1914311421384486
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-419 c",
+      "type": "gas giant planet",
+      "m": 0.006967260299999999,
+      "radius": 1184.5117,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.12662899091874255,
+        "y": 1.3631483630466803,
+        "z": -0.07143957854058935
+      },
+      "velocity": {
+        "x": -6.856798048584648,
+        "y": -0.6352141894011399,
+        "z": 0.033290165035590916
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-419",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

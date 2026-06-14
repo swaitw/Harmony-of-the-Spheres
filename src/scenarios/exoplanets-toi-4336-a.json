@@ -1,0 +1,164 @@
+{
+  "name": "TOI-4336 A - System",
+  "description": "TOI-4336 A is a cool M-dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-4336 A",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.306,
+    "m": 0.306
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-4336 A",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-4336 A"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-4336 A",
+    "barycenterMassTwo": "TOI-4336 A c",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-4336 A",
+      "type": "star",
+      "m": 0.306,
+      "radius": 3348.02,
+      "tilt": 0,
+      "temperature": 3307,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0001555687443275271,
+        "y": 5.726509578608832e-20,
+        "z": -2.0006190777833267e-21
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-4336 A c",
+      "type": "terrestial planet",
+      "m": 4.6546499999999996e-6,
+      "radius": 117.6051,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 3.1179507506291613e-18,
+        "y": 0.0508502159097029,
+        "z": 0.0026649468918907003
+      },
+      "velocity": {
+        "x": -15.406892898388168,
+        "y": 9.421072065862866e-16,
+        "z": 4.9373746543736615e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "TOI-4336 A b",
+      "type": "super-Earth",
+      "m": 9.99999e-6,
+      "radius": 200.8969,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -1.5581627915553e-17,
+        "y": -0.08478364750066332,
+        "z": 0.004443322685025931
+      },
+      "velocity": {
+        "x": 11.931784911155487,
+        "y": -2.190832052800041e-15,
+        "z": 3.8237231082420514e-17
+      },
+      "nonStellarProceduralManifestation": true
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-4336 A",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

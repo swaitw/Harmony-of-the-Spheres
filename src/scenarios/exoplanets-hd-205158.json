@@ -1,0 +1,131 @@
+{
+  "name": "HD 205158 - System",
+  "description": "HD 205158 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 205158",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.16,
+    "m": 1.16
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 205158",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 205158"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 205158",
+    "barycenterMassTwo": "HD 205158 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 205158",
+      "type": "star",
+      "m": 1.16,
+      "radius": 19281.0007,
+      "tilt": 0,
+      "temperature": 6134,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.0027551791194387015,
+        "y": -0.005328692220931223,
+        "z": -0.00027926492578182223
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 205158 b",
+      "type": "gas giant planet",
+      "m": 0.00037413997282662,
+      "radius": 1306.7232,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.13446798438987043,
+        "y": 0.06933570079446254,
+        "z": 0.003633730103671178
+      },
+      "velocity": {
+        "x": -8.54227832007128,
+        "y": 16.52131134126287,
+        "z": 0.86584523823931
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 205158",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

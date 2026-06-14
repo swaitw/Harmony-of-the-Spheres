@@ -1,0 +1,131 @@
+{
+  "name": "K2-105 - System",
+  "description": "K2-105 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "K2-105",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.94,
+    "m": 0.94
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "K2-105",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "K2-105"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "K2-105",
+    "barycenterMassTwo": "K2-105 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "K2-105",
+      "type": "star",
+      "m": 0.94,
+      "radius": 9294.35,
+      "tilt": 0,
+      "temperature": 5373,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.0010625616570708956,
+        "y": -6.497396984394463e-20,
+        "z": -3.405141470724425e-21
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "K2-105 b",
+      "type": "sub-Neptune",
+      "m": 4.62462e-5,
+      "radius": 319.6301,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 4.874094260606466e-18,
+        "y": 0.07949091096646409,
+        "z": 0.004165942116938329
+      },
+      "velocity": {
+        "x": -21.597622240241186,
+        "y": 1.320660544072982e-15,
+        "z": 6.921288630159795e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "K2-105",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

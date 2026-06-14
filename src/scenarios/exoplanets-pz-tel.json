@@ -1,0 +1,131 @@
+{
+  "name": "PZ Tel - System",
+  "description": "PZ Tel is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "PZ Tel",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.36,
+    "m": 1.36
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "PZ Tel",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "PZ Tel"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "PZ Tel",
+    "barycenterMassTwo": "PZ Tel b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "PZ Tel",
+      "type": "star",
+      "m": 1.36,
+      "radius": 12903.8442,
+      "tilt": 0,
+      "temperature": 5169,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.036434612999508696,
+        "y": -0.030530372096013676,
+        "z": -0.001600029002237005
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "PZ Tel b",
+      "type": "gas giant planet",
+      "m": 0.025769845067967,
+      "radius": 1118.7055,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 8.33052742153755,
+        "y": 9.914330091598682,
+        "z": 0.5195880231797174
+      },
+      "velocity": {
+        "x": -1.9228316487213148,
+        "y": 1.6112361537707238,
+        "z": 0.08444130871967234
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "PZ Tel",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

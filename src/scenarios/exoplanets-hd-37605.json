@@ -1,0 +1,165 @@
+{
+  "name": "HD 37605 - System",
+  "description": "HD 37605 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 37605",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.94,
+    "m": 0.94
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 37605",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 37605"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 37605",
+    "barycenterMassTwo": "HD 37605 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 37605",
+      "type": "star",
+      "m": 0.94,
+      "radius": 9345.7,
+      "tilt": 0,
+      "temperature": 5329,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.03915566087093578,
+        "y": 0.047074187785144966,
+        "z": 0.003217787423660871
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 37605 b",
+      "type": "gas giant planet",
+      "m": 0.0025674529881,
+      "radius": 1240.917,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.06827388464749616,
+        "y": -0.058810152257489985,
+        "z": -0.003082109479112583
+      },
+      "velocity": {
+        "x": 17.151685515398917,
+        "y": -19.857196247368087,
+        "z": -1.0406715581121007
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 37605 c",
+      "type": "gas giant planet",
+      "m": 0.0030446747331,
+      "radius": 1231.5161,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 2.474153650634733,
+        "y": 2.6495688335490883,
+        "z": -0.13885801862386563
+      },
+      "velocity": {
+        "x": -2.3745804207537167,
+        "y": 2.211297400462221,
+        "z": -0.11588918609258685
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 37605",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

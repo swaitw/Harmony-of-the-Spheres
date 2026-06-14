@@ -1,0 +1,131 @@
+{
+  "name": "HD 235088 - System",
+  "description": "HD 235088 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 235088",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.849,
+    "m": 0.849
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 235088",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 235088"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 235088",
+    "barycenterMassTwo": "HD 235088 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 235088",
+      "type": "star",
+      "m": 0.849,
+      "radius": 7928.44,
+      "tilt": 0,
+      "temperature": 5075,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.0003199232338430904,
+        "y": -1.956280128289184e-20,
+        "z": -1.0252429717917907e-21
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 235088 b",
+      "type": "super-Earth",
+      "m": 1.2462450000000001e-5,
+      "radius": 186.3256,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 4.323003200990157e-18,
+        "y": 0.07050324515367291,
+        "z": 0.0036949185107518346
+      },
+      "velocity": {
+        "x": -21.794657192829956,
+        "y": 1.3327089207318922e-15,
+        "z": 6.984431496625706e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 235088",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

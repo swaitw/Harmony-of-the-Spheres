@@ -1,0 +1,233 @@
+{
+  "name": "HD 215152 - System",
+  "description": "HD 215152 is a orange K-type dwarf star with 4 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 215152",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.77,
+    "m": 0.77
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "4-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 215152",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 215152"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 215152",
+    "barycenterMassTwo": "HD 215152 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 215152",
+      "type": "star",
+      "m": 0.77,
+      "radius": 7497.1,
+      "tilt": 0,
+      "temperature": 4935,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.014571010518590378,
+        "y": 0.005199907265854152,
+        "z": -0.010403829747677545
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 215152 b",
+      "type": "terrestial planet",
+      "m": 0.0016979464583581501,
+      "radius": 94.0089,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.057638,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": 22.94002386410146,
+        "z": 1.2022357074175274
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "HD 215152 c",
+      "type": "terrestial planet",
+      "m": 0.00140779709169099,
+      "radius": 94.0089,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 4.126631086746879e-18,
+        "y": 0.067393,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -21.214896726742126,
+        "y": 1.2990377685323203e-15,
+        "z": 1.1118256251676146
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "HD 215152 d",
+      "type": "terrestial planet",
+      "m": 0.00231355942388571,
+      "radius": 94.0089,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.08799,
+        "y": 1.0775667185697561e-17,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -2.2737489397696906e-15,
+        "y": -18.56656908222651,
+        "z": 0.9730326545046639
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "HD 215152 e",
+      "type": "terrestial planet",
+      "m": 0.00292917238938324,
+      "radius": 94.0089,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -2.8320569553682116e-17,
+        "y": -0.15417,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 14.02646978397807,
+        "y": -2.5766206986428716e-15,
+        "z": 0.7350961325589694
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 215152",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

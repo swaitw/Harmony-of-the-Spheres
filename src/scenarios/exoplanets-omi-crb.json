@@ -1,0 +1,131 @@
+{
+  "name": "omi CrB - System",
+  "description": "omi CrB is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "omi CrB",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.3,
+    "m": 1.3
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "omi CrB",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "omi CrB"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "omi CrB",
+    "barycenterMassTwo": "omi CrB b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "omi CrB",
+      "type": "star",
+      "m": 1.3,
+      "radius": 121904.9,
+      "tilt": 0,
+      "temperature": 4769,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.005459584739926379,
+        "y": -0.005606520104860167,
+        "z": -0.00029382526820144467
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "omi CrB b",
+      "type": "gas giant planet",
+      "m": 0.00106897135096752,
+      "radius": 1287.9214,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.4485028606991802,
+        "y": 0.4355522457899345,
+        "z": 0.0228263259635918
+      },
+      "velocity": {
+        "x": -6.63952327205067,
+        "y": 6.818214660029437,
+        "z": 0.35732748900721856
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "omi CrB",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

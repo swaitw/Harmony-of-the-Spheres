@@ -1,0 +1,165 @@
+{
+  "name": "HD 159243 - System",
+  "description": "HD 159243 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 159243",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.125,
+    "m": 1.125
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 159243",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 159243"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 159243",
+    "barycenterMassTwo": "HD 159243 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 159243",
+      "type": "star",
+      "m": 1.125,
+      "radius": 11502.4,
+      "tilt": 0,
+      "temperature": 6123,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.025497699114773172,
+        "y": 0.0189917677333921,
+        "z": 0.0005094796451672528
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 159243 b",
+      "type": "gas giant planet",
+      "m": 0.00107846739,
+      "radius": 1287.9214,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.07883992903454658,
+        "y": -0.07341866740035774,
+        "z": -0.0038477093163729616
+      },
+      "velocity": {
+        "x": 13.984561231528957,
+        "y": -14.976053560946882,
+        "z": -0.7848617095531075
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 159243 c",
+      "type": "gas giant planet",
+      "m": 0.0018135116999999999,
+      "radius": 1259.7188,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.2651922826635224,
+        "y": -0.6899027303569693,
+        "z": 0.03615627001931554
+      },
+      "velocity": {
+        "x": 7.5009266565292085,
+        "y": -2.8753899429992766,
+        "z": 0.1506928014853825
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 159243",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

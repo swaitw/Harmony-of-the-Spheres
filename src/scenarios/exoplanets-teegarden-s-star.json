@@ -1,0 +1,198 @@
+{
+  "name": "Teegarden's Star - System",
+  "description": "Teegarden's Star is a cool M-dwarf star with 3 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Teegarden's Star",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.097,
+    "m": 0.097
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "3-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Teegarden's Star",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Teegarden's Star"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 1e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Teegarden's Star",
+    "barycenterMassTwo": "Teegarden's Star b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Teegarden's Star",
+      "type": "star",
+      "m": 0.097,
+      "radius": 1232.4,
+      "tilt": 0,
+      "temperature": 3034,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -3.1039051261831143e-5,
+        "y": -0.0004335042700874826,
+        "z": -3.9790587904016204e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Teegarden's Star b",
+      "type": "terrestial planet",
+      "m": 3.4834799999999996e-6,
+      "radius": 98.7093,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.023293639978281398,
+        "y": -0.009398343667069375,
+        "z": -0.0004925463205299399
+      },
+      "velocity": {
+        "x": 4.695076741084821,
+        "y": 11.604796921028399,
+        "z": 0.6081816356617725
+      },
+      "nonStellarProceduralManifestation": true
+    },
+    {
+      "name": "Teegarden's Star c",
+      "type": "terrestial planet",
+      "m": 3.15315e-6,
+      "radius": 95.889,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.02113204699221356,
+        "y": 0.038177732966835194,
+        "z": -0.001959514080557256
+      },
+      "velocity": {
+        "x": -8.347864505064273,
+        "y": 4.6339039948410585,
+        "z": 0.25745377813235626
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    },
+    {
+      "name": "Teegarden's Star d",
+      "type": "terrestial planet",
+      "m": 2.46246e-6,
+      "radius": 89.6845,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.05199429896048618,
+        "y": -0.052029942634656566,
+        "z": -0.0009964507222802806
+      },
+      "velocity": {
+        "x": 5.270197692757194,
+        "y": -5.273814868591277,
+        "z": 0.3773901228756859
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Teegarden's Star",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

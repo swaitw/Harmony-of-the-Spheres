@@ -1,0 +1,165 @@
+{
+  "name": "HD 92788 - System",
+  "description": "HD 92788 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 92788",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.15,
+    "m": 1.15
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 92788",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 92788"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 92788",
+    "barycenterMassTwo": "HD 92788 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 92788",
+      "type": "star",
+      "m": 1.15,
+      "radius": 11707.8,
+      "tilt": 0,
+      "temperature": 5744,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.025969904803515447,
+        "y": 0.005186044057315543,
+        "z": -0.0007106517631517409
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 92788 b",
+      "type": "gas giant planet",
+      "m": 0.0035887075224,
+      "radius": 1222.1152,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.08589573129689866,
+        "y": -0.6237656019139171,
+        "z": -0.03269016998945791
+      },
+      "velocity": {
+        "x": 9.770206234452623,
+        "y": 1.3417225029571775,
+        "z": 0.07031669679406938
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 92788 c",
+      "type": "gas giant planet",
+      "m": 0.0035028076082999995,
+      "radius": 1222.1152,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -5.108677483321087,
+        "y": 2.456367693122797,
+        "z": -0.12873277589917262
+      },
+      "velocity": {
+        "x": -1.483673288998875,
+        "y": -3.077245886901557,
+        "z": 0.1612716232403832
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 92788",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,301 @@
+{
+  "name": "HD 10180 - System",
+  "description": "HD 10180 is a Sun-like G/F-type star with 6 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 10180",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.06,
+    "m": 1.06
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "6-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 10180",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 10180"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 10180",
+    "barycenterMassTwo": "HD 10180 c",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 10180",
+      "type": "star",
+      "m": 1.06,
+      "radius": 11389.43,
+      "tilt": 0,
+      "temperature": 5911,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.06267266839928266,
+        "y": -0.29402074936887584,
+        "z": -0.02065493566778678
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 10180 c",
+      "type": "terrestial planet",
+      "m": 0.00823298827985634,
+      "radius": 94.0089,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.05040733431898487,
+        "y": -0.031454831415372725,
+        "z": -0.0016484778622021241
+      },
+      "velocity": {
+        "x": 14.568821601085352,
+        "y": 23.283035874554106,
+        "z": 1.220212205152762
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "HD 10180 d",
+      "type": "terrestial planet",
+      "m": 0.00989752938351177,
+      "radius": 94.0089,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.10119903021729452,
+        "y": 0.047269274489461395,
+        "z": -0.00335442771619367
+      },
+      "velocity": {
+        "x": -8.679952076612187,
+        "y": 18.645582268554,
+        "z": 0.882539149100325
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "HD 10180 e",
+      "type": "gas giant planet",
+      "m": 7.53753e-5,
+      "radius": 506.7078,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.013239507341273056,
+        "y": -0.25568848499219193,
+        "z": 0.00730092732247049
+      },
+      "velocity": {
+        "x": 13.07644218346138,
+        "y": -0.6935237052760027,
+        "z": -0.575320508888667
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 10180 f",
+      "type": "gas giant planet",
+      "m": 7.17717e-5,
+      "radius": 492.6065,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.3641884169104038,
+        "y": 0.23618259905160988,
+        "z": -0.012377805521591784
+      },
+      "velocity": {
+        "x": -5.657283268095884,
+        "y": -8.699513552307943,
+        "z": 0.45592218611918045
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 10180 g",
+      "type": "terrestial planet",
+      "m": 0.01013613906006702,
+      "radius": 94.0089,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.9363908427393383,
+        "y": -0.47785385331603025,
+        "z": -0.029977843583776247
+      },
+      "velocity": {
+        "x": 3.21218793057928,
+        "y": -6.314051301379913,
+        "z": 0.3112425689042353
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "skyblue"
+    },
+    {
+      "name": "HD 10180 h",
+      "type": "gas giant planet",
+      "m": 0.0001933932,
+      "radius": 883.6833,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.4236067427955625,
+        "y": 3.0287363440787405,
+        "z": 0.09859068688106985
+      },
+      "velocity": {
+        "x": -3.8296058520649723,
+        "y": 0.5408149716686984,
+        "z": -0.15964082844679522
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 10180",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

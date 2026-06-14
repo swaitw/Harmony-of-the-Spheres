@@ -1,0 +1,165 @@
+{
+  "name": "TOI-1670 - System",
+  "description": "TOI-1670 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-1670",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.21,
+    "m": 1.21
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-1670",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-1670"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-1670",
+    "barycenterMassTwo": "TOI-1670 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-1670",
+      "type": "star",
+      "m": 1.21,
+      "radius": 13515.32,
+      "tilt": 0,
+      "temperature": 6170,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.006032849556678949,
+        "y": 0.002156358231972079,
+        "z": 0.0003237835971274664
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-1670 b",
+      "type": "super-Earth",
+      "m": 0.00012407703180873,
+      "radius": 193.6583,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.04051182914482663,
+        "y": 0.01190693928200353,
+        "z": 0.0006240162458278142
+      },
+      "velocity": {
+        "x": -11.977161502258442,
+        "y": -40.639132776051795,
+        "z": -2.1298067007815282
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "TOI-1670 c",
+      "type": "gas giant planet",
+      "m": 0.0006012963849192299,
+      "radius": 1040.0449,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.0605535436355722,
+        "y": -0.21804978464323918,
+        "z": 0.011427504986297549
+      },
+      "velocity": {
+        "x": 14.61149415268099,
+        "y": 4.0465726561353055,
+        "z": -0.21207188661552898
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-1670",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

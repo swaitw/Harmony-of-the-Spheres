@@ -1,0 +1,233 @@
+{
+  "name": "Kepler-279 - System",
+  "description": "Kepler-279 is a Sun-like G/F-type star with 4 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-279",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.2,
+    "m": 1.2
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "4-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-279",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-279"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-279",
+    "barycenterMassTwo": "Kepler-279 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-279",
+      "type": "star",
+      "m": 1.2,
+      "radius": 17931.42,
+      "tilt": 0,
+      "temperature": 6363,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.0003432602176495299,
+        "y": -0.2137491668828007,
+        "z": -0.011498091060776493
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-279 b",
+      "type": "sub-Neptune",
+      "m": 0.01255533279,
+      "radius": 340.3121,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.112,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": 20.54397915801351,
+        "z": 1.0766643253085708
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-279 c",
+      "type": "gas giant planet",
+      "m": 0.00014834819999999998,
+      "radius": 404.2381,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 1.3691551214467409e-17,
+        "y": 0.2236,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -14.539774717588623,
+        "y": 8.90304428410926e-16,
+        "z": 0.7619973042245274
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-279 d",
+      "type": "sub-Neptune",
+      "m": 0.00011261249999999999,
+      "radius": 291.4275,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.2901,
+        "y": 3.552700364326472e-17,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -1.5632576565398477e-15,
+        "y": -12.764967479833766,
+        "z": 0.6689835982383268
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-279 e",
+      "type": "gas giant planet",
+      "m": 0.000168168,
+      "radius": 388.2566,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -8.064299172385321e-17,
+        "y": -0.439,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 10.376749123378671,
+        "y": -1.9061778899251187e-15,
+        "z": 0.5438223777335207
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-279",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

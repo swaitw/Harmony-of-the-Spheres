@@ -1,0 +1,131 @@
+{
+  "name": "CoRoT-30 - System",
+  "description": "CoRoT-30 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "CoRoT-30",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.98,
+    "m": 0.98
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "CoRoT-30",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "CoRoT-30"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "CoRoT-30",
+    "barycenterMassTwo": "CoRoT-30 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "CoRoT-30",
+      "type": "star",
+      "m": 0.98,
+      "radius": 9345.7,
+      "tilt": 0,
+      "temperature": 5650,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.0020195470923305417,
+        "y": 0.06079504554190952,
+        "z": 0.0031861333282628326
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "CoRoT-30 b",
+      "type": "gas giant planet",
+      "m": 0.0027678861209999997,
+      "radius": 1063.2291,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.08376312303790591,
+        "y": 0.0027749008525201164,
+        "z": 0.00014542639141119714
+      },
+      "velocity": {
+        "x": -0.7150424778924388,
+        "y": -21.525143024867727,
+        "z": -1.1280849446831618
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "CoRoT-30",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

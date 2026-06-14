@@ -1,0 +1,165 @@
+{
+  "name": "TOI-1294 - System",
+  "description": "TOI-1294 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-1294",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.1578,
+    "m": 1.1578
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-1294",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-1294"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 1e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-1294",
+    "barycenterMassTwo": "TOI-1294 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-1294",
+      "type": "star",
+      "m": 1.1578,
+      "radius": 15986.282,
+      "tilt": 0,
+      "temperature": 5718,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.0016617638498733064,
+        "y": 3.0268262835097616e-19,
+        "z": -2.6484639777788843e-20
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-1294 b",
+      "type": "gas giant planet",
+      "m": 0.0001918917,
+      "radius": 951.7174,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 3.1228493378257503e-18,
+        "y": 0.05093010627248326,
+        "z": 0.0026691337683901356
+      },
+      "velocity": {
+        "x": -29.945407844616042,
+        "y": 1.8311144706879702e-15,
+        "z": 9.596464302179795e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "TOI-1294 c",
+      "type": "gas giant planet",
+      "m": 0.000441441,
+      "radius": 1344.3268,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -1.1195280363353745e-16,
+        "y": -0.60916401620029,
+        "z": 0.031924933308195735
+      },
+      "velocity": {
+        "x": 8.658654345911218,
+        "y": -1.589842392935126e-15,
+        "z": 2.7747983185472075e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-1294",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "name": "HD 184010 - System",
+  "description": "HD 184010 is a orange K-type dwarf star with 3 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 184010",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.35,
+    "m": 1.35
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "3-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 184010",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 184010"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 184010",
+    "barycenterMassTwo": "HD 184010 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 184010",
+      "type": "star",
+      "m": 1.35,
+      "radius": 49912.2,
+      "tilt": 0,
+      "temperature": 4971,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0002902956678818456,
+        "y": -0.0001417263426844959,
+        "z": -0.0002443233266675377
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 184010 b",
+      "type": "gas giant planet",
+      "m": 0.00029587599892851,
+      "radius": 1137.5073,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.94,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": 7.521525142086472,
+        "z": 0.394186429518313
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 184010 c",
+      "type": "gas giant planet",
+      "m": 0.0002863316118663,
+      "radius": 1109.3046,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.6669999999999997,
+        "y": 1.1552778886484414,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -5.467925078811714,
+        "y": -3.156908016160647,
+        "z": 0.3308930770556215
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 184010 d",
+      "type": "gas giant planet",
+      "m": 0.00042949741779945,
+      "radius": 1344.3268,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.9600000000000009,
+        "y": -1.6627687752661215,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 4.557743241042884,
+        "y": -2.6314142871133095,
+        "z": 0.2758131583225509
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 184010",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

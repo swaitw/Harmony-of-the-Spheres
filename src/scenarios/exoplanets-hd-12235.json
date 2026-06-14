@@ -1,0 +1,165 @@
+{
+  "name": "HD 12235 - System",
+  "description": "HD 12235 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 12235",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.1,
+    "m": 1.1
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 12235",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 12235"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 1e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 12235",
+    "barycenterMassTwo": "HD 12235 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 12235",
+      "type": "star",
+      "m": 1.1,
+      "radius": 18504.9995,
+      "tilt": 0,
+      "temperature": 5986,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.01523725904148344,
+        "y": 0.0023325632566498955,
+        "z": -0.00014306351948081147
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 12235 b",
+      "type": "sub-Neptune",
+      "m": 3.1496477302289995e-5,
+      "radius": 303.6486,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.005556803747902924,
+        "y": -0.03318910888877162,
+        "z": -0.0017393674932435642
+      },
+      "velocity": {
+        "x": 41.54586147918275,
+        "y": 6.9369098130580475,
+        "z": 0.36354803838910876
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 12235 c",
+      "type": "gas giant planet",
+      "m": 0.00941649227557038,
+      "radius": 1175.1108,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -3.2575242240510836,
+        "y": -18.02918910190059,
+        "z": 0.9448697631046182
+      },
+      "velocity": {
+        "x": 1.6409971155222585,
+        "y": -0.29568418082955933,
+        "z": 0.01549615128640238
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 12235",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

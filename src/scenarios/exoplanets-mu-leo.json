@@ -1,0 +1,131 @@
+{
+  "name": "mu Leo - System",
+  "description": "mu Leo is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "mu Leo",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.5,
+    "m": 1.5
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "mu Leo",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "mu Leo"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "mu Leo",
+    "barycenterMassTwo": "mu Leo b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "mu Leo",
+      "type": "star",
+      "m": 1.5,
+      "radius": 117078.0,
+      "tilt": 0,
+      "temperature": 4538,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.008985623297185715,
+        "y": 0.00833851311993098,
+        "z": 0.00043700295513808616
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "mu Leo b",
+      "type": "gas giant planet",
+      "m": 0.0022906883999999996,
+      "radius": 1250.3179,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.681401589827877,
+        "y": -0.7322705131780106,
+        "z": -0.038376671430112495
+      },
+      "velocity": {
+        "x": 5.884010651897733,
+        "y": -5.460266738983998,
+        "z": -0.28616045408320456
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "mu Leo",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

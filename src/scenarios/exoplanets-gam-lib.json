@@ -1,0 +1,165 @@
+{
+  "name": "gam Lib - System",
+  "description": "gam Lib is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "gam Lib",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.78,
+    "m": 1.78
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "gam Lib",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "gam Lib"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "gam Lib",
+    "barycenterMassTwo": "gam Lib b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "gam Lib",
+      "type": "star",
+      "m": 1.78,
+      "radius": 127142.6,
+      "tilt": 0,
+      "temperature": 4879,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.008513394737656893,
+        "y": -0.0095273988436309,
+        "z": 0.0010327877366159016
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "gam Lib b",
+      "type": "gas giant planet",
+      "m": 0.00107469798319884,
+      "radius": 1287.9214,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -1.0901052666288467,
+        "y": -0.1978342052804422,
+        "z": -0.01036805136497328
+      },
+      "velocity": {
+        "x": 1.5340813761011847,
+        "y": -8.429935763984986,
+        "z": -0.4417942128891405
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "gam Lib c",
+      "type": "gas giant planet",
+      "m": 0.00499266887225106,
+      "radius": 1203.3135,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 1.9241889186676764,
+        "y": -0.9960378909421735,
+        "z": 0.052200133946043295
+      },
+      "velocity": {
+        "x": 2.7049998342832833,
+        "y": 5.211321954540606,
+        "z": -0.27311381076643104
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "gam Lib",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

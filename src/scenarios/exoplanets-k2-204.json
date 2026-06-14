@@ -1,0 +1,131 @@
+{
+  "name": "K2-204 - System",
+  "description": "K2-204 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "K2-204",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.076,
+    "m": 1.076
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "K2-204",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "K2-204"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "K2-204",
+    "barycenterMassTwo": "K2-204 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "K2-204",
+      "type": "star",
+      "m": 1.076,
+      "radius": 12868.31,
+      "tilt": 0,
+      "temperature": 5783,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0009103194682493727,
+        "y": -3.174549051772277e-5,
+        "z": -1.6637106602846924e-6
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "K2-204 b",
+      "type": "sub-Neptune",
+      "m": 3.06306e-5,
+      "radius": 298.2094,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.0018544196567840975,
+        "y": -0.0530308543038165,
+        "z": -0.002779229307545531
+      },
+      "velocity": {
+        "x": 31.977948451428475,
+        "y": 1.1151641755979218,
+        "z": 0.0584432779790905
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "K2-204",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

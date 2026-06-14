@@ -1,0 +1,131 @@
+{
+  "name": "KOI-13 - System",
+  "description": "KOI-13 is a bright A/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "KOI-13",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.72,
+    "m": 1.72
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "KOI-13",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "KOI-13"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-6,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-7,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "KOI-13",
+    "barycenterMassTwo": "KOI-13 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "KOI-13",
+      "type": "star",
+      "m": 1.72,
+      "radius": 17869.8,
+      "tilt": 0,
+      "temperature": 7650,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.019399750211254105,
+        "y": -0.22143627239292688,
+        "z": -0.011604983288827898
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "KOI-13 b",
+      "type": "gas giant planet",
+      "m": 0.008857235587199998,
+      "radius": 1593.263,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.036248235230187636,
+        "y": 0.003166963485797135,
+        "z": 0.00016597352336110706
+      },
+      "velocity": {
+        "x": -3.7672668898609944,
+        "y": 43.00104527717967,
+        "z": 2.2535892898264933
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "KOI-13",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

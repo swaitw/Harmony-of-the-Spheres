@@ -1,0 +1,165 @@
+{
+  "name": "HD 5319 - System",
+  "description": "HD 5319 is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 5319",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.27,
+    "m": 1.27
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 5319",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 5319"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 5319",
+    "barycenterMassTwo": "HD 5319 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 5319",
+      "type": "star",
+      "m": 1.27,
+      "radius": 41696.2,
+      "tilt": 0,
+      "temperature": 4871,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.007079036142506543,
+        "y": 0.004586577775114019,
+        "z": 0.0004631389621638605
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 5319 b",
+      "type": "gas giant planet",
+      "m": 0.0014851140704399998,
+      "radius": 1269.1197,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -1.3217562157162295,
+        "y": 0.5332923137375082,
+        "z": 0.027948665871697694
+      },
+      "velocity": {
+        "x": -2.3221720530478107,
+        "y": -5.739700664632988,
+        "z": -0.30080496558281056
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 5319 c",
+      "type": "gas giant planet",
+      "m": 0.0010050289949699999,
+      "radius": 1297.3223,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.6912280079684857,
+        "y": 1.4152851791934062,
+        "z": -0.07417195329372746
+      },
+      "velocity": {
+        "x": -5.513955854761071,
+        "y": 2.685650320810927,
+        "z": -0.14074896924448785
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 5319",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "name": "HAT-P-11 - System",
+  "description": "HAT-P-11 is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HAT-P-11",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.811,
+    "m": 0.811
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HAT-P-11",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HAT-P-11"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 1e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HAT-P-11",
+    "barycenterMassTwo": "HAT-P-11 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HAT-P-11",
+      "type": "star",
+      "m": 0.811,
+      "radius": 7014.41,
+      "tilt": 0,
+      "temperature": 4653,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.010413182371199528,
+        "y": -0.017740139194165217,
+        "z": 0.0006568071810985195
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HAT-P-11 b",
+      "type": "gas giant planet",
+      "m": 7.5075e-5,
+      "radius": 409.8787,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.034772612939959265,
+        "y": 0.018463587832820687,
+        "z": 0.0009676356359155118
+      },
+      "velocity": {
+        "x": -14.975996192886377,
+        "y": 28.127152200132556,
+        "z": 1.4740815843650539
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HAT-P-11 c",
+      "type": "gas giant planet",
+      "m": 0.0025578957326722798,
+      "radius": 1240.917,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 1.1258651722421362,
+        "y": -0.8752609626219817,
+        "z": 0.04587048334415499
+      },
+      "velocity": {
+        "x": 3.7411274021034564,
+        "y": 4.7991037235198375,
+        "z": -0.2515103686986489
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HAT-P-11",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

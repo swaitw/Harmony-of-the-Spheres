@@ -1,0 +1,267 @@
+{
+  "name": "Kepler-55 - System",
+  "description": "Kepler-55 is a orange K-type dwarf star with 5 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-55",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.631,
+    "m": 0.631
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "5-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-55",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-55"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-6,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-7,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-55",
+    "barycenterMassTwo": "Kepler-55 d",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-55",
+      "type": "star",
+      "m": 0.631,
+      "radius": 6357.13,
+      "tilt": 0,
+      "temperature": 4503,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.004478343384800863,
+        "y": 0.0006224302475119181,
+        "z": -0.00037750041108287826
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-55 d",
+      "type": "super-Earth",
+      "m": 9.45945e-6,
+      "radius": 149.4741,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.029,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": 29.276464886081698,
+        "z": 1.5343145099374758
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-55 e",
+      "type": "super-Earth",
+      "m": 9.06906e-6,
+      "radius": 145.7137,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.014832815729997478,
+        "y": 0.04565071278216737,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -21.642296400199285,
+        "y": 7.032008372135276,
+        "z": 1.19259441840342
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-55 f",
+      "type": "super-Earth",
+      "m": 9.45945e-6,
+      "radius": 149.4741,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.06553037654437073,
+        "y": 0.04761060543569033,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -10.296599238676977,
+        "y": -14.172053034452238,
+        "z": 0.9180596113323464
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-55 b",
+      "type": "super-Earth",
+      "m": 0.000129129,
+      "radius": 228.4415,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.12887640720392912,
+        "y": -0.09363419069019095,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 7.3422375433753695,
+        "y": -10.105723010506546,
+        "z": 0.6546444694148421
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-55 c",
+      "type": "super-Earth",
+      "m": 0.00020960939999999998,
+      "radius": 207.7596,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.06473906032155144,
+        "y": -0.1992463401638347,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 10.359336624838015,
+        "y": 3.3659525093167866,
+        "z": 0.5708491746296469
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-55",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,233 @@
+{
+  "name": "K2-266 - System",
+  "description": "K2-266 is a orange K-type dwarf star with 4 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "K2-266",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.686,
+    "m": 0.686
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "4-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "K2-266",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "K2-266"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-6,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-7,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "K2-266",
+    "barycenterMassTwo": "K2-266 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "K2-266",
+      "type": "star",
+      "m": 0.686,
+      "radius": 7219.81,
+      "tilt": 0,
+      "temperature": 4285,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0006752397607244205,
+        "y": -0.0031451658224078763,
+        "z": -0.00012034881988123976
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "K2-266 b",
+      "type": "sub-Neptune",
+      "m": 3.383727478131e-5,
+      "radius": 310.2293,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.01306,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": 45.487641910407405,
+        "z": 2.383906297346646
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "K2-266 c",
+      "type": "terrestial planet",
+      "m": 8.7126255216e-7,
+      "radius": 66.2762,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.06487002957714726,
+        "y": 0.0034043597488822718,
+        "z": 0.0033996941921634887
+      },
+      "velocity": {
+        "x": -1.0888834410905044,
+        "y": -20.805647192838066,
+        "z": 0.057065963045629484
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "K2-266 d",
+      "type": "sub-Neptune",
+      "m": 2.67267e-5,
+      "radius": 275.446,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.0051621832120009115,
+        "y": -0.09836533220529864,
+        "z": 0.0051551086193183165
+      },
+      "velocity": {
+        "x": 16.936424388410927,
+        "y": -0.8863839657038054,
+        "z": 0.046453415234631694
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "K2-266 e",
+      "type": "sub-Neptune",
+      "m": 4.29429e-5,
+      "radius": 256.6442,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.11934730930636758,
+        "y": -0.0020860739247640244,
+        "z": 0.0062547274441529625
+      },
+      "velocity": {
+        "x": 0.267994139219743,
+        "y": 15.374444094466455,
+        "z": 0.01404497769737676
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "K2-266",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

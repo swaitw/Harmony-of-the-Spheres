@@ -1,0 +1,131 @@
+{
+  "name": "HD 95872 - System",
+  "description": "HD 95872 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 95872",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.7,
+    "m": 0.7
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 95872",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 95872"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 95872",
+    "barycenterMassTwo": "HD 95872 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 95872",
+      "type": "star",
+      "m": 0.7,
+      "radius": 8626.8,
+      "tilt": 0,
+      "temperature": 5312,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.003668530054518674,
+        "y": -0.01198277661927273,
+        "z": -0.000627990712260832
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 95872 b",
+      "type": "gas giant planet",
+      "m": 0.0035696186525999997,
+      "radius": 1222.1152,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 4.629471323617055,
+        "y": 1.413431705218777,
+        "z": 0.07407481683875823
+      },
+      "velocity": {
+        "x": -0.7193964644634073,
+        "y": 2.3498150502383197,
+        "z": 0.12314858850885824
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 95872",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

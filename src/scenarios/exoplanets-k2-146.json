@@ -1,0 +1,165 @@
+{
+  "name": "K2-146 - System",
+  "description": "K2-146 is a cool M-dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "K2-146",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.331,
+    "m": 0.331
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "K2-146",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "K2-146"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-6,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-7,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "K2-146",
+    "barycenterMassTwo": "K2-146 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "K2-146",
+      "type": "star",
+      "m": 0.331,
+      "radius": 3389.1,
+      "tilt": 0,
+      "temperature": 3385,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0023520606448944282,
+        "y": -0.0015393363464157057,
+        "z": 1.7881842284937798e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "K2-146 b",
+      "type": "super-Earth",
+      "m": 1.7327309999999997e-5,
+      "radius": 192.7182,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.009469167467561504,
+        "y": -0.01938806330421607,
+        "z": -0.0010160853423729864
+      },
+      "velocity": {
+        "x": 23.495505039904533,
+        "y": 11.443818614098888,
+        "z": 0.5997451200828531
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "K2-146 c",
+      "type": "super-Earth",
+      "m": 2.249247e-5,
+      "radius": 205.8794,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.019442718223993592,
+        "y": -0.023139174339940678,
+        "z": 0.0012126727415994216
+      },
+      "velocity": {
+        "x": 16.51300075212138,
+        "y": 13.837063601878176,
+        "z": -0.7251697751726347
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "K2-146",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

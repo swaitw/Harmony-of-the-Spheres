@@ -1,0 +1,131 @@
+{
+  "name": "2MASS J19383260+4603591 - System",
+  "description": "2MASS J19383260+4603591 is a bright A/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "2MASS J19383260+4603591",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.48,
+    "m": 0.48
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "2MASS J19383260+4603591",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "2MASS J19383260+4603591"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "2MASS J19383260+4603591",
+    "barycenterMassTwo": "2MASS J19383260+4603591 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "2MASS J19383260+4603591",
+      "type": "star",
+      "m": 0.48,
+      "radius": 2084.81,
+      "tilt": 0,
+      "temperature": 29564,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.020492584716833122,
+        "y": -0.012787639065659879,
+        "z": -0.0006701717657042981
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "2MASS J19383260+4603591 b",
+      "type": "gas giant planet",
+      "m": 0.0018134426309999998,
+      "radius": 1259.7188,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.32664223447334734,
+        "y": -0.5220204537902291,
+        "z": -0.02735793272347134
+      },
+      "velocity": {
+        "x": 5.424180779656492,
+        "y": 3.38475926758818,
+        "z": 0.17738771662198952
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "2MASS J19383260+4603591",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "name": "GJ 229 - System",
+  "description": "GJ 229 is a cool M-dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "GJ 229",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.509,
+    "m": 0.509
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "GJ 229",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "GJ 229"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "GJ 229",
+    "barycenterMassTwo": "GJ 229 A c",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "GJ 229",
+      "type": "star",
+      "m": 0.509,
+      "radius": 4724.2,
+      "tilt": 0,
+      "temperature": 3564,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.0009553801108809592,
+        "y": 0.00010684322053233668,
+        "z": 2.9529025634162898e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "GJ 229 A c",
+      "type": "sub-Neptune",
+      "m": 2.5769845070969995e-5,
+      "radius": 269.8054,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.15194367742356718,
+        "y": 0.18996008295061778,
+        "z": 0.009955386099864178
+      },
+      "velocity": {
+        "x": -8.298698939893505,
+        "y": -6.619712145556789,
+        "z": -0.3469244130416073
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "GJ 229 b",
+      "type": "sub-Neptune",
+      "m": 4.485861919539e-5,
+      "radius": 373.2152,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.25424385896981183,
+        "y": 0.594415631026966,
+        "z": -0.031152003193250895
+      },
+      "velocity": {
+        "x": -6.0731314372406455,
+        "y": 2.5904889459103018,
+        "z": -0.13576177291242514
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "GJ 229",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

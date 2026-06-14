@@ -1,0 +1,131 @@
+{
+  "name": "HAT-P-20 - System",
+  "description": "HAT-P-20 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HAT-P-20",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.756,
+    "m": 0.756
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HAT-P-20",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HAT-P-20"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-6,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-7,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HAT-P-20",
+    "barycenterMassTwo": "HAT-P-20 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HAT-P-20",
+      "type": "star",
+      "m": 0.756,
+      "radius": 7127.38,
+      "tilt": 0,
+      "temperature": 4595,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.18214300979448297,
+        "y": -0.19505677906320815,
+        "z": -0.010222492624805547
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HAT-P-20 b",
+      "type": "gas giant planet",
+      "m": 0.006915605696999999,
+      "radius": 913.5781,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.02600584059902528,
+        "y": -0.024217603754690356,
+        "z": -0.0012691908323399623
+      },
+      "velocity": {
+        "x": 19.911504709466538,
+        "y": 21.32321179557056,
+        "z": 1.1175021773878029
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HAT-P-20",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

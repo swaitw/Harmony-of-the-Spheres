@@ -1,0 +1,165 @@
+{
+  "name": "TOI-216 - System",
+  "description": "TOI-216 is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-216",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.77,
+    "m": 0.77
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-216",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-216"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-216",
+    "barycenterMassTwo": "TOI-216.02",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-216",
+      "type": "star",
+      "m": 0.77,
+      "radius": 7681.96,
+      "tilt": 0,
+      "temperature": 5026,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.0002443492505716626,
+        "y": -0.008803830918810535,
+        "z": 0.0004101529258425698
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-216.02",
+      "type": "gas giant planet",
+      "m": 5.631188365803e-5,
+      "radius": 752.0709,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.04033500335478212,
+        "y": -0.10070649846905114,
+        "z": -0.0052778039441339596
+      },
+      "velocity": {
+        "x": 16.734366577471597,
+        "y": 6.684096207674937,
+        "z": 0.35029863875844086
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "TOI-216.01",
+      "type": "gas giant planet",
+      "m": 0.00053448567548376,
+      "radius": 949.4895,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.202819443167374,
+        "y": 0.035713528724458515,
+        "z": -0.0018716667308099756
+      },
+      "velocity": {
+        "x": -2.115103694254077,
+        "y": 11.978909918742955,
+        "z": -0.6277880670729139
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-216",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "name": "TOI-1347 - System",
+  "description": "TOI-1347 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-1347",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.913,
+    "m": 0.913
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-1347",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-1347"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-6,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-7,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-1347",
+    "barycenterMassTwo": "TOI-1347 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-1347",
+      "type": "star",
+      "m": 0.913,
+      "radius": 8524.1,
+      "tilt": 0,
+      "temperature": 5464,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.0011356477891586595,
+        "y": -3.1889354619492704e-21,
+        "z": -7.106830736495064e-21
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-1347 b",
+      "type": "super-Earth",
+      "m": 3.3333299999999995e-5,
+      "radius": 169.216,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 1.047073013270987e-18,
+        "y": 0.017076565044303212,
+        "z": 0.0008949448517543396
+      },
+      "velocity": {
+        "x": -45.923595331671656,
+        "y": 2.8081554405331456e-15,
+        "z": 1.4716919051993244e-16
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "TOI-1347 c",
+      "type": "super-Earth",
+      "m": 1.92192e-5,
+      "radius": 150.4142,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -1.0020693571133024e-17,
+        "y": -0.05452517259759974,
+        "z": 0.0028575432108647334
+      },
+      "velocity": {
+        "x": 25.700265815817218,
+        "y": -4.718905556379236e-15,
+        "z": 8.236043560928296e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-1347",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

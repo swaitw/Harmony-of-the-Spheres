@@ -1,0 +1,199 @@
+{
+  "name": "TOI-1749 - System",
+  "description": "TOI-1749 is a orange K-type dwarf star with 3 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-1749",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.58,
+    "m": 0.58
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "3-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-1749",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-1749"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-6,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-7,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-1749",
+    "barycenterMassTwo": "TOI-1749 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-1749",
+      "type": "star",
+      "m": 0.58,
+      "radius": 5648.5,
+      "tilt": 0,
+      "temperature": 3985,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.007559072521209073,
+        "y": -0.007546352327939443,
+        "z": -0.0004046052504430211
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-1749 b",
+      "type": "terrestial planet",
+      "m": 0.000171171,
+      "radius": 130.6723,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.016086402720015335,
+        "y": -0.019144755005582454,
+        "z": -0.0010033340947604636
+      },
+      "velocity": {
+        "x": 24.747037515782086,
+        "y": 20.736772026123212,
+        "z": 1.0867681713878086
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "TOI-1749 c",
+      "type": "super-Earth",
+      "m": 4.2042e-5,
+      "radius": 199.2988,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.030139091118135702,
+        "y": 0.03123265938986507,
+        "z": -0.0021863240609267314
+      },
+      "velocity": {
+        "x": -16.664788487160408,
+        "y": 16.104698935649083,
+        "z": 0.33435013936323266
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "TOI-1749 d",
+      "type": "sub-Neptune",
+      "m": 4.5045e-5,
+      "radius": 236.9023,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.011465163975009076,
+        "y": -0.06527989208746167,
+        "z": 0.002230950388402209
+      },
+      "velocity": {
+        "x": 18.845775141847597,
+        "y": 3.3361437022706455,
+        "z": 0.7679232330607307
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-1749",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

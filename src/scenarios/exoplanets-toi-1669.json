@@ -1,0 +1,165 @@
+{
+  "name": "TOI-1669 - System",
+  "description": "TOI-1669 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-1669",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.9867,
+    "m": 0.9867
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-1669",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-1669"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-6,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-7,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-1669",
+    "barycenterMassTwo": "TOI-1669 c",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-1669",
+      "type": "star",
+      "m": 0.9867,
+      "radius": 10846.147,
+      "tilt": 0,
+      "temperature": 5497,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.001946446110580027,
+        "y": 5.133919324164918e-19,
+        "z": -1.440203725330126e-20
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-1669 c",
+      "type": "super-Earth",
+      "m": 3.9039e-5,
+      "radius": 215.8817,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 2.302335982397024e-18,
+        "y": 0.03754847050677198,
+        "z": 0.001967831954734688
+      },
+      "velocity": {
+        "x": -32.19564940214022,
+        "y": 1.9687131936676867e-15,
+        "z": 1.0317588652534727e-16
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "TOI-1669 b",
+      "type": "gas giant planet",
+      "m": 0.000573573,
+      "radius": 1325.525,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -2.3308206658129925e-16,
+        "y": -1.2682595091383089,
+        "z": 0.06646666442853867
+      },
+      "velocity": {
+        "x": 5.539738332033525,
+        "y": -1.0171685453864553e-15,
+        "z": 1.775293942317599e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-1669",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

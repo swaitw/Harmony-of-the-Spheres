@@ -1,0 +1,233 @@
+{
+  "name": "Kepler-289 - System",
+  "description": "Kepler-289 is a Sun-like G/F-type star with 4 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-289",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.08,
+    "m": 1.08
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "4-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-289",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-289"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-289",
+    "barycenterMassTwo": "Kepler-289 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-289",
+      "type": "star",
+      "m": 1.08,
+      "radius": 10270.0,
+      "tilt": 0,
+      "temperature": 5990,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.00015822053511941177,
+        "y": 0.0038793928149899876,
+        "z": -0.0002445220660242141
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-289 b",
+      "type": "super-Earth",
+      "m": 1.11111e-5,
+      "radius": 234.0821,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.21183,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": 14.171672215627023,
+        "z": 0.7427058695481886
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-289 d",
+      "type": "sub-Neptune",
+      "m": 1.6005989999999998e-5,
+      "radius": 284.8469,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 2.020667218593133e-17,
+        "y": 0.33,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -11.35423456291585,
+        "y": 6.952463507121573e-16,
+        "z": 0.5950502189011718
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-289 c",
+      "type": "gas giant planet",
+      "m": 0.00047201154,
+      "radius": 1055.7196,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.50155,
+        "y": 6.14221602112355e-17,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -1.1278947267348057e-15,
+        "y": -9.209959373756497,
+        "z": 0.48267351806560693
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-289 e",
+      "type": "sub-Neptune",
+      "m": 5.2252199999999994e-5,
+      "radius": 276.3861,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -1.716097559645186e-16,
+        "y": -0.9342,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 6.748308067423969,
+        "y": -1.2396440811646536e-15,
+        "z": 0.3536638397315217
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-289",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

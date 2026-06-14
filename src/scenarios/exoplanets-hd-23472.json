@@ -1,0 +1,267 @@
+{
+  "name": "HD 23472 - System",
+  "description": "HD 23472 is a orange K-type dwarf star with 5 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 23472",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.67,
+    "m": 0.67
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "5-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 23472",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 23472"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 1e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 23472",
+    "barycenterMassTwo": "HD 23472 d",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 23472",
+      "type": "star",
+      "m": 0.67,
+      "radius": 7291.7,
+      "tilt": 0,
+      "temperature": 4684,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.00038126316411435157,
+        "y": -0.000570359637402799,
+        "z": -6.953584967545067e-6
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 23472 d",
+      "type": "terrestial planet",
+      "m": 1.65165e-6,
+      "radius": 70.5066,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.037793701192710534,
+        "y": 0.012995580496184194,
+        "z": 0.0006810695142990163
+      },
+      "velocity": {
+        "x": -8.665528916194257,
+        "y": 25.132033493641128,
+        "z": 1.3171140642687431
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "HD 23472 e",
+      "type": "terrestial planet",
+      "m": 2.16216e-6,
+      "radius": 76.8993,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.02963008905671554,
+        "y": 0.055818340447309725,
+        "z": 0.0023808175485183305
+      },
+      "velocity": {
+        "x": -18.664710681633878,
+        "y": -9.940615043551652,
+        "z": 0.7693134835607455
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "HD 23472 f",
+      "type": "terrestial planet",
+      "m": 2.31231e-6,
+      "radius": 106.8881,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.07145010189594854,
+        "y": 0.04465645396983766,
+        "z": 0.0003076067267463505
+      },
+      "velocity": {
+        "x": -9.70002609441618,
+        "y": -15.526585870589608,
+        "z": 0.9571130073621038
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "HD 23472 b",
+      "type": "super-Earth",
+      "m": 2.498496e-5,
+      "radius": 188.0177,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.09330728258769382,
+        "y": -0.05380757804701442,
+        "z": 0.005155661914313151
+      },
+      "velocity": {
+        "x": 8.115416009069135,
+        "y": 14.039793318944223,
+        "z": -0.34527867254500816
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "HD 23472 c",
+      "type": "super-Earth",
+      "m": 1.024023e-5,
+      "radius": 175.7966,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.05274281953954465,
+        "y": -0.14493126033907877,
+        "z": 0.00028170123393986014
+      },
+      "velocity": {
+        "x": 12.673636686566297,
+        "y": 4.613513510439029,
+        "z": 0.7064043958706676
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 23472",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "name": "91 Aqr - System",
+  "description": "91 Aqr is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "91 Aqr",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.4,
+    "m": 1.4
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "91 Aqr",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "91 Aqr"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "91 Aqr",
+    "barycenterMassTwo": "91 Aqr b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "91 Aqr",
+      "type": "star",
+      "m": 1.4,
+      "radius": 112970.0,
+      "tilt": 0,
+      "temperature": 4665,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.0009383632263244198,
+        "y": 0.01987067471940933,
+        "z": 0.0010413779348999108
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "91 Aqr b",
+      "type": "gas giant planet",
+      "m": 0.003054051,
+      "radius": 1231.5161,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.6803438938365977,
+        "y": 0.032040233292406226,
+        "z": 0.0016791574745655743
+      },
+      "velocity": {
+        "x": -0.43015277637936883,
+        "y": -9.10886707758746,
+        "z": -0.4773754953207642
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "91 Aqr",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

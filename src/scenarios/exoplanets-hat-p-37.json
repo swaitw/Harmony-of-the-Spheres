@@ -1,0 +1,131 @@
+{
+  "name": "HAT-P-37 - System",
+  "description": "HAT-P-37 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HAT-P-37",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.929,
+    "m": 0.929
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HAT-P-37",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HAT-P-37"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-6,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-7,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HAT-P-37",
+    "barycenterMassTwo": "HAT-P-37 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HAT-P-37",
+      "type": "star",
+      "m": 0.929,
+      "radius": 9006.79,
+      "tilt": 0,
+      "temperature": 5500,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.010916248795858263,
+        "y": 0.038017310818883016,
+        "z": 0.0019924028343307957
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HAT-P-37 b",
+      "type": "gas giant planet",
+      "m": 0.001115698584,
+      "radius": 1241.2931,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.034318772816050676,
+        "y": 0.009827263344386158,
+        "z": 0.0005150250483089111
+      },
+      "velocity": {
+        "x": -9.089547371292824,
+        "y": -31.655576387056094,
+        "z": -1.6589984603702868
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HAT-P-37",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "name": "TOI-1798 - System",
+  "description": "TOI-1798 is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-1798",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.87,
+    "m": 0.87
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-1798",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-1798"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 1e-6,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-7,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-1798",
+    "barycenterMassTwo": "TOI-1798.02",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-1798",
+      "type": "star",
+      "m": 0.87,
+      "radius": 8010.6,
+      "tilt": 0,
+      "temperature": 5165,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.0006106050787052967,
+        "y": 2.1483700163076248e-20,
+        "z": -5.035243169743198e-21
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-1798.02",
+      "type": "terrestial planet",
+      "m": 1.6816799999999998e-5,
+      "radius": 137.629,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 6.606357158000397e-19,
+        "y": 0.010774214050467096,
+        "z": 0.000564652631905121
+      },
+      "velocity": {
+        "x": -56.437475298217315,
+        "y": 3.451062621818355e-15,
+        "z": 1.8086252817620985e-16
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "TOI-1798.01",
+      "type": "super-Earth",
+      "m": 1.95195e-5,
+      "radius": 230.1337,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -1.3761752504356019e-17,
+        "y": -0.07488123703403696,
+        "z": 0.0039243593429209005
+      },
+      "velocity": {
+        "x": 21.407890372266344,
+        "y": -3.9307691816117855e-15,
+        "z": 6.860486148942836e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-1798",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

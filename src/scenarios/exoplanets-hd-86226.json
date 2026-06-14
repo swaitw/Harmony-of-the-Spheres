@@ -1,0 +1,165 @@
+{
+  "name": "HD 86226 - System",
+  "description": "HD 86226 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 86226",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.019,
+    "m": 1.019
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 86226",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 86226"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 1e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 86226",
+    "barycenterMassTwo": "HD 86226 c",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 86226",
+      "type": "star",
+      "m": 1.019,
+      "radius": 10814.31,
+      "tilt": 0,
+      "temperature": 5863,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.001032073572795256,
+        "y": -0.0005786671461796853,
+        "z": 9.674865524231692e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 86226 c",
+      "type": "super-Earth",
+      "m": 2.177175e-5,
+      "radius": 203.0591,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.04356918636840431,
+        "y": -0.012476141569453144,
+        "z": -0.0006538468736758757
+      },
+      "velocity": {
+        "x": 8.516458620905052,
+        "y": -29.65971741043005,
+        "z": -1.5543999236431927
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "HD 86226 b",
+      "type": "gas giant planet",
+      "m": 0.0004294995705,
+      "radius": 1344.3268,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 1.816507823393558,
+        "y": 1.814018362553551,
+        "z": -0.09506867396009035
+      },
+      "velocity": {
+        "x": -2.8803315850069175,
+        "y": 2.8763841906743646,
+        "z": -0.1507449077980912
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 86226",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

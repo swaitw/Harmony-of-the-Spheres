@@ -1,0 +1,131 @@
+{
+  "name": "HAT-P-8 - System",
+  "description": "HAT-P-8 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HAT-P-8",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.27,
+    "m": 1.27
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HAT-P-8",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HAT-P-8"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-6,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-7,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HAT-P-8",
+    "barycenterMassTwo": "HAT-P-8 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HAT-P-8",
+      "type": "star",
+      "m": 1.27,
+      "radius": 16123.9,
+      "tilt": 0,
+      "temperature": 6200,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.028880447130404042,
+        "y": 0.014066630953158674,
+        "z": 0.0007372008902491354
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HAT-P-8 b",
+      "type": "gas giant planet",
+      "m": 0.0012216876672,
+      "radius": 1475.2435,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.019709166759636926,
+        "y": 0.04035440012210447,
+        "z": 0.0021148844946987824
+      },
+      "velocity": {
+        "x": -30.022540818207855,
+        "y": -14.622903864991653,
+        "z": -0.7663539182336128
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HAT-P-8",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

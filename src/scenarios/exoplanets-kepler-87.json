@@ -1,0 +1,165 @@
+{
+  "name": "Kepler-87 - System",
+  "description": "Kepler-87 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-87",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.1,
+    "m": 1.1
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-87",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-87"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-87",
+    "barycenterMassTwo": "Kepler-87 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-87",
+      "type": "star",
+      "m": 1.1,
+      "radius": 18691.4,
+      "tilt": 0,
+      "temperature": 5600,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.007343650947303877,
+        "y": 0.004431188060858197,
+        "z": 0.00024334218457649432
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-87 b",
+      "type": "gas giant planet",
+      "m": 0.0009735725999999999,
+      "radius": 1268.1796,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.24158383013036575,
+        "y": -0.3952354480983786,
+        "z": -0.020713412128773714
+      },
+      "velocity": {
+        "x": 8.409943639123298,
+        "y": -5.126416304915494,
+        "z": -0.2686640942209949
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-87 c",
+      "type": "gas giant planet",
+      "m": 1.92192e-5,
+      "radius": 577.2144,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.4735642632435364,
+        "y": 0.4440969889815717,
+        "z": -0.023274136978809395
+      },
+      "velocity": {
+        "x": -5.7065149725516475,
+        "y": 6.06849315866181,
+        "z": -0.31803625003979363
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-87",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

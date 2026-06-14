@@ -1,0 +1,131 @@
+{
+  "name": "DMPP-8 - System",
+  "description": "DMPP-8 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "DMPP-8",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.99,
+    "m": 0.99
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "DMPP-8",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "DMPP-8"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "DMPP-8",
+    "barycenterMassTwo": "DMPP-8 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "DMPP-8",
+      "type": "star",
+      "m": 0.99,
+      "radius": 12734.8,
+      "tilt": 0,
+      "temperature": 6009,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.00044662541917373373,
+        "y": 0.0036324871081448973,
+        "z": 0.0001903705826121504
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "DMPP-8 b",
+      "type": "gas giant planet",
+      "m": 0.00024351327,
+      "radius": 1015.2957,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.22293082838939915,
+        "y": -0.027334950865090038,
+        "z": -0.001432564071650415
+      },
+      "velocity": {
+        "x": 1.8157497740554196,
+        "y": -14.767828615924907,
+        "z": -0.7739491025931725
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "DMPP-8",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

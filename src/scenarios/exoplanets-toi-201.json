@@ -1,0 +1,199 @@
+{
+  "name": "TOI-201 - System",
+  "description": "TOI-201 is a Sun-like G/F-type star with 3 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-201",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.32,
+    "m": 1.32
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "3-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-201",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-201"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-201",
+    "barycenterMassTwo": "TOI-201 d",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-201",
+      "type": "star",
+      "m": 1.32,
+      "radius": 13453.7,
+      "tilt": 0,
+      "temperature": 6423,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.03740536023107827,
+        "y": -0.07239552199971289,
+        "z": 0.00040100881221558776
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-201 d",
+      "type": "terrestial planet",
+      "m": 1.74174e-5,
+      "radius": 130.6723,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.04591338145159948,
+        "y": -0.016688202215369406,
+        "z": -0.0008745916183338392
+      },
+      "velocity": {
+        "x": 12.73890629091191,
+        "y": 34.95189129469089,
+        "z": 1.8317510044970096
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "TOI-201 b",
+      "type": "gas giant planet",
+      "m": 0.000492492,
+      "radius": 1071.7011,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.20195312410253896,
+        "y": -0.08568445419092335,
+        "z": 0.011411205029621098
+      },
+      "velocity": {
+        "x": 6.799688819146423,
+        "y": -16.01168249655667,
+        "z": 0.11095450065247564
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "TOI-201 c",
+      "type": "gas giant planet",
+      "m": 0.01498497,
+      "radius": 977.6922,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 1.391475387488337,
+        "y": -0.6192869126207148,
+        "z": 0.07938187936100319
+      },
+      "velocity": {
+        "x": 3.056689771996402,
+        "y": 6.862806098662797,
+        "z": -0.04109986046055755
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-201",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

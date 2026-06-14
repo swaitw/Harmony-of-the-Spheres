@@ -1,0 +1,131 @@
+{
+  "name": "HD 77338 - System",
+  "description": "HD 77338 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 77338",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.37,
+    "m": 1.37
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 77338",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 77338"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 77338",
+    "barycenterMassTwo": "HD 77338 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 77338",
+      "type": "star",
+      "m": 1.37,
+      "radius": 9961.9,
+      "tilt": 0,
+      "temperature": 5341,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0007878655857734113,
+        "y": 0.0008304335278128208,
+        "z": 4.352117703485157e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 77338 b",
+      "type": "gas giant planet",
+      "m": 4.77477e-5,
+      "radius": 387.3165,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.0396356023872227,
+        "y": -0.03750088624662297,
+        "z": -0.0019653381693314526
+      },
+      "velocity": {
+        "x": 22.605818762151344,
+        "y": -23.827198652575195,
+        "z": -1.2487305679173375
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 77338",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "name": "GJ 433 - System",
+  "description": "GJ 433 is a cool M-dwarf star with 3 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "GJ 433",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.48,
+    "m": 0.48
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "3-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "GJ 433",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "GJ 433"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "GJ 433",
+    "barycenterMassTwo": "GJ 433 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "GJ 433",
+      "type": "star",
+      "m": 0.48,
+      "radius": 5135.0,
+      "tilt": 0,
+      "temperature": 3461,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.0003294514732767205,
+        "y": 0.0008019610538279042,
+        "z": 6.119608353705072e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "GJ 433 b",
+      "type": "super-Earth",
+      "m": 1.8147129e-5,
+      "radius": 219.0407,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.05349622163572642,
+        "y": 0.026056092682371766,
+        "z": 0.0013655419542762048
+      },
+      "velocity": {
+        "x": -7.978960891605243,
+        "y": -16.336874323772435,
+        "z": -0.8561793037350488
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "GJ 433 d",
+      "type": "super-Earth",
+      "m": 1.5684668999999998e-5,
+      "radius": 201.179,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.025966570763409004,
+        "y": -0.16346127700415378,
+        "z": 0.0031047903246717843
+      },
+      "velocity": {
+        "x": 10.921744814598247,
+        "y": 1.7246953219564853,
+        "z": -0.5408931497623524
+      },
+      "nonStellarProceduralManifestation": true
+    },
+    {
+      "name": "GJ 433 c",
+      "type": "gas giant planet",
+      "m": 9.736326599999999e-5,
+      "radius": 589.4356,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -2.24279523108853,
+        "y": 3.593768782857006,
+        "z": -0.19596327505177308
+      },
+      "velocity": {
+        "x": -1.8964588442046546,
+        "y": -1.1865380037461333,
+        "z": -0.05498165814799501
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "GJ 433",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

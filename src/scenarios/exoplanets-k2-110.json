@@ -1,0 +1,131 @@
+{
+  "name": "K2-110 - System",
+  "description": "K2-110 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "K2-110",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.738,
+    "m": 0.738
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "K2-110",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "K2-110"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "K2-110",
+    "barycenterMassTwo": "K2-110 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "K2-110",
+      "type": "star",
+      "m": 0.738,
+      "radius": 7322.51,
+      "tilt": 0,
+      "temperature": 5010,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.001246101335489912,
+        "y": -7.619713176721436e-20,
+        "z": -3.993322463656977e-21
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "K2-110 b",
+      "type": "sub-Neptune",
+      "m": 4.77477e-5,
+      "radius": 243.671,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 5.437486897320209e-18,
+        "y": 0.08867920145278742,
+        "z": 0.004647480016734031
+      },
+      "velocity": {
+        "x": -19.26004363752715,
+        "y": 1.1777212984961411e-15,
+        "z": 6.172175786852245e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "K2-110",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

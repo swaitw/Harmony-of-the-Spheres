@@ -1,0 +1,131 @@
+{
+  "name": "HD 105779 - System",
+  "description": "HD 105779 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 105779",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.89,
+    "m": 0.89
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 105779",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 105779"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 105779",
+    "barycenterMassTwo": "HD 105779 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 105779",
+      "type": "star",
+      "m": 0.89,
+      "radius": 9653.8,
+      "tilt": 0,
+      "temperature": 5792,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.002213467816052576,
+        "y": -1.3535006667490383e-19,
+        "z": -7.09339642024327e-21
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 105779 b",
+      "type": "gas giant planet",
+      "m": 0.00061084077198144,
+      "radius": 1325.525,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 2.0696530905590268e-16,
+        "y": 3.3753678274704595,
+        "z": 0.17689553210115017
+      },
+      "velocity": {
+        "x": -3.2250407088848503,
+        "y": 1.9720615398659825e-16,
+        "z": 1.0335136591387077e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 105779",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

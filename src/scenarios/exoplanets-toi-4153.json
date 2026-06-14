@@ -1,0 +1,131 @@
+{
+  "name": "TOI-4153 - System",
+  "description": "TOI-4153 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-4153",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.572,
+    "m": 1.572
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-4153",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-4153"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 1e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-4153",
+    "barycenterMassTwo": "TOI-4153 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-4153",
+      "type": "star",
+      "m": 1.572,
+      "radius": 16483.35,
+      "tilt": 0,
+      "temperature": 6860,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.005894016958702612,
+        "y": 0.02196662494072548,
+        "z": 0.0011512220314868892
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-4153 b",
+      "type": "gas giant planet",
+      "m": 0.0010976045121541499,
+      "radius": 1515.2832,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.05858215532011607,
+        "y": -0.0156755289594669,
+        "z": -0.0008215196618526617
+      },
+      "velocity": {
+        "x": 8.441469178088852,
+        "y": -31.46081673721361,
+        "z": -1.6487915396280994
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-4153",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

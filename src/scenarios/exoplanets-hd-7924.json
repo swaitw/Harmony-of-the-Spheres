@@ -1,0 +1,199 @@
+{
+  "name": "HD 7924 - System",
+  "description": "HD 7924 is a orange K-type dwarf star with 3 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 7924",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.65,
+    "m": 0.65
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "3-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 7924",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 7924"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 1e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 7924",
+    "barycenterMassTwo": "HD 7924 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 7924",
+      "type": "star",
+      "m": 0.65,
+      "radius": 8010.6,
+      "tilt": 0,
+      "temperature": 5131,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.04233850678852039,
+        "y": -0.20857434931230037,
+        "z": -0.014203180024906123
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 7924 b",
+      "type": "terrestial planet",
+      "m": 0.006180945061481189,
+      "radius": 94.0089,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.05585111907702456,
+        "y": -0.007838605615102523,
+        "z": -0.0004108039129631005
+      },
+      "velocity": {
+        "x": 3.057200421396031,
+        "y": 21.723299430626305,
+        "z": 1.1384698818596781
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "HD 7924 c",
+      "type": "terrestial planet",
+      "m": 0.00529331706469566,
+      "radius": 94.0089,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.08572981425804627,
+        "y": 0.0557412043554132,
+        "z": 0.0024303371224895353
+      },
+      "velocity": {
+        "x": -9.02425372676258,
+        "y": -13.913030068578616,
+        "z": 0.7741545094303713
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "HD 7924 d",
+      "type": "terrestial planet",
+      "m": 0.00470920057650042,
+      "radius": 94.0089,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.12238314711559879,
+        "y": -0.002064992078547812,
+        "z": 0.005608649641155752
+      },
+      "velocity": {
+        "x": 0.28705912329096334,
+        "y": 15.91541599986738,
+        "z": -0.40401720468433355
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 7924",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

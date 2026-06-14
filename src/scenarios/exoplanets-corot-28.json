@@ -1,0 +1,131 @@
+{
+  "name": "CoRoT-28 - System",
+  "description": "CoRoT-28 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "CoRoT-28",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.01,
+    "m": 1.01
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "CoRoT-28",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "CoRoT-28"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 1e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "CoRoT-28",
+    "barycenterMassTwo": "CoRoT-28 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "CoRoT-28",
+      "type": "star",
+      "m": 1.01,
+      "radius": 18280.6,
+      "tilt": 0,
+      "temperature": 5150,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.009976066183751752,
+        "y": 0.007238103162783803,
+        "z": 0.00037933291298305604
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "CoRoT-28 b",
+      "type": "gas giant planet",
+      "m": 0.00046195064916,
+      "radius": 1006.3268,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.03377760852971402,
+        "y": 0.046427175548492544,
+        "z": 0.0024331451688804047
+      },
+      "velocity": {
+        "x": -21.811478918605076,
+        "y": -15.825249315494741,
+        "z": -0.8293661732255474
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "CoRoT-28",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "name": "HAT-P-34 - System",
+  "description": "HAT-P-34 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HAT-P-34",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.392,
+    "m": 1.392
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HAT-P-34",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HAT-P-34"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 1e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HAT-P-34",
+    "barycenterMassTwo": "HAT-P-34 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HAT-P-34",
+      "type": "star",
+      "m": 1.392,
+      "radius": 15713.1,
+      "tilt": 0,
+      "temperature": 6442,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.03852500779267628,
+        "y": -0.09570263005295214,
+        "z": -0.0050155623126216615
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HAT-P-34 b",
+      "type": "gas giant planet",
+      "m": 0.0031782968217,
+      "radius": 1261.3332,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.03569972461261609,
+        "y": 0.014331529461376839,
+        "z": 0.0007510836328002399
+      },
+      "velocity": {
+        "x": -16.872813917587973,
+        "y": 41.914921263538254,
+        "z": 2.1966679422455635
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HAT-P-34",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

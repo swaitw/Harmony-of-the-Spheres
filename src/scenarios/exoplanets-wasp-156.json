@@ -1,0 +1,131 @@
+{
+  "name": "WASP-156 - System",
+  "description": "WASP-156 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "WASP-156",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.8712,
+    "m": 0.8712
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "WASP-156",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "WASP-156"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 1e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "WASP-156",
+    "barycenterMassTwo": "WASP-156 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "WASP-156",
+      "type": "star",
+      "m": 0.8712,
+      "radius": 8491.236,
+      "tilt": 0,
+      "temperature": 4987,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.003949467000065576,
+        "y": -2.4150367939052555e-19,
+        "z": -1.2656671525541013e-20
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "WASP-156 b",
+      "type": "gas giant planet",
+      "m": 0.00012552539999999998,
+      "radius": 566.6881,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 2.804441170047439e-18,
+        "y": 0.04573723269175948,
+        "z": 0.0023969867959268277
+      },
+      "velocity": {
+        "x": -27.41099132492014,
+        "y": 1.676138896868888e-15,
+        "z": 8.784271735482485e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "WASP-156",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "name": "HD 25463 - System",
+  "description": "HD 25463 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 25463",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.251,
+    "m": 1.251
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 25463",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 25463"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-6,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-7,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 25463",
+    "barycenterMassTwo": "HD 25463 c",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 25463",
+      "type": "star",
+      "m": 1.251,
+      "radius": 14564.914,
+      "tilt": 0,
+      "temperature": 6353,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0001877820445920849,
+        "y": 7.669773130669549e-20,
+        "z": -2.8113212137303897e-21
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 25463 c",
+      "type": "terrestial planet",
+      "m": 1.29129e-5,
+      "radius": 128.1857,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 2.7125926601113874e-18,
+        "y": 0.044239288389627617,
+        "z": 0.002318482861562412
+      },
+      "velocity": {
+        "x": -33.39837521899266,
+        "y": 2.042257980866318e-15,
+        "z": 1.070302055002714e-16
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "HD 25463 b",
+      "type": "sub-Neptune",
+      "m": 2.6126099999999997e-5,
+      "radius": 239.2862,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -1.3948218157621057e-17,
+        "y": -0.0758958446413476,
+        "z": 0.003977532674463731
+      },
+      "velocity": {
+        "x": 25.49883898285732,
+        "y": -4.681920950536235e-15,
+        "z": 8.17149324917329e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 25463",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "name": "TOI-4342 - System",
+  "description": "TOI-4342 is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-4342",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.587,
+    "m": 0.587
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-4342",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-4342"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-4342",
+    "barycenterMassTwo": "TOI-4342 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-4342",
+      "type": "star",
+      "m": 0.587,
+      "radius": 6141.46,
+      "tilt": 0,
+      "temperature": 3866,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.00037234648208702396,
+        "y": 2.8300780868726416e-20,
+        "z": -3.865995723335174e-21
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-4342 b",
+      "type": "super-Earth",
+      "m": 2.1921899999999998e-5,
+      "radius": 218.9466,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 3.1779584437873818e-18,
+        "y": 0.051828872853762385,
+        "z": 0.002716236129008785
+      },
+      "velocity": {
+        "x": -21.13654115197136,
+        "y": 1.2924661625747442e-15,
+        "z": 6.773528137901644e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "TOI-4342 c",
+      "type": "super-Earth",
+      "m": 1.4414399999999999e-5,
+      "radius": 220.8268,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -1.4755746577272804e-17,
+        "y": -0.08028981459426773,
+        "z": 0.004207810881932684
+      },
+      "velocity": {
+        "x": 16.982028838822146,
+        "y": -3.118123011661234e-15,
+        "z": 5.442151076250739e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-4342",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

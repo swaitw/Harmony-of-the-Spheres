@@ -1,0 +1,233 @@
+{
+  "name": "KOI-94 - System",
+  "description": "KOI-94 is a Sun-like G/F-type star with 4 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "KOI-94",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.277,
+    "m": 1.277
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "4-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "KOI-94",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "KOI-94"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 1e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "KOI-94",
+    "barycenterMassTwo": "KOI-94 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "KOI-94",
+      "type": "star",
+      "m": 1.277,
+      "radius": 15610.4,
+      "tilt": 0,
+      "temperature": 6182,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.00021683223913851273,
+        "y": 0.0034047920662608365,
+        "z": -0.0004075317048315526
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "KOI-94 b",
+      "type": "super-Earth",
+      "m": 3.15315e-5,
+      "radius": 160.7552,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.038392499999999996,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": 40.469721224922786,
+        "z": 2.1209282176019615
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "KOI-94 c",
+      "type": "gas giant planet",
+      "m": 4.68468e-5,
+      "radius": 406.1183,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 3.535616541478367e-18,
+        "y": 0.05774100000000001,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -35.29590086399156,
+        "y": 2.1612506008054783e-15,
+        "z": 1.8497797820761732
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "KOI-94 d",
+      "type": "gas giant planet",
+      "m": 0.000318318,
+      "radius": 1059.4799,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.16469519999999999,
+        "y": 2.0169344951493316e-17,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -2.163685981928115e-15,
+        "y": -17.667836828010795,
+        "z": 0.9259320928911767
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "KOI-94 e",
+      "type": "gas giant planet",
+      "m": 0.00010510499999999999,
+      "radius": 616.6982,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -5.489098412023475e-17,
+        "y": -0.2988126,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 13.097428659106228,
+        "y": -2.4059586126652877e-15,
+        "z": 0.6864071503418175
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "KOI-94",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

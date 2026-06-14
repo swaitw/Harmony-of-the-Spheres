@@ -1,0 +1,131 @@
+{
+  "name": "TOI-2420 - System",
+  "description": "TOI-2420 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-2420",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.158,
+    "m": 1.158
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-2420",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-2420"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-2420",
+    "barycenterMassTwo": "TOI-2420 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-2420",
+      "type": "star",
+      "m": 1.158,
+      "radius": 24329.63,
+      "tilt": 0,
+      "temperature": 5707,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.005578958673349577,
+        "y": -0.020089505324058,
+        "z": -0.001052846360928713
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-2420 b",
+      "type": "gas giant planet",
+      "m": 0.00088476468066987,
+      "radius": 1412.0164,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.06228714523449897,
+        "y": 0.017250081073221717,
+        "z": 0.0009040384414999704
+      },
+      "velocity": {
+        "x": -7.301867134713727,
+        "y": 26.2935983697336,
+        "z": 1.3779890999179307
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-2420",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

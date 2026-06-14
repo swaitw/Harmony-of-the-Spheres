@@ -1,0 +1,267 @@
+{
+  "name": "Kepler-32 - System",
+  "description": "Kepler-32 is a orange K-type dwarf star with 5 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-32",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.58,
+    "m": 0.58
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "5-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-32",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-32"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-6,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-7,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-32",
+    "barycenterMassTwo": "Kepler-32 f",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-32",
+      "type": "star",
+      "m": 0.58,
+      "radius": 5443.1,
+      "tilt": 0,
+      "temperature": 3900,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.07498488218581505,
+        "y": -0.08412005529422238,
+        "z": -0.019442952371733106
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-32 f",
+      "type": "terrestial planet",
+      "m": 0.0029105916839999996,
+      "radius": 77.0873,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.013,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": 41.92231672202543,
+        "z": 2.1970555218016563
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-32 e",
+      "type": "terrestial planet",
+      "m": 1.2257675429999999e-5,
+      "radius": 141.0133,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.010197560814373266,
+        "y": 0.031384865037740066,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -25.024551723077796,
+        "y": 8.130969744227093,
+        "z": 1.3789729221024558
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-32 b",
+      "type": "super-Earth",
+      "m": 0.003912909,
+      "radius": 206.8195,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.04045084971874737,
+        "y": 0.029389262614623664,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -12.564656902798099,
+        "y": -17.29376659793463,
+        "z": 1.1202828978113424
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-32 c",
+      "type": "super-Earth",
+      "m": 0.0004771767,
+      "radius": 188.0177,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.07281152949374527,
+        "y": -0.05290067270632257,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 9.36514231620617,
+        "y": -12.890012566665705,
+        "z": 0.8350095711788706
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-32 d",
+      "type": "sub-Neptune",
+      "m": 0.0001198464267,
+      "radius": 253.8239,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.04017220926874314,
+        "y": -0.12363734711836998,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 12.60815677221355,
+        "y": 4.0966384684844845,
+        "z": 0.694769959474296
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-32",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

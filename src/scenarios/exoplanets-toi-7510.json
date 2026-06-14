@@ -1,0 +1,199 @@
+{
+  "name": "TOI-7510 - System",
+  "description": "TOI-7510 is a Sun-like G/F-type star with 3 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-7510",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.063,
+    "m": 1.063
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "3-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-7510",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-7510"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-7510",
+    "barycenterMassTwo": "TOI-7510 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-7510",
+      "type": "star",
+      "m": 1.063,
+      "radius": 10629.45,
+      "tilt": 0,
+      "temperature": 5720,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.008042783354007883,
+        "y": 0.001984542143693456,
+        "z": -1.916197764288782e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-7510 b",
+      "type": "gas giant planet",
+      "m": 5.43543e-5,
+      "radius": 687.2048,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.009875414695299359,
+        "y": 0.09543144768286214,
+        "z": 0.005001350246824533
+      },
+      "velocity": {
+        "x": -21.381601262615916,
+        "y": -2.20654540578581,
+        "z": -0.11564014460443132
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "TOI-7510 c",
+      "type": "gas giant planet",
+      "m": 0.00039339299999999997,
+      "radius": 1016.2358,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.0950931313868705,
+        "y": -0.12623638279410973,
+        "z": -0.0010080571416773636
+      },
+      "velocity": {
+        "x": 13.057035100393044,
+        "y": 9.842580294468872,
+        "z": -0.8505265963907377
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "TOI-7510 d",
+      "type": "gas giant planet",
+      "m": 0.00057057,
+      "radius": 988.9733,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.20202016798157946,
+        "y": -0.15799040110595017,
+        "z": -0.0050290188978934025
+      },
+      "velocity": {
+        "x": 8.018498108155114,
+        "y": -10.273297330000585,
+        "z": 0.6331316590080163
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-7510",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

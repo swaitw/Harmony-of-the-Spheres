@@ -1,0 +1,131 @@
+{
+  "name": "HD 178911 B - System",
+  "description": "HD 178911 B is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 178911 B",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.24,
+    "m": 1.24
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 178911 B",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 178911 B"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 178911 B",
+    "barycenterMassTwo": "HD 178911 B b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 178911 B",
+      "type": "star",
+      "m": 1.24,
+      "radius": 11091.6,
+      "tilt": 0,
+      "temperature": 5588,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.019902342720611515,
+        "y": -0.08031142057630142,
+        "z": -0.0042089432034702985
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 178911 B b",
+      "type": "gas giant planet",
+      "m": 0.0076641812247,
+      "radius": 1184.5117,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.29373880732556057,
+        "y": -0.07259338241578617,
+        "z": -0.0038044579630559256
+      },
+      "velocity": {
+        "x": 3.2200315010850082,
+        "y": 12.993711734486272,
+        "z": 0.680971576648419
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 178911 B",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,233 @@
+{
+  "name": "Kepler-324 - System",
+  "description": "Kepler-324 is a orange K-type dwarf star with 4 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-324",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.901,
+    "m": 0.901
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "4-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-324",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-324"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 1e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-324",
+    "barycenterMassTwo": "Kepler-324 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-324",
+      "type": "star",
+      "m": 0.901,
+      "radius": 8626.8,
+      "tilt": 0,
+      "temperature": 5194,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.013846479723058754,
+        "y": -0.21429849439620846,
+        "z": -0.01199227535498337
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-324 b",
+      "type": "terrestial planet",
+      "m": 0.0072504432,
+      "radius": 107.1701,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.05,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": 26.642829616091674,
+        "z": 1.396291533995806
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-324 e",
+      "type": "super-Earth",
+      "m": 0.000705747042,
+      "radius": 191.6488,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 6.71841234012238e-18,
+        "y": 0.10972,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -17.9854972810392,
+        "y": 1.1012940838149042e-15,
+        "z": 0.9425799718004403
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "KOI-1831 d",
+      "type": "terrestial planet",
+      "m": 6.69669e-6,
+      "radius": 106.23,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.19924,
+        "y": 2.4399862826211866e-17,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -1.6345113279136368e-15,
+        "y": -13.346797860833403,
+        "z": 0.6994760364259236
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-324 c",
+      "type": "sub-Neptune",
+      "m": 1.8618599999999998e-5,
+      "radius": 296.1279,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -4.7761225166746774e-17,
+        "y": -0.26,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 11.683653685912011,
+        "y": -2.1462523633197477e-15,
+        "z": 0.6123143435907675
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-324",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

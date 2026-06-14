@@ -1,0 +1,233 @@
+{
+  "name": "HD 160691 - System",
+  "description": "HD 160691 is a Sun-like G/F-type star with 4 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 160691",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.13,
+    "m": 1.13
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "4-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 160691",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 160691"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 160691",
+    "barycenterMassTwo": "HD 160691 d",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 160691",
+      "type": "star",
+      "m": 1.13,
+      "radius": 13659.1,
+      "tilt": 0,
+      "temperature": 5773,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.05654459226613717,
+        "y": -0.005518517915963476,
+        "z": 0.0013111243145665905
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 160691 d",
+      "type": "sub-Neptune",
+      "m": 3.150147e-5,
+      "radius": 303.6486,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.09104021276768098,
+        "y": -0.027795641052846022,
+        "z": -0.0014567078213281936
+      },
+      "velocity": {
+        "x": 6.33074229861717,
+        "y": -20.678546903294716,
+        "z": -1.0837167220018846
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 160691 e",
+      "type": "terrestial planet",
+      "m": 0.006681070943546999,
+      "radius": 94.0089,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.20129429613787184,
+        "y": -0.873097937731717,
+        "z": -0.010549387042928723
+      },
+      "velocity": {
+        "x": 7.092467976158606,
+        "y": 1.63967236626357,
+        "z": -0.37170049626655816
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "HD 160691 b",
+      "type": "terrestial planet",
+      "m": 0.0041040864367503,
+      "radius": 94.0089,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -1.106850135605091,
+        "y": -0.8950812058420791,
+        "z": 0.04690921827617006
+      },
+      "velocity": {
+        "x": 3.610891905456312,
+        "y": -4.452969132235945,
+        "z": 0.23337022343641692
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "skyblue"
+    },
+    {
+      "name": "HD 160691 c",
+      "type": "terrestial planet",
+      "m": 0.004199530307372399,
+      "radius": 94.0089,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 3.9799553320700864,
+        "y": -0.4188842278448971,
+        "z": 0.2085806205994921
+      },
+      "velocity": {
+        "x": 0.35510337006352266,
+        "y": 3.383219466403378,
+        "z": 0.018610179040953165
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 160691",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

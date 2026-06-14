@@ -1,0 +1,165 @@
+{
+  "name": "TIC 139270665 - System",
+  "description": "TIC 139270665 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TIC 139270665",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.035,
+    "m": 1.035
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TIC 139270665",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TIC 139270665"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TIC 139270665",
+    "barycenterMassTwo": "TIC 139270665 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TIC 139270665",
+      "type": "star",
+      "m": 1.035,
+      "radius": 10434.32,
+      "tilt": 0,
+      "temperature": 5844,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.02041410360116586,
+        "y": 0.024156654821257628,
+        "z": -0.0016352059721926181
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TIC 139270665 b",
+      "type": "gas giant planet",
+      "m": 0.00044190512097732,
+      "radius": 679.6646,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.06848885893701968,
+        "y": -0.12863228158738468,
+        "z": -0.00674133222210566
+      },
+      "velocity": {
+        "x": 15.537440150075247,
+        "y": 8.250081505334384,
+        "z": 0.43236845059866474
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "TIC 139270665 c",
+      "type": "gas giant planet",
+      "m": 0.00466720527342069,
+      "radius": 1212.7144,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.6212212928548427,
+        "y": 0.6053936581901292,
+        "z": -0.031727337217781176
+      },
+      "velocity": {
+        "x": -5.998165916513388,
+        "y": -6.138125350696769,
+        "z": 0.32168551859095623
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TIC 139270665",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

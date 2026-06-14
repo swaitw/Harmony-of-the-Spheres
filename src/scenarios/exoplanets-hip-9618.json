@@ -1,0 +1,165 @@
+{
+  "name": "HIP 9618 - System",
+  "description": "HIP 9618 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HIP 9618",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.942,
+    "m": 0.942
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HIP 9618",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HIP 9618"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HIP 9618",
+    "barycenterMassTwo": "HIP 9618 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HIP 9618",
+      "type": "star",
+      "m": 0.942,
+      "radius": 9852.011,
+      "tilt": 0,
+      "temperature": 5649,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.00016140781690773457,
+        "y": 2.2271299393930014e-20,
+        "z": -2.1993929793352054e-21
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HIP 9618 b",
+      "type": "sub-Neptune",
+      "m": 2.4924900000000003e-5,
+      "radius": 359.9018,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 8.87868929381831e-18,
+        "y": 0.14480128253941318,
+        "z": 0.007588713655226856
+      },
+      "velocity": {
+        "x": -16.019169550992594,
+        "y": 9.795469584329101e-16,
+        "z": 5.133588079492629e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HIP 9618 c",
+      "type": "sub-Neptune",
+      "m": 2.1021e-5,
+      "radius": 322.315,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -4.936935111052717e-17,
+        "y": -0.2686313448489804,
+        "z": 0.014078372229351892
+      },
+      "velocity": {
+        "x": 11.761097741042263,
+        "y": -2.159491651839899e-15,
+        "z": 3.769023791961871e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HIP 9618",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

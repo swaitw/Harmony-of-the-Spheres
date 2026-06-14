@@ -1,0 +1,267 @@
+{
+  "name": "Kepler-292 - System",
+  "description": "Kepler-292 is a Sun-like G/F-type star with 5 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-292",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.865,
+    "m": 0.865
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "5-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-292",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-292"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-6,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-7,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-292",
+    "barycenterMassTwo": "Kepler-292 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-292",
+      "type": "star",
+      "m": 0.865,
+      "radius": 8483.02,
+      "tilt": 0,
+      "temperature": 5299,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -9.861032474710982e-5,
+        "y": 0.00031999427740506744,
+        "z": -9.294268176853345e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-292 b",
+      "type": "terrestial planet",
+      "m": 6.906899999999999e-6,
+      "radius": 124.0917,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.035,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": 31.201608671897368,
+        "z": 1.6352070205526217
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-292 c",
+      "type": "terrestial planet",
+      "m": 8.288279999999999e-6,
+      "radius": 138.193,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.013905764746872634,
+        "y": 0.04279754323328191,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -26.17044313719129,
+        "y": 8.503292434416744,
+        "z": 1.4421170394963738
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-292 d",
+      "type": "super-Earth",
+      "m": 1.6816799999999998e-5,
+      "radius": 209.6398,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.05501315561749642,
+        "y": 0.03996939715588818,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -13.15755629333435,
+        "y": -18.109822599727107,
+        "z": 1.1731466610226253
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-292 e",
+      "type": "sub-Neptune",
+      "m": 2.285283e-5,
+      "radius": 251.0037,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.07847464845436991,
+        "y": -0.057015169472369884,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 11.016504748913018,
+        "y": -15.162917963188706,
+        "z": 0.9822474230168807
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-292 f",
+      "type": "super-Earth",
+      "m": 1.837836e-5,
+      "radius": 220.9208,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.043571396206867556,
+        "y": -0.13409896879761665,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 14.784538653286416,
+        "y": 4.803787808169481,
+        "z": 0.8146990481295061
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-292",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

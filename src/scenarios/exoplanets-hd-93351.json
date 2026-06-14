@@ -1,0 +1,165 @@
+{
+  "name": "HD 93351 - System",
+  "description": "HD 93351 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 93351",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.94,
+    "m": 0.94
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 93351",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 93351"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-6,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-7,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 93351",
+    "barycenterMassTwo": "HD 93351 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 93351",
+      "type": "star",
+      "m": 0.94,
+      "radius": 9360.4374,
+      "tilt": 0,
+      "temperature": 5408,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.02046390725591362,
+        "y": 0.017399098043375676,
+        "z": -0.0009733129428228908
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 93351 b",
+      "type": "super-Earth",
+      "m": 1.0498825777439999e-5,
+      "radius": 158.875,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.013748727597202874,
+        "y": -0.00774428766077314,
+        "z": -0.00040586091843017823
+      },
+      "velocity": {
+        "x": 29.65503044831636,
+        "y": 52.503495458419856,
+        "z": 2.751591601573024
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "HD 93351 c",
+      "type": "gas giant planet",
+      "m": 0.012474513890308469,
+      "radius": 1156.309,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -6.626081693388522,
+        "y": -7.396814577551035,
+        "z": 0.38765062577787646
+      },
+      "velocity": {
+        "x": 1.517071525902103,
+        "y": -1.355273428765218,
+        "z": 0.071026870722898
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 93351",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

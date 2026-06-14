@@ -1,0 +1,199 @@
+{
+  "name": "ups And - System",
+  "description": "ups And is a Sun-like G/F-type star with 3 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "ups And",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.3,
+    "m": 1.3
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "3-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "ups And",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "ups And"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 1e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "ups And",
+    "barycenterMassTwo": "ups And b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "ups And",
+      "type": "star",
+      "m": 1.3,
+      "radius": 16021.2,
+      "tilt": 0,
+      "temperature": 6157,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.024921741973439087,
+        "y": -0.08292362229209753,
+        "z": 0.002435587608985946
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "ups And b",
+      "type": "gas giant planet",
+      "m": 0.000656248593,
+      "radius": 1316.1241,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.04741046242996033,
+        "y": -0.033274966308879904,
+        "z": -0.0017438670899664105
+      },
+      "velocity": {
+        "x": 17.299777505639753,
+        "y": 24.58135943187888,
+        "z": 1.2882544595830117
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "ups And c",
+      "type": "gas giant planet",
+      "m": 0.013343053112969579,
+      "radius": 1156.309,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.6119736505004986,
+        "y": 0.01781219013935314,
+        "z": -0.028242071301569187
+      },
+      "velocity": {
+        "x": -0.31054180713164364,
+        "y": 10.265145076138388,
+        "z": -0.2548923328705069
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "ups And d",
+      "type": "gas giant planet",
+      "m": 0.009782996738765249,
+      "radius": 1175.1108,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -1.3245371127643664,
+        "y": 1.1593386171922675,
+        "z": -0.09049524275018203
+      },
+      "velocity": {
+        "x": -4.048620728805835,
+        "y": -4.630396056989901,
+        "z": -0.06241820874880849
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "ups And",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "name": "HIP 14810 - System",
+  "description": "HIP 14810 is a Sun-like G/F-type star with 3 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HIP 14810",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.01,
+    "m": 1.01
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "3-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HIP 14810",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HIP 14810"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HIP 14810",
+    "barycenterMassTwo": "HIP 14810 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HIP 14810",
+      "type": "star",
+      "m": 1.01,
+      "radius": 10988.9,
+      "tilt": 0,
+      "temperature": 5544,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.051613860462849714,
+        "y": 0.09705567822227731,
+        "z": 0.004474351023354477
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HIP 14810 b",
+      "type": "gas giant planet",
+      "m": 0.003722329611,
+      "radius": 1222.1152,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.055557536704870805,
+        "y": 0.02148640199192701,
+        "z": 0.0011260546131796076
+      },
+      "velocity": {
+        "x": -9.995338871027348,
+        "y": -25.774225285571166,
+        "z": -1.3507699099575936
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HIP 14810 c",
+      "type": "gas giant planet",
+      "m": 0.0012503209719,
+      "radius": 1278.5206,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.00915451271883512,
+        "y": 0.4627879335255252,
+        "z": -0.011711352936992625
+      },
+      "velocity": {
+        "x": -9.970484052747734,
+        "y": -0.18565364876485188,
+        "z": 0.457389905272393
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HIP 14810 d",
+      "type": "gas giant planet",
+      "m": 0.0005631216590999999,
+      "radius": 1325.525,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.9498023682494027,
+        "y": 1.2617253103710016,
+        "z": -0.07617028578799773
+      },
+      "velocity": {
+        "x": -4.364506079657574,
+        "y": -3.2922661434052842,
+        "z": -0.11181933776642702
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HIP 14810",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

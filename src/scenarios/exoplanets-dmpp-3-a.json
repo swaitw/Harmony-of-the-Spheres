@@ -1,0 +1,131 @@
+{
+  "name": "DMPP-3 A - System",
+  "description": "DMPP-3 A is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "DMPP-3 A",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.9,
+    "m": 0.9
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "DMPP-3 A",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "DMPP-3 A"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "DMPP-3 A",
+    "barycenterMassTwo": "DMPP-3 A b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "DMPP-3 A",
+      "type": "star",
+      "m": 0.9,
+      "radius": 9345.7,
+      "tilt": 0,
+      "temperature": 5138,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.0003157109703842808,
+        "y": 0.00012738070142330533,
+        "z": 6.675739685111558e-6
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "DMPP-3 A b",
+      "type": "terrestial planet",
+      "m": 8.018009999999999e-6,
+      "radius": 135.3728,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.012945055284717627,
+        "y": 0.03199622625889677,
+        "z": 0.0016768511636665092
+      },
+      "velocity": {
+        "x": -35.437705034772065,
+        "y": -14.298140221947191,
+        "z": -0.7493337769097822
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "DMPP-3 A",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

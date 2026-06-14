@@ -1,0 +1,233 @@
+{
+  "name": "Kepler-167 - System",
+  "description": "Kepler-167 is a orange K-type dwarf star with 4 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-167",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.777,
+    "m": 0.777
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "4-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-167",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-167"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 1e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-167",
+    "barycenterMassTwo": "Kepler-167 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-167",
+      "type": "star",
+      "m": 0.777,
+      "radius": 7692.23,
+      "tilt": 0,
+      "temperature": 4884,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.006575637540539721,
+        "y": 0.0021866305320275363,
+        "z": 0.000290610228010555
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-167 b",
+      "type": "super-Earth",
+      "m": 1.08108e-5,
+      "radius": 161.5072,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.04825,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": 25.186325089622727,
+        "z": 1.3199593662478708
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-167 c",
+      "type": "super-Earth",
+      "m": 1.033032e-5,
+      "radius": 157.3708,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 4.188292053083948e-18,
+        "y": 0.0684,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -21.15365478488308,
+        "y": 1.295287781128758e-15,
+        "z": 1.108616070995801
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-167 d",
+      "type": "terrestial planet",
+      "m": 6.18618e-6,
+      "radius": 116.383,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.1404,
+        "y": 1.719404106002884e-17,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -1.8081762531201054e-15,
+        "y": -14.764879591234209,
+        "z": 0.7737945507580821
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-167 e",
+      "type": "gas giant planet",
+      "m": 0.0009639830932832099,
+      "radius": 955.1301,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.478456255258514,
+        "y": 1.248131679596904,
+        "z": -0.025074829822178638
+      },
+      "velocity": {
+        "x": -5.073477304715686,
+        "y": -1.9501981486331652,
+        "z": -0.2658896787830584
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-167",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

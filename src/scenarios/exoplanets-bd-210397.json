@@ -1,0 +1,165 @@
+{
+  "name": "BD-210397 - System",
+  "description": "BD-210397 is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "BD-210397",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.679,
+    "m": 0.679
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "BD-210397",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "BD-210397"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "BD-210397",
+    "barycenterMassTwo": "BD-210397 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "BD-210397",
+      "type": "star",
+      "m": 0.679,
+      "radius": 7671.69,
+      "tilt": 0,
+      "temperature": 4051,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.005118851782244474,
+        "y": -0.024543497363548602,
+        "z": 0.001085660718046943
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "BD-210397 b",
+      "type": "gas giant planet",
+      "m": 0.000642642,
+      "radius": 1316.1241,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 1.3576554248429262,
+        "y": -1.9362756486946855,
+        "z": -0.10147590682791852
+      },
+      "velocity": {
+        "x": 2.8919792195648193,
+        "y": 2.0222104774294656,
+        "z": 0.10597956036497683
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    },
+    {
+      "name": "BD-210397 c",
+      "type": "gas giant planet",
+      "m": 0.0045813057898608,
+      "radius": 1212.7144,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 3.3445771341235035,
+        "y": -0.3510474633876596,
+        "z": 0.01839761797909193
+      },
+      "velocity": {
+        "x": 0.3529982770640509,
+        "y": 3.353951477812212,
+        "z": -0.1757731487752123
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "BD-210397",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

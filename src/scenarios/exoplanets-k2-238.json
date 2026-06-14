@@ -1,0 +1,131 @@
+{
+  "name": "K2-238 - System",
+  "description": "K2-238 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "K2-238",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.19,
+    "m": 1.19
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "K2-238",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "K2-238"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-6,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-7,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "K2-238",
+    "barycenterMassTwo": "K2-238 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "K2-238",
+      "type": "star",
+      "m": 1.19,
+      "radius": 16329.3,
+      "tilt": 0,
+      "temperature": 5630,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.02204930082036645,
+        "y": -1.3482799770243976e-18,
+        "z": -7.066035944763849e-20
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "K2-238 b",
+      "type": "gas giant planet",
+      "m": 0.0008208214013999999,
+      "radius": 1369.869,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 2.8166876380389123e-18,
+        "y": 0.045936958598710394,
+        "z": 0.0024074539871754164
+      },
+      "velocity": {
+        "x": -31.966354594901127,
+        "y": 1.954692177765424e-15,
+        "z": 1.0244107621861747e-16
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "K2-238",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

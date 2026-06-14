@@ -1,0 +1,165 @@
+{
+  "name": "HD 4203 - System",
+  "description": "HD 4203 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 4203",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.25,
+    "m": 1.25
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 4203",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 4203"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 4203",
+    "barycenterMassTwo": "HD 4203 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 4203",
+      "type": "star",
+      "m": 1.25,
+      "radius": 14583.4,
+      "tilt": 0,
+      "temperature": 5596,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.005594315598965101,
+        "y": -0.021260906305774496,
+        "z": -0.0006895099488222467
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 4203 b",
+      "type": "gas giant planet",
+      "m": 0.0021284089827,
+      "radius": 1250.3179,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.49166087836321004,
+        "y": -0.2710394265636858,
+        "z": -0.0142045744443517
+      },
+      "velocity": {
+        "x": 5.586795351663035,
+        "y": 10.106592578820246,
+        "z": 0.5296640731744336
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 4203 c",
+      "type": "gas giant planet",
+      "m": 0.00207104898,
+      "radius": 1250.3179,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 3.799552825388756,
+        "y": 3.664157021540159,
+        "z": -0.19203033244328233
+      },
+      "velocity": {
+        "x": -2.365029006836831,
+        "y": 2.445702879015422,
+        "z": -0.12817385667533865
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 4203",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

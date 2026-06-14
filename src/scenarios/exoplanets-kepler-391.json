@@ -1,0 +1,165 @@
+{
+  "name": "Kepler-391 - System",
+  "description": "Kepler-391 is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-391",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.27,
+    "m": 1.27
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-391",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-391"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-391",
+    "barycenterMassTwo": "Kepler-391 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-391",
+      "type": "star",
+      "m": 1.27,
+      "radius": 29567.33,
+      "tilt": 0,
+      "temperature": 5038,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.08259109719490722,
+        "y": 0.009211797101526906,
+        "z": 0.001992960852183457
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-391 b",
+      "type": "super-Earth",
+      "m": 0.0033033,
+      "radius": 235.0222,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.010082306255692033,
+        "y": 0.043611416350981314,
+        "z": 0.002285577482343043
+      },
+      "velocity": {
+        "x": -39.38808286375719,
+        "y": -9.080993178014417,
+        "z": -0.47591468614418253
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-391 c",
+      "type": "sub-Neptune",
+      "m": 0.0013513499999999999,
+      "radius": 270.7455,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.07036965040445486,
+        "y": -0.09672277745002739,
+        "z": 0.0050690259722437495
+      },
+      "velocity": {
+        "x": 18.662789570664113,
+        "y": 13.540727750764681,
+        "z": -0.7096394712938267
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-391",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

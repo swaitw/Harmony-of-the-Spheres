@@ -1,0 +1,165 @@
+{
+  "name": "HD 50499 - System",
+  "description": "HD 50499 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 50499",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.253,
+    "m": 1.253
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 50499",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 50499"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 50499",
+    "barycenterMassTwo": "HD 50499 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 50499",
+      "type": "star",
+      "m": 1.253,
+      "radius": 13874.77,
+      "tilt": 0,
+      "temperature": 6102,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.007626061895619119,
+        "y": 0.0029607739896187254,
+        "z": -0.00034855778198891605
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 50499 b",
+      "type": "gas giant planet",
+      "m": 0.00156146954964,
+      "radius": 1269.1197,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.8838594709179649,
+        "y": -2.667319818583247,
+        "z": -0.13978830832959233
+      },
+      "velocity": {
+        "x": 4.480322775376206,
+        "y": 1.4805607897528938,
+        "z": 0.07759290308449485
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 50499 c",
+      "type": "gas giant planet",
+      "m": 0.0027965194257,
+      "radius": 1240.917,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -8.302953778141012,
+        "y": -3.519564718417504,
+        "z": 0.18445257093520367
+      },
+      "velocity": {
+        "x": 0.9152691539990097,
+        "y": -2.153283951201254,
+        "z": 0.11284883004827018
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 50499",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "name": "HD 33142 - System",
+  "description": "HD 33142 is a orange K-type dwarf star with 3 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 33142",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.52,
+    "m": 1.52
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "3-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 33142",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 33142"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 33142",
+    "barycenterMassTwo": "HD 33142 d",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 33142",
+      "type": "star",
+      "m": 1.52,
+      "radius": 42825.9,
+      "tilt": 0,
+      "temperature": 5025,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.010272214190735091,
+        "y": 0.0020731636646552417,
+        "z": 0.00015424055910288512
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 33142 d",
+      "type": "gas giant planet",
+      "m": 0.0001908877412442,
+      "radius": 876.1626,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.2301223287544121,
+        "y": -0.28378795417088293,
+        "z": -0.014872696465373446
+      },
+      "velocity": {
+        "x": 10.867642382044448,
+        "y": -8.788382577794122,
+        "z": -0.46057961439195905
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 33142 b",
+      "type": "gas giant planet",
+      "m": 0.0012025927698384598,
+      "radius": 1287.9214,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.36508562985827847,
+        "y": -0.9529908665620432,
+        "z": 0.041542014832100016
+      },
+      "velocity": {
+        "x": 7.325205735484152,
+        "y": -2.8175207883594577,
+        "z": -0.2586352134813299
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 33142 c",
+      "type": "gas giant planet",
+      "m": 0.00084945044853669,
+      "radius": 1306.7232,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.6713547388538077,
+        "y": -1.664850100774006,
+        "z": 0.07409596882636237
+      },
+      "velocity": {
+        "x": 5.568337053720889,
+        "y": 2.2540642146202505,
+        "z": 0.19366190277453096
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 33142",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

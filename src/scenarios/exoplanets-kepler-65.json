@@ -1,0 +1,233 @@
+{
+  "name": "Kepler-65 - System",
+  "description": "Kepler-65 is a Sun-like G/F-type star with 4 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-65",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.25,
+    "m": 1.25
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "4-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-65",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-65"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-6,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-7,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-65",
+    "barycenterMassTwo": "Kepler-65 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-65",
+      "type": "star",
+      "m": 1.25,
+      "radius": 14480.7,
+      "tilt": 0,
+      "temperature": 6211,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0059886689918497455,
+        "y": 2.1794665533299236e-5,
+        "z": -0.0003756362996760854
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-65 b",
+      "type": "terrestial planet",
+      "m": 7.207199999999999e-6,
+      "radius": 133.4926,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.03402,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": 38.57335047928877,
+        "z": 2.0215436381259577
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-65 c",
+      "type": "sub-Neptune",
+      "m": 1.62162e-5,
+      "radius": 242.5429,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 4.080523134758981e-18,
+        "y": 0.06664,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -27.45304691796827,
+        "y": 1.6810143017465977e-15,
+        "z": 1.4387532235238558
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-65 d",
+      "type": "super-Earth",
+      "m": 1.2432419999999998e-5,
+      "radius": 142.8935,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.08282400000000001,
+        "y": 1.014301464925804e-17,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -3.006835640241709e-15,
+        "y": -24.552676268252895,
+        "z": 1.2867512386745616
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-65 e",
+      "type": "gas giant planet",
+      "m": 0.00078078,
+      "radius": 1306.7232,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -1.1247187142321876e-16,
+        "y": -0.6122683509048,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 10.15781697692479,
+        "y": -1.865960707067338e-15,
+        "z": 0.5323486301242033
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-65",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

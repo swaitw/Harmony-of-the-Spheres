@@ -1,0 +1,131 @@
+{
+  "name": "TOI-2145 - System",
+  "description": "TOI-2145 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-2145",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.71,
+    "m": 1.71
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-2145",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-2145"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-2145",
+    "barycenterMassTwo": "TOI-2145 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-2145",
+      "type": "star",
+      "m": 1.71,
+      "radius": 28242.5,
+      "tilt": 0,
+      "temperature": 6206,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.09632093583205142,
+        "y": 0.010449461889517947,
+        "z": 0.0005476330923324073
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-2145 b",
+      "type": "gas giant planet",
+      "m": 0.00542121185133528,
+      "radius": 1150.688,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.009481933033437131,
+        "y": 0.08716305898793755,
+        "z": 0.004568022357074532
+      },
+      "velocity": {
+        "x": -30.3822844023775,
+        "y": -3.296048987031293,
+        "z": -0.17273860781842756
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-2145",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

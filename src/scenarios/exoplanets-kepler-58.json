@@ -1,0 +1,233 @@
+{
+  "name": "Kepler-58 - System",
+  "description": "Kepler-58 is a Sun-like G/F-type star with 4 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-58",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.017,
+    "m": 1.017
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "4-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-58",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-58"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 1e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-58",
+    "barycenterMassTwo": "Kepler-58 e",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-58",
+      "type": "star",
+      "m": 1.017,
+      "radius": 11122.41,
+      "tilt": 0,
+      "temperature": 6100,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.007173209478825532,
+        "y": -0.04556995609510486,
+        "z": -0.00329757174434617
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-58 e",
+      "type": "super-Earth",
+      "m": 0.001795181388,
+      "radius": 151.3543,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.0533,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": 27.41573073858247,
+        "z": 1.4367975654309184
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-58 b",
+      "type": "sub-Neptune",
+      "m": 0.0001066065,
+      "radius": 261.3446,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 5.461532837221468e-18,
+        "y": 0.0891936,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -21.612910431469952,
+        "y": 1.323409079007906e-15,
+        "z": 1.1326846395566164
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-58 c",
+      "type": "sub-Neptune",
+      "m": 0.000159159,
+      "radius": 268.8654,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.12307,
+        "y": 1.5071728157106476e-17,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -2.2095212462276074e-15,
+        "y": -18.04211016405679,
+        "z": 0.9455469272782027
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-58 d",
+      "type": "sub-Neptune",
+      "m": 0.0007367650289999999,
+      "radius": 276.3861,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -4.33524966898163e-17,
+        "y": -0.236,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 13.028890349080436,
+        "y": -2.3933683293664796e-15,
+        "z": 0.6828152097175533
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-58",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

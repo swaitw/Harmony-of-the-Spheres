@@ -1,0 +1,199 @@
+{
+  "name": "HD 224018 - System",
+  "description": "HD 224018 is a Sun-like G/F-type star with 3 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 224018",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.013,
+    "m": 1.013
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "3-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 224018",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 224018"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 224018",
+    "barycenterMassTwo": "HD 224018 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 224018",
+      "type": "star",
+      "m": 1.013,
+      "radius": 11779.69,
+      "tilt": 0,
+      "temperature": 5784,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -7.583361865978215e-6,
+        "y": -0.00016798711442937445,
+        "z": 3.330316311646917e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 224018 b",
+      "type": "terrestial planet",
+      "m": 1.2312299999999999e-5,
+      "radius": 85.5481,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.08812847620155646,
+        "y": -0.015518131876881823,
+        "z": -0.0008132708302887486
+      },
+      "velocity": {
+        "x": 3.7804546454214534,
+        "y": -21.410640893125382,
+        "z": -1.1220841422353713
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "HD 224018 c",
+      "type": "super-Earth",
+      "m": 3.12312e-5,
+      "radius": 227.5015,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.20923586931200416,
+        "y": -0.037039650661242936,
+        "z": -0.008525894213688169
+      },
+      "velocity": {
+        "x": 2.395071427766948,
+        "y": 13.636961903657754,
+        "z": -0.46604527799816703
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "HD 224018 d",
+      "type": "super-Earth",
+      "m": 1.26126e-5,
+      "radius": 225.6213,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.03575681443114122,
+        "y": 0.507407752268227,
+        "z": -0.01167318122203853
+      },
+      "velocity": {
+        "x": -9.012027729053623,
+        "y": 0.6252871081194881,
+        "z": -0.4254090644531934
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 224018",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

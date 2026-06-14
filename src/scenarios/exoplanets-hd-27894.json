@@ -1,0 +1,199 @@
+{
+  "name": "HD 27894 - System",
+  "description": "HD 27894 is a orange K-type dwarf star with 3 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 27894",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.81,
+    "m": 0.81
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "3-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 27894",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 27894"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 5e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 27894",
+    "barycenterMassTwo": "HD 27894 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 27894",
+      "type": "star",
+      "m": 0.81,
+      "radius": 9158.4471,
+      "tilt": 0,
+      "temperature": 4875,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.009608014124525936,
+        "y": 0.035647485172969964,
+        "z": -0.0007641739352223948
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 27894 b",
+      "type": "gas giant planet",
+      "m": 0.0005907975591417899,
+      "radius": 1325.525,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.109641325410586,
+        "y": 0.046514544917614524,
+        "z": 0.002437724003493448
+      },
+      "velocity": {
+        "x": -6.55683715427453,
+        "y": -15.413054385250215,
+        "z": -0.8077639522997037
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 27894 c",
+      "type": "gas giant planet",
+      "m": 0.00015461984538000002,
+      "radius": 774.633,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.18750000047731177,
+        "y": 0.05319598636495058,
+        "z": 0.007116021055904779
+      },
+      "velocity": {
+        "x": -3.5025167148442446,
+        "y": -12.410093705358545,
+        "z": 0.48415958944707455
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 27894 d",
+      "type": "gas giant planet",
+      "m": 0.006197170519489949,
+      "radius": 1193.9126,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -2.905693843270363,
+        "y": -1.9902125885054678,
+        "z": -0.07972787022786969
+      },
+      "velocity": {
+        "x": 1.9682875244161604,
+        "y": -2.880285648808551,
+        "z": 0.16480830644241168
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 27894",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

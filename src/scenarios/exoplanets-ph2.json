@@ -1,0 +1,131 @@
+{
+  "name": "PH2 - System",
+  "description": "PH2 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "PH2",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.966,
+    "m": 0.966
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "PH2",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "PH2"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "PH2",
+    "barycenterMassTwo": "PH2 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "PH2",
+      "type": "star",
+      "m": 0.966,
+      "radius": 9746.23,
+      "tilt": 0,
+      "temperature": 5734,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.0009271557597746753,
+        "y": -0.002079572039225604,
+        "z": -0.00010898575243491937
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "PH2 b",
+      "type": "gas giant planet",
+      "m": 0.00026151620551055995,
+      "radius": 877.7684,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.5973719424797849,
+        "y": 0.26560262588980393,
+        "z": 0.01391964379462901
+      },
+      "velocity": {
+        "x": -3.4247685040924583,
+        "y": 7.681614169837044,
+        "z": 0.40257633995030156
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "PH2",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

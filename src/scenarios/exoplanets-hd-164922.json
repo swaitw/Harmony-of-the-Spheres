@@ -1,0 +1,233 @@
+{
+  "name": "HD 164922 - System",
+  "description": "HD 164922 is a Sun-like G/F-type star with 4 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 164922",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.926,
+    "m": 0.926
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "4-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 164922",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 164922"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 164922",
+    "barycenterMassTwo": "HD 164922 d",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 164922",
+      "type": "star",
+      "m": 0.926,
+      "radius": 9715.42,
+      "tilt": 0,
+      "temperature": 5390,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.0012163107075576205,
+        "y": -0.001400375798251305,
+        "z": -1.7213618287823124e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 164922 d",
+      "type": "super-Earth",
+      "m": 1.2012e-5,
+      "radius": 172.0362,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.06064999816036691,
+        "y": -0.06726633429660425,
+        "z": -0.0035252792009957006
+      },
+      "velocity": {
+        "x": 15.798889522870196,
+        "y": 14.205888627402368,
+        "z": 0.7444990757043686
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "HD 164922 e",
+      "type": "sub-Neptune",
+      "m": 3.159192117081e-5,
+      "radius": 303.6486,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.061823212380478165,
+        "y": 0.20013233128231642,
+        "z": -0.0032400172690046796
+      },
+      "velocity": {
+        "x": -13.13709682721912,
+        "y": 4.069348659225615,
+        "z": 0.6884860709408406
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 164922 c",
+      "type": "sub-Neptune",
+      "m": 3.9039e-5,
+      "radius": 344.0724,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.26245588171838985,
+        "y": 0.14528229326978329,
+        "z": -0.007613922359416865
+      },
+      "velocity": {
+        "x": -5.66455445327263,
+        "y": -10.20512178799518,
+        "z": 0.5348277702218063
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 164922 b",
+      "type": "gas giant planet",
+      "m": 0.000348348,
+      "radius": 1250.3179,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 1.7836357634040487,
+        "y": 0.8711311428992546,
+        "z": 0.09347638940981809
+      },
+      "velocity": {
+        "x": -1.951827791366561,
+        "y": 4.007331927874132,
+        "z": -0.10229096008844457
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 164922",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

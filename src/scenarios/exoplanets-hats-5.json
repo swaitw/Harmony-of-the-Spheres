@@ -1,0 +1,131 @@
+{
+  "name": "HATS-5 - System",
+  "description": "HATS-5 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HATS-5",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.936,
+    "m": 0.936
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HATS-5",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HATS-5"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 1e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HATS-5",
+    "barycenterMassTwo": "HATS-5 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HATS-5",
+      "type": "star",
+      "m": 0.936,
+      "radius": 8945.17,
+      "tilt": 0,
+      "temperature": 5304,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.0026164341538776883,
+        "y": 0.005868553640006801,
+        "z": 0.00030755786387616453
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HATS-5 b",
+      "type": "gas giant planet",
+      "m": 0.00022619496899999996,
+      "radius": 961.0526,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.04857339469194861,
+        "y": -0.021596630610082584,
+        "z": -0.0011318314502705797
+      },
+      "velocity": {
+        "x": 10.826864889419873,
+        "y": -24.28421034884453,
+        "z": -1.2726815360251893
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HATS-5",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

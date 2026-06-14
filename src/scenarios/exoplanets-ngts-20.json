@@ -1,0 +1,131 @@
+{
+  "name": "NGTS-20 - System",
+  "description": "NGTS-20 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "NGTS-20",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.47,
+    "m": 1.47
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "NGTS-20",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "NGTS-20"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 1e-5,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "NGTS-20",
+    "barycenterMassTwo": "NGTS-20 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "NGTS-20",
+      "type": "star",
+      "m": 1.47,
+      "radius": 18280.6,
+      "tilt": 0,
+      "temperature": 5980,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": 0.03825570484684925,
+        "y": -0.016929361986515457,
+        "z": -0.0008872302663920102
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "NGTS-20 b",
+      "type": "gas giant planet",
+      "m": 0.00284422734453858,
+      "radius": 1127.5056,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.07202769186407111,
+        "y": 0.16231697013301166,
+        "z": 0.008506671944622866
+      },
+      "velocity": {
+        "x": -19.771937792824914,
+        "y": 8.749709184803232,
+        "z": 0.45855282774796624
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "NGTS-20",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

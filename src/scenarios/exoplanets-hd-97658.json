@@ -1,0 +1,131 @@
+{
+  "name": "HD 97658 - System",
+  "description": "HD 97658 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 97658",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.85,
+    "m": 0.85
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 97658",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 97658"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.001,
+    "maxDt": 0.0001,
+    "minDt": 2e-6,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 97658",
+    "barycenterMassTwo": "HD 97658 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 97658",
+      "type": "star",
+      "m": 0.85,
+      "radius": 7476.56,
+      "tilt": 0,
+      "temperature": 5212,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "velocity": {
+        "x": -0.00010932705419555557,
+        "y": -0.0006191748127752886,
+        "z": -3.244957692554569e-5
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 97658 b",
+      "type": "super-Earth",
+      "m": 2.4924900000000003e-5,
+      "radius": 199.2988,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.0753131729116086,
+        "y": -0.013261544958927863,
+        "z": -0.0006950081211596192
+      },
+      "velocity": {
+        "x": 3.728319715072968,
+        "y": 21.115374218512223,
+        "z": 1.1066098715226071
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 97658",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}
