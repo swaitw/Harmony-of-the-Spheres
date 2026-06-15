@@ -317,7 +317,8 @@ const AddMassControls = () => {
                       value: { ...massToBeAdded, primary: mass.name },
                     }),
                   );
-                }}>
+                }}
+              >
                 {mass.name}
               </div>
             ))}
@@ -344,7 +345,8 @@ const AddMassControls = () => {
       <Tabs
         navigationMenuCssModifier={addMassControlTabsMenuModifier}
         navigationMenuItemCssModifier={addMassControlTabsMenuItemModifier}
-        onOpenTabIndex={0}>
+        onOpenTabIndex={0}
+      >
         <div data-label="Mass">
           {useTemplate ? (
             <>
@@ -361,7 +363,8 @@ const AddMassControls = () => {
                         onClick={() => {
                           setTemplateCategoryName(category.name);
                           setTemplateName(category.templates[0].name);
-                        }}>
+                        }}
+                      >
                         {category.name}
                       </div>
                     ))}
@@ -381,7 +384,8 @@ const AddMassControls = () => {
                         key={template.name}
                         onClick={() => {
                           setTemplateName(template.name);
-                        }}>
+                        }}
+                      >
                         {template.name}
                       </div>
                     ))}
@@ -408,7 +412,8 @@ const AddMassControls = () => {
                           value: { ...massToBeAdded, type: "other" },
                         }),
                       );
-                    }}>
+                    }}
+                  >
                     Other
                   </button>
                   <button
@@ -422,7 +427,8 @@ const AddMassControls = () => {
                           value: { ...massToBeAdded, type: "star" },
                         }),
                       );
-                    }}>
+                    }}
+                  >
                     Star
                   </button>
                 </div>
@@ -449,7 +455,8 @@ const AddMassControls = () => {
                               },
                             }),
                           );
-                        }}>
+                        }}
+                      >
                         {massData.unitName}
                       </div>
                     ))}
