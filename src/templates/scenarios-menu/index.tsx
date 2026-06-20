@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql, Link, HeadFC } from "gatsby";
+import { graphql, Link, HeadProps } from "gatsby";
 import Seo from "../../components/seo";
 import Layout from "../../components/layout";
 import NavigationMenu from "../../components/navigation-menu";
@@ -22,6 +22,13 @@ import {
   scenariosListItem,
   scenariosListItemTitle,
 } from "./scenarios-menu.module.css";
+
+type ScenarioMenuPageContext = {
+  category: string;
+  subCategory: string;
+  currentPage: number;
+  numPages: number;
+};
 
 type Props = {
   data: {
@@ -185,19 +192,10 @@ const ScenarioMenu = ({
   );
 };
 
-export default ScenarioMenu;
-
-type ScenarioMenuPageContext = {
-  category: string;
-  subCategory: string;
-  currentPage: number;
-  numPages: number;
-};
-
-const Head: HeadFC<object, ScenarioMenuPageContext> = ({
+export const Head = ({
   pageContext,
   location,
-}) => {
+}: HeadProps<object, ScenarioMenuPageContext>) => {
   const { category, subCategory } = pageContext;
   const isAll = category === "all";
   const hasSubCategory = subCategory && subCategory !== "all";
@@ -255,4 +253,6 @@ const pageQuery = graphql`
   }
 `;
 
-export { Head, pageQuery };
+export default ScenarioMenu;
+
+export { pageQuery };

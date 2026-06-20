@@ -7,7 +7,7 @@ import React, {
 } from "react";
 import { useSelector, useDispatch } from "react-redux";
 
-import { graphql, HeadFC } from "gatsby";
+import { graphql, HeadProps } from "gatsby";
 import Seo from "../../components/seo";
 import { ScenarioType } from "../../types/scenario";
 import { ScenarioStateType } from "../../state";
@@ -315,8 +315,6 @@ const Scenario = ({ data, originalScenario: savedOriginalScenario }: Props) => {
   );
 };
 
-export default Scenario;
-
 type ScenarioHeadData = {
   scenariosJson: {
     scenarios: {
@@ -332,7 +330,7 @@ type ScenarioHeadData = {
   };
 };
 
-const Head: HeadFC<ScenarioHeadData> = ({ data, location }) => {
+export const Head = ({ data, location }: HeadProps<ScenarioHeadData>) => {
   const { name, description, category } =
     data.scenariosJson.scenarios[0].scenario;
 
@@ -479,4 +477,6 @@ const pageQuery = graphql`
   }
 `;
 
-export { Head, pageQuery };
+export default Scenario;
+
+export { pageQuery };

@@ -1,4 +1,5 @@
 import type { GatsbyNode } from "gatsby";
+import fs from "fs";
 import path from "path";
 import {
   ScenariosCategoryTreeType,
@@ -24,12 +25,78 @@ type FetchedScenariosJsonType = {
   categoryTree: ScenariosCategoryTreeType;
 };
 
-const createPages: GatsbyNode["createPages"] = async ({
-  actions,
-  graphql,
-}) => {
+const GATSBY_LOADER_STALE_REPLACEMENTS: ReadonlyArray<
+  readonly [string, string]
+> = [
+  [
+    "process.env.BUILD_STAGE !== `develop` || !page.payload.stale",
+    "process.env.BUILD_STAGE !== `develop` || (page.payload && !page.payload.stale)",
+  ],
+  [
+    "process.env.BUILD_STAGE !== `develop` || !pageData.stale",
+    "process.env.BUILD_STAGE !== `develop` || (pageData && !pageData.stale)",
+  ],
+];
+
+const patchGatsbyLoaderStaleCheck = (): void => {
+  const loaderPaths = [
+    path.join(process.cwd(), "node_modules/gatsby/cache-dir/loader.js"),
+    path.join(
+      process.cwd(),
+      "node_modules/gatsby/cache-dir/commonjs/loader.js",
+    ),
+    path.join(process.cwd(), ".cache/loader.js"),
+    path.join(process.cwd(), ".cache/commonjs/loader.js"),
+  ];
+
+  for (let i = 0; i < loaderPaths.length; i++) {
+    const loaderPath = loaderPaths[i];
+
+    if (!fs.existsSync(loaderPath)) {
+      continue;
+    }
+
+    let content = fs.readFileSync(loaderPath, "utf8");
+    let patched = false;
+
+    for (let j = 0; j < GATSBY_LOADER_STALE_REPLACEMENTS.length; j++) {
+      const [from, to] = GATSBY_LOADER_STALE_REPLACEMENTS[j];
+
+      if (content.includes(from)) {
+        content = content.split(from).join(to);
+        patched = true;
+      }
+    }
+
+    if (patched) {
+      fs.writeFileSync(loaderPath, content);
+    }
+  }
+};
+
+patchGatsbyLoaderStaleCheck();
+
+const onPreBootstrap: GatsbyNode["onPreBootstrap"] = () => {
+  patchGatsbyLoaderStaleCheck();
+};
+
+const onCreateWebpackConfig: GatsbyNode["onCreateWebpackConfig"] = () => {
+  patchGatsbyLoaderStaleCheck();
+};
+
+const onPostBootstrap: GatsbyNode["onPostBootstrap"] = () => {
+  patchGatsbyLoaderStaleCheck();
+};
+
+const onCreateDevServer: GatsbyNode["onCreateDevServer"] = () => {
+  patchGatsbyLoaderStaleCheck();
+};
+
+const createPages: GatsbyNode["createPages"] = async ({ actions, graphql }) => {
   const { createPage } = actions;
   const SCENARIOS_PER_PAGE = 12;
+
+  const defer = process.env.gatsby_executing_command === "build";
 
   const { data } = await graphql<FetchedScenariosJsonType>(`
     {
@@ -70,7 +137,7 @@ const createPages: GatsbyNode["createPages"] = async ({
         numPages: allNumPages,
         currentPage: i + 1,
       },
-      defer: true,
+      defer,
     });
   }
 
@@ -106,7 +173,7 @@ const createPages: GatsbyNode["createPages"] = async ({
             numPages: categoryNumPages,
             currentPage: i + 1,
           },
-          defer: true,
+          defer,
         });
       }
 
@@ -140,7 +207,7 @@ const createPages: GatsbyNode["createPages"] = async ({
                 numPages: subCategoryNumPages,
                 currentPage: i + 1,
               },
-              defer: true,
+              defer,
             });
           }
         });
@@ -151,7 +218,7 @@ const createPages: GatsbyNode["createPages"] = async ({
   createPage({
     path: "/scenarios/saved",
     component: path.resolve("./src/templates/saved-scenarios-menu/index.tsx"),
-    defer: true,
+    defer,
   });
 
   createPage({
@@ -176,7 +243,7 @@ const createPages: GatsbyNode["createPages"] = async ({
       context: {
         scenarioName: name,
       },
-      defer: true,
+      defer,
     });
   });
 };
@@ -235,11 +302,12 @@ const createResolvers: GatsbyNode["createResolvers"] = ({
   });
 };
 
-const createSchemaCustomization: GatsbyNode["createSchemaCustomization"] =
-  ({ actions }) => {
-    const { createTypes } = actions;
+const createSchemaCustomization: GatsbyNode["createSchemaCustomization"] = ({
+  actions,
+}) => {
+  const { createTypes } = actions;
 
-    createTypes(`
+  createTypes(`
     type CategoryBranch {
       name: String
       subCategories: [String]
@@ -249,6 +317,14 @@ const createSchemaCustomization: GatsbyNode["createSchemaCustomization"] =
       categoryTree: [CategoryBranch]
     }
 `);
-  };
+};
 
-export { createPages, createResolvers, createSchemaCustomization };
+export {
+  createPages,
+  createResolvers,
+  createSchemaCustomization,
+  onPreBootstrap,
+  onPostBootstrap,
+  onCreateWebpackConfig,
+  onCreateDevServer,
+};

@@ -963,7 +963,7 @@ const paletteCount = (category: PaletteCategoryType): number =>
 
 const assertPaletteCounts = (): void => {
   const expected = PALETTES_PER_TERRAIN_CATEGORY;
-  
+
   const terrainCounts: [string, number, number][] = [
     ["desert", DESERT_PALETTES.length, expected],
     ["ice-world", ICE_WORLD_PALETTES.length, expected],

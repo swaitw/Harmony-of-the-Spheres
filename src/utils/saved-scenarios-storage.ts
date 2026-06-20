@@ -50,9 +50,7 @@ const getSavedScenarioPath = (name: string): string => {
   return `/scenarios/saved/${getSavedScenarioSlug(name)}`;
 };
 
-const getSavedScenarioBySlug = (
-  slug: string,
-): SavedScenarioEntry | null => {
+const getSavedScenarioBySlug = (slug: string): SavedScenarioEntry | null => {
   return (
     getSavedScenarios().find((savedScenarioEntry) => {
       return getSavedScenarioSlug(savedScenarioEntry.scenario.name) === slug;

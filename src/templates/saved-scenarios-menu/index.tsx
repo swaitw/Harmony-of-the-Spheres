@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, graphql, HeadFC } from "gatsby";
+import { Link, graphql, HeadProps } from "gatsby";
 
 import Seo from "../../components/seo";
 import Layout from "../../components/layout";
@@ -44,10 +44,7 @@ const SavedScenariosMenu = ({ data: { categoryTree } }: Props) => {
       <section className={scenariosMenuWrapper}>
         <NavigationMenu cssModifier={navigationMenuCssModifier}>
           <Link to="/scenarios/all">
-            <NavigationMenuItem
-              active={false}
-              cssModifier={scenariosMenuItem}
-            >
+            <NavigationMenuItem active={false} cssModifier={scenariosMenuItem}>
               All
             </NavigationMenuItem>
           </Link>
@@ -109,9 +106,7 @@ const SavedScenariosMenu = ({ data: { categoryTree } }: Props) => {
   );
 };
 
-export default SavedScenariosMenu;
-
-const Head: HeadFC = ({ location }) => {
+export const Head = ({ location }: HeadProps) => {
   return (
     <Seo
       title="Saved Scenarios"
@@ -130,4 +125,6 @@ const pageQuery = graphql`
   }
 `;
 
-export { Head, pageQuery };
+export default SavedScenariosMenu;
+
+export { pageQuery };

@@ -1,6 +1,6 @@
 import React, { Fragment, useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
-import { HeadFC } from "gatsby";
+import { HeadProps } from "gatsby";
 
 import Seo from "../../components/seo";
 import { getSavedScenarioFromUrlSegment } from "../../utils/saved-scenarios-storage";
@@ -102,9 +102,7 @@ const SavedPlanetaryScenario = ({
   );
 };
 
-export default SavedPlanetaryScenario;
-
-const Head: HeadFC = ({ location }) => {
+export const Head = ({ location }: HeadProps) => {
   const slug = getSavedScenarioSlugFromPath(undefined, location.pathname);
   const savedScenario = slug ? getSavedScenarioFromUrlSegment(slug) : null;
 
@@ -121,4 +119,4 @@ const Head: HeadFC = ({ location }) => {
   );
 };
 
-export { Head };
+export default SavedPlanetaryScenario;
