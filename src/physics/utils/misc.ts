@@ -1,6 +1,11 @@
 import { ScenarioMassType, ScenarioMassesType } from "../../types/scenario";
 import H3 from "../../physics/utils/vector";
 import { VectorType } from "../../types/physics";
+import {
+  NearestStarInfoType,
+  PlanetCategory,
+  SudarskiClassType,
+} from "../../types/planet";
 
 const degreesToRadians = (degrees: number) => (Math.PI / 180) * degrees;
 
@@ -211,9 +216,20 @@ const getLagrangePoints = (
 
 const EARTH_MASS_SOLAR = 3.003e-6;
 
+const ICE_GIANT_THRESHOLD = 10 * EARTH_MASS_SOLAR;
+const GAS_GIANT_THRESHOLD = 60 * EARTH_MASS_SOLAR;
+const LAVA_LIMIT_SOLAR = 0.48;
+const INNER_HZ_SOLAR = 0.95;
+const OUTER_HZ_SOLAR = 1.67;
+const SUBSTANTIAL_ATMO_MASS = 0.5 * EARTH_MASS_SOLAR;
+const THIN_ATMO_MASS = 0.07 * EARTH_MASS_SOLAR;
+const SOLAR_RADIUS_DISPLAY = 10270;
+
 const snowLineAU = (starMass: number): number => {
   return 2.7 * Math.pow(starMass, 1.75);
 };
+
+const MIN_CLOUD_MASS = 0.2 * EARTH_MASS_SOLAR;
 
 const computeCloudDensity = (
   mass: ScenarioMassType,
@@ -221,12 +237,16 @@ const computeCloudDensity = (
 ): number => {
   if (
     (mass.type !== "terrestial planet" && mass.type !== "moon") ||
-    !mass.atmosphere
+    !mass.atmosphere ||
+    mass.m < MIN_CLOUD_MASS
   ) {
     return 0;
   }
 
-  const stars = allMasses.filter((m) => m.type === "star");
+  const stars = allMasses.filter(
+    (scenarioMass) => scenarioMass.type === "star",
+  );
+
   if (stars.length === 0) {
     return 0;
   }
@@ -234,11 +254,14 @@ const computeCloudDensity = (
   let minDSq = Infinity;
   let nearestStar: ScenarioMassType | undefined;
   const h3 = new H3();
+  const starsLength = stars.length;
 
-  for (const star of stars) {
+  for (let i = 0; i < starsLength; i++) {
+    const star = stars[i];
     const { dSquared } = h3
       .set(mass.position)
       .getDistanceParameters(star.position);
+
     if (dSquared < minDSq) {
       minDSq = dSquared;
       nearestStar = star;
@@ -260,6 +283,140 @@ const computeCloudDensity = (
   return Math.min(1.0, Math.max(0.1, Math.pow(massRatio, 0.7)));
 };
 
+const getNearestStarInfo = (
+  mass: ScenarioMassType,
+  allMasses: ScenarioMassesType,
+): NearestStarInfoType => {
+  const stars = allMasses.filter(
+    (scenarioMass) => scenarioMass.type === "star",
+  );
+
+  if (!stars.length) {
+    return { star: null, distAU: Infinity };
+  }
+
+  let minDist = Infinity;
+  let nearest: ScenarioMassType | null = null;
+  const starsLength = stars.length;
+
+  for (let i = 0; i < starsLength; i++) {
+    const star = stars[i];
+    const deltaX = mass.position.x - star.position.x;
+    const deltaY = mass.position.y - star.position.y;
+    const deltaZ = mass.position.z - star.position.z;
+    const dist = Math.sqrt(deltaX * deltaX + deltaY * deltaY + deltaZ * deltaZ);
+
+    if (dist < minDist) {
+      minDist = dist;
+      nearest = star;
+    }
+  }
+
+  return { star: nearest, distAU: minDist };
+};
+
+const getEquilibriumTemp = (distAU: number, starMass: number): number => {
+  if (distAU <= 0) {
+    return 10000;
+  }
+
+  return 255 * starMass * Math.sqrt(1.0 / distAU);
+};
+
+const getSudarskiClass = (
+  distAU: number,
+  starMass: number,
+): SudarskiClassType => {
+  const temperature = getEquilibriumTemp(distAU, starMass);
+
+  if (temperature < 150) {
+    return 1;
+  }
+
+  if (temperature < 250) {
+    return 2;
+  }
+
+  if (temperature < 800) {
+    return 3;
+  }
+
+  if (temperature < 1400) {
+    return 4;
+  }
+
+  return 5;
+};
+
+const classifyPlanet = (
+  mass: ScenarioMassType,
+  allMasses: ScenarioMassesType,
+): PlanetCategory => {
+  const planetMass = mass.m;
+
+  if (planetMass >= GAS_GIANT_THRESHOLD) {
+    return "gas-giant";
+  }
+
+  if (planetMass >= ICE_GIANT_THRESHOLD) {
+    return "ice-giant";
+  }
+
+  const { star, distAU } = getNearestStarInfo(mass, allMasses);
+
+  if (!star) {
+    return "barren-light";
+  }
+
+  const radiusSolar =
+    star.radius && star.radius > 0 ? star.radius / SOLAR_RADIUS_DISPLAY : 1.0;
+  const temperatureStar =
+    star.temperature && star.temperature > 0 ? star.temperature : 5778;
+  const temperatureRatio = temperatureStar / 5778;
+  const luminosity =
+    radiusSolar *
+    radiusSolar *
+    temperatureRatio *
+    temperatureRatio *
+    temperatureRatio *
+    temperatureRatio;
+
+  const sqrtLuminosity = Math.sqrt(luminosity);
+  const lavaLimit = LAVA_LIMIT_SOLAR * sqrtLuminosity;
+  const innerHZ = INNER_HZ_SOLAR * sqrtLuminosity;
+  const outerHZ = OUTER_HZ_SOLAR * sqrtLuminosity;
+  const snowLine = snowLineAU(star.m);
+
+  const isMDwarf = temperatureStar < 3700;
+
+  if (distAU < lavaLimit) {
+    return "lava";
+  }
+
+  if (distAU >= snowLine) {
+    return "ice-world";
+  }
+
+  if (
+    !isMDwarf &&
+    distAU >= innerHZ &&
+    distAU <= outerHZ &&
+    planetMass >= SUBSTANTIAL_ATMO_MASS
+  ) {
+    return "habitable";
+  }
+
+  if (planetMass < THIN_ATMO_MASS) {
+    return "barren-light";
+  }
+
+  if (planetMass >= SUBSTANTIAL_ATMO_MASS) {
+    return "barren-heavy";
+  }
+
+  return "desert";
+};
+
 export {
   degreesToRadians,
   getRandomNumberInRange,
@@ -276,4 +433,9 @@ export {
   getLagrangePoints,
   snowLineAU,
   computeCloudDensity,
+  EARTH_MASS_SOLAR,
+  getNearestStarInfo,
+  getEquilibriumTemp,
+  getSudarskiClass,
+  classifyPlanet,
 };

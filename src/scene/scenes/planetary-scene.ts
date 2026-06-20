@@ -81,6 +81,7 @@ class PlanetaryScene extends SceneBase {
       this.scene,
       this.textureLoader,
       this.scale,
+      this.renderer,
     );
     this.manifestationManager.addManifestations();
 
@@ -203,9 +204,11 @@ class PlanetaryScene extends SceneBase {
       impactParticleCount,
     );
 
+    const impactParticlesLength = impactParticles.length;
+
     if (!this.particles) {
-      for (const particle of impactParticles) {
-        this.particleIntegrator.particles.push(particle);
+      for (let i = 0; i < impactParticlesLength; i++) {
+        this.particleIntegrator.particles.push(impactParticles[i]);
       }
 
       this.particles = new Particles(
@@ -226,8 +229,8 @@ class PlanetaryScene extends SceneBase {
         this.particleIntegrator.particles.splice(0, excess);
       }
 
-      for (const particle of impactParticles) {
-        this.particleIntegrator.particles.push(particle);
+      for (let i = 0; i < impactParticlesLength; i++) {
+        this.particleIntegrator.particles.push(impactParticles[i]);
       }
     }
   };
@@ -529,7 +532,9 @@ class PlanetaryScene extends SceneBase {
 
       const manifestation = manifestations[i];
 
-      if (!manifestation) continue;
+      if (!manifestation) {
+        continue;
+      }
 
       const manifestationObject3D = manifestation.object3D;
 
@@ -614,6 +619,26 @@ class PlanetaryScene extends SceneBase {
 
             atmosphereMaterial.uniforms["intensityConstant"].value =
               1 + (1 / distanceFromMassToCamera) * mass.radius;
+          }
+        }
+
+        if (mass.type === "terrestial planet" || mass.type === "moon") {
+          const sphere = manifestation.sphere;
+
+          if (sphere) {
+            const sphereMaterial =
+              sphere.material as THREE.MeshStandardMaterial;
+
+            if (sphereMaterial.bumpMap) {
+              const distToCamera = this.camera.position.distanceTo(
+                sphere.position,
+              );
+
+              sphereMaterial.bumpScale = Math.min(
+                10,
+                Math.max(0.1, (20 * mass.radius) / distToCamera),
+              );
+            }
           }
         }
       }
@@ -822,7 +847,10 @@ class PlanetaryScene extends SceneBase {
           { name: "L5", position: lagrangePoints.L5 },
         ];
 
-        for (const lagrangePoint of lagrangePointEntries) {
+        const lagrangePointEntriesLength = lagrangePointEntries.length;
+
+        for (let i = 0; i < lagrangePointEntriesLength; i++) {
+          const lagrangePoint = lagrangePointEntries[i];
           const rotatedLagrangePointPosition = this.utilVector
             .set(lagrangePoint.position)
             .subtractFrom(rotatingReferenceFrame)
@@ -877,13 +905,20 @@ class PlanetaryScene extends SceneBase {
     this.requestAnimationFrameId = requestAnimationFrame(this.iterate);
   };
 
-  public reset(): void {
+  private stopAnimation(): void {
     if (this.requestAnimationFrameId !== null) {
       cancelAnimationFrame(this.requestAnimationFrameId);
       this.requestAnimationFrameId = null;
     }
+  }
 
-    for (const manifestation of this.manifestationManager.manifestations) {
+  private disposeSceneContents(): void {
+    const manifestations = this.manifestationManager.manifestations;
+    const manifestationsLength = manifestations.length;
+
+    for (let i = 0; i < manifestationsLength; i++) {
+      const manifestation = manifestations[i];
+
       this.scene.remove(manifestation.object3D);
       manifestation.dispose();
     }
@@ -928,10 +963,18 @@ class PlanetaryScene extends SceneBase {
           ? node.material
           : [node.material];
 
-        for (const material of materials) {
+        const materialsLength = materials.length;
+
+        for (let i = 0; i < materialsLength; i++) {
+          const material = materials[i];
+
           if (!material) continue;
 
-          for (const key of Object.keys(material)) {
+          const keys = Object.keys(material);
+          const keysLength = keys.length;
+
+          for (let j = 0; j < keysLength; j++) {
+            const key = keys[j];
             const value = (material as unknown as Record<string, unknown>)[key];
 
             if (value instanceof THREE.Texture) {
@@ -945,7 +988,19 @@ class PlanetaryScene extends SceneBase {
     });
 
     this.scene.clear();
+  }
 
+  public destroy(): void {
+    this.stopAnimation();
+    this.disposeSceneContents();
+    TWEEN.removeAll();
+    this.controls.dispose();
+    this.renderer.dispose();
+  }
+
+  public reset(): void {
+    this.stopAnimation();
+    this.disposeSceneContents();
     TWEEN.removeAll();
 
     this.scenario = JSON.parse(JSON.stringify(this.store.getState()));

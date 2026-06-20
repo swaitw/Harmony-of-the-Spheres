@@ -3,6 +3,7 @@ import ConicSection from "../misc/conic-section";
 import { getConicSection } from "../../physics/utils/misc";
 import { ScenarioMassType } from "../../types/scenario";
 import { VectorType } from "../../types/physics";
+import { getMassOrbitTrailColor } from "../utils/mass-orbit-trail-color";
 
 class Manifestation {
   public mass: ScenarioMassType;
@@ -16,16 +17,19 @@ class Manifestation {
   public atmosphere: THREE.Mesh | undefined;
   public ongoingImpacts: number;
   public materialShader: THREE.Shader | undefined;
+  protected readonly orbitTrailColor: string;
 
   constructor(
     mass: ScenarioMassType,
     scale: number,
     textureLoader: THREE.TextureLoader,
+    massIndex = 0,
   ) {
     this.mass = mass;
     this.scale = scale;
 
     this.textureLoader = textureLoader;
+    this.orbitTrailColor = getMassOrbitTrailColor(mass.name, massIndex);
 
     this.object3D = new THREE.Object3D();
     this.object3D.name = this.mass.name;
@@ -58,8 +62,11 @@ class Manifestation {
       material.bumpMap = this.textureLoader.load(
         `/textures/bump-maps/${this.mass.name}Bump.jpg`,
       );
-      material.bumpScale = 2;
+      material.bumpScale = 10;
     }
+
+    material.customProgramCacheKey = () =>
+      `manifestation-clouds-${cloudDensity.toFixed(4)}`;
 
     material.onBeforeCompile = (shader: THREE.Shader) => {
       this.ongoingImpacts = 0;
@@ -70,10 +77,9 @@ class Manifestation {
 
       for (let i = 0; i < maxImpactAmount; i++) {
         impacts.push({
-          impactPoint: new THREE.Vector3(0, 0, 0), //The point on the sphere where the impact takes place.
-          //This point is the origin from which the shockwave radiates outwards
-          impactRadius: 0, //The radius of the impact
-          impactRatio: 0.25, //How far the impact shockwave has propagated outwards
+          impactPoint: new THREE.Vector3(0, 0, 0),
+          impactRadius: 0,
+          impactRatio: 0.25,
         });
       }
 
@@ -305,7 +311,7 @@ class Manifestation {
       false,
       0,
       500,
-      "green",
+      this.orbitTrailColor,
     );
 
     if (orbit.object3D) {
@@ -346,10 +352,6 @@ class Manifestation {
 
     const conicSection = getConicSection(a, e);
 
-    // For elliptic orbits use a full [0, 2π] angle sweep.
-    // For hyperbolic / parabolic orbits use the hyperbolic parameter range
-    // [-tMax, tMax] fed into cosh / sinh in the shader.  tMax = 4 gives
-    // cosh(4) ≈ 27, showing the curve out to ~27× the semi-transverse axis.
     const aStartAngle = e < 1 ? 0 : -4;
     const aEndAngle = e < 1 ? 2 * Math.PI : 4;
 
@@ -359,10 +361,6 @@ class Manifestation {
       orbit.position.z = (rotatingReferenceFrame.z - primaryPosition.z) * scale;
     }
 
-    // For elliptic orbits the shader places periapsis at angle = π (negative x),
-    // so we need to rotate by argP - 180° to align it with the perifocal argP direction.
-    // For hyperbolic/parabolic orbits the cosh parametrisation places periapsis at t = 0
-    // (positive x, since a < 0 makes aX + xRadius = |a|(e-1) > 0), so we rotate by argP directly.
     const zRotation = e < 1 ? w - 180 : w;
 
     this.orbit.update(
@@ -380,7 +378,7 @@ class Manifestation {
     );
   }
 
-  private addAtmosphere(): void {
+  protected addAtmosphere(colour?: THREE.ColorRepresentation): void {
     const atmosphereGeometry = new THREE.SphereGeometry(
       this.mass.radius * 1.05,
       40,
@@ -419,7 +417,7 @@ class Manifestation {
       uniforms: {
         lightPosition: { value: new THREE.Vector3() },
         colour: {
-          value: new THREE.Color(this.mass.atmosphere),
+          value: new THREE.Color(colour ?? this.mass.atmosphere),
         },
         intensityConstant: { value: 1 },
       },
@@ -458,7 +456,7 @@ class Manifestation {
     const geometry = new THREE.BufferGeometry().setFromPoints(points);
 
     const material = new THREE.LineBasicMaterial({
-      color: "red",
+      color: this.orbitTrailColor,
       depthWrite: false,
     });
 
@@ -498,8 +496,9 @@ class Manifestation {
 
     const geometry = trail.geometry;
     const positions = geometry.attributes["position"].array;
+    const positionsLength = positions.length;
 
-    for (let i = positions.length - 1; i > 2; i--) {
+    for (let i = positionsLength - 1; i > 2; i--) {
       positions[i] = positions[i - 3];
     }
 
