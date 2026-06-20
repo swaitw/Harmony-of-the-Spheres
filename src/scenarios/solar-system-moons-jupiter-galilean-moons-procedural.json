@@ -1,6 +1,6 @@
 {
-  "name": "Jupiter and the Galilean Moons",
-  "description": "Io, Europa, Ganymede, and Callisto in orbit around Jupiter. Observe the orbital resonances and strong tidal forces that make these moons geological powerhouses.",
+  "name": "Jupiter and the Galilean Moons (Procedural)",
+  "description": "Io, Europa, Ganymede, and Callisto in orbit around Jupiter, rendered with procedurally generated WebGL shader textures driven by each body\u2019s mass and distance from the Sun.",
   "playing": false,
   "isLoaded": false,
   "elapsedTime": 0,
@@ -77,7 +77,7 @@
         "y": -1.4404565860802778e-5,
         "z": 1.85765499287888e-6
       },
-      "nonStellarProceduralManifestation": false
+      "nonStellarProceduralManifestation": true
     },
     {
       "name": "Sun",
@@ -142,7 +142,7 @@
         "y": 0.5331313883142663,
         "z": 0.07191321713719195
       },
-      "nonStellarProceduralManifestation": false
+      "nonStellarProceduralManifestation": true
     },
     {
       "name": "Europa",
@@ -175,7 +175,7 @@
         "y": 0.1479315881074277,
         "z": 0.053531172951165384
       },
-      "nonStellarProceduralManifestation": false
+      "nonStellarProceduralManifestation": true
     },
     {
       "name": "Ganymede",
@@ -208,7 +208,7 @@
         "y": -2.2904667534862946,
         "z": -0.08642422976208332
       },
-      "nonStellarProceduralManifestation": false
+      "nonStellarProceduralManifestation": true
     },
     {
       "name": "Callisto",
@@ -241,7 +241,7 @@
         "y": -1.5765023231560384,
         "z": -0.040977438627834185
       },
-      "nonStellarProceduralManifestation": false
+      "nonStellarProceduralManifestation": true
     }
   ],
   "particlesConfiguration": {

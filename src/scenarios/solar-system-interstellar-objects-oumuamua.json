@@ -1,5 +1,6 @@
 {
   "name": "Interstellar Asteroid Oumuamua",
+  "description": "\u02bbOumuamua was the first known interstellar object to pass through our Solar System. Simulate its puzzling hyperbolic trajectory past the Sun in 2017.",
   "playing": false,
   "isLoaded": false,
   "elapsedTime": 0,
@@ -73,7 +74,8 @@
         "x": 0.0020869837917339754,
         "y": -0.0009759759745137204,
         "z": -4.519598528871196e-5
-      }
+      },
+      "nonStellarProceduralManifestation": false
     },
     {
       "name": "Mercury",
@@ -105,7 +107,8 @@
         "x": -12.13355404048838,
         "y": -1.6528772889426246,
         "z": 0.9784692627549786
-      }
+      },
+      "nonStellarProceduralManifestation": false
     },
     {
       "name": "Venus",
@@ -138,7 +141,8 @@
         "x": -3.5713994857490308,
         "y": 6.445551271928175,
         "z": 0.29452473854502614
-      }
+      },
+      "nonStellarProceduralManifestation": false
     },
     {
       "name": "Earth",
@@ -171,7 +175,8 @@
         "x": 2.4645428337894026,
         "y": 5.7097644117945805,
         "z": -0.00033177815766459033
-      }
+      },
+      "nonStellarProceduralManifestation": false
     },
     {
       "name": "Mars",
@@ -204,7 +209,8 @@
         "x": 4.9225288800471425,
         "y": -1.5065904473191791,
         "z": -0.1524041758922603
-      }
+      },
+      "nonStellarProceduralManifestation": false
     },
     {
       "name": "Oumuamua",
@@ -236,7 +242,8 @@
         "x": -0.8127258738687134,
         "y": 3.0458386360240897,
         "z": -4.839022858847442
-      }
+      },
+      "nonStellarProceduralManifestation": false
     },
     {
       "name": "Jupiter",
@@ -269,7 +276,8 @@
         "x": -2.4809040175054617,
         "y": 1.3993502897811834,
         "z": 0.04970829322871863
-      }
+      },
+      "nonStellarProceduralManifestation": false
     },
     {
       "name": "Saturn",
@@ -302,7 +310,8 @@
         "x": 0.919151760170189,
         "y": -1.7631987893271037,
         "z": -0.005984764290193158
-      }
+      },
+      "nonStellarProceduralManifestation": false
     },
     {
       "name": "Uranus",
@@ -335,7 +344,8 @@
         "x": -0.16129339690269276,
         "y": 1.3616609675222109,
         "z": 0.007139790220137776
-      }
+      },
+      "nonStellarProceduralManifestation": false
     },
     {
       "name": "Neptune",
@@ -368,7 +378,8 @@
         "x": 0.5381987172626345,
         "y": 1.015130164798585,
         "z": -0.033446435472504955
-      }
+      },
+      "nonStellarProceduralManifestation": false
     }
   ],
   "particlesConfiguration": {

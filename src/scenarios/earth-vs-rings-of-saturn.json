@@ -1,5 +1,6 @@
 {
   "name": "Earth Versus the Rings of Saturn",
+  "description": "What if Earth sat at the centre of Saturn's rings? Explore the gravitational interplay between our planet and thousands of icy ring particles in real time.",
   "playing": false,
   "isLoaded": false,
   "elapsedTime": 0,
@@ -73,7 +74,8 @@
         "x": -0.0027531411153919037,
         "y": 0.0010072803591140611,
         "z": 6.87504175911851e-5
-      }
+      },
+      "nonStellarProceduralManifestation": false
     },
     {
       "name": "Saturn",
@@ -103,7 +105,8 @@
         "x": 1.904060271026863,
         "y": 0.2886523546718628,
         "z": -0.08092749245870556
-      }
+      },
+      "nonStellarProceduralManifestation": false
     },
     {
       "name": "Earth",
@@ -134,7 +137,8 @@
         "x": 1.90060271026863,
         "y": 0,
         "z": -0.08092749245870556
-      }
+      },
+      "nonStellarProceduralManifestation": false
     }
   ],
   "particlesConfiguration": {

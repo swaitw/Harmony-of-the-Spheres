@@ -1,6 +1,6 @@
 {
-  "name": "The Earth and Moon System",
-  "description": "Explore the gravitational two-body system of Earth and its Moon \u2014 the tidal interactions that stabilise Earth's axial tilt and drive our ocean tides.",
+  "name": "The Earth and Moon System (Procedural)",
+  "description": "The Earth-Moon gravitational two-body system rendered with procedurally generated WebGL shader textures \u2014 every surface generated from scratch based on mass and orbital distance.",
   "playing": false,
   "isLoaded": false,
   "elapsedTime": 0,
@@ -119,7 +119,7 @@
         "y": -500,
         "z": 1000
       },
-      "nonStellarProceduralManifestation": false
+      "nonStellarProceduralManifestation": true
     },
     {
       "name": "Moon",
@@ -152,7 +152,7 @@
         "y": 6.334444083774614,
         "z": -0.015608356925550449
       },
-      "nonStellarProceduralManifestation": false
+      "nonStellarProceduralManifestation": true
     }
   ],
   "particlesConfiguration": {

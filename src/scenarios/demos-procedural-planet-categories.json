@@ -1,0 +1,376 @@
+{
+  "name": "Procedural Planet Categories Showcase",
+  "description": "A demonstration system around a Sun-like star with eight procedurally textured worlds, each tuned to trigger a different procedural surface category: lava, habitable, desert, barren (light and heavy), ice world, ice giant, and gas giant. Orbits are spaced for stable viewing; surfaces use shader palettes and per-body noise.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Showcase Sun",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1,
+    "m": 1
+  },
+  "category": {
+    "name": "Demos",
+    "subCategory": "Procedural Surfaces"
+  },
+  "camera": {
+    "cameraFocus": "Showcase Sun",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Showcase Sun",
+    "customOrigoCameraPosition": {
+      "x": 0,
+      "y": 0,
+      "z": 45000
+    }
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 2e-5,
+    "tol": 0.0001,
+    "maxDt": 5e-5,
+    "minDt": 5e-6,
+    "useBarnesHut": true,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": true,
+    "barycenterMassOne": "Showcase Sun",
+    "barycenterMassTwo": "Eden",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "lagrangePoints": {
+    "display": false,
+    "selectedMassName": "Showcase Sun"
+  },
+  "masses": [
+    {
+      "name": "Showcase Sun",
+      "type": "star",
+      "m": 1,
+      "radius": 10270,
+      "tilt": 0,
+      "temperature": 5778,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.00052496,
+        "y": -0.00041083,
+        "z": 0
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Inferno",
+      "type": "terrestial planet",
+      "m": 3.003e-6,
+      "radius": 94.0089,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.35,
+        "y": 0.0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": 10.623424,
+        "z": 0
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Eden",
+      "type": "terrestial planet",
+      "m": 3.003e-6,
+      "radius": 94.0089,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.742462,
+        "y": 0.742462,
+        "z": 0
+      },
+      "velocity": {
+        "x": -4.336995,
+        "y": 4.336995,
+        "z": 0
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "skyblue"
+    },
+    {
+      "name": "Dune",
+      "type": "terrestial planet",
+      "m": 3.6036e-7,
+      "radius": 51.7049,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.0,
+        "y": 1.85,
+        "z": 0
+      },
+      "velocity": {
+        "x": -4.620752,
+        "y": 0.0,
+        "z": 0
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Rust",
+      "type": "terrestial planet",
+      "m": 1.95195e-6,
+      "radius": 79.9075,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -1.59099,
+        "y": 1.59099,
+        "z": 0
+      },
+      "velocity": {
+        "x": -2.962731,
+        "y": -2.962731,
+        "z": 0
+      },
+      "nonStellarProceduralManifestation": true
+    },
+    {
+      "name": "Phobos",
+      "type": "moon",
+      "m": 1.2012e-7,
+      "radius": 32.9031,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -2.65,
+        "y": 0.0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.0,
+        "y": -3.860785,
+        "z": 0
+      },
+      "nonStellarProceduralManifestation": true
+    },
+    {
+      "name": "Glacius",
+      "type": "terrestial planet",
+      "m": 2.7027e-6,
+      "radius": 94.0089,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -2.687006,
+        "y": -2.687006,
+        "z": 0
+      },
+      "velocity": {
+        "x": 2.279774,
+        "y": -2.279774,
+        "z": 0
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    },
+    {
+      "name": "Nephros",
+      "type": "sub-Neptune",
+      "m": 6.006e-5,
+      "radius": 376.0355,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.0,
+        "y": -5.5,
+        "z": 0
+      },
+      "velocity": {
+        "x": 2.679891,
+        "y": -0.0,
+        "z": 0
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    },
+    {
+      "name": "Jovius",
+      "type": "gas giant planet",
+      "m": 0.000225225,
+      "radius": 1034.0975,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 4.949747,
+        "y": -4.949747,
+        "z": 0
+      },
+      "velocity": {
+        "x": 1.679711,
+        "y": 1.679711,
+        "z": 0
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Showcase Sun",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

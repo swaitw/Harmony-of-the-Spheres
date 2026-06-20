@@ -1,5 +1,6 @@
 {
   "name": "Earth's Trojan Asteroids",
+  "description": "Earth shares its orbit with a handful of Trojan asteroids clustered around its Lagrange points. Simulate their stable co-orbital motion as they travel around the Sun.",
   "playing": false,
   "isLoaded": false,
   "elapsedTime": 0,
@@ -79,7 +80,8 @@
         "x": -3.2907083290702817,
         "y": 5.386850782306081,
         "z": -0.0004136098652036093
-      }
+      },
+      "nonStellarProceduralManifestation": false
     },
     {
       "name": "Sun",
@@ -115,7 +117,8 @@
         "x": -0.0015302219105728125,
         "y": -0.0029886563680599134,
         "z": 5.9718901629735255e-5
-      }
+      },
+      "nonStellarProceduralManifestation": false
     },
     {
       "name": "2010 TK7",
@@ -147,7 +150,8 @@
         "x": -4.357289208197114,
         "y": 4.152202648896197,
         "z": 1.474433203894867
-      }
+      },
+      "nonStellarProceduralManifestation": false
     },
     {
       "name": "2020 XL5",
@@ -179,7 +183,8 @@
         "x": -4.4406342990298455,
         "y": -0.6869510907710669,
         "z": 0.6376301228299784
-      }
+      },
+      "nonStellarProceduralManifestation": false
     }
   ],
   "particlesConfiguration": {

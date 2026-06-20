@@ -1,5 +1,6 @@
 {
   "name": "The Figure Eight N-body Choreography",
+  "description": "Three equal masses tracing a shared figure-eight orbit \u2014 a famous periodic solution to the gravitational three-body problem, discovered analytically in 1993.",
   "playing": false,
   "isLoaded": false,
   "elapsedTime": 0,
@@ -73,7 +74,8 @@
         "x": 34.7111,
         "y": 53.2728,
         "z": 0
-      }
+      },
+      "nonStellarProceduralManifestation": false
     },
     {
       "name": "Sarada",
@@ -104,7 +106,8 @@
         "x": 34.7111,
         "y": 53.2728,
         "z": 0
-      }
+      },
+      "nonStellarProceduralManifestation": false
     },
     {
       "name": "Arjuna",
@@ -135,7 +138,8 @@
         "x": -69.4222,
         "y": -106.5456,
         "z": 0
-      }
+      },
+      "nonStellarProceduralManifestation": false
     }
   ],
   "particlesConfiguration": {

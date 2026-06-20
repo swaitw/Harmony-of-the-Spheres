@@ -1,5 +1,6 @@
 {
   "name": "Jupiter and Its Ten Largest Trojan Asteroids",
+  "description": "Jupiter's gravity has captured two swarms of Trojan asteroids at its L4 and L5 Lagrange points. Watch them orbit in lockstep with the giant planet.",
   "playing": false,
   "isLoaded": false,
   "elapsedTime": 0,
@@ -77,7 +78,8 @@
         "x": -0.002955302002323214,
         "y": -0.0013366396524448069,
         "z": 8.501583196975394e-5
-      }
+      },
+      "nonStellarProceduralManifestation": false
     },
     {
       "name": "Jupiter",
@@ -115,7 +117,8 @@
         "x": 2.5741183430924193,
         "y": 1.0230368028797252,
         "z": -0.061823381042590046
-      }
+      },
+      "nonStellarProceduralManifestation": false
     },
     {
       "name": "Hektor",
@@ -147,7 +150,8 @@
         "x": -0.4863526548170122,
         "y": 2.5290352108818426,
         "z": 0.7458970444037296
-      }
+      },
+      "nonStellarProceduralManifestation": false
     },
     {
       "name": "Patroclus",
@@ -179,7 +183,8 @@
         "x": 1.6155376178200855,
         "y": -1.6881947320588615,
         "z": -0.946844441739423
-      }
+      },
+      "nonStellarProceduralManifestation": false
     },
     {
       "name": "Agamemnon",
@@ -211,7 +216,8 @@
         "x": 0.061965416714506026,
         "y": 2.642676967586073,
         "z": 0.9884989592105963
-      }
+      },
+      "nonStellarProceduralManifestation": false
     },
     {
       "name": "Achilles",
@@ -243,7 +249,8 @@
         "x": 0.2636497371762409,
         "y": 2.6680890007353355,
         "z": 0.3862689353040398
-      }
+      },
+      "nonStellarProceduralManifestation": false
     },
     {
       "name": "Mentor",
@@ -275,7 +282,8 @@
         "x": 2.7402343540193517,
         "y": -0.7920882380192844,
         "z": 0.35439349966306005
-      }
+      },
+      "nonStellarProceduralManifestation": false
     },
     {
       "name": "Paris",
@@ -307,7 +315,8 @@
         "x": 2.310451316823835,
         "y": -1.8515207005050596,
         "z": -0.14841183740197872
-      }
+      },
+      "nonStellarProceduralManifestation": false
     },
     {
       "name": "Deiphobus",
@@ -339,7 +348,8 @@
         "x": 2.181651959422696,
         "y": -1.6267016989215193,
         "z": 0.8819678920506642
-      }
+      },
+      "nonStellarProceduralManifestation": false
     },
     {
       "name": "\u00c4neas",
@@ -371,7 +381,8 @@
         "x": 2.347684765554574,
         "y": -1.4876873373756443,
         "z": 0.8207799006929853
-      }
+      },
+      "nonStellarProceduralManifestation": false
     },
     {
       "name": "Diomedes",
@@ -403,7 +414,8 @@
         "x": -1.282244014372602,
         "y": 2.4860620056928444,
         "z": 0.33258826992329327
-      }
+      },
+      "nonStellarProceduralManifestation": false
     },
     {
       "name": "Odysseus",
@@ -435,7 +447,8 @@
         "x": 0.7550732830077364,
         "y": 2.5290133857854964,
         "z": -0.07679435188203307
-      }
+      },
+      "nonStellarProceduralManifestation": false
     }
   ],
   "particlesConfiguration": {

@@ -1,5 +1,6 @@
 {
   "name": "The Star of David N-body Choreography",
+  "description": "Six equal masses following a symmetric Star of David choreography \u2014 one of the rare known periodic solutions to the gravitational n-body problem.",
   "playing": false,
   "isLoaded": false,
   "elapsedTime": 0,
@@ -73,7 +74,8 @@
         "x": -1.0702760715048,
         "y": 2.8615747036639,
         "z": 0
-      }
+      },
+      "nonStellarProceduralManifestation": false
     },
     {
       "name": "Sagan",
@@ -104,7 +106,8 @@
         "x": 77.7912175865836,
         "y": -134.7833138138306,
         "z": 0
-      }
+      },
+      "nonStellarProceduralManifestation": false
     },
     {
       "name": "Einstein",
@@ -135,7 +138,8 @@
         "x": -77.7912175865836,
         "y": 134.7833138138306,
         "z": 0
-      }
+      },
+      "nonStellarProceduralManifestation": false
     },
     {
       "name": "Oppenheimer",
@@ -166,7 +170,8 @@
         "x": 1.0702760715048,
         "y": -2.8615747036639,
         "z": 0
-      }
+      },
+      "nonStellarProceduralManifestation": false
     }
   ],
   "particlesConfiguration": {

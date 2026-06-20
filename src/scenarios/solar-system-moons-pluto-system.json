@@ -1,24 +1,24 @@
 {
-  "name": "Jupiter and the Galilean Moons",
-  "description": "Io, Europa, Ganymede, and Callisto in orbit around Jupiter. Observe the orbital resonances and strong tidal forces that make these moons geological powerhouses.",
+  "name": "Pluto and Its Moons",
+  "description": "Pluto and massive Charon form a true double-dwarf system locked in mutual tidal synchrony, alongside four smaller moons: Styx, Nix, Kerberos, and Hydra.",
   "playing": false,
   "isLoaded": false,
   "elapsedTime": 0,
-  "collisions": true,
+  "collisions": false,
   "massBeingModified": {
-    "name": "Jupiter",
+    "name": "Pluto",
     "unitName": "Solar Units",
     "unitMassQuantity": 1,
-    "m": 0.0009543
+    "m": 6.551e-9
   },
   "category": {
     "name": "Solar System",
     "subCategory": "Moons"
   },
   "camera": {
-    "cameraFocus": "Jupiter",
+    "cameraFocus": "Barycenter",
     "logarithmicDepthBuffer": false,
-    "rotatingReferenceFrame": "Jupiter"
+    "rotatingReferenceFrame": "Barycenter"
   },
   "integrator": {
     "name": "RK4",
@@ -32,53 +32,19 @@
     "softeningConstant": 0
   },
   "barycenter": {
-    "display": false,
-    "barycenterMassOne": "Sun",
-    "barycenterMassTwo": "Jupiter",
-    "systemBarycenter": true
+    "display": true,
+    "barycenterMassOne": "Pluto",
+    "barycenterMassTwo": "Charon",
+    "systemBarycenter": false
   },
   "graphics": {
     "background": true,
-    "orbits": true,
+    "orbits": false,
     "habitableZone": false,
-    "trails": false,
+    "trails": true,
     "labels": true
   },
   "masses": [
-    {
-      "name": "Jupiter",
-      "type": "gas giant planet",
-      "m": 0.0009543,
-      "radius": 1027.5229357798166,
-      "tilt": -3.13,
-      "atmosphere": "beige",
-      "graphics": {
-        "orbit": true,
-        "trail": false,
-        "label": true
-      },
-      "elements": {
-        "a": 0,
-        "e": 0,
-        "i": 0,
-        "argP": 0,
-        "lAn": 0,
-        "trueAnom": 0,
-        "eccAnom": 0,
-        "meanAnom": 0
-      },
-      "position": {
-        "x": -7.059720449635489e-9,
-        "y": -3.458205558367953e-7,
-        "z": -8.560595128944146e-9
-      },
-      "velocity": {
-        "x": 0.00012011206801885418,
-        "y": -1.4404565860802778e-5,
-        "z": 1.85765499287888e-6
-      },
-      "nonStellarProceduralManifestation": false
-    },
     {
       "name": "Sun",
       "type": "star",
@@ -100,23 +66,23 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 5.436151339701778,
-        "y": -0.2691893935210006,
-        "z": -0.120522867020747
+        "x": -19.22791884619062,
+        "y": 29.65238003300192,
+        "z": 2.38752537546694
       },
       "velocity": {
-        "x": 0.16942125305243833,
-        "y": 2.625182136850849,
-        "z": -0.014693280056960252
+        "x": -0.9913671081,
+        "y": -0.3685051316,
+        "z": 0.3269093222
       },
       "nonStellarProceduralManifestation": false
     },
     {
-      "name": "Io",
-      "type": "moon",
-      "m": 4.490848296995278e-8,
-      "radius": 24.082568807339452,
-      "tilt": -3.13,
+      "name": "Pluto",
+      "type": "dwarf planet",
+      "m": 6.551e-9,
+      "radius": 17.55,
+      "tilt": 119.61,
       "graphics": {
         "orbit": true,
         "trail": false,
@@ -133,23 +99,23 @@
         "meanAnom": 0
       },
       "position": {
-        "x": 0.0004123396684098477,
-        "y": -0.00277546561117049,
-        "z": -9.213389019387901e-5
+        "x": -7.389457957207945e-6,
+        "y": -4.430440108702667e-7,
+        "z": 1.217251245074825e-5
       },
       "velocity": {
-        "x": 3.632459716708889,
-        "y": 0.5331313883142663,
-        "z": 0.07191321713719195
+        "x": 0.0026658335,
+        "y": 0.0039987218,
+        "z": 0.001764486
       },
       "nonStellarProceduralManifestation": false
     },
     {
-      "name": "Europa",
+      "name": "Charon",
       "type": "moon",
-      "m": 2.413291634272764e-8,
-      "radius": 22.477064220183486,
-      "tilt": -3.13,
+      "m": 7.979e-10,
+      "radius": 8.95,
+      "tilt": 119.61,
       "graphics": {
         "orbit": true,
         "trail": false,
@@ -166,23 +132,23 @@
         "meanAnom": 0
       },
       "position": {
-        "x": 0.000231315012572641,
-        "y": -0.004516461518956031,
-        "z": -0.0001948699591675548
+        "x": 6.054448211641581e-5,
+        "y": 3.623608226009867e-6,
+        "z": -9.974415041542394e-5
       },
       "velocity": {
-        "x": 2.867825888888589,
-        "y": 0.1479315881074277,
-        "z": 0.053531172951165384
+        "x": -0.0218427962,
+        "y": -0.0327634706,
+        "z": -0.0144567193
       },
       "nonStellarProceduralManifestation": false
     },
     {
-      "name": "Ganymede",
+      "name": "Styx",
       "type": "moon",
-      "m": 7.450777301989e-8,
-      "radius": 34.633027522935784,
-      "tilt": -3.13,
+      "m": 4.485e-15,
+      "radius": 0.075,
+      "tilt": 119.61,
       "graphics": {
         "orbit": true,
         "trail": false,
@@ -199,23 +165,23 @@
         "meanAnom": 0
       },
       "position": {
-        "x": -0.007162482360743344,
-        "y": -1.26082702584475e-5,
-        "z": -9.466593207081436e-5
+        "x": 0.0002067022637851949,
+        "y": 0.0001381633047957577,
+        "z": -0.0001382088231375871
       },
       "velocity": {
-        "x": 0.009854944632595801,
-        "y": -2.2904667534862946,
-        "z": -0.08642422976208332
+        "x": -0.004200485,
+        "y": -0.0199955776,
+        "z": -0.0247727662
       },
       "nonStellarProceduralManifestation": false
     },
     {
-      "name": "Callisto",
+      "name": "Nix",
       "type": "moon",
-      "m": 5.4300826548000004e-8,
-      "radius": 35.74007220216607,
-      "tilt": -3.13,
+      "m": 2.264e-14,
+      "radius": 0.54,
+      "tilt": 119.61,
       "graphics": {
         "orbit": true,
         "trail": false,
@@ -232,14 +198,80 @@
         "meanAnom": 0
       },
       "position": {
-        "x": -0.01163958701040644,
-        "y": -0.005000778655901151,
-        "z": -0.0003148071350588741
+        "x": 0.0001012861417327635,
+        "y": 0.0002346048290044969,
+        "z": 0.0001998863905434299
       },
       "velocity": {
-        "x": 0.6828251398971682,
-        "y": -1.5765023231560384,
-        "z": -0.040977438627834185
+        "x": 0.020131499,
+        "y": 0.0089852002,
+        "z": -0.0206748655
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kerberos",
+      "type": "moon",
+      "m": 8.293e-15,
+      "radius": 0.148,
+      "tilt": 119.61,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.000264722036711647,
+        "y": -0.0002791273025923036,
+        "z": 1.580166209685006e-5
+      },
+      "velocity": {
+        "x": -0.0071397657,
+        "y": 0.0083673221,
+        "z": 0.0253589877
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Hydra",
+      "type": "moon",
+      "m": 2.411e-14,
+      "radius": 0.605,
+      "tilt": 119.61,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -6.652836593314456e-5,
+        "y": 0.0001698379725635448,
+        "z": 0.0003936678425103673
+      },
+      "velocity": {
+        "x": 0.0186010969,
+        "y": 0.0174593325,
+        "z": -0.0044849315
       },
       "nonStellarProceduralManifestation": false
     }
@@ -251,7 +283,7 @@
     "shapes": []
   },
   "ringToBeAdded": {
-    "primary": "Jupiter",
+    "primary": "Pluto",
     "a": 0,
     "aInterval": 0,
     "i": 0,

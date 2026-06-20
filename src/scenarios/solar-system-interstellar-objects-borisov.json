@@ -1,5 +1,6 @@
 {
   "name": "Interstellar Comet Borisov",
+  "description": "Borisov was the first confirmed interstellar comet, crossing our Solar System in 2019. Trace its hyperbolic path past the Sun on a journey from another star.",
   "playing": false,
   "isLoaded": false,
   "elapsedTime": 0,
@@ -73,7 +74,8 @@
         "x": 0,
         "y": 0,
         "z": 0
-      }
+      },
+      "nonStellarProceduralManifestation": false
     },
     {
       "name": "Mercury",
@@ -105,7 +107,8 @@
         "x": 8.124096901186897,
         "y": -0.8388815259462881,
         "z": -0.813953222690809
-      }
+      },
+      "nonStellarProceduralManifestation": false
     },
     {
       "name": "Venus",
@@ -138,7 +141,8 @@
         "x": -7.369037606167418,
         "y": -0.8430696474882625,
         "z": 0.4137392524038775
-      }
+      },
+      "nonStellarProceduralManifestation": false
     },
     {
       "name": "Earth",
@@ -171,7 +175,8 @@
         "x": -1.9287743434633904,
         "y": 5.990210113519866,
         "z": -0.0001102590313683855
-      }
+      },
+      "nonStellarProceduralManifestation": false
     },
     {
       "name": "Mars",
@@ -204,7 +209,8 @@
         "x": 5.303906895484618,
         "y": 0.5182428229656241,
         "z": -0.11936927791092816
-      }
+      },
+      "nonStellarProceduralManifestation": false
     },
     {
       "name": "Borisov",
@@ -236,7 +242,8 @@
         "x": -2.9575215008178106,
         "y": -4.119642252326898,
         "z": -4.709118214200203
-      }
+      },
+      "nonStellarProceduralManifestation": false
     },
     {
       "name": "Jupiter",
@@ -269,7 +276,8 @@
         "x": -2.5602981728577223,
         "y": 1.2383269232691374,
         "z": 0.052150789777639595
-      }
+      },
+      "nonStellarProceduralManifestation": false
     },
     {
       "name": "Saturn",
@@ -302,7 +310,8 @@
         "x": 0.957508119698689,
         "y": -1.7382299535163888,
         "z": -0.007777316967874351
-      }
+      },
+      "nonStellarProceduralManifestation": false
     },
     {
       "name": "Uranus",
@@ -335,7 +344,8 @@
         "x": -0.17464278161274274,
         "y": 1.361245697971015,
         "z": 0.007398087461215579
-      }
+      },
+      "nonStellarProceduralManifestation": false
     },
     {
       "name": "Neptune",
@@ -368,7 +378,8 @@
         "x": 0.5314410205521,
         "y": 1.0182389070176183,
         "z": -0.03333092993898854
-      }
+      },
+      "nonStellarProceduralManifestation": false
     }
   ],
   "particlesConfiguration": {

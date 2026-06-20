@@ -1,0 +1,1022 @@
+{
+  "name": "Uranus and Its Moons",
+  "description": "Uranus orbits on its side with a 98\u00b0 axial tilt. Explore its family of moons, from the fractured cliffs of Miranda to the larger worlds of Titania and Oberon.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": false,
+  "massBeingModified": {
+    "name": "Uranus",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1,
+    "m": 4.366e-5
+  },
+  "category": {
+    "name": "Solar System",
+    "subCategory": "Moons"
+  },
+  "camera": {
+    "cameraFocus": "Uranus",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Uranus"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-7,
+    "tol": 0.0001,
+    "maxDt": 5e-5,
+    "minDt": 5e-7,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Sun",
+    "barycenterMassTwo": "Uranus",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": false,
+    "trails": false,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Sun",
+      "type": "star",
+      "m": 1,
+      "radius": 10270,
+      "tilt": 0,
+      "temperature": 5778,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": -9.880318,
+        "y": -16.80002,
+        "z": 0.0657199
+      },
+      "velocity": {
+        "x": 1.2515188003,
+        "y": -0.6612530715,
+        "z": -0.0187339172
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Uranus",
+      "type": "ice giant planet",
+      "m": 4.366e-5,
+      "radius": 377.5,
+      "tilt": -97.77,
+      "atmosphere": "lightcyan",
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Cordelia",
+      "type": "moon",
+      "m": 3.06e-15,
+      "radius": 0.296,
+      "tilt": -97.77,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.0001069028,
+        "y": 6.588946e-5,
+        "z": 0.000307935
+      },
+      "velocity": {
+        "x": 2.1044136263,
+        "y": -0.3434230993,
+        "z": 0.8030743287
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Ophelia",
+      "type": "moon",
+      "m": 1.79e-15,
+      "radius": 0.318,
+      "tilt": -97.77,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -9.822887e-5,
+        "y": -2.711026e-5,
+        "z": -0.0003406877
+      },
+      "velocity": {
+        "x": -2.0767531006,
+        "y": 0.5303596067,
+        "z": 0.5571074762
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Bianca",
+      "type": "moon",
+      "m": 3.47e-15,
+      "radius": 0.377,
+      "tilt": -97.77,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.0001917333,
+        "y": -2.180305e-6,
+        "z": -0.0003454818
+      },
+      "velocity": {
+        "x": -1.7578507581,
+        "y": 0.6040987585,
+        "z": 0.9571486817
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Cressida",
+      "type": "moon",
+      "m": 9.24e-15,
+      "radius": 0.591,
+      "tilt": -97.77,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.0003769212,
+        "y": -5.258152e-5,
+        "z": 0.0001646804
+      },
+      "velocity": {
+        "x": 0.7355579553,
+        "y": -0.4715309342,
+        "z": -1.8382960207
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Desdemona",
+      "type": "moon",
+      "m": 7.04e-15,
+      "radius": 0.473,
+      "tilt": -97.77,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.000323187,
+        "y": -1.81068e-5,
+        "z": 0.0002701834
+      },
+      "velocity": {
+        "x": 1.2257573108,
+        "y": -0.5637851731,
+        "z": -1.4980948277
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Juliet",
+      "type": "moon",
+      "m": 2.16e-14,
+      "radius": 0.695,
+      "tilt": -97.77,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 7.426961e-5,
+        "y": 2.832807e-5,
+        "z": 0.0004253376
+      },
+      "velocity": {
+        "x": 1.8941498474,
+        "y": -0.5409222593,
+        "z": -0.2890055967
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Portia",
+      "type": "moon",
+      "m": 6.53e-14,
+      "radius": 0.998,
+      "tilt": -97.77,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.0003940539,
+        "y": -0.0001280132,
+        "z": -0.00015766
+      },
+      "velocity": {
+        "x": -0.7437867257,
+        "y": -0.0547285783,
+        "z": -1.8226867358
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Rosalind",
+      "type": "moon",
+      "m": 1.01e-14,
+      "radius": 0.532,
+      "tilt": -97.77,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.0003864738,
+        "y": 4.593772e-5,
+        "z": -0.0002575359
+      },
+      "velocity": {
+        "x": -1.0085966248,
+        "y": 0.3851702746,
+        "z": 1.5926107874
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Cupid",
+      "type": "moon",
+      "m": 1.56e-16,
+      "radius": 0.133,
+      "tilt": -97.77,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.0003222017,
+        "y": 0.0001218348,
+        "z": 0.000356063
+      },
+      "velocity": {
+        "x": 1.3397802264,
+        "y": -0.1821177833,
+        "z": 1.2908667518
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Belinda",
+      "type": "moon",
+      "m": 1.91e-14,
+      "radius": 0.665,
+      "tilt": -97.77,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.0004152166,
+        "y": -5.70998e-5,
+        "z": 0.0002794762
+      },
+      "velocity": {
+        "x": 0.9541125589,
+        "y": -0.4632391442,
+        "z": -1.5146071277
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Perdita",
+      "type": "moon",
+      "m": 7.04e-16,
+      "radius": 0.222,
+      "tilt": -97.77,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.0003790727,
+        "y": 0.0001129034,
+        "z": 0.0003211022
+      },
+      "velocity": {
+        "x": 1.1744643895,
+        "y": -0.0567954743,
+        "z": 1.4183339407
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Puck",
+      "type": "moon",
+      "m": 9.6e-14,
+      "radius": 1.197,
+      "tilt": -97.77,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.0005234797,
+        "y": 0.0001442384,
+        "z": 0.0002027985
+      },
+      "velocity": {
+        "x": 0.6517235979,
+        "y": 0.1097924529,
+        "z": 1.5855255354
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Mab",
+      "type": "moon",
+      "m": 1.56e-16,
+      "radius": 0.133,
+      "tilt": -97.77,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.0004768213,
+        "y": 6.454513e-5,
+        "z": -0.0004364057
+      },
+      "velocity": {
+        "x": -1.0374115719,
+        "y": 0.4077588285,
+        "z": 1.1945468698
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Miranda",
+      "type": "moon",
+      "m": 3.164e-11,
+      "radius": 3.482,
+      "tilt": -97.77,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.0007567377,
+        "y": -0.0001585815,
+        "z": 0.0003951992
+      },
+      "velocity": {
+        "x": 0.5671789961,
+        "y": -0.3769113287,
+        "z": -1.2332010356
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Ariel",
+      "type": "moon",
+      "m": 6.802e-10,
+      "radius": 8.55,
+      "tilt": -97.77,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.001160045,
+        "y": -0.000184524,
+        "z": 0.0004987044
+      },
+      "velocity": {
+        "x": 0.416535604,
+        "y": -0.2379014756,
+        "z": -1.0586573857
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Umbriel",
+      "type": "moon",
+      "m": 5.892e-10,
+      "radius": 8.635,
+      "tilt": -97.77,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.0003508091,
+        "y": 0.0003129872,
+        "z": 0.001707731
+      },
+      "velocity": {
+        "x": 0.9458127416,
+        "y": -0.1742382165,
+        "z": 0.227773945
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Titania",
+      "type": "moon",
+      "m": 1.773e-9,
+      "radius": 11.642,
+      "tilt": -97.77,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.00242188,
+        "y": -0.0007317869,
+        "z": -0.001441445
+      },
+      "velocity": {
+        "x": -0.3962759616,
+        "y": -0.0053074377,
+        "z": -0.6601125016
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Oberon",
+      "type": "moon",
+      "m": 1.515e-9,
+      "radius": 11.245,
+      "tilt": -97.77,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.001936324,
+        "y": 5.833798e-5,
+        "z": 0.003378736
+      },
+      "velocity": {
+        "x": 0.5599316273,
+        "y": -0.1673189754,
+        "z": -0.3189883929
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Francisco",
+      "type": "moon",
+      "m": 2.81e-16,
+      "radius": 0.163,
+      "tilt": -97.77,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.01741872,
+        "y": 0.0257049,
+        "z": -0.006836813
+      },
+      "velocity": {
+        "x": 0.1529417083,
+        "y": 0.1107740706,
+        "z": 0.1115587953
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Caliban",
+      "type": "moon",
+      "m": 1.96e-15,
+      "radius": 0.31,
+      "tilt": -97.77,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.04403317,
+        "y": 0.01879149,
+        "z": 0.01883141
+      },
+      "velocity": {
+        "x": 0.094803345,
+        "y": -0.1161062802,
+        "z": -0.0926787162
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Stephano",
+      "type": "moon",
+      "m": 8.55e-16,
+      "radius": 0.237,
+      "tilt": -97.77,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.004165204,
+        "y": -0.04387247,
+        "z": -0.03473696
+      },
+      "velocity": {
+        "x": -0.1688480059,
+        "y": -0.0015750705,
+        "z": 0.0219972199
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Trinculo",
+      "type": "moon",
+      "m": 1.56e-16,
+      "radius": 0.133,
+      "tilt": -97.77,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.03332322,
+        "y": -0.03975367,
+        "z": -0.01193149
+      },
+      "velocity": {
+        "x": -0.1180616799,
+        "y": -0.1412587567,
+        "z": -0.0229184985
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Sycorax",
+      "type": "moon",
+      "m": 1.01e-13,
+      "radius": 1.16,
+      "tilt": -97.77,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.048817167089,
+        "y": 0.028251594784,
+        "z": 0.025500479439
+      },
+      "velocity": {
+        "x": 0.0146875005,
+        "y": 0.1848924069,
+        "z": 0.0084899518
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Margaret",
+      "type": "moon",
+      "m": 2.11e-16,
+      "radius": 0.148,
+      "tilt": -97.77,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.012442184219,
+        "y": -0.10658955255,
+        "z": -0.12528351706
+      },
+      "velocity": {
+        "x": 0.0351621912,
+        "y": 0.0336254507,
+        "z": 0.0245502502
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Prospero",
+      "type": "moon",
+      "m": 3.27e-15,
+      "radius": 0.37,
+      "tilt": -97.77,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.12601107292,
+        "y": -0.080556836371,
+        "z": -0.006817158304
+      },
+      "velocity": {
+        "x": -0.0316739913,
+        "y": -0.0600511458,
+        "z": 0.0492843291
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Setebos",
+      "type": "moon",
+      "m": 2.71e-15,
+      "radius": 0.347,
+      "tilt": -97.77,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.11253266266,
+        "y": 0.057182161922,
+        "z": -0.054060097361
+      },
+      "velocity": {
+        "x": -0.0092975738,
+        "y": -0.1008501143,
+        "z": -0.0101873996
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Ferdinand",
+      "type": "moon",
+      "m": 2.41e-16,
+      "radius": 0.155,
+      "tilt": -97.77,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.072040896486,
+        "y": -0.16589730683,
+        "z": -0.011764598074
+      },
+      "velocity": {
+        "x": -0.0760535188,
+        "y": 0.0240968561,
+        "z": 0.0153564869
+      },
+      "nonStellarProceduralManifestation": false
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Uranus",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

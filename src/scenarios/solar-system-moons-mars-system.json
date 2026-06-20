@@ -1,5 +1,6 @@
 {
   "name": "Mars and Its Moons Phobos and Deimos",
+  "description": "Mars has two small moons: swift Phobos orbiting in under 8 hours, and distant Deimos drifting slowly \u2014 both thought to be captured asteroids from the belt.",
   "playing": false,
   "isLoaded": false,
   "elapsedTime": 0,
@@ -73,7 +74,8 @@
         "x": -5.2899724205543155,
         "y": -0.06249167561447718,
         "z": 0.1285180929683702
-      }
+      },
+      "nonStellarProceduralManifestation": false
     },
     {
       "name": "Mars",
@@ -106,7 +108,8 @@
         "x": 2.307996983376931e-9,
         "y": 7.145816858964172e-9,
         "z": -8.124324279984234e-10
-      }
+      },
+      "nonStellarProceduralManifestation": false
     },
     {
       "name": "Phobos",
@@ -138,7 +141,8 @@
         "x": -0.17192317024186732,
         "y": -0.4188471330676279,
         "z": 0.06563852508203072
-      }
+      },
+      "nonStellarProceduralManifestation": false
     },
     {
       "name": "Deimos",
@@ -170,7 +174,8 @@
         "x": 0.23923264692446428,
         "y": -0.09551050573749158,
         "z": -0.12195270680186761
-      }
+      },
+      "nonStellarProceduralManifestation": false
     }
   ],
   "particlesConfiguration": {

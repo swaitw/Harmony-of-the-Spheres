@@ -1,5 +1,6 @@
 {
   "name": "Pentagram of Venus",
+  "description": "Over eight Earth years, Venus traces a near-perfect pentagram in the sky relative to Earth \u2014 a beautiful consequence of their near 13:8 orbital resonance around the Sun.",
   "playing": false,
   "isLoaded": false,
   "elapsedTime": 0,
@@ -73,7 +74,8 @@
         "x": 0.0020869837917339754,
         "y": -0.0009759759745137204,
         "z": -4.519598528871196e-5
-      }
+      },
+      "nonStellarProceduralManifestation": false
     },
     {
       "name": "Venus",
@@ -106,7 +108,8 @@
         "x": -3.5713994857490308,
         "y": 6.445551271928175,
         "z": 0.29452473854502614
-      }
+      },
+      "nonStellarProceduralManifestation": false
     },
     {
       "name": "Earth",
@@ -144,7 +147,8 @@
         "x": 2.4645428337894026,
         "y": 5.7097644117945805,
         "z": -0.00033177815766459033
-      }
+      },
+      "nonStellarProceduralManifestation": false
     }
   ],
   "particlesConfiguration": {
