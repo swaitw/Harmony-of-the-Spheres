@@ -16,8 +16,20 @@
   color: var(--theme-color-5);
 }
 
-.custom-scenario-section {
+.custom-scenario-section-static {
   margin-bottom: 2.5rem;
+  padding-bottom: 0.25rem;
+}
+
+.custom-scenario-section-static h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--theme-color-4);
+  color: var(--theme-color-6);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 1.6rem;
 }
 
 .custom-scenario-actions {

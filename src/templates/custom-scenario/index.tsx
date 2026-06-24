@@ -35,10 +35,11 @@ import {
   navigationMenuCssModifier,
   scenariosMenuItem,
 } from "../scenarios-menu/scenarios-menu.module.css";
+import CollapsibleSection from "../../components/collapsible-section";
 import {
   customScenarioPage,
   customScenarioIntro,
-  customScenarioSection,
+  customScenarioSectionStatic,
   customScenarioActions,
   customScenarioSaveOption,
   customScenarioSaveLabel,
@@ -69,8 +70,16 @@ const SavedScenariosNavigationItem = () => {
   );
 };
 
+type SectionId = "star" | "integrator" | "graphics" | "particles";
+
 const CustomScenario = ({ data: { categoryTree } }: Props) => {
   const [formConfig, setFormConfig] = useState(createDefaultCustomScenarioForm);
+  const [openSections, setOpenSections] = useState<Record<SectionId, boolean>>({
+    star: false,
+    integrator: false,
+    graphics: false,
+    particles: false,
+  });
   const [saveBeforeLoad, setSaveBeforeLoad] = useState(false);
   const [validationError, setValidationError] = useState<string | null>(null);
   const [showSaveNameModal, setShowSaveNameModal] = useState(false);
@@ -93,6 +102,13 @@ const CustomScenario = ({ data: { categoryTree } }: Props) => {
     },
     [],
   );
+
+  const toggleSection = useCallback((sectionId: SectionId) => {
+    setOpenSections((previousSections) => ({
+      ...previousSections,
+      [sectionId]: !previousSections[sectionId],
+    }));
+  }, []);
 
   const loadScenario = useCallback(
     (scenario: ReturnType<typeof buildScenarioFromCustomForm>) => {
@@ -229,7 +245,7 @@ const CustomScenario = ({ data: { categoryTree } }: Props) => {
           controls.
         </p>
 
-        <section className={`${customScenarioSection} ${controlsGrid}`}>
+        <section className={`${customScenarioSectionStatic} ${controlsGrid}`}>
           <h2>General</h2>
           <div className={control}>
             <div className={controlLabel}>
@@ -250,8 +266,14 @@ const CustomScenario = ({ data: { categoryTree } }: Props) => {
           </div>
         </section>
 
-        <section className={`${customScenarioSection} ${controlsGrid}`}>
-          <h2>Star</h2>
+        <CollapsibleSection
+          title="Star"
+          isOpen={openSections.star}
+          onToggle={() => {
+            toggleSection("star");
+          }}
+          contentClassName={controlsGrid}
+        >
           <div className={control}>
             <div className={controlLabel}>
               <label htmlFor="star-name">Name</label>
@@ -311,10 +333,16 @@ const CustomScenario = ({ data: { categoryTree } }: Props) => {
               <span>{Math.round(starProperties.temperatureKelvin)} K</span>
             </div>
           </div>
-        </section>
+        </CollapsibleSection>
 
-        <section className={`${customScenarioSection} ${controlsGrid}`}>
-          <h2>Integrator</h2>
+        <CollapsibleSection
+          title="Integrator"
+          isOpen={openSections.integrator}
+          onToggle={() => {
+            toggleSection("integrator");
+          }}
+          contentClassName={controlsGrid}
+        >
           <div className={control}>
             <div className={controlLabel}>
               <label>Integrator</label>
@@ -406,10 +434,16 @@ const CustomScenario = ({ data: { categoryTree } }: Props) => {
               />
             </div>
           </div>
-        </section>
+        </CollapsibleSection>
 
-        <section className={`${customScenarioSection} ${controlsGrid}`}>
-          <h2>Graphics</h2>
+        <CollapsibleSection
+          title="Graphics"
+          isOpen={openSections.graphics}
+          onToggle={() => {
+            toggleSection("graphics");
+          }}
+          contentClassName={controlsGrid}
+        >
           {(
             [
               [
@@ -448,10 +482,16 @@ const CustomScenario = ({ data: { categoryTree } }: Props) => {
               </div>
             </div>
           ))}
-        </section>
+        </CollapsibleSection>
 
-        <section className={`${customScenarioSection} ${controlsGrid}`}>
-          <h2>Particles</h2>
+        <CollapsibleSection
+          title="Particles"
+          isOpen={openSections.particles}
+          onToggle={() => {
+            toggleSection("particles");
+          }}
+          contentClassName={controlsGrid}
+        >
           <div className={control}>
             <div className={controlLabel}>
               <label>Maximum Particles</label>
@@ -518,7 +558,7 @@ const CustomScenario = ({ data: { categoryTree } }: Props) => {
               />
             </div>
           </div>
-        </section>
+        </CollapsibleSection>
 
         <div className={customScenarioActions}>
           <div className={customScenarioSaveOption}>
