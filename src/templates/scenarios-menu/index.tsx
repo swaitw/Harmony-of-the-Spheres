@@ -109,6 +109,14 @@ const ScenarioMenu = ({
               </NavigationMenuItem>
             </Link>
           ))}
+          <Link to="/scenarios/custom-scenario">
+            <NavigationMenuItem
+              active={category === "custom"}
+              cssModifier={scenariosMenuItem}
+            >
+              Create Scenario
+            </NavigationMenuItem>
+          </Link>
           <SavedScenariosNavigationItem active={category === "saved"} />
         </NavigationMenu>{" "}
         {subCategories?.length ? (

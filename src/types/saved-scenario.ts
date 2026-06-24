@@ -5,4 +5,8 @@ type SavedScenarioEntry = {
   scenario: ScenarioType;
 };
 
-export type { SavedScenarioEntry };
+type SaveScenarioResult =
+  | { success: true; id: string }
+  | { success: false; error: "QUOTA_EXCEEDED" | "NAME_EXISTS" };
+
+export type { SavedScenarioEntry, SaveScenarioResult };

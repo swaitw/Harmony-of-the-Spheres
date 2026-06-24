@@ -62,6 +62,11 @@ const SavedScenariosMenu = ({ data: { categoryTree } }: Props) => {
               </NavigationMenuItem>
             </Link>
           ))}
+          <Link to="/scenarios/custom-scenario">
+            <NavigationMenuItem active={false} cssModifier={scenariosMenuItem}>
+              Create Scenario
+            </NavigationMenuItem>
+          </Link>
           {savedScenarios.length > 0 && (
             <Link to="/scenarios/saved">
               <NavigationMenuItem active cssModifier={scenariosMenuItem}>

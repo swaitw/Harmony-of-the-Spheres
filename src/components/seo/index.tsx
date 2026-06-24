@@ -35,7 +35,6 @@ const Seo = ({ title, description, pathname }: Props) => {
     <>
       <title>{fullTitle}</title>
       <meta name="description" content={metaDescription} />
-      <link rel="canonical" href={canonicalUrl} />
 
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content={siteTitle} />

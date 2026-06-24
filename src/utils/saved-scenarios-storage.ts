@@ -1,5 +1,8 @@
 import { ScenarioType } from "../types/scenario";
-import { SavedScenarioEntry } from "../types/saved-scenario";
+import {
+  SavedScenarioEntry,
+  SaveScenarioResult,
+} from "../types/saved-scenario";
 import { kebabCase } from "./text-utils";
 
 const SAVED_SCENARIOS_STORAGE_KEY = "harmony-saved-scenarios";
@@ -90,10 +93,6 @@ const writeSavedScenarios = (entries: SavedScenarioEntry[]): void => {
   dispatchSavedScenariosChanged();
 };
 
-type SaveScenarioResult =
-  | { success: true; id: string }
-  | { success: false; error: "QUOTA_EXCEEDED" | "NAME_EXISTS" };
-
 const generateSavedScenarioId = (): string => {
   if (typeof crypto !== "undefined" && crypto.randomUUID) {
     return crypto.randomUUID();
@@ -164,5 +163,3 @@ export {
   saveScenario,
   deleteSavedScenario,
 };
-
-export type { SaveScenarioResult };

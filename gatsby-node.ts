@@ -96,8 +96,6 @@ const createPages: GatsbyNode["createPages"] = async ({ actions, graphql }) => {
   const { createPage } = actions;
   const SCENARIOS_PER_PAGE = 12;
 
-  const defer = process.env.gatsby_executing_command === "build";
-
   const { data } = await graphql<FetchedScenariosJsonType>(`
     {
       scenariosJson: allScenariosJson {
@@ -137,7 +135,6 @@ const createPages: GatsbyNode["createPages"] = async ({ actions, graphql }) => {
         numPages: allNumPages,
         currentPage: i + 1,
       },
-      defer,
     });
   }
 
@@ -173,7 +170,6 @@ const createPages: GatsbyNode["createPages"] = async ({ actions, graphql }) => {
             numPages: categoryNumPages,
             currentPage: i + 1,
           },
-          defer,
         });
       }
 
@@ -207,7 +203,6 @@ const createPages: GatsbyNode["createPages"] = async ({ actions, graphql }) => {
                 numPages: subCategoryNumPages,
                 currentPage: i + 1,
               },
-              defer,
             });
           }
         });
@@ -216,9 +211,20 @@ const createPages: GatsbyNode["createPages"] = async ({ actions, graphql }) => {
   );
 
   createPage({
+    path: "/scenarios/custom-scenario",
+    component: path.resolve("./src/templates/custom-scenario/index.tsx"),
+  });
+
+  createPage({
+    path: "/scenarios/custom-scenario/run",
+    component: path.resolve(
+      "./src/templates/custom-planetary-scenario/index.tsx",
+    ),
+  });
+
+  createPage({
     path: "/scenarios/saved",
     component: path.resolve("./src/templates/saved-scenarios-menu/index.tsx"),
-    defer,
   });
 
   createPage({
@@ -243,7 +249,6 @@ const createPages: GatsbyNode["createPages"] = async ({ actions, graphql }) => {
       context: {
         scenarioName: name,
       },
-      defer,
     });
   });
 };
