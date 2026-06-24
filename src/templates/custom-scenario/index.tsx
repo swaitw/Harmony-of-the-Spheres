@@ -230,7 +230,7 @@ const CustomScenario = ({ data: { categoryTree } }: Props) => {
           ))}
           <Link to="/scenarios/custom-scenario">
             <NavigationMenuItem active cssModifier={scenariosMenuItem}>
-              Custom Scenario
+              Create Scenario
             </NavigationMenuItem>
           </Link>
           <SavedScenariosNavigationItem />
