@@ -7,7 +7,7 @@ import React, {
 } from "react";
 import { useSelector, useDispatch } from "react-redux";
 
-import { graphql, HeadProps } from "gatsby";
+import { graphql, HeadProps, Link } from "gatsby";
 import Seo from "../../components/seo";
 import { ScenarioType } from "../../types/scenario";
 import { ScenarioStateType } from "../../state";
@@ -34,6 +34,7 @@ import useSavedScenarios from "../../hooks/useSavedScenarios";
 import "../../theme/theme.css";
 
 import {
+  scenarioBackButton,
   planetaryScenarioFooter,
   playButtonModifier,
   resetButtonModifier,
@@ -48,6 +49,7 @@ import {
 } from "./simulation-controls/simulation-controls.module.css";
 import {
   icon,
+  bars,
   play,
   pause,
   rotateLeft,
@@ -221,6 +223,13 @@ const Scenario = ({ data, originalScenario: savedOriginalScenario }: Props) => {
 
   return (
     <Fragment>
+      <Link
+        to="/scenarios/all"
+        className={scenarioBackButton}
+        aria-label="Back to scenarios"
+      >
+        <i className={`${icon} ${bars}`} />
+      </Link>
       <canvas
         className={`${fullScreenCanvasElement} ${webglCanvas}`}
         ref={webGlCanvas}

@@ -1,3 +1,30 @@
+.scenario-back-button {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding) calc(2 * var(--padding));
+  background-color: var(--theme-color-1);
+  border-bottom: var(--border);
+  border-right: var(--border);
+  color: var(--theme-color-5);
+  transition:
+    color 0.2s,
+    background-color 0.2s;
+}
+
+.scenario-back-button:hover {
+  color: var(--theme-color-6);
+  background-color: var(--theme-color-4);
+}
+
+.scenario-back-button i {
+  font-size: 1.5rem;
+}
+
 .planetary-scenario-footer {
   position: absolute;
   bottom: 0;
