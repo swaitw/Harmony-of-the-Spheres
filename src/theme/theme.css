@@ -37,6 +37,11 @@
   --padding: 1rem;
   --border: 1px solid var(--theme-color-4);
 
+  --ad-banner-height-mobile: 3.125rem;
+  --ad-banner-height-desktop: 5.625rem;
+  --ad-rectangle-width: 18.75rem;
+  --ad-rectangle-height: 15.625rem;
+
   font-family: var(--font-family);
   font-size: var(--root-font-size);
   color: var(--font-color);

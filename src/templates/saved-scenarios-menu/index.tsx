@@ -3,6 +3,7 @@ import { Link, graphql, HeadProps } from "gatsby";
 
 import Seo from "../../components/seo";
 import Layout from "../../components/layout";
+import AdSlot from "../../components/ad-slot";
 import Button from "../../components/button";
 import NavigationMenu from "../../components/navigation-menu";
 import NavigationMenuItem from "../../components/navigation-menu/navigation-menu-item";
@@ -76,6 +77,7 @@ const SavedScenariosMenu = ({ data: { categoryTree } }: Props) => {
           )}
         </NavigationMenu>
       </section>
+      <AdSlot variant="banner" name="saved-scenarios-menu-top" />
       <section className={scenariosListWrapper}>
         {savedScenarios.length === 0 ? (
           <p className={savedScenariosEmptyMessage}>
@@ -107,6 +109,7 @@ const SavedScenariosMenu = ({ data: { categoryTree } }: Props) => {
           ))
         )}
       </section>
+      <AdSlot variant="rectangle" name="saved-scenarios-menu-bottom" />
     </Layout>
   );
 };

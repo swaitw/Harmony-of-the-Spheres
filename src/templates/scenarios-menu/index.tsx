@@ -2,6 +2,7 @@ import React from "react";
 import { graphql, Link, HeadProps } from "gatsby";
 import Seo from "../../components/seo";
 import Layout from "../../components/layout";
+import AdSlot from "../../components/ad-slot";
 import NavigationMenu from "../../components/navigation-menu";
 import NavigationMenuItem from "../../components/navigation-menu/navigation-menu-item";
 import { kebabCase } from "../../utils/text-utils";
@@ -179,6 +180,7 @@ const ScenarioMenu = ({
           </NavigationMenu>
         )}
       </section>
+      <AdSlot variant="banner" name="scenario-menu-top" />
       <section className={scenariosListWrapper}>
         {scenariosJson.scenarios.map(({ scenario }) => (
           <Link
@@ -196,6 +198,7 @@ const ScenarioMenu = ({
           </Link>
         ))}
       </section>
+      <AdSlot variant="rectangle" name="scenario-menu-bottom" />
     </Layout>
   );
 };
