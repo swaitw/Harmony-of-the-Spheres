@@ -1,0 +1,471 @@
+{
+  "name": "Planet Nine and the Detached Objects",
+  "description": "What if a distant ninth planet is shepherding the orbits of Neptune and extreme trans-Neptunian objects like Sedna? Explore the hypothetical gravity of Planet Nine alongside Neptune and the detached bodies whose clustered orbits sparked the search.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Sun",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1,
+    "m": 1
+  },
+  "category": {
+    "name": "What If",
+    "subCategory": null
+  },
+  "camera": {
+    "cameraFocus": "Barycenter",
+    "logarithmicDepthBuffer": true,
+    "rotatingReferenceFrame": "Sun"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.001,
+    "tol": 0.01,
+    "maxDt": 0.05,
+    "minDt": 0.0001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Neptune",
+    "barycenterMassTwo": "Sun",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": false,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Sun",
+      "type": "star",
+      "m": 1,
+      "radius": 10270,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "nonStellarProceduralManifestation": false,
+      "temperature": 5778
+    },
+    {
+      "name": "Neptune",
+      "type": "gas giant planet",
+      "m": 5.149e-05,
+      "radius": 355.9633027522936,
+      "tilt": -28.32,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 29.242813587566022,
+        "y": -6.367188613694622,
+        "z": -0.5428996901445959
+      },
+      "velocity": {
+        "x": 0.23906572471231594,
+        "y": 1.1277555478331993,
+        "z": -0.02882824586097232
+      },
+      "nonStellarProceduralManifestation": false,
+      "atmosphere": "skyblue"
+    },
+    {
+      "name": "Sedna",
+      "type": "dwarf planet",
+      "m": 1e-12,
+      "radius": 8.0,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 44.784979035608984,
+        "y": 69.65275146139899,
+        "z": -17.472556365691958
+      },
+      "velocity": {
+        "x": -0.8858409603442537,
+        "y": 0.2486937433804917,
+        "z": 0.06662911807484083
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "2012 VP113",
+      "type": "dwarf planet",
+      "m": 1e-12,
+      "radius": 7.0,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 48.682852022739965,
+        "y": 64.70051121729789,
+        "z": -22.128786299489978
+      },
+      "velocity": {
+        "x": -0.5196428440520701,
+        "y": 0.6829931134793779,
+        "z": 0.2289174824397524
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Leleakuhonua",
+      "type": "dwarf planet",
+      "m": 1e-12,
+      "radius": 7.5,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 30.62133001924664,
+        "y": 36.590570445544216,
+        "z": -6.263097808761761
+      },
+      "velocity": {
+        "x": -0.7117709807083968,
+        "y": 0.8825157017542764,
+        "z": 0.48340588190019773
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "The Goblin",
+      "type": "dwarf planet",
+      "m": 1e-12,
+      "radius": 6.0,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 75.78474110687159,
+        "y": 12.243080170224601,
+        "z": 14.721787792736198
+      },
+      "velocity": {
+        "x": -0.5449212537878791,
+        "y": 0.8244467057344533,
+        "z": -0.00954059465632389
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "2010 GB174",
+      "type": "asteroid",
+      "m": 1e-15,
+      "radius": 4.0,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": -67.9537234250012,
+        "y": -11.925326952537462,
+        "z": 23.42723188815919
+      },
+      "velocity": {
+        "x": -0.3184882798423273,
+        "y": -0.8737655409356841,
+        "z": 0.32165363275234193
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "2000 CR105",
+      "type": "asteroid",
+      "m": 1e-15,
+      "radius": 4.0,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": -55.05192919800712,
+        "y": 27.565865397710205,
+        "z": 10.96070548986586
+      },
+      "velocity": {
+        "x": -0.7918054151086877,
+        "y": -0.5400066018169899,
+        "z": 0.4021462396902189
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "2010 VZ98",
+      "type": "asteroid",
+      "m": 1e-15,
+      "radius": 3.5,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 21.210343684635774,
+        "y": 27.898234751928936,
+        "z": -2.4982456792657337
+      },
+      "velocity": {
+        "x": -1.2262211887266115,
+        "y": 0.691746230901068,
+        "z": 0.06093291904680973
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "2007 TG422",
+      "type": "asteroid",
+      "m": 1e-15,
+      "radius": 3.5,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 11.59196249626807,
+        "y": 35.602109013078326,
+        "z": -8.255283020573161
+      },
+      "velocity": {
+        "x": -1.115966411393827,
+        "y": 0.8214419340221476,
+        "z": 0.23921145821795137
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "2013 RF98",
+      "type": "asteroid",
+      "m": 1e-15,
+      "radius": 3.5,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 25.84847488896997,
+        "y": 25.910126609636166,
+        "z": -7.955143973008843
+      },
+      "velocity": {
+        "x": -0.5984788436778924,
+        "y": 1.1503306415034282,
+        "z": 0.5630566516627927
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "2015 BP519",
+      "type": "asteroid",
+      "m": 1e-15,
+      "radius": 3.5,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 16.162994861503343,
+        "y": 26.222582008745672,
+        "z": -41.459665197796674
+      },
+      "velocity": {
+        "x": -0.9647647180276837,
+        "y": 0.30687866028633726,
+        "z": 0.6418626542222208
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Planet Nine",
+      "type": "gas giant planet",
+      "m": 1.5e-05,
+      "radius": 200,
+      "tilt": -30,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 465.01403588762105,
+        "y": 953.1998639769525,
+        "z": -359.9610614244621
+      },
+      "velocity": {
+        "x": -0.0908562707463369,
+        "y": 0.06150348046992617,
+        "z": 0.045492887502296374
+      },
+      "nonStellarProceduralManifestation": false,
+      "atmosphere": "skyblue"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Sun",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}
