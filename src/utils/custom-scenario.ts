@@ -100,6 +100,7 @@ const buildScenarioFromCustomForm = (
     cameraPosition: starName,
     logarithmicDepthBuffer: false,
     rotatingReferenceFrame: starName,
+    defaultCameraPositionOnScenarioStart: true,
   };
 
   return {

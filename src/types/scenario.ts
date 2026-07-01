@@ -10,6 +10,8 @@ export type ScenarioCameraType = {
   cameraPosition: string;
   logarithmicDepthBuffer: boolean;
   rotatingReferenceFrame: string;
+  defaultCameraPositionOnScenarioStart?: boolean;
+  defaultCameraPositionOnScenarioStartVector?: VectorType;
   cameraDistanceToOrigoInAu?: number;
   customOrigoCameraPosition?: VectorType;
   customBarycenterCameraPosition?: VectorType;

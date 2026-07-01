@@ -121,9 +121,111 @@ class PlanetaryScene extends SceneBase {
         this.scenario.particlesConfiguration?.shapes?.length ?? 0,
     };
 
+    this.setInitialCameraPosition();
+
     this.clock = new THREE.Clock();
 
     this.iterate();
+  }
+
+  private getCameraFrameContext(): {
+    rotatingReferenceFrame: { x: number; y: number; z: number };
+    barycenterPosition: ReturnType<typeof getBarycenter>;
+  } {
+    const rotatingReferenceFrameMass = this.integrator.masses.find(
+      (mass) => this.scenario.camera.rotatingReferenceFrame === mass.name,
+    );
+
+    let barycenterMasses;
+
+    if (this.scenario.barycenter.systemBarycenter) {
+      barycenterMasses = this.integrator.masses;
+    } else {
+      barycenterMasses = this.integrator.masses.filter(
+        (mass) =>
+          mass.name === this.scenario.barycenter.barycenterMassOne ||
+          mass.name === this.scenario.barycenter.barycenterMassTwo,
+      );
+    }
+
+    const barycenterPosition = getBarycenter(barycenterMasses);
+
+    let rotatingReferenceFrame = { x: 0, y: 0, z: 0 };
+
+    if (rotatingReferenceFrameMass) {
+      rotatingReferenceFrame = rotatingReferenceFrameMass.position;
+    }
+
+    if (this.scenario.camera.rotatingReferenceFrame === "Barycenter") {
+      rotatingReferenceFrame = barycenterPosition;
+    }
+
+    return { rotatingReferenceFrame, barycenterPosition };
+  }
+
+  private setInitialCameraPosition(): void {
+    const defaultCameraPositionOnScenarioStartVector =
+      this.scenario.camera.defaultCameraPositionOnScenarioStartVector;
+
+    if (!defaultCameraPositionOnScenarioStartVector) {
+      return;
+    }
+
+    const { cameraFocus } = this.scenario.camera;
+    const { rotatingReferenceFrame, barycenterPosition } =
+      this.getCameraFrameContext();
+    const scale = this.scale;
+
+    if (cameraFocus === "Barycenter") {
+      const rotatedBarycenter = this.utilVector
+        .set({
+          x: barycenterPosition.x,
+          y: barycenterPosition.y,
+          z: barycenterPosition.z,
+        })
+        .subtractFrom(rotatingReferenceFrame)
+        .multiplyByScalar(scale)
+        .toObject();
+
+      this.camera.position.set(
+        rotatedBarycenter.x + defaultCameraPositionOnScenarioStartVector.x,
+        rotatedBarycenter.y + defaultCameraPositionOnScenarioStartVector.y,
+        rotatedBarycenter.z + defaultCameraPositionOnScenarioStartVector.z,
+      );
+
+      this.controls.target.set(
+        rotatedBarycenter.x,
+        rotatedBarycenter.y,
+        rotatedBarycenter.z,
+      );
+
+      this.previous.cameraFocus = cameraFocus;
+
+      return;
+    }
+
+    const focusMass = this.integrator.masses.find(
+      (mass) => mass.name === cameraFocus,
+    );
+
+    if (!focusMass) {
+      return;
+    }
+
+    const rotatedPosition = this.utilVector
+      .set(focusMass.position)
+      .subtractFrom(rotatingReferenceFrame)
+      .multiplyByScalar(scale)
+      .toObject();
+
+    this.camera.position.set(
+      rotatedPosition.x + defaultCameraPositionOnScenarioStartVector.x,
+      rotatedPosition.y + defaultCameraPositionOnScenarioStartVector.y,
+      rotatedPosition.z + defaultCameraPositionOnScenarioStartVector.z,
+    );
+
+    this.controls.target.copy(rotatedPosition);
+    this.previous.cameraFocus = cameraFocus;
   }
 
   collisionCallback = (
@@ -285,33 +387,8 @@ class PlanetaryScene extends SceneBase {
 
     const { cameraFocus } = this.scenario.camera;
 
-    const rotatingReferenceFrameMass = this.integrator.masses.find(
-      (mass) => this.scenario.camera.rotatingReferenceFrame === mass.name,
-    );
-
-    let barycenterMasses;
-
-    if (this.scenario.barycenter.systemBarycenter) {
-      barycenterMasses = this.integrator.masses;
-    } else {
-      barycenterMasses = this.integrator.masses.filter(
-        (mass) =>
-          mass.name === this.scenario.barycenter.barycenterMassOne ||
-          mass.name === this.scenario.barycenter.barycenterMassTwo,
-      );
-    }
-
-    const barycenterPosition = getBarycenter(barycenterMasses);
-
-    let rotatingReferenceFrame = { x: 0, y: 0, z: 0 };
-
-    if (rotatingReferenceFrameMass) {
-      rotatingReferenceFrame = rotatingReferenceFrameMass.position;
-    }
-
-    if (this.scenario.camera.rotatingReferenceFrame === "Barycenter") {
-      rotatingReferenceFrame = barycenterPosition;
-    }
+    const { rotatingReferenceFrame, barycenterPosition } =
+      this.getCameraFrameContext();
 
     const currentShapesCount =
       this.scenario.particlesConfiguration?.shapes?.length ?? 0;
