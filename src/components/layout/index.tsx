@@ -8,7 +8,6 @@ import {
   circleInfo,
   fileLines,
   medal,
-  envelope,
 } from "../../theme/icons.module.css";
 
 import "the-new-css-reset/css/reset.css";
@@ -77,15 +76,6 @@ const Layout = ({
               >
                 <i className={`${icon} ${medal}`} />
                 Credits
-              </NavigationMenuItem>
-            </Link>
-            <Link to="/contact">
-              <NavigationMenuItem
-                active={currentPage === "contact"}
-                cssModifier={mainNavigationMenuItem}
-              >
-                <i className={`${icon} ${envelope}`} />
-                Contact
               </NavigationMenuItem>
             </Link>
           </NavigationMenu>
