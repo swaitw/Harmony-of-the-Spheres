@@ -650,6 +650,21 @@ class PlanetaryScene extends SceneBase {
           manifestation.removeOrbit();
         }
 
+        const numberOfTrailVertices =
+          mass.graphics?.numberOfTrailVertices ??
+          this.scenario.graphics?.numberOfTrailVertices ??
+          3000;
+
+        if (
+          manifestation.getNumberOfTrailVertices() !== numberOfTrailVertices
+        ) {
+          manifestation.setNumberOfTrailVertices(numberOfTrailVertices);
+
+          if (manifestation.trail) {
+            manifestation.removeTrail();
+          }
+        }
+
         const trail = manifestation.trail;
 
         if (
@@ -662,7 +677,7 @@ class PlanetaryScene extends SceneBase {
         }
 
         if (mass.graphics.trail) {
-          if (!trail) {
+          if (!manifestation.trail) {
             manifestation.addTrail();
           }
 

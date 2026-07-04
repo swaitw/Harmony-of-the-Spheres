@@ -42,7 +42,15 @@ class Manifestation {
     this.ongoingImpacts = 0;
     this.materialShader = undefined;
 
-    this.trailVertices = 3000;
+    this.trailVertices = mass.graphics?.numberOfTrailVertices ?? 3000;
+  }
+
+  public getNumberOfTrailVertices(): number {
+    return this.trailVertices;
+  }
+
+  public setNumberOfTrailVertices(count: number): void {
+    this.trailVertices = count;
   }
 
   public createManifestation(cloudDensity = 0): void {

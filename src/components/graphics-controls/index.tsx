@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { ChangeEvent, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { ScenarioType } from "../../types/scenario";
 import Toggle from "../toggle";
 import Dropdown from "../dropdown";
+import Slider from "../slider";
 import Tooltip from "../tooltip";
 import {
   modifyScenarioProperty,
@@ -26,6 +27,52 @@ const GraphicsControls = () => {
   });
 
   const currentMass = masses.find((mass) => mass.name === selectedMass);
+
+  const globalNumberOfTrailVertices = graphics.numberOfTrailVertices ?? 3000;
+
+  const currentNumberOfTrailVertices =
+    selectedMass === "All"
+      ? globalNumberOfTrailVertices
+      : currentMass?.graphics.numberOfTrailVertices ??
+        globalNumberOfTrailVertices;
+
+  const handleNumberOfTrailVerticesChange = (
+    event: ChangeEvent<HTMLInputElement>,
+  ) => {
+    const numberOfTrailVertices = parseInt(event.target.value, 10);
+
+    if (selectedMass === "All") {
+      const updatedMasses = masses.map((mass) => ({
+        ...mass,
+        graphics: { ...mass.graphics, numberOfTrailVertices },
+      }));
+
+      dispatch(
+        modifyScenarioProperty({
+          key: "masses",
+          value: updatedMasses,
+        }),
+      );
+
+      dispatch(
+        modifyScenarioProperty({
+          key: "graphics",
+          value: { ...graphics, numberOfTrailVertices },
+        }),
+      );
+    } else if (currentMass) {
+      dispatch(
+        modifyScenarioMassProperty({
+          name: selectedMass,
+          key: "graphics",
+          value: {
+            ...currentMass.graphics,
+            numberOfTrailVertices,
+          },
+        }),
+      );
+    }
+  };
 
   return (
     <div className={controlsGrid}>
@@ -212,6 +259,21 @@ const GraphicsControls = () => {
                 );
               }
             }}
+          />
+        </div>
+      </div>
+      <div className={control}>
+        <div className={controlLabel}>
+          <label htmlFor="numberOfTrailVertices">Trail Length</label>
+          <Tooltip text="Number of vertices used to draw each body's motion trail. Higher values produce longer trails." />
+        </div>
+        <div className={controlInput}>
+          <Slider
+            min={100}
+            max={100000}
+            step={100}
+            value={currentNumberOfTrailVertices}
+            onChange={handleNumberOfTrailVerticesChange}
           />
         </div>
       </div>

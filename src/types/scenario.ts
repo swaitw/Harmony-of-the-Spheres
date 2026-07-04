@@ -42,6 +42,7 @@ export type ScenarioGraphicsType = {
   habitableZone: boolean;
   trails: boolean;
   labels: boolean;
+  numberOfTrailVertices?: number;
 };
 
 export type PrimaryType = {
@@ -55,6 +56,7 @@ export type ScenarioMassGraphicsType = {
   orbit: boolean;
   trail: boolean;
   label: boolean;
+  numberOfTrailVertices?: number;
 };
 
 export type ScenarioMassType = {

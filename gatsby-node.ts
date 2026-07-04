@@ -321,6 +321,14 @@ const createSchemaCustomization: GatsbyNode["createSchemaCustomization"] = ({
     type Query implements Node {
       categoryTree: [CategoryBranch]
     }
+
+    type ScenariosJsonGraphics {
+      numberOfTrailVertices: Int
+    }
+
+    type ScenariosJsonMassesGraphics {
+      numberOfTrailVertices: Int
+    }
 `);
 };
 

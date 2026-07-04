@@ -408,6 +408,7 @@ const pageQuery = graphql`
             trails
             labels
             habitableZone
+            numberOfTrailVertices
           }
           lagrangePoints {
             display
@@ -448,6 +449,7 @@ const pageQuery = graphql`
               orbit
               trail
               label
+              numberOfTrailVertices
             }
             nonStellarProceduralManifestation
           }

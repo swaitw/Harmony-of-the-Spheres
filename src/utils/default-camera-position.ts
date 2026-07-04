@@ -180,13 +180,7 @@ const computeBarycenterDefaultCameraPosition = (
     maxRadius = Math.max(maxRadius, mass.radius);
   }
 
-  const y = computeYFromBoundingBox(
-    minX,
-    maxX,
-    minZ,
-    maxZ,
-    maxRadius * 10,
-  );
+  const y = computeYFromBoundingBox(minX, maxX, minZ, maxZ, maxRadius * 10);
 
   return { x: 0, y, z: 0 };
 };
