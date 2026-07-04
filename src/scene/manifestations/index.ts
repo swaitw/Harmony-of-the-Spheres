@@ -63,7 +63,11 @@ class ManifestationManager {
       }
 
       default: {
-        if (mass.nonStellarProceduralManifestation) {
+        if (
+          mass.nonStellarProceduralManifestation &&
+          mass.type !== "comet" &&
+          mass.type !== "asteroid"
+        ) {
           const procedural = new NonStellarProceduralManifestation(
             mass,
             this.scale,

@@ -54,17 +54,27 @@ class Manifestation {
   }
 
   public createManifestation(cloudDensity = 0): void {
-    const segments = 40;
+    const isSmallBody =
+      this.mass.type === "comet" || this.mass.type === "asteroid";
+    const segments = isSmallBody ? 3 : 40;
+    const heightSegments = isSmallBody ? 2 : segments;
 
     const geometry = new THREE.SphereGeometry(
       this.mass.radius,
       segments,
-      segments,
+      heightSegments,
     );
 
-    const material = new THREE.MeshStandardMaterial({
-      map: this.textureLoader.load(`/textures/maps/${this.mass.name}.jpg`),
-    });
+    const material = isSmallBody
+      ? new THREE.MeshStandardMaterial({
+          color: this.mass.type === "comet" ? 0xb8c4b8 : 0x8b7355,
+          flatShading: true,
+          roughness: 1.0,
+          metalness: 0.0,
+        })
+      : new THREE.MeshStandardMaterial({
+          map: this.textureLoader.load(`/textures/maps/${this.mass.name}.jpg`),
+        });
 
     if (this.mass.type === "terrestial planet" || this.mass.type === "moon") {
       material.bumpMap = this.textureLoader.load(
