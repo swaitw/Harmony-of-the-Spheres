@@ -80,7 +80,7 @@
     {
       "name": "Neptune",
       "type": "gas giant planet",
-      "m": 5.149e-05,
+      "m": 5.149e-5,
       "radius": 355.9633027522936,
       "tilt": -28.32,
       "graphics": {
@@ -422,7 +422,7 @@
     {
       "name": "Planet Nine",
       "type": "gas giant planet",
-      "m": 1.5e-05,
+      "m": 1.5e-5,
       "radius": 200,
       "tilt": -30,
       "graphics": {
