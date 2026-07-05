@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 5e-6,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 5e-7,
+    "dt": 0.000005,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
-        "y": -8.685417775209846e-5,
-        "z": -4.551834577442004e-6
+        "x": 0,
+        "y": -0.00008685417775209846,
+        "z": -0.000004551834577442004
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "Kepler-485 b",
       "type": "gas giant planet",
-      "m": 3.003e-6,
+      "m": 0.000003003,
       "radius": 1354.6677,
       "tilt": 0,
       "graphics": {
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.04401,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 30.947043021893226,
         "z": 1.6218658001541608
       },

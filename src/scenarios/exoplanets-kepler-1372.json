@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 5e-6,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 5e-7,
+    "dt": 0.000005,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": -0.0002642275437018147,
-        "z": -1.3847578790824828e-5
+        "z": -0.000013847578790824828
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "Kepler-1372 b",
       "type": "terrestial planet",
-      "m": 6.45645e-6,
+      "m": 0.00000645645,
       "radius": 119.3913,
       "tilt": 0,
       "graphics": {
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.024,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 40.10609434407119,
         "z": 2.10187134028891
       },

@@ -24,9 +24,9 @@
     "name": "RK4",
     "g": 39.5,
     "dt": 5e-7,
-    "tol": 0.001,
-    "maxDt": 5e-5,
-    "minDt": 5e-8,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 0.00020405532966774018,
-        "y": -9.072677762798585e-5,
-        "z": -4.754788936989043e-6
+        "y": -0.00009072677762798585,
+        "z": -0.000004754788936989043
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "GJ 367 b",
       "type": "terrestial planet",
-      "m": 1.9008989999999998e-6,
+      "m": 0.0000019008989999999998,
       "radius": 65.7122,
       "tilt": 0,
       "graphics": {

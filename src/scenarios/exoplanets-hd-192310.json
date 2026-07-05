@@ -24,9 +24,9 @@
     "name": "RK4",
     "g": 39.5,
     "dt": 0.0001,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 1e-5,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": -0.0005228182367508034,
         "y": 0.0004902692575082485,
-        "z": 4.8947698670053226e-5
+        "z": 0.000048947698670053226
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "HD 192310 b",
       "type": "gas giant planet",
-      "m": 5.0750699999999995e-5,
+      "m": 0.000050750699999999995,
       "radius": 401.4179,
       "tilt": 0,
       "graphics": {
@@ -114,7 +114,7 @@
     {
       "name": "HD 192310 c",
       "type": "gas giant planet",
-      "m": 7.2072e-5,
+      "m": 0.000072072,
       "radius": 493.5465,
       "tilt": 0,
       "graphics": {

@@ -24,9 +24,9 @@
     "name": "RK4",
     "g": 39.5,
     "dt": 0.0001,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 1e-5,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 0.001297774114044371,
-        "y": 1.1172760852474876e-5,
-        "z": 7.114256222152672e-5
+        "y": 0.000011172760852474876,
+        "z": 0.00007114256222152672
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "GJ 687 b",
       "type": "gas giant planet",
-      "m": 5.16516e-5,
+      "m": 0.0000516516,
       "radius": 406.1183,
       "tilt": 0,
       "graphics": {
@@ -114,7 +114,7 @@
     {
       "name": "GJ 687 c",
       "type": "gas giant planet",
-      "m": 4.8048e-5,
+      "m": 0.000048048,
       "radius": 389.1967,
       "tilt": 0,
       "graphics": {

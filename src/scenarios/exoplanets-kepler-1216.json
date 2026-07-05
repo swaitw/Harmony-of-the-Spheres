@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 1e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 1e-6,
+    "dt": 0.00001,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": -0.00020870398018807933,
-        "z": -1.0937712129189067e-5
+        "z": -0.000010937712129189067
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "Kepler-1216 b",
       "type": "terrestial planet",
-      "m": 7.537529999999999e-6,
+      "m": 0.000007537529999999999,
       "radius": 130.6723,
       "tilt": 0,
       "graphics": {
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.0519,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 27.411756953033496,
         "z": 1.4365893081549497
       },

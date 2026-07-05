@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 5e-6,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 5e-7,
+    "dt": 0.000005,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 5.1993267787524426e-20,
         "y": 0.0002181751489548527,
-        "z": -3.3066130302592085e-5
+        "z": -0.000033066130302592085
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "Kepler-312 b",
       "type": "terrestial planet",
-      "m": 6.63663e-6,
+      "m": 0.00000663663,
       "radius": 121.2714,
       "tilt": 0,
       "graphics": {
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.031,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 40.86201602705321,
         "z": 2.141487517005897
       },
@@ -114,7 +114,7 @@
     {
       "name": "Kepler-312 c",
       "type": "sub-Neptune",
-      "m": 3.0330299999999997e-5,
+      "m": 0.000030330299999999997,
       "radius": 296.1279,
       "tilt": 0,
       "graphics": {
@@ -135,7 +135,7 @@
       "position": {
         "x": -0.153,
         "y": 1.8737096026954503e-17,
-        "z": 0.0
+        "z": 0
       },
       "velocity": {
         "x": -2.252505048509481e-15,

@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 5e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 5e-6,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,9 +66,9 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 0.021518441669674704,
@@ -80,7 +80,7 @@
     {
       "name": "Kepler-30 b",
       "type": "sub-Neptune",
-      "m": 3.3933900000000004e-5,
+      "m": 0.000033933900000000004,
       "radius": 366.6346,
       "tilt": 0,
       "graphics": {
@@ -148,7 +148,7 @@
     {
       "name": "Kepler-30 d",
       "type": "gas giant planet",
-      "m": 6.93693e-5,
+      "m": 0.0000693693,
       "radius": 827.278,
       "tilt": 0,
       "graphics": {

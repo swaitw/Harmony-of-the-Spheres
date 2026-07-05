@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 5e-6,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 5e-7,
+    "dt": 0.000005,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -6.317384690338181e-5,
+        "x": -0.00006317384690338181,
         "y": 0.0005239552122870085,
-        "z": 1.534657303956092e-5
+        "z": 0.00001534657303956092
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "HD 28471 b",
       "type": "super-Earth",
-      "m": 1.117116e-5,
+      "m": 0.00001117116,
       "radius": 164.5155,
       "tilt": 0,
       "graphics": {
@@ -114,7 +114,7 @@
     {
       "name": "HD 28471 c",
       "type": "super-Earth",
-      "m": 1.717716e-5,
+      "m": 0.00001717716,
       "radius": 212.46,
       "tilt": 0,
       "graphics": {
@@ -148,7 +148,7 @@
     {
       "name": "HD 28471 d",
       "type": "super-Earth",
-      "m": 1.474473e-5,
+      "m": 0.00001474473,
       "radius": 193.6583,
       "tilt": 0,
       "graphics": {

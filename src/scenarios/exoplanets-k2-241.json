@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 5e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 5e-6,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": -0.0003978022844910013,
-        "z": -2.084793432389396e-5
+        "z": -0.00002084793432389396
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "K2-241 b",
       "type": "sub-Neptune",
-      "m": 2.1141119999999998e-5,
+      "m": 0.000021141119999999998,
       "radius": 239.7226,
       "tilt": 0,
       "graphics": {
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.1567,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 13.359728433905627,
         "z": 0.7001536990454958
       },

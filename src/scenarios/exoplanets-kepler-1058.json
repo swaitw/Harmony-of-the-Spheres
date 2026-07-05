@@ -24,9 +24,9 @@
     "name": "RK4",
     "g": 39.5,
     "dt": 0.0001,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 1e-5,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": -0.00028549704603721203,
-        "z": -1.4962266174678463e-5
+        "z": -0.000014962266174678463
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "Kepler-1058 b",
       "type": "sub-Neptune",
-      "m": 2.3573549999999997e-5,
+      "m": 0.000023573549999999997,
       "radius": 255.7041,
       "tilt": 0,
       "graphics": {
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.3679,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 8.840961314997733,
         "z": 0.4633351492463069
       },

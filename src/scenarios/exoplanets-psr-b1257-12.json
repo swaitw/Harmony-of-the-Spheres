@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 5e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 5e-6,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -49,7 +49,7 @@
       "name": "PSR B1257+12",
       "type": "star",
       "m": 1.4,
-      "radius": 10270.0,
+      "radius": 10270,
       "tilt": 0,
       "temperature": 5778,
       "graphics": {
@@ -66,14 +66,14 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": 1.9371272540612964e-6,
+        "x": 0.0000019371272540612964,
         "y": -0.00020745297954783993,
-        "z": 3.5539465874245783e-6
+        "z": 0.0000035539465874245783
       },
       "nonStellarProceduralManifestation": false
     },
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.19,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 17.036884198537678,
         "z": 0.8928652667476951
       },
@@ -114,7 +114,7 @@
     {
       "name": "PSR B1257+12 c",
       "type": "super-Earth",
-      "m": 1.29129e-5,
+      "m": 0.0000129129,
       "radius": 179.5569,
       "tilt": 0,
       "graphics": {
@@ -148,7 +148,7 @@
     {
       "name": "PSR B1257+12 d",
       "type": "super-Earth",
-      "m": 1.17117e-5,
+      "m": 0.0000117117,
       "radius": 169.216,
       "tilt": 0,
       "graphics": {

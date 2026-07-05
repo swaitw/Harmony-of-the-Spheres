@@ -8,8 +8,8 @@
   "massBeingModified": {
     "name": "Kepler-1129",
     "unitName": "Solar Units",
-    "unitMassQuantity": 1.0,
-    "m": 1.0
+    "unitMassQuantity": 1,
+    "m": 1
   },
   "category": {
     "name": "Exoplanets",
@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 5e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 5e-6,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -48,8 +48,8 @@
     {
       "name": "Kepler-1129",
       "type": "star",
-      "m": 1.0,
-      "radius": 10270.0,
+      "m": 1,
+      "radius": 10270,
       "tilt": 0,
       "temperature": 5831,
       "graphics": {
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 3.0661762694035904e-20,
         "y": -0.00017025234182410442,
-        "z": -3.5165458869272935e-5
+        "z": -0.000035165458869272935
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "Kepler-1129 b",
       "type": "sub-Neptune",
-      "m": 2.720718e-5,
+      "m": 0.00002720718,
       "radius": 278.2662,
       "tilt": 0,
       "graphics": {
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.16481,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 15.460059976730143,
         "z": 0.8102274109630525
       },
@@ -114,7 +114,7 @@
     {
       "name": "Kepler-1129 c",
       "type": "sub-Neptune",
-      "m": 2.37237e-5,
+      "m": 0.0000237237,
       "radius": 256.6442,
       "tilt": 0,
       "graphics": {
@@ -135,7 +135,7 @@
       "position": {
         "x": -0.35367,
         "y": 4.331208334544444e-17,
-        "z": 0.0
+        "z": 0
       },
       "velocity": {
         "x": -1.2924528085431826e-15,

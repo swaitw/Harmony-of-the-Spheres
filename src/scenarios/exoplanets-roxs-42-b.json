@@ -8,8 +8,8 @@
   "massBeingModified": {
     "name": "ROXs 42 B",
     "unitName": "Solar Units",
-    "unitMassQuantity": 1.0,
-    "m": 1.0
+    "unitMassQuantity": 1,
+    "m": 1
   },
   "category": {
     "name": "Exoplanets",
@@ -24,9 +24,9 @@
     "name": "RK4",
     "g": 39.5,
     "dt": 0.0001,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 1e-5,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -48,7 +48,7 @@
     {
       "name": "ROXs 42 B",
       "type": "star",
-      "m": 1.0,
+      "m": 1,
       "radius": 13726.6766,
       "tilt": 0,
       "temperature": 3433,
@@ -66,12 +66,12 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": -0.008344078697590386,
         "z": -0.0004372946347036429
       },
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 65.94000000000001,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 0.9715318128946095,
         "z": 0.050915824816633586
       },

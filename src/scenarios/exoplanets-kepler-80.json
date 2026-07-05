@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 2e-6,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 2e-7,
+    "dt": 0.000002,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,9 +66,9 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": -0.0001518943463670183,
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.014245000000000002,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 48.930032237284756,
         "z": 2.5643143298037105
       },
@@ -114,7 +114,7 @@
     {
       "name": "Kepler-80 d",
       "type": "super-Earth",
-      "m": 2.0270249999999998e-5,
+      "m": 0.000020270249999999998,
       "radius": 143.8336,
       "tilt": 0,
       "graphics": {
@@ -148,7 +148,7 @@
     {
       "name": "Kepler-80 e",
       "type": "super-Earth",
-      "m": 1.240239e-5,
+      "m": 0.00001240239,
       "radius": 150.4142,
       "tilt": 0,
       "graphics": {
@@ -182,7 +182,7 @@
     {
       "name": "Kepler-80 b",
       "type": "sub-Neptune",
-      "m": 2.0810789999999997e-5,
+      "m": 0.000020810789999999997,
       "radius": 251.0037,
       "tilt": 0,
       "graphics": {
@@ -216,7 +216,7 @@
     {
       "name": "Kepler-80 c",
       "type": "sub-Neptune",
-      "m": 2.024022e-5,
+      "m": 0.00002024022,
       "radius": 257.5843,
       "tilt": 0,
       "graphics": {

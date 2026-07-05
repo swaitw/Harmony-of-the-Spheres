@@ -8,8 +8,8 @@
   "massBeingModified": {
     "name": "WASP-129",
     "unitName": "Solar Units",
-    "unitMassQuantity": 1.0,
-    "m": 1.0
+    "unitMassQuantity": 1,
+    "m": 1
   },
   "category": {
     "name": "Exoplanets",
@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 2e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 2e-6,
+    "dt": 0.00002,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -48,8 +48,8 @@
     {
       "name": "WASP-129",
       "type": "star",
-      "m": 1.0,
-      "radius": 9243.0,
+      "m": 1,
+      "radius": 9243,
       "tilt": 0,
       "temperature": 5900,
       "graphics": {
@@ -66,12 +66,12 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": -0.026320516910819016,
         "z": -0.0013793998408777564
       },
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.056771199999999994,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 27.576820614931343,
         "z": 1.4452399281153425
       },

@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 2e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 2e-6,
+    "dt": 0.00002,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 3.0192673795996597e-20,
         "y": 0.00017471441509076238,
-        "z": -1.668503153637399e-5
+        "z": -0.00001668503153637399
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "Kepler-353 b",
       "type": "terrestial planet",
-      "m": 1.92192e-6,
+      "m": 0.00000192192,
       "radius": 83.6679,
       "tilt": 0,
       "graphics": {
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.051,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 20.667142393673142,
         "z": 1.083119036978806
       },
@@ -114,7 +114,7 @@
     {
       "name": "Kepler-353 c",
       "type": "terrestial planet",
-      "m": 7.4474399999999995e-6,
+      "m": 0.0000074474399999999995,
       "radius": 129.7322,
       "tilt": 0,
       "graphics": {
@@ -135,7 +135,7 @@
       "position": {
         "x": -0.065,
         "y": 7.960204194457797e-18,
-        "z": 0.0
+        "z": 0
       },
       "velocity": {
         "x": -2.241917841457752e-15,

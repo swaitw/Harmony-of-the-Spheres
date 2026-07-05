@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 5e-6,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 5e-7,
+    "dt": 0.000005,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": -0.0005138322052302329,
         "y": -0.0009216650296179073,
-        "z": 2.493250642828611e-5
+        "z": 0.00002493250642828611
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "L 98-59 b",
       "type": "terrestial planet",
-      "m": 1.38138e-6,
+      "m": 0.00000138138,
       "radius": 78.6854,
       "tilt": 0,
       "graphics": {
@@ -114,7 +114,7 @@
     {
       "name": "L 98-59 c",
       "type": "terrestial planet",
-      "m": 6.006e-6,
+      "m": 0.000006006,
       "radius": 124.9378,
       "tilt": 0,
       "graphics": {
@@ -148,7 +148,7 @@
     {
       "name": "L 98-59 d",
       "type": "super-Earth",
-      "m": 4.92492e-6,
+      "m": 0.00000492492,
       "radius": 152.9524,
       "tilt": 0,
       "graphics": {
@@ -182,7 +182,7 @@
     {
       "name": "L 98-59 e",
       "type": "terrestial planet",
-      "m": 8.46846e-6,
+      "m": 0.00000846846,
       "radius": 140.0732,
       "tilt": 0,
       "graphics": {
@@ -216,7 +216,7 @@
     {
       "name": "L 98-59 f",
       "type": "terrestial planet",
-      "m": 8.408399999999999e-6,
+      "m": 0.000008408399999999999,
       "radius": 139.1331,
       "tilt": 0,
       "graphics": {

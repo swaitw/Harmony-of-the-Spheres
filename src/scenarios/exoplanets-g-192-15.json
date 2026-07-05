@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 5e-6,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 5e-7,
+    "dt": 0.000005,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": -0.0015184445606475528,
-        "y": 4.4980608459102675e-5,
-        "z": -4.502428977585511e-5
+        "y": 0.000044980608459102675,
+        "z": -0.00004502428977585511
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "G 192-15 b",
       "type": "terrestial planet",
-      "m": 3.09309e-6,
+      "m": 0.00000309309,
       "radius": 95.889,
       "tilt": 0,
       "graphics": {
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.01723,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 17.371898410794252,
         "z": 0.9104226176403194
       },
@@ -114,7 +114,7 @@
     {
       "name": "G 192-15 c",
       "type": "sub-Neptune",
-      "m": 4.29429e-5,
+      "m": 0.0000429429,
       "radius": 363.8143,
       "tilt": 0,
       "graphics": {

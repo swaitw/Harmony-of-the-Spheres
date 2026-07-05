@@ -8,8 +8,8 @@
   "massBeingModified": {
     "name": "Kepler-1491",
     "unitName": "Solar Units",
-    "unitMassQuantity": 1.0,
-    "m": 1.0
+    "unitMassQuantity": 1,
+    "m": 1
   },
   "category": {
     "name": "Exoplanets",
@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 5e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 5e-6,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -48,7 +48,7 @@
     {
       "name": "Kepler-1491",
       "type": "star",
-      "m": 1.0,
+      "m": 1,
       "radius": 10167.3,
       "tilt": 0,
       "temperature": 5728,
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 2.731421168193968e-20,
-        "y": 7.019139716940901e-5,
-        "z": -1.9699221157717386e-5
+        "y": 0.00007019139716940901,
+        "z": -0.000019699221157717386
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "Kepler-1491 b",
       "type": "super-Earth",
-      "m": 8.67867e-6,
+      "m": 0.00000867867,
       "radius": 141.9534,
       "tilt": 0,
       "graphics": {
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.127,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 17.611692481842493,
         "z": 0.9229896923891976
       },
@@ -114,7 +114,7 @@
     {
       "name": "Kepler-1491 c",
       "type": "super-Earth",
-      "m": 1.960959e-5,
+      "m": 0.00001960959,
       "radius": 229.3816,
       "tilt": 0,
       "graphics": {
@@ -135,7 +135,7 @@
       "position": {
         "x": -0.3045,
         "y": 3.72904950340369e-17,
-        "z": 0.0
+        "z": 0
       },
       "velocity": {
         "x": -1.39290070225536e-15,

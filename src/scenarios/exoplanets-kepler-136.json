@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 2e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 2e-6,
+    "dt": 0.00002,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 2.6648455900649595e-20,
         "y": -0.0008270163522625814,
-        "z": -6.615007714823095e-5
+        "z": -0.00006615007714823095
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "Kepler-136 b",
       "type": "super-Earth",
-      "m": 5.94594e-5,
+      "m": 0.0000594594,
       "radius": 192.7182,
       "tilt": 0,
       "graphics": {
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.106,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 21.152576039642327,
         "z": 1.108559536353321
       },
@@ -114,7 +114,7 @@
     {
       "name": "Kepler-136 c",
       "type": "super-Earth",
-      "m": 1.387386e-5,
+      "m": 0.00001387386,
       "radius": 187.0776,
       "tilt": 0,
       "graphics": {
@@ -135,7 +135,7 @@
       "position": {
         "x": -0.133,
         "y": 1.62878024286598e-17,
-        "z": 0.0
+        "z": 0
       },
       "velocity": {
         "x": -2.3126037674001403e-15,

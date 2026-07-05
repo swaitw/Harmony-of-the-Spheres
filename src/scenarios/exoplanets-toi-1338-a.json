@@ -24,9 +24,9 @@
     "name": "RK4",
     "g": 39.5,
     "dt": 0.0001,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 1e-5,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 0.0007149862472984489,
         "y": 0.0014296957183599834,
-        "z": -8.502697900487909e-5
+        "z": -0.00008502697900487909
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "TOI-1338 b",
       "type": "gas giant planet",
-      "m": 3.3933900000000004e-5,
+      "m": 0.000033933900000000004,
       "radius": 720.2019,
       "tilt": 0,
       "graphics": {

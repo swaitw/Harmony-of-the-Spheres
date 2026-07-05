@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 5e-6,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 5e-7,
+    "dt": 0.000005,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 5.682551765202507e-20,
         "y": 0.00015095184097985894,
-        "z": -4.0724999871960433e-5
+        "z": -0.000040724999871960433
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "Kepler-213 b",
       "type": "super-Earth",
-      "m": 9.78978e-6,
+      "m": 0.00000978978,
       "radius": 152.2944,
       "tilt": 0,
       "graphics": {
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.036,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 34.21713100588896,
         "z": 1.7932438494555345
       },
@@ -114,7 +114,7 @@
     {
       "name": "Kepler-213 c",
       "type": "super-Earth",
-      "m": 1.825824e-5,
+      "m": 0.00001825824,
       "radius": 219.9807,
       "tilt": 0,
       "graphics": {
@@ -135,7 +135,7 @@
       "position": {
         "x": -0.057,
         "y": 6.980486755139913e-18,
-        "z": 0.0
+        "z": 0
       },
       "velocity": {
         "x": -3.330184283242351e-15,

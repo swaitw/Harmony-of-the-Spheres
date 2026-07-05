@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 2e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 2e-6,
+    "dt": 0.00002,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 1.0470650715542427e-19,
         "y": 0.0006492841835285372,
-        "z": -5.5589080672847836e-5
+        "z": -0.000055589080672847836
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "Kepler-595 c",
       "type": "terrestial planet",
-      "m": 9.9099e-6,
+      "m": 0.0000099099,
       "radius": 94.8549,
       "tilt": 0,
       "graphics": {
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.0983,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 19.30490503010915,
         "z": 1.0117272018980323
       },
@@ -114,7 +114,7 @@
     {
       "name": "Kepler-595 b",
       "type": "sub-Neptune",
-      "m": 5.2252199999999994e-5,
+      "m": 0.000052252199999999994,
       "radius": 348.5849,
       "tilt": 0,
       "graphics": {
@@ -135,7 +135,7 @@
       "position": {
         "x": -0.1582,
         "y": 1.937391236251113e-17,
-        "z": 0.0
+        "z": 0
       },
       "velocity": {
         "x": -1.863597162503102e-15,

@@ -24,9 +24,9 @@
     "name": "RK4",
     "g": 39.5,
     "dt": 0.0001,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 1e-5,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -49,7 +49,7 @@
       "name": "alf Ari",
       "type": "star",
       "m": 1.5,
-      "radius": 142753.0,
+      "radius": 142753,
       "tilt": 0,
       "temperature": 4553,
       "graphics": {
@@ -66,14 +66,14 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 0.010388300427827327,
         "y": -0.000152102614012067,
-        "z": -7.971360223518019e-6
+        "z": -0.000007971360223518019
       },
       "nonStellarProceduralManifestation": false
     },

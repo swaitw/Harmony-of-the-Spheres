@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 2e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 2e-6,
+    "dt": 0.00002,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 0.0007665543729393933,
         "y": -0.002394079212460958,
-        "z": 2.5321311616851694e-5
+        "z": 0.000025321311616851694
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "TOI-1472 b",
       "type": "gas giant planet",
-      "m": 5.420415e-5,
+      "m": 0.00005420415,
       "radius": 381.488,
       "tilt": 0,
       "graphics": {
@@ -114,7 +114,7 @@
     {
       "name": "TOI-1472 c",
       "type": "sub-Neptune",
-      "m": 6.345338999999999e-5,
+      "m": 0.00006345338999999999,
       "radius": 313.4256,
       "tilt": 0,
       "graphics": {

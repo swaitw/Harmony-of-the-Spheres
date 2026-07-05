@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 1e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 1e-6,
+    "dt": 0.00001,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": -0.00038126316411435157,
         "y": -0.000570359637402799,
-        "z": -6.953584967545067e-6
+        "z": -0.000006953584967545067
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "HD 23472 d",
       "type": "terrestial planet",
-      "m": 1.65165e-6,
+      "m": 0.00000165165,
       "radius": 70.5066,
       "tilt": 0,
       "graphics": {
@@ -114,7 +114,7 @@
     {
       "name": "HD 23472 e",
       "type": "terrestial planet",
-      "m": 2.16216e-6,
+      "m": 0.00000216216,
       "radius": 76.8993,
       "tilt": 0,
       "graphics": {
@@ -148,7 +148,7 @@
     {
       "name": "HD 23472 f",
       "type": "terrestial planet",
-      "m": 2.31231e-6,
+      "m": 0.00000231231,
       "radius": 106.8881,
       "tilt": 0,
       "graphics": {
@@ -182,7 +182,7 @@
     {
       "name": "HD 23472 b",
       "type": "super-Earth",
-      "m": 2.498496e-5,
+      "m": 0.00002498496,
       "radius": 188.0177,
       "tilt": 0,
       "graphics": {
@@ -216,7 +216,7 @@
     {
       "name": "HD 23472 c",
       "type": "super-Earth",
-      "m": 1.024023e-5,
+      "m": 0.00001024023,
       "radius": 175.7966,
       "tilt": 0,
       "graphics": {

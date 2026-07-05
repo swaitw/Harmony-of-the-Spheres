@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 1e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 1e-6,
+    "dt": 0.00001,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": -0.0004897622677518609,
-        "z": -2.566735282950126e-5
+        "z": -0.00002566735282950126
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "Kepler-981 b",
       "type": "super-Earth",
-      "m": 1.786785e-5,
+      "m": 0.00001786785,
       "radius": 217.1605,
       "tilt": 0,
       "graphics": {
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.0535,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 26.86204677097825,
         "z": 1.407780218264158
       },

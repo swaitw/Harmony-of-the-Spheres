@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 5e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 5e-6,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": -0.0005448638091079622,
-        "y": 6.007108623038215e-5,
-        "z": 3.148192228454404e-6
+        "y": 0.00006007108623038215,
+        "z": 0.000003148192228454404
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "TOI-1437 b",
       "type": "super-Earth",
-      "m": 2.8828799999999997e-5,
+      "m": 0.000028828799999999997,
       "radius": 210.5799,
       "tilt": 0,
       "graphics": {

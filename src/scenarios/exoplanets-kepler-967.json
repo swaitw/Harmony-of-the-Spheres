@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 5e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 5e-6,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -49,7 +49,7 @@
       "name": "Kepler-967",
       "type": "star",
       "m": 0.84,
-      "radius": 8216.0,
+      "radius": 8216,
       "tilt": 0,
       "temperature": 5178,
       "graphics": {
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 4.10842147797244e-20,
-        "y": -5.7243577269760504e-5,
-        "z": -3.816333032946925e-5
+        "y": -0.000057243577269760504,
+        "z": -0.00003816333032946925
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "Kepler-967 b",
       "type": "super-Earth",
-      "m": 1.837836e-5,
+      "m": 0.00001837836,
       "radius": 220.9208,
       "tilt": 0,
       "graphics": {
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.1027,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 17.94970747623947,
         "z": 0.9407043076099127
       },
@@ -114,7 +114,7 @@
     {
       "name": "Kepler-967 c",
       "type": "sub-Neptune",
-      "m": 3.87387e-5,
+      "m": 0.0000387387,
       "radius": 343.1324,
       "tilt": 0,
       "graphics": {
@@ -135,7 +135,7 @@
       "position": {
         "x": -0.6253,
         "y": 7.657716435068399e-17,
-        "z": 0.0
+        "z": 0
       },
       "velocity": {
         "x": -8.908595387808184e-16,

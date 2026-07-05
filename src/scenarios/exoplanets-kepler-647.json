@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 5e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 5e-6,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 8.029874322724262e-20,
         "y": 0.0005649072991364002,
-        "z": -3.91208714912963e-5
+        "z": -0.0000391208714912963
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "Kepler-647 b",
       "type": "terrestial planet",
-      "m": 5.13513e-6,
+      "m": 0.00000513513,
       "radius": 109.9904,
       "tilt": 0,
       "graphics": {
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.12237,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 18.208915747608774,
         "z": 0.9542888374841739
       },
@@ -114,7 +114,7 @@
     {
       "name": "Kepler-647 c",
       "type": "gas giant planet",
-      "m": 4.5345299999999994e-5,
+      "m": 0.000045345299999999994,
       "radius": 376.1624,
       "tilt": 0,
       "graphics": {
@@ -135,7 +135,7 @@
       "position": {
         "x": -0.18291,
         "y": 2.2400014603204236e-17,
-        "z": 0.0
+        "z": 0
       },
       "velocity": {
         "x": -1.8239532106758564e-15,

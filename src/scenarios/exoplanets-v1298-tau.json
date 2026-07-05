@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 2e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 2e-6,
+    "dt": 0.00002,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,9 +66,9 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": -0.0002606279159080446,
@@ -80,7 +80,7 @@
     {
       "name": "V1298 Tau c",
       "type": "gas giant planet",
-      "m": 1.41141e-5,
+      "m": 0.0000141141,
       "radius": 477.565,
       "tilt": 0,
       "graphics": {
@@ -114,7 +114,7 @@
     {
       "name": "V1298 Tau d",
       "type": "gas giant planet",
-      "m": 1.8018e-5,
+      "m": 0.000018018,
       "radius": 613.8779,
       "tilt": 0,
       "graphics": {
@@ -148,7 +148,7 @@
     {
       "name": "V1298 Tau b",
       "type": "gas giant planet",
-      "m": 3.93393e-5,
+      "m": 0.0000393393,
       "radius": 884.6234,
       "tilt": 0,
       "graphics": {
@@ -182,7 +182,7 @@
     {
       "name": "V1298 Tau e",
       "type": "gas giant planet",
-      "m": 4.59459e-5,
+      "m": 0.0000459459,
       "radius": 956.0702,
       "tilt": 0,
       "graphics": {

@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 2e-6,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 2e-7,
+    "dt": 0.000002,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 0.0007169810253477557,
         "y": -0.0008330323455641786,
-        "z": -3.170858329057522e-5
+        "z": -0.00003170858329057522
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "Kepler-10 b",
       "type": "terrestial planet",
-      "m": 9.72972e-6,
+      "m": 0.00000972972,
       "radius": 138.193,
       "tilt": 0,
       "graphics": {
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.01685,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 46.12365315847029,
         "z": 2.4172382344566574
       },
@@ -114,7 +114,7 @@
     {
       "name": "Kepler-10 c",
       "type": "super-Earth",
-      "m": 3.390387e-5,
+      "m": 0.00003390387,
       "radius": 221.3909,
       "tilt": 0,
       "graphics": {
@@ -148,7 +148,7 @@
     {
       "name": "Kepler-10 d",
       "type": "sub-Neptune",
-      "m": 3.6036e-5,
+      "m": 0.000036036,
       "radius": 328.0909,
       "tilt": 0,
       "graphics": {

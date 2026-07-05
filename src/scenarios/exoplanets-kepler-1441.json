@@ -8,8 +8,8 @@
   "massBeingModified": {
     "name": "Kepler-1441",
     "unitName": "Solar Units",
-    "unitMassQuantity": 1.0,
-    "m": 1.0
+    "unitMassQuantity": 1,
+    "m": 1
   },
   "category": {
     "name": "Exoplanets",
@@ -24,9 +24,9 @@
     "name": "RK4",
     "g": 39.5,
     "dt": 0.0001,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 1e-5,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -48,8 +48,8 @@
     {
       "name": "Kepler-1441",
       "type": "star",
-      "m": 1.0,
-      "radius": 10270.0,
+      "m": 1,
+      "radius": 10270,
       "tilt": 0,
       "temperature": 5802,
       "graphics": {
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
-        "y": -8.833242220792294e-5,
-        "z": -4.629306086609233e-6
+        "x": 0,
+        "y": -0.00008833242220792294,
+        "z": -0.000004629306086609233
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "Kepler-1441 b",
       "type": "terrestial planet",
-      "m": 6.8168099999999995e-6,
+      "m": 0.0000068168099999999995,
       "radius": 123.1516,
       "tilt": 0,
       "graphics": {
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.2346,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 12.95802907927945,
         "z": 0.679101527930107
       },

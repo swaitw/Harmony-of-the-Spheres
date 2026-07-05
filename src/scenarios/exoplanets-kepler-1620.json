@@ -24,9 +24,9 @@
     "name": "RK4",
     "g": 39.5,
     "dt": 0.0001,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 1e-5,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
-        "y": -8.608408280002229e-5,
-        "z": -4.511475611166613e-6
+        "x": 0,
+        "y": -0.00008608408280002229,
+        "z": -0.000004511475611166613
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "Kepler-1620 b",
       "type": "super-Earth",
-      "m": 9.66966e-6,
+      "m": 0.00000966966,
       "radius": 151.3543,
       "tilt": 0,
       "graphics": {
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.4322,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 10.237867228012735,
         "z": 0.5365438860147723
       },

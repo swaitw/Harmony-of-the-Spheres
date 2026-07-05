@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 2e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 2e-6,
+    "dt": 0.00002,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": 5.057864085030617e-5,
+        "x": 0.00005057864085030617,
         "y": -0.0012575723843201206,
-        "z": -6.590657594989676e-5
+        "z": -0.00006590657594989676
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "HD 190007 b",
       "type": "gas giant planet",
-      "m": 4.65465e-5,
+      "m": 0.0000465465,
       "radius": 381.676,
       "tilt": 0,
       "graphics": {

@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 5e-6,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 5e-7,
+    "dt": 0.000005,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 0.0006903330641357214,
         "y": 0.00014765998548137239,
-        "z": 3.6399686140911e-5
+        "z": 0.000036399686140911
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "LTT 1445 A c",
       "type": "terrestial planet",
-      "m": 4.62462e-6,
+      "m": 0.00000462462,
       "radius": 107.8282,
       "tilt": 0,
       "graphics": {
@@ -114,7 +114,7 @@
     {
       "name": "LTT 1445 A b",
       "type": "terrestial planet",
-      "m": 8.19819e-6,
+      "m": 0.00000819819,
       "radius": 125.9719,
       "tilt": 0,
       "graphics": {

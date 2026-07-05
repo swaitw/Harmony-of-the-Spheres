@@ -24,9 +24,9 @@
     "name": "RK4",
     "g": 39.5,
     "dt": 0.0001,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 1e-5,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -49,7 +49,7 @@
       "name": "OGLE-2018-BLG-0977L",
       "type": "star",
       "m": 0.47,
-      "radius": 10270.0,
+      "radius": 10270,
       "tilt": 0,
       "temperature": 5778,
       "graphics": {
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": -0.00012441545538131055,
-        "z": -6.520337725022786e-6
+        "z": -0.000006520337725022786
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "OGLE-2018-BLG-0977L b",
       "type": "super-Earth",
-      "m": 1.92192e-5,
+      "m": 0.0000192192,
       "radius": 226.5614,
       "tilt": 0,
       "graphics": {
@@ -99,12 +99,12 @@
         "meanAnom": 0
       },
       "position": {
-        "x": 2.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 2,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 3.0425441240642668,
         "z": 0.15945298091287405
       },

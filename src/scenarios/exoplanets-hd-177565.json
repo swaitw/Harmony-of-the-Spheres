@@ -8,8 +8,8 @@
   "massBeingModified": {
     "name": "HD 177565",
     "unitName": "Solar Units",
-    "unitMassQuantity": 1.0,
-    "m": 1.0
+    "unitMassQuantity": 1,
+    "m": 1
   },
   "category": {
     "name": "Exoplanets",
@@ -24,9 +24,9 @@
     "name": "RK4",
     "g": 39.5,
     "dt": 0.0001,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 1e-5,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -48,7 +48,7 @@
     {
       "name": "HD 177565",
       "type": "star",
-      "m": 1.0,
+      "m": 1,
       "radius": 9977.192,
       "tilt": 0,
       "temperature": 5627,
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": -0.00046729578204515927,
         "y": -0.00039115415396650036,
-        "z": -2.049952056672107e-5
+        "z": -0.00002049952056672107
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "HD 177565 b",
       "type": "sub-Neptune",
-      "m": 4.5345299999999994e-5,
+      "m": 0.000045345299999999994,
       "radius": 376.0355,
       "tilt": 0,
       "graphics": {

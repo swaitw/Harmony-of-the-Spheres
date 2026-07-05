@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 1e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 1e-6,
+    "dt": 0.00001,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 0.0013204676163327688,
         "y": 0.001749918219107167,
-        "z": 9.170932779034096e-5
+        "z": 0.00009170932779034096
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "GJ 674 b",
       "type": "sub-Neptune",
-      "m": 3.330327e-5,
+      "m": 0.00003330327,
       "radius": 313.0495,
       "tilt": 0,
       "graphics": {

@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 5e-6,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 5e-7,
+    "dt": 0.000005,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": -0.0006356337748877411,
         "y": 0.0002676287908397156,
-        "z": -2.3377343212892266e-5
+        "z": -0.000023377343212892266
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "K2-35 b",
       "type": "terrestial planet",
-      "m": 6.906899999999999e-6,
+      "m": 0.000006906899999999999,
       "radius": 124.0917,
       "tilt": 0,
       "graphics": {
@@ -114,7 +114,7 @@
     {
       "name": "K2-35 c",
       "type": "super-Earth",
-      "m": 1.3153139999999999e-5,
+      "m": 0.000013153139999999999,
       "radius": 181.4371,
       "tilt": 0,
       "graphics": {

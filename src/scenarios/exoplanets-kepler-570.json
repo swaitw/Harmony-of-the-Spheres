@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 1e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 1e-6,
+    "dt": 0.00001,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -49,7 +49,7 @@
       "name": "Kepler-570",
       "type": "star",
       "m": 0.93,
-      "radius": 9243.0,
+      "radius": 9243,
       "tilt": 0,
       "temperature": 5496,
       "graphics": {
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": -0.0005759754692127328,
-        "z": -3.0185595262947e-5
+        "z": -0.000030185595262947
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "Kepler-570 b",
       "type": "super-Earth",
-      "m": 1.972971e-5,
+      "m": 0.00001972971,
       "radius": 230.3217,
       "tilt": 0,
       "graphics": {
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.0497,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 27.14977495198062,
         "z": 1.422859413267641
       },

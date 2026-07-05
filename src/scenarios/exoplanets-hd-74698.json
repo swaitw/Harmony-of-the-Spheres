@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 5e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 5e-6,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": -0.0004978884651232742,
         "y": 0.0007768812495295862,
-        "z": 7.243031486036321e-5
+        "z": 0.00007243031486036321
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "HD 74698 b",
       "type": "gas giant planet",
-      "m": 6.9069e-5,
+      "m": 0.000069069,
       "radius": 481.3254,
       "tilt": 0,
       "graphics": {

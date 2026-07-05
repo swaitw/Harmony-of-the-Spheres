@@ -24,9 +24,9 @@
     "name": "RK4",
     "g": 39.5,
     "dt": 5e-7,
-    "tol": 0.001,
-    "maxDt": 5e-5,
-    "minDt": 5e-8,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": -0.000627007047000309,
-        "z": -3.2860046928103636e-5
+        "z": -0.000032860046928103636
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "TOI-2260 b",
       "type": "super-Earth",
-      "m": 9.78978e-6,
+      "m": 0.00000978978,
       "radius": 152.2944,
       "tilt": 0,
       "graphics": {
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.0097,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 63.406631868163124,
         "z": 3.3230007680277396
       },

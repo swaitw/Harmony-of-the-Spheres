@@ -24,9 +24,9 @@
     "name": "RK4",
     "g": 39.5,
     "dt": 0.0001,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 1e-5,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 0.0011955573437715946,
         "y": -0.0008008593595563134,
-        "z": -4.1971260552385015e-5
+        "z": -0.000041971260552385015
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "HD 127506 b",
       "type": "gas giant planet",
-      "m": 8.2081728729e-5,
+      "m": 0.000082081728729,
       "radius": 533.0303,
       "tilt": 0,
       "graphics": {

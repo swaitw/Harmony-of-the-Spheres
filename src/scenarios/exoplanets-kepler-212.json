@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 5e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 5e-6,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 3.735096431274225e-20,
         "y": 0.00024181704225119746,
-        "z": -1.9294998093569492e-5
+        "z": -0.000019294998093569492
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "Kepler-212 b",
       "type": "terrestial planet",
-      "m": 3.96396e-6,
+      "m": 0.00000396396,
       "radius": 102.4697,
       "tilt": 0,
       "graphics": {
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.133,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 18.58345279544853,
         "z": 0.9739174924206816
       },
@@ -114,7 +114,7 @@
     {
       "name": "Kepler-212 c",
       "type": "sub-Neptune",
-      "m": 2.387385e-5,
+      "m": 0.00002387385,
       "radius": 257.5843,
       "tilt": 0,
       "graphics": {
@@ -135,7 +135,7 @@
       "position": {
         "x": -0.207,
         "y": 2.535018874235021e-17,
-        "z": 0.0
+        "z": 0
       },
       "velocity": {
         "x": -1.8242229212572527e-15,

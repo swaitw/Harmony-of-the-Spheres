@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 2e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 2e-6,
+    "dt": 0.00002,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": -0.00010932705419555557,
         "y": -0.0006191748127752886,
-        "z": -3.244957692554569e-5
+        "z": -0.00003244957692554569
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "HD 97658 b",
       "type": "super-Earth",
-      "m": 2.4924900000000003e-5,
+      "m": 0.000024924900000000003,
       "radius": 199.2988,
       "tilt": 0,
       "graphics": {

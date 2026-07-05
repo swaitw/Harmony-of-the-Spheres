@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 2e-6,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 2e-7,
+    "dt": 0.000002,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 6.761154178425188e-20,
-        "y": 6.799503514502261e-5,
-        "z": -5.430416718510139e-5
+        "y": 0.00006799503514502261,
+        "z": -0.00005430416718510139
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "Kepler-732 c",
       "type": "terrestial planet",
-      "m": 6.45645e-6,
+      "m": 0.00000645645,
       "radius": 119.3913,
       "tilt": 0,
       "graphics": {
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.0143,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 36.73947748354743,
         "z": 1.9254344269320158
       },
@@ -114,7 +114,7 @@
     {
       "name": "Kepler-732 b",
       "type": "super-Earth",
-      "m": 1.618617e-5,
+      "m": 0.00001618617,
       "radius": 204.9393,
       "tilt": 0,
       "graphics": {
@@ -135,7 +135,7 @@
       "position": {
         "x": -0.0691,
         "y": 8.46230938210821e-18,
-        "z": 0.0
+        "z": 0
       },
       "velocity": {
         "x": -2.046787811711073e-15,

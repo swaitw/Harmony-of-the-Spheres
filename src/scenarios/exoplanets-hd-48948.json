@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 2e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 2e-6,
+    "dt": 0.00002,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": 2.078132756075148e-5,
+        "x": 0.00002078132756075148,
         "y": 0.000480733525184896,
-        "z": -1.1431429668176783e-5
+        "z": -0.000011431429668176783
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "HD 48948 b",
       "type": "super-Earth",
-      "m": 1.465464e-5,
+      "m": 0.00001465464,
       "radius": 193.6583,
       "tilt": 0,
       "graphics": {
@@ -114,7 +114,7 @@
     {
       "name": "HD 48948 c",
       "type": "sub-Neptune",
-      "m": 2.1831809999999997e-5,
+      "m": 0.000021831809999999997,
       "radius": 244.423,
       "tilt": 0,
       "graphics": {
@@ -148,7 +148,7 @@
     {
       "name": "HD 48948 d",
       "type": "sub-Neptune",
-      "m": 3.1801769999999996e-5,
+      "m": 0.000031801769999999996,
       "radius": 304.5887,
       "tilt": 0,
       "graphics": {

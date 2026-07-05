@@ -24,9 +24,9 @@
     "name": "RK4",
     "g": 39.5,
     "dt": 0.0001,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 1e-5,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -49,7 +49,7 @@
       "name": "OGLE-2018-BLG-0532L",
       "type": "star",
       "m": 0.195,
-      "radius": 10270.0,
+      "radius": 10270,
       "tilt": 0,
       "temperature": 5778,
       "graphics": {
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": -0.0002577025823797572,
-        "z": -1.350562005802806e-5
+        "z": -0.00001350562005802806
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "OGLE-2018-BLG-0532L b",
       "type": "super-Earth",
-      "m": 1.8702684e-5,
+      "m": 0.000018702684,
       "radius": 222.801,
       "tilt": 0,
       "graphics": {
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 1.064,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 2.686887270514364,
         "z": 0.1408137950315298
       },

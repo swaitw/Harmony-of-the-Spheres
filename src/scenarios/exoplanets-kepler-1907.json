@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 2e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 2e-6,
+    "dt": 0.00002,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -49,7 +49,7 @@
       "name": "Kepler-1907",
       "type": "star",
       "m": 0.752,
-      "radius": 8216.0,
+      "radius": 8216,
       "tilt": 0,
       "temperature": 5159,
       "graphics": {
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 1.3472168468275126e-20,
-        "y": 5.514231293657543e-5,
-        "z": -8.64072710256482e-6
+        "y": 0.00005514231293657543,
+        "z": -0.00000864072710256482
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "Kepler-1907 b",
       "type": "terrestial planet",
-      "m": 1.7687669999999998e-6,
+      "m": 0.0000017687669999999998,
       "radius": 81.7624,
       "tilt": 0,
       "graphics": {
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.05444,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 23.326673794681227,
         "z": 1.2224991716391551
       },
@@ -114,7 +114,7 @@
     {
       "name": "Kepler-1907 c",
       "type": "terrestial planet",
-      "m": 4.89489e-6,
+      "m": 0.00000489489,
       "radius": 108.6245,
       "tilt": 0,
       "graphics": {
@@ -135,7 +135,7 @@
       "position": {
         "x": -0.10371,
         "y": 1.27008119539572e-17,
-        "z": 0.0
+        "z": 0
       },
       "velocity": {
         "x": -2.069723872884354e-15,

@@ -24,9 +24,9 @@
     "name": "RK4",
     "g": 39.5,
     "dt": 0.0001,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 1e-5,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -49,7 +49,7 @@
       "name": "MOA-2012-BLG-505L",
       "type": "star",
       "m": 0.1,
-      "radius": 10270.0,
+      "radius": 10270,
       "tilt": 0,
       "temperature": 5778,
       "graphics": {
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": -0.00042093189478352466,
-        "z": -2.206010583500728e-5
+        "z": -0.00002206010583500728
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "MOA-2012-BLG-505L b",
       "type": "super-Earth",
-      "m": 2.01201e-5,
+      "m": 0.0000201201,
       "radius": 233.142,
       "tilt": 0,
       "graphics": {
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.9,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 2.09209643482649,
         "z": 0.10964212819522409
       },

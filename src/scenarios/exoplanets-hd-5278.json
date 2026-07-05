@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 5e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 5e-6,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 0.0002071763515601112,
         "y": 0.0010124052829403453,
-        "z": -2.0968617360968584e-5
+        "z": -0.000020968617360968584
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "HD 5278 b",
       "type": "super-Earth",
-      "m": 2.34234e-5,
+      "m": 0.0000234234,
       "radius": 230.3217,
       "tilt": 0,
       "graphics": {
@@ -114,7 +114,7 @@
     {
       "name": "HD 5278 c",
       "type": "gas giant planet",
-      "m": 5.525519999999999e-5,
+      "m": 0.00005525519999999999,
       "radius": 422.0998,
       "tilt": 0,
       "graphics": {

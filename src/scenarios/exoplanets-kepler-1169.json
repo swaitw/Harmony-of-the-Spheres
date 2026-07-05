@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 2e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 2e-6,
+    "dt": 0.00002,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
-        "y": -5.00826098157941e-5,
-        "z": -2.62471836114481e-6
+        "x": 0,
+        "y": -0.0000500826098157941,
+        "z": -0.00000262471836114481
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "Kepler-1169 b",
       "type": "terrestial planet",
-      "m": 2.339337e-6,
+      "m": 0.000002339337,
       "radius": 88.3683,
       "tilt": 0,
       "graphics": {
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.06931,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 26.547024294312738,
         "z": 1.3912705898378748
       },

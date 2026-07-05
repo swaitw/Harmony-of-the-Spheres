@@ -24,9 +24,9 @@
     "name": "RK4",
     "g": 39.5,
     "dt": 0.0001,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 1e-5,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -49,7 +49,7 @@
       "name": "PSR B0329+54",
       "type": "star",
       "m": 1.44,
-      "radius": 10270.0,
+      "radius": 10270,
       "tilt": 0,
       "temperature": 5778,
       "graphics": {
@@ -66,13 +66,13 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
-        "y": -1.2286611950570398e-5,
+        "x": 0,
+        "y": -0.000012286611950570398,
         "z": -6.439140472418699e-7
       },
       "nonStellarProceduralManifestation": false
@@ -80,7 +80,7 @@
     {
       "name": "PSR B0329+54 b",
       "type": "terrestial planet",
-      "m": 5.915909999999999e-6,
+      "m": 0.000005915909999999999,
       "radius": 114.6908,
       "tilt": 0,
       "graphics": {
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 7.83864,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 2.990701550365265,
         "z": 0.15673602675299195
       },

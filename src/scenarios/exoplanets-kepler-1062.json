@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 2e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 2e-6,
+    "dt": 0.00002,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -49,7 +49,7 @@
       "name": "Kepler-1062",
       "type": "star",
       "m": 0.75,
-      "radius": 7189.0,
+      "radius": 7189,
       "tilt": 0,
       "temperature": 4597,
       "graphics": {
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": -0.0002984063931817758,
-        "z": -1.563881639051892e-5
+        "z": -0.00001563881639051892
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "Kepler-1062 b",
       "type": "super-Earth",
-      "m": 1.126125e-5,
+      "m": 0.00001126125,
       "radius": 165.4556,
       "tilt": 0,
       "graphics": {
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.0748,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 19.873885659791927,
         "z": 1.0415462131547732
       },

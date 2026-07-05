@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 5e-6,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 5e-7,
+    "dt": 0.000005,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": -0.0011090999019362773,
-        "y": -5.7778799750574286e-5,
-        "z": 2.4060624578272734e-5
+        "y": -0.000057778799750574286,
+        "z": 0.000024060624578272734
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "HD 134060 b",
       "type": "sub-Neptune",
-      "m": 3.0330299999999997e-5,
+      "m": 0.000030330299999999997,
       "radius": 297.068,
       "tilt": 0,
       "graphics": {
@@ -114,7 +114,7 @@
     {
       "name": "HD 134060 c",
       "type": "gas giant planet",
-      "m": 8.795786999999999e-5,
+      "m": 0.00008795786999999999,
       "radius": 555.5924,
       "tilt": 0,
       "graphics": {

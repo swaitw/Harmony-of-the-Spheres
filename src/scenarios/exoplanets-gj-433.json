@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 2e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 2e-6,
+    "dt": 0.00002,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -49,7 +49,7 @@
       "name": "GJ 433",
       "type": "star",
       "m": 0.48,
-      "radius": 5135.0,
+      "radius": 5135,
       "tilt": 0,
       "temperature": 3461,
       "graphics": {
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 0.0003294514732767205,
         "y": 0.0008019610538279042,
-        "z": 6.119608353705072e-5
+        "z": 0.00006119608353705072
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "GJ 433 b",
       "type": "super-Earth",
-      "m": 1.8147129e-5,
+      "m": 0.000018147129,
       "radius": 219.0407,
       "tilt": 0,
       "graphics": {
@@ -114,7 +114,7 @@
     {
       "name": "GJ 433 d",
       "type": "super-Earth",
-      "m": 1.5684668999999998e-5,
+      "m": 0.000015684668999999998,
       "radius": 201.179,
       "tilt": 0,
       "graphics": {
@@ -147,7 +147,7 @@
     {
       "name": "GJ 433 c",
       "type": "gas giant planet",
-      "m": 9.736326599999999e-5,
+      "m": 0.00009736326599999999,
       "radius": 589.4356,
       "tilt": 0,
       "graphics": {

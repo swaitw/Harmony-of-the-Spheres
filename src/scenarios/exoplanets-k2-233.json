@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 5e-6,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 5e-7,
+    "dt": 0.000005,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 0.0005912896796762236,
         "y": -0.00012216051204448568,
-        "z": 3.449582957455357e-5
+        "z": 0.00003449582957455357
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "K2-233 b",
       "type": "terrestial planet",
-      "m": 7.207199999999999e-6,
+      "m": 0.000007207199999999999,
       "radius": 123.6217,
       "tilt": 0,
       "graphics": {
@@ -114,7 +114,7 @@
     {
       "name": "K2-233 c",
       "type": "terrestial planet",
-      "m": 1.3813799999999998e-5,
+      "m": 0.000013813799999999998,
       "radius": 119.5793,
       "tilt": 0,
       "graphics": {
@@ -148,7 +148,7 @@
     {
       "name": "K2-233 d",
       "type": "super-Earth",
-      "m": 3.09309e-5,
+      "m": 0.0000309309,
       "radius": 222.1429,
       "tilt": 0,
       "graphics": {

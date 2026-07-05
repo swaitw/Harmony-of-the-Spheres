@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 2e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 2e-6,
+    "dt": 0.00002,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 3.130058804823458e-20,
         "y": -0.0006343106832758973,
-        "z": -6.0032486393962505e-5
+        "z": -0.000060032486393962505
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "Kepler-913 c",
       "type": "sub-Neptune",
-      "m": 4.26426e-5,
+      "m": 0.0000426426,
       "radius": 362.6929,
       "tilt": 0,
       "graphics": {
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.0699,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 27.004211725493807,
         "z": 1.4152307678221927
       },
@@ -114,7 +114,7 @@
     {
       "name": "Kepler-913 b",
       "type": "super-Earth",
-      "m": 1.47147e-5,
+      "m": 0.0000147147,
       "radius": 193.6583,
       "tilt": 0,
       "graphics": {
@@ -135,7 +135,7 @@
       "position": {
         "x": -0.1009,
         "y": 1.2356686203396795e-17,
-        "z": 0.0
+        "z": 0
       },
       "velocity": {
         "x": -2.752550914012216e-15,

@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 5e-6,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 5e-7,
+    "dt": 0.000005,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -49,7 +49,7 @@
       "name": "Kepler-1357",
       "type": "star",
       "m": 0.93,
-      "radius": 9243.0,
+      "radius": 9243,
       "tilt": 0,
       "temperature": 5597,
       "graphics": {
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": -0.00021041726786977442,
-        "z": -1.1027501731859697e-5
+        "z": -0.000011027501731859697
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "Kepler-1357 b",
       "type": "terrestial planet",
-      "m": 6.54654e-6,
+      "m": 0.00000654654,
       "radius": 120.3313,
       "tilt": 0,
       "graphics": {
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.041,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 29.891829748063895,
         "z": 1.566564415802778
       },

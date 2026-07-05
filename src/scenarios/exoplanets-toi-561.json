@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 1e-6,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 1e-7,
+    "dt": 0.000001,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 0.0006753312094522566,
         "y": -0.00145455205870579,
-        "z": 4.4546630280580314e-5
+        "z": 0.000044546630280580314
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "TOI-561 b",
       "type": "terrestial planet",
-      "m": 6.06606e-6,
+      "m": 0.00000606606,
       "radius": 131.3304,
       "tilt": 0,
       "graphics": {
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.01064,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 54.62603278511275,
         "z": 2.862829069310362
       },
@@ -114,7 +114,7 @@
     {
       "name": "TOI-561 c",
       "type": "sub-Neptune",
-      "m": 1.780779e-5,
+      "m": 0.00001780779,
       "radius": 269.3354,
       "tilt": 0,
       "graphics": {
@@ -148,7 +148,7 @@
     {
       "name": "TOI-561 d",
       "type": "sub-Neptune",
-      "m": 4.002999e-5,
+      "m": 0.00004002999,
       "radius": 245.8332,
       "tilt": 0,
       "graphics": {
@@ -182,7 +182,7 @@
     {
       "name": "TOI-561 e",
       "type": "sub-Neptune",
-      "m": 3.7237199999999996e-5,
+      "m": 0.000037237199999999996,
       "radius": 236.6203,
       "tilt": 0,
       "graphics": {

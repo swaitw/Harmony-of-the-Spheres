@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 2e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 2e-6,
+    "dt": 0.00002,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": -0.001372514366772772,
         "y": -0.0005022336853321114,
-        "z": -6.130335297142211e-6
+        "z": -0.000006130335297142211
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "HD 21749 c",
       "type": "terrestial planet",
-      "m": 1.11111e-5,
+      "m": 0.0000111111,
       "radius": 83.8559,
       "tilt": 0,
       "graphics": {
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.0695,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 20.340985108913408,
         "z": 1.0660258579875619
       },
@@ -114,7 +114,7 @@
     {
       "name": "GJ 143 b",
       "type": "sub-Neptune",
-      "m": 6.81681e-5,
+      "m": 0.0000681681,
       "radius": 245.3631,
       "tilt": 0,
       "graphics": {

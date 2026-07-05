@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 2e-6,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 2e-7,
+    "dt": 0.000002,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": -0.00032245956114226187,
-        "z": -1.689938950804999e-5
+        "z": -0.00001689938950804999
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "Kepler-1037 b",
       "type": "terrestial planet",
-      "m": 6.54654e-6,
+      "m": 0.00000654654,
       "radius": 120.3313,
       "tilt": 0,
       "graphics": {
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.0198,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 40.3903191818357,
         "z": 2.116766932853231
       },

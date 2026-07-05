@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 5e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 5e-6,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 0.0009493417281854823,
         "y": -0.00012636393752245433,
-        "z": 5.034961616439181e-5
+        "z": 0.00005034961616439181
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "HD 51608 b",
       "type": "sub-Neptune",
-      "m": 3.8348309999999994e-5,
+      "m": 0.000038348309999999994,
       "radius": 340.3121,
       "tilt": 0,
       "graphics": {
@@ -114,7 +114,7 @@
     {
       "name": "HD 51608 c",
       "type": "sub-Neptune",
-      "m": 4.297293e-5,
+      "m": 0.00004297293,
       "radius": 363.8143,
       "tilt": 0,
       "graphics": {

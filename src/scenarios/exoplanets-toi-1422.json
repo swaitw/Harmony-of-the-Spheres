@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 5e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 5e-6,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,12 +66,12 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -4.363376285782334e-5,
+        "x": -0.00004363376285782334,
         "y": 9.06266889347071e-20,
         "z": -4.463563916423829e-21
       },
@@ -80,7 +80,7 @@
     {
       "name": "TOI-1422 b",
       "type": "sub-Neptune",
-      "m": 2.85285e-5,
+      "m": 0.0000285285,
       "radius": 360.054,
       "tilt": 0,
       "graphics": {
@@ -114,7 +114,7 @@
     {
       "name": "TOI-1422 c",
       "type": "sub-Neptune",
-      "m": 4.2042e-5,
+      "m": 0.000042042,
       "radius": 245.3631,
       "tilt": 0,
       "graphics": {

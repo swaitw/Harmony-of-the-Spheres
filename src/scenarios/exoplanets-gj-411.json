@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 5e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 5e-6,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": -0.0003982047563112388,
         "y": -0.00014270023844239945,
-        "z": -2.0488766884682352e-5
+        "z": -0.000020488766884682352
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "GJ 411 b",
       "type": "terrestial planet",
-      "m": 8.07807e-6,
+      "m": 0.00000807807,
       "radius": 136.3129,
       "tilt": 0,
       "graphics": {
@@ -114,7 +114,7 @@
     {
       "name": "HD 95735 c",
       "type": "sub-Neptune",
-      "m": 4.08408e-5,
+      "m": 0.0000408408,
       "radius": 353.4733,
       "tilt": 0,
       "graphics": {

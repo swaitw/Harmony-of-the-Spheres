@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 2e-6,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 2e-7,
+    "dt": 0.000002,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -49,7 +49,7 @@
       "name": "K2-413",
       "type": "star",
       "m": 0.808,
-      "radius": 7189.0,
+      "radius": 7189,
       "tilt": 0,
       "temperature": 4116,
       "graphics": {
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 2.5504247787638697e-20,
         "y": 0.00013789143084011856,
-        "z": -1.4602093620670214e-5
+        "z": -0.000014602093620670214
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "K2-413 b",
       "type": "terrestial planet",
-      "m": 1.0900889999999999e-6,
+      "m": 0.0000010900889999999999,
       "radius": 71.4373,
       "tilt": 0,
       "graphics": {
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.0117,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 52.15737232373607,
         "z": 2.733452056725762
       },
@@ -114,7 +114,7 @@
     {
       "name": "K2-413 c",
       "type": "terrestial planet",
-      "m": 6.1561499999999995e-6,
+      "m": 0.0000061561499999999995,
       "radius": 115.8847,
       "tilt": 0,
       "graphics": {
@@ -135,7 +135,7 @@
       "position": {
         "x": -0.0426,
         "y": 5.216995364367725e-18,
-        "z": 0.0
+        "z": 0
       },
       "velocity": {
         "x": -3.3474545312268333e-15,

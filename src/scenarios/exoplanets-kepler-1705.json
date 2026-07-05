@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 2e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 2e-6,
+    "dt": 0.00002,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 0.00016568483998551765,
         "y": -0.00023629819109583693,
-        "z": -1.2383863443932513e-5
+        "z": -0.000012383863443932513
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "Kepler-1705 b",
       "type": "super-Earth",
-      "m": 1.3423409999999998e-5,
+      "m": 0.000013423409999999998,
       "radius": 190.838,
       "tilt": 0,
       "graphics": {

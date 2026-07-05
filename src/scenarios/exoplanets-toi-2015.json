@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 5e-6,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 5e-7,
+    "dt": 0.000005,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 0.0019900954555351243,
         "y": 0.0015002163588814293,
-        "z": -7.862300781306571e-5
+        "z": -0.00007862300781306571
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "TOI-2015 b",
       "type": "sub-Neptune",
-      "m": 2.7627599999999996e-5,
+      "m": 0.000027627599999999996,
       "radius": 311.0753,
       "tilt": 0,
       "graphics": {
@@ -114,7 +114,7 @@
     {
       "name": "TOI-2015 c",
       "type": "sub-Neptune",
-      "m": 2.675673e-5,
+      "m": 0.00002675673,
       "radius": 275.446,
       "tilt": 0,
       "graphics": {
@@ -135,7 +135,7 @@
       "position": {
         "x": -0.041218393439999994,
         "y": 5.047797359229225e-18,
-        "z": 0.0
+        "z": 0
       },
       "velocity": {
         "x": -2.0880848023794973e-15,

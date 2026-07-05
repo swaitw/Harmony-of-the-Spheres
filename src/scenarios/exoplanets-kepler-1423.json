@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 5e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 5e-6,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
-        "y": -6.389610648871718e-5,
-        "z": -3.348653045906387e-6
+        "x": 0,
+        "y": -0.00006389610648871718,
+        "z": -0.000003348653045906387
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "Kepler-1423 b",
       "type": "terrestial planet",
-      "m": 3.6035999999999997e-6,
+      "m": 0.0000036035999999999997,
       "radius": 99.6494,
       "tilt": 0,
       "graphics": {
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.1586,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 14.007637952626977,
         "z": 0.7341091980980259
       },

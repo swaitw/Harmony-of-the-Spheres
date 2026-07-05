@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 1e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 1e-6,
+    "dt": 0.00001,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 3.841227835662181e-20,
-        "y": 4.08334889261141e-5,
-        "z": -3.0736461491554334e-5
+        "y": 0.0000408334889261141,
+        "z": -0.000030736461491554334
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "Kepler-598 b",
       "type": "terrestial planet",
-      "m": 8.58858e-6,
+      "m": 0.00000858858,
       "radius": 141.0133,
       "tilt": 0,
       "graphics": {
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.04487,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 27.63659572708503,
         "z": 1.448372608999712
       },
@@ -114,7 +114,7 @@
     {
       "name": "Kepler-598 c",
       "type": "sub-Neptune",
-      "m": 2.82282e-5,
+      "m": 0.0000282282,
       "radius": 284.3025,
       "tilt": 0,
       "graphics": {
@@ -135,7 +135,7 @@
       "position": {
         "x": -0.36672,
         "y": 4.4910247418331736e-17,
-        "z": 0.0
+        "z": 0
       },
       "velocity": {
         "x": -1.183875775652042e-15,

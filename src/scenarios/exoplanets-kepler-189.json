@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 2e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 2e-6,
+    "dt": 0.00002,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 1.5797084418851562e-19,
         "y": 0.0011537977768242614,
-        "z": -7.47367367983833e-5
+        "z": -0.0000747367367983833
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "Kepler-189 b",
       "type": "terrestial planet",
-      "m": 5.76576e-6,
+      "m": 0.00000576576,
       "radius": 113.7507,
       "tilt": 0,
       "graphics": {
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.088,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 18.959173052401336,
         "z": 0.993608156719232
       },
@@ -114,7 +114,7 @@
     {
       "name": "Kepler-189 c",
       "type": "super-Earth",
-      "m": 6.81681e-5,
+      "m": 0.0000681681,
       "radius": 223.7411,
       "tilt": 0,
       "graphics": {
@@ -135,7 +135,7 @@
       "position": {
         "x": -0.137,
         "y": 1.677766114831874e-17,
-        "z": 0.0
+        "z": 0
       },
       "velocity": {
         "x": -1.8608496919142245e-15,

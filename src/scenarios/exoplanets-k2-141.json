@@ -24,9 +24,9 @@
     "name": "RK4",
     "g": 39.5,
     "dt": 5e-7,
-    "tol": 0.001,
-    "maxDt": 5e-5,
-    "minDt": 5e-8,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,9 +66,9 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 0.0005368493785981297,
@@ -80,7 +80,7 @@
     {
       "name": "K2-141 b",
       "type": "super-Earth",
-      "m": 1.4924909999999999e-5,
+      "m": 0.000014924909999999999,
       "radius": 141.9534,
       "tilt": 0,
       "graphics": {
@@ -114,7 +114,7 @@
     {
       "name": "K2-141 c",
       "type": "gas giant planet",
-      "m": 2.4024e-5,
+      "m": 0.000024024,
       "radius": 658.0621,
       "tilt": 0,
       "graphics": {

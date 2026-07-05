@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 2e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 2e-6,
+    "dt": 0.00002,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": -0.00012746009771523668,
-        "y": -3.706065041271295e-5,
-        "z": -4.877223785807981e-5
+        "y": -0.00003706065041271295,
+        "z": -0.00004877223785807981
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "K2-72 b",
       "type": "terrestial planet",
-      "m": 3.84384e-6,
+      "m": 0.00000384384,
       "radius": 101.5296,
       "tilt": 0,
       "graphics": {
@@ -114,7 +114,7 @@
     {
       "name": "K2-72 d",
       "type": "terrestial planet",
-      "m": 3.03303e-6,
+      "m": 0.00000303303,
       "radius": 94.949,
       "tilt": 0,
       "graphics": {
@@ -148,7 +148,7 @@
     {
       "name": "K2-72 c",
       "type": "terrestial planet",
-      "m": 4.95495e-6,
+      "m": 0.00000495495,
       "radius": 109.0503,
       "tilt": 0,
       "graphics": {
@@ -182,7 +182,7 @@
     {
       "name": "K2-72 e",
       "type": "terrestial planet",
-      "m": 6.63663e-6,
+      "m": 0.00000663663,
       "radius": 121.2714,
       "tilt": 0,
       "graphics": {

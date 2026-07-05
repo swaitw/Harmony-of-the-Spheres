@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 2e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 2e-6,
+    "dt": 0.00002,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 2.3430499047464432e-20,
         "y": 0.00014623637099054476,
-        "z": -1.2389865498445849e-5
+        "z": -0.000012389865498445849
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "Kepler-345 b",
       "type": "terrestial planet",
-      "m": 1.44144e-6,
+      "m": 0.00000144144,
       "radius": 69.5666,
       "tilt": 0,
       "graphics": {
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.066,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 19.08077031926395,
         "z": 0.9999807994423888
       },
@@ -114,7 +114,7 @@
     {
       "name": "Kepler-345 c",
       "type": "terrestial planet",
-      "m": 6.6066e-6,
+      "m": 0.0000066066,
       "radius": 112.8106,
       "tilt": 0,
       "graphics": {
@@ -135,7 +135,7 @@
       "position": {
         "x": -0.077,
         "y": 9.429780353434619e-18,
-        "z": 0.0
+        "z": 0
       },
       "velocity": {
         "x": -2.1633827413424913e-15,

@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 5e-6,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 5e-7,
+    "dt": 0.000005,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 0.0010241100209968388,
         "y": -0.001415100263384322,
-        "z": -7.416226226681903e-5
+        "z": -0.00007416226226681903
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "TOI-908 b",
       "type": "sub-Neptune",
-      "m": 4.8459411e-5,
+      "m": 0.000048459411,
       "radius": 299.5122,
       "tilt": 0,
       "graphics": {

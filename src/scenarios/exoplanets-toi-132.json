@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 5e-6,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 5e-7,
+    "dt": 0.000005,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -49,7 +49,7 @@
       "name": "TOI-132",
       "type": "star",
       "m": 0.97,
-      "radius": 9243.0,
+      "radius": 9243,
       "tilt": 0,
       "temperature": 5397,
       "graphics": {
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 0.002288229435145209,
         "y": 0.0016529165174736411,
-        "z": 8.662568402105172e-5
+        "z": 0.00008662568402105172
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "TOI-132 b",
       "type": "sub-Neptune",
-      "m": 6.726719999999999e-5,
+      "m": 0.00006726719999999999,
       "radius": 321.5103,
       "tilt": 0,
       "graphics": {

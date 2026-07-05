@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 5e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 5e-6,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 3.7843695355738176e-20,
         "y": -0.0002251113410791855,
-        "z": -4.418739835795066e-5
+        "z": -0.00004418739835795066
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "Kepler-153 b",
       "type": "sub-Neptune",
-      "m": 2.657655e-5,
+      "m": 0.00002657655,
       "radius": 274.5059,
       "tilt": 0,
       "graphics": {
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.129,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 15.193890658134489,
         "z": 0.7962780680621739
       },
@@ -114,7 +114,7 @@
     {
       "name": "Kepler-153 c",
       "type": "sub-Neptune",
-      "m": 2.084082e-5,
+      "m": 0.00002084082,
       "radius": 237.8424,
       "tilt": 0,
       "graphics": {
@@ -135,7 +135,7 @@
       "position": {
         "x": -0.237,
         "y": 2.902412913979227e-17,
-        "z": 0.0
+        "z": 0
       },
       "velocity": {
         "x": -1.3727786953170777e-15,

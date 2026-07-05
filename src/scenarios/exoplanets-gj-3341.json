@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 5e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 5e-6,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 0.0005650080947630647,
         "y": -0.0006196501537287177,
-        "z": -3.2474488489317194e-5
+        "z": -0.000032474488489317194
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "GJ 3341 b",
       "type": "super-Earth",
-      "m": 1.98198e-5,
+      "m": 0.0000198198,
       "radius": 231.2618,
       "tilt": 0,
       "graphics": {

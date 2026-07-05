@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 2e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 2e-6,
+    "dt": 0.00002,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": -0.0003911091318829503,
         "y": 0.000676492505942273,
-        "z": 3.545346993805408e-5
+        "z": 0.00003545346993805408
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "CoRoT-22 b",
       "type": "gas giant planet",
-      "m": 3.6636599999999994e-5,
+      "m": 0.000036636599999999994,
       "radius": 458.7633,
       "tilt": 0,
       "graphics": {

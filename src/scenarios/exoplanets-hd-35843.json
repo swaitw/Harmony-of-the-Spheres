@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 2e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 2e-6,
+    "dt": 0.00002,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 0.00026483700036328934,
         "y": -0.0008228652640527288,
-        "z": 3.0109426116605565e-6
+        "z": 0.0000030109426116605565
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "HD 35843 b",
       "type": "super-Earth",
-      "m": 1.7537519999999997e-5,
+      "m": 0.000017537519999999997,
       "radius": 215.2803,
       "tilt": 0,
       "graphics": {
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.088,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 20.51282829982474,
         "z": 1.0750317780081364
       },
@@ -114,7 +114,7 @@
     {
       "name": "HD 35843 c",
       "type": "sub-Neptune",
-      "m": 3.399396e-5,
+      "m": 0.00003399396,
       "radius": 238.7825,
       "tilt": 0,
       "graphics": {

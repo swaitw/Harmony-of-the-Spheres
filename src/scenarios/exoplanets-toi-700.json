@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 2e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 2e-6,
+    "dt": 0.00002,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 0.0004460053534302727,
         "y": 0.00045524255255082466,
-        "z": -3.614640131498279e-5
+        "z": -0.00003614640131498279
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "TOI-700 b",
       "type": "terrestial planet",
-      "m": 2.1141119999999997e-6,
+      "m": 0.0000021141119999999997,
       "radius": 85.9241,
       "tilt": 0,
       "graphics": {
@@ -114,7 +114,7 @@
     {
       "name": "TOI-700 c",
       "type": "sub-Neptune",
-      "m": 2.1831809999999997e-5,
+      "m": 0.000021831809999999997,
       "radius": 244.423,
       "tilt": 0,
       "graphics": {
@@ -148,7 +148,7 @@
     {
       "name": "TOI-700 e",
       "type": "terrestial planet",
-      "m": 2.4564539999999997e-6,
+      "m": 0.0000024564539999999997,
       "radius": 89.5904,
       "tilt": 0,
       "graphics": {
@@ -181,7 +181,7 @@
     {
       "name": "TOI-700 d",
       "type": "terrestial planet",
-      "m": 3.75375e-6,
+      "m": 0.00000375375,
       "radius": 100.8715,
       "tilt": 0,
       "graphics": {

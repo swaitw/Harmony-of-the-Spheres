@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 1e-6,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 1e-7,
+    "dt": 0.000001,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -49,7 +49,7 @@
       "name": "K2-223",
       "type": "star",
       "m": 1.06,
-      "radius": 10270.0,
+      "radius": 10270,
       "tilt": 0,
       "temperature": 5859,
       "graphics": {
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 2.736503867694835e-20,
         "y": 0.00011948838178365493,
-        "z": -1.7159177679892154e-5
+        "z": -0.000017159177679892154
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "K2-223 b",
       "type": "terrestial planet",
-      "m": 1.92192e-6,
+      "m": 0.00000192192,
       "radius": 83.6679,
       "tilt": 0,
       "graphics": {
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.0127,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 57.339516461118386,
         "z": 3.0050367228906003
       },
@@ -114,7 +114,7 @@
     {
       "name": "K2-223 c",
       "type": "terrestial planet",
-      "m": 8.58858e-6,
+      "m": 0.00000858858,
       "radius": 141.0133,
       "tilt": 0,
       "graphics": {
@@ -135,7 +135,7 @@
       "position": {
         "x": -0.0549,
         "y": 6.723310927318969e-18,
-        "z": 0.0
+        "z": 0
       },
       "velocity": {
         "x": -3.3773849690595247e-15,

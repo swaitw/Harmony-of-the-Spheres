@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 2e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 2e-6,
+    "dt": 0.00002,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 0.0005165530621581614,
         "y": -0.0005624019753351347,
-        "z": 2.0961369015121897e-5
+        "z": 0.000020961369015121897
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "Kepler-11 b",
       "type": "super-Earth",
-      "m": 5.7056999999999994e-6,
+      "m": 0.0000057056999999999994,
       "radius": 169.216,
       "tilt": 0,
       "graphics": {
@@ -114,7 +114,7 @@
     {
       "name": "Kepler-11 c",
       "type": "sub-Neptune",
-      "m": 8.7087e-6,
+      "m": 0.0000087087,
       "radius": 269.8054,
       "tilt": 0,
       "graphics": {
@@ -148,7 +148,7 @@
     {
       "name": "Kepler-11 d",
       "type": "sub-Neptune",
-      "m": 2.1921899999999998e-5,
+      "m": 0.000021921899999999998,
       "radius": 293.3077,
       "tilt": 0,
       "graphics": {
@@ -182,7 +182,7 @@
     {
       "name": "Kepler-11 e",
       "type": "gas giant planet",
-      "m": 2.4024e-5,
+      "m": 0.000024024,
       "radius": 393.8971,
       "tilt": 0,
       "graphics": {
@@ -216,7 +216,7 @@
     {
       "name": "Kepler-11 f",
       "type": "super-Earth",
-      "m": 6.006e-6,
+      "m": 0.000006006,
       "radius": 234.0821,
       "tilt": 0,
       "graphics": {
@@ -250,7 +250,7 @@
     {
       "name": "Kepler-11 g",
       "type": "sub-Neptune",
-      "m": 7.5075e-5,
+      "m": 0.000075075,
       "radius": 313.0495,
       "tilt": 0,
       "graphics": {

@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 5e-6,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 5e-7,
+    "dt": 0.000005,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 0.00024104206457738805,
         "y": 0.0005140191454079087,
-        "z": 3.744886776164192e-5
+        "z": 0.00003744886776164192
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "GJ 1061 b",
       "type": "terrestial planet",
-      "m": 3.3333300000000003e-6,
+      "m": 0.0000033333300000000003,
       "radius": 97.7692,
       "tilt": 0,
       "graphics": {
@@ -114,7 +114,7 @@
     {
       "name": "GJ 1061 c",
       "type": "terrestial planet",
-      "m": 5.43543e-6,
+      "m": 0.00000543543,
       "radius": 111.8705,
       "tilt": 0,
       "graphics": {
@@ -147,7 +147,7 @@
     {
       "name": "GJ 1061 d",
       "type": "terrestial planet",
-      "m": 5.015009999999999e-6,
+      "m": 0.000005015009999999999,
       "radius": 109.0503,
       "tilt": 0,
       "graphics": {

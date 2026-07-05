@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 2e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 2e-6,
+    "dt": 0.00002,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 0.0003356815650847685,
         "y": -0.00040694758113973915,
-        "z": 4.0084653665680805e-5
+        "z": 0.000040084653665680805
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "HD 136352 b",
       "type": "super-Earth",
-      "m": 1.417416e-5,
+      "m": 0.00001417416,
       "radius": 156.4308,
       "tilt": 0,
       "graphics": {
@@ -114,7 +114,7 @@
     {
       "name": "HD 136352 c",
       "type": "sub-Neptune",
-      "m": 3.3753719999999996e-5,
+      "m": 0.000033753719999999996,
       "radius": 274.1299,
       "tilt": 0,
       "graphics": {
@@ -148,7 +148,7 @@
     {
       "name": "HD 136352 d",
       "type": "sub-Neptune",
-      "m": 2.648646e-5,
+      "m": 0.00002648646,
       "radius": 240.8507,
       "tilt": 0,
       "graphics": {

@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 2e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 2e-6,
+    "dt": 0.00002,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,9 +66,9 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": -0.04767393157828453,
@@ -80,7 +80,7 @@
     {
       "name": "pi Men c",
       "type": "super-Earth",
-      "m": 1.0900889999999999e-5,
+      "m": 0.000010900889999999999,
       "radius": 189.7945,
       "tilt": 0,
       "graphics": {
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.06839,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 24.825530689783665,
         "z": 1.301050932974548
       },
@@ -114,7 +114,7 @@
     {
       "name": "pi Men d",
       "type": "sub-Neptune",
-      "m": 4.018014e-5,
+      "m": 0.00004018014,
       "radius": 349.713,
       "tilt": 0,
       "graphics": {

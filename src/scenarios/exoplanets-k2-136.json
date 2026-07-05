@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 2e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 2e-6,
+    "dt": 0.00002,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": -0.0010867506662241512,
         "y": 0.0011012790208718623,
-        "z": 5.47918942596558e-5
+        "z": 0.0000547918942596558
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "K2-136 b",
       "type": "terrestial planet",
-      "m": 1.29129e-5,
+      "m": 0.0000129129,
       "radius": 95.325,
       "tilt": 0,
       "graphics": {
@@ -114,7 +114,7 @@
     {
       "name": "K2-136 c",
       "type": "sub-Neptune",
-      "m": 5.43543e-5,
+      "m": 0.0000543543,
       "radius": 282.0266,
       "tilt": 0,
       "graphics": {
@@ -148,7 +148,7 @@
     {
       "name": "K2-136 d",
       "type": "super-Earth",
-      "m": 9.009e-6,
+      "m": 0.000009009,
       "radius": 147.1239,
       "tilt": 0,
       "graphics": {

@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 2e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 2e-6,
+    "dt": 0.00002,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 2.6644140840378038e-20,
-        "y": 5.855866430646808e-5,
-        "z": -1.9735363950313392e-5
+        "y": 0.00005855866430646808,
+        "z": -0.000019735363950313392
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "Kepler-361 b",
       "type": "terrestial planet",
-      "m": 8.1081e-6,
+      "m": 0.0000081081,
       "radius": 136.3129,
       "tilt": 0,
       "graphics": {
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.086,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 23.356599250041747,
         "z": 1.2240674982986337
       },
@@ -114,7 +114,7 @@
     {
       "name": "Kepler-361 c",
       "type": "sub-Neptune",
-      "m": 2.07207e-5,
+      "m": 0.0000207207,
       "radius": 236.9023,
       "tilt": 0,
       "graphics": {
@@ -135,7 +135,7 @@
       "position": {
         "x": -0.3,
         "y": 3.6739403974420595e-17,
-        "z": 0.0
+        "z": 0
       },
       "velocity": {
         "x": -1.5314719937497403e-15,

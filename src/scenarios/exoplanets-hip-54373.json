@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 2e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 2e-6,
+    "dt": 0.00002,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -2.0475648454409028e-5,
+        "x": -0.000020475648454409028,
         "y": -0.0009657417275369436,
-        "z": 1.7223729063616855e-5
+        "z": 0.000017223729063616855
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "HIP 54373 b",
       "type": "sub-Neptune",
-      "m": 2.5885859999999996e-5,
+      "m": 0.000025885859999999996,
       "radius": 269.8054,
       "tilt": 0,
       "graphics": {
@@ -114,7 +114,7 @@
     {
       "name": "HIP 54373 c",
       "type": "sub-Neptune",
-      "m": 3.735732e-5,
+      "m": 0.00003735732,
       "radius": 335.6116,
       "tilt": 0,
       "graphics": {

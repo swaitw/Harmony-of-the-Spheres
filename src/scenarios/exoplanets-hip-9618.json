@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 5e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 5e-6,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,9 +66,9 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 0.00016140781690773457,
@@ -80,7 +80,7 @@
     {
       "name": "HIP 9618 b",
       "type": "sub-Neptune",
-      "m": 2.4924900000000003e-5,
+      "m": 0.000024924900000000003,
       "radius": 359.9018,
       "tilt": 0,
       "graphics": {
@@ -114,7 +114,7 @@
     {
       "name": "HIP 9618 c",
       "type": "sub-Neptune",
-      "m": 2.1021e-5,
+      "m": 0.000021021,
       "radius": 322.315,
       "tilt": 0,
       "graphics": {

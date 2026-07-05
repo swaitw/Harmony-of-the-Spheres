@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 2e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 2e-6,
+    "dt": 0.00002,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": 2.1832321631867814e-5,
+        "x": 0.000021832321631867814,
         "y": -0.00018135144882958483,
-        "z": 6.560350047404386e-5
+        "z": 0.00006560350047404386
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "DMPP-6 b",
       "type": "super-Earth",
-      "m": 1.74174e-5,
+      "m": 0.0000174174,
       "radius": 214.3402,
       "tilt": 0,
       "graphics": {
@@ -114,7 +114,7 @@
     {
       "name": "DMPP-6 c",
       "type": "sub-Neptune",
-      "m": 4.045041e-5,
+      "m": 0.00004045041,
       "radius": 351.5932,
       "tilt": 0,
       "graphics": {

@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 1e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 1e-6,
+    "dt": 0.00001,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
-        "y": -8.244833581813434e-5,
-        "z": -4.320934185810845e-6
+        "x": 0,
+        "y": -0.00008244833581813434,
+        "z": -0.000004320934185810845
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "Kepler-762 b",
       "type": "gas giant planet",
-      "m": 3.003e-6,
+      "m": 0.000003003,
       "radius": 1192.0324,
       "tilt": 0,
       "graphics": {
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.0493,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 29.102642679727744,
         "z": 1.5252048741123865
       },

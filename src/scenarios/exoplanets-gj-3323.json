@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 1e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 1e-6,
+    "dt": 0.00001,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 4.39682865673291e-20,
         "y": -0.0002968535795813533,
-        "z": -5.318918930626477e-5
+        "z": -0.00005318918930626477
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "GJ 3323 b",
       "type": "terrestial planet",
-      "m": 6.06606e-6,
+      "m": 0.00000606606,
       "radius": 115.6309,
       "tilt": 0,
       "graphics": {
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.025271400000000003,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 17.732206609492607,
         "z": 0.929305570191573
       },
@@ -114,7 +114,7 @@
     {
       "name": "GJ 3323 c",
       "type": "terrestial planet",
-      "m": 6.93693e-6,
+      "m": 0.00000693693,
       "radius": 124.0917,
       "tilt": 0,
       "graphics": {
@@ -135,7 +135,7 @@
       "position": {
         "x": -0.104912,
         "y": 1.2848014499214713e-17,
-        "z": 0.0
+        "z": 0
       },
       "velocity": {
         "x": -1.0394798559365559e-15,

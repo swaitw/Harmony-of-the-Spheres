@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 2e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 2e-6,
+    "dt": 0.00002,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
-        "y": -7.671563985293194e-5,
-        "z": -4.020496320969737e-6
+        "x": 0,
+        "y": -0.00007671563985293194,
+        "z": -0.000004020496320969737
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "Kepler-1576 b",
       "type": "terrestial planet",
-      "m": 3.36336e-6,
+      "m": 0.00000336336,
       "radius": 97.7692,
       "tilt": 0,
       "graphics": {
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.07211,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 23.949687766274955,
         "z": 1.2551499503526902
       },

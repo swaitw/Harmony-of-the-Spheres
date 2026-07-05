@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 5e-6,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 5e-7,
+    "dt": 0.000005,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 0.0006208144165229615,
         "y": -0.0010303134434029538,
-        "z": 1.5077493005405334e-5
+        "z": 0.000015077493005405334
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "K2-19 d",
       "type": "terrestial planet",
-      "m": 1.8618599999999998e-5,
+      "m": 0.000018618599999999998,
       "radius": 98.1453,
       "tilt": 0,
       "graphics": {
@@ -114,7 +114,7 @@
     {
       "name": "K2-19 b",
       "type": "gas giant planet",
-      "m": 9.24924e-5,
+      "m": 0.0000924924,
       "radius": 658.0621,
       "tilt": 0,
       "graphics": {
@@ -148,7 +148,7 @@
     {
       "name": "K2-19 c",
       "type": "gas giant planet",
-      "m": 3.3033e-5,
+      "m": 0.000033033,
       "radius": 385.4363,
       "tilt": 0,
       "graphics": {

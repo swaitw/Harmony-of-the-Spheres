@@ -24,9 +24,9 @@
     "name": "RK4",
     "g": 39.5,
     "dt": 0.0001,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 1e-5,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 0.00043122707075003214,
-        "y": 8.370717611280837e-5,
-        "z": 4.38690721012672e-6
+        "y": 0.00008370717611280837,
+        "z": 0.00000438690721012672
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "HD 42618 b",
       "type": "sub-Neptune",
-      "m": 4.32432e-5,
+      "m": 0.0000432432,
       "radius": 365.6945,
       "tilt": 0,
       "graphics": {

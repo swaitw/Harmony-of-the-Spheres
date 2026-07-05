@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 5e-6,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 5e-7,
+    "dt": 0.000005,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 0.00029374166155013843,
         "y": 0.0005964576744916058,
-        "z": -8.410786366204863e-5
+        "z": -0.00008410786366204863
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "TOI-270 b",
       "type": "terrestial planet",
-      "m": 4.44444e-6,
+      "m": 0.00000444444,
       "radius": 120.3313,
       "tilt": 0,
       "graphics": {
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.031436100999999994,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 22.175768565781016,
         "z": 1.1621827844272548
       },
@@ -114,7 +114,7 @@
     {
       "name": "TOI-270 c",
       "type": "super-Earth",
-      "m": 1.8618599999999998e-5,
+      "m": 0.000018618599999999998,
       "radius": 219.0407,
       "tilt": 0,
       "graphics": {
@@ -148,7 +148,7 @@
     {
       "name": "TOI-270 d",
       "type": "super-Earth",
-      "m": 1.26126e-5,
+      "m": 0.0000126126,
       "radius": 188.0177,
       "tilt": 0,
       "graphics": {

@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 2e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 2e-6,
+    "dt": 0.00002,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -7.583361865978215e-6,
+        "x": -0.000007583361865978215,
         "y": -0.00016798711442937445,
-        "z": 3.330316311646917e-5
+        "z": 0.00003330316311646917
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "HD 224018 b",
       "type": "terrestial planet",
-      "m": 1.2312299999999999e-5,
+      "m": 0.000012312299999999999,
       "radius": 85.5481,
       "tilt": 0,
       "graphics": {
@@ -114,7 +114,7 @@
     {
       "name": "HD 224018 c",
       "type": "super-Earth",
-      "m": 3.12312e-5,
+      "m": 0.0000312312,
       "radius": 227.5015,
       "tilt": 0,
       "graphics": {
@@ -148,7 +148,7 @@
     {
       "name": "HD 224018 d",
       "type": "super-Earth",
-      "m": 1.26126e-5,
+      "m": 0.0000126126,
       "radius": 225.6213,
       "tilt": 0,
       "graphics": {

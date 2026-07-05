@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 2e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 2e-6,
+    "dt": 0.00002,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -49,7 +49,7 @@
       "name": "GJ 667 C",
       "type": "star",
       "m": 0.33,
-      "radius": 10270.0,
+      "radius": 10270,
       "tilt": 0,
       "temperature": 3350,
       "graphics": {
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": -0.0004887406729973092,
         "y": -0.0014075046502364781,
-        "z": -7.37792267626225e-5
+        "z": -0.0000737792267626225
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "GJ 667 C b",
       "type": "super-Earth",
-      "m": 1.705704e-5,
+      "m": 0.00001705704,
       "radius": 211.5199,
       "tilt": 0,
       "graphics": {
@@ -101,7 +101,7 @@
       "position": {
         "x": 0.040300012227365685,
         "y": -0.0018978957629356555,
-        "z": -9.946450224615093e-5
+        "z": -0.00009946450224615093
       },
       "velocity": {
         "x": 0.9275401982233654,
@@ -114,7 +114,7 @@
     {
       "name": "GJ 667 C c",
       "type": "super-Earth",
-      "m": 1.1411399999999999e-5,
+      "m": 0.000011411399999999999,
       "radius": 166.3957,
       "tilt": 0,
       "graphics": {
@@ -147,7 +147,7 @@
     {
       "name": "GJ 667 C f",
       "type": "terrestial planet",
-      "m": 8.1081e-6,
+      "m": 0.0000081081,
       "radius": 136.3129,
       "tilt": 0,
       "graphics": {
@@ -180,7 +180,7 @@
     {
       "name": "GJ 667 C e",
       "type": "terrestial planet",
-      "m": 8.1081e-6,
+      "m": 0.0000081081,
       "radius": 136.3129,
       "tilt": 0,
       "graphics": {
@@ -214,7 +214,7 @@
     {
       "name": "GJ 667 C g",
       "type": "super-Earth",
-      "m": 1.3813799999999998e-5,
+      "m": 0.000013813799999999998,
       "radius": 187.0776,
       "tilt": 0,
       "graphics": {

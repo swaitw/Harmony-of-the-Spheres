@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 2e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 2e-6,
+    "dt": 0.00002,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 1.1215513729519191e-19,
         "y": 0.0001640770822124531,
-        "z": -8.739287061018127e-5
+        "z": -0.00008739287061018127
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "Kepler-248 b",
       "type": "sub-Neptune",
-      "m": 2.816814e-5,
+      "m": 0.00002816814,
       "radius": 283.9068,
       "tilt": 0,
       "graphics": {
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.066,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 22.364180854489444,
         "z": 1.1720570540680986
       },
@@ -114,7 +114,7 @@
     {
       "name": "Kepler-248 c",
       "type": "gas giant planet",
-      "m": 4.68468e-5,
+      "m": 0.0000468468,
       "radius": 382.6161,
       "tilt": 0,
       "graphics": {
@@ -135,7 +135,7 @@
       "position": {
         "x": -0.123,
         "y": 1.5063155629512445e-17,
-        "z": 0.0
+        "z": 0
       },
       "velocity": {
         "x": -2.0062417294963755e-15,

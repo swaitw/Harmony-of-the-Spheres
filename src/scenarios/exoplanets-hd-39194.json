@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 2e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 2e-6,
+    "dt": 0.00002,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": -0.0002286008318941571,
         "y": 0.0007392245682375617,
-        "z": 4.6586220771106865e-5
+        "z": 0.000046586220771106865
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "HD 39194 b",
       "type": "super-Earth",
-      "m": 1.387386e-5,
+      "m": 0.00001387386,
       "radius": 187.0776,
       "tilt": 0,
       "graphics": {
@@ -114,7 +114,7 @@
     {
       "name": "HD 39194 c",
       "type": "sub-Neptune",
-      "m": 2.249247e-5,
+      "m": 0.00002249247,
       "radius": 249.1235,
       "tilt": 0,
       "graphics": {
@@ -148,7 +148,7 @@
     {
       "name": "HD 39194 d",
       "type": "super-Earth",
-      "m": 1.549548e-5,
+      "m": 0.00001549548,
       "radius": 199.2988,
       "tilt": 0,
       "graphics": {

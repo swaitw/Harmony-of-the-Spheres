@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 5e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 5e-6,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": -0.00010875075668056621,
         "y": 0.000861662034341188,
-        "z": -9.196234113546642e-5
+        "z": -0.00009196234113546642
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "Kepler-103 b",
       "type": "sub-Neptune",
-      "m": 3.504501e-5,
+      "m": 0.00003504501,
       "radius": 327.6867,
       "tilt": 0,
       "graphics": {

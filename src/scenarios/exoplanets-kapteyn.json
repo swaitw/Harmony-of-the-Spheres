@@ -24,9 +24,9 @@
     "name": "RK4",
     "g": 39.5,
     "dt": 0.0001,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 1e-5,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": 3.841778458591097e-5,
+        "x": 0.00003841778458591097,
         "y": -0.0005627600943754211,
-        "z": -2.9493006815330507e-5
+        "z": -0.000029493006815330507
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "Kapteyn c",
       "type": "sub-Neptune",
-      "m": 2.1021e-5,
+      "m": 0.000021021,
       "radius": 238.7825,
       "tilt": 0,
       "graphics": {

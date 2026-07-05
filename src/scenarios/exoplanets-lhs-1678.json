@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 2e-6,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 2e-7,
+    "dt": 0.000002,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -3.518824413444372e-5,
+        "x": -0.00003518824413444372,
         "y": 0.000128740039275956,
-        "z": -2.4769964740648604e-5
+        "z": -0.000024769964740648604
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "LHS 1678 b",
       "type": "terrestial planet",
-      "m": 1.0510499999999999e-6,
+      "m": 0.0000010510499999999999,
       "radius": 64.3961,
       "tilt": 0,
       "graphics": {
@@ -114,7 +114,7 @@
     {
       "name": "LHS 1678 c",
       "type": "terrestial planet",
-      "m": 4.2041999999999995e-6,
+      "m": 0.0000042041999999999995,
       "radius": 88.4623,
       "tilt": 0,
       "graphics": {
@@ -148,7 +148,7 @@
     {
       "name": "LHS 1678 d",
       "type": "terrestial planet",
-      "m": 2.723721e-6,
+      "m": 0.000002723721,
       "radius": 92.2227,
       "tilt": 0,
       "graphics": {

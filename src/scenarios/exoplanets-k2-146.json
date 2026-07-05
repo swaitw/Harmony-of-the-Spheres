@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 5e-6,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 5e-7,
+    "dt": 0.000005,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": -0.0023520606448944282,
         "y": -0.0015393363464157057,
-        "z": 1.7881842284937798e-5
+        "z": 0.000017881842284937798
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "K2-146 b",
       "type": "super-Earth",
-      "m": 1.7327309999999997e-5,
+      "m": 0.000017327309999999997,
       "radius": 192.7182,
       "tilt": 0,
       "graphics": {
@@ -114,7 +114,7 @@
     {
       "name": "K2-146 c",
       "type": "super-Earth",
-      "m": 2.249247e-5,
+      "m": 0.00002249247,
       "radius": 205.8794,
       "tilt": 0,
       "graphics": {

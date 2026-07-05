@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 2e-6,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 2e-7,
+    "dt": 0.000002,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
-        "y": -7.938614319583226e-5,
-        "z": -4.160451470739081e-6
+        "x": 0,
+        "y": -0.00007938614319583226,
+        "z": -0.000004160451470739081
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "Kepler-1258 b",
       "type": "terrestial planet",
-      "m": 1.6996979999999997e-6,
+      "m": 0.0000016996979999999997,
       "radius": 80.8476,
       "tilt": 0,
       "graphics": {
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.01824,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 46.23896819545234,
         "z": 2.4232816394628283
       },

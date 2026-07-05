@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 2e-6,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 2e-7,
+    "dt": 0.000002,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 3.556726663644408e-20,
         "y": 0.00022444213507050222,
-        "z": -1.8678940114579757e-5
+        "z": -0.000018678940114579757
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "Kepler-1067 b",
       "type": "terrestial planet",
-      "m": 1.312311e-6,
+      "m": 0.000001312311,
       "radius": 75.2071,
       "tilt": 0,
       "graphics": {
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.0164,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 47.76863514662285,
         "z": 2.503448087416335
       },
@@ -114,7 +114,7 @@
     {
       "name": "Kepler-1067 c",
       "type": "super-Earth",
-      "m": 1.11111e-5,
+      "m": 0.0000111111,
       "radius": 164.217,
       "tilt": 0,
       "graphics": {
@@ -135,7 +135,7 @@
       "position": {
         "x": -0.06069,
         "y": 7.432381424025287e-18,
-        "z": 0.0
+        "z": 0
       },
       "velocity": {
         "x": -3.041004338420307e-15,

@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 5e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 5e-6,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": -0.00019435587544198714,
         "y": -0.0006612467347953357,
-        "z": -9.576975175318147e-6
+        "z": -0.000009576975175318147
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "HIP 41378 b",
       "type": "super-Earth",
-      "m": 2.720718e-5,
+      "m": 0.00002720718,
       "radius": 227.4074,
       "tilt": 0,
       "graphics": {
@@ -114,7 +114,7 @@
     {
       "name": "HIP 41378 c",
       "type": "sub-Neptune",
-      "m": 1.960959e-5,
+      "m": 0.00001960959,
       "radius": 235.4922,
       "tilt": 0,
       "graphics": {

@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 5e-5,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 5e-6,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
         "x": 0.0012364457566858874,
         "y": -0.0005755927748701367,
-        "z": -3.436696152827465e-5
+        "z": -0.00003436696152827465
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "HD 31527 b",
       "type": "sub-Neptune",
-      "m": 3.144141e-5,
+      "m": 0.00003144141,
       "radius": 302.7085,
       "tilt": 0,
       "graphics": {
@@ -114,7 +114,7 @@
     {
       "name": "HD 31527 c",
       "type": "sub-Neptune",
-      "m": 4.252248e-5,
+      "m": 0.00004252248,
       "radius": 361.9341,
       "tilt": 0,
       "graphics": {
@@ -148,7 +148,7 @@
     {
       "name": "HD 31527 d",
       "type": "sub-Neptune",
-      "m": 3.5495459999999996e-5,
+      "m": 0.000035495459999999996,
       "radius": 325.2707,
       "tilt": 0,
       "graphics": {

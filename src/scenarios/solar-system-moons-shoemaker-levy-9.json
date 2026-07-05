@@ -1,6 +1,6 @@
 {
   "name": "Shoemaker-Levy 9 Impacts Jupiter",
-  "description": "On 27 March 1993, shortly after the comet's discovery, Brian Marsden calculated that the broken nucleus of Shoemaker-Levy 9 was on a collision course with Jupiter. Watch the 19 major fragments \u2014 labelled A through W \u2014 fall toward the gas giant alongside Io, Europa, Ganymede, and Callisto. Fragment positions use the jovicentric osculating elements of Chodas & Yeomans (1996); moon positions are from JPL Horizons for 27 March 1993.",
+  "description": "On 27 March 1993, shortly after the comet's discovery, Brian Marsden calculated that the broken nucleus of Shoemaker-Levy 9 was on a collision course with Jupiter. Watch the 19 major fragments — labelled A through W — fall toward the gas giant alongside Io, Europa, Ganymede, and Callisto. Fragment positions use the jovicentric osculating elements of Chodas & Yeomans (1996); moon positions are from JPL Horizons for 27 March 1993.",
   "playing": false,
   "isLoaded": false,
   "elapsedTime": 0,
@@ -30,8 +30,8 @@
     "g": 39.5,
     "dt": 5e-7,
     "tol": 0.0001,
-    "maxDt": 5e-5,
-    "minDt": 5e-7,
+    "maxDt": 0.0001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -140,7 +140,7 @@
       "position": {
         "x": 0.002719468376732379,
         "y": 0.0007182810426182395,
-        "z": 6.672627955556592e-5
+        "z": 0.00006672627955556592
       },
       "velocity": {
         "x": -0.9506056766364911,
@@ -252,7 +252,7 @@
       "name": "Fragment A",
       "type": "comet",
       "m": 2e-14,
-      "radius": 3.0,
+      "radius": 3,
       "tilt": -3.13,
       "graphics": {
         "orbit": true,
@@ -285,7 +285,7 @@
       "name": "Fragment B",
       "type": "comet",
       "m": 2e-14,
-      "radius": 3.0,
+      "radius": 3,
       "tilt": -3.13,
       "graphics": {
         "orbit": true,
@@ -318,7 +318,7 @@
       "name": "Fragment C",
       "type": "comet",
       "m": 2e-14,
-      "radius": 3.0,
+      "radius": 3,
       "tilt": -3.13,
       "graphics": {
         "orbit": true,
@@ -351,7 +351,7 @@
       "name": "Fragment D",
       "type": "comet",
       "m": 2e-14,
-      "radius": 3.0,
+      "radius": 3,
       "tilt": -3.13,
       "graphics": {
         "orbit": true,
@@ -384,7 +384,7 @@
       "name": "Fragment E",
       "type": "comet",
       "m": 2e-14,
-      "radius": 3.0,
+      "radius": 3,
       "tilt": -3.13,
       "graphics": {
         "orbit": true,
@@ -417,7 +417,7 @@
       "name": "Fragment F",
       "type": "comet",
       "m": 2e-14,
-      "radius": 3.0,
+      "radius": 3,
       "tilt": -3.13,
       "graphics": {
         "orbit": true,
@@ -450,7 +450,7 @@
       "name": "Fragment G",
       "type": "comet",
       "m": 2e-14,
-      "radius": 3.0,
+      "radius": 3,
       "tilt": -3.13,
       "graphics": {
         "orbit": true,
@@ -483,7 +483,7 @@
       "name": "Fragment H",
       "type": "comet",
       "m": 2e-14,
-      "radius": 3.0,
+      "radius": 3,
       "tilt": -3.13,
       "graphics": {
         "orbit": true,
@@ -516,7 +516,7 @@
       "name": "Fragment K",
       "type": "comet",
       "m": 2e-14,
-      "radius": 3.0,
+      "radius": 3,
       "tilt": -3.13,
       "graphics": {
         "orbit": true,
@@ -549,7 +549,7 @@
       "name": "Fragment L",
       "type": "comet",
       "m": 2e-14,
-      "radius": 3.0,
+      "radius": 3,
       "tilt": -3.13,
       "graphics": {
         "orbit": true,
@@ -582,7 +582,7 @@
       "name": "Fragment N",
       "type": "comet",
       "m": 2e-14,
-      "radius": 3.0,
+      "radius": 3,
       "tilt": -3.13,
       "graphics": {
         "orbit": true,
@@ -615,7 +615,7 @@
       "name": "Fragment P",
       "type": "comet",
       "m": 2e-14,
-      "radius": 3.0,
+      "radius": 3,
       "tilt": -3.13,
       "graphics": {
         "orbit": true,
@@ -648,7 +648,7 @@
       "name": "Fragment Q",
       "type": "comet",
       "m": 2e-14,
-      "radius": 3.0,
+      "radius": 3,
       "tilt": -3.13,
       "graphics": {
         "orbit": true,
@@ -681,7 +681,7 @@
       "name": "Fragment R",
       "type": "comet",
       "m": 2e-14,
-      "radius": 3.0,
+      "radius": 3,
       "tilt": -3.13,
       "graphics": {
         "orbit": true,
@@ -714,7 +714,7 @@
       "name": "Fragment S",
       "type": "comet",
       "m": 2e-14,
-      "radius": 3.0,
+      "radius": 3,
       "tilt": -3.13,
       "graphics": {
         "orbit": true,
@@ -747,7 +747,7 @@
       "name": "Fragment T",
       "type": "comet",
       "m": 2e-14,
-      "radius": 3.0,
+      "radius": 3,
       "tilt": -3.13,
       "graphics": {
         "orbit": true,
@@ -780,7 +780,7 @@
       "name": "Fragment U",
       "type": "comet",
       "m": 2e-14,
-      "radius": 3.0,
+      "radius": 3,
       "tilt": -3.13,
       "graphics": {
         "orbit": true,
@@ -813,7 +813,7 @@
       "name": "Fragment V",
       "type": "comet",
       "m": 2e-14,
-      "radius": 3.0,
+      "radius": 3,
       "tilt": -3.13,
       "graphics": {
         "orbit": true,
@@ -846,7 +846,7 @@
       "name": "Fragment W",
       "type": "comet",
       "m": 2e-14,
-      "radius": 3.0,
+      "radius": 3,
       "tilt": -3.13,
       "graphics": {
         "orbit": true,

@@ -23,10 +23,10 @@
   "integrator": {
     "name": "RK4",
     "g": 39.5,
-    "dt": 5e-6,
-    "tol": 0.001,
-    "maxDt": 0.0001,
-    "minDt": 5e-7,
+    "dt": 0.000005,
+    "tol": 0.0001,
+    "maxDt": 0.001,
+    "minDt": 0.000001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,21 +66,21 @@
         "eccAnom": 0
       },
       "position": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
-        "y": -4.62277198855091e-5,
-        "z": -2.4226921405180157e-6
+        "x": 0,
+        "y": -0.0000462277198855091,
+        "z": -0.0000024226921405180157
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "Kepler-1385 b",
       "type": "terrestial planet",
-      "m": 1.630629e-6,
+      "m": 0.000001630629,
       "radius": 79.9075,
       "tilt": 0,
       "graphics": {
@@ -100,11 +100,11 @@
       },
       "position": {
         "x": 0.04262,
-        "y": 0.0,
-        "z": 0.0
+        "y": 0,
+        "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 32.602068200881654,
         "z": 1.7086019944424622
       },
