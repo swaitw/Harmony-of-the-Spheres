@@ -14,7 +14,7 @@ import Button from "../../components/button";
 import SaveScenarioModal from "../../components/save-scenario-modal";
 import SavedScenarioStorageFullModal from "../../components/saved-scenario-storage-full-modal";
 import useSavedScenarios from "../../hooks/useSavedScenarios";
-import { integrators } from "../../physics/integrators";
+import { adaptiveIntegrators, integrators } from "../../physics/integrators";
 import { getMainSequenceStarProperties } from "../../physics/utils/stellar";
 import { kebabCase } from "../../utils/text-utils";
 import {
@@ -393,28 +393,32 @@ const CustomScenario = ({ data: { categoryTree } }: Props) => {
               />
             </div>
           </div>
-          <div className={control}>
-            <div className={controlLabel}>
-              <label>Time Step</label>
-              <Tooltip text="Duration of each simulation step." />
+          {!adaptiveIntegrators.includes(
+            formConfig.integrator.name as (typeof adaptiveIntegrators)[number],
+          ) && (
+            <div className={control}>
+              <div className={controlLabel}>
+                <label>Time Step</label>
+                <Tooltip text="Duration of each simulation step." />
+              </div>
+              <div className={controlInput}>
+                <Slider
+                  min={formConfig.integrator.minDt}
+                  max={formConfig.integrator.maxDt}
+                  step={0.00001}
+                  value={formConfig.integrator.dt}
+                  onChange={(event) => {
+                    updateFormConfig({
+                      integrator: {
+                        ...formConfig.integrator,
+                        dt: parseFloat(event.target.value),
+                      },
+                    });
+                  }}
+                />
+              </div>
             </div>
-            <div className={controlInput}>
-              <Slider
-                min={formConfig.integrator.minDt}
-                max={formConfig.integrator.maxDt}
-                step={0.00001}
-                value={formConfig.integrator.dt}
-                onChange={(event) => {
-                  updateFormConfig({
-                    integrator: {
-                      ...formConfig.integrator,
-                      dt: parseFloat(event.target.value),
-                    },
-                  });
-                }}
-              />
-            </div>
-          </div>
+          )}
           <div className={control}>
             <div className={controlLabel}>
               <label>Softening Constant</label>

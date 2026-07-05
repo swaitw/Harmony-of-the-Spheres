@@ -130,7 +130,7 @@ const Scenario = ({ data, originalScenario: savedOriginalScenario }: Props) => {
     }
 
     return () => {
-      planetaryScene.current?.reset();
+      planetaryScene.current?.destroy();
       planetaryScene.current = null;
     };
   }, []);

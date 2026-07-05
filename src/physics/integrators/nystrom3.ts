@@ -1,0 +1,15 @@
+import RknBase from "./rkn-base";
+import { IntegratorConfigType } from "../../types/physics";
+
+class Nystrom3 extends RknBase {
+  constructor(params: IntegratorConfigType) {
+    super(params);
+
+    this.coefficients = [[0.0630306154], [0.0451918359, 0.3117775487]];
+    this.delta = [0.3550510257, 0.8449489743];
+    this.alpha = [0.1111111111, 0.3305272081, 0.0583616809];
+    this.beta = [0.1111111111, 0.5124858262, 0.3764030627];
+  }
+}
+
+export default Nystrom3;

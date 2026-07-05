@@ -2,7 +2,10 @@ import * as THREE from "three";
 import SceneBase from ".";
 import ManifestationManager from "../manifestations";
 import createBackground from "../misc/background";
-import getIntegrator from "../../physics/integrators";
+import getIntegrator, {
+  adaptiveIntegrators,
+  getIntegratorConfigFromScenario,
+} from "../../physics/integrators";
 import {
   drawMassLabel,
   drawBarycenterLabel,
@@ -85,12 +88,10 @@ class PlanetaryScene extends SceneBase {
     );
     this.manifestationManager.addManifestations();
 
-    this.integrator = getIntegrator(this.scenario.integrator.name, {
-      g: this.scenario.integrator.g,
-      dt: this.scenario.integrator.dt,
-      masses: this.scenario.masses,
-      elapsedTime: this.scenario.elapsedTime,
-    });
+    this.integrator = getIntegrator(
+      this.scenario.integrator.name,
+      getIntegratorConfigFromScenario(this.scenario),
+    );
 
     this.particles = undefined;
 
@@ -342,17 +343,21 @@ class PlanetaryScene extends SceneBase {
 
     this.scenario = JSON.parse(JSON.stringify(this.store.getState()));
 
-    this.integrator.sync(this.scenario);
+    const isAdaptiveIntegrator = adaptiveIntegrators.includes(
+      this.scenario.integrator.name as (typeof adaptiveIntegrators)[number],
+    );
+
+    this.integrator.sync(this.scenario, {
+      preserveAdaptiveDt: isAdaptiveIntegrator && this.scenario.playing,
+    });
 
     const scale = this.scale;
 
     if (this.scenario.integrator.name !== this.previous.integrator) {
-      this.integrator = getIntegrator(this.scenario.integrator.name, {
-        g: this.scenario.integrator.g,
-        dt: this.scenario.integrator.dt,
-        masses: this.scenario.masses,
-        elapsedTime: this.scenario.elapsedTime,
-      });
+      this.integrator = getIntegrator(
+        this.scenario.integrator.name,
+        getIntegratorConfigFromScenario(this.scenario),
+      );
 
       this.previous.integrator = this.scenario.integrator.name;
     }

@@ -9,6 +9,7 @@ import {
   CustomScenarioStarConfig,
 } from "../types/custom-scenario";
 import { getMainSequenceStarProperties } from "../physics/utils/stellar";
+import { defaultIntegratorSettings } from "../physics/integrators";
 
 const CUSTOM_SCENARIO_SESSION_KEY = "harmony-pending-custom-scenario";
 
@@ -23,12 +24,10 @@ const createDefaultCustomScenarioForm = (): CustomScenarioFormConfig => {
   return {
     name: "Custom Scenario",
     integrator: {
-      name: "RK4",
+      name: "PEFRL",
       g: 39.5,
-      dt: 0.0001,
-      tol: 0.001,
-      maxDt: 0.0001,
-      minDt: 0.00001,
+      dt: 0.000005,
+      ...defaultIntegratorSettings,
       useBarnesHut: false,
       theta: 0.5,
       softeningConstant: 0,
