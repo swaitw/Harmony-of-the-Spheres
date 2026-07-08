@@ -1,0 +1,197 @@
+{
+  "name": "Eris and Dysnomia",
+  "description": "The most massive known dwarf planet and its small moon Dysnomia, rendered with procedurally generated surfaces, alongside Neptune — the ice giant whose migration shaped the outer Solar System.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": false,
+  "massBeingModified": {
+    "name": "Eris",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1,
+    "m": 8.278e-9
+  },
+  "category": {
+    "name": "Solar System",
+    "subCategory": "Moons"
+  },
+  "camera": {
+    "cameraFocus": "Eris",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Eris"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 5e-7,
+    "tol": 0.0001,
+    "maxDt": 0.00005,
+    "minDt": 5e-7,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Eris",
+    "barycenterMassTwo": "Dysnomia",
+    "systemBarycenter": false
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": false,
+    "trails": false,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Sun",
+      "type": "star",
+      "m": 1,
+      "radius": 10270,
+      "tilt": 0,
+      "temperature": 5778,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": -85.29975471288702,
+        "y": -39.30877660590454,
+        "z": 17.66834236883868
+      },
+      "velocity": {
+        "x": 0.17286038166165277,
+        "y": -0.3147633029544072,
+        "z": -0.34200141332870204
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Neptune",
+      "type": "ice giant planet",
+      "m": 0.00005151,
+      "radius": 363.5,
+      "tilt": -28.32,
+      "atmosphere": "lightskyblue",
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -55.41825672229234,
+        "y": -39.35834502232512,
+        "z": 16.98076937466254
+      },
+      "velocity": {
+        "x": 0.16466413549536696,
+        "y": 0.8393325474959972,
+        "z": -0.3654292848339325
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Eris",
+      "type": "dwarf planet",
+      "m": 8.278e-9,
+      "radius": 16.76,
+      "tilt": 78,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "nonStellarProceduralManifestation": true
+    },
+    {
+      "name": "Dysnomia",
+      "type": "moon",
+      "m": 3.77e-12,
+      "radius": 5.2,
+      "tilt": 78,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.0002476098571903003,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": 0.01767220251104063,
+        "z": 0.031881497270744866
+      },
+      "nonStellarProceduralManifestation": true
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Eris",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,193 @@
+{
+  "name": "Square Within a Circle",
+  "description": "Gravitational four body choreography, in 3D, that forms a square within a circle.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Einstein",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1,
+    "m": 10000
+  },
+  "category": {
+    "name": "Choreographies",
+    "subCategory": null
+  },
+  "camera": {
+    "cameraFocus": "Barycenter",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Origo"
+  },
+  "integrator": {
+    "name": "Sofspa10",
+    "g": 100,
+    "dt": 0.005,
+    "tol": 0.01,
+    "maxDt": 0.05,
+    "minDt": 0.005,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Einstein",
+    "barycenterMassTwo": "Newton",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": false,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Einstein",
+      "type": "star",
+      "m": 10000,
+      "radius": 6000000,
+      "tilt": 0,
+      "temperature": 45000,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 19.0377281458587,
+        "y": -57.9443000126026,
+        "z": 0
+      },
+      "velocity": {
+        "x": 51.0147268363174,
+        "y": -7.7596581636764,
+        "z": 0
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Newton",
+      "type": "star",
+      "m": 10000,
+      "radius": 6000000,
+      "tilt": 0,
+      "temperature": 45000,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": -89.9755923113152,
+        "y": -96.1172971669757,
+        "z": 0
+      },
+      "velocity": {
+        "x": -90.2343124626421,
+        "y": 93.94302737107239,
+        "z": 0
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Galileo",
+      "type": "star",
+      "m": 10000,
+      "radius": 6000000,
+      "tilt": 0,
+      "temperature": 45000,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": -19.0377279665413,
+        "y": 57.944300048284106,
+        "z": 0
+      },
+      "velocity": {
+        "x": -51.014727052557,
+        "y": 7.759658625289401,
+        "z": 0
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Copernicus",
+      "type": "star",
+      "m": 10000,
+      "radius": 6000000,
+      "tilt": 0,
+      "temperature": 45000,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 89.9755922943973,
+        "y": 96.1172972059574,
+        "z": 0
+      },
+      "velocity": {
+        "x": 90.23431249295591,
+        "y": -93.9430275595325,
+        "z": 0
+      },
+      "nonStellarProceduralManifestation": false
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Einstein",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

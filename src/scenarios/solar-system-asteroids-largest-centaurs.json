@@ -1,0 +1,497 @@
+{
+  "name": "The Largest Centaurs",
+  "description": "The eight largest known centaurs — icy bodies orbiting between Jupiter and Neptune — together with all four giant planets whose gravity sculpts their unstable, planet-crossing paths.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Sun",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1,
+    "m": 1
+  },
+  "category": {
+    "name": "Solar System",
+    "subCategory": "Asteroids"
+  },
+  "camera": {
+    "cameraFocus": "Barycenter",
+    "logarithmicDepthBuffer": true,
+    "rotatingReferenceFrame": "Sun"
+  },
+  "integrator": {
+    "name": "RK4",
+    "g": 39.5,
+    "dt": 0.001,
+    "tol": 0.01,
+    "maxDt": 0.05,
+    "minDt": 0.0001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Sun",
+    "barycenterMassTwo": "Jupiter",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": false,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Sun",
+      "type": "star",
+      "m": 1,
+      "radius": 10270,
+      "tilt": 0,
+      "temperature": 5778,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Jupiter",
+      "type": "gas giant planet",
+      "m": 0.0009543,
+      "radius": 1027.5229357798166,
+      "tilt": -3.13,
+      "atmosphere": "beige",
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.3496166266533751,
+        "y": 5.134599838441595,
+        "z": -0.01350682364323375
+      },
+      "velocity": {
+        "x": -2.784372488706286,
+        "y": -0.05807791399408485,
+        "z": 0.06253522200970663
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Saturn",
+      "type": "gas giant planet",
+      "m": 0.0002857,
+      "radius": 862.3853211009175,
+      "tilt": -26.73,
+      "atmosphere": "beige",
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 9.538053293804053,
+        "y": -0.7436406783870201,
+        "z": -0.3667191062950566
+      },
+      "velocity": {
+        "x": 0.04383969882986001,
+        "y": 2.0278660054401625,
+        "z": -0.03711338263883571
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Uranus",
+      "type": "ice giant planet",
+      "m": 0.00004366,
+      "radius": 377.5,
+      "tilt": -97.77,
+      "atmosphere": "lightcyan",
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 10.49056085953499,
+        "y": 16.46316789881018,
+        "z": -0.07488297495229815
+      },
+      "velocity": {
+        "x": -1.2247626318816083,
+        "y": 0.7055963773457526,
+        "z": 0.01843067310391575
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Neptune",
+      "type": "ice giant planet",
+      "m": 0.00005151,
+      "radius": 363.5,
+      "tilt": -28.32,
+      "atmosphere": "lightskyblue",
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 29.88149799059468,
+        "y": -0.04956841642057858,
+        "z": -0.6875729941761419
+      },
+      "velocity": {
+        "x": -0.008196246166285823,
+        "y": 1.1540958500851541,
+        "z": -0.023427871505230423
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Chariklo",
+      "type": "asteroid",
+      "m": 3.3e-11,
+      "radius": 12,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 13.12169224784866,
+        "y": -11.37924825538857,
+        "z": 2.399892884447678
+      },
+      "velocity": {
+        "x": 0.9301588313863065,
+        "y": 0.9114858088774523,
+        "z": 0.5476395945112172
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Chiron",
+      "type": "asteroid",
+      "m": 2.2e-11,
+      "radius": 10,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 16.97261249743295,
+        "y": 7.365537125443905,
+        "z": 0.2286418437278526
+      },
+      "velocity": {
+        "x": -0.6215443307021941,
+        "y": 0.9892001467114655,
+        "z": -0.14167902466455568
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Bienor",
+      "type": "asteroid",
+      "m": 1.5e-11,
+      "radius": 9,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -4.782126161770687,
+        "y": 11.94203140955982,
+        "z": 3.499702817542894
+      },
+      "velocity": {
+        "x": -1.6959432134668198,
+        "y": -0.6644547481681735,
+        "z": -0.4752974776982492
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Pholus",
+      "type": "asteroid",
+      "m": 3e-12,
+      "radius": 5,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 5.086066846558857,
+        "y": -29.55235675195404,
+        "z": 4.621630487721045
+      },
+      "velocity": {
+        "x": 0.7443007108688556,
+        "y": -0.1897640302896798,
+        "z": -0.25642730434546307
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Amycus",
+      "type": "asteroid",
+      "m": 2e-12,
+      "radius": 5,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 14.13895962448225,
+        "y": -19.99716263324802,
+        "z": -1.035010776984693
+      },
+      "velocity": {
+        "x": 1.2320977090009972,
+        "y": 0.24372885728128849,
+        "z": 0.24644871477912708
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Asbolus",
+      "type": "asteroid",
+      "m": 1.5e-12,
+      "radius": 4,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -1.219652851187291,
+        "y": 24.50562463112169,
+        "z": 7.779586205401076
+      },
+      "velocity": {
+        "x": -0.8368714712420781,
+        "y": 0.3981600575112261,
+        "z": 0.15344038501054913
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Hylonome",
+      "type": "asteroid",
+      "m": 1e-12,
+      "radius": 3.5,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 12.54352748138653,
+        "y": -22.90431368618491,
+        "z": 1.629993520781253
+      },
+      "velocity": {
+        "x": 1.1588311865980385,
+        "y": 0.3029937817545137,
+        "z": -0.02451924478143583
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Nessus",
+      "type": "asteroid",
+      "m": 8e-13,
+      "radius": 3,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 30.53821958343739,
+        "y": -5.736356654915941,
+        "z": -5.814468574046243
+      },
+      "velocity": {
+        "x": 0.5909077837814565,
+        "y": 0.7288510682032497,
+        "z": 0.0883235350403553
+      },
+      "nonStellarProceduralManifestation": false
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Sun",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

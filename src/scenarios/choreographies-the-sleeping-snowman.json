@@ -1,0 +1,161 @@
+{
+  "name": "The Sleeping Snow Man",
+  "description": "Gravitational three body choreography, in 3D, that forms a sleeping snow man.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Einstein",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1,
+    "m": 10000
+  },
+  "category": {
+    "name": "Choreographies",
+    "subCategory": null
+  },
+  "camera": {
+    "cameraFocus": "Barycenter",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Origo"
+  },
+  "integrator": {
+    "name": "Sofspa10",
+    "g": 100,
+    "dt": 0.005,
+    "tol": 0.01,
+    "maxDt": 0.05,
+    "minDt": 0.005,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Einstein",
+    "barycenterMassTwo": "Newton",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": false,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Einstein",
+      "type": "star",
+      "m": 10000,
+      "radius": 6000000,
+      "tilt": 0,
+      "temperature": 45000,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 29.5855202611784,
+        "y": -0.0000023894392000000003,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.000011898253099999999,
+        "y": 199.32073582066948,
+        "z": 0
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Newton",
+      "type": "star",
+      "m": 10000,
+      "radius": 6000000,
+      "tilt": 0,
+      "temperature": 45000,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": -170.1799794555856,
+        "y": 5.339549000000001e-7,
+        "z": 0
+      },
+      "velocity": {
+        "x": -1.006022e-7,
+        "y": -62.4781118552882,
+        "z": 0
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Galileo",
+      "type": "star",
+      "m": 10000,
+      "radius": 6000000,
+      "tilt": 0,
+      "temperature": 45000,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": -2.4879824447735,
+        "y": 0.0000018402239999999998,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.0000117976282,
+        "y": -136.8426239666322,
+        "z": 0
+      },
+      "nonStellarProceduralManifestation": false
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Einstein",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

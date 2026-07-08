@@ -1,0 +1,193 @@
+{
+  "name": "Triangle",
+  "description": "Gravitational four body choreography, in 3D, that forms a triangle with an ellipse in each corner.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Einstein",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1,
+    "m": 10000
+  },
+  "category": {
+    "name": "Choreographies",
+    "subCategory": null
+  },
+  "camera": {
+    "cameraFocus": "Barycenter",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Origo"
+  },
+  "integrator": {
+    "name": "Sofspa10",
+    "g": 100,
+    "dt": 0.005,
+    "tol": 0.01,
+    "maxDt": 0.05,
+    "minDt": 0.005,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Einstein",
+    "barycenterMassTwo": "Newton",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": false,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Einstein",
+      "type": "star",
+      "m": 10000,
+      "radius": 6000000,
+      "tilt": 0,
+      "temperature": 45000,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": -205.33281715826698,
+        "y": 6.5155177949539995,
+        "z": 0
+      },
+      "velocity": {
+        "x": -33.452053200118996,
+        "y": -77.453206662688,
+        "z": 0
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Newton",
+      "type": "star",
+      "m": 10000,
+      "radius": 6000000,
+      "tilt": 0,
+      "temperature": 45000,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": -223.546043015843,
+        "y": -193.839979767984,
+        "z": 0
+      },
+      "velocity": {
+        "x": 43.791626817563,
+        "y": 35.139060275523995,
+        "z": 0
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Galileo",
+      "type": "star",
+      "m": 10000,
+      "radius": 6000000,
+      "tilt": 0,
+      "temperature": 45000,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 381.861517499356,
+        "y": -200.685087027464,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.544275795197,
+        "y": 15.800389442441002,
+        "z": 0
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Copernicus",
+      "type": "star",
+      "m": 10000,
+      "radius": 6000000,
+      "tilt": 0,
+      "temperature": 45000,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 47.017342674754,
+        "y": 388.009549000493,
+        "z": 0
+      },
+      "velocity": {
+        "x": -9.795297822246999,
+        "y": 26.513756944723998,
+        "z": 0
+      },
+      "nonStellarProceduralManifestation": false
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Einstein",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}
