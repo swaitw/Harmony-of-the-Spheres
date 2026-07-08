@@ -12,17 +12,79 @@
   margin-bottom: 1.5rem;
 }
 
-.intro p {
+.introLead {
   color: var(--theme-color-6);
   line-height: 1.8;
   font-size: 1.2rem;
+  margin-bottom: 1.25rem;
+}
+
+.intro p {
+  color: var(--theme-color-5);
+  line-height: 1.8;
+}
+
+.section {
+  margin-bottom: 4rem;
+}
+
+.section h2 {
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: var(--border);
+  color: var(--theme-color-6);
+}
+
+.sectionText {
+  color: var(--theme-color-5);
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.sectionText a {
+  color: var(--theme-color-6);
+}
+
+.sectionText a:hover {
+  text-decoration: underline;
+}
+
+.categoryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 1.5rem;
+}
+
+.category {
+  border: var(--border);
+  padding: 1.5rem;
+  background-color: var(--theme-color-2);
+}
+
+.categoryCount {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--theme-color-6);
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+.category h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+  color: var(--theme-color-6);
+}
+
+.category p {
+  color: var(--theme-color-5);
+  line-height: 1.7;
+  font-size: 0.95rem;
 }
 
 .features {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   gap: 2rem;
-  margin-bottom: 4rem;
 }
 
 .feature {
@@ -37,7 +99,7 @@
   margin-bottom: 0.75rem;
 }
 
-.feature h2 {
+.feature h3 {
   font-size: 1.4rem;
   margin-bottom: 0.75rem;
   color: var(--theme-color-6);
@@ -48,12 +110,20 @@
   line-height: 1.7;
 }
 
-.cta {
+.ctaRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.linkButton {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.6rem;
-  width: 100%;
+  flex: 1;
+  min-width: 14rem;
   padding: 0.75rem 1.5rem;
   background-color: var(--theme-color-2);
   border: var(--border);
@@ -65,7 +135,27 @@
     color 0.2s ease;
 }
 
-.cta:hover {
+.linkButton:hover {
   background-color: var(--theme-color-4);
   color: #fff;
+}
+
+.linkRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.linkRow a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--theme-color-5);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.linkRow a:hover {
+  color: var(--theme-color-6);
 }
