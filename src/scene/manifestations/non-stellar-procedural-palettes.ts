@@ -1186,7 +1186,7 @@ const selectPaletteIndex = (
   random: PaletteRandomFunctionType,
 ): number => {
   const roll = random(
-    paletteEpoch + massSeed * PALETTE_SEED_MULTIPLIERS[category],
+    random(paletteEpoch) * 1000 + massSeed * PALETTE_SEED_MULTIPLIERS[category],
   );
 
   return Math.floor(roll * paletteCount(category));
