@@ -1,6 +1,7 @@
 import * as THREE from "three";
 import Manifestation from "./manifestation";
 import { temperatureToRGB } from "../../physics/utils/misc";
+import withAssetPrefix from "../../utils/with-asset-prefix";
 
 class Star extends Manifestation {
   override createManifestation(): void {
@@ -247,7 +248,9 @@ class Star extends Manifestation {
       0,
     );
 
-    const spriteMap = this.textureLoader.load("/textures/glow.png");
+    const spriteMap = this.textureLoader.load(
+      withAssetPrefix("/textures/glow.png"),
+    );
 
     const haloMaterial = new THREE.SpriteMaterial({
       map: spriteMap,

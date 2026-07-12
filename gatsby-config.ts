@@ -10,19 +10,6 @@ const config: GatsbyConfig = {
   graphqlTypegen: false,
   plugins: [
     {
-      resolve: `gatsby-plugin-google-gtag`,
-      options: {
-        trackingIds: [`UA-153406767-1`],
-        gtagConfig: {
-          anonymize_ip: true,
-        },
-        pluginConfig: {
-          head: false,
-          respectDNT: true,
-        },
-      },
-    },
-    {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
         siteUrl: `https://gravitysimulator.org/version-2`,

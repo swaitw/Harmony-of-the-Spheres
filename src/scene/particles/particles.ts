@@ -1,5 +1,6 @@
 import * as THREE from "three";
 import { ParticlesType, VectorType } from "../../types/physics";
+import withAssetPrefix from "../../utils/with-asset-prefix";
 
 class Particles {
   particles: ParticlesType;
@@ -77,7 +78,9 @@ class Particles {
 
     geometry.setDrawRange(0, particlesLength);
 
-    const particleTexture = this.textureLoader.load("/textures/particle.png");
+    const particleTexture = this.textureLoader.load(
+      withAssetPrefix("/textures/particle.png"),
+    );
 
     const material = new THREE.PointsMaterial({
       size: 1,

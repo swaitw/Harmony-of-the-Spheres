@@ -3,7 +3,8 @@ import { Link, graphql, HeadProps } from "gatsby";
 
 import Seo from "../../components/seo";
 import Layout from "../../components/layout";
-import AdSlot from "../../components/ad-slot";
+import ScenariosListAd from "../../components/scenarios-list-ad";
+import ScenariosListWithMidAd from "../../components/scenarios-list-with-mid-ad";
 import Button from "../../components/button";
 import NavigationMenu from "../../components/navigation-menu";
 import NavigationMenuItem from "../../components/navigation-menu/navigation-menu-item";
@@ -21,6 +22,9 @@ import {
   scenariosListItem,
   navigationMenuCssModifier,
   scenariosMenuItem,
+  scenariosListContainer,
+  scenariosListInner,
+  scenariosListTitle,
 } from "../scenarios-menu/scenarios-menu.module.css";
 import {
   savedScenarioCard,
@@ -77,39 +81,50 @@ const SavedScenariosMenu = ({ data: { categoryTree } }: Props) => {
           )}
         </NavigationMenu>
       </section>
-      <AdSlot variant="banner" name="saved-scenarios-menu-top" />
-      <section className={scenariosListWrapper}>
+      <ScenariosListAd placement="top" />
+      <div className={scenariosListContainer}>
+        <div className={scenariosListInner}>
+          <h2 className={scenariosListTitle}>Saved Scenarios</h2>
+        </div>
         {savedScenarios.length === 0 ? (
-          <p className={savedScenariosEmptyMessage}>
-            No saved scenarios yet. Open a scenario and use the save button to
-            store your current simulation state.
-          </p>
+          <div className={scenariosListInner}>
+            <section className={scenariosListWrapper}>
+              <p className={savedScenariosEmptyMessage}>
+                No saved scenarios yet. Open a scenario and use the save button
+                to store your current simulation state.
+              </p>
+            </section>
+          </div>
         ) : (
-          savedScenarios.map(({ id: savedScenarioId, scenario }) => (
-            <div
-              key={savedScenarioId}
-              className={`${scenariosListItem} ${savedScenarioCard}`}
-            >
-              <Link
-                to={getSavedScenarioPath(scenario.name)}
-                className={savedScenarioLink}
-              />
-              <div className={savedScenarioFooter}>
-                <span className={savedScenarioTitle}>{scenario.name}</span>
-                <Button
-                  callback={() => {
-                    deleteSavedScenario(savedScenarioId);
-                  }}
-                  cssModifier={savedScenarioDeleteButton}
-                >
-                  Delete
-                </Button>
+          <ScenariosListWithMidAd
+            items={savedScenarios}
+            listClassName={scenariosListWrapper}
+            innerClassName={scenariosListInner}
+            renderItem={({ id: savedScenarioId, scenario }) => (
+              <div
+                key={savedScenarioId}
+                className={`${scenariosListItem} ${savedScenarioCard}`}
+              >
+                <Link
+                  to={getSavedScenarioPath(scenario.name)}
+                  className={savedScenarioLink}
+                />
+                <div className={savedScenarioFooter}>
+                  <span className={savedScenarioTitle}>{scenario.name}</span>
+                  <Button
+                    callback={() => {
+                      deleteSavedScenario(savedScenarioId);
+                    }}
+                    cssModifier={savedScenarioDeleteButton}
+                  >
+                    Delete
+                  </Button>
+                </div>
               </div>
-            </div>
-          ))
+            )}
+          />
         )}
-      </section>
-      <AdSlot variant="rectangle" name="saved-scenarios-menu-bottom" />
+      </div>
     </Layout>
   );
 };

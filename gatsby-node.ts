@@ -94,7 +94,7 @@ const onCreateDevServer: GatsbyNode["onCreateDevServer"] = () => {
 
 const createPages: GatsbyNode["createPages"] = async ({ actions, graphql }) => {
   const { createPage } = actions;
-  const SCENARIOS_PER_PAGE = 12;
+  const SCENARIOS_PER_PAGE = 30;
 
   const { data } = await graphql<FetchedScenariosJsonType>(`
     {

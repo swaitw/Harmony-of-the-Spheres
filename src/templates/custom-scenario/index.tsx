@@ -3,7 +3,7 @@ import { graphql, HeadProps, Link, navigate } from "gatsby";
 
 import Seo from "../../components/seo";
 import Layout from "../../components/layout";
-import AdSlot from "../../components/ad-slot";
+import ScenariosListAd from "../../components/scenarios-list-ad";
 import NavigationMenu from "../../components/navigation-menu";
 import NavigationMenuItem from "../../components/navigation-menu/navigation-menu-item";
 import Dropdown from "../../components/dropdown";
@@ -238,9 +238,8 @@ const CustomScenario = ({ data: { categoryTree } }: Props) => {
         </NavigationMenu>
       </section>
 
-      <AdSlot variant="banner" name="custom-scenario-top" />
-
       <div className={customScenarioPage}>
+        <ScenariosListAd placement="top" />
         <h1>Create Custom Scenario</h1>
         <p className={customScenarioIntro}>
           Configure your scenario settings and add a central star. Once loaded,
@@ -592,7 +591,7 @@ const CustomScenario = ({ data: { categoryTree } }: Props) => {
         </div>
       </div>
 
-      <AdSlot variant="rectangle" name="custom-scenario-bottom" />
+      <ScenariosListAd placement="bottom" />
 
       {showSaveNameModal && pendingScenario && (
         <SaveScenarioModal

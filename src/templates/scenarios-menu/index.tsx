@@ -2,7 +2,8 @@ import React from "react";
 import { graphql, Link, HeadProps } from "gatsby";
 import Seo from "../../components/seo";
 import Layout from "../../components/layout";
-import AdSlot from "../../components/ad-slot";
+import ScenariosListAd from "../../components/scenarios-list-ad";
+import ScenariosListWithMidAd from "../../components/scenarios-list-with-mid-ad";
 import NavigationMenu from "../../components/navigation-menu";
 import NavigationMenuItem from "../../components/navigation-menu/navigation-menu-item";
 import { kebabCase } from "../../utils/text-utils";
@@ -19,6 +20,9 @@ import {
   scenariosMenuWrapper,
   navigationMenuCssModifier,
   scenariosMenuItem,
+  scenariosListContainer,
+  scenariosListInner,
+  scenariosListTitle,
   scenariosListWrapper,
   scenariosListItem,
   scenariosListItemTitle,
@@ -83,6 +87,13 @@ const ScenarioMenu = ({
 
   const basePath = buildScenariosPaginationBasePath(category, subCategory);
   const pageNumbers = getPaginationRange(currentPage, numPages);
+  const isAll = category === "all";
+  const hasSubCategory = subCategory && subCategory !== "all";
+  const scenariosListHeading = isAll
+    ? "All Scenarios"
+    : hasSubCategory
+    ? `${category} – ${subCategory} Scenarios`
+    : `${category} Scenarios`;
 
   return (
     <Layout currentPage="scenarios">
@@ -180,25 +191,33 @@ const ScenarioMenu = ({
           </NavigationMenu>
         )}
       </section>
-      <AdSlot variant="banner" name="scenario-menu-top" />
-      <section className={scenariosListWrapper}>
-        {scenariosJson.scenarios.map(({ scenario }) => (
-          <Link
-            to={`/scenarios/${kebabCase(scenario.category.name)}${
-              scenario.category.subCategory
-                ? `/${kebabCase(scenario.category.subCategory)}/${kebabCase(
-                    scenario.name,
-                  )}`
-                : `/${kebabCase(scenario.name)}`
-            }`}
-          >
-            <div className={scenariosListItem}>
-              <span className={scenariosListItemTitle}>{scenario.name}</span>
-            </div>
-          </Link>
-        ))}
-      </section>
-      <AdSlot variant="rectangle" name="scenario-menu-bottom" />
+      <ScenariosListAd placement="top" />
+      <div className={scenariosListContainer}>
+        <div className={scenariosListInner}>
+          <h2 className={scenariosListTitle}>{scenariosListHeading}</h2>
+        </div>
+        <ScenariosListWithMidAd
+          items={scenariosJson.scenarios}
+          listClassName={scenariosListWrapper}
+          innerClassName={scenariosListInner}
+          renderItem={({ scenario }) => (
+            <Link
+              key={scenario.name}
+              to={`/scenarios/${kebabCase(scenario.category.name)}${
+                scenario.category.subCategory
+                  ? `/${kebabCase(scenario.category.subCategory)}/${kebabCase(
+                      scenario.name,
+                    )}`
+                  : `/${kebabCase(scenario.name)}`
+              }`}
+            >
+              <div className={scenariosListItem}>
+                <span className={scenariosListItemTitle}>{scenario.name}</span>
+              </div>
+            </Link>
+          )}
+        />
+      </div>
     </Layout>
   );
 };
@@ -233,7 +252,7 @@ const pageQuery = graphql`
     $categoryRegex: String = "//g"
     $subCategoryRegex: String = "//g"
     $skip: Int = 0
-    $limit: Int = 12
+    $limit: Int = 30
   ) {
     scenariosJson: allScenariosJson(
       filter: {

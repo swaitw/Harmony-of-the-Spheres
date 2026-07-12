@@ -1,6 +1,9 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 
+const googleAnalyticsId = process.env.GATSBY_GOOGLE_ANALYTICS_ID ?? "";
+const adsenseClientId = process.env.GATSBY_ADSENSE_CLIENT_ID ?? "";
+
 type Props = {
   title?: string;
   description?: string;
@@ -47,6 +50,28 @@ const Seo = ({ title, description, pathname }: Props) => {
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={metaDescription} />
       <meta name="twitter:image" content={ogImage} />
+
+      {googleAnalyticsId && (
+        <>
+          <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`}
+          />
+          <script>{`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${googleAnalyticsId}');
+          `}</script>
+        </>
+      )}
+      {adsenseClientId && (
+        <script
+          async
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseClientId}`}
+          crossOrigin="anonymous"
+        />
+      )}
     </>
   );
 };

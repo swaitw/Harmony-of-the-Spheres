@@ -1,5 +1,6 @@
 import * as THREE from "three";
 import { degreesToRadians } from "../../physics/utils/misc";
+import withAssetPrefix from "../../utils/with-asset-prefix";
 
 export default (textureLoader: THREE.TextureLoader): THREE.Mesh => {
   const geometry = new THREE.SphereGeometry(
@@ -8,7 +9,7 @@ export default (textureLoader: THREE.TextureLoader): THREE.Mesh => {
     20,
   );
 
-  const texture = textureLoader.load("/textures/milkyway.jpg");
+  const texture = textureLoader.load(withAssetPrefix("/textures/milkyway.jpg"));
 
   const material = new THREE.MeshBasicMaterial({
     map: texture,

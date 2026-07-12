@@ -4,6 +4,7 @@ import { getConicSection } from "../../physics/utils/misc";
 import { ScenarioMassType } from "../../types/scenario";
 import { VectorType } from "../../types/physics";
 import { getMassOrbitTrailColor } from "../utils/mass-orbit-trail-color";
+import withAssetPrefix from "../../utils/with-asset-prefix";
 
 class Manifestation {
   public mass: ScenarioMassType;
@@ -73,12 +74,14 @@ class Manifestation {
           metalness: 0.0,
         })
       : new THREE.MeshStandardMaterial({
-          map: this.textureLoader.load(`/textures/maps/${this.mass.name}.jpg`),
+          map: this.textureLoader.load(
+            withAssetPrefix(`/textures/maps/${this.mass.name}.jpg`),
+          ),
         });
 
     if (this.mass.type === "terrestial planet" || this.mass.type === "moon") {
       material.bumpMap = this.textureLoader.load(
-        `/textures/bump-maps/${this.mass.name}Bump.jpg`,
+        withAssetPrefix(`/textures/bump-maps/${this.mass.name}Bump.jpg`),
       );
       material.bumpScale = 10;
     }
