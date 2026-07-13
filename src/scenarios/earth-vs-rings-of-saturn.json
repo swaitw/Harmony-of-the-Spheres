@@ -8,7 +8,7 @@
   "massBeingModified": {
     "name": "Saturn",
     "unitName": "Neptunian Units",
-    "unitMassQuantity": 5.149e-5,
+    "unitMassQuantity": 0.00005149,
     "m": 1
   },
   "category": {
@@ -22,12 +22,12 @@
     "cameraDistanceToOrigoInAu": 0
   },
   "integrator": {
-    "name": "RK4",
+    "name": "PEFRL",
     "g": 39.5,
-    "dt": 5e-7,
+    "dt": 0.000005,
     "tol": 1e-9,
-    "maxDt": 5e-6,
-    "minDt": 5e-7,
+    "maxDt": 0.00005,
+    "minDt": 0.000005,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -66,14 +66,14 @@
         "eccAnom": 0
       },
       "position": {
-        "x": -1.135841603717545e-5,
+        "x": -0.00001135841603717545,
         "y": 0.007200805435052814,
-        "z": -7.608241832106424e-5
+        "z": -0.00007608241832106424
       },
       "velocity": {
         "x": -0.0027531411153919037,
         "y": 0.0010072803591140611,
-        "z": 6.87504175911851e-5
+        "z": 0.0000687504175911851
       },
       "nonStellarProceduralManifestation": false
     },
@@ -111,7 +111,7 @@
     {
       "name": "Earth",
       "type": "terrestial planet",
-      "m": 3.003e-6,
+      "m": 0.000003003,
       "radius": 91.74311926605505,
       "tilt": -23.44,
       "atmosphere": "skyblue",

@@ -27,12 +27,12 @@
     }
   },
   "integrator": {
-    "name": "RK4",
+    "name": "PEFRL",
     "g": 39.5,
-    "dt": 0.00005,
+    "dt": 0.0005,
     "tol": 0.0001,
-    "maxDt": 0.005,
-    "minDt": 0.0000005,
+    "maxDt": 0.05,
+    "minDt": 0.000005,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -124,7 +124,7 @@
     {
       "name": "Triton",
       "type": "moon",
-      "m": 0.000000010764,
+      "m": 1.0764e-8,
       "radius": 19.97,
       "tilt": -28.32,
       "graphics": {
@@ -157,7 +157,7 @@
     {
       "name": "Binary Partner",
       "type": "moon",
-      "m": 0.000000010764,
+      "m": 1.0764e-8,
       "radius": 19.97,
       "tilt": -28.32,
       "graphics": {

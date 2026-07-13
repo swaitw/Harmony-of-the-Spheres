@@ -26,12 +26,12 @@
     }
   },
   "integrator": {
-    "name": "RK4",
+    "name": "PEFRL",
     "g": 39.5,
-    "dt": 2e-5,
+    "dt": 0.00041,
     "tol": 0.0001,
-    "maxDt": 5e-5,
-    "minDt": 5e-6,
+    "maxDt": 0.00102,
+    "minDt": 0.0001,
     "useBarnesHut": true,
     "theta": 0.5,
     "softeningConstant": 0
@@ -89,7 +89,7 @@
     {
       "name": "Inferno",
       "type": "terrestial planet",
-      "m": 3.003e-6,
+      "m": 0.000003003,
       "radius": 94.0089,
       "tilt": 0,
       "graphics": {
@@ -109,11 +109,11 @@
       },
       "position": {
         "x": 0.35,
-        "y": 0.0,
+        "y": 0,
         "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": 10.623424,
         "z": 0
       },
@@ -123,7 +123,7 @@
     {
       "name": "Eden",
       "type": "terrestial planet",
-      "m": 3.003e-6,
+      "m": 0.000003003,
       "radius": 94.0089,
       "tilt": 0,
       "graphics": {
@@ -176,13 +176,13 @@
         "meanAnom": 0
       },
       "position": {
-        "x": 0.0,
+        "x": 0,
         "y": 1.85,
         "z": 0
       },
       "velocity": {
         "x": -4.620752,
-        "y": 0.0,
+        "y": 0,
         "z": 0
       },
       "nonStellarProceduralManifestation": true,
@@ -191,7 +191,7 @@
     {
       "name": "Rust",
       "type": "terrestial planet",
-      "m": 1.95195e-6,
+      "m": 0.00000195195,
       "radius": 79.9075,
       "tilt": 0,
       "graphics": {
@@ -244,11 +244,11 @@
       },
       "position": {
         "x": -2.65,
-        "y": 0.0,
+        "y": 0,
         "z": 0
       },
       "velocity": {
-        "x": -0.0,
+        "x": 0,
         "y": -3.860785,
         "z": 0
       },
@@ -257,7 +257,7 @@
     {
       "name": "Glacius",
       "type": "terrestial planet",
-      "m": 2.7027e-6,
+      "m": 0.0000027027,
       "radius": 94.0089,
       "tilt": 0,
       "graphics": {
@@ -291,7 +291,7 @@
     {
       "name": "Nephros",
       "type": "sub-Neptune",
-      "m": 6.006e-5,
+      "m": 0.00006006,
       "radius": 376.0355,
       "tilt": 0,
       "graphics": {
@@ -310,13 +310,13 @@
         "meanAnom": 0
       },
       "position": {
-        "x": -0.0,
+        "x": 0,
         "y": -5.5,
         "z": 0
       },
       "velocity": {
         "x": 2.679891,
-        "y": -0.0,
+        "y": 0,
         "z": 0
       },
       "nonStellarProceduralManifestation": true,

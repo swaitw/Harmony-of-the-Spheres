@@ -1,6 +1,6 @@
 {
   "name": "The Earth and Moon System",
-  "description": "Explore the gravitational two-body system of Earth and its Moon \u2014 the tidal interactions that stabilise Earth's axial tilt and drive our ocean tides.",
+  "description": "Explore the gravitational two-body system of Earth and its Moon — the tidal interactions that stabilise Earth's axial tilt and drive our ocean tides.",
   "playing": false,
   "isLoaded": false,
   "elapsedTime": 0,
@@ -26,12 +26,12 @@
     }
   },
   "integrator": {
-    "name": "RK4",
+    "name": "PEFRL",
     "g": 39.5,
-    "dt": 5e-5,
+    "dt": 0.0005,
     "tol": 0.0001,
-    "maxDt": 9e-5,
-    "minDt": 1e-5,
+    "maxDt": 0.0009,
+    "minDt": 0.0001,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -73,19 +73,19 @@
       "position": {
         "x": 0.00257729957449904,
         "y": -0.004392340734313888,
-        "z": -6.978730929619852e-5
+        "z": -0.00006978730929619852
       },
       "velocity": {
         "x": 0.0029586689261267758,
         "y": 0.00013186850299206433,
-        "z": -8.036276531728809e-5
+        "z": -0.00008036276531728809
       },
       "nonStellarProceduralManifestation": false
     },
     {
       "name": "Earth",
       "type": "terrestial planet",
-      "m": 3.003e-6,
+      "m": 0.000003003,
       "radius": 91.74311926605505,
       "tilt": -23.44,
       "atmosphere": "skyblue",
@@ -107,7 +107,7 @@
       "position": {
         "x": 0.9939017404234283,
         "y": 0.1352478854409775,
-        "z": -5.63711820259021e-5
+        "z": -0.0000563711820259021
       },
       "velocity": {
         "x": -0.9740470647877054,

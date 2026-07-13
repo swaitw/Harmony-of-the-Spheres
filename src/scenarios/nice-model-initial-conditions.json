@@ -27,12 +27,12 @@
     }
   },
   "integrator": {
-    "name": "RK4",
+    "name": "PEFRL",
     "g": 39.5,
-    "dt": 0.005,
+    "dt": 0.01,
     "tol": 0.01,
-    "maxDt": 0.05,
-    "minDt": 0.0005,
+    "maxDt": 0.1,
+    "minDt": 0.001,
     "useBarnesHut": true,
     "theta": 0.5,
     "softeningConstant": 0

@@ -1,6 +1,6 @@
 {
   "name": "Jupiter and the Galilean Moons (Procedural)",
-  "description": "Io, Europa, Ganymede, and Callisto in orbit around Jupiter, rendered with procedurally generated WebGL shader textures driven by each body\u2019s mass and distance from the Sun.",
+  "description": "Io, Europa, Ganymede, and Callisto in orbit around Jupiter, rendered with procedurally generated WebGL shader textures driven by each body’s mass and distance from the Sun.",
   "playing": false,
   "isLoaded": false,
   "elapsedTime": 0,
@@ -21,12 +21,12 @@
     "rotatingReferenceFrame": "Jupiter"
   },
   "integrator": {
-    "name": "RK4",
+    "name": "PEFRL",
     "g": 39.5,
-    "dt": 5e-7,
+    "dt": 0.0000097,
     "tol": 0.0001,
-    "maxDt": 5e-5,
-    "minDt": 5e-7,
+    "maxDt": 0.00097,
+    "minDt": 0.0000097,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -74,8 +74,8 @@
       },
       "velocity": {
         "x": 0.00012011206801885418,
-        "y": -1.4404565860802778e-5,
-        "z": 1.85765499287888e-6
+        "y": -0.000014404565860802778,
+        "z": 0.00000185765499287888
       },
       "nonStellarProceduralManifestation": true
     },
@@ -135,7 +135,7 @@
       "position": {
         "x": 0.0004123396684098477,
         "y": -0.00277546561117049,
-        "z": -9.213389019387901e-5
+        "z": -0.00009213389019387901
       },
       "velocity": {
         "x": 3.632459716708889,
@@ -200,8 +200,8 @@
       },
       "position": {
         "x": -0.007162482360743344,
-        "y": -1.26082702584475e-5,
-        "z": -9.466593207081436e-5
+        "y": -0.0000126082702584475,
+        "z": -0.00009466593207081436
       },
       "velocity": {
         "x": 0.009854944632595801,

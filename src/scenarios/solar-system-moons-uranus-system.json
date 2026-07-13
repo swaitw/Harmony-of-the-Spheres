@@ -1,6 +1,6 @@
 {
   "name": "Uranus and Its Moons",
-  "description": "Uranus orbits on its side with a 98\u00b0 axial tilt. Explore its family of moons, from the fractured cliffs of Miranda to the larger worlds of Titania and Oberon.",
+  "description": "Uranus orbits on its side with a 98° axial tilt. Explore its family of moons, from the fractured cliffs of Miranda to the larger worlds of Titania and Oberon.",
   "playing": false,
   "isLoaded": false,
   "elapsedTime": 0,
@@ -9,7 +9,7 @@
     "name": "Uranus",
     "unitName": "Solar Units",
     "unitMassQuantity": 1,
-    "m": 4.366e-5
+    "m": 0.00004366
   },
   "category": {
     "name": "Solar System",
@@ -21,12 +21,12 @@
     "rotatingReferenceFrame": "Uranus"
   },
   "integrator": {
-    "name": "RK4",
+    "name": "PEFRL",
     "g": 39.5,
-    "dt": 5e-7,
+    "dt": 0.000005,
     "tol": 0.0001,
-    "maxDt": 5e-5,
-    "minDt": 5e-7,
+    "maxDt": 0.0005,
+    "minDt": 0.000005,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -80,7 +80,7 @@
     {
       "name": "Uranus",
       "type": "ice giant planet",
-      "m": 4.366e-5,
+      "m": 0.00004366,
       "radius": 377.5,
       "tilt": -97.77,
       "atmosphere": "lightcyan",
@@ -134,7 +134,7 @@
       },
       "position": {
         "x": -0.0001069028,
-        "y": 6.588946e-5,
+        "y": 0.00006588946,
         "z": 0.000307935
       },
       "velocity": {
@@ -166,8 +166,8 @@
         "meanAnom": 0
       },
       "position": {
-        "x": -9.822887e-5,
-        "y": -2.711026e-5,
+        "x": -0.00009822887,
+        "y": -0.00002711026,
         "z": -0.0003406877
       },
       "velocity": {
@@ -200,7 +200,7 @@
       },
       "position": {
         "x": -0.0001917333,
-        "y": -2.180305e-6,
+        "y": -0.000002180305,
         "z": -0.0003454818
       },
       "velocity": {
@@ -233,7 +233,7 @@
       },
       "position": {
         "x": 0.0003769212,
-        "y": -5.258152e-5,
+        "y": -0.00005258152,
         "z": 0.0001646804
       },
       "velocity": {
@@ -266,7 +266,7 @@
       },
       "position": {
         "x": 0.000323187,
-        "y": -1.81068e-5,
+        "y": -0.0000181068,
         "z": 0.0002701834
       },
       "velocity": {
@@ -298,8 +298,8 @@
         "meanAnom": 0
       },
       "position": {
-        "x": 7.426961e-5,
-        "y": 2.832807e-5,
+        "x": 0.00007426961,
+        "y": 0.00002832807,
         "z": 0.0004253376
       },
       "velocity": {
@@ -365,7 +365,7 @@
       },
       "position": {
         "x": -0.0003864738,
-        "y": 4.593772e-5,
+        "y": 0.00004593772,
         "z": -0.0002575359
       },
       "velocity": {
@@ -431,7 +431,7 @@
       },
       "position": {
         "x": 0.0004152166,
-        "y": -5.70998e-5,
+        "y": -0.0000570998,
         "z": 0.0002794762
       },
       "velocity": {
@@ -530,7 +530,7 @@
       },
       "position": {
         "x": -0.0004768213,
-        "y": 6.454513e-5,
+        "y": 0.00006454513,
         "z": -0.0004364057
       },
       "velocity": {
@@ -695,7 +695,7 @@
       },
       "position": {
         "x": 0.001936324,
-        "y": 5.833798e-5,
+        "y": 0.00005833798,
         "z": 0.003378736
       },
       "velocity": {

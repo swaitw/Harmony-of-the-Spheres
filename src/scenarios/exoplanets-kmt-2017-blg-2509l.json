@@ -21,12 +21,12 @@
     "rotatingReferenceFrame": "KMT-2017-BLG-2509L"
   },
   "integrator": {
-    "name": "RK4",
+    "name": "PEFRL",
     "g": 39.5,
-    "dt": 0.0001,
+    "dt": 0.00935,
     "tol": 0.0001,
-    "maxDt": 0.001,
-    "minDt": 0.000001,
+    "maxDt": 0.0935,
+    "minDt": 0.000094,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0

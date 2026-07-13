@@ -21,12 +21,12 @@
     "rotatingReferenceFrame": "nu Oct A"
   },
   "integrator": {
-    "name": "RK4",
+    "name": "PEFRL",
     "g": 39.5,
-    "dt": 0.0001,
+    "dt": 0.00222,
     "tol": 0.0001,
-    "maxDt": 0.001,
-    "minDt": 0.000001,
+    "maxDt": 0.0222,
+    "minDt": 0.000022,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0

@@ -21,12 +21,12 @@
     "rotatingReferenceFrame": "Kepler-1635"
   },
   "integrator": {
-    "name": "RK4",
+    "name": "PEFRL",
     "g": 39.5,
-    "dt": 0.0001,
+    "dt": 0.00253,
     "tol": 0.0001,
-    "maxDt": 0.001,
-    "minDt": 0.000001,
+    "maxDt": 0.0253,
+    "minDt": 0.000025,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0

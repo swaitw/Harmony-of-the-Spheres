@@ -21,12 +21,12 @@
     "rotatingReferenceFrame": "HD 45350"
   },
   "integrator": {
-    "name": "RK4",
+    "name": "PEFRL",
     "g": 39.5,
-    "dt": 0.0001,
+    "dt": 0.00561,
     "tol": 0.0001,
-    "maxDt": 0.001,
-    "minDt": 0.000001,
+    "maxDt": 0.0561,
+    "minDt": 0.000056,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
