@@ -1,0 +1,165 @@
+{
+  "name": "Kepler-123 - System",
+  "description": "Kepler-123 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-123",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.079,
+    "m": 1.079
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-123",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-123"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-123",
+    "barycenterMassTwo": "Kepler-123 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-123",
+      "type": "star",
+      "m": 1.079,
+      "radius": 12981.28,
+      "tilt": 0,
+      "temperature": 6089,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 1.4572139882716656e-20,
+        "y": -0.0026119095331725143,
+        "z": -0.0001493564395101407
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-123 b",
+      "type": "sub-Neptune",
+      "m": 0.00016606589999999997,
+      "radius": 276.3861,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.135,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": 17.74380647724757,
+        "z": 0.9299134935005877
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-123 c",
+      "type": "terrestial planet",
+      "m": 0.00000837837,
+      "radius": 139.1331,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.181,
+        "y": 2.2166107064567093e-17,
+        "z": 0
+      },
+      "velocity": {
+        "x": -1.8766584590381268e-15,
+        "y": -15.324079239375218,
+        "z": 0.8031009624930104
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-123",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

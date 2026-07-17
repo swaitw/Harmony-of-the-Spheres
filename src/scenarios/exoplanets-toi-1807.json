@@ -1,0 +1,131 @@
+{
+  "name": "TOI-1807 - System",
+  "description": "TOI-1807 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-1807",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.8048,
+    "m": 0.8048
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-1807",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-1807"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00002,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-1807",
+    "barycenterMassTwo": "TOI-1807 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-1807",
+      "type": "star",
+      "m": 0.8048,
+      "radius": 7661.42,
+      "tilt": 0,
+      "temperature": 4914,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.00046475043737553975,
+        "y": -2.841875641008908e-20,
+        "z": -1.4893639134384612e-21
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-1807 b",
+      "type": "terrestial planet",
+      "m": 0.00000732732,
+      "radius": 140.714,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 7.470345474798855e-19,
+        "y": 0.0121832803240058,
+        "z": 0.0006384986661639149
+      },
+      "velocity": {
+        "x": -51.04610580673894,
+        "y": 3.1213888787223288e-15,
+        "z": 1.6358505941261929e-16
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-1807",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

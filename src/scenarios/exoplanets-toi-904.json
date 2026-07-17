@@ -1,0 +1,165 @@
+{
+  "name": "TOI-904 - System",
+  "description": "TOI-904 is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-904",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.557,
+    "m": 0.557
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-904",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-904"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0002,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-904",
+    "barycenterMassTwo": "TOI-904 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-904",
+      "type": "star",
+      "m": 0.557,
+      "radius": 5412.29,
+      "tilt": 0,
+      "temperature": 3770,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 2.95668801211215e-20,
+        "y": -0.0004479647908137072,
+        "z": -0.00004878265913778747
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-904 b",
+      "type": "super-Earth",
+      "m": 0.000019399379999999998,
+      "radius": 228.0655,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.056,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": 19.794135468289834,
+        "z": 1.037366682720751
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "TOI-904 c",
+      "type": "super-Earth",
+      "m": 0.000016036019999999998,
+      "radius": 203.7172,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.312,
+        "y": 3.820898013339742e-17,
+        "z": 0
+      },
+      "velocity": {
+        "x": -1.0269850142033172e-15,
+        "y": -8.38596903954956,
+        "z": 0.4394900144991304
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "skyblue"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-904",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

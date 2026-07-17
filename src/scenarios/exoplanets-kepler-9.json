@@ -1,0 +1,199 @@
+{
+  "name": "Kepler-9 - System",
+  "description": "Kepler-9 is a Sun-like G/F-type star with 3 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-9",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.07,
+    "m": 1.07
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "3-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-9",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-9"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-9",
+    "barycenterMassTwo": "Kepler-9 d",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-9",
+      "type": "star",
+      "m": 1.07,
+      "radius": 10475.4,
+      "tilt": 0,
+      "temperature": 5777,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.0028817695353891034,
+        "y": -0.0007453956795463996,
+        "z": -0.00010239448696421737
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-9 d",
+      "type": "super-Earth",
+      "m": 0.00002526922557159,
+      "radius": 154.1745,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.0273,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": 39.2928490142703,
+        "z": 2.059250958541741
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-9 b",
+      "type": "gas giant planet",
+      "m": 0.0001303302,
+      "radius": 779.3335,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.06097531594656861,
+        "y": 0.11964960844623726,
+        "z": -0.0003678308962653012
+      },
+      "velocity": {
+        "x": -16.259474915838002,
+        "y": -8.283147354199357,
+        "z": 0.9550108206148394
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-9 c",
+      "type": "gas giant planet",
+      "m": 0.0000897897,
+      "radius": 759.5916,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.1430433172079511,
+        "y": 0.15619518108392272,
+        "z": 0.002399309682172328
+      },
+      "velocity": {
+        "x": -10.740572528811114,
+        "y": 9.847652496053518,
+        "z": -0.7455234529248649
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-9",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

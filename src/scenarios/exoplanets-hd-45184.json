@@ -1,0 +1,165 @@
+{
+  "name": "HD 45184 - System",
+  "description": "HD 45184 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 45184",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.03,
+    "m": 1.03
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 45184",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 45184"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0002,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 45184",
+    "barycenterMassTwo": "HD 45184 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 45184",
+      "type": "star",
+      "m": 1.03,
+      "radius": 11041.6775,
+      "tilt": 0,
+      "temperature": 5869,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.0003751028331690873,
+        "y": 0.0002880782984151924,
+        "z": 0.000067853992490165
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 45184 b",
+      "type": "sub-Neptune",
+      "m": 0.000036606569999999994,
+      "radius": 330.9112,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.04953550975445206,
+        "y": 0.03361816191635642,
+        "z": 0.0017618532096139489
+      },
+      "velocity": {
+        "x": -15.153933720038633,
+        "y": -22.26777723296608,
+        "z": -1.1670047543492161
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 45184 c",
+      "type": "sub-Neptune",
+      "m": 0.000026456430000000002,
+      "radius": 273.5658,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.09730962051361797,
+        "y": -0.03151823772770418,
+        "z": 0.0016518008462239424
+      },
+      "velocity": {
+        "x": 6.364336281720344,
+        "y": 19.595474470868922,
+        "z": -1.026955301015767
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 45184",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

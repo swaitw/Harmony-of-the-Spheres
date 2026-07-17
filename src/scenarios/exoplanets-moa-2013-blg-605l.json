@@ -1,0 +1,131 @@
+{
+  "name": "MOA-2013-BLG-605L - System",
+  "description": "MOA-2013-BLG-605L is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "MOA-2013-BLG-605L",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.024,
+    "m": 0.024
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "MOA-2013-BLG-605L",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "MOA-2013-BLG-605L"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.01,
+    "tol": 0.0001,
+    "maxDt": 0.1,
+    "minDt": 0.0001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "MOA-2013-BLG-605L",
+    "barycenterMassTwo": "MOA-2013-BLG-605L b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "MOA-2013-BLG-605L",
+      "type": "star",
+      "m": 0.024,
+      "radius": 10270,
+      "tilt": 0,
+      "temperature": 5778,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": -0.000408748527722031,
+        "z": -0.000021421602623124247
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "MOA-2013-BLG-605L b",
+      "type": "super-Earth",
+      "m": 0.00000972972,
+      "radius": 152.2944,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.93,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": 1.0082473766283864,
+        "z": 0.05284000597704579
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "MOA-2013-BLG-605L",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

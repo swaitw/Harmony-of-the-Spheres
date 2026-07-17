@@ -1,0 +1,131 @@
+{
+  "name": "HD 77946 - System",
+  "description": "HD 77946 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 77946",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.1973,
+    "m": 1.1973
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 77946",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 77946"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0002,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 77946",
+    "barycenterMassTwo": "HD 77946 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 77946",
+      "type": "star",
+      "m": 1.1973,
+      "radius": 13529.698,
+      "tilt": 0,
+      "temperature": 6007,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.00013783147139306427,
+        "y": -0.0008498309430479536,
+        "z": -0.000044537752491155904
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 77946 b",
+      "type": "sub-Neptune",
+      "m": 0.0000327327,
+      "radius": 272.293,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.056856087459408886,
+        "y": 0.00919605659602041,
+        "z": 0.0004819449043585929
+      },
+      "velocity": {
+        "x": -5.041613453791342,
+        "y": 31.085201896309037,
+        "z": 1.629106399950538
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 77946",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "name": "GJ 27.1 - System",
+  "description": "GJ 27.1 is a cool M-dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "GJ 27.1",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.53,
+    "m": 0.53
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "GJ 27.1",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "GJ 27.1"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "GJ 27.1",
+    "barycenterMassTwo": "GJ 27.1 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "GJ 27.1",
+      "type": "star",
+      "m": 0.53,
+      "radius": 5328.9695,
+      "tilt": 0,
+      "temperature": 3542,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.0005744954309584993,
+        "y": 0.000993691586464447,
+        "z": 0.0000520771693388438
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "GJ 27.1 b",
+      "type": "sub-Neptune",
+      "m": 0.000039039,
+      "radius": 344.0724,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.08047108051965006,
+        "y": 0.0463963281846975,
+        "z": 0.0024315285270471707
+      },
+      "velocity": {
+        "x": -7.799446154051197,
+        "y": -13.490523343993363,
+        "z": -0.7070083698247193
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "GJ 27.1",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

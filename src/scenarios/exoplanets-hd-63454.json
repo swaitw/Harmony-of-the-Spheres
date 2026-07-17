@@ -1,0 +1,131 @@
+{
+  "name": "HD 63454 - System",
+  "description": "HD 63454 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 63454",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.42,
+    "m": 0.42
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 63454",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 63454"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 63454",
+    "barycenterMassTwo": "HD 63454 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 63454",
+      "type": "star",
+      "m": 0.42,
+      "radius": 7907.9,
+      "tilt": 0,
+      "temperature": 4812,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.011557176524156592,
+        "y": -0.0005442756749786231,
+        "z": -0.000028524279443407955
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 63454 b",
+      "type": "gas giant planet",
+      "m": 0.00023861087249999998,
+      "radius": 1157.2491,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.0018842580283857072,
+        "y": 0.03990083724417306,
+        "z": 0.002091114271501172
+      },
+      "velocity": {
+        "x": -20.342803700806922,
+        "y": 0.9580275244625399,
+        "z": 0.05020809504911115
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 63454",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

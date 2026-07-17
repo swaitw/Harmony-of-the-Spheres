@@ -1,0 +1,199 @@
+{
+  "name": "HD 28471 - System",
+  "description": "HD 28471 is a Sun-like G/F-type star with 3 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 28471",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.98,
+    "m": 0.98
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "3-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 28471",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 28471"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 28471",
+    "barycenterMassTwo": "HD 28471 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 28471",
+      "type": "star",
+      "m": 0.98,
+      "radius": 11091.6,
+      "tilt": 0,
+      "temperature": 5766,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.00006317384690338181,
+        "y": 0.0005239552122870085,
+        "z": 0.00001534657303956092
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 28471 b",
+      "type": "super-Earth",
+      "m": 0.00001117116,
+      "radius": 164.5155,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.02985245811456032,
+        "y": 0.015851080371080985,
+        "z": 0.0008307199214853593
+      },
+      "velocity": {
+        "x": -17.365298135425256,
+        "y": -32.61461724247716,
+        "z": -1.7092596618446132
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "HD 28471 c",
+      "type": "super-Earth",
+      "m": 0.00001717716,
+      "radius": 212.46,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.05691532631110093,
+        "y": -0.01630036846807773,
+        "z": 0.003010318705021129
+      },
+      "velocity": {
+        "x": 7.354652758746772,
+        "y": -25.61761360901585,
+        "z": 0.33747940622223965
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "HD 28471 d",
+      "type": "super-Earth",
+      "m": 0.00001474473,
+      "radius": 193.6583,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.08275151472018266,
+        "y": -0.03682920339557863,
+        "z": 0.004720867373956967
+      },
+      "velocity": {
+        "x": 8.787468248141312,
+        "y": 19.72941161306077,
+        "z": -0.11815517626582787
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 28471",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

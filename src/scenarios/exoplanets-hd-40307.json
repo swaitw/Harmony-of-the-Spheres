@@ -1,0 +1,267 @@
+{
+  "name": "HD 40307 - System",
+  "description": "HD 40307 is a orange K-type dwarf star with 5 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 40307",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.77,
+    "m": 0.77
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "5-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 40307",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 40307"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 40307",
+    "barycenterMassTwo": "HD 40307 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 40307",
+      "type": "star",
+      "m": 0.77,
+      "radius": 7360.3447,
+      "tilt": 0,
+      "temperature": 4956,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.12140563822049921,
+        "y": 0.1556058106480823,
+        "z": 0.0062236357842966996
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 40307 b",
+      "type": "terrestial planet",
+      "m": 0.00357055519998177,
+      "radius": 94.0089,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.03619786766935096,
+        "y": -0.009550782199387662,
+        "z": -0.0005005352854859075
+      },
+      "velocity": {
+        "x": 7.975635694359853,
+        "y": -30.14519986690695,
+        "z": -1.5798429810680226
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "HD 40307 c",
+      "type": "terrestial planet",
+      "m": 0.00561114515386425,
+      "radius": 94.0089,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.045015070802307,
+        "y": -0.060035092933580496,
+        "z": -0.0032159373625179673
+      },
+      "velocity": {
+        "x": 16.55278537216185,
+        "y": 12.444886533171857,
+        "z": -0.6234928848270853
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "HD 40307 d",
+      "type": "terrestial planet",
+      "m": 0.0053314946129445,
+      "radius": 94.0089,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.11626943742245693,
+        "y": 0.03963158607634301,
+        "z": 0.0019012931227938854
+      },
+      "velocity": {
+        "x": -5.232614430156444,
+        "y": -15.390255845184505,
+        "z": 0.8137163091283305
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "HD 40307 f",
+      "type": "super-Earth",
+      "m": 0.0000156156,
+      "radius": 200.2389,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.20703315656940904,
+        "y": -0.12541607527354726,
+        "z": -0.0010600678688056748
+      },
+      "velocity": {
+        "x": 5.855465120426089,
+        "y": -9.671019473397513,
+        "z": 0.5904142575140456
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "HD 40307 g",
+      "type": "sub-Neptune",
+      "m": 0.0000213213,
+      "radius": 240.6627,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.40051145237673935,
+        "y": 0.14342224975001427,
+        "z": 0.022285304389201146
+      },
+      "velocity": {
+        "x": -3.234720724026555,
+        "y": 9.035381584652237,
+        "z": -0.014900357736198426
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 40307",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "name": "TOI-1338 A - System",
+  "description": "TOI-1338 A is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-1338 A",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.0936,
+    "m": 1.0936
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-1338 A",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-1338 A"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.001,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-1338 A",
+    "barycenterMassTwo": "TOI-1338 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-1338 A",
+      "type": "star",
+      "m": 1.0936,
+      "radius": 13484.51,
+      "tilt": 0,
+      "temperature": 5723,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.0007149862472984489,
+        "y": 0.0014296957183599834,
+        "z": -0.00008502697900487909
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-1338 b",
+      "type": "gas giant planet",
+      "m": 0.000033933900000000004,
+      "radius": 720.2019,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.13839107344044602,
+        "y": 0.42282775560344116,
+        "z": 0.022159463690408835
+      },
+      "velocity": {
+        "x": -9.513896055997385,
+        "y": 3.1053589298201962,
+        "z": 0.1627449653886379
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "TOI-1338 c",
+      "type": "gas giant planet",
+      "m": 0.00022642620000000002,
+      "radius": 968.2913,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.7373101321977988,
+        "y": 0.20225779181569575,
+        "z": -0.010599881711752275
+      },
+      "velocity": {
+        "x": -2.0274392392354503,
+        "y": -7.370578921463608,
+        "z": 0.3862756733043007
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-1338 A",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "name": "HIP 57274 - System",
+  "description": "HIP 57274 is a orange K-type dwarf star with 3 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HIP 57274",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.29,
+    "m": 0.29
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "3-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HIP 57274",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HIP 57274"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0002,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HIP 57274",
+    "barycenterMassTwo": "HIP 57274 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HIP 57274",
+      "type": "star",
+      "m": 0.29,
+      "radius": 8010.6,
+      "tilt": 0,
+      "temperature": 4510,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.5500138690871694,
+        "y": -0.08223772255554622,
+        "z": -0.004609151536752021
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HIP 57274 b",
+      "type": "terrestial planet",
+      "m": 0.01008841712475597,
+      "radius": 94.0089,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.008869834167781095,
+        "y": 0.05592518021449395,
+        "z": 0.0029309145010455017
+      },
+      "velocity": {
+        "x": -15.314380208591341,
+        "y": 2.4222353932070058,
+        "z": 0.1269439778587633
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "HIP 57274 c",
+      "type": "gas giant planet",
+      "m": 0.00039039,
+      "radius": 1334.9259,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.07467194072249027,
+        "y": 0.15171871096710365,
+        "z": -0.000586524694578976
+      },
+      "velocity": {
+        "x": -7.557259366550347,
+        "y": -3.717780780185485,
+        "z": 0.44041762930810885
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HIP 57274 d",
+      "type": "gas giant planet",
+      "m": 0.0005027022,
+      "radius": 1334.9259,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.2858249172682893,
+        "y": 0.6796263805576783,
+        "z": -0.004836271150935427
+      },
+      "velocity": {
+        "x": -4.089673766684757,
+        "y": 1.718319432191555,
+        "z": -0.2306425011915546
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HIP 57274",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

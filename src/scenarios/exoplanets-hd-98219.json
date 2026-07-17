@@ -1,0 +1,131 @@
+{
+  "name": "HD 98219 - System",
+  "description": "HD 98219 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 98219",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.41,
+    "m": 1.41
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 98219",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 98219"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00239,
+    "tol": 0.0001,
+    "maxDt": 0.0239,
+    "minDt": 0.000024,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 98219",
+    "barycenterMassTwo": "HD 98219 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 98219",
+      "type": "star",
+      "m": 1.41,
+      "radius": 47242,
+      "tilt": 0,
+      "temperature": 4925,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -2.3432421840725115e-18,
+        "y": -0.009553900984867001,
+        "z": -0.0005006987341069398
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 98219 b",
+      "type": "gas giant planet",
+      "m": 0.00187452701436,
+      "radius": 1259.7188,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 1.16046,
+        "y": -2.838411965775392e-16,
+        "z": -1.4875486781669986e-17
+      },
+      "velocity": {
+        "x": 1.7625627447520576e-15,
+        "y": 7.186346361224212,
+        "z": 0.3766204539505248
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 98219",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

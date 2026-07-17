@@ -1,0 +1,131 @@
+{
+  "name": "HD 2039 - System",
+  "description": "HD 2039 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 2039",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.23,
+    "m": 1.23
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 2039",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 2039"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00643,
+    "tol": 0.0001,
+    "maxDt": 0.0643,
+    "minDt": 0.000064,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 2039",
+    "barycenterMassTwo": "HD 2039 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 2039",
+      "type": "star",
+      "m": 1.23,
+      "radius": 12221.3,
+      "tilt": 0,
+      "temperature": 5945,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.015258803926759993,
+        "y": -0.05349303641943078,
+        "z": -0.002803451245849213
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 2039 b",
+      "type": "gas giant planet",
+      "m": 0.0060034495520999995,
+      "radius": 1193.9126,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.6135909554923971,
+        "y": -0.17454644341270306,
+        "z": -0.009147591481012783
+      },
+      "velocity": {
+        "x": 3.1262574403327252,
+        "y": 10.959771415566296,
+        "z": 0.5743772813395825
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 2039",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

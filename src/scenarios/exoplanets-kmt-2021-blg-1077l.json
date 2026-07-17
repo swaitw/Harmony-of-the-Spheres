@@ -1,0 +1,165 @@
+{
+  "name": "KMT-2021-BLG-1077L - System",
+  "description": "KMT-2021-BLG-1077L is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "KMT-2021-BLG-1077L",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.14,
+    "m": 0.14
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "KMT-2021-BLG-1077L",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "KMT-2021-BLG-1077L"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0048,
+    "tol": 0.0001,
+    "maxDt": 0.048,
+    "minDt": 0.000048,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "KMT-2021-BLG-1077L",
+    "barycenterMassTwo": "KMT-2021-BLG-1077L c",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "KMT-2021-BLG-1077L",
+      "type": "star",
+      "m": 0.14,
+      "radius": 10270,
+      "tilt": 0,
+      "temperature": 5778,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 3.842689021586523e-19,
+        "y": -0.0010125638564585438,
+        "z": -0.0003819558233283025
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "KMT-2021-BLG-1077L c",
+      "type": "gas giant planet",
+      "m": 0.00023860967655525,
+      "radius": 996.494,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.93,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": 2.4351487646798504,
+        "z": 0.12762073898071205
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "KMT-2021-BLG-1077L b",
+      "type": "gas giant planet",
+      "m": 0.00020997651536861997,
+      "radius": 926.9274,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -1.26,
+        "y": 1.543054966925665e-16,
+        "z": 0
+      },
+      "velocity": {
+        "x": -2.5620792024178504e-16,
+        "y": -2.09209643482649,
+        "z": 0.10964212819522409
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "KMT-2021-BLG-1077L",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

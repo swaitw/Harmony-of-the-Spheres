@@ -1,0 +1,199 @@
+{
+  "name": "K2-19 - System",
+  "description": "K2-19 is a Sun-like G/F-type star with 3 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "K2-19",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.892,
+    "m": 0.892
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "3-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "K2-19",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "K2-19"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "K2-19",
+    "barycenterMassTwo": "K2-19 d",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "K2-19",
+      "type": "star",
+      "m": 0.892,
+      "radius": 8462.48,
+      "tilt": 0,
+      "temperature": 5350,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.0006208144165229615,
+        "y": -0.0010303134434029538,
+        "z": 0.000015077493005405334
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "K2-19 d",
+      "type": "terrestial planet",
+      "m": 0.000018618599999999998,
+      "radius": 98.1453,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.007296137698643041,
+        "y": -0.0180338258498941,
+        "z": -0.000945112764770053
+      },
+      "velocity": {
+        "x": 47.32267426481303,
+        "y": -19.093398730304685,
+        "z": -1.0006426264209072
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "K2-19 b",
+      "type": "gas giant planet",
+      "m": 0.0000924924,
+      "radius": 658.0621,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.05767854237006196,
+        "y": 0.034658644604223965,
+        "z": -0.0035260166283025097
+      },
+      "velocity": {
+        "x": -12.351622665935224,
+        "y": 20.55766575301713,
+        "z": 0.02190572485232714
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "K2-19 c",
+      "type": "gas giant planet",
+      "m": 0.000033033,
+      "radius": 385.4363,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.0799949868884069,
+        "y": 0.03729067156580076,
+        "z": -0.004607850572141774
+      },
+      "velocity": {
+        "x": -8.852274341978704,
+        "y": -18.977867549991704,
+        "z": 0.09552047885833431
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "K2-19",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "name": "HIP 54373 - System",
+  "description": "HIP 54373 is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HIP 54373",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.57,
+    "m": 0.57
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HIP 54373",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HIP 54373"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0002,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HIP 54373",
+    "barycenterMassTwo": "HIP 54373 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HIP 54373",
+      "type": "star",
+      "m": 0.57,
+      "radius": 5802.5295,
+      "tilt": 0,
+      "temperature": 4021,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.000020475648454409028,
+        "y": -0.0009657417275369436,
+        "z": 0.000017223729063616855
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HIP 54373 b",
+      "type": "sub-Neptune",
+      "m": 0.000025885859999999996,
+      "radius": 269.8054,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.015289742346899005,
+        "y": 0.04795900825845337,
+        "z": 0.0025134251194425744
+      },
+      "velocity": {
+        "x": -22.062086421978982,
+        "y": 7.014316646828692,
+        "z": 0.3676047586483598
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HIP 54373 c",
+      "type": "sub-Neptune",
+      "m": 0.00003735732,
+      "radius": 335.6116,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.04240246289251285,
+        "y": -0.06680130823792713,
+        "z": 0.0035009082179516867
+      },
+      "velocity": {
+        "x": 15.599812835777884,
+        "y": 9.874936584866925,
+        "z": -0.5175234969737347
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HIP 54373",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

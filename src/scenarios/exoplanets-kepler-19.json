@@ -1,0 +1,165 @@
+{
+  "name": "Kepler-19 - System",
+  "description": "Kepler-19 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-19",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.936,
+    "m": 0.936
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-19",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-19"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0002,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-19",
+    "barycenterMassTwo": "Kepler-19 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-19",
+      "type": "star",
+      "m": 0.936,
+      "radius": 8821.93,
+      "tilt": 0,
+      "temperature": 5541,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.00023897001345433487,
+        "y": 0.0003633594992151301,
+        "z": -0.00005304057361673572
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-19 b",
+      "type": "super-Earth",
+      "m": 0.000018318299999999997,
+      "radius": 207.6656,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.025632898055231508,
+        "y": 0.04277075542924861,
+        "z": 0.0022415203103049977
+      },
+      "velocity": {
+        "x": -27.730326379473567,
+        "y": 16.57351337350602,
+        "z": 0.8685810308232352
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-19 c",
+      "type": "sub-Neptune",
+      "m": 0.0000393393,
+      "radius": 345.9526,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.12763067269425427,
+        "y": -0.05621468788522104,
+        "z": 0.0029460869551537153
+      },
+      "velocity": {
+        "x": 7.226780982982746,
+        "y": -16.362850414096265,
+        "z": 0.8575406529433764
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-19",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

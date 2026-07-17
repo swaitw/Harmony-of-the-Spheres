@@ -1,0 +1,131 @@
+{
+  "name": "CI Tau - System",
+  "description": "CI Tau is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "CI Tau",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.9,
+    "m": 0.9
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "CI Tau",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "CI Tau"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "CI Tau",
+    "barycenterMassTwo": "CI Tau c",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "CI Tau",
+      "type": "star",
+      "m": 0.9,
+      "radius": 19316.4014,
+      "tilt": 0,
+      "temperature": 3807,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.02951517413896342,
+        "y": -0.10279058036311549,
+        "z": -0.005387026048045866
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "CI Tau c",
+      "type": "gas giant planet",
+      "m": 0.0034359793423956,
+      "radius": 1222.1152,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.06863408508999598,
+        "y": -0.019653535754196455,
+        "z": -0.0010299981639372868
+      },
+      "velocity": {
+        "x": 7.731029228641003,
+        "y": 26.92435346898912,
+        "z": 1.4110455739413668
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "CI Tau",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

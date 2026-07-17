@@ -1,0 +1,131 @@
+{
+  "name": "HAT-P-35 - System",
+  "description": "HAT-P-35 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HAT-P-35",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.236,
+    "m": 1.236
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HAT-P-35",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HAT-P-35"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HAT-P-35",
+    "barycenterMassTwo": "HAT-P-35 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HAT-P-35",
+      "type": "star",
+      "m": 1.236,
+      "radius": 14737.45,
+      "tilt": 0,
+      "temperature": 6096,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.024156216488158203,
+        "y": 0.009746369586870751,
+        "z": 0.0005107855861196678
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HAT-P-35 b",
+      "type": "gas giant planet",
+      "m": 0.00100789232544,
+      "radius": 1403.5888,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.01827495789583923,
+        "y": -0.045170119002689024,
+        "z": -0.0023672656268816316
+      },
+      "velocity": {
+        "x": 29.6232869580878,
+        "y": -11.952182296966383,
+        "z": -0.6263873317700867
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HAT-P-35",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

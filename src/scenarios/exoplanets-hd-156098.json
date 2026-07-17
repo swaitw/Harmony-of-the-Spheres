@@ -1,0 +1,165 @@
+{
+  "name": "HD 156098 - System",
+  "description": "HD 156098 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 156098",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.29,
+    "m": 1.29
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 156098",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 156098"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 156098",
+    "barycenterMassTwo": "HD 156098 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 156098",
+      "type": "star",
+      "m": 1.29,
+      "radius": 28316.0332,
+      "tilt": 0,
+      "temperature": 6419,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.008596883125716846,
+        "y": -0.011473338237367682,
+        "z": 0.0005575803133785818
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 156098 b",
+      "type": "gas giant planet",
+      "m": 0.00004772193531105,
+      "radius": 387.3165,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.08619318370304299,
+        "y": -0.12112385116194867,
+        "z": -0.006347832057607341
+      },
+      "velocity": {
+        "x": 15.885217949454468,
+        "y": 11.273148865180653,
+        "z": 0.5908006975512542
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 156098 c",
+      "type": "gas giant planet",
+      "m": 0.0049898055561354,
+      "radius": 1203.3135,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 3.9442254778677266,
+        "y": 3.2675173942547064,
+        "z": -0.17124333040159861
+      },
+      "velocity": {
+        "x": -2.3744517581436253,
+        "y": 2.8583538346040718,
+        "z": -0.14979997687676466
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 156098",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

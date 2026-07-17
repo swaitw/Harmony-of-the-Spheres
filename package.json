@@ -15,10 +15,15 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write ."
   },
   "dependencies": {
+    "@tweenjs/tween.js": "^17.4.0",
+    "framer-motion": "^12.38.0",
     "gatsby": "^5.12.4",
+    "gatsby-plugin-canonical-urls": "^5.16.0",
+    "gatsby-plugin-google-gtag": "^5.16.0",
     "gatsby-plugin-image": "^3.12.1",
     "gatsby-plugin-manifest": "^5.12.1",
     "gatsby-plugin-sharp": "^5.12.1",

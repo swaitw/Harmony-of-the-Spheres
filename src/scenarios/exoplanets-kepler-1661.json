@@ -1,0 +1,131 @@
+{
+  "name": "Kepler-1661 - System",
+  "description": "Kepler-1661 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-1661",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.841,
+    "m": 0.841
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-1661",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-1661"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0011,
+    "tol": 0.0001,
+    "maxDt": 0.011,
+    "minDt": 0.000011,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-1661",
+    "barycenterMassTwo": "Kepler-1661 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-1661",
+      "type": "star",
+      "m": 0.841,
+      "radius": 7825.74,
+      "tilt": 0,
+      "temperature": 5100,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.000428875902080438,
+        "y": -0.0001809159945707165,
+        "z": -0.000009481405512233992
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-1661 b",
+      "type": "sub-Neptune",
+      "m": 0.000051050999999999996,
+      "radius": 363.8143,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.23227547919374178,
+        "y": 0.5491194891715396,
+        "z": 0.02877813298851839
+      },
+      "velocity": {
+        "x": -7.065182536084473,
+        "y": 2.9803598643312093,
+        "z": 0.15619404195390466
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-1661",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

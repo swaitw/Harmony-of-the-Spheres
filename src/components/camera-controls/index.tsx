@@ -1,4 +1,4 @@
-import React, { Fragment, memo } from "react";
+import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import {
   ScenarioType,
@@ -7,10 +7,12 @@ import {
 } from "../../types/scenario";
 import Dropdown from "../dropdown";
 import { modifyScenarioProperty } from "../../state/creators";
+import Tooltip from "../tooltip";
 import {
   control,
   controlLabel,
   controlInput,
+  controlsGrid,
 } from "../../theme/controls.module.css";
 
 const shouldSelectorNotRun = (
@@ -39,11 +41,12 @@ const CameraControls = () => {
   }, shouldSelectorNotRun);
 
   return (
-    <Fragment>
+    <div className={controlsGrid}>
       <h2>Camera</h2>
       <div className={control}>
         <div className={controlLabel}>
           <label>Rotating Reference Frame</label>
+          <Tooltip text="The body the simulation co-rotates with. Choosing a body here makes orbital motion visible relative to that body." />
         </div>
         <div className={controlInput}>
           <Dropdown selectedOption={camera.rotatingReferenceFrame}>
@@ -58,6 +61,18 @@ const CameraControls = () => {
               }
             >
               Origo
+            </div>
+            <div
+              onClick={() =>
+                dispatch(
+                  modifyScenarioProperty({
+                    key: "camera",
+                    value: { ...camera, rotatingReferenceFrame: "Barycenter" },
+                  }),
+                )
+              }
+            >
+              Barycenter
             </div>
             {masses.map((mass) => {
               return (
@@ -82,6 +97,7 @@ const CameraControls = () => {
       <div className={control}>
         <div className={controlLabel}>
           <label>Camera Focus</label>
+          <Tooltip text="The body the camera tracks. The camera will orbit around and point toward this body." />
         </div>
         <div className={controlInput}>
           <Dropdown selectedOption={camera.cameraFocus}>
@@ -96,6 +112,18 @@ const CameraControls = () => {
               }
             >
               Origo
+            </div>
+            <div
+              onClick={() =>
+                dispatch(
+                  modifyScenarioProperty({
+                    key: "camera",
+                    value: { ...camera, cameraFocus: "Barycenter" },
+                  }),
+                )
+              }
+            >
+              Barycenter
             </div>
             {masses.map((mass) => {
               return (
@@ -117,8 +145,8 @@ const CameraControls = () => {
           </Dropdown>
         </div>
       </div>
-    </Fragment>
+    </div>
   );
 };
 
-export default memo(CameraControls, () => true);
+export default CameraControls;

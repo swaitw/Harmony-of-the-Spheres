@@ -1,0 +1,165 @@
+{
+  "name": "HD 30177 - System",
+  "description": "HD 30177 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 30177",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.98,
+    "m": 0.98
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 30177",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 30177"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.01,
+    "tol": 0.0001,
+    "maxDt": 0.1,
+    "minDt": 0.0001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 30177",
+    "barycenterMassTwo": "HD 30177 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 30177",
+      "type": "star",
+      "m": 0.98,
+      "radius": 10465.13,
+      "tilt": 0,
+      "temperature": 5580,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.006009765542056627,
+        "y": -0.03900300219300092,
+        "z": -0.0010938657329235067
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 30177 b",
+      "type": "gas giant planet",
+      "m": 0.00802014844837206,
+      "radius": 1184.5117,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 2.5892739673086003,
+        "y": 1.2081619187757457,
+        "z": 0.06331708317737485
+      },
+      "velocity": {
+        "x": -1.7115870922524827,
+        "y": 3.6581429922053443,
+        "z": 0.1917151505213016
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    },
+    {
+      "name": "HD 30177 c",
+      "type": "gas giant planet",
+      "m": 0.0058697980432591505,
+      "radius": 1193.9126,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 7.396823587080017,
+        "y": -6.50765902575519,
+        "z": 0.34105195787106896
+      },
+      "velocity": {
+        "x": 1.335243951019333,
+        "y": 1.5135260601486178,
+        "z": -0.07932053969939973
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 30177",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

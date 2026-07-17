@@ -1,0 +1,233 @@
+{
+  "name": "Kepler-215 - System",
+  "description": "Kepler-215 is a Sun-like G/F-type star with 4 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-215",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.788,
+    "m": 0.788
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "4-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-215",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-215"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0002,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-215",
+    "barycenterMassTwo": "Kepler-215 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-215",
+      "type": "star",
+      "m": 0.788,
+      "radius": 10547.29,
+      "tilt": 0,
+      "temperature": 5739,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.00009817864475575745,
+        "y": 0.0009261662941874346,
+        "z": -0.00009345015307564348
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-215 b",
+      "type": "super-Earth",
+      "m": 0.00000978978,
+      "radius": 152.2944,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.084,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": 19.223232551616523,
+        "z": 1.0074469286716916
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-215 c",
+      "type": "super-Earth",
+      "m": 0.000011351339999999999,
+      "radius": 166.3957,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 6.919254415182546e-18,
+        "y": 0.113,
+        "z": 0
+      },
+      "velocity": {
+        "x": -16.57398117041629,
+        "y": 1.0148636494739404e-15,
+        "z": 0.8686055470204578
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-215 d",
+      "type": "super-Earth",
+      "m": 0.0000708708,
+      "radius": 224.6812,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.185,
+        "y": 2.2655965784226033e-17,
+        "z": 0
+      },
+      "velocity": {
+        "x": -1.5863209153779959e-15,
+        "y": -12.953293280009014,
+        "z": 0.6788533352072132
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-215 e",
+      "type": "super-Earth",
+      "m": 0.00001114113,
+      "radius": 164.5155,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -5.768086423984033e-17,
+        "y": -0.314,
+        "z": 0
+      },
+      "velocity": {
+        "x": 9.942629100590018,
+        "y": -1.8264313354720336e-15,
+        "z": 0.5210711113968642
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-215",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

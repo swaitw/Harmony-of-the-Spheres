@@ -1,0 +1,131 @@
+{
+  "name": "HD 114729 - System",
+  "description": "HD 114729 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 114729",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.936,
+    "m": 0.936
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 114729",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 114729"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00616,
+    "tol": 0.0001,
+    "maxDt": 0.0616,
+    "minDt": 0.000062,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 114729",
+    "barycenterMassTwo": "HD 114729 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 114729",
+      "type": "star",
+      "m": 0.936,
+      "radius": 15127.71,
+      "tilt": 0,
+      "temperature": 5844,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.0037532059697856315,
+        "y": -0.0008612440755554092,
+        "z": -0.00004513588942053475
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 114729 b",
+      "type": "gas giant planet",
+      "m": 0.0007874158792499999,
+      "radius": 1306.7232,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.426330581913927,
+        "y": 1.8528124083044744,
+        "z": 0.09710178374730091
+      },
+      "velocity": {
+        "x": -4.4614299511783075,
+        "y": 1.0237594592170058,
+        "z": 0.053652959777570466
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 114729",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

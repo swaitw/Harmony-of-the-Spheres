@@ -1,35 +1,55 @@
 .toggle {
-  width: 100%;
   cursor: pointer;
+  width: 100%;
 }
+
 .toggle input[type="checkbox"] {
   display: none;
+}
+
+.toggle label {
+  display: block;
+  width: 100%;
 }
 
 .toggle label .toggle-track {
   box-sizing: border-box;
   display: flex;
   align-items: center;
-  border: var(--border);
-  height: 25px;
+  height: 30px;
   width: 100%;
+  border-radius: 0;
+  border: 1px solid var(--theme-color-4);
+  background-color: var(--theme-color-1);
   position: relative;
   cursor: pointer;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
 }
 
 .toggle .toggle-track:before {
   content: "";
-  display: inline-block;
-  height: 15px;
-  width: 15px;
-  background-color: var(--theme-color-4);
   position: absolute;
   top: 50%;
+  left: 4px;
   transform: translateY(-50%);
-  right: calc(100% - 20px);
-  transition: right 0.1s ease-in;
+  height: 20px;
+  width: 20px;
+  border-radius: 0;
+  background-color: var(--theme-color-4);
+  transition:
+    left 0.2s ease,
+    background-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.toggle input[type="checkbox"]:checked + label .toggle-track {
+  box-shadow: 0 0 6px rgba(217, 217, 217, 0.15);
 }
 
 .toggle input[type="checkbox"]:checked + label .toggle-track:before {
-  right: 0.5rem;
+  left: calc(100% - 24px);
+  background-color: var(--theme-color-6);
+  box-shadow: 0 0 6px rgba(217, 217, 217, 0.3);
 }

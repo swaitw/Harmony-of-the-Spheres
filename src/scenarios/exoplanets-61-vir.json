@@ -1,0 +1,199 @@
+{
+  "name": "61 Vir - System",
+  "description": "61 Vir is a Sun-like G/F-type star with 3 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "61 Vir",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.942,
+    "m": 0.942
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "3-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "61 Vir",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "61 Vir"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "61 Vir",
+    "barycenterMassTwo": "61 Vir b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "61 Vir",
+      "type": "star",
+      "m": 0.942,
+      "radius": 9890.01,
+      "tilt": 0,
+      "temperature": 5577,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.001114763772399484,
+        "y": 0.0011973281220815106,
+        "z": -0.0000702893115683108
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "61 Vir b",
+      "type": "super-Earth",
+      "m": 0.0000153153,
+      "radius": 198.3587,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.011433817897208652,
+        "y": 0.042613109386747144,
+        "z": 0.002233258431304736
+      },
+      "velocity": {
+        "x": -29.66738505605923,
+        "y": -7.938457556856415,
+        "z": -0.4160369314875215
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "61 Vir c",
+      "type": "gas giant planet",
+      "m": 0.0000546546,
+      "radius": 419.2795,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.03576309928068006,
+        "y": 0.183571635694284,
+        "z": -0.00318713011427248
+      },
+      "velocity": {
+        "x": -14.76547340466505,
+        "y": -2.8636453968340594,
+        "z": 0.7451913373119591
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "61 Vir d",
+      "type": "gas giant planet",
+      "m": 0.0000687687,
+      "radius": 480.3853,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.29994534622418356,
+        "y": -0.07500314242986067,
+        "z": -0.011648085855654198
+      },
+      "velocity": {
+        "x": 3.0720149063651987,
+        "y": -12.357247385430481,
+        "z": 0.4632358536646674
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "61 Vir",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

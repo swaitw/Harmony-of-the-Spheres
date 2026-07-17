@@ -1,0 +1,233 @@
+{
+  "name": "TOI-5789 - System",
+  "description": "TOI-5789 is a orange K-type dwarf star with 4 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-5789",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.821,
+    "m": 0.821
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "4-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-5789",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-5789"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-5789",
+    "barycenterMassTwo": "TOI-5789 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-5789",
+      "type": "star",
+      "m": 0.821,
+      "radius": 8554.91,
+      "tilt": 0,
+      "temperature": 5185,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.00013127996201585406,
+        "y": 0.0000023173600020785653,
+        "z": -0.00006803665746041231
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-5789 b",
+      "type": "terrestial planet",
+      "m": 0.00000636636,
+      "radius": 118.4512,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.03608,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": 29.93927423024072,
+        "z": 1.5690508757528991
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "TOI-5789 c",
+      "type": "sub-Neptune",
+      "m": 0.000015015,
+      "radius": 268.8654,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 5.764394113884605e-18,
+        "y": 0.0941397,
+        "z": 0
+      },
+      "velocity": {
+        "x": -19.145659788390503,
+        "y": 1.1723335488708312e-15,
+        "z": 1.003381512418167
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "TOI-5789 d",
+      "type": "super-Earth",
+      "m": 0.00001288287,
+      "radius": 179.5569,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.1587424,
+        "y": 1.944033720489688e-17,
+        "z": 0
+      },
+      "velocity": {
+        "x": -1.8299709284734262e-15,
+        "y": -14.94284662114434,
+        "z": 0.7831214075812707
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "TOI-5789 e",
+      "type": "sub-Neptune",
+      "m": 0.000034864829999999994,
+      "radius": 322.4504,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -4.9506879576889385e-17,
+        "y": -0.26950290000000005,
+        "z": 0
+      },
+      "velocity": {
+        "x": 11.336723297882125,
+        "y": -2.0825222849355853e-15,
+        "z": 0.5941324923883174
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-5789",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

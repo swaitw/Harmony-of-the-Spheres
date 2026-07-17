@@ -1,0 +1,165 @@
+{
+  "name": "TOI-2015 - System",
+  "description": "TOI-2015 is a cool M-dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-2015",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.3041,
+    "m": 0.3041
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-2015",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-2015"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-2015",
+    "barycenterMassTwo": "TOI-2015 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-2015",
+      "type": "star",
+      "m": 0.3041,
+      "radius": 3361.371,
+      "tilt": 0,
+      "temperature": 3297,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.0019900954555351243,
+        "y": 0.0015002163588814293,
+        "z": -0.00007862300781306571
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-2015 b",
+      "type": "sub-Neptune",
+      "m": 0.000027627599999999996,
+      "radius": 311.0753,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 1.6537932985909928e-18,
+        "y": 0.026971479997367605,
+        "z": 0.0014135153706390023
+      },
+      "velocity": {
+        "x": -21.905197267523466,
+        "y": 1.3394682719957826e-15,
+        "z": 7.019855755539157e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "TOI-2015 c",
+      "type": "sub-Neptune",
+      "m": 0.00002675673,
+      "radius": 275.446,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.041218393439999994,
+        "y": 5.047797359229225e-18,
+        "z": 0
+      },
+      "velocity": {
+        "x": -2.0880848023794973e-15,
+        "y": -17.05050634871461,
+        "z": 0.8935791733875282
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-2015",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "name": "BD-08 2823 - System",
+  "description": "BD-08 2823 is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "BD-08 2823",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.5,
+    "m": 0.5
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "BD-08 2823",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "BD-08 2823"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0002,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "BD-08 2823",
+    "barycenterMassTwo": "BD-08 2823 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "BD-08 2823",
+      "type": "star",
+      "m": 0.5,
+      "radius": 7291.7,
+      "tilt": 0,
+      "temperature": 4816,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.1835956785447456,
+        "y": -0.32564966217704777,
+        "z": -0.016809552661678797
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "BD-08 2823 b",
+      "type": "terrestial planet",
+      "m": 0.008854327877615219,
+      "radius": 94.0089,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.04416729559300637,
+        "y": 0.025465053136241627,
+        "z": 0.0013345668841950676
+      },
+      "velocity": {
+        "x": -10.55157733771238,
+        "y": 18.25082160691917,
+        "z": 0.9564850305095794
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "BD-08 2823 c",
+      "type": "gas giant planet",
+      "m": 0.000312312,
+      "radius": 1175.1108,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.33147971475214816,
+        "y": -0.4392855871166251,
+        "z": 0.023021982091829256
+      },
+      "velocity": {
+        "x": 5.216853984947477,
+        "y": 3.9257939016025443,
+        "z": -0.20574214030589538
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "BD-08 2823",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

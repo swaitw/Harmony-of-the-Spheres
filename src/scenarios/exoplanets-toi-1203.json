@@ -1,0 +1,165 @@
+{
+  "name": "TOI-1203 - System",
+  "description": "TOI-1203 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-1203",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.886,
+    "m": 0.886
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-1203",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-1203"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-1203",
+    "barycenterMassTwo": "TOI-1203 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-1203",
+      "type": "star",
+      "m": 0.886,
+      "radius": 12108.33,
+      "tilt": 0,
+      "temperature": 5737,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.0003202458247371421,
+        "y": -0.00017853388693086947,
+        "z": 0.000030038215714163335
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-1203 b",
+      "type": "super-Earth",
+      "m": 0.000010540529999999999,
+      "radius": 142.8935,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.026315451862513575,
+        "y": 0.036978690467092866,
+        "z": 0.001937971048175303
+      },
+      "velocity": {
+        "x": -23.370209848966248,
+        "y": -16.585582503363696,
+        "z": -0.8692135471169548
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "TOI-1203.01",
+      "type": "sub-Neptune",
+      "m": 0.00002219217,
+      "radius": 274.3179,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.15699307082598501,
+        "y": 0.017585461047427954,
+        "z": -0.0009216149611641238
+      },
+      "velocity": {
+        "x": -1.6854324159279495,
+        "y": 15.005375939573755,
+        "z": -0.7863984303002385
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-1203",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "name": "TIC 279401253 - System",
+  "description": "TIC 279401253 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TIC 279401253",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.13,
+    "m": 1.13
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TIC 279401253",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TIC 279401253"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.001,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TIC 279401253",
+    "barycenterMassTwo": "TIC 279401253 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TIC 279401253",
+      "type": "star",
+      "m": 1.13,
+      "radius": 10886.2,
+      "tilt": 0,
+      "temperature": 5951,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.003199925047098993,
+        "y": 0.028982542185455297,
+        "z": 0.0056216398206414995
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TIC 279401253 b",
+      "type": "gas giant planet",
+      "m": 0.00586025365619694,
+      "radius": 1053.7436,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.150414491421405,
+        "y": 0.13715907501447883,
+        "z": 0.007188202530024899
+      },
+      "velocity": {
+        "x": -12.011410952988529,
+        "y": -13.136146116395636,
+        "z": -0.6884362462978415
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "TIC 279401253 c",
+      "type": "gas giant planet",
+      "m": 0.007654598423892419,
+      "radius": 1184.5117,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.22641314845491836,
+        "y": -0.37779034495691993,
+        "z": 0.01979915301376626
+      },
+      "velocity": {
+        "x": 9.668153201291565,
+        "y": 5.778340441651615,
+        "z": -0.30282999048834874
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TIC 279401253",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

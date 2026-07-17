@@ -1,0 +1,232 @@
+{
+  "name": "K2-72 - System",
+  "description": "K2-72 is a cool M-dwarf star with 4 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "K2-72",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.271365,
+    "m": 0.271365
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "4-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "K2-72",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "K2-72"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0002,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "K2-72",
+    "barycenterMassTwo": "K2-72 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "K2-72",
+      "type": "star",
+      "m": 0.271365,
+      "radius": 3399.257,
+      "tilt": 0,
+      "temperature": 3360,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.00012746009771523668,
+        "y": -0.00003706065041271295,
+        "z": -0.00004877223785807981
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "K2-72 b",
+      "type": "terrestial planet",
+      "m": 0.00000384384,
+      "radius": 101.5296,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.03529624753512919,
+        "y": 0.004634212413554941,
+        "z": 0.000242868781320317
+      },
+      "velocity": {
+        "x": -2.383051821259845,
+        "y": 18.100680366511533,
+        "z": 0.9486164615210139
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "K2-72 d",
+      "type": "terrestial planet",
+      "m": 0.00000303303,
+      "radius": 94.949,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.010961360479279597,
+        "y": 0.043125034162392925,
+        "z": 0.000574460560639936
+      },
+      "velocity": {
+        "x": -15.824529106099408,
+        "y": -4.033267168343819,
+        "z": 0.8293284286505193
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "K2-72 c",
+      "type": "terrestial planet",
+      "m": 0.00000495495,
+      "radius": 109.0503,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.06644660461599189,
+        "y": -0.020071835954551653,
+        "z": 0.0010519203485115543
+      },
+      "velocity": {
+        "x": 3.7904671057819597,
+        "y": -12.513743231583252,
+        "z": 0.6558174932854659
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "K2-72 e",
+      "type": "terrestial planet",
+      "m": 0.00000663663,
+      "radius": 121.2714,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.018605319678988763,
+        "y": -0.09248203571958452,
+        "z": 0.0009750634872268672
+      },
+      "velocity": {
+        "x": 10.993979754484583,
+        "y": 2.2178178569800413,
+        "z": 0.5761700644152516
+      },
+      "nonStellarProceduralManifestation": true
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "K2-72",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

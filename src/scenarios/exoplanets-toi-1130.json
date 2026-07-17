@@ -1,0 +1,165 @@
+{
+  "name": "TOI-1130 - System",
+  "description": "TOI-1130 is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-1130",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.745,
+    "m": 0.745
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-1130",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-1130"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-1130",
+    "barycenterMassTwo": "TOI-1130 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-1130",
+      "type": "star",
+      "m": 0.745,
+      "radius": 7158.19,
+      "tilt": 0,
+      "temperature": 4360,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.0025790436287657544,
+        "y": -0.02654658640231747,
+        "z": 0.0015658590822802522
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-1130 b",
+      "type": "sub-Neptune",
+      "m": 0.0000594594,
+      "radius": 344.0724,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.03342017925519829,
+        "y": 0.02692011214401987,
+        "z": 0.0014108232955185106
+      },
+      "velocity": {
+        "x": -16.859394452909793,
+        "y": -20.872895298241684,
+        "z": -1.093902089788279
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "TOI-1130 c",
+      "type": "gas giant planet",
+      "m": 0.001009008,
+      "radius": 1222.1152,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.07012381408272797,
+        "y": 0.003057475928339083,
+        "z": -0.00016023552361560666
+      },
+      "velocity": {
+        "x": -0.9107341318375498,
+        "y": 20.830654167680322,
+        "z": -1.0916883259411527
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-1130",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

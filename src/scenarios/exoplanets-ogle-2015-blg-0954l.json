@@ -1,0 +1,131 @@
+{
+  "name": "OGLE-2015-BLG-0954L - System",
+  "description": "OGLE-2015-BLG-0954L is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "OGLE-2015-BLG-0954L",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.3,
+    "m": 0.3
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "OGLE-2015-BLG-0954L",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "OGLE-2015-BLG-0954L"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00764,
+    "tol": 0.0001,
+    "maxDt": 0.0764,
+    "minDt": 0.000076,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "OGLE-2015-BLG-0954L",
+    "barycenterMassTwo": "OGLE-2015-BLG-0954L b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "OGLE-2015-BLG-0954L",
+      "type": "star",
+      "m": 0.3,
+      "radius": 10270,
+      "tilt": 0,
+      "temperature": 5778,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": -0.029924737728374316,
+        "z": -0.0015682890499715372
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "OGLE-2015-BLG-0954L b",
+      "type": "gas giant planet",
+      "m": 0.0033033,
+      "radius": 1231.5161,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 1.6,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": 2.7177129895898933,
+        "z": 0.1424293025130812
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "OGLE-2015-BLG-0954L",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

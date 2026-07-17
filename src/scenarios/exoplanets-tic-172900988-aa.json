@@ -1,0 +1,131 @@
+{
+  "name": "TIC 172900988 Aa - System",
+  "description": "TIC 172900988 Aa is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TIC 172900988 Aa",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.2384,
+    "m": 1.2384
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TIC 172900988 Aa",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TIC 172900988 Aa"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00155,
+    "tol": 0.0001,
+    "maxDt": 0.0155,
+    "minDt": 0.000015,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TIC 172900988 Aa",
+    "barycenterMassTwo": "TIC 172900988 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TIC 172900988 Aa",
+      "type": "star",
+      "m": 1.2384,
+      "radius": 14215.734,
+      "tilt": 0,
+      "temperature": 6050,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.006078489072930129,
+        "y": 0.016149395542865812,
+        "z": 0.0008463539571650407
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TIC 172900988 b",
+      "type": "gas giant planet",
+      "m": 0.002828826,
+      "radius": 1057.5997,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.8221821355141228,
+        "y": 0.3086144219314521,
+        "z": 0.016173796508146893
+      },
+      "velocity": {
+        "x": -2.661033541093256,
+        "y": -7.069862706396582,
+        "z": -0.37051580427823644
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TIC 172900988 Aa",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

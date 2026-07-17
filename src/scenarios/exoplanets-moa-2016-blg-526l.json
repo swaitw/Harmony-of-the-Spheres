@@ -1,0 +1,131 @@
+{
+  "name": "MOA-2016-BLG-526L - System",
+  "description": "MOA-2016-BLG-526L is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "MOA-2016-BLG-526L",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.37,
+    "m": 0.37
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "MOA-2016-BLG-526L",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "MOA-2016-BLG-526L"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00979,
+    "tol": 0.0001,
+    "maxDt": 0.0979,
+    "minDt": 0.000098,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "MOA-2016-BLG-526L",
+    "barycenterMassTwo": "MOA-2016-BLG-526L b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "MOA-2016-BLG-526L",
+      "type": "star",
+      "m": 0.37,
+      "radius": 10270,
+      "tilt": 0,
+      "temperature": 5778,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": -0.0003217087110656768,
+        "z": -0.000016860039122961667
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "MOA-2016-BLG-526L b",
+      "type": "sub-Neptune",
+      "m": 0.00004485861919539,
+      "radius": 373.2152,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 2.07,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": 2.653497259374694,
+        "z": 0.13906389869746372
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "MOA-2016-BLG-526L",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

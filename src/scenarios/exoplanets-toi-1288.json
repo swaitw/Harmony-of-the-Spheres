@@ -1,0 +1,165 @@
+{
+  "name": "TOI-1288 - System",
+  "description": "TOI-1288 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-1288",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.9552,
+    "m": 0.9552
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-1288",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-1288"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-1288",
+    "barycenterMassTwo": "TOI-1288 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-1288",
+      "type": "star",
+      "m": 0.9552,
+      "radius": 9841.741,
+      "tilt": 0,
+      "temperature": 5388,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.0028037063340828304,
+        "y": 2.449029130162098e-20,
+        "z": -1.923922150426149e-20
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-1288 b",
+      "type": "gas giant planet",
+      "m": 0.0001324323,
+      "radius": 467.0798,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 2.2900895144055507e-18,
+        "y": 0.037348744599821064,
+        "z": 0.0019573647634860995
+      },
+      "velocity": {
+        "x": -31.762150818213346,
+        "y": 1.942205438816922e-15,
+        "z": 1.0178667395983945e-16
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "TOI-1288 c",
+      "type": "gas giant planet",
+      "m": 0.0002573571,
+      "radius": 1043.4984,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -1.9637622932440176e-16,
+        "y": -1.0685336021873941,
+        "z": 0.0559994731799499
+      },
+      "velocity": {
+        "x": 5.938186261373615,
+        "y": -1.0903288061077105e-15,
+        "z": 1.9029826801043882e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-1288",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

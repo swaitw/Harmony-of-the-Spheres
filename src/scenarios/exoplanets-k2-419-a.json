@@ -1,0 +1,131 @@
+{
+  "name": "K2-419 A - System",
+  "description": "K2-419 A is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "K2-419 A",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.562,
+    "m": 0.562
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "K2-419 A",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "K2-419 A"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "K2-419 A",
+    "barycenterMassTwo": "K2-419 A b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "K2-419 A",
+      "type": "star",
+      "m": 0.562,
+      "radius": 5556.07,
+      "tilt": 0,
+      "temperature": 3711,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.00025066158828398506,
+        "y": -0.014784328274334329,
+        "z": -0.000774813813049339
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "K2-419 A b",
+      "type": "gas giant planet",
+      "m": 0.000588588,
+      "radius": 991.7935,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.11570981596221952,
+        "y": 0.001956434017287395,
+        "z": 0.00010253236215983142
+      },
+      "velocity": {
+        "x": -0.23933857403752642,
+        "y": 14.116482990098156,
+        "z": 0.7398135247978697
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "K2-419 A",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

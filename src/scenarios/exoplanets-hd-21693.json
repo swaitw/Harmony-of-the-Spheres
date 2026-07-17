@@ -1,0 +1,165 @@
+{
+  "name": "HD 21693 - System",
+  "description": "HD 21693 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 21693",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.8,
+    "m": 0.8
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 21693",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 21693"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 21693",
+    "barycenterMassTwo": "HD 21693 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 21693",
+      "type": "star",
+      "m": 0.8,
+      "radius": 9390.6621,
+      "tilt": 0,
+      "temperature": 5430,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.0002831182648432998,
+        "y": 0.000746278836268024,
+        "z": -0.00003813501405334376
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 21693 b",
+      "type": "sub-Neptune",
+      "m": 0.000024714690000000002,
+      "radius": 263.2248,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.0023239807370353293,
+        "y": -0.12784346217708265,
+        "z": -0.006699991948556375
+      },
+      "velocity": {
+        "x": 16.62295279389427,
+        "y": -0.3013498535119867,
+        "z": -0.015793076609833
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 21693 c",
+      "type": "gas giant planet",
+      "m": 0.00005216211,
+      "radius": 407.9985,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.2295680777797653,
+        "y": 0.07158011598740197,
+        "z": -0.0037513549197222495
+      },
+      "velocity": {
+        "x": -3.533915965268486,
+        "y": -11.30275023006786,
+        "z": 0.5923520393487396
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 21693",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

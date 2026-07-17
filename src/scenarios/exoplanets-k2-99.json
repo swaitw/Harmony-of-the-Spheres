@@ -1,0 +1,165 @@
+{
+  "name": "K2-99 - System",
+  "description": "K2-99 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "K2-99",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.44,
+    "m": 1.44
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "K2-99",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "K2-99"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "K2-99",
+    "barycenterMassTwo": "K2-99 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "K2-99",
+      "type": "star",
+      "m": 1.44,
+      "radius": 26188.5,
+      "tilt": 0,
+      "temperature": 6069,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.01587116601272562,
+        "y": 0.029804163562877652,
+        "z": -0.0028701329690941453
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "K2-99 b",
+      "type": "gas giant planet",
+      "m": 0.00083036167441227,
+      "radius": 1116.9682,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.10726208148534257,
+        "y": -0.05224351647705394,
+        "z": -0.002737966680499369
+      },
+      "velocity": {
+        "x": 10.570819421985533,
+        "y": 21.64368903950434,
+        "z": 1.1342976780531215
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "K2-99 c",
+      "type": "gas giant planet",
+      "m": 0.0080172851322564,
+      "radius": 1184.5117,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -1.1007458621878803,
+        "y": -0.2537789335883974,
+        "z": 0.013299990338186315
+      },
+      "velocity": {
+        "x": 1.7558157794013023,
+        "y": -7.594850924892592,
+        "z": 0.39802927095937235
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "K2-99",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

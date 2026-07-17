@@ -1,0 +1,165 @@
+{
+  "name": "HD 206893 - System",
+  "description": "HD 206893 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 206893",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.31,
+    "m": 1.31
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 206893",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 206893"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.01,
+    "tol": 0.0001,
+    "maxDt": 0.1,
+    "minDt": 0.0001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 206893",
+    "barycenterMassTwo": "HD 206893 c",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 206893",
+      "type": "star",
+      "m": 1.31,
+      "radius": 13465.6132,
+      "tilt": 0,
+      "temperature": 6500,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.014402475877320214,
+        "y": -0.042739337993959084,
+        "z": -0.0015129909723594589
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 206893 c",
+      "type": "gas giant planet",
+      "m": 0.010594269639053099,
+      "radius": 1538.4656,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 2.3893052751330437,
+        "y": 1.2157434236696023,
+        "z": 0.06371441301248537
+      },
+      "velocity": {
+        "x": -2.2589099050276262,
+        "y": 4.427284544370736,
+        "z": 0.23202415122460124
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 206893 b",
+      "type": "gas giant planet",
+      "m": 0.018611554771309498,
+      "radius": 1317.1794,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 2.0808321796268388,
+        "y": -9.776129492859427,
+        "z": 0.5123452367042064
+      },
+      "velocity": {
+        "x": 2.2995791888088823,
+        "y": 0.4881207750689864,
+        "z": -0.025581325843282456
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 206893",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

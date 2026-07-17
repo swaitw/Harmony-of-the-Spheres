@@ -1,0 +1,131 @@
+{
+  "name": "KMT-2023-BLG-0830L - System",
+  "description": "KMT-2023-BLG-0830L is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "KMT-2023-BLG-0830L",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.22,
+    "m": 0.22
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "KMT-2023-BLG-0830L",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "KMT-2023-BLG-0830L"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00946,
+    "tol": 0.0001,
+    "maxDt": 0.0946,
+    "minDt": 0.000095,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "KMT-2023-BLG-0830L",
+    "barycenterMassTwo": "KMT-2023-BLG-0830L b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "KMT-2023-BLG-0830L",
+      "type": "star",
+      "m": 0.22,
+      "radius": 10270,
+      "tilt": 0,
+      "temperature": 5778,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": -0.0005485335851272931,
+        "z": -0.00002874742705868647
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "KMT-2023-BLG-0830L b",
+      "type": "gas giant planet",
+      "m": 0.000053448567542369994,
+      "radius": 414.5791,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 1.7,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": 2.257822693420933,
+        "z": 0.11832747337704587
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "KMT-2023-BLG-0830L",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

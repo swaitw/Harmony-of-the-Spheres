@@ -1,0 +1,131 @@
+{
+  "name": "KOI-2513 - System",
+  "description": "KOI-2513 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "KOI-2513",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.91,
+    "m": 0.91
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "KOI-2513",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "KOI-2513"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00087,
+    "tol": 0.0001,
+    "maxDt": 0.0174,
+    "minDt": 0.000017,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "KOI-2513",
+    "barycenterMassTwo": "KOI-2513.01",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "KOI-2513",
+      "type": "star",
+      "m": 0.91,
+      "radius": 12324,
+      "tilt": 0,
+      "temperature": 5900,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.13070438488467342,
+        "y": 0.26761644008976987,
+        "z": 0.014025183324737877
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "KOI-2513.01",
+      "type": "sub-Neptune",
+      "m": 0.021952090243083,
+      "radius": 263.4359,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.28761409481573347,
+        "y": -0.14008651979769768,
+        "z": -0.007341623410087123
+      },
+      "velocity": {
+        "x": 5.418207966894204,
+        "y": -11.093748148125714,
+        "z": -0.5813987043686195
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "KOI-2513",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

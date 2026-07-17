@@ -1,0 +1,131 @@
+{
+  "name": "BD-10 3166 - System",
+  "description": "BD-10 3166 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "BD-10 3166",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.47,
+    "m": 1.47
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "BD-10 3166",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "BD-10 3166"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "BD-10 3166",
+    "barycenterMassTwo": "BD-10 3166 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "BD-10 3166",
+      "type": "star",
+      "m": 1.47,
+      "radius": 9345.7,
+      "tilt": 0,
+      "temperature": 5393,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.00854064097884786,
+        "y": -0.012180583415339213,
+        "z": -0.0006383573271697698
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "BD-10 3166 b",
+      "type": "gas giant planet",
+      "m": 0.0005631216590999999,
+      "radius": 1325.525,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.03211076013612848,
+        "y": 0.022453382495353717,
+        "z": 0.0011767319139741987
+      },
+      "velocity": {
+        "x": -22.29490206249884,
+        "y": 31.79678375213937,
+        "z": 1.666398824792711
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "BD-10 3166",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

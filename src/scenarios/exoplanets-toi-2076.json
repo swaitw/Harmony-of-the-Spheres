@@ -1,0 +1,233 @@
+{
+  "name": "TOI-2076 - System",
+  "description": "TOI-2076 is a orange K-type dwarf star with 4 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-2076",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.849,
+    "m": 0.849
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "4-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-2076",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-2076"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-2076",
+    "barycenterMassTwo": "TOI-2076 e",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-2076",
+      "type": "star",
+      "m": 0.849,
+      "radius": 7784.66,
+      "tilt": 0,
+      "temperature": 5187,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.0004075931187506399,
+        "y": -0.0003657717424123857,
+        "z": -0.00002563514052264954
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-2076 e",
+      "type": "terrestial planet",
+      "m": 0.0000141141,
+      "radius": 122.3055,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.03863,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": 29.423507673404966,
+        "z": 1.5420206958806768
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "TOI-2076 b",
+      "type": "sub-Neptune",
+      "m": 0.0000201201,
+      "radius": 243.483,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.08668999732910562,
+        "y": 1.0623747504818662e-17,
+        "z": 0.0045432302460711995
+      },
+      "velocity": {
+        "x": -2.4190493756362394e-15,
+        "y": -19.766581887105193,
+        "z": 6.334503722240118e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "TOI-2076 c",
+      "type": "sub-Neptune",
+      "m": 0.0000216216,
+      "radius": 332.7914,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -2.4892944475859222e-17,
+        "y": -0.13544891722052968,
+        "z": 0.007098576957820438
+      },
+      "velocity": {
+        "x": 16.004669303811617,
+        "y": -2.938666994614791e-15,
+        "z": 5.128941253335942e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "TOI-2076 d",
+      "type": "sub-Neptune",
+      "m": 0.000021921899999999998,
+      "radius": 307.409,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.19258430769607088,
+        "y": -4.718573443340274e-17,
+        "z": 0.010092915891112978
+      },
+      "velocity": {
+        "x": 3.272061026758774e-15,
+        "y": 13.363781601122886,
+        "z": 4.282628366351017e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-2076",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

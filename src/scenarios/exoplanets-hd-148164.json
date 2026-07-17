@@ -1,0 +1,165 @@
+{
+  "name": "HD 148164 - System",
+  "description": "HD 148164 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 148164",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.21,
+    "m": 1.21
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 148164",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 148164"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0018,
+    "tol": 0.0001,
+    "maxDt": 0.018,
+    "minDt": 0.000018,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 148164",
+    "barycenterMassTwo": "HD 148164 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 148164",
+      "type": "star",
+      "m": 1.21,
+      "radius": 13761.8,
+      "tilt": 0,
+      "temperature": 6032,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.0021737248805812136,
+        "y": -0.0010322150263346798,
+        "z": 0.001134968770086686
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 148164 b",
+      "type": "gas giant planet",
+      "m": 0.0011739654927,
+      "radius": 1287.9214,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.3209546485985867,
+        "y": 0.2549489769086829,
+        "z": 0.013361309710267423
+      },
+      "velocity": {
+        "x": -8.466026301036973,
+        "y": -10.628667538223668,
+        "z": -0.557024862416051
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 148164 c",
+      "type": "gas giant planet",
+      "m": 0.0049249284084,
+      "radius": 1203.3135,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 4.751361734072101,
+        "y": -2.5228815808009344,
+        "z": 0.13221862104386542
+      },
+      "velocity": {
+        "x": 1.4840044415141391,
+        "y": 2.787181450538019,
+        "z": -0.14606999028158313
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 148164",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

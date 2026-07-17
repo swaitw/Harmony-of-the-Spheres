@@ -1,5 +1,6 @@
 {
   "name": "Earth Versus the Rings of Saturn",
+  "description": "What if Earth sat at the centre of Saturn's rings? Explore the gravitational interplay between our planet and thousands of icy ring particles in real time.",
   "playing": false,
   "isLoaded": false,
   "elapsedTime": 0,
@@ -7,7 +8,7 @@
   "massBeingModified": {
     "name": "Saturn",
     "unitName": "Neptunian Units",
-    "unitMassQuantity": 5.149e-5,
+    "unitMassQuantity": 0.00005149,
     "m": 1
   },
   "category": {
@@ -21,12 +22,12 @@
     "cameraDistanceToOrigoInAu": 0
   },
   "integrator": {
-    "name": "RK4",
+    "name": "PEFRL",
     "g": 39.5,
-    "dt": 0.0000005,
+    "dt": 0.000005,
     "tol": 1e-9,
-    "maxDt": 0.000005,
-    "minDt": 0.0000005,
+    "maxDt": 0.00005,
+    "minDt": 0.000005,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
@@ -38,6 +39,7 @@
     "systemBarycenter": false
   },
   "graphics": {
+    "background": true,
     "orbits": false,
     "habitableZone": false,
     "trails": true,
@@ -50,6 +52,11 @@
       "m": 1,
       "radius": 10270,
       "tilt": 0,
+      "graphics": {
+        "orbit": false,
+        "trail": true,
+        "label": true
+      },
       "elements": {
         "a": 0,
         "e": 0,
@@ -67,14 +74,20 @@
         "x": -0.0027531411153919037,
         "y": 0.0010072803591140611,
         "z": 0.0000687504175911851
-      }
+      },
+      "nonStellarProceduralManifestation": false
     },
     {
       "name": "Saturn",
-      "type": "planet",
+      "type": "gas giant planet",
       "m": 0.0002857,
       "radius": 862.3853211009175,
       "tilt": -26.73,
+      "graphics": {
+        "orbit": false,
+        "trail": true,
+        "label": true
+      },
       "elements": {
         "a": 0,
         "e": 0,
@@ -92,15 +105,21 @@
         "x": 1.904060271026863,
         "y": 0.2886523546718628,
         "z": -0.08092749245870556
-      }
+      },
+      "nonStellarProceduralManifestation": false
     },
     {
       "name": "Earth",
-      "type": "planet",
+      "type": "terrestial planet",
       "m": 0.000003003,
       "radius": 91.74311926605505,
       "tilt": -23.44,
       "atmosphere": "skyblue",
+      "graphics": {
+        "orbit": false,
+        "trail": true,
+        "label": true
+      },
       "elements": {
         "a": 0,
         "e": 0,
@@ -118,7 +137,8 @@
         "x": 1.90060271026863,
         "y": 0,
         "z": -0.08092749245870556
-      }
+      },
+      "nonStellarProceduralManifestation": false
     }
   ],
   "particlesConfiguration": {
@@ -169,8 +189,18 @@
         "tilt": [-26.73, 0, 0],
         "number": 2000,
         "minD": 0.000937045423,
-        "maxD": 0.00094373001012226841264
+        "maxD": 0.0009437300101222684
       }
     ]
+  },
+  "ringToBeAdded": {
+    "primary": "Saturn",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
   }
 }

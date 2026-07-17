@@ -1,0 +1,9 @@
+.custom-scenario-not-found {
+  padding: 4rem 2rem;
+  text-align: center;
+  color: var(--theme-color-5);
+}
+
+.custom-scenario-not-found a {
+  color: var(--theme-color-6);
+}

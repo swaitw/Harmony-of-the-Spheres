@@ -1,0 +1,233 @@
+{
+  "name": "TOI-4010 - System",
+  "description": "TOI-4010 is a orange K-type dwarf star with 4 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-4010",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.88,
+    "m": 0.88
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "4-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-4010",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-4010"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-4010",
+    "barycenterMassTwo": "TOI-4010 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-4010",
+      "type": "star",
+      "m": 0.88,
+      "radius": 8524.1,
+      "tilt": 0,
+      "temperature": 4960,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.009395305123975952,
+        "y": -0.010536632229643551,
+        "z": 0.0004769354599836946
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-4010 b",
+      "type": "sub-Neptune",
+      "m": 0.000033033,
+      "radius": 283.9068,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.022213,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": 40.09214517011848,
+        "z": 2.1011402950592157
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "TOI-4010 c",
+      "type": "gas giant planet",
+      "m": 0.000060990929999999994,
+      "radius": 557.4726,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.04711894266022353,
+        "y": 0.030641392109945428,
+        "z": 0.0024693991469872693
+      },
+      "velocity": {
+        "x": -13.720558922562134,
+        "y": -21.156802631517827,
+        "z": 0.719064023653598
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "TOI-4010 d",
+      "type": "gas giant planet",
+      "m": 0.00011456444999999999,
+      "radius": 580.9748,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.03421395735190258,
+        "y": -0.09922837145129082,
+        "z": 0.005200338589634876
+      },
+      "velocity": {
+        "x": 17.787755124726303,
+        "y": 6.116421421418735,
+        "z": -0.32054806385577833
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "TOI-4010 e",
+      "type": "gas giant planet",
+      "m": 0.002078076,
+      "radius": 1250.3179,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.7763305443521162,
+        "y": 0.8633856582396363,
+        "z": 0.04068575981908894
+      },
+      "velocity": {
+        "x": -4.556562533271607,
+        "y": 4.108377721936765,
+        "z": -0.23879932353307348
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-4010",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

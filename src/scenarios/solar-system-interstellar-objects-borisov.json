@@ -1,0 +1,401 @@
+{
+  "name": "Interstellar Comet Borisov",
+  "description": "Borisov was the first confirmed interstellar comet, crossing our Solar System in 2019. Trace its hyperbolic path past the Sun on a journey from another star.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Sun",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1,
+    "m": 1
+  },
+  "category": {
+    "name": "Solar System",
+    "subCategory": "Interstellar Objects"
+  },
+  "camera": {
+    "cameraFocus": "Barycenter",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Sun"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.001,
+    "tol": 0.01,
+    "maxDt": 0.1,
+    "minDt": 0.001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Earth",
+    "barycenterMassTwo": "Sun",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": false,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Sun",
+      "type": "star",
+      "m": 1,
+      "radius": 10270,
+      "tilt": 0,
+      "temperature": 5778,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Mercury",
+      "type": "terrestial planet",
+      "m": 1.652e-7,
+      "radius": 36.101083032490976,
+      "tilt": -0.03,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.06165115674568427,
+        "y": -0.461016727901228,
+        "z": -0.03201116922041495
+      },
+      "velocity": {
+        "x": 8.124096901186897,
+        "y": -0.8388815259462881,
+        "z": -0.813953222690809
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Venus",
+      "type": "terrestial planet",
+      "m": 0.000002447,
+      "radius": 86.95652173913044,
+      "tilt": 2.63,
+      "atmosphere": "beige",
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.07815222181066951,
+        "y": 0.7149211878158533,
+        "z": 0.01430649442174309
+      },
+      "velocity": {
+        "x": -7.369037606167418,
+        "y": -0.8430696474882625,
+        "z": 0.4137392524038775
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Earth",
+      "type": "terrestial planet",
+      "m": 0.000003003,
+      "radius": 91.74311926605505,
+      "tilt": -23.44,
+      "atmosphere": "skyblue",
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.9553813693345274,
+        "y": 0.2905159562405865,
+        "z": -0.00000766991988239961
+      },
+      "velocity": {
+        "x": -1.9287743434633904,
+        "y": 5.990210113519866,
+        "z": -0.0001102590313683855
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Mars",
+      "type": "terrestial planet",
+      "m": 3.213e-7,
+      "radius": 48.62385321100918,
+      "tilt": -25.19,
+      "atmosphere": "orange",
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.02263161249060163,
+        "y": -1.452907712748014,
+        "z": -0.03099636626018129
+      },
+      "velocity": {
+        "x": 5.303906895484618,
+        "y": 0.5182428229656241,
+        "z": -0.11936927791092816
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Borisov",
+      "type": "asteroid",
+      "m": 1.005570862e-45,
+      "radius": 1.2,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 19.8303149761121,
+        "y": 32.17838455369277,
+        "z": 34.2997534905839
+      },
+      "velocity": {
+        "x": -2.9575215008178106,
+        "y": -4.119642252326898,
+        "z": -4.709118214200203
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Jupiter",
+      "type": "gas giant planet",
+      "m": 0.0009543,
+      "radius": 1027.5229357798166,
+      "tilt": -3.13,
+      "atmosphere": "beige",
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 2.021551102028981,
+        "y": 4.614493683097627,
+        "z": -0.06440174215201207
+      },
+      "velocity": {
+        "x": -2.5602981728577223,
+        "y": 1.2383269232691374,
+        "z": 0.052150789777639595
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Saturn",
+      "type": "gas giant planet",
+      "m": 0.0002857,
+      "radius": 862.3853211009175,
+      "tilt": -26.73,
+      "atmosphere": "beige",
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -8.307500412753015,
+        "y": -5.125439895048788,
+        "z": 0.4198766589612425
+      },
+      "velocity": {
+        "x": 0.957508119698689,
+        "y": -1.7382299535163888,
+        "z": -0.007777316967874351
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Uranus",
+      "type": "gas giant planet",
+      "m": 0.00004365,
+      "radius": 370.6422018348624,
+      "tilt": -82.23,
+      "atmosphere": "skyblue",
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 19.93255952089928,
+        "y": 2.264362245148287,
+        "z": -0.2497805554666349
+      },
+      "velocity": {
+        "x": -0.17464278161274274,
+        "y": 1.361245697971015,
+        "z": 0.007398087461215579
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Neptune",
+      "type": "gas giant planet",
+      "m": 0.00005149,
+      "radius": 355.9633027522936,
+      "tilt": -28.32,
+      "atmosphere": "skyblue",
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 26.44108051698311,
+        "y": -14.15508750318998,
+        "z": -0.3177444735007931
+      },
+      "velocity": {
+        "x": 0.5314410205521,
+        "y": 1.0182389070176183,
+        "z": -0.03333092993898854
+      },
+      "nonStellarProceduralManifestation": false
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Sun",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

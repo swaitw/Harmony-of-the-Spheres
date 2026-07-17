@@ -1,0 +1,131 @@
+{
+  "name": "HD 360 - System",
+  "description": "HD 360 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 360",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.69,
+    "m": 1.69
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 360",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 360"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00149,
+    "tol": 0.0001,
+    "maxDt": 0.0149,
+    "minDt": 0.000015,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 360",
+    "barycenterMassTwo": "HD 360 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 360",
+      "type": "star",
+      "m": 1.69,
+      "radius": 111532.2,
+      "tilt": 0,
+      "temperature": 4770,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.0029406220847656406,
+        "y": 0.002738416401883774,
+        "z": 0.0001435143223749847
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 360 b",
+      "type": "gas giant planet",
+      "m": 0.00071582902966575,
+      "radius": 1316.1241,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.5754565762535349,
+        "y": 0.616255910020412,
+        "z": 0.03229660371421946
+      },
+      "velocity": {
+        "x": -6.942511573712604,
+        "y": -6.465124390588834,
+        "z": -0.3388228120993859
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 360",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

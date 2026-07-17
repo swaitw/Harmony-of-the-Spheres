@@ -1,0 +1,233 @@
+{
+  "name": "Kepler-304 - System",
+  "description": "Kepler-304 is a orange K-type dwarf star with 4 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-304",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.8,
+    "m": 0.8
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "4-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-304",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-304"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-304",
+    "barycenterMassTwo": "Kepler-304 e",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-304",
+      "type": "star",
+      "m": 0.8,
+      "radius": 7497.1,
+      "tilt": 0,
+      "temperature": 4817,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.0003163033027919903,
+        "y": 0.00022626741989930865,
+        "z": -0.00011804096788813774
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-304 e",
+      "type": "terrestial planet",
+      "m": 0.00000561561,
+      "radius": 112.8106,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.02317,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": 36.87949204364726,
+        "z": 1.93277227909414
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-304 b",
+      "type": "sub-Neptune",
+      "m": 0.000025675650000000002,
+      "radius": 268.8654,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 2.388061258337339e-18,
+        "y": 0.039,
+        "z": 0
+      },
+      "velocity": {
+        "x": -28.425992956437852,
+        "y": 1.7405900643343414e-15,
+        "z": 1.489743164762279
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-304 c",
+      "type": "super-Earth",
+      "m": 0.00001606605,
+      "radius": 203.9992,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.054,
+        "y": 6.613092715395707e-18,
+        "z": 0
+      },
+      "velocity": {
+        "x": -2.9584342344021754e-15,
+        "y": -24.157448796354608,
+        "z": 1.266038244560722
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-304 d",
+      "type": "sub-Neptune",
+      "m": 0.000024024,
+      "radius": 258.5244,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -1.4695761589768237e-17,
+        "y": -0.08,
+        "z": 0
+      },
+      "velocity": {
+        "x": 19.847369456309163,
+        "y": -3.645902621424594e-15,
+        "z": 1.0401565578152243
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-304",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

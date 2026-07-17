@@ -2,6 +2,13 @@ import React, { ReactElement, ReactNode } from "react";
 import { Link } from "gatsby";
 import NavigationMenu from "../navigation-menu";
 import NavigationMenuItem from "../navigation-menu/navigation-menu-item";
+import {
+  icon,
+  sun,
+  circleInfo,
+  fileLines,
+  medal,
+} from "../../theme/icons.module.css";
 
 import "the-new-css-reset/css/reset.css";
 import {
@@ -13,18 +20,22 @@ import {
   pageMain,
   pageFooter,
 } from "./layout.module.css";
-import "../../assets/fontawesome/css/fontawesome.min.css";
-import "../../assets/fontawesome/css/regular.min.css";
-import "../../assets/fontawesome/css/solid.min.css";
 
 type Props = {
   children: ReactNode;
   currentPage: string;
+  cssModifier?: string;
 };
 
-const Layout = ({ children, currentPage }: Props): ReactElement => {
+const Layout = ({
+  children,
+  currentPage,
+  cssModifier,
+}: Props): ReactElement => {
   return (
-    <section className={pageWrapper}>
+    <section
+      className={`${pageWrapper}${cssModifier ? ` ${cssModifier}` : ""}`}
+    >
       <header className={pageHeader}>
         <Link to="/scenarios/all/" className={pageTitle}>
           <h1>Gravity Simulator</h1>
@@ -36,7 +47,7 @@ const Layout = ({ children, currentPage }: Props): ReactElement => {
                 active={currentPage === "scenarios"}
                 cssModifier={mainNavigationMenuItem}
               >
-                <i className="fa-solid fa-sun" />
+                <i className={`${icon} ${sun}`} />
                 Scenarios
               </NavigationMenuItem>
             </Link>
@@ -45,7 +56,7 @@ const Layout = ({ children, currentPage }: Props): ReactElement => {
                 active={currentPage === "about"}
                 cssModifier={mainNavigationMenuItem}
               >
-                <i className="fa-solid fa-circle-info" />
+                <i className={`${icon} ${circleInfo}`} />
                 About
               </NavigationMenuItem>
             </Link>
@@ -54,7 +65,7 @@ const Layout = ({ children, currentPage }: Props): ReactElement => {
                 active={currentPage === "changelog"}
                 cssModifier={mainNavigationMenuItem}
               >
-                <i className="fa-solid fa-file-lines" />
+                <i className={`${icon} ${fileLines}`} />
                 Changelog
               </NavigationMenuItem>
             </Link>
@@ -63,17 +74,8 @@ const Layout = ({ children, currentPage }: Props): ReactElement => {
                 active={currentPage === "credits"}
                 cssModifier={mainNavigationMenuItem}
               >
-                <i className="fa-solid fa-medal" />
+                <i className={`${icon} ${medal}`} />
                 Credits
-              </NavigationMenuItem>
-            </Link>
-            <Link to="/contact">
-              <NavigationMenuItem
-                active={currentPage === "contact"}
-                cssModifier={mainNavigationMenuItem}
-              >
-                <i className="fa-solid fa-envelope" />
-                Contact
               </NavigationMenuItem>
             </Link>
           </NavigationMenu>

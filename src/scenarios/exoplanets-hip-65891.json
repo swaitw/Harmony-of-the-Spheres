@@ -1,0 +1,131 @@
+{
+  "name": "HIP 65891 - System",
+  "description": "HIP 65891 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HIP 65891",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 2.49,
+    "m": 2.49
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HIP 65891",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HIP 65891"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00597,
+    "tol": 0.0001,
+    "maxDt": 0.0597,
+    "minDt": 0.00006,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HIP 65891",
+    "barycenterMassTwo": "HIP 65891 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HIP 65891",
+      "type": "star",
+      "m": 2.49,
+      "radius": 91711.1,
+      "tilt": 0,
+      "temperature": 5000,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.00018739299444970966,
+        "y": -0.015207903715564231,
+        "z": -0.0007970124612830325
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HIP 65891 b",
+      "type": "gas giant planet",
+      "m": 0.00561973510224126,
+      "radius": 1203.3135,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 2.436183566256741,
+        "y": -0.02993662372116188,
+        "z": -0.0015689119684581074
+      },
+      "velocity": {
+        "x": 0.08303034710545065,
+        "y": 6.738339007589978,
+        "z": 0.3531413834440825
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HIP 65891",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

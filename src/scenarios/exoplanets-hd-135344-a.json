@@ -1,0 +1,131 @@
+{
+  "name": "HD 135344 A - System",
+  "description": "HD 135344 A is a bright A/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 135344 A",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 2.32,
+    "m": 2.32
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 135344 A",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 135344 A"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.01,
+    "tol": 0.0001,
+    "maxDt": 0.1,
+    "minDt": 0.0001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 135344 A",
+    "barycenterMassTwo": "HD 135344 A b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 135344 A",
+      "type": "star",
+      "m": 2.32,
+      "radius": 15405,
+      "tilt": 0,
+      "temperature": 9540,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.0023951288909606033,
+        "y": -0.01659826448072459,
+        "z": -0.0008698781813873568
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 135344 A b",
+      "type": "gas giant planet",
+      "m": 0.00954438706221,
+      "radius": 1527.9282,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 8.16565390498926,
+        "y": 1.1750760920982275,
+        "z": 0.0615831284754625
+      },
+      "velocity": {
+        "x": -0.5821954820996066,
+        "y": 4.03461986026838,
+        "z": 0.2114454671279198
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 135344 A",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

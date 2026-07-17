@@ -1,16 +1,21 @@
 import * as THREE from "three";
 import { ParticlesType, VectorType } from "../../types/physics";
+import withAssetPrefix from "../../utils/with-asset-prefix";
 
 class Particles {
   particles: ParticlesType;
   scale: number;
   textureLoader: THREE.TextureLoader;
   mesh: THREE.Points;
+  max: number;
+  defaultSize: number;
 
   constructor(
     particles: ParticlesType,
     scale: number,
     textureLoader: THREE.TextureLoader,
+    max: number = 10000,
+    defaultSize: number = 40,
   ) {
     this.particles = particles;
 
@@ -18,44 +23,83 @@ class Particles {
 
     this.textureLoader = textureLoader;
 
+    this.max = max;
+
+    this.defaultSize = defaultSize;
+
     this.mesh = this.createParticleSystem();
   }
 
   public createParticleSystem() {
     const geometry = new THREE.BufferGeometry();
-    const vertices = [];
+
+    const positions = new Float32Array(this.max * 3);
+    const colours = new Float32Array(this.max * 3);
+    const sizes = new Float32Array(this.max);
 
     const particlesLength = this.particles.length;
 
     const scale = this.scale;
     const particles = this.particles;
 
+    const defaultColour = new THREE.Color("skyblue");
+    const temporaryColour = new THREE.Color();
+
     for (let i = 0; i < particlesLength; i++) {
-      const particlePosition = particles[i].position;
+      const particle = particles[i];
+      const particlePosition = particle.position;
 
-      const x = particlePosition.x * scale;
-      const y = particlePosition.y * scale;
-      const z = particlePosition.z * scale;
+      positions[i * 3] = particlePosition.x * scale;
+      positions[i * 3 + 1] = particlePosition.y * scale;
+      positions[i * 3 + 2] = particlePosition.z * scale;
 
-      vertices.push(x, y, z);
+      const hsl = particle.hsl;
+      const colour = hsl
+        ? temporaryColour.setHSL(hsl[0] / 360, hsl[1] / 100, hsl[2] / 100)
+        : defaultColour;
+      colours[i * 3] = colour.r;
+      colours[i * 3 + 1] = colour.g;
+      colours[i * 3 + 2] = colour.b;
+
+      sizes[i] = particle.size ?? this.defaultSize;
     }
 
     geometry.setAttribute(
       "position",
-      new THREE.Float32BufferAttribute(vertices, 3),
+      new THREE.Float32BufferAttribute(positions, 3),
     );
 
-    const particleTexture = this.textureLoader.load("/textures/particle.png");
+    geometry.setAttribute(
+      "color",
+      new THREE.Float32BufferAttribute(colours, 3),
+    );
+
+    geometry.setAttribute("aSize", new THREE.Float32BufferAttribute(sizes, 1));
+
+    geometry.setDrawRange(0, particlesLength);
+
+    const particleTexture = this.textureLoader.load(
+      withAssetPrefix("/textures/particle.png"),
+    );
 
     const material = new THREE.PointsMaterial({
-      color: "skyblue",
-      size: 40,
+      size: 1,
       map: particleTexture,
       blending: THREE.AdditiveBlending,
       depthTest: true,
       depthWrite: false,
       transparent: true,
+      vertexColors: true,
+      sizeAttenuation: true,
     });
+
+    material.onBeforeCompile = (shader) => {
+      shader.vertexShader = `attribute float aSize;\n` + shader.vertexShader;
+      shader.vertexShader = shader.vertexShader.replace(
+        `gl_PointSize = size;`,
+        `gl_PointSize = size * aSize;`,
+      );
+    };
 
     const mesh = new THREE.Points(geometry, material);
     mesh.name = "particles";
@@ -73,10 +117,14 @@ class Particles {
     geometry.setDrawRange(0, particlesLength);
 
     const positions = geometry.attributes["position"].array;
+    const colours = geometry.attributes["color"].array;
+    const sizes = geometry.attributes["aSize"].array as Float32Array;
 
     let j = 0;
 
     const scale = this.scale;
+    const defaultColour = new THREE.Color("skyblue");
+    const temporaryColour = new THREE.Color();
 
     for (let i = 0; i < particlesLength; i++) {
       const particle = particles[i];
@@ -89,10 +137,34 @@ class Particles {
       positions[j + 1] = y;
       positions[j + 2] = z;
 
+      const hsl = particle.hsl;
+      const colour = hsl
+        ? temporaryColour.setHSL(hsl[0] / 360, hsl[1] / 100, hsl[2] / 100)
+        : defaultColour;
+      colours[j] = colour.r;
+      colours[j + 1] = colour.g;
+      colours[j + 2] = colour.b;
+
+      sizes[i] = particle.size ?? this.defaultSize;
+
       j += 3;
     }
 
     geometry.getAttribute("position").needsUpdate = true;
+    geometry.getAttribute("color").needsUpdate = true;
+    geometry.getAttribute("aSize").needsUpdate = true;
+  }
+
+  public dispose(): void {
+    this.mesh.geometry.dispose();
+
+    const material = this.mesh.material as THREE.PointsMaterial;
+
+    if (material.map) {
+      material.map.dispose();
+    }
+
+    material.dispose();
   }
 }
 

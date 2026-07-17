@@ -1,0 +1,165 @@
+{
+  "name": "DMPP-6 - System",
+  "description": "DMPP-6 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "DMPP-6",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.079,
+    "m": 1.079
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "DMPP-6",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "DMPP-6"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0002,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "DMPP-6",
+    "barycenterMassTwo": "DMPP-6 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "DMPP-6",
+      "type": "star",
+      "m": 1.079,
+      "radius": 13042.9,
+      "tilt": 0,
+      "temperature": 6182,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.000021832321631867814,
+        "y": -0.00018135144882958483,
+        "z": 0.00006560350047404386
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "DMPP-6 b",
+      "type": "super-Earth",
+      "m": 0.0000174174,
+      "radius": 214.3402,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.051218354207689,
+        "y": 0.004474884268111595,
+        "z": 0.00023451874704034586
+      },
+      "velocity": {
+        "x": -2.9048049840111902,
+        "y": -33.15657060958887,
+        "z": -1.7376622342899046
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "DMPP-6 c",
+      "type": "sub-Neptune",
+      "m": 0.00004045041,
+      "radius": 351.5932,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.15212127534388464,
+        "y": -0.005304911816573729,
+        "z": 0.00027801864759899217
+      },
+      "velocity": {
+        "x": 0.6684005251796244,
+        "y": 19.1142553616286,
+        "z": -1.0017356761519187
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "DMPP-6",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

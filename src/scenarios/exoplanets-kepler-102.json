@@ -1,0 +1,267 @@
+{
+  "name": "Kepler-102 - System",
+  "description": "Kepler-102 is a orange K-type dwarf star with 5 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-102",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.803,
+    "m": 0.803
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "5-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-102",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-102"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-102",
+    "barycenterMassTwo": "Kepler-102 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-102",
+      "type": "star",
+      "m": 0.803,
+      "radius": 7435.48,
+      "tilt": 0,
+      "temperature": 4909,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.0001371526731130029,
+        "y": 0.00021552440959892637,
+        "z": -0.00005550591068164395
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-102 b",
+      "type": "terrestial planet",
+      "m": 0.0000033033,
+      "radius": 43.2441,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.049689000000000004,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": 26.462260538143166,
+        "z": 1.3868283096133383
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-102 c",
+      "type": "terrestial planet",
+      "m": 0.0000051051,
+      "radius": 53.303,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.01876354898048613,
+        "y": 0.05774826579622367,
+        "z": 0
+      },
+      "velocity": {
+        "x": -22.70436723360191,
+        "y": 7.377096104702286,
+        "z": 1.2511196194469367
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-102 d",
+      "type": "terrestial planet",
+      "m": 0.000009009,
+      "radius": 108.4862,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.06330674479431153,
+        "y": 0.04599504240264934,
+        "z": 0
+      },
+      "velocity": {
+        "x": -12.349363157027794,
+        "y": -16.997440178665865,
+        "z": 1.1010869974968258
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-102 e",
+      "type": "super-Earth",
+      "m": 0.0000141141,
+      "radius": 203.9992,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.08564108279394206,
+        "y": -0.06222188879422707,
+        "z": 0
+      },
+      "velocity": {
+        "x": 10.603057080745028,
+        "y": -14.59385606766132,
+        "z": 0.945383833714619
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-102 f",
+      "type": "terrestial planet",
+      "m": 0.0000129129,
+      "radius": 80.9416,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.04605589284164214,
+        "y": -0.1417454631886297,
+        "z": 0
+      },
+      "velocity": {
+        "x": 14.531551116505389,
+        "y": 4.721587174567879,
+        "z": 0.8007582204690964
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-102",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "name": "Kepler-103 - System",
+  "description": "Kepler-103 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-103",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.212,
+    "m": 1.212
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-103",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-103"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-103",
+    "barycenterMassTwo": "Kepler-103 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-103",
+      "type": "star",
+      "m": 1.212,
+      "radius": 15322.84,
+      "tilt": 0,
+      "temperature": 6047,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.00010875075668056621,
+        "y": 0.000861662034341188,
+        "z": -0.00009196234113546642
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-103 b",
+      "type": "sub-Neptune",
+      "m": 0.00003504501,
+      "radius": 327.6867,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.07561627413871372,
+        "y": -0.08013207201267934,
+        "z": -0.004199543943533262
+      },
+      "velocity": {
+        "x": 16.410469803660146,
+        "y": 15.443250950557903,
+        "z": 0.809346487229455
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-103 c",
+      "type": "gas giant planet",
+      "m": 0.00017558540999999998,
+      "radius": 512.7149,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.577036761692648,
+        "y": 0.16089076093360594,
+        "z": -0.008431927487688966
+      },
+      "velocity": {
+        "x": -2.5246924632127556,
+        "y": -9.03003996525868,
+        "z": 0.473244341416318
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-103",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "name": "HIP 66074 - System",
+  "description": "HIP 66074 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HIP 66074",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.705,
+    "m": 0.705
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HIP 66074",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HIP 66074"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00494,
+    "tol": 0.0001,
+    "maxDt": 0.0494,
+    "minDt": 0.000049,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HIP 66074",
+    "barycenterMassTwo": "HIP 66074 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HIP 66074",
+      "type": "star",
+      "m": 0.705,
+      "radius": 7086.3,
+      "tilt": 0,
+      "temperature": 4300,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.10336885631416773,
+        "y": 0.22137142953551375,
+        "z": 0.011601585018668512
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HIP 66074 b",
+      "type": "gas giant planet",
+      "m": 0.004772193531105,
+      "radius": 1212.7144,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.03765527593579877,
+        "y": -0.01753487961693627,
+        "z": -0.0009189641007190941
+      },
+      "velocity": {
+        "x": 15.270764529244488,
+        "y": -32.703379861964635,
+        "z": -1.7139115136152971
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HIP 66074",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

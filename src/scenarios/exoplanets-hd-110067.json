@@ -1,0 +1,301 @@
+{
+  "name": "HD 110067 - System",
+  "description": "HD 110067 is a Sun-like G/F-type star with 6 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 110067",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.798,
+    "m": 0.798
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "6-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 110067",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 110067"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0002,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 110067",
+    "barycenterMassTwo": "HD 110067 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 110067",
+      "type": "star",
+      "m": 0.798,
+      "radius": 8092.76,
+      "tilt": 0,
+      "temperature": 5266,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.0002811437009081629,
+        "y": -0.00025296610908306585,
+        "z": -0.00010981332669350152
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 110067 b",
+      "type": "super-Earth",
+      "m": 0.00001708707,
+      "radius": 206.8195,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.0793,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": 19.909841658194363,
+        "z": 1.0434305871829492
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "HD 110067 c",
+      "type": "super-Earth",
+      "m": 0.0000189189,
+      "radius": 224.4932,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.05195000000000002,
+        "y": 0.08998003945320318,
+        "z": 0
+      },
+      "velocity": {
+        "x": -15.063547376582392,
+        "y": 8.696943132820529,
+        "z": 0.9115749522840382
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "HD 110067 d",
+      "type": "sub-Neptune",
+      "m": 0.00002558556,
+      "radius": 268.1133,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.06809999999999997,
+        "y": 0.11795265999544055,
+        "z": 0
+      },
+      "velocity": {
+        "x": -13.156685025444851,
+        "y": -7.5960156410836985,
+        "z": 0.7961806222968868
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 110067 e",
+      "type": "super-Earth",
+      "m": 0.0000117117,
+      "radius": 182.3772,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.1785,
+        "y": 2.1859945364780253e-17,
+        "z": 0
+      },
+      "velocity": {
+        "x": -1.6251600627398973e-15,
+        "y": -13.270438985929632,
+        "z": 0.6954742373636653
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "HD 110067 f",
+      "type": "sub-Neptune",
+      "m": 0.00001513512,
+      "radius": 244.5171,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.1081500000000001,
+        "y": -0.18732129483857402,
+        "z": 0
+      },
+      "velocity": {
+        "x": 10.44015079986045,
+        "y": -6.027623874679726,
+        "z": 0.6317887632508089
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 110067 g",
+      "type": "sub-Neptune",
+      "m": 0.0000252252,
+      "radius": 245.0811,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.1310499999999998,
+        "y": -0.22698525833190147,
+        "z": 0
+      },
+      "velocity": {
+        "x": 9.484217848966411,
+        "y": 5.475715728153801,
+        "z": 0.5739402025955243
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 110067",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

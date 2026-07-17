@@ -1,0 +1,131 @@
+{
+  "name": "HIP 65 A - System",
+  "description": "HIP 65 A is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HIP 65 A",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.781,
+    "m": 0.781
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HIP 65 A",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HIP 65 A"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00002,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HIP 65 A",
+    "barycenterMassTwo": "HIP 65 A b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HIP 65 A",
+      "type": "star",
+      "m": 0.781,
+      "radius": 7437.534,
+      "tilt": 0,
+      "temperature": 4590,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.1520885092659925,
+        "y": -0.05958231827278214,
+        "z": -0.0031225769852118793
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HIP 65 A b",
+      "type": "gas giant planet",
+      "m": 0.0030666269333699996,
+      "radius": 2139.1031,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.006507895396908103,
+        "y": -0.016566409120087916,
+        "z": -0.0008682087126781284
+      },
+      "velocity": {
+        "x": 38.7334776344015,
+        "y": 15.17425874816328,
+        "z": 0.7952492032574984
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HIP 65 A",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,5 +1,6 @@
 {
-  "name": "The Figure Eight",
+  "name": "The Figure Eight N-body Choreography",
+  "description": "Three equal masses tracing a shared figure-eight orbit \u2014 a famous periodic solution to the gravitational three-body problem, discovered analytically in 1993.",
   "playing": false,
   "isLoaded": false,
   "elapsedTime": 0,
@@ -8,7 +9,7 @@
     "name": "Eva",
     "unitName": "Solar Units",
     "unitMassQuantity": 1,
-    "m": 1
+    "m": 10000
   },
   "category": {
     "name": "Choreographies",
@@ -17,30 +18,30 @@
   "camera": {
     "cameraFocus": "Barycenter",
     "logarithmicDepthBuffer": false,
-    "rotatingReferenceFrame": "Barycenter",
-    "cameraDistanceToOrigoInAu": 0
+    "rotatingReferenceFrame": "Origo"
   },
   "integrator": {
     "name": "PEFRL",
-    "g": 39.5,
-    "dt": 0.0001,
-    "tol": 0.025,
-    "maxDt": 0.01,
-    "minDt": 0.0001,
+    "g": 100,
+    "dt": 0.005,
+    "tol": 0.01,
+    "maxDt": 0.05,
+    "minDt": 0.005,
     "useBarnesHut": false,
     "theta": 0.5,
     "softeningConstant": 0
   },
   "barycenter": {
     "display": false,
-    "barycenterMassOne": "Eva",
-    "barycenterMassTwo": "Arjuna",
+    "barycenterMassOne": "Earth",
+    "barycenterMassTwo": "Moon",
     "systemBarycenter": true
   },
   "graphics": {
+    "background": true,
     "orbits": true,
     "habitableZone": false,
-    "trails": false,
+    "trails": true,
     "labels": true
   },
   "masses": [
@@ -50,6 +51,12 @@
       "m": 10000,
       "radius": 6000000,
       "tilt": 0,
+      "temperature": 45000,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
       "elements": {
         "a": 0,
         "e": 0,
@@ -58,7 +65,7 @@
         "lAn": 0,
         "eccAnom": 0
       },
-      "position:": {
+      "position": {
         "x": -100,
         "y": 0,
         "z": 0
@@ -67,7 +74,8 @@
         "x": 34.7111,
         "y": 53.2728,
         "z": 0
-      }
+      },
+      "nonStellarProceduralManifestation": false
     },
     {
       "name": "Sarada",
@@ -75,6 +83,12 @@
       "m": 10000,
       "radius": 6000000,
       "tilt": 0,
+      "temperature": 45000,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
       "elements": {
         "a": 0,
         "e": 0,
@@ -83,7 +97,7 @@
         "lAn": 0,
         "eccAnom": 0
       },
-      "position:": {
+      "position": {
         "x": 100,
         "y": 0,
         "z": 0
@@ -92,7 +106,8 @@
         "x": 34.7111,
         "y": 53.2728,
         "z": 0
-      }
+      },
+      "nonStellarProceduralManifestation": false
     },
     {
       "name": "Arjuna",
@@ -100,6 +115,12 @@
       "m": 10000,
       "radius": 6000000,
       "tilt": 0,
+      "temperature": 45000,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
       "elements": {
         "a": 0,
         "e": 0,
@@ -117,7 +138,24 @@
         "x": -69.4222,
         "y": -106.5456,
         "z": 0
-      }
+      },
+      "nonStellarProceduralManifestation": false
     }
-  ]
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Eva",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
 }

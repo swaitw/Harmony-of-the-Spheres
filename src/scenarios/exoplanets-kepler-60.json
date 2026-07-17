@@ -1,0 +1,199 @@
+{
+  "name": "Kepler-60 - System",
+  "description": "Kepler-60 is a Sun-like G/F-type star with 3 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-60",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.041,
+    "m": 1.041
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "3-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-60",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-60"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0002,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-60",
+    "barycenterMassTwo": "Kepler-60 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-60",
+      "type": "star",
+      "m": 1.041,
+      "radius": 12909.39,
+      "tilt": 0,
+      "temperature": 5905,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.0003174295089877023,
+        "y": 0.0002529082888733661,
+        "z": 0.000012828109607309538
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-60 b",
+      "type": "super-Earth",
+      "m": 0.00001258257,
+      "radius": 160.7552,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.07233227376953717,
+        "y": 0.005608767139369279,
+        "z": 0.0002939430302900396
+      },
+      "velocity": {
+        "x": -1.8430231517273907,
+        "y": -23.703054281896563,
+        "z": -1.24222443713958
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-60 c",
+      "type": "super-Earth",
+      "m": 0.00001156155,
+      "radius": 178.6168,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.0568148796776529,
+        "y": 0.057632196694860055,
+        "z": 0.0010684390086406806
+      },
+      "velocity": {
+        "x": -16.329853961445536,
+        "y": -16.11984152750723,
+        "z": 1.1635569462030175
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-60 d",
+      "type": "super-Earth",
+      "m": 0.00001249248,
+      "radius": 187.0776,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.08968424716410395,
+        "y": 0.04813904099443005,
+        "z": 0.002809021115636846
+      },
+      "velocity": {
+        "x": -9.482162706685695,
+        "y": 17.71771216051099,
+        "z": -0.8946348504511001
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-60",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

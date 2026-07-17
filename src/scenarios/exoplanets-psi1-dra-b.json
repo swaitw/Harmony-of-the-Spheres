@@ -1,0 +1,131 @@
+{
+  "name": "psi1 Dra B - System",
+  "description": "psi1 Dra B is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "psi1 Dra B",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.19,
+    "m": 1.19
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "psi1 Dra B",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "psi1 Dra B"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.01,
+    "tol": 0.0001,
+    "maxDt": 0.1,
+    "minDt": 0.0001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "psi1 Dra B",
+    "barycenterMassTwo": "psi1 Dra B b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "psi1 Dra B",
+      "type": "star",
+      "m": 1.19,
+      "radius": 12896.3985,
+      "tilt": 0,
+      "temperature": 6212,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.005487991556438497,
+        "y": -0.0026730040414506277,
+        "z": -0.00014008620582702165
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "psi1 Dra B b",
+      "type": "gas giant planet",
+      "m": 0.0014602985397,
+      "radius": 1269.1197,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 1.165190508165368,
+        "y": 2.3857205410265503,
+        "z": 0.1250303155451371
+      },
+      "velocity": {
+        "x": -4.472174541449219,
+        "y": 2.178235972200395,
+        "z": 0.11415651005745898
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "psi1 Dra B",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "name": "HIP 111909 - System",
+  "description": "HIP 111909 is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HIP 111909",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.28,
+    "m": 1.28
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HIP 111909",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HIP 111909"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00268,
+    "tol": 0.0001,
+    "maxDt": 0.0268,
+    "minDt": 0.000027,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HIP 111909",
+    "barycenterMassTwo": "HIP 111909 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HIP 111909",
+      "type": "star",
+      "m": 1.28,
+      "radius": 46523.1,
+      "tilt": 0,
+      "temperature": 4891,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.002524127263385581,
+        "y": 2.2037143270596e-19,
+        "z": -2.7700168371883075e-20
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HIP 111909 b",
+      "type": "gas giant planet",
+      "m": 0.00115487083452741,
+      "radius": 1287.9214,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 8.082668874372532e-17,
+        "y": 1.3181909858760374,
+        "z": 0.06908346224068586
+      },
+      "velocity": {
+        "x": -6.18894419937927,
+        "y": 3.7844417883930347e-16,
+        "z": 1.9833418995561988e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HIP 111909 c",
+      "type": "gas giant planet",
+      "m": 0.00077309535203901,
+      "radius": 1306.7232,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -3.615524969804406e-16,
+        "y": -1.9673001834665105,
+        "z": 0.10310183379859936
+      },
+      "velocity": {
+        "x": 5.066061055621946,
+        "y": -9.301951908068498e-16,
+        "z": 1.6234968087662942e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HIP 111909",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

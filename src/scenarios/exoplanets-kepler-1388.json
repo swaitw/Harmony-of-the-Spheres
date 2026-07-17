@@ -1,0 +1,233 @@
+{
+  "name": "Kepler-1388 - System",
+  "description": "Kepler-1388 is a orange K-type dwarf star with 4 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-1388",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.63,
+    "m": 0.63
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "4-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-1388",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-1388"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0002,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-1388",
+    "barycenterMassTwo": "Kepler-1388 c",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-1388",
+      "type": "star",
+      "m": 0.63,
+      "radius": 6264.7,
+      "tilt": 0,
+      "temperature": 4098,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.0002128905153836828,
+        "y": -0.000025289635951846544,
+        "z": -0.00011062754199544695
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-1388 c",
+      "type": "super-Earth",
+      "m": 0.00001720719,
+      "radius": 212.46,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.0519,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": 21.867017368974302,
+        "z": 1.1460018198516337
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-1388 b",
+      "type": "sub-Neptune",
+      "m": 0.00002168166,
+      "radius": 243.483,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 5.4006923842398274e-18,
+        "y": 0.0882,
+        "z": 0
+      },
+      "velocity": {
+        "x": -16.774088741168494,
+        "y": 1.0271167042742827e-15,
+        "z": 0.879092740421305
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-1388 d",
+      "type": "sub-Neptune",
+      "m": 0.000025675650000000002,
+      "radius": 268.8654,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.126,
+        "y": 1.543054966925665e-17,
+        "z": 0
+      },
+      "velocity": {
+        "x": -1.7186949781034273e-15,
+        "y": -14.034209531270973,
+        "z": 0.7355017555268023
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-1388 e",
+      "type": "super-Earth",
+      "m": 0.00001987986,
+      "radius": 231.2618,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -3.418601539819836e-17,
+        "y": -0.1861,
+        "z": 0
+      },
+      "velocity": {
+        "x": 11.54782097077762,
+        "y": -2.1213002983484238e-15,
+        "z": 0.6051956526365881
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-1388",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

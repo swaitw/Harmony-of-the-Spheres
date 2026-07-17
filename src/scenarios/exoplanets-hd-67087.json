@@ -1,0 +1,165 @@
+{
+  "name": "HD 67087 - System",
+  "description": "HD 67087 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 67087",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.36,
+    "m": 1.36
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 67087",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 67087"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00191,
+    "tol": 0.0001,
+    "maxDt": 0.0191,
+    "minDt": 0.000019,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 67087",
+    "barycenterMassTwo": "HD 67087 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 67087",
+      "type": "star",
+      "m": 1.36,
+      "radius": 15918.5,
+      "tilt": 0,
+      "temperature": 6330,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.015955050020196173,
+        "y": -0.012949166596992953,
+        "z": 0.0001912593550200497
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 67087 b",
+      "type": "gas giant planet",
+      "m": 0.002921919,
+      "radius": 1231.5161,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.2320053920298992,
+        "y": -0.8646692852523795,
+        "z": -0.045315397054331706
+      },
+      "velocity": {
+        "x": 8.088235485097764,
+        "y": 2.164266044579976,
+        "z": 0.11342437717412798
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 67087 c",
+      "type": "gas giant planet",
+      "m": 0.004624619999999999,
+      "radius": 1212.7144,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.22411644408353235,
+        "y": 0.8976500743350359,
+        "z": -0.047043846969156096
+      },
+      "velocity": {
+        "x": -9.802326886933018,
+        "y": 2.4406451762949906,
+        "z": -0.127908793707487
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 67087",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

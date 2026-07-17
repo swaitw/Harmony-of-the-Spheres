@@ -1,0 +1,131 @@
+{
+  "name": "Kepler-432 - System",
+  "description": "Kepler-432 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-432",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.32,
+    "m": 1.32
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-432",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-432"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.001,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-432",
+    "barycenterMassTwo": "Kepler-432 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-432",
+      "type": "star",
+      "m": 1.32,
+      "radius": 41696.2,
+      "tilt": 0,
+      "temperature": 4995,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.0816762322912859,
+        "y": -0.03960549505865943,
+        "z": -0.002075636043429803
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-432 b",
+      "type": "gas giant planet",
+      "m": 0.005163539280899999,
+      "radius": 1206.5384,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.06397687281613691,
+        "y": 0.13157460350656655,
+        "z": 0.006895532779825799
+      },
+      "velocity": {
+        "x": -20.879598422597024,
+        "y": 10.124693671027565,
+        "z": 0.5306127112196168
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-432",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "name": "KOI-134 - System",
+  "description": "KOI-134 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "KOI-134",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.407,
+    "m": 1.407
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "KOI-134",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "KOI-134"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "KOI-134",
+    "barycenterMassTwo": "KOI-134 c",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "KOI-134",
+      "type": "star",
+      "m": 1.407,
+      "radius": 17120.09,
+      "tilt": 0,
+      "temperature": 6160,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.0055133857021187295,
+        "y": -0.012463507324601797,
+        "z": 0.0003512974035587262
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "KOI-134 c",
+      "type": "gas giant planet",
+      "m": 0.00020997651536861997,
+      "radius": 926.9274,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.17069014794907753,
+        "y": -0.039352919877857384,
+        "z": -0.002062399139101955
+      },
+      "velocity": {
+        "x": 4.461718961971292,
+        "y": 19.299342665944682,
+        "z": 1.011435690744609
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "KOI-134 b",
+      "type": "gas giant planet",
+      "m": 0.00104033818978089,
+      "radius": 1131.7206,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.27216726776242206,
+        "y": -0.13729316598014657,
+        "z": 0.007195229939757462
+      },
+      "velocity": {
+        "x": 6.55601952296754,
+        "y": 12.960925799190937,
+        "z": -0.6792533385878731
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "KOI-134",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

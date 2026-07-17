@@ -1,0 +1,199 @@
+{
+  "name": "Kepler-30 - System",
+  "description": "Kepler-30 is a Sun-like G/F-type star with 3 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-30",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.99,
+    "m": 0.99
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "3-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-30",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-30"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-30",
+    "barycenterMassTwo": "Kepler-30 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-30",
+      "type": "star",
+      "m": 0.99,
+      "radius": 9756.5,
+      "tilt": 0,
+      "temperature": 5498,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.021518441669674704,
+        "y": -0.00789974593005776,
+        "z": -0.0007614524443263903
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-30 b",
+      "type": "sub-Neptune",
+      "m": 0.000033933900000000004,
+      "radius": 366.6346,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.14780992933307224,
+        "y": -0.08869145028064727,
+        "z": -0.004648121950600985
+      },
+      "velocity": {
+        "x": 7.917176621275179,
+        "y": 13.158336818061915,
+        "z": 0.6895992116929036
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-30 c",
+      "type": "gas giant planet",
+      "m": 0.00192192,
+      "radius": 1156.309,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.09632056730639049,
+        "y": 0.2803535724504479,
+        "z": -0.011718004439603842
+      },
+      "velocity": {
+        "x": -10.906581638790167,
+        "y": 3.7637223128273574,
+        "z": 0.39638705675704855
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-30 d",
+      "type": "gas giant planet",
+      "m": 0.0000693693,
+      "radius": 827.278,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.11017075034146542,
+        "y": 0.47636899413389316,
+        "z": -0.007482459292326534
+      },
+      "velocity": {
+        "x": -8.798424512039869,
+        "y": 2.0277211610553505,
+        "z": -0.45246359598620983
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-30",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

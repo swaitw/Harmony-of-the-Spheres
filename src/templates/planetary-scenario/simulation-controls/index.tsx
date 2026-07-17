@@ -2,6 +2,7 @@ import React, { useCallback } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import Button from "../../../components/button";
 import Tabs from "../../../components/tabs";
+import { icon, play, pause } from "../../../theme/icons.module.css";
 import { modifyScenarioProperty } from "../../../state/creators";
 import { ScenarioType } from "../../../types/scenario";
 import CameraControls from "../../../components/camera-controls";
@@ -32,7 +33,7 @@ const PlanetaryScenarioFooter = () => {
   return (
     <section className={planetaryScenarioFooter}>
       <Button callback={handlePlayButtonClick} cssModifier={playButtonModifier}>
-        <i className={`fa-solid fa-${playing ? "pause" : "play"}`} />
+        <i className={`${icon} ${playing ? pause : play}`} />
       </Button>
       <Tabs
         contentWrapperCssClassName={simulationControlsContentWrapper}
@@ -43,14 +44,14 @@ const PlanetaryScenarioFooter = () => {
         navigationMenuItemCssModifier={simulationControlTab}
         closeButton
       >
-        <div data-label="Integrator" data-icon="fa-solid fa-gear">
+        <div data-label="Integrator" data-icon="gear">
           <IntegratorControls />
         </div>
-        <div data-label="Camera" data-icon="fa-solid fa-video">
+        <div data-label="Camera" data-icon="video">
           <CameraControls />
         </div>
-        <div data-label="Masses" data-icon="fa-solid fa-globe"></div>
-        <div data-label="Add Mass" data-icon="fa-solid fa-plus"></div>
+        <div data-label="Masses" data-icon="globe"></div>
+        <div data-label="Add Mass" data-icon="plus"></div>
       </Tabs>
     </section>
   );

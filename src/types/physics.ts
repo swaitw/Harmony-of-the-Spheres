@@ -15,11 +15,35 @@ export type ElementsType = {
   eccAnom: number;
 };
 
-export type FixedTimeStepIntegratorConfigType = {
+export type IntegratorConfigType = {
   g: number;
   dt: number;
+  tol?: number;
+  minDt?: number;
+  maxDt?: number;
   masses: ScenarioMassesType;
   elapsedTime: number;
+  softening?: number;
+  useBarnesHut?: boolean;
+  theta?: number;
+};
+
+export type FixedTimeStepIntegratorConfigType = IntegratorConfigType;
+
+export type BarnesHutMassNodeType = VectorType & { m: number };
+
+export type BarnesHutTreeNodeType = {
+  size: number;
+  position: VectorType;
+  CoM: VectorType;
+  mass: number;
+  nMasses?: number;
+  children: BarnesHutTreeNodeType[] | BarnesHutMassNodeType[];
+};
+
+export type OrbitalElementsType = ElementsType & {
+  trueAnom: number;
+  meanAnom: number;
 };
 
 export type ParticleType = {
@@ -27,6 +51,7 @@ export type ParticleType = {
   position: VectorType;
   velocity: VectorType;
   hsl?: [number, number, number];
+  size?: number;
 };
 
 export type ParticlesType = ParticleType[];
@@ -41,6 +66,7 @@ export type ShapeType = {
   maxD: number;
   verticalDispersion?: number;
   hsl?: [number, number, number];
+  size?: number;
 };
 
 export type ShapesType = ShapeType[];

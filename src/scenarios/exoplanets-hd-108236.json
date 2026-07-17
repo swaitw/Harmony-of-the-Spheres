@@ -1,0 +1,267 @@
+{
+  "name": "HD 108236 - System",
+  "description": "HD 108236 is a Sun-like G/F-type star with 5 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 108236",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.869,
+    "m": 0.869
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "5-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 108236",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 108236"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 108236",
+    "barycenterMassTwo": "HD 108236 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 108236",
+      "type": "star",
+      "m": 0.869,
+      "radius": 9006.79,
+      "tilt": 0,
+      "temperature": 5660,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.0008054510546530741,
+        "y": -0.00041693725509209126,
+        "z": 0.00006648245770706511
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 108236 b",
+      "type": "super-Earth",
+      "m": 0.00000972972,
+      "radius": 151.8243,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.02541163164457264,
+        "y": 0.034928176821587165,
+        "z": 0.0018305081816247758
+      },
+      "velocity": {
+        "x": -23.30329284301741,
+        "y": -16.907630174410915,
+        "z": -0.8860913503798149
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "HD 108236 c",
+      "type": "super-Earth",
+      "m": 0.00001483482,
+      "radius": 194.6924,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.013432563321109196,
+        "y": -0.058343908450410986,
+        "z": -0.0016143894680201475
+      },
+      "velocity": {
+        "x": 23.692450276987195,
+        "y": 5.484949014839511,
+        "z": -1.0920689424893484
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "TOI-1233.01",
+      "type": "sub-Neptune",
+      "m": 0.00002096094,
+      "radius": 238.6885,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.04293243162316601,
+        "y": -0.09192934142694362,
+        "z": 0.002575179358918608
+      },
+      "velocity": {
+        "x": 17.106241213448605,
+        "y": 7.964659738519143,
+        "z": -0.8646414341190377
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 108236 e",
+      "type": "sub-Neptune",
+      "m": 0.000029159130000000002,
+      "radius": 289.8293,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.12370127366727837,
+        "y": -0.03538170179975144,
+        "z": 0.005310699464906556
+      },
+      "velocity": {
+        "x": 4.637248152872648,
+        "y": 16.131497737108422,
+        "z": -0.5411076870070863
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 108236 f",
+      "type": "super-Earth",
+      "m": 0.00001417416,
+      "radius": 189.6159,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.15335506827320788,
+        "y": -0.06511693030390145,
+        "z": -0.008698201673713683
+      },
+      "velocity": {
+        "x": 5.744060197114512,
+        "y": -13.536635943102839,
+        "z": 0.06707542366671472
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 108236",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

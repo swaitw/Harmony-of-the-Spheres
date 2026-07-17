@@ -1,0 +1,37 @@
+.tooltipWrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  margin-left: 0.45rem;
+  cursor: default;
+  vertical-align: middle;
+}
+
+.tooltipIcon {
+  font-size: 1.35rem;
+  opacity: 0.5;
+  color: var(--font-color);
+  transition: opacity 0.15s ease;
+}
+
+.tooltipWrapper:hover .tooltipIcon {
+  opacity: 1;
+}
+
+.tooltipBox {
+  position: absolute;
+  top: 0;
+  left: 3rem;
+  background: #1a1a26;
+  color: #d9d9d9;
+  font-size: 0.975rem;
+  line-height: 1.5;
+  padding: 0.6rem 0.825rem;
+  border-radius: 4px;
+  width: 165px;
+  pointer-events: none;
+  white-space: normal;
+  z-index: 99999;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}

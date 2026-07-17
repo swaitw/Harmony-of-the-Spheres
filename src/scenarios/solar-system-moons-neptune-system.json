@@ -1,0 +1,593 @@
+{
+  "name": "Neptune and Its Moons",
+  "description": "Explore the Neptune system, including Triton — likely captured from the Kuiper Belt — orbiting in a rare retrograde direction that is slowly spiralling inward.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": false,
+  "massBeingModified": {
+    "name": "Neptune",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1,
+    "m": 0.00005151
+  },
+  "category": {
+    "name": "Solar System",
+    "subCategory": "Moons"
+  },
+  "camera": {
+    "cameraFocus": "Neptune",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Neptune"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.000005,
+    "tol": 0.0001,
+    "maxDt": 0.0005,
+    "minDt": 0.000005,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Sun",
+    "barycenterMassTwo": "Neptune",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": false,
+    "trails": false,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Sun",
+      "type": "star",
+      "m": 1,
+      "radius": 10270,
+      "tilt": 0,
+      "temperature": 5778,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": -29.87212043847291,
+        "y": -0.5189395049681488,
+        "z": 0.6990674683244985
+      },
+      "velocity": {
+        "x": 0.029930890598467094,
+        "y": -1.1529757905812843,
+        "z": 0.023167573455729864
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Neptune",
+      "type": "ice giant planet",
+      "m": 0.00005151,
+      "radius": 363.5,
+      "tilt": -28.32,
+      "atmosphere": "lightskyblue",
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Naiad",
+      "type": "moon",
+      "m": 9.653e-14,
+      "radius": 0.446,
+      "tilt": -28.32,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.0002408404538585128,
+        "y": 0.0001403043993162815,
+        "z": 0.0001619435981412969
+      },
+      "velocity": {
+        "x": -1.4262307861431913,
+        "y": -2.0388512971884527,
+        "z": -0.35395507981645946
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Thalassa",
+      "type": "moon",
+      "m": 1.78e-13,
+      "radius": 0.601,
+      "tilt": -28.32,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.0001378348226208329,
+        "y": -0.0002654223370423025,
+        "z": -0.0001501690968053279
+      },
+      "velocity": {
+        "x": 2.066501045584399,
+        "y": 1.2906887261628233,
+        "z": -0.38488832889749913
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Despina",
+      "type": "moon",
+      "m": 5.531e-13,
+      "radius": 1.151,
+      "tilt": -28.32,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.0001757954360637178,
+        "y": 0.0002564641424921715,
+        "z": 0.0001632584826073459
+      },
+      "velocity": {
+        "x": -1.8949662274584458,
+        "y": -1.4625350728972515,
+        "z": 0.25543822214117196
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Galatea",
+      "type": "moon",
+      "m": 9.753e-13,
+      "radius": 1.29,
+      "tilt": -28.32,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.0002410672843507805,
+        "y": -0.0002734259824541086,
+        "z": -0.0001964859123503221
+      },
+      "velocity": {
+        "x": 1.6151983033401505,
+        "y": 1.5133399795368936,
+        "z": -0.1233846337294962
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Larissa",
+      "type": "moon",
+      "m": 1.961e-12,
+      "radius": 1.432,
+      "tilt": -28.32,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.0004152894482565734,
+        "y": -0.0002512910359836021,
+        "z": 0.00008085490919147797
+      },
+      "velocity": {
+        "x": 0.8110218259794181,
+        "y": -1.6285710790683579,
+        "z": -0.9058013663172793
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Hippocamp",
+      "type": "moon",
+      "m": 1.106e-14,
+      "radius": 0.257,
+      "tilt": -28.32,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.000633988609121648,
+        "y": 0.0002510743749178783,
+        "z": -0.0001724506299352725
+      },
+      "velocity": {
+        "x": -0.39937123557905696,
+        "y": 1.4943418156459956,
+        "z": 0.707567147469279
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Proteus",
+      "type": "moon",
+      "m": 1.157e-11,
+      "radius": 3.097,
+      "tilt": -28.32,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.0004284019146837232,
+        "y": 0.000540846540116748,
+        "z": 0.0003771746349560715
+      },
+      "velocity": {
+        "x": -1.2146063622126457,
+        "y": -1.0469703173761007,
+        "z": 0.1232390500888777
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Triton",
+      "type": "moon",
+      "m": 1.0764e-8,
+      "radius": 19.97,
+      "tilt": -28.32,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.001901963930348889,
+        "y": -0.0002006510319015237,
+        "z": 0.001402140964944507
+      },
+      "velocity": {
+        "x": 0.26284374111055453,
+        "y": 0.7565740648527893,
+        "z": 0.46482239676908743
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Nereid",
+      "type": "moon",
+      "m": 1.207e-11,
+      "radius": 2.635,
+      "tilt": -28.32,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.013928087679652,
+        "y": 0.0001505740912355216,
+        "z": -0.0007899946935433605
+      },
+      "velocity": {
+        "x": 0.25246653885213316,
+        "y": -0.41514655327840355,
+        "z": -0.013219071050552969
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Halimede",
+      "type": "moon",
+      "m": 6.048e-14,
+      "radius": 0.45,
+      "tilt": -28.32,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.10217135800665576,
+        "y": -0.05569334189625754,
+        "z": 0.04589584270059046
+      },
+      "velocity": {
+        "x": 0.03233983530389247,
+        "y": 0.07280604327893225,
+        "z": 0.08886824620804813
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Sao",
+      "type": "moon",
+      "m": 1.709e-14,
+      "radius": 0.325,
+      "tilt": -28.32,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.30944141816000315,
+        "y": -0.07066645004378506,
+        "z": -0.21337245597543178
+      },
+      "velocity": {
+        "x": 0.018560460095879285,
+        "y": -0.04838226831882547,
+        "z": 0.04126161479748555
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Laomedeia",
+      "type": "moon",
+      "m": 1.709e-14,
+      "radius": 0.31,
+      "tilt": -28.32,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.18677207173993746,
+        "y": 0.003221738326613626,
+        "z": -0.11148902041117507
+      },
+      "velocity": {
+        "x": 0.02508272087605969,
+        "y": 0.06894364138124696,
+        "z": 0.021559768783956237
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Psamathe",
+      "type": "moon",
+      "m": 1.459e-14,
+      "radius": 0.295,
+      "tilt": -28.32,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.34872826081540986,
+        "y": 0.31807252760012034,
+        "z": -0.3226034500124448
+      },
+      "velocity": {
+        "x": 0.018663469503960427,
+        "y": 0.024531668628012666,
+        "z": 0.007810658659218979
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Neso",
+      "type": "moon",
+      "m": 5.538e-14,
+      "radius": 0.443,
+      "tilt": -28.32,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.07071902474017697,
+        "y": -0.13913453929459943,
+        "z": -0.012288663581048577
+      },
+      "velocity": {
+        "x": 0.05598462969636027,
+        "y": -0.03619467702249527,
+        "z": -0.08845834748497979
+      },
+      "nonStellarProceduralManifestation": false
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Neptune",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

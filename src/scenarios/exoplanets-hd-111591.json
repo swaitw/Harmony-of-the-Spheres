@@ -1,0 +1,131 @@
+{
+  "name": "HD 111591 - System",
+  "description": "HD 111591 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 111591",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.94,
+    "m": 1.94
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 111591",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 111591"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00574,
+    "tol": 0.0001,
+    "maxDt": 0.0574,
+    "minDt": 0.000057,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 111591",
+    "barycenterMassTwo": "HD 111591 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 111591",
+      "type": "star",
+      "m": 1.94,
+      "radius": 82468.1,
+      "tilt": 0,
+      "temperature": 4884,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.01533658384881677,
+        "y": -0.0030547927796483105,
+        "z": -0.0001600949057512366
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 111591 b",
+      "type": "gas giant planet",
+      "m": 0.004199551356,
+      "radius": 1212.7144,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.36186709146078927,
+        "y": 1.8117771591504512,
+        "z": 0.09495121746681227
+      },
+      "velocity": {
+        "x": -7.084797909232791,
+        "y": 1.4111740731663345,
+        "z": 0.0739564993564515
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 111591",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

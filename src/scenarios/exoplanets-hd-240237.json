@@ -1,0 +1,131 @@
+{
+  "name": "HD 240237 - System",
+  "description": "HD 240237 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 240237",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 8.76,
+    "m": 8.76
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 240237",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 240237"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00182,
+    "tol": 0.0001,
+    "maxDt": 0.0182,
+    "minDt": 0.000018,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 240237",
+    "barycenterMassTwo": "HD 240237 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 240237",
+      "type": "star",
+      "m": 8.76,
+      "radius": 731532.1,
+      "tilt": 0,
+      "temperature": 3926,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.033745642354756064,
+        "y": 0.011014660157318116,
+        "z": 0.0005772538784024358
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 240237 b",
+      "type": "gas giant planet",
+      "m": 0.0151661070561,
+      "radius": 1146.9082,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.3578992469346028,
+        "y": 1.0934934714459152,
+        "z": 0.057307564498984054
+      },
+      "velocity": {
+        "x": -19.491608883821268,
+        "y": -6.362108787785316,
+        "z": -0.3334239931249497
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 240237",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

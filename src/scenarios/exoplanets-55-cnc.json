@@ -1,0 +1,267 @@
+{
+  "name": "55 Cnc - System",
+  "description": "55 Cnc is a orange K-type dwarf star with 5 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "55 Cnc",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.905,
+    "m": 0.905
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "5-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "55 Cnc",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "55 Cnc"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00002,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "55 Cnc",
+    "barycenterMassTwo": "55 Cnc e",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "55 Cnc",
+      "type": "star",
+      "m": 0.905,
+      "radius": 9684.61,
+      "tilt": 0,
+      "temperature": 5172,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.012523232188985288,
+        "y": 0.013617899717597696,
+        "z": -0.0008384551760585005
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "55 Cnc e",
+      "type": "super-Earth",
+      "m": 0.00002399397,
+      "radius": 176.2666,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.001023187956878829,
+        "y": 0.014612216472414428,
+        "z": 0.0007657938157223144
+      },
+      "velocity": {
+        "x": -50.462972185466704,
+        "y": 3.5238787851757287,
+        "z": 0.18467866159368101
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "55 Cnc b",
+      "type": "gas giant planet",
+      "m": 0.0007927274355,
+      "radius": 1306.7232,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.01019463277210419,
+        "y": 0.11719060730344576,
+        "z": 0.0024060181486230607
+      },
+      "velocity": {
+        "x": -17.368493694639962,
+        "y": -1.5281834254277606,
+        "z": 0.8409448933856871
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "55 Cnc c",
+      "type": "gas giant planet",
+      "m": 0.00016358482139999998,
+      "radius": 800.0154,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.22431334417902898,
+        "y": 0.019761685537611533,
+        "z": 0.006071993406867203
+      },
+      "velocity": {
+        "x": -1.1361431260456174,
+        "y": -13.077390790186039,
+        "z": 0.589463811794807
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "55 Cnc f",
+      "type": "gas giant planet",
+      "m": 0.000134570436,
+      "radius": 713.5273,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.5399690118120756,
+        "y": -0.5211971806589338,
+        "z": 0.038731612822980904
+      },
+      "velocity": {
+        "x": 4.9407309698806765,
+        "y": 5.1138775773344145,
+        "z": -0.06462534636990713
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "55 Cnc d",
+      "type": "gas giant planet",
+      "m": 0.003701176479,
+      "radius": 1222.1152,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -4.833027729339274,
+        "y": -1.570345901702129,
+        "z": -0.2663230272525931
+      },
+      "velocity": {
+        "x": 0.8556043847944703,
+        "y": -2.6332795294169036,
+        "z": 8.873024020623295e-18
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "55 Cnc",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

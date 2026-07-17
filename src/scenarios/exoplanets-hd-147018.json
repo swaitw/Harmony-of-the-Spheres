@@ -1,0 +1,165 @@
+{
+  "name": "HD 147018 - System",
+  "description": "HD 147018 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 147018",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.927,
+    "m": 0.927
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 147018",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 147018"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.001,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 147018",
+    "barycenterMassTwo": "HD 147018 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 147018",
+      "type": "star",
+      "m": 0.927,
+      "radius": 9632.726,
+      "tilt": 0,
+      "temperature": 5441,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.006245564332505446,
+        "y": -0.06393563295571646,
+        "z": -0.0009461902590624392
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 147018 b",
+      "type": "gas giant planet",
+      "m": 0.002024022,
+      "radius": 1259.7188,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.11590034279844746,
+        "y": -0.051604070407548226,
+        "z": -0.0027044547320253056
+      },
+      "velocity": {
+        "x": 8.382738544517064,
+        "y": 18.775672216536062,
+        "z": 0.9839912854149511
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 147018 c",
+      "type": "gas giant planet",
+      "m": 0.00624624,
+      "radius": 1193.9126,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 1.1385896513435678,
+        "y": 1.2150559563626653,
+        "z": -0.06367838437759912
+      },
+      "velocity": {
+        "x": -3.6432294261160414,
+        "y": 3.40460150728941,
+        "z": -0.17842760434073276
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 147018",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

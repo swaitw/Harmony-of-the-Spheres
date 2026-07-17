@@ -1,0 +1,131 @@
+{
+  "name": "WASP-185 - System",
+  "description": "WASP-185 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "WASP-185",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.12,
+    "m": 1.12
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "WASP-185",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "WASP-185"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0002,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "WASP-185",
+    "barycenterMassTwo": "WASP-185 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "WASP-185",
+      "type": "star",
+      "m": 1.12,
+      "radius": 15405,
+      "tilt": 0,
+      "temperature": 5900,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.015790524602475875,
+        "y": -0.017513120178839433,
+        "z": -0.0009178237368899921
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "WASP-185 b",
+      "type": "gas giant planet",
+      "m": 0.0009353546202000001,
+      "radius": 1317.1817,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.0510570220895989,
+        "y": -0.0459089462206643,
+        "z": -0.0024059859206495833
+      },
+      "velocity": {
+        "x": 18.90768182765959,
+        "y": 20.970329516420303,
+        "z": 1.0990084007891996
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "WASP-185",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

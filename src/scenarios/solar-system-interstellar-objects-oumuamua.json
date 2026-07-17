@@ -1,0 +1,401 @@
+{
+  "name": "Interstellar Asteroid Oumuamua",
+  "description": "ʻOumuamua was the first known interstellar object to pass through our Solar System. Simulate its puzzling hyperbolic trajectory past the Sun in 2017.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Sun",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1,
+    "m": 1
+  },
+  "category": {
+    "name": "Solar System",
+    "subCategory": "Interstellar Objects"
+  },
+  "camera": {
+    "cameraFocus": "Barycenter",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Sun"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.001,
+    "tol": 0.01,
+    "maxDt": 0.1,
+    "minDt": 0.001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Earth",
+    "barycenterMassTwo": "Sun",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": false,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Sun",
+      "type": "star",
+      "m": 1,
+      "radius": 10270,
+      "tilt": 0,
+      "temperature": 5778,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": -0.002032845625658788,
+        "y": -0.002206073207737345,
+        "z": -0.00002596538210853694
+      },
+      "velocity": {
+        "x": 0.0020869837917339754,
+        "y": -0.0009759759745137204,
+        "z": -0.00004519598528871196
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Mercury",
+      "type": "terrestial planet",
+      "m": 1.652e-7,
+      "radius": 36.101083032490976,
+      "tilt": -0.03,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.0633228042515943,
+        "y": 0.3023360019376338,
+        "z": 0.0304805401051499
+      },
+      "velocity": {
+        "x": -12.13355404048838,
+        "y": -1.6528772889426246,
+        "z": 0.9784692627549786
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Venus",
+      "type": "terrestial planet",
+      "m": 0.000002447,
+      "radius": 86.95652173913044,
+      "tilt": 2.63,
+      "atmosphere": "beige",
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.6326315979272211,
+        "y": 0.3455745980292066,
+        "z": -0.03188913026127027
+      },
+      "velocity": {
+        "x": -3.5713994857490308,
+        "y": 6.445551271928175,
+        "z": 0.29452473854502614
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Earth",
+      "type": "terrestial planet",
+      "m": 0.000003003,
+      "radius": 91.74311926605505,
+      "tilt": -23.44,
+      "atmosphere": "skyblue",
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.9197324105567349,
+        "y": -0.4147318273536994,
+        "z": -0.00001750037390352759
+      },
+      "velocity": {
+        "x": 2.4645428337894026,
+        "y": 5.7097644117945805,
+        "z": -0.00033177815766459033
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Mars",
+      "type": "terrestial planet",
+      "m": 3.213e-7,
+      "radius": 48.62385321100918,
+      "tilt": -25.19,
+      "atmosphere": "orange",
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.574871406752105,
+        "y": -1.395455041953879,
+        "z": -0.01515164037265145
+      },
+      "velocity": {
+        "x": 4.9225288800471425,
+        "y": -1.5065904473191791,
+        "z": -0.1524041758922603
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Oumuamua",
+      "type": "asteroid",
+      "m": 1.005570862e-45,
+      "radius": 1.2,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 3.679682868010402,
+        "y": -16.90385340779421,
+        "z": 26.32485723034872
+      },
+      "velocity": {
+        "x": -0.8127258738687134,
+        "y": 3.0458386360240897,
+        "z": -4.839022858847442
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Jupiter",
+      "type": "gas giant planet",
+      "m": 0.0009543,
+      "radius": 1027.5229357798166,
+      "tilt": -3.13,
+      "atmosphere": "beige",
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 2.309580232081457,
+        "y": 4.460546846823553,
+        "z": -0.07028851829878795
+      },
+      "velocity": {
+        "x": -2.4809040175054617,
+        "y": 1.3993502897811834,
+        "z": 0.04970829322871863
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Saturn",
+      "type": "gas giant planet",
+      "m": 0.0002857,
+      "radius": 862.3853211009175,
+      "tilt": -26.73,
+      "atmosphere": "beige",
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -8.417303721615914,
+        "y": -4.926388621921075,
+        "z": 0.4206428591233111
+      },
+      "velocity": {
+        "x": 0.919151760170189,
+        "y": -1.7631987893271037,
+        "z": -0.005984764290193158
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Uranus",
+      "type": "gas giant planet",
+      "m": 0.00004365,
+      "radius": 370.6422018348624,
+      "tilt": -82.23,
+      "atmosphere": "skyblue",
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 19.94996398927053,
+        "y": 2.105545795789208,
+        "z": -0.250642112216617
+      },
+      "velocity": {
+        "x": -0.16129339690269276,
+        "y": 1.3616609675222109,
+        "z": 0.007139790220137776
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Neptune",
+      "type": "gas giant planet",
+      "m": 0.00005149,
+      "radius": 355.9633027522936,
+      "tilt": -28.32,
+      "atmosphere": "skyblue",
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 26.3776735181941,
+        "y": -14.27426743109879,
+        "z": -0.3139485147556967
+      },
+      "velocity": {
+        "x": 0.5381987172626345,
+        "y": 1.015130164798585,
+        "z": -0.033446435472504955
+      },
+      "nonStellarProceduralManifestation": false
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Sun",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

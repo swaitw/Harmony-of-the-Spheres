@@ -1,0 +1,199 @@
+{
+  "name": "TOI-375 - System",
+  "description": "TOI-375 is a Sun-like G/F-type star with 3 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-375",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.441,
+    "m": 1.441
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "3-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-375",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-375"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0002,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-375",
+    "barycenterMassTwo": "TOI-375 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-375",
+      "type": "star",
+      "m": 1.441,
+      "radius": 29783,
+      "tilt": 0,
+      "temperature": 5260,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.008508492892639859,
+        "y": -0.0019444343995227967,
+        "z": -0.001797643143694194
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-375 b",
+      "type": "gas giant planet",
+      "m": 0.00071105683611963,
+      "radius": 1012.6476,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.0892476245680752,
+        "y": 0.014286730648333346,
+        "z": 0.0007487358264941143
+      },
+      "velocity": {
+        "x": -4.141091272022701,
+        "y": 25.798082308360407,
+        "z": 1.3520202035422826
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "TOI-375 c",
+      "type": "gas giant planet",
+      "m": 0.00201004791529542,
+      "radius": 1259.7188,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.2619999999999999,
+        "y": 0.453797311583046,
+        "z": 0
+      },
+      "velocity": {
+        "x": -9.01363427434473,
+        "y": -5.2040241746697635,
+        "z": 0.5454627006594075
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "TOI-375 d",
+      "type": "gas giant planet",
+      "m": 0.00133812306610983,
+      "radius": 1278.5206,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.49200000000000044,
+        "y": -0.8521689973238874,
+        "z": 0
+      },
+      "velocity": {
+        "x": 6.577608595929087,
+        "y": -3.7975840934836596,
+        "z": 0.39804589796015916
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-375",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

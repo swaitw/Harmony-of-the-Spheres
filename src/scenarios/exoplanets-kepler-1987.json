@@ -1,0 +1,233 @@
+{
+  "name": "Kepler-1987 - System",
+  "description": "Kepler-1987 is a orange K-type dwarf star with 4 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-1987",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.799,
+    "m": 0.799
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "4-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-1987",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-1987"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-1987",
+    "barycenterMassTwo": "Kepler-1987 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-1987",
+      "type": "star",
+      "m": 0.799,
+      "radius": 7332.78,
+      "tilt": 0,
+      "temperature": 4769,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.00009386859900378012,
+        "y": 0.0004258830220532694,
+        "z": -0.00007744221346720227
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-1987 b",
+      "type": "terrestial planet",
+      "m": 0.00000612612,
+      "radius": 115.6309,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.0318,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": 31.460294502266596,
+        "z": 1.6487641704542626
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-1987 c",
+      "type": "terrestial planet",
+      "m": 0.00000699699,
+      "radius": 125.0318,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 2.6146209161795992e-18,
+        "y": 0.0427,
+        "z": 0
+      },
+      "velocity": {
+        "x": -27.14953566152938,
+        "y": 1.6624295973114439e-15,
+        "z": 1.422846872586488
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-1987 d",
+      "type": "sub-Neptune",
+      "m": 0.000022702679999999997,
+      "radius": 250.0636,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.0571,
+        "y": 6.992733223131386e-18,
+        "z": 0
+      },
+      "velocity": {
+        "x": -2.875207160603801e-15,
+        "y": -23.477848164920957,
+        "z": 1.2304218846679316
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-1987 e",
+      "type": "super-Earth",
+      "m": 0.000013063049999999999,
+      "radius": 180.497,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -1.4052822020215878e-17,
+        "y": -0.0765,
+        "z": 0
+      },
+      "velocity": {
+        "x": 20.28362749376178,
+        "y": -3.726041922799892e-15,
+        "z": 1.0630198727524938
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-1987",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "name": "DP Leo - System",
+  "description": "DP Leo is a bright A/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "DP Leo",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.69,
+    "m": 0.69
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "DP Leo",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "DP Leo"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.01,
+    "tol": 0.0001,
+    "maxDt": 0.1,
+    "minDt": 0.0001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "DP Leo",
+    "barycenterMassTwo": "DP Leo b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "DP Leo",
+      "type": "star",
+      "m": 0.69,
+      "radius": 118.105,
+      "tilt": 0,
+      "temperature": 13500,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.023397556089212547,
+        "y": -0.004966488333416427,
+        "z": -0.00026028262438948724
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "DP Leo b",
+      "type": "gas giant planet",
+      "m": 0.00599365262496,
+      "radius": 1193.9126,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 1.0387060161564443,
+        "y": -4.880030508168401,
+        "z": -0.255751561766597
+      },
+      "velocity": {
+        "x": 2.693568465133463,
+        "y": 0.5717510113593218,
+        "z": 0.029964200808174923
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "DP Leo",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

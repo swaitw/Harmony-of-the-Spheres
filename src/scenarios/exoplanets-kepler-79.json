@@ -1,0 +1,233 @@
+{
+  "name": "Kepler-79 - System",
+  "description": "Kepler-79 is a Sun-like G/F-type star with 4 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-79",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.165,
+    "m": 1.165
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "4-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-79",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-79"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-79",
+    "barycenterMassTwo": "Kepler-79 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-79",
+      "type": "star",
+      "m": 1.165,
+      "radius": 13371.54,
+      "tilt": 0,
+      "temperature": 6174,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.00012887787972796127,
+        "y": -0.00036434038117601637,
+        "z": -0.00005909072886019272
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-79 b",
+      "type": "sub-Neptune",
+      "m": 0.0000327327,
+      "radius": 326.2108,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.115245,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": 20.104250724043332,
+        "z": 1.0536191345965844
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-79 c",
+      "type": "sub-Neptune",
+      "m": 0.0000177177,
+      "radius": 349.713,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 1.110693414486692e-17,
+        "y": 0.18139,
+        "z": 0
+      },
+      "velocity": {
+        "x": -16.142762554715805,
+        "y": 9.884591246014231e-16,
+        "z": 0.8460063369860884
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-79 d",
+      "type": "gas giant planet",
+      "m": 0.000018018,
+      "radius": 673.1035,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.279825,
+        "y": 3.426867905714081e-17,
+        "z": 0
+      },
+      "velocity": {
+        "x": -1.5877987108053606e-15,
+        "y": -12.96536039542869,
+        "z": 0.6794857459287107
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-79 e",
+      "type": "sub-Neptune",
+      "m": 0.000012312299999999999,
+      "radius": 328.0909,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -7.005616507458416e-17,
+        "y": -0.381368,
+        "z": 0
+      },
+      "velocity": {
+        "x": 11.035297566873245,
+        "y": -2.027151276436484e-15,
+        "z": 0.5783354392073747
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-79",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

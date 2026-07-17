@@ -1,0 +1,165 @@
+{
+  "name": "HD 200964 - System",
+  "description": "HD 200964 is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 200964",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.39,
+    "m": 1.39
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 200964",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 200964"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00334,
+    "tol": 0.0001,
+    "maxDt": 0.0334,
+    "minDt": 0.000033,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 200964",
+    "barycenterMassTwo": "HD 200964 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 200964",
+      "type": "star",
+      "m": 1.39,
+      "radius": 50528.4,
+      "tilt": 0,
+      "temperature": 4982,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.010035687596155644,
+        "y": 0.007740602982194106,
+        "z": 0.00010088593597416881
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 200964 b",
+      "type": "gas giant planet",
+      "m": 0.0015261551405099999,
+      "radius": 1269.1197,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.9744699467835004,
+        "y": 1.043558955833411,
+        "z": 0.054690607426158354
+      },
+      "velocity": {
+        "x": -4.726673719072902,
+        "y": -4.401653958092266,
+        "z": -0.2306809091160242
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 200964 c",
+      "type": "gas giant planet",
+      "m": 0.00115869439686,
+      "radius": 1287.9214,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.7641722925055452,
+        "y": 1.270053314814007,
+        "z": -0.06656067380046732
+      },
+      "velocity": {
+        "x": -5.813412391596811,
+        "y": -3.4882634638730075,
+        "z": 0.18281214169575338
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 200964",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "name": "eps CrB - System",
+  "description": "eps CrB is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "eps CrB",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.7,
+    "m": 1.7
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "eps CrB",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "eps CrB"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00231,
+    "tol": 0.0001,
+    "maxDt": 0.0231,
+    "minDt": 0.000023,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "eps CrB",
+    "barycenterMassTwo": "eps CrB b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "eps CrB",
+      "type": "star",
+      "m": 1.7,
+      "radius": 215670,
+      "tilt": 0,
+      "temperature": 4406,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.02204516285632098,
+        "y": 0.02060122652475532,
+        "z": 0.001079664532669311
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "eps CrB b",
+      "type": "gas giant planet",
+      "m": 0.006394771382999999,
+      "radius": 1193.9126,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.7905477561486843,
+        "y": 0.8436399880888709,
+        "z": 0.04421329829010906
+      },
+      "velocity": {
+        "x": -5.860534272636353,
+        "y": -5.476675082581924,
+        "z": -0.28702037893288496
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "eps CrB",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

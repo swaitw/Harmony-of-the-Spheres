@@ -1,0 +1,165 @@
+{
+  "name": "TOI-1052 - System",
+  "description": "TOI-1052 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-1052",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.204,
+    "m": 1.204
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-1052",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-1052"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0002,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-1052",
+    "barycenterMassTwo": "TOI-1052 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-1052",
+      "type": "star",
+      "m": 1.204,
+      "radius": 12981.28,
+      "tilt": 0,
+      "temperature": 6146,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.00010575233617976805,
+        "y": 0.0016746335802700126,
+        "z": -0.000029113486837635523
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-1052 b",
+      "type": "sub-Neptune",
+      "m": 0.000050750699999999995,
+      "radius": 269.8054,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.036188420179439726,
+        "y": -0.06519616649337039,
+        "z": -0.0034167863036849615
+      },
+      "velocity": {
+        "x": 23.981307404117167,
+        "y": -13.274838088849167,
+        "z": -0.6957047845785157
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "TOI-1052 c",
+      "type": "gas giant planet",
+      "m": 0.00010300289999999998,
+      "radius": 609.1774,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.12209393587645948,
+        "y": 0.12192661038066352,
+        "z": -0.006389902885559173
+      },
+      "velocity": {
+        "x": -13.052000967298687,
+        "y": -13.034113653589733,
+        "z": 0.6830889515074047
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-1052",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

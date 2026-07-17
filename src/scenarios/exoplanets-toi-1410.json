@@ -1,0 +1,165 @@
+{
+  "name": "TOI-1410 - System",
+  "description": "TOI-1410 is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-1410",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.7941,
+    "m": 0.7941
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-1410",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-1410"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00002,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-1410",
+    "barycenterMassTwo": "TOI-1410.01",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-1410",
+      "type": "star",
+      "m": 0.7941,
+      "radius": 7762.066,
+      "tilt": 0,
+      "temperature": 4635,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.0006703809242877319,
+        "y": 1.0225637851235302e-19,
+        "z": -9.645417695450497e-21
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-1410.01",
+      "type": "sub-Neptune",
+      "m": 0.0000375375,
+      "radius": 291.5055,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 1.2675094371175106e-18,
+        "y": 0.020671631369419678,
+        "z": 0.0010833542942289374
+      },
+      "velocity": {
+        "x": -38.92700340641312,
+        "y": 2.38032487678469e-15,
+        "z": 1.2474754076446428e-16
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "TOI-1410 c",
+      "type": "gas giant planet",
+      "m": 0.00008108099999999999,
+      "radius": 529.2699,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -4.3863475521992536e-17,
+        "y": -0.23867245880634314,
+        "z": 0.012508293542063577
+      },
+      "velocity": {
+        "x": 11.456110536270453,
+        "y": -2.1034920047725712e-15,
+        "z": 3.671285973916408e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-1410",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

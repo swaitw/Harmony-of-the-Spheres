@@ -1,0 +1,198 @@
+{
+  "name": "GJ 163 - System",
+  "description": "GJ 163 is a cool M-dwarf star with 3 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "GJ 163",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.4,
+    "m": 0.4
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "3-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "GJ 163",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "GJ 163"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0002,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "GJ 163",
+    "barycenterMassTwo": "GJ 163 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "GJ 163",
+      "type": "star",
+      "m": 0.4,
+      "radius": 4208.0093,
+      "tilt": 0,
+      "temperature": 3500,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.0011231772493768331,
+        "y": -0.0023503032494519905,
+        "z": 0.000030429836529904337
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "GJ 163 b",
+      "type": "sub-Neptune",
+      "m": 0.000031831799999999996,
+      "radius": 305.5288,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.018597681312141075,
+        "y": 0.05303386055825016,
+        "z": 0.002779386858664359
+      },
+      "velocity": {
+        "x": -16.382289742316246,
+        "y": 5.729133922959259,
+        "z": 0.3002511861174329
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "GJ 163 c",
+      "type": "super-Earth",
+      "m": 0.0000204204,
+      "radius": 235.0222,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.1099915187460651,
+        "y": -0.02547280719661645,
+        "z": -0.004324639940852557
+      },
+      "velocity": {
+        "x": 2.778681253873986,
+        "y": 12.073461801733547,
+        "z": -0.4424861890524236
+      },
+      "nonStellarProceduralManifestation": true
+    },
+    {
+      "name": "GJ 163 d",
+      "type": "gas giant planet",
+      "m": 0.00008828819999999999,
+      "radius": 556.5325,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.6451013084735172,
+        "y": -0.018776408357253322,
+        "z": 0.029770884964972554
+      },
+      "velocity": {
+        "x": 0.17516596999509165,
+        "y": 5.790215852127715,
+        "z": -0.1437760124601988
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "GJ 163",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

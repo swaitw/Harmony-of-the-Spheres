@@ -1,0 +1,45 @@
+.save-scenario-message {
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.save-scenario-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.save-scenario-label {
+  font-size: 0.95rem;
+}
+
+.save-scenario-input {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  color: var(--font-color);
+  background-color: var(--theme-color-2);
+  border: var(--border);
+  box-sizing: border-box;
+}
+
+.save-scenario-input:focus {
+  outline: none;
+  border-color: var(--theme-color-5);
+}
+
+.save-scenario-error {
+  color: var(--theme-color-6);
+  line-height: 1.4;
+}
+
+.save-scenario-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.save-scenario-submit-button {
+  width: fit-content;
+  padding: 0.5rem 2rem;
+}

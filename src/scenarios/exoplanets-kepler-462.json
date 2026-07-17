@@ -1,0 +1,165 @@
+{
+  "name": "Kepler-462 - System",
+  "description": "Kepler-462 is a bright A/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-462",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.59,
+    "m": 1.59
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-462",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-462"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.001,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-462",
+    "barycenterMassTwo": "Kepler-462 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-462",
+      "type": "star",
+      "m": 1.59,
+      "radius": 16123.9,
+      "tilt": 0,
+      "temperature": 7500,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.0009954768705437332,
+        "y": -0.0006915304870983098,
+        "z": -0.00004789088768187849
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-462 b",
+      "type": "sub-Neptune",
+      "m": 0.00016186169999999998,
+      "radius": 282.0266,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.24661541769015413,
+        "y": 0.31408926179204427,
+        "z": 0.016460720707170806
+      },
+      "velocity": {
+        "x": -10.069663055863831,
+        "y": 7.8848037153757415,
+        "z": 0.41322505280551514
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-462 c",
+      "type": "sub-Neptune",
+      "m": 0.000018018,
+      "radius": 376.0355,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.6522806605159935,
+        "y": -0.17332060834915897,
+        "z": 0.009083348187565156
+      },
+      "velocity": {
+        "x": 2.613195498100713,
+        "y": -9.807651184966192,
+        "z": 0.5139972185867657
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-462",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

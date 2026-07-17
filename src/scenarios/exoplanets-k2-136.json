@@ -1,0 +1,199 @@
+{
+  "name": "K2-136 - System",
+  "description": "K2-136 is a orange K-type dwarf star with 3 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "K2-136",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.742,
+    "m": 0.742
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "3-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "K2-136",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "K2-136"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0002,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "K2-136",
+    "barycenterMassTwo": "K2-136 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "K2-136",
+      "type": "star",
+      "m": 0.742,
+      "radius": 6952.79,
+      "tilt": 0,
+      "temperature": 4500,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.0010867506662241512,
+        "y": 0.0011012790208718623,
+        "z": 0.0000547918942596558
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "K2-136 b",
+      "type": "terrestial planet",
+      "m": 0.0000129129,
+      "radius": 95.325,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.060053426484865564,
+        "y": -0.009498493124350627,
+        "z": -0.0004977949311824522
+      },
+      "velocity": {
+        "x": 3.6671310888911273,
+        "y": -23.121623599386258,
+        "z": -1.2117529462621919
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "K2-136 c",
+      "type": "sub-Neptune",
+      "m": 0.0000543543,
+      "radius": 282.0266,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.04939435486751746,
+        "y": -0.1014371070817084,
+        "z": 0.004899882076721256
+      },
+      "velocity": {
+        "x": 14.804972158532602,
+        "y": -7.232519701573981,
+        "z": -0.4824252502076463
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "K2-136 d",
+      "type": "super-Earth",
+      "m": 0.000009009,
+      "radius": 147.1239,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.13409646740633116,
+        "y": 0.048771487723000335,
+        "z": -0.007364167737633074
+      },
+      "velocity": {
+        "x": -5.072505371955899,
+        "y": -13.926437395398414,
+        "z": 0.13470372477366244
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "K2-136",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

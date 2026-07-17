@@ -1,0 +1,233 @@
+{
+  "name": "Kepler-299 - System",
+  "description": "Kepler-299 is a Sun-like G/F-type star with 4 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-299",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.004,
+    "m": 1.004
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "4-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-299",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-299"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-299",
+    "barycenterMassTwo": "Kepler-299 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-299",
+      "type": "star",
+      "m": 1.004,
+      "radius": 10598.64,
+      "tilt": 0,
+      "temperature": 5617,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.0003670978504670763,
+        "y": 0.000009288127748847504,
+        "z": -0.00005988521861035638
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-299 b",
+      "type": "terrestial planet",
+      "m": 0.000006906899999999999,
+      "radius": 124.0917,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.04,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": 31.44414677776195,
+        "z": 1.6479179040724996
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-299 c",
+      "type": "sub-Neptune",
+      "m": 0.00002255253,
+      "radius": 249.1235,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 4.286263797015737e-18,
+        "y": 0.07,
+        "z": 0
+      },
+      "velocity": {
+        "x": -23.769540732163172,
+        "y": 1.4554645987423133e-15,
+        "z": 1.2457088443504651
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-299 d",
+      "type": "super-Earth",
+      "m": 0.00001237236,
+      "radius": 174.8565,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.118,
+        "y": 1.4450832229938767e-17,
+        "z": 0
+      },
+      "velocity": {
+        "x": -2.2420209094524484e-15,
+        "y": -18.307490053568348,
+        "z": 0.9594548979538823
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-299 e",
+      "type": "super-Earth",
+      "m": 0.00001249248,
+      "radius": 175.7966,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -4.041334437186265e-17,
+        "y": -0.22,
+        "z": 0
+      },
+      "velocity": {
+        "x": 13.407829236419614,
+        "y": -2.462978273684337e-15,
+        "z": 0.7026745552869861
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-299",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

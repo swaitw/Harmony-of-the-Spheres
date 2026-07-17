@@ -1,0 +1,131 @@
+{
+  "name": "IC 4651 9122 - System",
+  "description": "IC 4651 9122 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "IC 4651 9122",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 2.1,
+    "m": 2.1
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "IC 4651 9122",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "IC 4651 9122"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00406,
+    "tol": 0.0001,
+    "maxDt": 0.0406,
+    "minDt": 0.000041,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "IC 4651 9122",
+    "barycenterMassTwo": "IC 4651 9122 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "IC 4651 9122",
+      "type": "star",
+      "m": 2.1,
+      "radius": 105446.4445,
+      "tilt": 0,
+      "temperature": 4740,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.019257954784722503,
+        "y": 0.010441886432687744,
+        "z": 0.0005472360794628819
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "IC 4651 9122 b",
+      "type": "gas giant planet",
+      "m": 0.006012993986999999,
+      "radius": 1193.9126,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.7974086337954472,
+        "y": 1.4666312804280488,
+        "z": 0.0768628884342773
+      },
+      "velocity": {
+        "x": -6.725718524806711,
+        "y": -3.646762587165758,
+        "z": -0.19111872876583538
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "IC 4651 9122",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

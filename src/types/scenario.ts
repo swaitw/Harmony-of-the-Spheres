@@ -10,7 +10,11 @@ export type ScenarioCameraType = {
   cameraPosition: string;
   logarithmicDepthBuffer: boolean;
   rotatingReferenceFrame: string;
-  cameraDistanceToOrigoInAu: number;
+  defaultCameraPositionOnScenarioStart?: boolean;
+  defaultCameraPositionOnScenarioStartVector?: VectorType;
+  cameraDistanceToOrigoInAu?: number;
+  customOrigoCameraPosition?: VectorType;
+  customBarycenterCameraPosition?: VectorType;
 };
 
 export type ScenarioIntegratorType = {
@@ -33,10 +37,12 @@ export type ScenarioBarycenterType = {
 };
 
 export type ScenarioGraphicsType = {
+  background: boolean;
   orbits: boolean;
   habitableZone: boolean;
   trails: boolean;
   labels: boolean;
+  numberOfTrailVertices?: number;
 };
 
 export type PrimaryType = {
@@ -46,18 +52,29 @@ export type PrimaryType = {
   name: string;
 };
 
+export type ScenarioMassGraphicsType = {
+  orbit: boolean;
+  trail: boolean;
+  label: boolean;
+  numberOfTrailVertices?: number;
+};
+
 export type ScenarioMassType = {
   name: string;
   type: string;
   m: number;
   radius: number;
   tilt: number;
-  atmosphere: number;
+  atmosphere: string;
   position: VectorType;
   velocity: VectorType;
   primary: PrimaryType;
   elements: ElementsType;
   rotatedPosition?: VectorType;
+  temperature?: number;
+  customMassCameraPosition?: VectorType;
+  graphics: ScenarioMassGraphicsType;
+  nonStellarProceduralManifestation?: boolean;
 };
 
 export type SOITree = {
@@ -86,6 +103,33 @@ export type ParticlesConfigurationType = {
   shapes: ShapesType;
 };
 
+export type MassToBeAddedType = {
+  name: string;
+  type: string;
+  primary: string;
+  m: number;
+  unitName: string;
+  unitMassQuantity: number;
+  elements: ElementsType;
+  isBeingAdded: boolean;
+};
+
+export type RingToBeAddedType = {
+  primary: string;
+  a: number;
+  aInterval: number;
+  i: number;
+  lAn: number;
+  number: number;
+  size: number;
+  ringsAreBeingAdded: boolean;
+};
+
+export type ScenarioLagrangePointsType = {
+  selectedMassName: string;
+  display: boolean;
+};
+
 export type ScenarioType = {
   name: string;
   playing: boolean;
@@ -100,4 +144,7 @@ export type ScenarioType = {
   graphics: ScenarioGraphicsType;
   masses: ScenarioMassesType;
   particlesConfiguration?: ParticlesConfigurationType;
+  lagrangePoints?: ScenarioLagrangePointsType;
+  ringToBeAdded: RingToBeAddedType;
+  massToBeAdded?: MassToBeAddedType;
 };

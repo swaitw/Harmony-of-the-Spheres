@@ -1,0 +1,301 @@
+{
+  "name": "K2-138 - System",
+  "description": "K2-138 is a Sun-like G/F-type star with 6 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "K2-138",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.935,
+    "m": 0.935
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "6-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "K2-138",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "K2-138"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "K2-138",
+    "barycenterMassTwo": "K2-138 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "K2-138",
+      "type": "star",
+      "m": 0.935,
+      "radius": 8863.01,
+      "tilt": 0,
+      "temperature": 5356,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.0009471885177479473,
+        "y": -0.00015880153339671493,
+        "z": 0.00009865007168807861
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "K2-138 b",
+      "type": "super-Earth",
+      "m": 0.000009309299999999999,
+      "radius": 141.9534,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.014126597879507386,
+        "y": -0.02892412399499201,
+        "z": -0.0015158491062848573
+      },
+      "velocity": {
+        "x": 31.149233968057377,
+        "y": -15.171675726619117,
+        "z": -0.7951138328345285
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "K2-138 c",
+      "type": "super-Earth",
+      "m": 0.00001894893,
+      "radius": 216.1264,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.007415148792491637,
+        "y": -0.04194533706133484,
+        "z": -0.0007625835683513776
+      },
+      "velocity": {
+        "x": 29.607657533252848,
+        "y": -5.207167193971031,
+        "z": -1.4802350420505779
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "K2-138 d",
+      "type": "super-Earth",
+      "m": 0.000023783759999999998,
+      "radius": 224.6812,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.05184636579682726,
+        "y": -0.021997320293141488,
+        "z": 0.0029295387866737767
+      },
+      "velocity": {
+        "x": 10.215533865826762,
+        "y": -24.05520151626192,
+        "z": 0.16669284273563972
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "K2-138 e",
+      "type": "sub-Neptune",
+      "m": 0.00003894891,
+      "radius": 318.6901,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.07217860000000001,
+        "y": -1.7666544298000377e-17,
+        "z": 4.626147433860045e-19
+      },
+      "velocity": {
+        "x": 5.7458082755644305e-15,
+        "y": 23.44295663259627,
+        "z": -1.2285932969430122
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "K2-138 f",
+      "type": "sub-Neptune",
+      "m": 0.00000489489,
+      "radius": 273.0017,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.0894525706040278,
+        "y": 0.03989675546976364,
+        "z": 0.0030144860750890407
+      },
+      "velocity": {
+        "x": -8.11813443290737,
+        "y": 18.26568381651753,
+        "z": -0.8470854133595189
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "K2-138 g",
+      "type": "sub-Neptune",
+      "m": 0.00001297296,
+      "radius": 283.2487,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.052678431693308506,
+        "y": 0.21095525456393752,
+        "z": 0.0031369602442257146
+      },
+      "velocity": {
+        "x": -12.997508697204697,
+        "y": -3.235623962035028,
+        "z": -0.6746969485830322
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "K2-138",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

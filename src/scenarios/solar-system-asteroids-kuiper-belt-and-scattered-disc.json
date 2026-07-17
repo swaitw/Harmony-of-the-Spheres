@@ -1,0 +1,692 @@
+{
+  "name": "The Kuiper Belt and Scattered Disc",
+  "description": "The largest trans-Neptunian objects — from Pluto and classical Kuiper belt bodies to Sedna and other scattered-disc denizens — with Neptune marking the outer edge of the giant-planet zone.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Sun",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1,
+    "m": 1
+  },
+  "category": {
+    "name": "Solar System",
+    "subCategory": "Asteroids"
+  },
+  "camera": {
+    "cameraFocus": "Barycenter",
+    "logarithmicDepthBuffer": true,
+    "rotatingReferenceFrame": "Sun"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.01,
+    "tol": 0.01,
+    "maxDt": 0.1,
+    "minDt": 0.001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Sun",
+    "barycenterMassTwo": "Neptune",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": false,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Sun",
+      "type": "star",
+      "m": 1,
+      "radius": 10270,
+      "tilt": 0,
+      "temperature": 5778,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Neptune",
+      "type": "ice giant planet",
+      "m": 0.00005151,
+      "radius": 363.5,
+      "tilt": -28.32,
+      "atmosphere": "lightskyblue",
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 29.88149799059468,
+        "y": -0.04956841642057858,
+        "z": -0.6875729941761419
+      },
+      "velocity": {
+        "x": -0.008196246166285823,
+        "y": 1.1540958500851541,
+        "z": -0.023427871505230423
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Pluto",
+      "type": "dwarf planet",
+      "m": 6.551e-9,
+      "radius": 17.55,
+      "tilt": 119.61,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 18.73731302645815,
+        "y": -29.83094410010703,
+        "z": -2.226166912280942
+      },
+      "velocity": {
+        "x": 0.9983794376509744,
+        "y": 0.3576265455800436,
+        "z": -0.32321508094002416
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Eris",
+      "type": "dwarf planet",
+      "m": 8.278e-9,
+      "radius": 16.76,
+      "tilt": 78,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 85.29975471288702,
+        "y": 39.30877660590454,
+        "z": -17.66834236883868
+      },
+      "velocity": {
+        "x": -0.17286038166165277,
+        "y": 0.3147633029544072,
+        "z": 0.34200141332870204
+      },
+      "nonStellarProceduralManifestation": true
+    },
+    {
+      "name": "Haumea",
+      "type": "dwarf planet",
+      "m": 2.014e-9,
+      "radius": 11.24,
+      "tilt": 126,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -37.27005073876821,
+        "y": -23.291562602728,
+        "z": 23.57360986547854
+      },
+      "velocity": {
+        "x": 0.4987375820992728,
+        "y": -0.6431471982768499,
+        "z": -0.045444498789915216
+      },
+      "nonStellarProceduralManifestation": true
+    },
+    {
+      "name": "Makemake",
+      "type": "dwarf planet",
+      "m": 1.559e-9,
+      "radius": 10.3,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -46.01739310357021,
+        "y": -8.665113546355416,
+        "z": 24.19959332428901
+      },
+      "velocity": {
+        "x": 0.06236998900607681,
+        "y": -0.7826309749011368,
+        "z": -0.11496193173965877
+      },
+      "nonStellarProceduralManifestation": true
+    },
+    {
+      "name": "Gonggong",
+      "type": "dwarf planet",
+      "m": 8.797e-10,
+      "radius": 8.86,
+      "tilt": 106,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 81.38699911149575,
+        "y": -37.44439535934181,
+        "z": -1.444790667562946
+      },
+      "velocity": {
+        "x": 0.3750584990290234,
+        "y": 0.2963619166313576,
+        "z": 0.25071981109523017
+      },
+      "nonStellarProceduralManifestation": true
+    },
+    {
+      "name": "Quaoar",
+      "type": "dwarf planet",
+      "m": 6.034e-10,
+      "radius": 7.99,
+      "tilt": 14,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 7.333990095695351,
+        "y": -41.5871668643636,
+        "z": 5.927411427495474
+      },
+      "velocity": {
+        "x": 0.9469301888893755,
+        "y": 0.20016176407588968,
+        "z": -0.006970240940868299
+      },
+      "nonStellarProceduralManifestation": true
+    },
+    {
+      "name": "Sedna",
+      "type": "dwarf planet",
+      "m": 5.028e-10,
+      "radius": 7.17,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 39.84561735116382,
+        "y": 70.96090579474763,
+        "z": -17.08772346611963
+      },
+      "velocity": {
+        "x": -0.9071708339944468,
+        "y": 0.22265072956416468,
+        "z": 0.0731382798233457
+      },
+      "nonStellarProceduralManifestation": true
+    },
+    {
+      "name": "2002 MS4",
+      "type": "dwarf planet",
+      "m": 3e-10,
+      "radius": 6.9,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 14.01083821849982,
+        "y": -41.80142450448037,
+        "z": 13.41032235890926
+      },
+      "velocity": {
+        "x": 0.786196297592575,
+        "y": 0.379507364683229,
+        "z": 0.050539834529619354
+      },
+      "nonStellarProceduralManifestation": true
+    },
+    {
+      "name": "Orcus",
+      "type": "dwarf planet",
+      "m": 3.178e-10,
+      "radius": 6.6,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -43.7898543786819,
+        "y": 10.67547943235654,
+        "z": -16.5269899167398
+      },
+      "velocity": {
+        "x": -0.15151202335848424,
+        "y": -0.7841417262110223,
+        "z": -0.04850223284906403
+      },
+      "nonStellarProceduralManifestation": true
+    },
+    {
+      "name": "Salacia",
+      "type": "dwarf planet",
+      "m": 2.5e-10,
+      "radius": 6.25,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 40.68928634341354,
+        "y": 7.670893701264061,
+        "z": 18.37161638336251
+      },
+      "velocity": {
+        "x": -0.10781567212874237,
+        "y": 0.8912950563298432,
+        "z": 0.023345328709046945
+      },
+      "nonStellarProceduralManifestation": true
+    },
+    {
+      "name": "2012 VP113",
+      "type": "dwarf planet",
+      "m": 2e-10,
+      "radius": 6,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 45.75629716970294,
+        "y": 68.40550895608578,
+        "z": -20.84568025407842
+      },
+      "velocity": {
+        "x": -0.5424690427882676,
+        "y": 0.6587987778336636,
+        "z": 0.23683349539842913
+      },
+      "nonStellarProceduralManifestation": true
+    },
+    {
+      "name": "Leleakuhonua",
+      "type": "dwarf planet",
+      "m": 5e-11,
+      "radius": 3.5,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 72.67021013677014,
+        "y": 16.77560933982387,
+        "z": 14.65056485284782
+      },
+      "velocity": {
+        "x": -0.5859605507528872,
+        "y": 0.8174306928777534,
+        "z": -0.01639819868385123
+      },
+      "nonStellarProceduralManifestation": true
+    },
+    {
+      "name": "2010 GB174",
+      "type": "dwarf planet",
+      "m": 2e-10,
+      "radius": 6,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -69.6223489384946,
+        "y": -16.70960426668402,
+        "z": 25.16367991396094
+      },
+      "velocity": {
+        "x": -0.2877736471818873,
+        "y": -0.8663003166640804,
+        "z": 0.308923086570491
+      },
+      "nonStellarProceduralManifestation": true
+    },
+    {
+      "name": "2000 CR105",
+      "type": "dwarf planet",
+      "m": 8e-11,
+      "radius": 2.5,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -59.29766078055864,
+        "y": 24.53777587231468,
+        "z": 13.14893822468103
+      },
+      "velocity": {
+        "x": -0.7500474696183053,
+        "y": -0.5617833816689699,
+        "z": 0.3922804980754436
+      },
+      "nonStellarProceduralManifestation": true
+    },
+    {
+      "name": "2015 RR245",
+      "type": "dwarf planet",
+      "m": 3e-10,
+      "radius": 7,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 58.10384946467703,
+        "y": 13.40816541812907,
+        "z": 2.543736088661535
+      },
+      "velocity": {
+        "x": -0.6529833355513385,
+        "y": 0.6372210497671389,
+        "z": -0.11709744703218877
+      },
+      "nonStellarProceduralManifestation": true
+    },
+    {
+      "name": "2013 FT28",
+      "type": "dwarf planet",
+      "m": 6e-11,
+      "radius": 2,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -46.75935116930312,
+        "y": -24.07795018415035,
+        "z": -2.992271769425479
+      },
+      "velocity": {
+        "x": 0.8649076450959332,
+        "y": -0.7039609490885121,
+        "z": 0.3405391626401445
+      },
+      "nonStellarProceduralManifestation": true
+    },
+    {
+      "name": "2007 UK126",
+      "type": "dwarf planet",
+      "m": 2.5e-10,
+      "radius": 6.5,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 5.197745627253572,
+        "y": 37.99371673359668,
+        "z": -12.48957301199919
+      },
+      "velocity": {
+        "x": -1.137525348231535,
+        "y": 0.008862415045305383,
+        "z": 0.36659231552607496
+      },
+      "nonStellarProceduralManifestation": true
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Sun",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

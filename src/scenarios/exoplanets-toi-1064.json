@@ -1,0 +1,165 @@
+{
+  "name": "TOI-1064 - System",
+  "description": "TOI-1064 is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-1064",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.748,
+    "m": 0.748
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-1064",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-1064"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0002,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-1064",
+    "barycenterMassTwo": "TOI-1064 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-1064",
+      "type": "star",
+      "m": 0.748,
+      "radius": 7456.02,
+      "tilt": 0,
+      "temperature": 4734,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.0009961557784711555,
+        "y": 0.0007972606937712918,
+        "z": 0.000023373536428047277
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-1064 b",
+      "type": "sub-Neptune",
+      "m": 0.000040540499999999996,
+      "radius": 243.2009,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.029314279999999984,
+        "y": 0.050704238588395775,
+        "z": 0.0026572965446553065
+      },
+      "velocity": {
+        "x": -19.89292776207391,
+        "y": -11.46944714851052,
+        "z": -0.6010882546576457
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "TOI-1064 c",
+      "type": "sub-Neptune",
+      "m": 0.0000075075,
+      "radius": 249.2175,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.07793565425059337,
+        "y": -0.03629218698281019,
+        "z": 0.0019019929250939781
+      },
+      "velocity": {
+        "x": 8.171124294629776,
+        "y": -17.49901789100707,
+        "z": 0.9170846673018878
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-1064",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

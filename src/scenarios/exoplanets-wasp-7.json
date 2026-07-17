@@ -1,0 +1,131 @@
+{
+  "name": "WASP-7 - System",
+  "description": "WASP-7 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "WASP-7",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.276,
+    "m": 1.276
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "WASP-7",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "WASP-7"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "WASP-7",
+    "barycenterMassTwo": "WASP-7 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "WASP-7",
+      "type": "star",
+      "m": 1.276,
+      "radius": 14706.64,
+      "tilt": 0,
+      "temperature": 6400,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.02007677044231332,
+        "y": 0.006903512441295832,
+        "z": 0.00036179775630116093
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "WASP-7 b",
+      "type": "gas giant planet",
+      "m": 0.0009162657504,
+      "radius": 1401.4813,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.01940457825558634,
+        "y": 0.056277754695157715,
+        "z": 0.0029493921466089614
+      },
+      "velocity": {
+        "x": -27.959092733967363,
+        "y": -9.613894081763858,
+        "z": -0.5038428390876164
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "WASP-7",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

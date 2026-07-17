@@ -1,0 +1,165 @@
+{
+  "name": "HD 13908 - System",
+  "description": "HD 13908 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 13908",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.29,
+    "m": 1.29
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 13908",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 13908"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 13908",
+    "barycenterMassTwo": "HD 13908 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 13908",
+      "type": "star",
+      "m": 1.29,
+      "radius": 17150.9,
+      "tilt": 0,
+      "temperature": 6255,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.0008346107280044288,
+        "y": -0.009526570522605787,
+        "z": 0.001737637013067207
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 13908 b",
+      "type": "gas giant planet",
+      "m": 0.0008255547300000001,
+      "radius": 1306.7232,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.15034570383600623,
+        "y": -0.013135518219617226,
+        "z": -0.000688403339622066
+      },
+      "velocity": {
+        "x": 1.6173950100804155,
+        "y": -18.46157389239785,
+        "z": -0.9675300897703427
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 13908 c",
+      "type": "gas giant planet",
+      "m": 0.0048960912,
+      "radius": 1203.3135,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 1.779602208671094,
+        "y": 0.15548164423220365,
+        "z": -0.008148447693485678
+      },
+      "velocity": {
+        "x": -0.4926166285415594,
+        "y": 5.622917241467035,
+        "z": -0.2946846057176113
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 13908",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "name": "nu Oct A - System",
+  "description": "nu Oct A is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "nu Oct A",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.57,
+    "m": 1.57
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "nu Oct A",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "nu Oct A"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00222,
+    "tol": 0.0001,
+    "maxDt": 0.0222,
+    "minDt": 0.000022,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "nu Oct A",
+    "barycenterMassTwo": "nu Oct A b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "nu Oct A",
+      "type": "star",
+      "m": 1.57,
+      "radius": 51760.8,
+      "tilt": 0,
+      "temperature": 4910,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.011297113931831748,
+        "y": 0.001989256042750319,
+        "z": 0.0001042524916259147
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "nu Oct A b",
+      "type": "gas giant planet",
+      "m": 0.0020902207666239903,
+      "radius": 1250.3179,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.1733356109471298,
+        "y": 0.9816878836184945,
+        "z": 0.0514480819295139
+      },
+      "velocity": {
+        "x": -8.485452425019592,
+        "y": -1.4941636964799234,
+        "z": -0.07830580121785281
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "nu Oct A",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "name": "TOI-1272 - System",
+  "description": "TOI-1272 is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-1272",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.8772,
+    "m": 0.8772
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-1272",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-1272"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-1272",
+    "barycenterMassTwo": "TOI-1272 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-1272",
+      "type": "star",
+      "m": 0.8772,
+      "radius": 8148.218,
+      "tilt": 0,
+      "temperature": 5065,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.0006613080995133585,
+        "y": 0.0029800085620693365,
+        "z": 0.00015617563098250273
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-1272 b",
+      "type": "gas giant planet",
+      "m": 0.00008108099999999999,
+      "radius": 388.4492,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.021064541285291196,
+        "y": 0.017034352174372165,
+        "z": 0.0008927325689840896
+      },
+      "velocity": {
+        "x": -26.143386386382343,
+        "y": -32.240148871464605,
+        "z": -1.689634606108107
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "TOI-1272 c",
+      "type": "gas giant planet",
+      "m": 0.0000651651,
+      "radius": 465.3439,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -1.2758949030497578e-17,
+        "y": -0.06942472525613796,
+        "z": 0.0036383956780094554
+      },
+      "velocity": {
+        "x": 23.626641357124416,
+        "y": -4.3381609348996e-15,
+        "z": 7.571518863277529e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-1272",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

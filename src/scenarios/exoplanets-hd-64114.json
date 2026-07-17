@@ -1,0 +1,131 @@
+{
+  "name": "HD 64114 - System",
+  "description": "HD 64114 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 64114",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.95,
+    "m": 0.95
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 64114",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 64114"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.001,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 64114",
+    "barycenterMassTwo": "HD 64114 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 64114",
+      "type": "star",
+      "m": 0.95,
+      "radius": 9066.9517,
+      "tilt": 0,
+      "temperature": 5676,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.00045303634956592886,
+        "y": 0.0006389692947895109,
+        "z": 0.00003348696176996918
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 64114 b",
+      "type": "gas giant planet",
+      "m": 0.0000534534,
+      "radius": 414.5791,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.17667746550055308,
+        "y": -0.1249231806994608,
+        "z": -0.006546946481432815
+      },
+      "velocity": {
+        "x": 8.051583848504162,
+        "y": -11.356075199146085,
+        "z": -0.5951466825584663
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 64114",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

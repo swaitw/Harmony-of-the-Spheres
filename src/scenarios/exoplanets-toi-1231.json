@@ -1,0 +1,131 @@
+{
+  "name": "TOI-1231 - System",
+  "description": "TOI-1231 is a cool M-dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-1231",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.485,
+    "m": 0.485
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-1231",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-1231"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-1231",
+    "barycenterMassTwo": "TOI-1231 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-1231",
+      "type": "star",
+      "m": 0.485,
+      "radius": 4888.52,
+      "tilt": 0,
+      "temperature": 3553,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.00008851353828303719,
+        "y": 0.0012640678317563936,
+        "z": 0.00006624698792548155
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-1231 b",
+      "type": "sub-Neptune",
+      "m": 0.0000462462,
+      "radius": 343.1324,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.11730794595187387,
+        "y": 0.00819172878983541,
+        "z": 0.00042931031436422836
+      },
+      "velocity": {
+        "x": -0.9282722919347542,
+        "y": -13.25671943644777,
+        "z": -0.6947552262425573
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-1231",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

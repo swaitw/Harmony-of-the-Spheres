@@ -1,0 +1,165 @@
+{
+  "name": "HD 5278 - System",
+  "description": "HD 5278 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 5278",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.126,
+    "m": 1.126
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 5278",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 5278"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 5278",
+    "barycenterMassTwo": "HD 5278 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 5278",
+      "type": "star",
+      "m": 1.126,
+      "radius": 12262.38,
+      "tilt": 0,
+      "temperature": 6203,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.0002071763515601112,
+        "y": 0.0010124052829403453,
+        "z": -0.000020968617360968584
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 5278 b",
+      "type": "super-Earth",
+      "m": 0.0000234234,
+      "radius": 230.3217,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.07819469629073317,
+        "y": 0.07808753317709008,
+        "z": 0.004092394203502095
+      },
+      "velocity": {
+        "x": -14.737318702555532,
+        "y": -14.71712171946291,
+        "z": -0.7712916667552641
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "HD 5278 c",
+      "type": "gas giant planet",
+      "m": 0.00005525519999999999,
+      "radius": 422.0998,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.22250135182940595,
+        "y": -0.031227670539825433,
+        "z": 0.001636572865174701
+      },
+      "velocity": {
+        "x": 2.025466183105917,
+        "y": -14.392189689063857,
+        "z": 0.7542627006241202
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 5278",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

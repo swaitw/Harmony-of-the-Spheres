@@ -1,0 +1,131 @@
+{
+  "name": "4 UMa - System",
+  "description": "4 UMa is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "4 UMa",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.234,
+    "m": 1.234
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "4 UMa",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "4 UMa"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00155,
+    "tol": 0.0001,
+    "maxDt": 0.0155,
+    "minDt": 0.000015,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "4 UMa",
+    "barycenterMassTwo": "4 UMa b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "4 UMa",
+      "type": "star",
+      "m": 1.234,
+      "radius": 185989.7,
+      "tilt": 0,
+      "temperature": 4415,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.03554851183511712,
+        "y": -0.06511122782102159,
+        "z": -0.0034123348564919116
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "4 UMa b",
+      "type": "gas giant planet",
+      "m": 0.00754197465654633,
+      "radius": 1184.5117,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.42118511498933536,
+        "y": 0.22932286907779925,
+        "z": 0.012018302307183058
+      },
+      "velocity": {
+        "x": -5.816363167762529,
+        "y": 10.653344619953122,
+        "z": 0.5583181334686778
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "4 UMa",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

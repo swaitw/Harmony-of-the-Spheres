@@ -1,0 +1,332 @@
+{
+  "name": "TRAPPIST-1 - System",
+  "description": "TRAPPIST-1 is a cool M-dwarf star with 7 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TRAPPIST-1",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.0898,
+    "m": 0.0898
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "7-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TRAPPIST-1",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TRAPPIST-1"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TRAPPIST-1",
+    "barycenterMassTwo": "TRAPPIST-1 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TRAPPIST-1",
+      "type": "star",
+      "m": 0.0898,
+      "radius": 1224.184,
+      "tilt": 0,
+      "temperature": 2566,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.0005838553566290542,
+        "y": -0.001049651464569168,
+        "z": -0.00005247929659975148
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TRAPPIST-1 b",
+      "type": "terrestial planet",
+      "m": 0.000004126122,
+      "radius": 104.9139,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.010545572645453161,
+        "y": -0.004500595759842366,
+        "z": -0.00023586622922400983
+      },
+      "velocity": {
+        "x": 6.932736560117861,
+        "y": 16.19994989261025,
+        "z": 0.8490033983682449
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "TRAPPIST-1 c",
+      "type": "terrestial planet",
+      "m": 0.000003927924,
+      "radius": 103.1277,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.014077033987714621,
+        "y": -0.006897753561902293,
+        "z": -0.0008021821552587488
+      },
+      "velocity": {
+        "x": 6.643551778044212,
+        "y": 13.538465726829816,
+        "z": 0.1701658256082404
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "TRAPPIST-1 d",
+      "type": "terrestial planet",
+      "m": 0.000001165164,
+      "radius": 74.079,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.001593834103864835,
+        "y": 0.02202531075677717,
+        "z": -0.000175420333694465
+      },
+      "velocity": {
+        "x": -12.676771135885563,
+        "y": -0.912095359425513,
+        "z": 0.6583411949473286
+      },
+      "nonStellarProceduralManifestation": true
+    },
+    {
+      "name": "TRAPPIST-1 e",
+      "type": "terrestial planet",
+      "m": 0.000002078076,
+      "radius": 86.4882,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.0037035722435156495,
+        "y": -0.02882797883107258,
+        "z": 0.001445408189030619
+      },
+      "velocity": {
+        "x": 10.975617393632293,
+        "y": -1.4192069461006598,
+        "z": -0.18256148443010126
+      },
+      "nonStellarProceduralManifestation": true
+    },
+    {
+      "name": "TRAPPIST-1 f",
+      "type": "terrestial planet",
+      "m": 0.000003120117,
+      "radius": 98.2393,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.031395509973711995,
+        "y": -0.02158754256755269,
+        "z": 0.00030541694786634464
+      },
+      "velocity": {
+        "x": 5.4901156717372706,
+        "y": -7.977369832131667,
+        "z": 0.5015127735283355
+      },
+      "nonStellarProceduralManifestation": true
+    },
+    {
+      "name": "TRAPPIST-1 g",
+      "type": "terrestial planet",
+      "m": 0.000003966963,
+      "radius": 106.136,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.0012495717503874855,
+        "y": 0.04671340913003466,
+        "z": -0.0004809183645790774
+      },
+      "velocity": {
+        "x": -8.70675239482294,
+        "y": 0.22829610964142144,
+        "z": -0.4475234750137677
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    },
+    {
+      "name": "TRAPPIST-1 h",
+      "type": "terrestial planet",
+      "m": 9.78978e-7,
+      "radius": 70.9767,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.018520094824475253,
+        "y": -0.0586747222474468,
+        "z": -0.001158395231785349
+      },
+      "velocity": {
+        "x": 7.25393149193666,
+        "y": 2.282291323754615,
+        "z": 0.3717984674286554
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TRAPPIST-1",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

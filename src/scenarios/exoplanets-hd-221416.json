@@ -1,0 +1,131 @@
+{
+  "name": "HD 221416 - System",
+  "description": "HD 221416 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 221416",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.212,
+    "m": 1.212
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 221416",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 221416"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 221416",
+    "barycenterMassTwo": "HD 221416 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 221416",
+      "type": "star",
+      "m": 1.212,
+      "radius": 30224.61,
+      "tilt": 0,
+      "temperature": 5080,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.003193494677825236,
+        "y": 0.0009144649010644816,
+        "z": 0.00004792507469707547
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 221416 b",
+      "type": "gas giant planet",
+      "m": 0.0001816815,
+      "radius": 862.0613,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.029955716555479826,
+        "y": -0.10432482882985619,
+        "z": -0.0054674326030561575
+      },
+      "velocity": {
+        "x": 21.303850692140838,
+        "y": -6.100409012971335,
+        "z": -0.31970888908807704
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 221416",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

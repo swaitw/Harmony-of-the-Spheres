@@ -1,0 +1,165 @@
+{
+  "name": "KOI-984 - System",
+  "description": "KOI-984 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "KOI-984",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.928,
+    "m": 0.928
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "KOI-984",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "KOI-984"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "KOI-984",
+    "barycenterMassTwo": "KOI-984 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "KOI-984",
+      "type": "star",
+      "m": 0.928,
+      "radius": 8400.86,
+      "tilt": 0,
+      "temperature": 5295,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.017549320642582564,
+        "y": 0.0012361544812898777,
+        "z": -0.0001103935574433697
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "KOI-984 b",
+      "type": "gas giant planet",
+      "m": 0.000051351300000000004,
+      "radius": 404.2381,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.011479142288387001,
+        "y": -0.0427820304992342,
+        "z": -0.0022421112116842033
+      },
+      "velocity": {
+        "x": 29.387911347142463,
+        "y": 7.863675429200038,
+        "z": 0.41211776624698987
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "KOI-984 c",
+      "type": "gas giant planet",
+      "m": 0.0006300294,
+      "radius": 1325.525,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.009507281848046162,
+        "y": -0.09033177801727882,
+        "z": 0.004734087884574223
+      },
+      "velocity": {
+        "x": 23.453924696777808,
+        "y": -2.461728476011574,
+        "z": 0.12901372262559183
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "KOI-984",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

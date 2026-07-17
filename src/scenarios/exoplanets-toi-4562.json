@@ -1,0 +1,165 @@
+{
+  "name": "TOI-4562 - System",
+  "description": "TOI-4562 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-4562",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.192,
+    "m": 1.192
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-4562",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-4562"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00127,
+    "tol": 0.0001,
+    "maxDt": 0.0127,
+    "minDt": 0.000013,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-4562",
+    "barycenterMassTwo": "TOI-4562 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-4562",
+      "type": "star",
+      "m": 1.192,
+      "radius": 11831.04,
+      "tilt": 0,
+      "temperature": 6096,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.033042172705027434,
+        "y": -0.003880085587766825,
+        "z": -0.0018430843029370858
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-4562 b",
+      "type": "gas giant planet",
+      "m": 0.002198196,
+      "radius": 1177.9311,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.09216,
+        "y": 0.15940704081105023,
+        "z": 0.008354169010988264
+      },
+      "velocity": {
+        "x": -18.362736837592234,
+        "y": 10.5872017522882,
+        "z": 0.5548517326589472
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "TOI-4562 c",
+      "type": "gas giant planet",
+      "m": 0.00550711133489517,
+      "radius": 1203.3135,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -4.576002141774258,
+        "y": -0.2394894478595143,
+        "z": 0.01255111012403886
+      },
+      "velocity": {
+        "x": 0.17770201863438878,
+        "y": -3.3861095932991194,
+        "z": 0.17745848419380872
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-4562",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

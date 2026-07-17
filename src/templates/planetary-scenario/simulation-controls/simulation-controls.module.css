@@ -1,3 +1,30 @@
+.scenario-back-button {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding) calc(2 * var(--padding));
+  background-color: var(--theme-color-1);
+  border-bottom: var(--border);
+  border-right: var(--border);
+  color: var(--theme-color-5);
+  transition:
+    color 0.2s,
+    background-color 0.2s;
+}
+
+.scenario-back-button:hover {
+  color: var(--theme-color-6);
+  background-color: var(--theme-color-4);
+}
+
+.scenario-back-button i {
+  font-size: 1.5rem;
+}
+
 .planetary-scenario-footer {
   position: absolute;
   bottom: 0;
@@ -18,21 +45,35 @@
   padding: var(--padding) calc(2 * var(--padding));
 }
 
+.reset-button-modifier {
+  width: fit-content;
+  padding: var(--padding) calc(2 * var(--padding));
+  margin-left: var(--padding);
+}
+
+.save-button-modifier {
+  width: fit-content;
+  padding: var(--padding) calc(2 * var(--padding));
+  margin-left: var(--padding);
+}
+
 .simulation-controls-tabs {
   display: flex;
   align-items: center;
-  width: var(--scenario-controls-tabs-width-small-screens);
+  margin-left: auto;
   overflow-x: auto;
 }
 
 .simulation-control-tab {
   height: var(--page-footer-height);
-  flex: 1 1 0;
+  flex-shrink: 0;
+  min-width: 5.25rem;
+  padding: 0.825rem 1.125rem;
   border-right: var(--border);
 }
 
-.simulation-control-tab:first-child {
-  border-left: var(--border);
+.simulation-control-tab i {
+  font-size: 1.5rem;
 }
 
 .simulation-control-tab:last-child {
@@ -51,6 +92,7 @@
   border-top: var(--border);
   font-size: 1.2rem;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .full-screen-canvas-element {
@@ -78,8 +120,6 @@
   }
 
   .simulation-controls-tabs {
-    display: flex;
-    width: var(--scenario-controls-width-medium-screens);
     border-left: var(--border);
   }
 }
@@ -94,14 +134,22 @@
   }
 
   .simulation-controls-tabs {
-    display: flex;
-    width: var(--scenario-controls-width-large-screens);
     border-left: var(--border);
   }
 }
 
 .simulation-controls-content-wrapper-close-button {
-  float: right;
-  margin-bottom: 2rem;
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  font-size: 1.75rem;
+  color: var(--theme-color-5);
   cursor: pointer;
+  line-height: 1;
+  z-index: 2;
+  transition: color 0.15s;
+}
+
+.simulation-controls-content-wrapper-close-button:hover {
+  color: var(--theme-color-6);
 }

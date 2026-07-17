@@ -1,0 +1,131 @@
+{
+  "name": "GJ 9404 - System",
+  "description": "GJ 9404 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "GJ 9404",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.62,
+    "m": 0.62
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "GJ 9404",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "GJ 9404"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "GJ 9404",
+    "barycenterMassTwo": "GJ 9404 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "GJ 9404",
+      "type": "star",
+      "m": 0.62,
+      "radius": 6429.4411,
+      "tilt": 0,
+      "temperature": 3811,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.001501160961519589,
+        "y": 0.0005161827896580761,
+        "z": 0.000027051993710104934
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "GJ 9404 b",
+      "type": "sub-Neptune",
+      "m": 0.0000357357,
+      "radius": 327.1508,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.015657549252308032,
+        "y": 0.045410505930221036,
+        "z": 0.002379863771922258
+      },
+      "velocity": {
+        "x": -26.04453798700306,
+        "y": -8.955563472606027,
+        "z": -0.4693411938276027
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "GJ 9404",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

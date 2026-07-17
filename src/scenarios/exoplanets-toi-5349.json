@@ -1,0 +1,131 @@
+{
+  "name": "TOI-5349 - System",
+  "description": "TOI-5349 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-5349",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.61,
+    "m": 0.61
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-5349",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-5349"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-5349",
+    "barycenterMassTwo": "TOI-5349 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-5349",
+      "type": "star",
+      "m": 0.61,
+      "radius": 5956.6,
+      "tilt": 0,
+      "temperature": 3751,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.012651205760439562,
+        "y": -0.010601073746403178,
+        "z": -0.0005555787330647404
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-5349 b",
+      "type": "gas giant planet",
+      "m": 0.0003825822,
+      "radius": 958.8904,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.023007296913510302,
+        "y": -0.02738145192658886,
+        "z": -0.0014350010890178725
+      },
+      "velocity": {
+        "x": 20.171444238305217,
+        "y": 16.902655129553697,
+        "z": 0.8858306193270143
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-5349",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

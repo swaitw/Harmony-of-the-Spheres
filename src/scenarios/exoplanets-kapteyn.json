@@ -1,0 +1,131 @@
+{
+  "name": "Kapteyn - System",
+  "description": "Kapteyn is a cool M-dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kapteyn",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.281,
+    "m": 0.281
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kapteyn",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kapteyn"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.001,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kapteyn",
+    "barycenterMassTwo": "Kapteyn c",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kapteyn",
+      "type": "star",
+      "m": 0.281,
+      "radius": 2988.57,
+      "tilt": 0,
+      "temperature": 3550,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.00003841778458591097,
+        "y": -0.0005627600943754211,
+        "z": -0.000029493006815330507
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kapteyn c",
+      "type": "sub-Neptune",
+      "m": 0.000021021,
+      "radius": 238.7825,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.23891545425276242,
+        "y": 0.01626530003619732,
+        "z": 0.0008524282542694714
+      },
+      "velocity": {
+        "x": -0.5135529931326285,
+        "y": 7.5227432814563215,
+        "z": 0.394250269497544
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kapteyn",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

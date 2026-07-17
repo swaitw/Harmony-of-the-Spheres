@@ -1,0 +1,233 @@
+{
+  "name": "Kepler-85 - System",
+  "description": "Kepler-85 is a Sun-like G/F-type star with 4 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-85",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.928,
+    "m": 0.928
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "4-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-85",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-85"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0002,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-85",
+    "barycenterMassTwo": "Kepler-85 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-85",
+      "type": "star",
+      "m": 0.928,
+      "radius": 8986.25,
+      "tilt": 0,
+      "temperature": 5505,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.00010517183046222568,
+        "y": 0.0003411293512447997,
+        "z": -0.00004014658264012682
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-85 b",
+      "type": "super-Earth",
+      "m": 0.00000552552,
+      "radius": 167.1478,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.07727300000000001,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": 21.9666151530665,
+        "z": 1.1512215185374175
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-85 c",
+      "type": "super-Earth",
+      "m": 0.00000645645,
+      "radius": 185.9495,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 6.1741786902578964e-18,
+        "y": 0.10083199,
+        "z": 0
+      },
+      "velocity": {
+        "x": -19.295809141955715,
+        "y": 1.1815275451327153e-15,
+        "z": 1.011250506599304
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-85 d",
+      "type": "terrestial planet",
+      "m": 0.00002611646037,
+      "radius": 112.8106,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.13,
+        "y": 1.5920408388915593e-17,
+        "z": 0
+      },
+      "velocity": {
+        "x": -2.0536012394588003e-15,
+        "y": -16.768926688810172,
+        "z": 0.8788222087206626
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-85 e",
+      "type": "terrestial planet",
+      "m": 0.0000018017999999999998,
+      "radius": 119.3913,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -2.994261423915279e-17,
+        "y": -0.163,
+        "z": 0
+      },
+      "velocity": {
+        "x": 14.975562362989567,
+        "y": -2.7509661769900118e-15,
+        "z": 0.7848359669589763
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-85",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

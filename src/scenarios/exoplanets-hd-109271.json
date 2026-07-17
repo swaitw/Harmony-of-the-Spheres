@@ -1,0 +1,165 @@
+{
+  "name": "HD 109271 - System",
+  "description": "HD 109271 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 109271",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.047,
+    "m": 1.047
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 109271",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 109271"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0002,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 109271",
+    "barycenterMassTwo": "HD 109271 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 109271",
+      "type": "star",
+      "m": 1.047,
+      "radius": 13295.4906,
+      "tilt": 0,
+      "temperature": 5783,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.0013884828331333437,
+        "y": 0.0005295636969627821,
+        "z": -0.00009446947039094132
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 109271 b",
+      "type": "gas giant planet",
+      "m": 0.000051537485999999994,
+      "radius": 405.1782,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.025973490447252837,
+        "y": -0.05318056510753315,
+        "z": -0.002787075318303
+      },
+      "velocity": {
+        "x": 26.548678283688975,
+        "y": 12.93090989985535,
+        "z": 0.6776802719605117
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 109271 c",
+      "type": "gas giant planet",
+      "m": 0.00007253446199999999,
+      "radius": 495.4267,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.16619417077328671,
+        "y": -0.01160550176187448,
+        "z": 0.0006082185748052647
+      },
+      "velocity": {
+        "x": 1.1786037776979252,
+        "y": -16.831720329725332,
+        "z": 0.8821130839941227
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 109271",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

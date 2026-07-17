@@ -1,0 +1,131 @@
+{
+  "name": "BD+03 2562 - System",
+  "description": "BD+03 2562 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "BD+03 2562",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.14,
+    "m": 1.14
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "BD+03 2562",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "BD+03 2562"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00284,
+    "tol": 0.0001,
+    "maxDt": 0.0284,
+    "minDt": 0.000028,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "BD+03 2562",
+    "barycenterMassTwo": "BD+03 2562 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "BD+03 2562",
+      "type": "star",
+      "m": 1.14,
+      "radius": 332234.5,
+      "tilt": 0,
+      "temperature": 4095,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.023778926708740336,
+        "y": 0.030393927278922376,
+        "z": 0.001592878232378569
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "BD+03 2562 b",
+      "type": "gas giant planet",
+      "m": 0.006108438336,
+      "radius": 1193.9126,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.8195311837509909,
+        "y": -0.6394104419776077,
+        "z": -0.03351008131443429
+      },
+      "velocity": {
+        "x": 4.437791618228096,
+        "y": -5.672329848001842,
+        "z": -0.2972742106946872
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "BD+03 2562",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

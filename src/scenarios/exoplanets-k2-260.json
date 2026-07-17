@@ -1,0 +1,131 @@
+{
+  "name": "K2-260 - System",
+  "description": "K2-260 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "K2-260",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.637,
+    "m": 1.637
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "K2-260",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "K2-260"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "K2-260",
+    "barycenterMassTwo": "K2-260 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "K2-260",
+      "type": "star",
+      "m": 1.637,
+      "radius": 18023.85,
+      "tilt": 0,
+      "temperature": 6860,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.038589135941412896,
+        "y": -0.01252118692720544,
+        "z": -0.0006562076008426836
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "K2-260 b",
+      "type": "gas giant planet",
+      "m": 0.00164163457470012,
+      "radius": 1731.3007,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.012852708994121463,
+        "y": -0.0395023599736936,
+        "z": -0.0020702309626605755
+      },
+      "velocity": {
+        "x": 38.48019316213071,
+        "y": 12.485837783709908,
+        "z": 0.6543550307325252
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "K2-260",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

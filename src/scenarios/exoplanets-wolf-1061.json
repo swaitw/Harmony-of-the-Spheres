@@ -1,0 +1,198 @@
+{
+  "name": "Wolf 1061 - System",
+  "description": "Wolf 1061 is a cool M-dwarf star with 3 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Wolf 1061",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.294,
+    "m": 0.294
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "3-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Wolf 1061",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Wolf 1061"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Wolf 1061",
+    "barycenterMassTwo": "Wolf 1061 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Wolf 1061",
+      "type": "star",
+      "m": 0.294,
+      "radius": 3152.89,
+      "tilt": 0,
+      "temperature": 3342,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.00005120111216122176,
+        "y": -0.0006799809139667096,
+        "z": -0.000031576261927460357
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Wolf 1061 b",
+      "type": "terrestial planet",
+      "m": 0.0000057357299999999995,
+      "radius": 113.7507,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.031875,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": 20.440920199749467,
+        "z": 1.0712632341707287
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Wolf 1061 c",
+      "type": "super-Earth",
+      "m": 0.00001024023,
+      "radius": 156.0547,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.07285661220994266,
+        "y": 0.030982477567775113,
+        "z": 0.0024948428913153012
+      },
+      "velocity": {
+        "x": -4.972409428789644,
+        "y": -11.735767809059427,
+        "z": 0.533202867019037
+      },
+      "nonStellarProceduralManifestation": true
+    },
+    {
+      "name": "Wolf 1061 d",
+      "type": "sub-Neptune",
+      "m": 0.0000231231,
+      "radius": 252.8838,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.20090291818732806,
+        "y": -0.06521533460670392,
+        "z": 0.010827169341587155
+      },
+      "velocity": {
+        "x": 2.8530665516463523,
+        "y": 8.772515410142594,
+        "z": -0.10038341132422039
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Wolf 1061",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

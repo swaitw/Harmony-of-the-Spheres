@@ -1,0 +1,131 @@
+{
+  "name": "TOI-628 - System",
+  "description": "TOI-628 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-628",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.311,
+    "m": 1.311
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-628",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-628"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-628",
+    "barycenterMassTwo": "TOI-628 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-628",
+      "type": "star",
+      "m": 1.311,
+      "radius": 13813.15,
+      "tilt": 0,
+      "temperature": 6250,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.15541682732690457,
+        "y": -0.044503983241969636,
+        "z": -0.0023323549309613094
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-628 b",
+      "type": "gas giant planet",
+      "m": 0.0060416272917,
+      "radius": 1116.9701,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.012431465257231315,
+        "y": -0.0432942567961278,
+        "z": -0.0022689558543947724
+      },
+      "velocity": {
+        "x": 33.724599480919004,
+        "y": 9.657120377216298,
+        "z": 0.5061082332389114
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-628",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "name": "HIP 21152 - System",
+  "description": "HIP 21152 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HIP 21152",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.4,
+    "m": 1.4
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HIP 21152",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HIP 21152"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.01,
+    "tol": 0.0001,
+    "maxDt": 0.1,
+    "minDt": 0.0001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HIP 21152",
+    "barycenterMassTwo": "HIP 21152 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HIP 21152",
+      "type": "star",
+      "m": 1.4,
+      "radius": 16348.4022,
+      "tilt": 0,
+      "temperature": 6655,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.014712975310543247,
+        "y": 0.04036816834444001,
+        "z": 0.0021156060566560634
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HIP 21152 b",
+      "type": "gas giant planet",
+      "m": 0.022906528949304,
+      "radius": 1128.1064,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -10.223855714150684,
+        "y": 3.7160794126733383,
+        "z": 0.19475146965763773
+      },
+      "velocity": {
+        "x": -0.899226830933126,
+        "y": -2.467219534102883,
+        "z": -0.12930149678607167
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HIP 21152",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

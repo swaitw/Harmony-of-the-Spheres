@@ -1,0 +1,165 @@
+{
+  "name": "GJ 414 A - System",
+  "description": "GJ 414 A is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "GJ 414 A",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.65,
+    "m": 0.65
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "GJ 414 A",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "GJ 414 A"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.001,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "GJ 414 A",
+    "barycenterMassTwo": "GJ 414 A b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "GJ 414 A",
+      "type": "star",
+      "m": 0.65,
+      "radius": 6983.6,
+      "tilt": 0,
+      "temperature": 4120,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.0005781138486680126,
+        "y": 0.0005401903656755354,
+        "z": -0.000005832330513727998
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "GJ 414 A b",
+      "type": "sub-Neptune",
+      "m": 0.000022822799999999998,
+      "radius": 247.2433,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.04580659131088029,
+        "y": 0.1191667121543619,
+        "z": 0.006245262748471502
+      },
+      "velocity": {
+        "x": -15.932779959550192,
+        "y": -6.107639410103146,
+        "z": -0.3200878181450897
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "GJ 414 A c",
+      "type": "gas giant planet",
+      "m": 0.00016165148999999998,
+      "radius": 789.6745,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.34537360683870005,
+        "y": -1.2028102332009218,
+        "z": 0.06303661322097724
+      },
+      "velocity": {
+        "x": 4.574066419647789,
+        "y": -1.3097949481331475,
+        "z": 0.06864344454780437
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "GJ 414 A",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

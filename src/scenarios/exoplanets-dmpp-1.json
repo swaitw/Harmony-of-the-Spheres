@@ -1,0 +1,233 @@
+{
+  "name": "DMPP-1 - System",
+  "description": "DMPP-1 is a Sun-like G/F-type star with 4 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "DMPP-1",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.21,
+    "m": 1.21
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "4-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "DMPP-1",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "DMPP-1"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "DMPP-1",
+    "barycenterMassTwo": "DMPP-1 d",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "DMPP-1",
+      "type": "star",
+      "m": 1.21,
+      "radius": 12940.2,
+      "tilt": 0,
+      "temperature": 6196,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.00013861816401824733,
+        "y": 0.000013897610389562781,
+        "z": 0.0000711480383665504
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "DMPP-1 d",
+      "type": "super-Earth",
+      "m": 0.00001417416,
+      "radius": 189.8979,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.017205169333889277,
+        "y": -0.022800740364850705,
+        "z": -0.0011949361685310244
+      },
+      "velocity": {
+        "x": 38.08126271047189,
+        "y": -28.656962480731597,
+        "z": -1.5018477646125747
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "DMPP-1 e",
+      "type": "super-Earth",
+      "m": 0.00001240239,
+      "radius": 174.8565,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 3.70718955803891e-18,
+        "y": 0.060543,
+        "z": 0
+      },
+      "velocity": {
+        "x": -29.02388599892875,
+        "y": 1.777200454370289e-15,
+        "z": 1.5210774113680081
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "DMPP-1 c",
+      "type": "sub-Neptune",
+      "m": 0.00003285282,
+      "radius": 311.1693,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.039088299657223644,
+        "y": -0.06496470107196388,
+        "z": 0.003404655714968233
+      },
+      "velocity": {
+        "x": 23.75926612272449,
+        "y": 14.25644257822396,
+        "z": -0.7471484960009123
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "DMPP-1 b",
+      "type": "gas giant planet",
+      "m": 0.0000504504,
+      "radius": 400.4778,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.007930194001031149,
+        "y": 0.1135626914815784,
+        "z": -0.000415603856877739
+      },
+      "velocity": {
+        "x": -22.360402076297774,
+        "y": -1.565737419687695,
+        "z": -1.17185901669467
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "DMPP-1",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

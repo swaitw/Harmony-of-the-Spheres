@@ -1,0 +1,199 @@
+{
+  "name": "HD 73344 - System",
+  "description": "HD 73344 is a Sun-like G/F-type star with 3 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 73344",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.2,
+    "m": 1.2
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "3-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 73344",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 73344"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 73344",
+    "barycenterMassTwo": "HD 73344 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 73344",
+      "type": "star",
+      "m": 1.2,
+      "radius": 12529.4,
+      "tilt": 0,
+      "temperature": 6253,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.008565693695672815,
+        "y": -0.00022058304021863967,
+        "z": -0.00007285282100500113
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 73344 b",
+      "type": "sub-Neptune",
+      "m": 0.00003147144,
+      "radius": 271.1216,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.11410358141038215,
+        "y": 0.05584435657282121,
+        "z": 0.0029266787134718656
+      },
+      "velocity": {
+        "x": -8.626172199269293,
+        "y": -17.577087739109636,
+        "z": -0.9211761346699076
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 73344 c",
+      "type": "gas giant planet",
+      "m": 0.00035600563741743,
+      "radius": 1269.1197,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.18239483359199804,
+        "y": -0.23368420515568233,
+        "z": 0.014401692440276961
+      },
+      "velocity": {
+        "x": 10.552020191950334,
+        "y": -8.252235008320222,
+        "z": -0.26267827359251417
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 73344 d",
+      "type": "gas giant planet",
+      "m": 0.00243381870086355,
+      "radius": 1240.917,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 2.64957004161917,
+        "y": -4.806578550020261,
+        "z": 0.24620568035550577
+      },
+      "velocity": {
+        "x": 2.7913877967652136,
+        "y": 1.5431379886025967,
+        "z": 0.08625501595875848
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 73344",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

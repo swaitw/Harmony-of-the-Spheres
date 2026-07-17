@@ -2,19 +2,25 @@
   width: 100%;
   height: fit-content;
   padding: var(--padding);
-  font-size: 1.3rem;
+  font-size: 1.05rem;
   color: var(--theme-color-5);
   text-transform: uppercase;
   font-weight: bold;
+  letter-spacing: 0.1em;
   box-sizing: border-box;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  transition: 0.25s color;
+  gap: 0.5625rem;
+  background-color: transparent;
+  transition:
+    color 0.2s,
+    background-color 0.2s;
   cursor: pointer;
   border: var(--border);
 }
 
 .button:hover {
   color: var(--theme-color-6);
+  background-color: var(--theme-color-4);
 }

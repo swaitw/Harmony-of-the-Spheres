@@ -1,0 +1,131 @@
+{
+  "name": "TOI-4994 - System",
+  "description": "TOI-4994 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-4994",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.005,
+    "m": 1.005
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-4994",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-4994"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-4994",
+    "barycenterMassTwo": "TOI-4994 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-4994",
+      "type": "star",
+      "m": 1.005,
+      "radius": 10834.85,
+      "tilt": 0,
+      "temperature": 5640,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.0035968260106063,
+        "y": 0.004783957223889118,
+        "z": 0.0002507165742890915
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-4994 b",
+      "type": "gas giant planet",
+      "m": 0.00026724283774188,
+      "radius": 802.9526,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.08250466574310086,
+        "y": 0.06186136008726773,
+        "z": 0.003242016505602262
+      },
+      "velocity": {
+        "x": -13.526312514877361,
+        "y": -17.99066740434898,
+        "z": -0.9428509264817252
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-4994",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

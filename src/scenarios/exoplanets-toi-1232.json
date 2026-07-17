@@ -1,0 +1,165 @@
+{
+  "name": "TOI-1232 - System",
+  "description": "TOI-1232 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-1232",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.058,
+    "m": 1.058
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-1232",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-1232"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-1232",
+    "barycenterMassTwo": "TOI-1232 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-1232",
+      "type": "star",
+      "m": 1.058,
+      "radius": 11009.44,
+      "tilt": 0,
+      "temperature": 5823,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.010377525831985394,
+        "y": 0.00291155947394188,
+        "z": 0.000017655106479082404
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-1232 b",
+      "type": "gas giant planet",
+      "m": 0.00066238046212338,
+      "radius": 1027.4,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.014089594287602494,
+        "y": 0.10833519343974714,
+        "z": 0.005677606906375842
+      },
+      "velocity": {
+        "x": -20.002539350233267,
+        "y": -2.594315979199279,
+        "z": -0.13596233922834272
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "TOI-1232 c",
+      "type": "gas giant planet",
+      "m": 0.00017561672195066998,
+      "radius": 834.7987,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.09721961709617168,
+        "y": -0.16157887189693576,
+        "z": 0.0084679898551774
+      },
+      "velocity": {
+        "x": 12.925129811076038,
+        "y": -7.755558190050966,
+        "z": 0.40645158184097346
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-1232",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "name": "TOI-4504 - System",
+  "description": "TOI-4504 is a Sun-like G/F-type star with 3 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-4504",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.89,
+    "m": 0.89
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "3-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-4504",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-4504"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-4504",
+    "barycenterMassTwo": "TOI-4504 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-4504",
+      "type": "star",
+      "m": 0.89,
+      "radius": 9448.4,
+      "tilt": 0,
+      "temperature": 5315,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.008585225593102855,
+        "y": 0.05186495436547202,
+        "z": 0.00011700784577317181
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-4504 b",
+      "type": "sub-Neptune",
+      "m": 0.00002315313,
+      "radius": 252.9779,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 2.077000971353911e-18,
+        "y": 0.03387351381887514,
+        "z": 0.0017752356357606548
+      },
+      "velocity": {
+        "x": -32.193309834703356,
+        "y": 1.968570132808038e-15,
+        "z": 1.0316838902339076e-16
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "TOI-4504 d",
+      "type": "gas giant planet",
+      "m": 0.00135205787124408,
+      "radius": 1278.5206,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.16614355484276747,
+        "y": -0.13126516312586273,
+        "z": 0.010980327019331576
+      },
+      "velocity": {
+        "x": 8.15399768364273,
+        "y": -10.32890854240137,
+        "z": -0.09942357713172802
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "TOI-4504 c",
+      "type": "gas giant planet",
+      "m": 0.0035955614940745497,
+      "radius": 1043.2061,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.3014601445267013,
+        "y": 0.16778205374733357,
+        "z": -0.01807875368788575
+      },
+      "velocity": {
+        "x": -4.9839647214866885,
+        "y": -8.953963752869303,
+        "z": 0.008424121617719396
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-4504",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

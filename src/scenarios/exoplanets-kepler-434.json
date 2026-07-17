@@ -1,0 +1,131 @@
+{
+  "name": "Kepler-434 - System",
+  "description": "Kepler-434 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-434",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.198,
+    "m": 1.198
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-434",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-434"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-434",
+    "barycenterMassTwo": "Kepler-434 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-434",
+      "type": "star",
+      "m": 1.198,
+      "radius": 14172.6,
+      "tilt": 0,
+      "temperature": 5977,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.05237467214443712,
+        "y": -0.0073506924470815825,
+        "z": -0.0003852334673441697
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-434 b",
+      "type": "gas giant planet",
+      "m": 0.00272960688,
+      "radius": 1191.0923,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.013823604847130135,
+        "y": 0.09822526034055024,
+        "z": 0.005147767763946817
+      },
+      "velocity": {
+        "x": -22.986774281956553,
+        "y": 3.2261530464796224,
+        "z": 0.16907551679321503
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-434",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

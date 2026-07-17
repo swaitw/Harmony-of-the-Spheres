@@ -1,0 +1,165 @@
+{
+  "name": "LTT 3780 - System",
+  "description": "LTT 3780 is a cool M-dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "LTT 3780",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.381,
+    "m": 0.381
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "LTT 3780",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "LTT 3780"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00002,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "LTT 3780",
+    "barycenterMassTwo": "LTT 3780 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "LTT 3780",
+      "type": "star",
+      "m": 0.381,
+      "radius": 3902.6,
+      "tilt": 0,
+      "temperature": 3358,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.0015241790033645622,
+        "y": 0.00037174255273814583,
+        "z": -0.000019482201654015064
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "LTT 3780 b",
+      "type": "terrestial planet",
+      "m": 0.000007387379999999999,
+      "radius": 124.5617,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 7.317264624905436e-19,
+        "y": 0.011933622940317157,
+        "z": 0.0006254146771031789
+      },
+      "velocity": {
+        "x": -35.487637071764,
+        "y": 2.1700130487390632e-15,
+        "z": 1.1372556489963617e-16
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "LTT 3780 c",
+      "type": "super-Earth",
+      "m": 0.000024144119999999996,
+      "radius": 224.6812,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.030051004747697948,
+        "y": 0.06740316129744603,
+        "z": -0.003532450000255777
+      },
+      "velocity": {
+        "x": -13.193752347598103,
+        "y": -5.866186574339161,
+        "z": 0.3074338112211064
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "LTT 3780",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

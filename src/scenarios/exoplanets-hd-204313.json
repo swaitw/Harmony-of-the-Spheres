@@ -1,0 +1,199 @@
+{
+  "name": "HD 204313 - System",
+  "description": "HD 204313 is a Sun-like G/F-type star with 3 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 204313",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.03,
+    "m": 1.03
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "3-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 204313",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 204313"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 204313",
+    "barycenterMassTwo": "HD 204313 c",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 204313",
+      "type": "star",
+      "m": 1.03,
+      "radius": 11297,
+      "tilt": 0,
+      "temperature": 5767,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.047126235959728584,
+        "y": 0.012361553212152666,
+        "z": 0.0006834423111374996
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 204313 c",
+      "type": "gas giant planet",
+      "m": 0.00005153969014193999,
+      "radius": 405.1782,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.1250868002318327,
+        "y": -0.1539826901654809,
+        "z": -0.008069890839601445
+      },
+      "velocity": {
+        "x": 11.439960332663235,
+        "y": 9.267720158500373,
+        "z": 0.48570063252367923
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 204313 b",
+      "type": "gas giant planet",
+      "m": 0.0044047346291949,
+      "radius": 1212.7144,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 1.9520605201913375,
+        "y": 2.0942056584441247,
+        "z": -0.1434734667140193
+      },
+      "velocity": {
+        "x": -2.8879407200284235,
+        "y": 2.6960602425911007,
+        "z": 0.0604261646327457
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    },
+    {
+      "name": "HD 204313 e",
+      "type": "gas giant planet",
+      "m": 0.01461913766319006,
+      "radius": 1146.9082,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -3.1520122018449603,
+        "y": 4.585265697518776,
+        "z": -0.26321049792729134
+      },
+      "velocity": {
+        "x": -2.4905041180647784,
+        "y": -1.7159346689722093,
+        "z": -0.06807102329616999
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 204313",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

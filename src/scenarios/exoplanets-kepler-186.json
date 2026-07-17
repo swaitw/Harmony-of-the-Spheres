@@ -1,0 +1,267 @@
+{
+  "name": "Kepler-186 - System",
+  "description": "Kepler-186 is a orange K-type dwarf star with 5 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-186",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.478,
+    "m": 0.478
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "5-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-186",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-186"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-186",
+    "barycenterMassTwo": "Kepler-186 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-186",
+      "type": "star",
+      "m": 0.478,
+      "radius": 4847.44,
+      "tilt": 0,
+      "temperature": 3788,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.00022793389709945588,
+        "y": 0.00005478369109524218,
+        "z": -0.00004980884437169359
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-186 b",
+      "type": "terrestial planet",
+      "m": 0.0000037237199999999997,
+      "radius": 100.5895,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.0343,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": 23.429868028596317,
+        "z": 1.2279073522734596
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-186 c",
+      "type": "terrestial planet",
+      "m": 0.0000063063,
+      "radius": 117.5111,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.01393666644631013,
+        "y": 0.04289264888491143,
+        "z": 0
+      },
+      "velocity": {
+        "x": -19.43278102919803,
+        "y": 6.3140933089676095,
+        "z": 1.0708395154066939
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-186 d",
+      "type": "terrestial planet",
+      "m": 0.00000762762,
+      "radius": 131.6124,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.06318422726068339,
+        "y": 0.04590602820404216,
+        "z": 0
+      },
+      "velocity": {
+        "x": -9.12662215064845,
+        "y": -12.56171772312426,
+        "z": 0.8137427698388404
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-186 e",
+      "type": "terrestial planet",
+      "m": 0.00000645645,
+      "radius": 119.3913,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.08899186938124422,
+        "y": -0.06465637775217203,
+        "z": 0
+      },
+      "velocity": {
+        "x": 7.690228516455275,
+        "y": -10.584691494340898,
+        "z": 0.6856718455501448
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-186 f",
+      "type": "terrestial planet",
+      "m": 0.00000513513,
+      "radius": 109.9904,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.1281555279071781,
+        "y": -0.3944221584379261,
+        "z": 0
+      },
+      "velocity": {
+        "x": 6.535253038297585,
+        "y": 2.123432432008828,
+        "z": 0.3601238127510315
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-186",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

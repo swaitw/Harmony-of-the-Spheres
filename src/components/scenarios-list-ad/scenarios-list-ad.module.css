@@ -1,0 +1,17 @@
+.scenarios-list-ad-layout {
+  width: 100%;
+}
+
+.scenarios-list-ad-layout-inner {
+  width: 100%;
+  max-width: 728px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+
+.scenarios-list-ad {
+  display: block;
+  width: 100%;
+  margin: 1rem auto;
+}

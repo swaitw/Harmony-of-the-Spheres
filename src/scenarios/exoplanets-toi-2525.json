@@ -1,0 +1,165 @@
+{
+  "name": "TOI-2525 - System",
+  "description": "TOI-2525 is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-2525",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.849,
+    "m": 0.849
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-2525",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-2525"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-2525",
+    "barycenterMassTwo": "TOI-2525 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-2525",
+      "type": "star",
+      "m": 0.849,
+      "radius": 8061.95,
+      "tilt": 0,
+      "temperature": 5096,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.004087239450582423,
+        "y": 0.007712503638317133,
+        "z": -0.000573760991976358
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-2525 b",
+      "type": "gas giant planet",
+      "m": 0.00008017285132857,
+      "radius": 815.5975,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.12163455905290592,
+        "y": -0.03051061834813639,
+        "z": -0.0015989937521782393
+      },
+      "velocity": {
+        "x": 4.309015852965088,
+        "y": 17.13140097005119,
+        "z": 0.8978186808477208
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "TOI-2525 c",
+      "type": "gas giant planet",
+      "m": 0.0006270662299902,
+      "radius": 952.5842,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.1953011604424028,
+        "y": -0.07682574149913339,
+        "z": 0.004026266503742563
+      },
+      "velocity": {
+        "x": 4.982887064801893,
+        "y": -12.632459655939499,
+        "z": 0.6620391574504
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-2525",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

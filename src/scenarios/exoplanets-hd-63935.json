@@ -1,0 +1,165 @@
+{
+  "name": "HD 63935 - System",
+  "description": "HD 63935 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 63935",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.9406,
+    "m": 0.9406
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 63935",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 63935"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0002,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 63935",
+    "barycenterMassTwo": "HD 63935 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 63935",
+      "type": "star",
+      "m": 0.9406,
+      "radius": 9857.146,
+      "tilt": 0,
+      "temperature": 5513,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.0001477618344651403,
+        "y": 5.972752552794161e-20,
+        "z": -4.0722990437222155e-21
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 63935 b",
+      "type": "sub-Neptune",
+      "m": 0.0000315315,
+      "radius": 274.1066,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 5.082284216461516e-18,
+        "y": 0.08288625138462963,
+        "z": 0.0043438843681643385
+      },
+      "velocity": {
+        "x": -21.157384993402093,
+        "y": 1.2937407306109046e-15,
+        "z": 6.780207865933677e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 63935 c",
+      "type": "sub-Neptune",
+      "m": 0.000033333299999999995,
+      "radius": 288.0914,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -2.7162319570104165e-17,
+        "y": -0.1477971711436769,
+        "z": 0.0077457215239556875
+      },
+      "velocity": {
+        "x": 15.844194946841366,
+        "y": -2.909201799966989e-15,
+        "z": 5.077514789349506e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 63935",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "name": "HIP 41378 - System",
+  "description": "HIP 41378 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HIP 41378",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.245,
+    "m": 1.245
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HIP 41378",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HIP 41378"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HIP 41378",
+    "barycenterMassTwo": "HIP 41378 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HIP 41378",
+      "type": "star",
+      "m": 1.245,
+      "radius": 13412.62,
+      "tilt": 0,
+      "temperature": 6371,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.00019435587544198714,
+        "y": -0.0006612467347953357,
+        "z": -0.000009576975175318147
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HIP 41378 b",
+      "type": "super-Earth",
+      "m": 0.00002720718,
+      "radius": 227.4074,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.12425616250741187,
+        "y": -0.028647481218090028,
+        "z": -0.0015013508726927306
+      },
+      "velocity": {
+        "x": 4.464274806240725,
+        "y": 19.31039807189405,
+        "z": 1.0120150800194878
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "HIP 41378 c",
+      "type": "sub-Neptune",
+      "m": 0.00001960959,
+      "radius": 235.4922,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.18090234118524443,
+        "y": -0.07298912382184955,
+        "z": 0.0038251978913180548
+      },
+      "velocity": {
+        "x": 6.1456020601357535,
+        "y": 15.190052857123412,
+        "z": -0.7960769374338532
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HIP 41378",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

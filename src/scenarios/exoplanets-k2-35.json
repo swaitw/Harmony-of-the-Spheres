@@ -1,0 +1,165 @@
+{
+  "name": "K2-35 - System",
+  "description": "K2-35 is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "K2-35",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.701968,
+    "m": 0.701968
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "K2-35",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "K2-35"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "K2-35",
+    "barycenterMassTwo": "K2-35 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "K2-35",
+      "type": "star",
+      "m": 0.701968,
+      "radius": 6363.0352,
+      "tilt": 0,
+      "temperature": 4403,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.0006356337748877411,
+        "y": 0.0002676287908397156,
+        "z": -0.000023377343212892266
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "K2-35 b",
+      "type": "terrestial planet",
+      "m": 0.000006906899999999999,
+      "radius": 124.0917,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.007184736481469602,
+        "y": -0.025959767303161133,
+        "z": -0.0013604937550631788
+      },
+      "velocity": {
+        "x": 32.852724838088776,
+        "y": 9.067556230877962,
+        "z": 0.4752104855844173
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "K2-35 c",
+      "type": "super-Earth",
+      "m": 0.000013153139999999999,
+      "radius": 181.4371,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.036439129550637835,
+        "y": -0.03181148196326532,
+        "z": 0.0016671691253972551
+      },
+      "velocity": {
+        "x": 16.67161487722343,
+        "y": -19.044543825978018,
+        "z": 0.998082249378061
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "K2-35",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

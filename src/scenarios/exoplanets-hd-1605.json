@@ -1,0 +1,165 @@
+{
+  "name": "HD 1605 - System",
+  "description": "HD 1605 is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 1605",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.33,
+    "m": 1.33
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 1605",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 1605"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00315,
+    "tol": 0.0001,
+    "maxDt": 0.0315,
+    "minDt": 0.000031,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 1605",
+    "barycenterMassTwo": "HD 1605 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 1605",
+      "type": "star",
+      "m": 1.33,
+      "radius": 35842.3,
+      "tilt": 0,
+      "temperature": 4915,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.0062011839886163345,
+        "y": -0.003067115049228007,
+        "z": 0.0005312131970355316
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 1605 b",
+      "type": "gas giant planet",
+      "m": 0.00089145021966,
+      "radius": 1297.3223,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -1.0923832868247165,
+        "y": -0.7925752273191718,
+        "z": -0.041537107578549365
+      },
+      "velocity": {
+        "x": 3.8365548540480834,
+        "y": -5.273327907558043,
+        "z": -0.2763634050664034
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 1605 c",
+      "type": "gas giant planet",
+      "m": 0.0034550854337999995,
+      "radius": 1222.1152,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 1.9433714437222243,
+        "y": 2.5754066618511464,
+        "z": -0.13497134389836885
+      },
+      "velocity": {
+        "x": -3.376956256449525,
+        "y": 2.5412316150308323,
+        "z": -0.1331803055876222
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 1605",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

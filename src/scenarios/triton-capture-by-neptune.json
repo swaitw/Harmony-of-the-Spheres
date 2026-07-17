@@ -1,0 +1,191 @@
+{
+  "name": "Triton Capture by Neptune",
+  "description": "Initial conditions from Agnor & Hamilton (2006, Nature 441, 192–194): an equal-mass Triton binary on a planar encounter with v∞ = 0.50 km s⁻¹, q_e = 8 R_N, and a_B = 20 R₁ (ρ₁ = 2.0 g cm⁻³). The encounter is set up in a Neptune-centered frame, as in the paper's Figure 1 — the Sun is included for context at ~30 AU. A binary orbital phase that yields exchange capture is used. At default playback speed, capture begins after roughly 45–60 seconds of simulation time, and Triton remains bound to Neptune.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": false,
+  "massBeingModified": {
+    "name": "Neptune",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1,
+    "m": 0.00005151
+  },
+  "category": {
+    "name": "What If",
+    "subCategory": null
+  },
+  "camera": {
+    "cameraFocus": "Neptune",
+    "logarithmicDepthBuffer": true,
+    "rotatingReferenceFrame": "Neptune",
+    "defaultCameraPositionOnScenarioStart": true,
+    "customBarycenterCameraPosition": {
+      "x": 0,
+      "y": 0,
+      "z": -8000
+    }
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0005,
+    "tol": 0.0001,
+    "maxDt": 0.05,
+    "minDt": 0.000005,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": true,
+    "barycenterMassOne": "Neptune",
+    "barycenterMassTwo": "Triton",
+    "systemBarycenter": false
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": false,
+    "trails": true,
+    "labels": true
+  },
+  "lagrangePoints": {
+    "display": false,
+    "selectedMassName": "Neptune"
+  },
+  "masses": [
+    {
+      "name": "Sun",
+      "type": "star",
+      "m": 1,
+      "radius": 10270,
+      "tilt": 0,
+      "temperature": 5778,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": -29.87212043847291,
+        "y": -0.5189395049681488,
+        "z": 0.6990674683244985
+      },
+      "velocity": {
+        "x": 0.029930890598467094,
+        "y": -1.1529757905812843,
+        "z": 0.023167573455729864
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Neptune",
+      "type": "ice giant planet",
+      "m": 0.00005151,
+      "radius": 363.5,
+      "tilt": -28.32,
+      "atmosphere": "lightskyblue",
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Triton",
+      "type": "moon",
+      "m": 1.0764e-8,
+      "radius": 19.97,
+      "tilt": -28.32,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.010529098040377978,
+        "y": -0.008255321404097562,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.5608124470998136,
+        "y": 0.20174327040481535,
+        "z": 0
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Binary Partner",
+      "type": "moon",
+      "m": 1.0764e-8,
+      "radius": 19.97,
+      "tilt": -28.32,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.01069963516953394,
+        "y": -0.007936268876122423,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.5003439723348503,
+        "y": 0.16942219726898308,
+        "z": 0
+      },
+      "nonStellarProceduralManifestation": false
+    }
+  ]
+}

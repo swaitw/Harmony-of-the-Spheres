@@ -1,0 +1,165 @@
+{
+  "name": "GJ 849 - System",
+  "description": "GJ 849 is a cool M-dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "GJ 849",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.45,
+    "m": 0.45
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "GJ 849",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "GJ 849"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.01,
+    "tol": 0.0001,
+    "maxDt": 0.1,
+    "minDt": 0.0001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "GJ 849",
+    "barycenterMassTwo": "GJ 849 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "GJ 849",
+      "type": "star",
+      "m": 0.45,
+      "radius": 4621.5,
+      "tilt": 0,
+      "temperature": 3467,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.0024123994167120667,
+        "y": -0.0015486889404891016,
+        "z": 0.0002836074808189672
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "GJ 849 b",
+      "type": "gas giant planet",
+      "m": 0.00085231376465235,
+      "radius": 1306.7232,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.8073026472996887,
+        "y": 2.100213079364529,
+        "z": 0.11006750351069253
+      },
+      "velocity": {
+        "x": -2.660177540000439,
+        "y": -1.0197470386477745,
+        "z": -0.053442677725987466
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    },
+    {
+      "name": "GJ 849 c",
+      "type": "gas giant planet",
+      "m": 0.0009448943191587899,
+      "radius": 1297.3223,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 3.5895471634585623,
+        "y": -2.701210807218369,
+        "z": 0.14156445978166582
+      },
+      "velocity": {
+        "x": 1.250643772832739,
+        "y": 1.6573858356109872,
+        "z": -0.08685991105953945
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "GJ 849",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

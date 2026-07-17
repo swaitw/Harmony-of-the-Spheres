@@ -1,0 +1,267 @@
+{
+  "name": "TOI-5624 - System",
+  "description": "TOI-5624 is a Sun-like G/F-type star with 5 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-5624",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.858,
+    "m": 0.858
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "5-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-5624",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-5624"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-5624",
+    "barycenterMassTwo": "TOI-5624 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-5624",
+      "type": "star",
+      "m": 0.858,
+      "radius": 8421.4,
+      "tilt": 0,
+      "temperature": 5327,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.0005800140439840605,
+        "y": -0.0002767039509688018,
+        "z": -8.405428328786667e-21
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-5624 b",
+      "type": "super-Earth",
+      "m": 0.0000282282,
+      "radius": 217.5365,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 2.572370601609015e-18,
+        "y": 0.04195242675503964,
+        "z": 0.0021986335217660706
+      },
+      "velocity": {
+        "x": -28.40310707143837,
+        "y": 1.736805210364216e-15,
+        "z": 9.102210412240378e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "TOI-5624 c",
+      "type": "super-Earth",
+      "m": 0.000014414399999999999,
+      "radius": 232.5779,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.07003479554022977,
+        "y": 0.022755684492665167,
+        "z": 0.003859253413354678
+      },
+      "velocity": {
+        "x": -6.624803318612364,
+        "y": -20.38904811071725,
+        "z": 6.870235826581552e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "TOI-5624 d",
+      "type": "sub-Neptune",
+      "m": 0.0000147147,
+      "radius": 336.9278,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.06263073538056053,
+        "y": -0.08620381184361776,
+        "z": 0.005584246531122107
+      },
+      "velocity": {
+        "x": 14.418418489401892,
+        "y": -10.475594219129292,
+        "z": 5.711379281388033e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "TOI-5624 e",
+      "type": "sub-Neptune",
+      "m": 0.0000267267,
+      "radius": 305.2468,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.08446638070536698,
+        "y": -0.11625799929050232,
+        "z": 0.007531144103359618
+      },
+      "velocity": {
+        "x": 12.415649374747543,
+        "y": 9.020497283557257,
+        "z": 4.9180485818214664e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "TOI-5624 f",
+      "type": "sub-Neptune",
+      "m": 0.000039039,
+      "radius": 344.0724,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.22471158970461574,
+        "y": 0.07301322146683717,
+        "z": 0.012382687247080512
+      },
+      "velocity": {
+        "x": -3.6984281472017337,
+        "y": 11.38259142206836,
+        "z": 3.835445723732853e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-5624",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

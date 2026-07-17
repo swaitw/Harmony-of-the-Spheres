@@ -1,0 +1,131 @@
+{
+  "name": "HD 180053 - System",
+  "description": "HD 180053 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 180053",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.75,
+    "m": 1.75
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 180053",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 180053"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00117,
+    "tol": 0.0001,
+    "maxDt": 0.0117,
+    "minDt": 0.000012,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 180053",
+    "barycenterMassTwo": "HD 180053 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 180053",
+      "type": "star",
+      "m": 1.75,
+      "radius": 41696.2,
+      "tilt": 0,
+      "temperature": 5131,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.011402807410151594,
+        "y": -0.002839142911965756,
+        "z": -0.00014879317508331222
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 180053 b",
+      "type": "gas giant planet",
+      "m": 0.00209404901706,
+      "radius": 1250.3179,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.18742100519328775,
+        "y": 0.7506744091522194,
+        "z": 0.03934117874827688
+      },
+      "velocity": {
+        "x": -9.529343776193722,
+        "y": 2.3726761195474504,
+        "z": 0.12434668638338546
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 180053",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

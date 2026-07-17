@@ -11,9 +11,9 @@
   /* Font variables */
 
   --font-family: Verdana, Geneva, Tahoma, sans-serif;
-  --root-font-size: 62.5%;
-  --bread-text-font-size: 1.2rem;
-  --tab-font-size: 1.2rem;
+  --root-font-size: 68.75%;
+  --bread-text-font-size: 1.1rem;
+  --tab-font-size: 1.25rem;
   --font-color: var(--theme-color-5);
 
   /* Font header variables */
@@ -28,14 +28,19 @@
 
   /* Layout variables */
 
-  --page-header-height: 5rem;
-  --page-footer-height: 6rem;
+  --page-header-height: 4.625rem;
+  --page-footer-height: 5.625rem;
   --scenario-controls-tabs-width-small-screens: 30rem;
   --scenario-controls-width-small-screens: 100%;
-  --scenario-controls-width-medium-screens: 20rem;
-  --scenario-controls-width-large-screens: 40rem;
+  --scenario-controls-width-medium-screens: 15rem;
+  --scenario-controls-width-large-screens: 41.25rem;
   --padding: 1rem;
   --border: 1px solid var(--theme-color-4);
+
+  --ad-banner-height-mobile: 3.125rem;
+  --ad-banner-height-desktop: 5.625rem;
+  --ad-rectangle-width: 18.75rem;
+  --ad-rectangle-height: 15.625rem;
 
   font-family: var(--font-family);
   font-size: var(--root-font-size);

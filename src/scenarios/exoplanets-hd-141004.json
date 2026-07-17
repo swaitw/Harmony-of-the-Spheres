@@ -1,0 +1,131 @@
+{
+  "name": "HD 141004 - System",
+  "description": "HD 141004 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 141004",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.051904,
+    "m": 1.051904
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 141004",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 141004"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 141004",
+    "barycenterMassTwo": "HD 141004 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 141004",
+      "type": "star",
+      "m": 1.051904,
+      "radius": 14268.8504,
+      "tilt": 0,
+      "temperature": 5885,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.00027946320630042567,
+        "y": -0.000788947060097322,
+        "z": -0.0000413469633915847
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 141004 b",
+      "type": "sub-Neptune",
+      "m": 0.00004094542049598,
+      "radius": 354.4134,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.09803892201365604,
+        "y": 0.034632521712968746,
+        "z": 0.001815013553948398
+      },
+      "velocity": {
+        "x": -7.179519980484866,
+        "y": 20.268361107345136,
+        "z": 1.0622197953427206
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 141004",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

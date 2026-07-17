@@ -1,0 +1,263 @@
+{
+  "name": "Jupiter and the Galilean Moons",
+  "description": "Io, Europa, Ganymede, and Callisto in orbit around Jupiter. Observe the orbital resonances and strong tidal forces that make these moons geological powerhouses.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Jupiter",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1,
+    "m": 0.0009543
+  },
+  "category": {
+    "name": "Solar System",
+    "subCategory": "Moons"
+  },
+  "camera": {
+    "cameraFocus": "Jupiter",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Jupiter"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0000097,
+    "tol": 0.0001,
+    "maxDt": 0.00097,
+    "minDt": 0.0000097,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Sun",
+    "barycenterMassTwo": "Jupiter",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": false,
+    "trails": false,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Jupiter",
+      "type": "gas giant planet",
+      "m": 0.0009543,
+      "radius": 1027.5229357798166,
+      "tilt": -3.13,
+      "atmosphere": "beige",
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -7.059720449635489e-9,
+        "y": -3.458205558367953e-7,
+        "z": -8.560595128944146e-9
+      },
+      "velocity": {
+        "x": 0.00012011206801885418,
+        "y": -0.000014404565860802778,
+        "z": 0.00000185765499287888
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Sun",
+      "type": "star",
+      "m": 1,
+      "radius": 10270,
+      "tilt": 0,
+      "temperature": 5778,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 5.436151339701778,
+        "y": -0.2691893935210006,
+        "z": -0.120522867020747
+      },
+      "velocity": {
+        "x": 0.16942125305243833,
+        "y": 2.625182136850849,
+        "z": -0.014693280056960252
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Io",
+      "type": "moon",
+      "m": 4.490848296995278e-8,
+      "radius": 24.082568807339452,
+      "tilt": -3.13,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.0004123396684098477,
+        "y": -0.00277546561117049,
+        "z": -0.00009213389019387901
+      },
+      "velocity": {
+        "x": 3.632459716708889,
+        "y": 0.5331313883142663,
+        "z": 0.07191321713719195
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Europa",
+      "type": "moon",
+      "m": 2.413291634272764e-8,
+      "radius": 22.477064220183486,
+      "tilt": -3.13,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.000231315012572641,
+        "y": -0.004516461518956031,
+        "z": -0.0001948699591675548
+      },
+      "velocity": {
+        "x": 2.867825888888589,
+        "y": 0.1479315881074277,
+        "z": 0.053531172951165384
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Ganymede",
+      "type": "moon",
+      "m": 7.450777301989e-8,
+      "radius": 34.633027522935784,
+      "tilt": -3.13,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.007162482360743344,
+        "y": -0.0000126082702584475,
+        "z": -0.00009466593207081436
+      },
+      "velocity": {
+        "x": 0.009854944632595801,
+        "y": -2.2904667534862946,
+        "z": -0.08642422976208332
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Callisto",
+      "type": "moon",
+      "m": 5.4300826548000004e-8,
+      "radius": 35.74007220216607,
+      "tilt": -3.13,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.01163958701040644,
+        "y": -0.005000778655901151,
+        "z": -0.0003148071350588741
+      },
+      "velocity": {
+        "x": 0.6828251398971682,
+        "y": -1.5765023231560384,
+        "z": -0.040977438627834185
+      },
+      "nonStellarProceduralManifestation": false
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Jupiter",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

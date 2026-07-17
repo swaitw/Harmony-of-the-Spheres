@@ -1,0 +1,199 @@
+{
+  "name": "DMPP-2 - System",
+  "description": "DMPP-2 is a Sun-like G/F-type star with 3 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "DMPP-2",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.41,
+    "m": 1.41
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "3-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "DMPP-2",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "DMPP-2"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "DMPP-2",
+    "barycenterMassTwo": "DMPP-2 c",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "DMPP-2",
+      "type": "star",
+      "m": 1.41,
+      "radius": 18280.6,
+      "tilt": 0,
+      "temperature": 6500,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.004111791413430315,
+        "y": 0.008032878822336038,
+        "z": 0.0005595260422471543
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "DMPP-2 c",
+      "type": "gas giant planet",
+      "m": 0.00015552536999999998,
+      "radius": 776.5132,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.014572215759428705,
+        "y": 0.031207390206198286,
+        "z": 0.0016355100179261815
+      },
+      "velocity": {
+        "x": -41.209764597747295,
+        "y": -19.190093374851593,
+        "z": -1.0057101780101736
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "DMPP-2 b",
+      "type": "gas giant planet",
+      "m": 0.00051495444,
+      "radius": 1334.9259,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.012923553817719683,
+        "y": -0.061005061724826976,
+        "z": 0.0021851243695848303
+      },
+      "velocity": {
+        "x": 30.060146639893222,
+        "y": -6.410911625286773,
+        "z": -1.1963330692804444
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "DMPP-2 d",
+      "type": "gas giant planet",
+      "m": 0.00027564537,
+      "radius": 1090.5028,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.10793511020357924,
+        "y": 0.07010488708191781,
+        "z": -0.006735814172967589
+      },
+      "velocity": {
+        "x": -11.873285590285079,
+        "y": -18.286123801558617,
+        "z": -0.05971892898435811
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "DMPP-2",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

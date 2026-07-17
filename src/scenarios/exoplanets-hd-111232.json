@@ -1,0 +1,165 @@
+{
+  "name": "HD 111232 - System",
+  "description": "HD 111232 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 111232",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.96,
+    "m": 0.96
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 111232",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 111232"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00652,
+    "tol": 0.0001,
+    "maxDt": 0.0652,
+    "minDt": 0.000065,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 111232",
+    "barycenterMassTwo": "HD 111232 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 111232",
+      "type": "star",
+      "m": 0.96,
+      "radius": 9243,
+      "tilt": 0,
+      "temperature": 5512,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.013093438686382481,
+        "y": 0.0442369537108778,
+        "z": -0.0020057403564033086
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 111232 b",
+      "type": "gas giant planet",
+      "m": 0.00760210429506528,
+      "radius": 1184.5117,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.12194554640580446,
+        "y": 1.6816105123838236,
+        "z": 0.08812947257305327
+      },
+      "velocity": {
+        "x": -5.208099591951232,
+        "y": -0.37664189253235264,
+        "z": -0.019738965172582463
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 111232 c",
+      "type": "gas giant planet",
+      "m": 0.01724002635046692,
+      "radius": 1146.9082,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -6.30083527966575,
+        "y": -4.287422012714105,
+        "z": 0.22469426653557312
+      },
+      "velocity": {
+        "x": 1.5674462781456906,
+        "y": -2.2972241346051274,
+        "z": 0.12039241541006086
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 111232",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

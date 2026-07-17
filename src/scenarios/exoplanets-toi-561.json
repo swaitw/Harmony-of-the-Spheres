@@ -1,0 +1,233 @@
+{
+  "name": "TOI-561 - System",
+  "description": "TOI-561 is a Sun-like G/F-type star with 4 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-561",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.806,
+    "m": 0.806
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "4-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-561",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-561"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00001,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-561",
+    "barycenterMassTwo": "TOI-561 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-561",
+      "type": "star",
+      "m": 0.806,
+      "radius": 8657.61,
+      "tilt": 0,
+      "temperature": 5342,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.0006753312094522566,
+        "y": -0.00145455205870579,
+        "z": 0.000044546630280580314
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-561 b",
+      "type": "terrestial planet",
+      "m": 0.00000606606,
+      "radius": 131.3304,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.01064,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": 54.62603278511275,
+        "z": 2.862829069310362
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "TOI-561 c",
+      "type": "sub-Neptune",
+      "m": 0.00001780779,
+      "radius": 269.3354,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.05458490198895951,
+        "y": -0.06749924562613364,
+        "z": -0.002860673495623827
+      },
+      "velocity": {
+        "x": 15.028399244023651,
+        "y": 12.186458870637297,
+        "z": -0.7876050305582148
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "TOI-561 d",
+      "type": "sub-Neptune",
+      "m": 0.00004002999,
+      "radius": 245.8332,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.09255962886380542,
+        "y": 0.1063317488789976,
+        "z": -0.0055726108260302715
+      },
+      "velocity": {
+        "x": -11.949882011479778,
+        "y": 10.373637730824285,
+        "z": -0.5436593165592675
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "TOI-561 e",
+      "type": "sub-Neptune",
+      "m": 0.000037237199999999996,
+      "radius": 236.6203,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.1617108055875142,
+        "y": 0.25914653722348063,
+        "z": 0.008474904206913228
+      },
+      "velocity": {
+        "x": -8.958403831962,
+        "y": 5.605514158957729,
+        "z": -0.46949005075381517
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-561",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

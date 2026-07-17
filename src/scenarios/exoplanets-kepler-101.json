@@ -1,0 +1,165 @@
+{
+  "name": "Kepler-101 - System",
+  "description": "Kepler-101 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-101",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.17,
+    "m": 1.17
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-101",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-101"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-101",
+    "barycenterMassTwo": "Kepler-101 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-101",
+      "type": "star",
+      "m": 1.17,
+      "radius": 16021.2,
+      "tilt": 0,
+      "temperature": 5667,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.003721450071179658,
+        "y": 0.002805502779723816,
+        "z": 0.00014703017045772436
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-101 b",
+      "type": "gas giant planet",
+      "m": 0.0001534533,
+      "radius": 542.4312,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.027264424893686752,
+        "y": -0.03362261890927744,
+        "z": -0.0017620867907152196
+      },
+      "velocity": {
+        "x": 26.451281481723598,
+        "y": -21.39047027517078,
+        "z": -1.1210270449416042
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-101 c",
+      "type": "terrestial planet",
+      "m": 0.000011351339999999999,
+      "radius": 117.5111,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -1.2553396341858953e-17,
+        "y": -0.06830626017721285,
+        "z": 0.0035797794070173586
+      },
+      "velocity": {
+        "x": 25.99342022006419,
+        "y": -4.772732546224091e-15,
+        "z": 8.329989376927214e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-101",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

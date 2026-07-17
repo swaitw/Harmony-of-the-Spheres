@@ -1,0 +1,165 @@
+{
+  "name": "EPIC 201595106 - System",
+  "description": "EPIC 201595106 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "EPIC 201595106",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.958,
+    "m": 0.958
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "EPIC 201595106",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "EPIC 201595106"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00002,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "EPIC 201595106",
+    "barycenterMassTwo": "EPIC 201595106 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "EPIC 201595106",
+      "type": "star",
+      "m": 0.958,
+      "radius": 10064.6,
+      "tilt": 0,
+      "temperature": 5679,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.0010435835590760637,
+        "y": -0.0007513144637744227,
+        "z": -0.00007698696617945712
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "EPIC 201595106 b",
+      "type": "super-Earth",
+      "m": 0.00002303301,
+      "radius": 147.1239,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.0177,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": 46.17416765104063,
+        "z": 2.4198855868338787
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "K2-360 c",
+      "type": "gas giant planet",
+      "m": 0.00004573569,
+      "radius": 377.9156,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.02558542455432459,
+        "y": -0.0742036352387724,
+        "z": 0.003888847737592882
+      },
+      "velocity": {
+        "x": 21.859362996269848,
+        "y": -7.516467095001698,
+        "z": 0.39392134850309074
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "EPIC 201595106",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

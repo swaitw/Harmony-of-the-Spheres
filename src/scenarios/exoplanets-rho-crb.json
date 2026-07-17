@@ -1,0 +1,199 @@
+{
+  "name": "rho CrB - System",
+  "description": "rho CrB is a Sun-like G/F-type star with 3 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "rho CrB",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1,
+    "m": 1
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "3-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "rho CrB",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "rho CrB"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "rho CrB",
+    "barycenterMassTwo": "rho CrB e",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "rho CrB",
+      "type": "star",
+      "m": 1,
+      "radius": 13984.659,
+      "tilt": 0,
+      "temperature": 5817,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.007856370891457227,
+        "y": -0.012287300658499412,
+        "z": 0.000006960356739962516
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "rho CrB e",
+      "type": "super-Earth",
+      "m": 0.00001114113,
+      "radius": 164.5155,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.08502243574166403,
+        "y": -0.047452312237389625,
+        "z": -0.0024868703062070705
+      },
+      "velocity": {
+        "x": 10.219462483330716,
+        "y": 18.260515322262087,
+        "z": 0.9569930566037035
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "rho CrB b",
+      "type": "gas giant planet",
+      "m": 0.001045028985,
+      "radius": 1287.9214,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.1850378827068938,
+        "y": 0.10726330100667385,
+        "z": -0.0112089316842191
+      },
+      "velocity": {
+        "x": -6.965631120610595,
+        "y": 12.016410486747878,
+        "z": 0.001268701171344627
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "rho CrB c",
+      "type": "gas giant planet",
+      "m": 0.000082408326,
+      "radius": 533.9704,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.22579053691758258,
+        "y": 0.33013724584764786,
+        "z": -0.018898714983814343
+      },
+      "velocity": {
+        "x": -8.384357081322525,
+        "y": -5.747469871944623,
+        "z": -0.22993028993260126
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "rho CrB",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

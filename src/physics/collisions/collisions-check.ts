@@ -1,16 +1,20 @@
 import { ScenarioMassesType, ScenarioMassType } from "../../types/scenario";
 import H3 from "../utils/vector";
 
-const collisionsCheck = (masses: ScenarioMassesType, scale: number) => {
+const collisionsCheck = (
+  masses: ScenarioMassesType,
+  scale: number,
+  callback: (looser: ScenarioMassType, survivor: ScenarioMassType) => void,
+) => {
   const vector = new H3();
   let massesLength = masses.length;
 
   for (let i = 0; i < massesLength; i++) {
-    const massI = masses[i] as ScenarioMassType;
+    const massI = masses[i];
 
     for (let j = 0; j < massesLength; j++) {
       if (i !== j) {
-        const massJ = masses[j] as ScenarioMassType;
+        const massJ = masses[j];
 
         vector.set(massI.position);
 
@@ -36,6 +40,8 @@ const collisionsCheck = (masses: ScenarioMassesType, scale: number) => {
           survivor.m = massI.m + massJ.m;
 
           masses.splice(looserIndex, 1);
+
+          callback(looser, survivor);
 
           massesLength--;
 

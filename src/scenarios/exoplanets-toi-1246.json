@@ -1,0 +1,233 @@
+{
+  "name": "TOI-1246 - System",
+  "description": "TOI-1246 is a orange K-type dwarf star with 4 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-1246",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.87,
+    "m": 0.87
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "4-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-1246",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-1246"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-1246",
+    "barycenterMassTwo": "TOI-1246 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-1246",
+      "type": "star",
+      "m": 0.87,
+      "radius": 8832.2,
+      "tilt": 0,
+      "temperature": 5151,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.0003007468227538768,
+        "y": -0.0006310981518223148,
+        "z": -0.00003875086454811955
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-1246 b",
+      "type": "sub-Neptune",
+      "m": 0.000024324299999999997,
+      "radius": 282.9667,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.049,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": 26.446276875098977,
+        "z": 1.385990641328384
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "TOI-1246 c",
+      "type": "super-Earth",
+      "m": 0.0000273273,
+      "radius": 230.425,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.060916401620029,
+        "y": 7.465226550376586e-18,
+        "z": 0.003192493330819574
+      },
+      "velocity": {
+        "x": -2.904734303674405e-15,
+        "y": -23.735219732239788,
+        "z": 7.606314465534477e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "TOI-1246 d",
+      "type": "sub-Neptune",
+      "m": 0.0000162162,
+      "radius": 322.5818,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -2.4225852589552367e-17,
+        "y": -0.13181909858760374,
+        "z": 0.006908346224068587
+      },
+      "velocity": {
+        "x": 16.13508317582866,
+        "y": -2.9626126903402962e-15,
+        "z": 5.170734374799326e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "TOI-1246 e",
+      "type": "sub-Neptune",
+      "m": 0.0000435435,
+      "radius": 330.3648,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.21170946136796964,
+        "y": -5.187165320298608e-17,
+        "z": 0.011095222723504092
+      },
+      "velocity": {
+        "x": 3.1173263401777686e-15,
+        "y": 12.73181277759666,
+        "z": 4.0801042836426104e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-1246",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

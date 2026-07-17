@@ -1,0 +1,165 @@
+{
+  "name": "HD 65216 - System",
+  "description": "HD 65216 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 65216",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.874,
+    "m": 0.874
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 65216",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 65216"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0032,
+    "tol": 0.0001,
+    "maxDt": 0.032,
+    "minDt": 0.000032,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 65216",
+    "barycenterMassTwo": "HD 65216 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 65216",
+      "type": "star",
+      "m": 0.874,
+      "radius": 9037.6,
+      "tilt": 0,
+      "temperature": 5612,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.010500629020162546,
+        "y": 0.004629773490859388,
+        "z": 0.0006102974957539331
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 65216 b",
+      "type": "gas giant planet",
+      "m": 0.00123600431955,
+      "radius": 1278.5206,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.8054167183626425,
+        "y": -0.5025904947661162,
+        "z": -0.026339651719457093
+      },
+      "velocity": {
+        "x": 3.6005243639396927,
+        "y": -5.754146781958587,
+        "z": -0.3015620545111075
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 65216 c",
+      "type": "gas giant planet",
+      "m": 0.0019375202846999998,
+      "radius": 1259.7188,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 2.5992897946092164,
+        "y": -3.9970699226078357,
+        "z": 0.209477558282914
+      },
+      "velocity": {
+        "x": 2.4398640543159784,
+        "y": 1.5822947873235447,
+        "z": -0.08292455597475897
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 65216",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

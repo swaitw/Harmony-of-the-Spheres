@@ -1,0 +1,131 @@
+{
+  "name": "HD 143361 - System",
+  "description": "HD 143361 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 143361",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.968,
+    "m": 0.968
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 143361",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 143361"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00581,
+    "tol": 0.0001,
+    "maxDt": 0.0581,
+    "minDt": 0.000058,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 143361",
+    "barycenterMassTwo": "HD 143361 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 143361",
+      "type": "star",
+      "m": 0.968,
+      "radius": 9407.32,
+      "tilt": 0,
+      "temperature": 5507,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.02025656494957168,
+        "y": 0.010806166845219402,
+        "z": 0.0005663272069199761
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 143361 b",
+      "type": "gas giant planet",
+      "m": 0.00415180837206135,
+      "radius": 1212.7144,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.7521767510338748,
+        "y": -1.4061215055036331,
+        "z": -0.07369170550557201
+      },
+      "velocity": {
+        "x": 4.7228467968645536,
+        "y": -2.5194730991350798,
+        "z": -0.13203999008903106
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 143361",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

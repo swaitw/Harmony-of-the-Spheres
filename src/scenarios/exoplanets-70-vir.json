@@ -1,0 +1,131 @@
+{
+  "name": "70 Vir - System",
+  "description": "70 Vir is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "70 Vir",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.09,
+    "m": 1.09
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "70 Vir",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "70 Vir"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.001,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "70 Vir",
+    "barycenterMassTwo": "70 Vir b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "70 Vir",
+      "type": "star",
+      "m": 1.09,
+      "radius": 19410.3,
+      "tilt": 0,
+      "temperature": 5495,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.000280815537932204,
+        "y": -0.09451439901756403,
+        "z": -0.004953289762781783
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "70 Vir b",
+      "type": "gas giant planet",
+      "m": 0.007148491349999999,
+      "radius": 1184.5117,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.2891759271233728,
+        "y": -0.0008568288998763578,
+        "z": -0.000044904499868051176
+      },
+      "velocity": {
+        "x": 0.04281867618768293,
+        "y": 14.411529634031774,
+        "z": 0.7552762641913449
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "70 Vir",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

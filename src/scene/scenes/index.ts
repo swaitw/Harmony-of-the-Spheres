@@ -39,18 +39,19 @@ class SceneBase {
     this.renderer = new THREE.WebGLRenderer({
       canvas: this.webGlCanvas,
       antialias: true,
-      logarithmicDepthBuffer: this.scenario.camera.logarithmicDepthBuffer,
+      logarithmicDepthBuffer: true,
     });
     this.renderer.setSize(this.windowWidth, this.windowHeight);
 
     this.camera = new THREE.PerspectiveCamera(
       45,
       this.windowWidth / this.windowHeight,
-      0.1,
-      1500000000000,
+      1e-6,
+      1e27,
     );
 
     this.controls = new OrbitControls(this.camera, this.labelsCanvas);
+    this.controls.zoomSpeed = 4;
 
     this.textureLoader = new THREE.TextureLoader();
 

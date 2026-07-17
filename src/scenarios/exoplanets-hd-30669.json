@@ -1,0 +1,131 @@
+{
+  "name": "HD 30669 - System",
+  "description": "HD 30669 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 30669",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.92,
+    "m": 0.92
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 30669",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 30669"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00922,
+    "tol": 0.0001,
+    "maxDt": 0.0922,
+    "minDt": 0.000092,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 30669",
+    "barycenterMassTwo": "HD 30669 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 30669",
+      "type": "star",
+      "m": 0.92,
+      "radius": 9345.7,
+      "tilt": 0,
+      "temperature": 5400,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.0021287960721049375,
+        "y": -0.0002987727572870495,
+        "z": -0.000015658016719685334
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 30669 b",
+      "type": "gas giant planet",
+      "m": 0.00044855811,
+      "radius": 1344.3268,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.3069880260977124,
+        "y": 2.181339753149815,
+        "z": 0.11431917232439909
+      },
+      "velocity": {
+        "x": -4.366195466483802,
+        "y": 0.6127877984506525,
+        "z": 0.03211484768854254
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 30669",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "name": "HIP 97233 - System",
+  "description": "HIP 97233 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HIP 97233",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.81,
+    "m": 1.81
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HIP 97233",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HIP 97233"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00673,
+    "tol": 0.0001,
+    "maxDt": 0.0673,
+    "minDt": 0.000067,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HIP 97233",
+    "barycenterMassTwo": "HIP 97233 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HIP 97233",
+      "type": "star",
+      "m": 1.81,
+      "radius": 54841.8,
+      "tilt": 0,
+      "temperature": 5020,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.10638784042658113,
+        "y": 0.040253628567784625,
+        "z": 0.0021096032813219786
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HIP 97233 b",
+      "type": "gas giant planet",
+      "m": 0.018312815456265327,
+      "radius": 1137.5073,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.3265544636912957,
+        "y": -0.8606991923000332,
+        "z": -0.04510733329915198
+      },
+      "velocity": {
+        "x": 10.515149439035655,
+        "y": -3.978583625313771,
+        "z": -0.20850873249456603
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HIP 97233",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

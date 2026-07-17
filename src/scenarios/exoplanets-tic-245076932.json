@@ -1,0 +1,131 @@
+{
+  "name": "TIC 245076932 - System",
+  "description": "TIC 245076932 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TIC 245076932",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.117,
+    "m": 1.117
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TIC 245076932",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TIC 245076932"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TIC 245076932",
+    "barycenterMassTwo": "TIC 245076932 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TIC 245076932",
+      "type": "star",
+      "m": 1.117,
+      "radius": 13227.76,
+      "tilt": 0,
+      "temperature": 6130,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.01046121566154061,
+        "y": -0.004871459648434836,
+        "z": -0.00025530238204141435
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TIC 245076932 b",
+      "type": "gas giant planet",
+      "m": 0.00048676374017271,
+      "radius": 1022.1312,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.03795281037736179,
+        "y": -0.08127852225230942,
+        "z": -0.004259626854650786
+      },
+      "velocity": {
+        "x": 24.005851154391266,
+        "y": 11.178771092051816,
+        "z": 0.585854568047893
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TIC 245076932",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "name": "LTT 1445 A - System",
+  "description": "LTT 1445 A is a cool M-dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "LTT 1445 A",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.257,
+    "m": 0.257
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "LTT 1445 A",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "LTT 1445 A"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "LTT 1445 A",
+    "barycenterMassTwo": "LTT 1445 A c",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "LTT 1445 A",
+      "type": "star",
+      "m": 0.257,
+      "radius": 2721.55,
+      "tilt": 0,
+      "temperature": 3340,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.0006903330641357214,
+        "y": 0.00014765998548137239,
+        "z": 0.000036399686140911
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "LTT 1445 A c",
+      "type": "terrestial planet",
+      "m": 0.00000462462,
+      "radius": 107.8282,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.019772528445149047,
+        "y": 0.006036784039279541,
+        "z": 0.0003163744455099482
+      },
+      "velocity": {
+        "x": -7.164414947347722,
+        "y": -23.401630256811465,
+        "z": -1.226427473362314
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "LTT 1445 A b",
+      "type": "terrestial planet",
+      "m": 0.00000819819,
+      "radius": 125.9719,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.01369559136798437,
+        "y": 0.028041640761005068,
+        "z": -0.0014696001197370854
+      },
+      "velocity": {
+        "x": -17.599360447742388,
+        "y": 8.572017853885155,
+        "z": -0.4492404196967017
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "LTT 1445 A",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "name": "NGC 2682 Sand 1429 - System",
+  "description": "NGC 2682 Sand 1429 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "NGC 2682 Sand 1429",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.26,
+    "m": 1.26
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "NGC 2682 Sand 1429",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "NGC 2682 Sand 1429"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.001,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "NGC 2682 Sand 1429",
+    "barycenterMassTwo": "NGC 2682 Sand 1429 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "NGC 2682 Sand 1429",
+      "type": "star",
+      "m": 1.26,
+      "radius": 21875.1,
+      "tilt": 0,
+      "temperature": 6000,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.015522733861383324,
+        "y": -9.491906988111887e-19,
+        "z": -4.9744976640812434e-20
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "NGC 2682 Sand 1429 b",
+      "type": "gas giant planet",
+      "m": 0.0017179896711978,
+      "radius": 1259.7188,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 2.3513218543629182e-17,
+        "y": 0.38347374134575635,
+        "z": 0.020097007197290434
+      },
+      "velocity": {
+        "x": -11.384611324063725,
+        "y": 6.961510307965055e-16,
+        "z": 3.648372956964488e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "NGC 2682 Sand 1429",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

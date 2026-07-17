@@ -1,0 +1,130 @@
+{
+  "name": "Gliese 12 - System",
+  "description": "Gliese 12 is a cool M-dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Gliese 12",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.255,
+    "m": 0.255
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Gliese 12",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Gliese 12"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0002,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Gliese 12",
+    "barycenterMassTwo": "Gliese 12 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Gliese 12",
+      "type": "star",
+      "m": 0.255,
+      "radius": 2721.55,
+      "tilt": 0,
+      "temperature": 3328,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.000048296105913971305,
+        "y": -0.0001681977118888837,
+        "z": -0.000008814868560585171
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Gliese 12 b",
+      "type": "terrestial planet",
+      "m": 0.0000028528499999999997,
+      "radius": 87.4282,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.048947445557179205,
+        "y": -0.014016219056074012,
+        "z": -0.000734558914673483
+      },
+      "velocity": {
+        "x": 4.316913615529272,
+        "y": 15.034234723755315,
+        "z": 0.7879108550920024
+      },
+      "nonStellarProceduralManifestation": true
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Gliese 12",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

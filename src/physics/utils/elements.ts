@@ -1,5 +1,5 @@
 import H3 from "./vector";
-import { VectorType } from "../../types/physics";
+import { OrbitalElementsType, VectorType } from "../../types/physics";
 import {
   ScenarioMassType,
   ScenarioMassesType,
@@ -325,4 +325,85 @@ const findCurrentSOI = (
   };
 };
 
-export { stateToKepler, keplerToState, constructSOITree, findCurrentSOI };
+const solveKeplerEq = (meanAnom: number, e: number, tol = 1e-14): number => {
+  let E = meanAnom;
+  let E_last = E + 1e3 * tol;
+
+  if (e < 1) {
+    while (Math.abs(E - E_last) > tol) {
+      E_last = E;
+      E = E - (E - e * Math.sin(E) - meanAnom) / (1 - e * Math.cos(E));
+    }
+  } else if (e > 1) {
+    let s = Math.sign(meanAnom);
+    let E0 = 1e-3 * s;
+
+    while (Math.sign(meanAnom - e * Math.sinh(E0) + E0) == s) {
+      E0 += s;
+    }
+
+    E = E0;
+    E_last = E + 1e3 * tol;
+
+    while (Math.abs(E - E_last) > tol) {
+      E_last = E;
+      E = E + (meanAnom - e * Math.sinh(E) + E) / (e * Math.cosh(E) - 1);
+    }
+  }
+
+  return E;
+};
+
+const propagateOrbitalElements = (
+  orb: OrbitalElementsType,
+  dt: number,
+  gm: number,
+): OrbitalElementsType => {
+  const mean_motion = Math.sqrt(gm / Math.pow(Math.abs(orb.a), 3));
+  let meanAnomNew = 0;
+
+  if (orb.e < 1) {
+    meanAnomNew = (orb.meanAnom + dt * mean_motion) % (2 * Math.PI);
+  } else if (orb.e > 1) {
+    meanAnomNew = orb.meanAnom + dt * mean_motion;
+  }
+
+  const eccAnomNew = solveKeplerEq(meanAnomNew, orb.e);
+
+  let trueAnomNew = 0;
+
+  if (orb.e < 1) {
+    trueAnomNew =
+      2 *
+      Math.atan2(
+        Math.sqrt(1 + orb.e) * Math.sin(eccAnomNew / 2),
+        Math.sqrt(1 - orb.e) * Math.cos(eccAnomNew / 2),
+      );
+  } else if (orb.e > 1) {
+    trueAnomNew =
+      2 *
+      Math.atan2(
+        Math.sqrt(1 + orb.e) * Math.tanh(eccAnomNew / 2),
+        Math.sqrt(orb.e - 1),
+      );
+  }
+
+  return {
+    a: orb.a,
+    e: orb.e,
+    i: orb.i,
+    argP: orb.argP,
+    lAn: orb.lAn,
+    trueAnom: trueAnomNew,
+    eccAnom: eccAnomNew,
+    meanAnom: meanAnomNew,
+  };
+};
+
+export {
+  stateToKepler,
+  keplerToState,
+  constructSOITree,
+  findCurrentSOI,
+  propagateOrbitalElements,
+};

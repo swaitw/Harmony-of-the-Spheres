@@ -1,0 +1,165 @@
+{
+  "name": "HD 217107 - System",
+  "description": "HD 217107 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 217107",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.045,
+    "m": 1.045
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 217107",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 217107"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0002,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 217107",
+    "barycenterMassTwo": "HD 217107 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 217107",
+      "type": "star",
+      "m": 1.045,
+      "radius": 12575.615,
+      "tilt": 0,
+      "temperature": 5622,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.0205167114175596,
+        "y": -0.0471955340259362,
+        "z": -0.0009612217424187828
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 217107 b",
+      "type": "gas giant planet",
+      "m": 0.00138011836918956,
+      "radius": 1278.5206,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.059137937625578625,
+        "y": 0.024800977238419064,
+        "z": 0.001299764141114795
+      },
+      "velocity": {
+        "x": -10.43394594624727,
+        "y": 24.811600293050564,
+        "z": 1.3003208718172345
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 217107 c",
+      "type": "gas giant planet",
+      "m": 0.00417089714618577,
+      "radius": 1212.7144,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 3.2643034975602396,
+        "y": 1.520083638756333,
+        "z": -0.07966420783170407
+      },
+      "velocity": {
+        "x": -1.6878582043771702,
+        "y": 3.614663031780184,
+        "z": -0.18943646235210448
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 217107",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

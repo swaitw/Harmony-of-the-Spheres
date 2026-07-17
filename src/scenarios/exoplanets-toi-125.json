@@ -1,0 +1,199 @@
+{
+  "name": "TOI-125 - System",
+  "description": "TOI-125 is a Sun-like G/F-type star with 3 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-125",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.859,
+    "m": 0.859
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "3-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-125",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-125"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-125",
+    "barycenterMassTwo": "TOI-125 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-125",
+      "type": "star",
+      "m": 0.859,
+      "radius": 8708.96,
+      "tilt": 0,
+      "temperature": 5320,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.0015617000983140631,
+        "y": -0.0005716503920719842,
+        "z": -0.00008449616771057622
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-125 b",
+      "type": "sub-Neptune",
+      "m": 0.0000285285,
+      "radius": 256.2682,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.033382293466148405,
+        "y": -0.025120887893171753,
+        "z": -0.0013165299480993673
+      },
+      "velocity": {
+        "x": 18.73598546753749,
+        "y": 24.82941794030979,
+        "z": 1.3012546551421391
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "TOI-125 c",
+      "type": "sub-Neptune",
+      "m": 0.00001990989,
+      "radius": 259.3705,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.07478777775177181,
+        "y": -0.013153099409557927,
+        "z": 0.0037390154631763853
+      },
+      "velocity": {
+        "x": 3.7964035138878955,
+        "y": -21.47514897773967,
+        "z": 0.3904270864333592
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "TOI-125 d",
+      "type": "sub-Neptune",
+      "m": 0.0000408408,
+      "radius": 275.446,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.03132093407024195,
+        "y": -0.10951226871530201,
+        "z": 0.004291193982452773
+      },
+      "velocity": {
+        "x": 17.908680698811374,
+        "y": 5.148515478641846,
+        "z": 0.6779006358899378
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-125",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

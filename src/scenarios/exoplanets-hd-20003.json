@@ -1,0 +1,165 @@
+{
+  "name": "HD 20003 - System",
+  "description": "HD 20003 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 20003",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.875,
+    "m": 0.875
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 20003",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 20003"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0002,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 20003",
+    "barycenterMassTwo": "HD 20003 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 20003",
+      "type": "star",
+      "m": 0.875,
+      "radius": 9465.212,
+      "tilt": 0,
+      "temperature": 5494,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.00168058553350354,
+        "y": 0.00048591881040799614,
+        "z": -0.000019967467472708008
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 20003 b",
+      "type": "sub-Neptune",
+      "m": 0.00003501498,
+      "radius": 322.4504,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.0029798974187761006,
+        "y": -0.06217940240443981,
+        "z": -0.0032586843971632836
+      },
+      "velocity": {
+        "x": 27.428734438263785,
+        "y": -1.3108993632411285,
+        "z": -0.06870132449102033
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 20003 c",
+      "type": "sub-Neptune",
+      "m": 0.00004336332,
+      "radius": 365.6945,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.10556200110852158,
+        "y": -0.14158285378027644,
+        "z": 0.007420042951179824
+      },
+      "velocity": {
+        "x": 11.763300273929206,
+        "y": -8.746513046535547,
+        "z": 0.4583853252390752
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 20003",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

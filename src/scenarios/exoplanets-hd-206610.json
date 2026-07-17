@@ -1,0 +1,131 @@
+{
+  "name": "HD 206610 - System",
+  "description": "HD 206610 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 206610",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.55,
+    "m": 1.55
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 206610",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 206610"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0037,
+    "tol": 0.0001,
+    "maxDt": 0.037,
+    "minDt": 0.000037,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 206610",
+    "barycenterMassTwo": "HD 206610 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 206610",
+      "type": "star",
+      "m": 1.55,
+      "radius": 62852.4,
+      "tilt": 0,
+      "temperature": 4842,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.003604152160081787,
+        "y": -0.0073794798198544825,
+        "z": -0.00038674214962259045
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 206610 b",
+      "type": "gas giant planet",
+      "m": 0.0019432469456400002,
+      "radius": 1259.7188,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 1.4075114765044954,
+        "y": -0.6855484062599838,
+        "z": -0.035928069563113896
+      },
+      "velocity": {
+        "x": 2.874794611493343,
+        "y": 5.886124636108628,
+        "z": 0.3084787207616522
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 206610",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

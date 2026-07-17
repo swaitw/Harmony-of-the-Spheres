@@ -1,0 +1,199 @@
+{
+  "name": "HD 69830 - System",
+  "description": "HD 69830 is a Sun-like G/F-type star with 3 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 69830",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.86,
+    "m": 0.86
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "3-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 69830",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 69830"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0002,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 69830",
+    "barycenterMassTwo": "HD 69830 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 69830",
+      "type": "star",
+      "m": 0.86,
+      "radius": 9108.9457,
+      "tilt": 0,
+      "temperature": 5385,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.0000035980584710639465,
+        "y": -0.0012476966910908488,
+        "z": 0.000003523626622280591
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 69830 b",
+      "type": "sub-Neptune",
+      "m": 0.0000306306,
+      "radius": 298.0081,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.06638928365852444,
+        "y": -0.024130607583214257,
+        "z": -0.0012646315561867733
+      },
+      "velocity": {
+        "x": 7.865742368048779,
+        "y": 21.58133248819159,
+        "z": 1.1310297096750714
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 69830 c",
+      "type": "sub-Neptune",
+      "m": 0.0000354354,
+      "radius": 325.2707,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.15287781496733255,
+        "y": -0.052756185428660875,
+        "z": -0.005556166828919609
+      },
+      "velocity": {
+        "x": 5.0005329919936345,
+        "y": 14.554703399973947,
+        "z": -0.6083463733573673
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 69830 d",
+      "type": "gas giant planet",
+      "m": 0.0000543543,
+      "radius": 418.3394,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.1412589871381614,
+        "y": 0.5682173761151957,
+        "z": -0.021300751945952122
+      },
+      "velocity": {
+        "x": -7.635715383661111,
+        "y": -1.9093566734206524,
+        "z": -0.2965255820030226
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 69830",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

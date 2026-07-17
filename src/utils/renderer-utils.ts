@@ -1,7 +1,7 @@
 import { convertRemToPx } from "./text-utils";
 
 const getRendererDimensions = (selectedTabIndex: number) => {
-  const footerHeightRem = 6;
+  const footerHeightRem = 5.625;
   const footerHeightPx = convertRemToPx(footerHeightRem);
 
   const windowWidthPx = window.innerWidth;
@@ -15,13 +15,13 @@ const getRendererDimensions = (selectedTabIndex: number) => {
       windowHeightPx - (footerHeightPx + 0.45 * windowHeightPx);
     rendererWidthPx = windowWidthPx;
   } else if (windowWidthPx < 900) {
-    const controlsContentWrapperWidthRem = 20;
+    const controlsContentWrapperWidthRem = 15;
 
     rendererHeightPx = windowHeightPx - footerHeightPx;
     rendererWidthPx =
       windowWidthPx - convertRemToPx(controlsContentWrapperWidthRem);
   } else {
-    const controlsContentWrapperWidthRem = 40;
+    const controlsContentWrapperWidthRem = 30;
 
     rendererHeightPx = windowHeightPx - footerHeightPx;
     rendererWidthPx =

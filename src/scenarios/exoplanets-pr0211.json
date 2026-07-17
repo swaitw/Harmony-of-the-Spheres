@@ -1,0 +1,165 @@
+{
+  "name": "Pr0211 - System",
+  "description": "Pr0211 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Pr0211",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.935,
+    "m": 0.935
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Pr0211",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Pr0211"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Pr0211",
+    "barycenterMassTwo": "Pr0211 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Pr0211",
+      "type": "star",
+      "m": 0.935,
+      "radius": 8493.29,
+      "tilt": 0,
+      "temperature": 5300,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.027369097543385502,
+        "y": -0.08109596346776612,
+        "z": -0.0023730888288414635
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Pr0211 b",
+      "type": "gas giant planet",
+      "m": 0.0017943537612,
+      "radius": 1259.7188,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.030038144419842757,
+        "y": 0.009170996582774864,
+        "z": 0.0004806315647155903
+      },
+      "velocity": {
+        "x": -10.08037940423857,
+        "y": 32.92624916340138,
+        "z": 1.7255915987739598
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Pr0211 c",
+      "type": "gas giant planet",
+      "m": 0.007435114787099999,
+      "radius": 1184.5117,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.5715968795247538,
+        "y": -1.4870200742153594,
+        "z": 0.07793141983893011
+      },
+      "velocity": {
+        "x": 5.874539149975935,
+        "y": 2.2519338696496867,
+        "z": -0.1180188532006057
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Pr0211",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,233 @@
+{
+  "name": "Barnard's star - System",
+  "description": "Barnard's star is a cool M-dwarf star with 4 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Barnard's star",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.162,
+    "m": 0.162
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "4-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Barnard's star",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Barnard's star"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Barnard's star",
+    "barycenterMassTwo": "Barnard d",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Barnard's star",
+      "type": "star",
+      "m": 0.162,
+      "radius": 1899.95,
+      "tilt": 0,
+      "temperature": 3195,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.00012399495700046042,
+        "y": -0.000030637167734292796,
+        "z": -0.000010180759633103664
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Barnard d",
+      "type": "terrestial planet",
+      "m": 7.89789e-7,
+      "radius": 65.2422,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.011161034719413139,
+        "y": -0.014163707700451217,
+        "z": -0.0007422884669947585
+      },
+      "velocity": {
+        "x": 15.090431230492348,
+        "y": 11.858724144450996,
+        "z": 0.6214893975408594
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Barnard b",
+      "type": "terrestial planet",
+      "m": 8.978969999999999e-7,
+      "radius": 67.6864,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.0014701246299328684,
+        "y": 0.022164164015171305,
+        "z": 0.00007704596712408448
+      },
+      "velocity": {
+        "x": -17.164043404460784,
+        "y": -1.1415990268465406,
+        "z": 0.8995293983455199
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Barnard c",
+      "type": "terrestial planet",
+      "m": 0.0000010060050000000001,
+      "radius": 69.8486,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.0003519586419891699,
+        "y": -0.025170999504792468,
+        "z": 0.0013191561863807031
+      },
+      "velocity": {
+        "x": 16.55603753716389,
+        "y": 0.23086409097308197,
+        "z": -0.012099074324097332
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Barnard e",
+      "type": "terrestial planet",
+      "m": 5.79579e-7,
+      "radius": 59.8836,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.01686577160352266,
+        "y": -0.03244330823432663,
+        "z": -0.0008838976356355994
+      },
+      "velocity": {
+        "x": 11.948350408030365,
+        "y": -6.228453409798009,
+        "z": 0.6261865109804908
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Barnard's star",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

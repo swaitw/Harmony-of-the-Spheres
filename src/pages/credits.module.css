@@ -1,0 +1,57 @@
+.page {
+  max-width: 52rem;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.section {
+  margin-bottom: 4rem;
+}
+
+.section h2 {
+  margin-bottom: 2rem;
+  padding-bottom: 0.75rem;
+  border-bottom: var(--border);
+  color: var(--theme-color-6);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+  border: var(--border);
+  padding: 1.5rem;
+  background-color: var(--theme-color-2);
+}
+
+.item h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.25rem;
+  color: var(--theme-color-6);
+}
+
+.role {
+  font-style: italic;
+  color: var(--theme-color-5);
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+}
+
+.item p {
+  color: var(--theme-color-5);
+  line-height: 1.7;
+}
+
+.item a {
+  color: var(--theme-color-6);
+}
+
+.item a:hover {
+  text-decoration: underline;
+}

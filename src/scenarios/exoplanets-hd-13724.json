@@ -1,0 +1,131 @@
+{
+  "name": "HD 13724 - System",
+  "description": "HD 13724 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 13724",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.004,
+    "m": 1.004
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 13724",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 13724"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.001,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 13724",
+    "barycenterMassTwo": "HD 13724 c",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 13724",
+      "type": "star",
+      "m": 1.004,
+      "radius": 10701.1346,
+      "tilt": 0,
+      "temperature": 5835,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.0018236984551374417,
+        "y": 0.0021883551884483393,
+        "z": 0.00011468683570909862
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 13724 c",
+      "type": "gas giant planet",
+      "m": 0.00015271019299536,
+      "radius": 768.9925,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.14324853154397588,
+        "y": -0.1190513181787666,
+        "z": -0.006239215206467912
+      },
+      "velocity": {
+        "x": 11.989987132120415,
+        "y": -14.387439149323125,
+        "z": -0.7540137353859125
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 13724",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

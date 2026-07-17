@@ -1,0 +1,233 @@
+{
+  "name": "LHS 1903 - System",
+  "description": "LHS 1903 is a cool M-dwarf star with 4 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "LHS 1903",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.538,
+    "m": 0.538
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "4-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "LHS 1903",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "LHS 1903"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "LHS 1903",
+    "barycenterMassTwo": "LHS 1903 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "LHS 1903",
+      "type": "star",
+      "m": 0.538,
+      "radius": 5535.53,
+      "tilt": 0,
+      "temperature": 3664,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.00037571306726883716,
+        "y": -0.00006595980686367538,
+        "z": 0.000034243579224053606
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "LHS 1903 b",
+      "type": "terrestial planet",
+      "m": 0.00000984984,
+      "radius": 129.9203,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.021165179000039624,
+        "y": -0.015356328460469276,
+        "z": -0.0008047910725541578
+      },
+      "velocity": {
+        "x": 16.877543712226377,
+        "y": -23.19811019378655,
+        "z": -1.215761438819634
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "LHS 1903 c",
+      "type": "super-Earth",
+      "m": 0.00001366365,
+      "radius": 192.3421,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.04660967603702515,
+        "y": 0.015165185138637328,
+        "z": -0.002442709614202469
+      },
+      "velocity": {
+        "x": -6.701279308341194,
+        "y": 20.65272084143155,
+        "z": 0.3511991669055564
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "LHS 1903 d",
+      "type": "super-Earth",
+      "m": 0.00001789788,
+      "radius": 235.0222,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.045980786157697996,
+        "y": 0.06093494034309513,
+        "z": -0.003193464904126213
+      },
+      "velocity": {
+        "x": -14.045396765893216,
+        "y": 10.56946066120094,
+        "z": -0.5539219614730055
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "LHS 1903 e",
+      "type": "super-Earth",
+      "m": 0.00001738737,
+      "radius": 162.8234,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.1479157624056345,
+        "y": 0.018186696172627886,
+        "z": -0.007751936628637257
+      },
+      "velocity": {
+        "x": -1.4624393717571562,
+        "y": -11.926958355409552,
+        "z": -0.07664319980987838
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "LHS 1903",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

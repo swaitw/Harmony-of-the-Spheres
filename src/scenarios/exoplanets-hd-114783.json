@@ -1,0 +1,165 @@
+{
+  "name": "HD 114783 - System",
+  "description": "HD 114783 is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 114783",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.853,
+    "m": 0.853
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 114783",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 114783"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00271,
+    "tol": 0.0001,
+    "maxDt": 0.0271,
+    "minDt": 0.000027,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 114783",
+    "barycenterMassTwo": "HD 114783 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 114783",
+      "type": "star",
+      "m": 0.853,
+      "radius": 8633.1879,
+      "tilt": 0,
+      "temperature": 5135,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.0050155723873705205,
+        "y": -0.005696664151387248,
+        "z": 0.00024255924237662758
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 114783 b",
+      "type": "gas giant planet",
+      "m": 0.0010498488,
+      "radius": 1287.9214,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.06926538816896659,
+        "y": 0.9891836970581286,
+        "z": 0.0518409208658051
+      },
+      "velocity": {
+        "x": -6.215284150656928,
+        "y": 0.4340193812176333,
+        "z": 0.022745991935415846
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 114783 c",
+      "type": "gas giant planet",
+      "m": 0.0018134335418198999,
+      "radius": 1259.7188,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 4.232280989894747,
+        "y": -2.1534995273050264,
+        "z": 0.11286012791313536
+      },
+      "velocity": {
+        "x": 1.2389896342957816,
+        "y": 2.4283215750856497,
+        "z": -0.12726294113533573
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 114783",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

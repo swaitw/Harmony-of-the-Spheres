@@ -1,0 +1,267 @@
+{
+  "name": "Kepler-48 - System",
+  "description": "Kepler-48 is a orange K-type dwarf star with 5 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-48",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.88,
+    "m": 0.88
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "5-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-48",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-48"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-48",
+    "barycenterMassTwo": "Kepler-48 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-48",
+      "type": "star",
+      "m": 0.88,
+      "radius": 9140.3,
+      "tilt": 0,
+      "temperature": 5194,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.006927489439119693,
+        "y": 0.00660579236263799,
+        "z": -0.0007246973280544855
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-48 b",
+      "type": "super-Earth",
+      "m": 0.000011831819999999999,
+      "radius": 176.7367,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.05394,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": 25.350633646503,
+        "z": 1.3285704128311673
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-48 c",
+      "type": "sub-Neptune",
+      "m": 0.000043873829999999995,
+      "radius": 254.764,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.026677437124389216,
+        "y": 0.08210470905176061,
+        "z": 0
+      },
+      "velocity": {
+        "x": -19.057667488951523,
+        "y": 6.192211531417865,
+        "z": 1.0501689587294731
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-48 d",
+      "type": "super-Earth",
+      "m": 0.000023813789999999998,
+      "radius": 191.7781,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.18851714002925024,
+        "y": 0.13696571948919212,
+        "z": 0
+      },
+      "velocity": {
+        "x": -7.16912869366646,
+        "y": -9.867459119493637,
+        "z": 0.6392098351634682
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-48 e",
+      "type": "gas giant planet",
+      "m": 0.001972971,
+      "radius": 1259.7188,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -1.5309112469440265,
+        "y": -1.1122721275065521,
+        "z": 0
+      },
+      "velocity": {
+        "x": 2.519695137988638,
+        "y": -3.468062833026681,
+        "z": 0.22465964591189455
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-48 f",
+      "type": "gas giant planet",
+      "m": 0.0008966387333903999,
+      "radius": 1297.3223,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 1.7403162009677442,
+        "y": -5.3561425211978095,
+        "z": 0
+      },
+      "velocity": {
+        "x": 2.3775040936195038,
+        "y": 0.7724979078913399,
+        "z": 0.13101188798781044
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-48",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

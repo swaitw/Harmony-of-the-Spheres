@@ -1,0 +1,131 @@
+{
+  "name": "HD 44219 - System",
+  "description": "HD 44219 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 44219",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.2,
+    "m": 1.2
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 44219",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 44219"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00259,
+    "tol": 0.0001,
+    "maxDt": 0.0259,
+    "minDt": 0.000026,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 44219",
+    "barycenterMassTwo": "HD 44219 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 44219",
+      "type": "star",
+      "m": 1.2,
+      "radius": 13556.4,
+      "tilt": 0,
+      "temperature": 5752,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.0025088433258644203,
+        "y": 0.0035780892186421226,
+        "z": 0.00018751971002562573
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 44219 b",
+      "type": "gas giant planet",
+      "m": 0.0005535744496081799,
+      "radius": 1325.525,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.6089576297244367,
+        "y": 0.42581236089402935,
+        "z": 0.02231588022572498
+      },
+      "velocity": {
+        "x": -5.438495207226807,
+        "y": -7.756331719084277,
+        "z": -0.4064921207798204
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 44219",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

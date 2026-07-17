@@ -1,0 +1,562 @@
+{
+  "name": "The Largest Near-Earth Asteroids",
+  "description": "The ten largest known near-Earth asteroids — from 1036 Ganymed down to Toutatis — orbiting among the inner rocky planets whose gravity they repeatedly encounter on planet-crossing paths.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Sun",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1,
+    "m": 1
+  },
+  "category": {
+    "name": "Solar System",
+    "subCategory": "Asteroids"
+  },
+  "camera": {
+    "cameraFocus": "Barycenter",
+    "logarithmicDepthBuffer": true,
+    "rotatingReferenceFrame": "Sun"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0005,
+    "tol": 0.01,
+    "maxDt": 0.1,
+    "minDt": 0.0005,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Earth",
+    "barycenterMassTwo": "Sun",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": false,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Sun",
+      "type": "star",
+      "m": 1,
+      "radius": 10270,
+      "tilt": 0,
+      "temperature": 5778,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Mercury",
+      "type": "terrestial planet",
+      "m": 1.652e-7,
+      "radius": 36.101083032490976,
+      "tilt": -0.03,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.2872966531212941,
+        "y": -0.3517158014875504,
+        "z": -0.002391886958465671
+      },
+      "velocity": {
+        "x": 5.875016098087905,
+        "y": -6.024119015520694,
+        "z": -1.0311638779860435
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Venus",
+      "type": "terrestial planet",
+      "m": 0.000002447,
+      "radius": 86.95652173913044,
+      "tilt": 2.63,
+      "atmosphere": "beige",
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.7095151229809997,
+        "y": -0.1538175909157349,
+        "z": -0.04305241165919776
+      },
+      "velocity": {
+        "x": 1.5283057900110455,
+        "y": 7.186715452550021,
+        "z": 0.010549579702449846
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Earth",
+      "type": "terrestial planet",
+      "m": 0.000003003,
+      "radius": 91.74311926605505,
+      "tilt": -23.44,
+      "atmosphere": "skyblue",
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.226907916070196,
+        "y": -0.9909950144448236,
+        "z": 0.00005979861040960228
+      },
+      "velocity": {
+        "x": 6.022066684212604,
+        "y": 1.3807916826579858,
+        "z": 0.00003655652561079635
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Mars",
+      "type": "terrestial planet",
+      "m": 3.213e-7,
+      "radius": 48.62385321100918,
+      "tilt": -25.19,
+      "atmosphere": "orange",
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -1.604683679534673,
+        "y": -0.3150508415950045,
+        "z": 0.03274841553488032
+      },
+      "velocity": {
+        "x": 1.1755121273828417,
+        "y": -4.578527079901155,
+        "z": -0.1247761696389758
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Ganymed",
+      "type": "asteroid",
+      "m": 2.95e-14,
+      "radius": 2.48,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -1.0431322632787,
+        "y": 2.308963610101414,
+        "z": -1.249154881798902
+      },
+      "velocity": {
+        "x": -3.451072819835147,
+        "y": 0.20448898458813122,
+        "z": -1.0900736225501455
+      },
+      "nonStellarProceduralManifestation": true
+    },
+    {
+      "name": "Eros",
+      "type": "asteroid",
+      "m": 3.362e-15,
+      "radius": 1.2,
+      "tilt": 89,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 1.563739257311697,
+        "y": -0.621141659085688,
+        "z": 0.1802664150882409
+      },
+      "velocity": {
+        "x": 0.8866206052755502,
+        "y": 4.293514423747071,
+        "z": 0.6026002270838469
+      },
+      "nonStellarProceduralManifestation": true
+    },
+    {
+      "name": "Sisyphus",
+      "type": "asteroid",
+      "m": 4.35e-16,
+      "radius": 0.61,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -1.253308316892184,
+        "y": 1.294764187792239,
+        "z": 1.488464914042156
+      },
+      "velocity": {
+        "x": -2.844984718602912,
+        "y": -1.4354096436963961,
+        "z": 1.6666676098637827
+      },
+      "nonStellarProceduralManifestation": true
+    },
+    {
+      "name": "Ivar",
+      "type": "asteroid",
+      "m": 4.28e-16,
+      "radius": 0.6,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -2.12283590853768,
+        "y": 0.7376592990682491,
+        "z": 0.1556373563693387
+      },
+      "velocity": {
+        "x": 0.10432661053787966,
+        "y": -3.703230583508183,
+        "z": 0.3646849878502338
+      },
+      "nonStellarProceduralManifestation": true
+    },
+    {
+      "name": "Tezcatlipoca",
+      "type": "asteroid",
+      "m": 3.15e-16,
+      "radius": 0.48,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -2.005239345844321,
+        "y": 0.421031576592489,
+        "z": -1.016950546846698
+      },
+      "velocity": {
+        "x": -1.246440633627762,
+        "y": -3.1408043508063996,
+        "z": 0.054123342907634195
+      },
+      "nonStellarProceduralManifestation": true
+    },
+    {
+      "name": "Phaethon",
+      "type": "asteroid",
+      "m": 1.35e-16,
+      "radius": 0.45,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 1.406539742388209,
+        "y": 0.8763392730583236,
+        "z": 0.5443691588557713
+      },
+      "velocity": {
+        "x": 1.8042516021542117,
+        "y": 3.251038859614333,
+        "z": 0.6236448788608799
+      },
+      "nonStellarProceduralManifestation": true
+    },
+    {
+      "name": "Cuno",
+      "type": "asteroid",
+      "m": 1.05e-16,
+      "radius": 0.44,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 2.475542298803567,
+        "y": 0.9177995364205226,
+        "z": 0.307970342467092
+      },
+      "velocity": {
+        "x": -2.556491311456874,
+        "y": 1.789497596479038,
+        "z": -0.18607581682313526
+      },
+      "nonStellarProceduralManifestation": true
+    },
+    {
+      "name": "Heracles",
+      "type": "asteroid",
+      "m": 1.02e-16,
+      "radius": 0.43,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 3.123176698928411,
+        "y": -0.5186047391979808,
+        "z": 0.331309940026741
+      },
+      "velocity": {
+        "x": 0.8691105733111102,
+        "y": 1.569543975504598,
+        "z": 0.2629633826081537
+      },
+      "nonStellarProceduralManifestation": true
+    },
+    {
+      "name": "Geographos",
+      "type": "asteroid",
+      "m": 6.1e-17,
+      "radius": 0.36,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 1.189596788748122,
+        "y": 0.8803224723935524,
+        "z": 0.3018117642314879
+      },
+      "velocity": {
+        "x": -1.7161997989930944,
+        "y": 4.133219636627906,
+        "z": 0.7448789826521468
+      },
+      "nonStellarProceduralManifestation": true
+    },
+    {
+      "name": "Toutatis",
+      "type": "asteroid",
+      "m": 4.7e-17,
+      "radius": 0.33,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -2.107728274654964,
+        "y": 0.6857867862748448,
+        "z": 0.01033763587467075
+      },
+      "velocity": {
+        "x": -3.7203159663627066,
+        "y": -2.501202757993621,
+        "z": 0.035047833137930445
+      },
+      "nonStellarProceduralManifestation": true
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Sun",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

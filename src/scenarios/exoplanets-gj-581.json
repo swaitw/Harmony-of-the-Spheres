@@ -1,0 +1,199 @@
+{
+  "name": "GJ 581 - System",
+  "description": "GJ 581 is a cool M-dwarf star with 3 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "GJ 581",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.295,
+    "m": 0.295
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "3-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "GJ 581",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "GJ 581"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "GJ 581",
+    "barycenterMassTwo": "GJ 581 e",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "GJ 581",
+      "type": "star",
+      "m": 0.295,
+      "radius": 3101.54,
+      "tilt": 0,
+      "temperature": 3500,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.0008755703977739806,
+        "y": 0.004250301874132017,
+        "z": -0.00014044564271001973
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "GJ 581 e",
+      "type": "terrestial planet",
+      "m": 0.0000074474399999999995,
+      "radius": 129.7322,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.019210165935677564,
+        "y": -0.019865446892800852,
+        "z": -0.0010411039561168838
+      },
+      "velocity": {
+        "x": 14.854361217517532,
+        "y": -14.325030985742844,
+        "z": -0.7507430621235371
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "GJ 581 b",
+      "type": "gas giant planet",
+      "m": 0.0000615615,
+      "radius": 450.3025,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.038287317686910474,
+        "y": 0.004049410915795823,
+        "z": 0.0016316158104854761
+      },
+      "velocity": {
+        "x": -1.8361500377929585,
+        "y": -17.580053943971095,
+        "z": 0.5440021587681347
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "GJ 581 c",
+      "type": "super-Earth",
+      "m": 0.00002045043,
+      "radius": 235.0222,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.01683688953331608,
+        "y": -0.06742475437090015,
+        "z": 0.001002623870997688
+      },
+      "velocity": {
+        "x": 12.748018207398415,
+        "y": -3.1735153359957606,
+        "z": 0.6617459688149645
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "GJ 581",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

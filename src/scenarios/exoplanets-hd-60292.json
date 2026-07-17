@@ -1,0 +1,131 @@
+{
+  "name": "HD 60292 - System",
+  "description": "HD 60292 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 60292",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.7,
+    "m": 1.7
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 60292",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 60292"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00287,
+    "tol": 0.0001,
+    "maxDt": 0.0287,
+    "minDt": 0.000029,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 60292",
+    "barycenterMassTwo": "HD 60292 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 60292",
+      "type": "star",
+      "m": 1.7,
+      "radius": 277290,
+      "tilt": 0,
+      "temperature": 4348,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.03199865660334763,
+        "y": -0.0036407899813776664,
+        "z": -0.00019080571775994845
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 60292 b",
+      "type": "gas giant planet",
+      "m": 0.006203882684999999,
+      "radius": 1193.9126,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.12395751907585796,
+        "y": 1.0864701689776062,
+        "z": 0.056939488813386875
+      },
+      "velocity": {
+        "x": -8.768334120375291,
+        "y": 0.9976563520949354,
+        "z": 0.05228495390091542
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 60292",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

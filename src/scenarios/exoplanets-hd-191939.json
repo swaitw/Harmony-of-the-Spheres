@@ -1,0 +1,301 @@
+{
+  "name": "HD 191939 - System",
+  "description": "HD 191939 is a Sun-like G/F-type star with 6 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 191939",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.81,
+    "m": 0.81
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "6-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 191939",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 191939"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0002,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 191939",
+    "barycenterMassTwo": "HD 191939 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 191939",
+      "type": "star",
+      "m": 0.81,
+      "radius": 9653.8,
+      "tilt": 0,
+      "temperature": 5348,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.0060690444290040285,
+        "y": -0.008376324271486322,
+        "z": -0.0004561054622427145
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 191939 b",
+      "type": "sub-Neptune",
+      "m": 0.00003003,
+      "radius": 320.5702,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.07761113806105246,
+        "y": 0.006780789154828078,
+        "z": 0.00035536610139106945
+      },
+      "velocity": {
+        "x": -1.7933971915669513,
+        "y": 20.470531047876687,
+        "z": 1.0728150729637638
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 191939 c",
+      "type": "sub-Neptune",
+      "m": 0.000024024,
+      "radius": 300.3583,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.14636804301970885,
+        "y": -0.08450562903818765,
+        "z": -0.008857504709615792
+      },
+      "velocity": {
+        "x": 6.9906203491894905,
+        "y": 12.10810962122108,
+        "z": 4.480502585183525e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 191939 d",
+      "type": "sub-Neptune",
+      "m": 0.000008408399999999999,
+      "radius": 281.5566,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.14601829476348163,
+        "y": 0.1461183947480094,
+        "z": 0.0027983844035243404
+      },
+      "velocity": {
+        "x": -8.92062370237227,
+        "y": -8.926746331230278,
+        "z": 0.6387910798474719
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 191939 e",
+      "type": "gas giant planet",
+      "m": 0.0003369366,
+      "radius": 1222.1152,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.2535045058710064,
+        "y": 0.30170086763232734,
+        "z": -0.015811472480377044
+      },
+      "velocity": {
+        "x": -7.005921443327017,
+        "y": 5.870609591574345,
+        "z": -0.3076656117321329
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 191939 g",
+      "type": "sub-Neptune",
+      "m": 0.000040540499999999996,
+      "radius": 351.5932,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.1640484383756318,
+        "y": -0.7702613946333352,
+        "z": 0.01273826534603288
+      },
+      "velocity": {
+        "x": 6.319732888220084,
+        "y": -1.3406372215503723,
+        "z": 0.321960265661574
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 191939 f",
+      "type": "gas giant planet",
+      "m": 0.00274878347391648,
+      "radius": 1240.917,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 1.8549999999999973,
+        "y": -3.2129542480402686,
+        "z": 0
+      },
+      "velocity": {
+        "x": 2.5397393066053655,
+        "y": 1.4663191723400786,
+        "z": 0.1536930630849812
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 191939",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

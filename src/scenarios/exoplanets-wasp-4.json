@@ -1,0 +1,131 @@
+{
+  "name": "WASP-4 - System",
+  "description": "WASP-4 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "WASP-4",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.899,
+    "m": 0.899
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "WASP-4",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "WASP-4"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "WASP-4",
+    "barycenterMassTwo": "WASP-4 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "WASP-4",
+      "type": "star",
+      "m": 0.899,
+      "radius": 9366.24,
+      "tilt": 0,
+      "temperature": 5436,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.04672244647706485,
+        "y": 0.01980532212665715,
+        "z": 0.0010379529506433802
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "WASP-4 b",
+      "type": "gas giant planet",
+      "m": 0.0011453264474652,
+      "radius": 1421.5001,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.008787608331822227,
+        "y": -0.020673936085008376,
+        "z": -0.00108347507925482
+      },
+      "velocity": {
+        "x": 36.67380551269209,
+        "y": -15.545772675790559,
+        "z": -0.8147194231771645
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "WASP-4",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

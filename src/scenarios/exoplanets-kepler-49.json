@@ -1,0 +1,233 @@
+{
+  "name": "Kepler-49 - System",
+  "description": "Kepler-49 is a orange K-type dwarf star with 4 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-49",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.549,
+    "m": 0.549
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "4-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-49",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-49"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-49",
+    "barycenterMassTwo": "Kepler-49 d",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-49",
+      "type": "star",
+      "m": 0.549,
+      "radius": 5740.93,
+      "tilt": 0,
+      "temperature": 4252,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.0009431119441826815,
+        "y": -0.03332503614806913,
+        "z": -0.0018845796122558926
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-49 d",
+      "type": "super-Earth",
+      "m": 0.000708653946,
+      "radius": 150.4142,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.031,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": 26.41242515584367,
+        "z": 1.3842165478973003
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-49 b",
+      "type": "sub-Neptune",
+      "m": 0.000029339309999999996,
+      "radius": 242.4489,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 3.6304654360723284e-18,
+        "y": 0.05929,
+        "z": 0
+      },
+      "velocity": {
+        "x": -19.098462275145657,
+        "y": 1.1694435346946803e-15,
+        "z": 1.0009079955613227
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-49 c",
+      "type": "super-Earth",
+      "m": 0.00002516514,
+      "radius": 229.7577,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.07758432,
+        "y": 9.501338915202398e-18,
+        "z": 0
+      },
+      "velocity": {
+        "x": -2.0527840522804792e-15,
+        "y": -16.76225384910741,
+        "z": 0.8784725000103291
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-49 e",
+      "type": "super-Earth",
+      "m": 0.0000031175644499999996,
+      "radius": 146.6538,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -2.1308854305163945e-17,
+        "y": -0.116,
+        "z": 0
+      },
+      "velocity": {
+        "x": 13.654007331752634,
+        "y": -2.508200456154803e-15,
+        "z": 0.7155762025715184
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-49",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

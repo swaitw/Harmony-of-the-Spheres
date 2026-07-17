@@ -1,0 +1,165 @@
+{
+  "name": "KOI-55 - System",
+  "description": "KOI-55 is a bright A/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "KOI-55",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.496,
+    "m": 0.496
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "KOI-55",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "KOI-55"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.000005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.000005,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "KOI-55",
+    "barycenterMassTwo": "KOI-55 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "KOI-55",
+      "type": "star",
+      "m": 0.496,
+      "radius": 2084.81,
+      "tilt": 0,
+      "temperature": 27730,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 2.4624238201287252e-20,
+        "y": 0.00004905434429962233,
+        "z": -0.000018504661930480383
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "KOI-55 b",
+      "type": "terrestial planet",
+      "m": 0.0000013213199999999999,
+      "radius": 71.3527,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.006,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": 57.06478261156,
+        "z": 2.9906385319413644
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "KOI-55 c",
+      "type": "terrestial planet",
+      "m": 0.000001966965,
+      "radius": 81.5057,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.0076,
+        "y": 9.307315673519885e-19,
+        "z": 0
+      },
+      "velocity": {
+        "x": -6.209374415832756e-15,
+        "y": -50.7033899092862,
+        "z": 2.65725206726785
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "KOI-55",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

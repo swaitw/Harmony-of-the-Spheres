@@ -1,4 +1,4 @@
-import React, { useCallback, Fragment, ChangeEvent } from "react";
+import React, { useCallback, ChangeEvent } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import Dropdown from "../dropdown";
 import {
@@ -10,6 +10,8 @@ import {
   control,
   controlLabel,
   controlInput,
+  controlsGrid,
+  controlFullWidth,
 } from "../../theme/controls.module.css";
 import { ScenarioStateType } from "../../state/index";
 import massesData from "../../physics/masses";
@@ -18,6 +20,7 @@ import { degreesToRadians, radiansToDegrees } from "../../physics/utils/misc";
 import Slider from "../slider";
 import Tabs from "../tabs";
 import Button from "../button";
+import Tooltip from "../tooltip";
 import {
   massControlTabsMenuModifier,
   massControlTabsMenuItemModifier,
@@ -193,19 +196,20 @@ const MassControls = () => {
 
   if (!masses.length) {
     return (
-      <Fragment>
+      <div className={controlsGrid}>
         <h2>Masses</h2>
         <p>There are no masses to modify.</p>
-      </Fragment>
+      </div>
     );
   }
 
   return (
-    <Fragment>
+    <div className={controlsGrid}>
       <h2>Masses</h2>
       <div className={control}>
         <div className={controlLabel}>
           <label>Mass Being Modified</label>
+          <Tooltip text="The body whose properties you are currently editing." />
         </div>
         <div className={controlInput}>
           <Dropdown selectedOption={massBeingModified.name}>
@@ -229,7 +233,7 @@ const MassControls = () => {
           </Dropdown>
         </div>
       </div>
-      <div className={control}>
+      <div className={`${control} ${controlFullWidth}`}>
         <Button callback={deleteMassCallback}>Delete Mass</Button>
       </div>
       <Tabs
@@ -241,6 +245,7 @@ const MassControls = () => {
           <div className={control}>
             <div className={controlLabel}>
               <label>Mass Units</label>
+              <Tooltip text="Reference body used to express the mass value. The mass slider below is measured in multiples of this body's mass." />
             </div>
             <div className={controlInput}>
               <Dropdown selectedOption={massBeingModified.unitName}>
@@ -270,6 +275,7 @@ const MassControls = () => {
           <div className={control}>
             <div className={controlLabel}>
               <label>Mass</label>
+              <Tooltip text="Mass of the selected body in multiples of the chosen reference body." />
             </div>
             <div className={controlInput}>
               <Slider
@@ -291,7 +297,7 @@ const MassControls = () => {
               />
             </div>
           </div>
-          <div className={control}>
+          <div className={`${control} ${controlFullWidth}`}>
             <Button
               callback={() =>
                 dispatch(
@@ -312,6 +318,7 @@ const MassControls = () => {
           <div className={control}>
             <div className={controlLabel}>
               <label>Semi-major Axis</label>
+              <Tooltip text="Average orbital distance from the body's primary, in AU." />
             </div>
             <div className={controlInput}>
               <Slider
@@ -328,6 +335,7 @@ const MassControls = () => {
           <div className={control}>
             <div className={controlLabel}>
               <label>Eccentricity</label>
+              <Tooltip text="Shape of the orbit: 0 is a perfect circle, values approaching 1 produce a highly elongated ellipse." />
             </div>
             <div className={controlInput}>
               <Slider
@@ -344,6 +352,7 @@ const MassControls = () => {
           <div className={control}>
             <div className={controlLabel}>
               <label>Inclination</label>
+              <Tooltip text="Tilt of the orbital plane relative to the reference plane, in degrees." />
             </div>
             <div className={controlInput}>
               <Slider
@@ -360,6 +369,7 @@ const MassControls = () => {
           <div className={control}>
             <div className={controlLabel}>
               <label>Ascending Node</label>
+              <Tooltip text="Longitude of the ascending node: the angle at which the orbit rises above the reference plane, in degrees." />
             </div>
             <div className={controlInput}>
               <Slider
@@ -376,6 +386,7 @@ const MassControls = () => {
           <div className={control}>
             <div className={controlLabel}>
               <label>Argument of Periapsis</label>
+              <Tooltip text="Angle between the ascending node and the orbit's closest point to the primary, in degrees." />
             </div>
             <div className={controlInput}>
               <Slider
@@ -392,6 +403,7 @@ const MassControls = () => {
           <div className={control}>
             <div className={controlLabel}>
               <label>Eccentric Anomaly</label>
+              <Tooltip text="Angular position of the body along its orbit measured from periapsis, in degrees. Adjusting this moves the body to a different point on its current orbit." />
             </div>
             <div className={controlInput}>
               <Slider
@@ -407,7 +419,7 @@ const MassControls = () => {
           </div>
         </div>
       </Tabs>
-    </Fragment>
+    </div>
   );
 };
 

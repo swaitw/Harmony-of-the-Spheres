@@ -1,0 +1,165 @@
+{
+  "name": "WASP-8 - System",
+  "description": "WASP-8 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "WASP-8",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.34,
+    "m": 1.34
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "WASP-8",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "WASP-8"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0002,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "WASP-8",
+    "barycenterMassTwo": "WASP-8 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "WASP-8",
+      "type": "star",
+      "m": 1.34,
+      "radius": 10578.1,
+      "tilt": 0,
+      "temperature": 5600,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.08521752413181782,
+        "y": -0.004703406179446329,
+        "z": -0.0002464950729309156
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "WASP-8 b",
+      "type": "gas giant planet",
+      "m": 0.0024242864646,
+      "radius": 1190.7323,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.004062232310653107,
+        "y": -0.05504397286484385,
+        "z": -0.0028847323807624464
+      },
+      "velocity": {
+        "x": 35.32397350783579,
+        "y": 2.599760536755705,
+        "z": 0.13624767639905372
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "WASP-8 c",
+      "type": "gas giant planet",
+      "m": 0.009019120109999999,
+      "radius": 1175.1108,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -9.690341035820946e-16,
+        "y": -5.27276394350415,
+        "z": 0.27633384896274343
+      },
+      "velocity": {
+        "x": 3.166168222334564,
+        "y": -5.813499721707393e-16,
+        "z": 1.014647069693944e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "WASP-8",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

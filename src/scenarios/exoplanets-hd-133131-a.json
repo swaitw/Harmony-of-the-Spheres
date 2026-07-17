@@ -1,0 +1,165 @@
+{
+  "name": "HD 133131 A - System",
+  "description": "HD 133131 A is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 133131 A",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.95,
+    "m": 0.95
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 133131 A",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 133131 A"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00357,
+    "tol": 0.0001,
+    "maxDt": 0.0357,
+    "minDt": 0.000036,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 133131 A",
+    "barycenterMassTwo": "HD 133131 A b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 133131 A",
+      "type": "star",
+      "m": 0.95,
+      "radius": 9807.9938,
+      "tilt": 0,
+      "temperature": 5799,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.0007748725611097986,
+        "y": -0.01021139807379506,
+        "z": -0.0004972582401004156
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 133131 A b",
+      "type": "gas giant planet",
+      "m": 0.0013553097558,
+      "radius": 1278.5206,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.92742528424129,
+        "y": 0.26557046632561276,
+        "z": 0.013917958383287042
+      },
+      "velocity": {
+        "x": -1.982465319299915,
+        "y": 6.904203233264201,
+        "z": 0.3618339591741697
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 133131 A c",
+      "type": "gas giant planet",
+      "m": 0.00040086626579999995,
+      "radius": 1344.3268,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.3976369620395035,
+        "y": -2.2520207219975865,
+        "z": 0.11802340493928463
+      },
+      "velocity": {
+        "x": 4.866275416902463,
+        "y": 0.856879716109135,
+        "z": -0.04490716303396259
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 133131 A",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

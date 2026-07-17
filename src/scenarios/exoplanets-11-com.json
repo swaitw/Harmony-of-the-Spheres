@@ -1,0 +1,131 @@
+{
+  "name": "11 Com - System",
+  "description": "11 Com is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "11 Com",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 2.09,
+    "m": 2.09
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "11 Com",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "11 Com"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00183,
+    "tol": 0.0001,
+    "maxDt": 0.0183,
+    "minDt": 0.000018,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "11 Com",
+    "barycenterMassTwo": "11 Com b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "11 Com",
+      "type": "star",
+      "m": 2.09,
+      "radius": 141315.2,
+      "tilt": 0,
+      "temperature": 4874,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.07533355510665073,
+        "y": 0.0017466258859697129,
+        "z": 0.00009153678392194704
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "11 Com b",
+      "type": "gas giant planet",
+      "m": 0.014759440153007548,
+      "radius": 1146.9082,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.02083484468251029,
+        "y": 0.8961643232536765,
+        "z": 0.04696598205441467
+      },
+      "velocity": {
+        "x": -10.667554361187396,
+        "y": -0.2473297133111681,
+        "z": -0.012962001025349558
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "11 Com",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

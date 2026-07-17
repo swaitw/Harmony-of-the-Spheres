@@ -1,0 +1,165 @@
+{
+  "name": "TOI-2537 - System",
+  "description": "TOI-2537 is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-2537",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.771,
+    "m": 0.771
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-2537",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-2537"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.001,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-2537",
+    "barycenterMassTwo": "TOI-2537 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-2537",
+      "type": "star",
+      "m": 0.771,
+      "radius": 7918.17,
+      "tilt": 0,
+      "temperature": 4870,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.04390987726897823,
+        "y": 0.026844171959079996,
+        "z": -0.00198046182392551
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-2537 b",
+      "type": "gas giant planet",
+      "m": 0.00124745138903385,
+      "radius": 1057.9585,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.06035519101052097,
+        "y": 0.22812216677651723,
+        "z": 0.01195537616599283
+      },
+      "velocity": {
+        "x": -12.819530002048063,
+        "y": 3.3824240716738307,
+        "z": 0.17726533418992768
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "TOI-2537 c",
+      "type": "gas giant planet",
+      "m": 0.00690059184597783,
+      "radius": 1193.9126,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -1.6116795425017552,
+        "y": 1.1522679138075234,
+        "z": -0.060387802501755024
+      },
+      "velocity": {
+        "x": -2.588585916290351,
+        "y": -3.6107433598590175,
+        "z": 0.18923104105119806
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-2537",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

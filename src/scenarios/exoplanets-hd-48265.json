@@ -1,0 +1,165 @@
+{
+  "name": "HD 48265 - System",
+  "description": "HD 48265 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 48265",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.312,
+    "m": 1.312
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 48265",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 48265"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00436,
+    "tol": 0.0001,
+    "maxDt": 0.0436,
+    "minDt": 0.000044,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 48265",
+    "barycenterMassTwo": "HD 48265 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 48265",
+      "type": "star",
+      "m": 1.312,
+      "radius": 19523.27,
+      "tilt": 0,
+      "temperature": 5733,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.032513931485008696,
+        "y": -0.011877921657129172,
+        "z": -0.0016907307035004605
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 48265 b",
+      "type": "gas giant planet",
+      "m": 0.0070628464260354,
+      "radius": 1184.5117,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.8873110851260542,
+        "y": -1.1214677039138194,
+        "z": -0.05877363189977445
+      },
+      "velocity": {
+        "x": 5.195752712076452,
+        "y": 4.099646604014331,
+        "z": 0.21485337436165247
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 48265 c",
+      "type": "gas giant planet",
+      "m": 0.00424725224268345,
+      "radius": 1212.7144,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -5.605514928094999,
+        "y": -2.4923157224059103,
+        "z": 0.13061673228350237
+      },
+      "velocity": {
+        "x": 1.403607390059789,
+        "y": -3.1482333487613117,
+        "z": 0.16499191847339253
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 48265",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

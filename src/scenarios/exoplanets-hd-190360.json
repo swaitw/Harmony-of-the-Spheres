@@ -1,0 +1,165 @@
+{
+  "name": "HD 190360 - System",
+  "description": "HD 190360 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 190360",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.991,
+    "m": 0.991
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 190360",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 190360"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 190360",
+    "barycenterMassTwo": "HD 190360 c",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 190360",
+      "type": "star",
+      "m": 0.991,
+      "radius": 12334.27,
+      "tilt": 0,
+      "temperature": 5552,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.0027496438015495337,
+        "y": 0.005560319785596522,
+        "z": -0.0004243159382068853
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 190360 c",
+      "type": "gas giant planet",
+      "m": 0.00007635509649768,
+      "radius": 511.4082,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.08687769589528162,
+        "y": -0.064432647183781,
+        "z": -0.0033767719522296608
+      },
+      "velocity": {
+        "x": 12.239472204952369,
+        "y": 16.457877402565146,
+        "z": 0.8625208063809857
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 190360 b",
+      "type": "gas giant planet",
+      "m": 0.0016034570264512802,
+      "radius": 1269.1197,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -2.6115647742893042,
+        "y": -0.6890595486636669,
+        "z": 0.03611208073923747
+      },
+      "velocity": {
+        "x": 1.1165568496763052,
+        "y": -4.220206474583439,
+        "z": 0.22117164944883036
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 190360",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

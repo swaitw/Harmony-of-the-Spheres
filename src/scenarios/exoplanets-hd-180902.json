@@ -1,0 +1,131 @@
+{
+  "name": "HD 180902 - System",
+  "description": "HD 180902 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 180902",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.41,
+    "m": 1.41
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 180902",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 180902"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0028,
+    "tol": 0.0001,
+    "maxDt": 0.028,
+    "minDt": 0.000028,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 180902",
+    "barycenterMassTwo": "HD 180902 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 180902",
+      "type": "star",
+      "m": 1.41,
+      "radius": 42723.2,
+      "tilt": 0,
+      "temperature": 4961,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.00013979077041284706,
+        "y": 0.007997632354531665,
+        "z": 0.0004191381512232047
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 180902 b",
+      "type": "gas giant planet",
+      "m": 0.00160823728065,
+      "radius": 1269.1197,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -1.2500095884845204,
+        "y": -0.021789096348719523,
+        "z": -0.0011419181522206118
+      },
+      "velocity": {
+        "x": 0.1225596425686952,
+        "y": -7.011814584556807,
+        "z": -0.3674736311210624
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 180902",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

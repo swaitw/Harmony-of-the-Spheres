@@ -1,0 +1,165 @@
+{
+  "name": "HD 177830 - System",
+  "description": "HD 177830 is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 177830",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.47,
+    "m": 1.47
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 177830",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 177830"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.001,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 177830",
+    "barycenterMassTwo": "HD 177830 c",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 177830",
+      "type": "star",
+      "m": 1.47,
+      "radius": 26907.4,
+      "tilt": 0,
+      "temperature": 4949,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.007298775459515413,
+        "y": 0.0012354623325599929,
+        "z": -0.000014233709592664822
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 177830 c",
+      "type": "gas giant planet",
+      "m": 0.0001431605175,
+      "radius": 739.8498,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.12298702333847722,
+        "y": 0.3374409837248555,
+        "z": 0.01768453259610453
+      },
+      "velocity": {
+        "x": -13.614788680812488,
+        "y": -4.948586652552166,
+        "z": -0.25934443704995763
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 177830 b",
+      "type": "gas giant planet",
+      "m": 0.0016130094981,
+      "radius": 1269.1197,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.08942179205909737,
+        "y": -1.0206950135252217,
+        "z": 0.05349235898413058
+      },
+      "velocity": {
+        "x": 7.8600281855872325,
+        "y": -0.686720942495998,
+        "z": 0.03598951958337225
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 177830",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

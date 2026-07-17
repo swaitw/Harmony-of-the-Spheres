@@ -1,0 +1,131 @@
+{
+  "name": "TOI-3884 - System",
+  "description": "TOI-3884 is a cool M-dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-3884",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.298,
+    "m": 0.298
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-3884",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-3884"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-3884",
+    "barycenterMassTwo": "TOI-3884 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-3884",
+      "type": "star",
+      "m": 0.298,
+      "radius": 3101.54,
+      "tilt": 0,
+      "temperature": 3180,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.0058389045231229935,
+        "y": 0.0023558375332786625,
+        "z": 0.00012346421347077239
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-3884 b",
+      "type": "gas giant planet",
+      "m": 0.00009786777,
+      "radius": 604.477,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.01271190014097556,
+        "y": -0.03141993789484445,
+        "z": -0.00164664917027987
+      },
+      "velocity": {
+        "x": 17.77902518766548,
+        "y": -7.173348130002772,
+        "z": -0.3759392455176016
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-3884",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

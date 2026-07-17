@@ -1,0 +1,165 @@
+{
+  "name": "BD-11 4672 - System",
+  "description": "BD-11 4672 is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "BD-11 4672",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.651,
+    "m": 0.651
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "BD-11 4672",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "BD-11 4672"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.001,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "BD-11 4672",
+    "barycenterMassTwo": "BD-11 4672 c",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "BD-11 4672",
+      "type": "star",
+      "m": 0.651,
+      "radius": 6562.53,
+      "tilt": 0,
+      "temperature": 4550,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.0000027897281911225843,
+        "y": 0.0035812738498339465,
+        "z": -0.0001448645157897566
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "BD-11 4672 c",
+      "type": "gas giant planet",
+      "m": 0.00004615611,
+      "radius": 379.7958,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.0734421233290668,
+        "y": -0.16411058155076358,
+        "z": -0.008600671135923952
+      },
+      "velocity": {
+        "x": 12.911493485693507,
+        "y": -5.762274367078089,
+        "z": -0.3019880031981545
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "BD-11 4672 b",
+      "type": "gas giant planet",
+      "m": 0.0006203882684999999,
+      "radius": 1325.525,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -2.1538497043816918,
+        "y": 0.6216382232638445,
+        "z": -0.03257867879871345
+      },
+      "velocity": {
+        "x": -0.9635263221331751,
+        "y": -3.329278149792838,
+        "z": 0.17448007444619487
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "BD-11 4672",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,233 @@
+{
+  "name": "Kepler-107 - System",
+  "description": "Kepler-107 is a Sun-like G/F-type star with 4 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-107",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.238,
+    "m": 1.238
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "4-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-107",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-107"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-107",
+    "barycenterMassTwo": "Kepler-107 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-107",
+      "type": "star",
+      "m": 1.238,
+      "radius": 14860.69,
+      "tilt": 0,
+      "temperature": 5854,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.0000025412774088133773,
+        "y": 0.00016944212312036596,
+        "z": -0.00012185843052725749
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-107 b",
+      "type": "super-Earth",
+      "m": 0.000011411399999999999,
+      "radius": 144.3976,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.040896,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": 36.21756122482905,
+        "z": 1.8980819548408723
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-107 c",
+      "type": "super-Earth",
+      "m": 0.00003003,
+      "radius": 150.1322,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 3.4160787674135928e-18,
+        "y": 0.0557888,
+        "z": 0
+      },
+      "velocity": {
+        "x": -30.72568997763983,
+        "y": 1.8814058941355267e-15,
+        "z": 1.6102651786672997
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-107 d",
+      "type": "terrestial planet",
+      "m": 0.0000231231,
+      "radius": 80.8476,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.0745553,
+        "y": 9.130390950447068e-18,
+        "z": 0
+      },
+      "velocity": {
+        "x": -3.299866395012397e-15,
+        "y": -26.945453965256696,
+        "z": 1.4121514040925205
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-107 e",
+      "type": "sub-Neptune",
+      "m": 0.000042342299999999996,
+      "radius": 272.9077,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -2.0894066434292736e-17,
+        "y": -0.113742,
+        "z": 0
+      },
+      "velocity": {
+        "x": 21.716967868925714,
+        "y": -3.989342278179868e-15,
+        "z": 1.1381380587715566
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-107",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

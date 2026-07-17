@@ -1,0 +1,233 @@
+{
+  "name": "GJ 3293 - System",
+  "description": "GJ 3293 is a cool M-dwarf star with 4 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "GJ 3293",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.42,
+    "m": 0.42
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "4-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "GJ 3293",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "GJ 3293"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "GJ 3293",
+    "barycenterMassTwo": "GJ 3293 e",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "GJ 3293",
+      "type": "star",
+      "m": 0.42,
+      "radius": 4149.08,
+      "tilt": 0,
+      "temperature": 3466,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.0014922219908627406,
+        "y": -0.0013029582440018319,
+        "z": -0.00008420644083878502
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "GJ 3293 e",
+      "type": "super-Earth",
+      "m": 0.00000984984,
+      "radius": 153.2344,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.0648432,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": 17.57065959114813,
+        "z": 0.9208392497103423
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "GJ 3293 b",
+      "type": "gas giant planet",
+      "m": 0.00007069061999999999,
+      "radius": 487.906,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.1311520421939575,
+        "y": -0.0303203877814248,
+        "z": -0.006873387279821033
+      },
+      "velocity": {
+        "x": 2.565932371582312,
+        "y": 11.129526792220284,
+        "z": -0.13447481738509626
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "GJ 3293 d",
+      "type": "sub-Neptune",
+      "m": 0.000022822799999999998,
+      "radius": 251.0037,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.1706672,
+        "y": 2.0900704019944114e-17,
+        "z": 0
+      },
+      "velocity": {
+        "x": -1.2760639236502852e-15,
+        "y": -10.419852683555213,
+        "z": 0.5460813396015662
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "GJ 3293 c",
+      "type": "gas giant planet",
+      "m": 0.00006333327,
+      "radius": 457.8232,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.11731382213906585,
+        "y": -0.29976040283555994,
+        "z": -0.0061481568975141135
+      },
+      "velocity": {
+        "x": 7.031784178159868,
+        "y": -2.7595078954382775,
+        "z": 0.36852019317498375
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "GJ 3293",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

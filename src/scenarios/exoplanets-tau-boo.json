@@ -1,0 +1,131 @@
+{
+  "name": "tau Boo - System",
+  "description": "tau Boo is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "tau Boo",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.32,
+    "m": 1.32
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "tau Boo",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "tau Boo"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "tau Boo",
+    "barycenterMassTwo": "tau Boo b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "tau Boo",
+      "type": "star",
+      "m": 1.32,
+      "radius": 14643.7876,
+      "tilt": 0,
+      "temperature": 6466,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.13021602005372243,
+        "y": 0.0562722786804704,
+        "z": 0.0029491051608398784
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "tau Boo b",
+      "type": "gas giant planet",
+      "m": 0.0056786729999999995,
+      "radius": 1203.3135,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.019246183928052107,
+        "y": 0.04441435505286437,
+        "z": 0.002327657716609142
+      },
+      "velocity": {
+        "x": -30.268540990283054,
+        "y": -13.08041647374676,
+        "z": -0.6855155794863764
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "tau Boo",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

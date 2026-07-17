@@ -1,0 +1,165 @@
+{
+  "name": "HD 108874 - System",
+  "description": "HD 108874 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 108874",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.1,
+    "m": 1.1
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 108874",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 108874"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00203,
+    "tol": 0.0001,
+    "maxDt": 0.0203,
+    "minDt": 0.00002,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 108874",
+    "barycenterMassTwo": "HD 108874 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 108874",
+      "type": "star",
+      "m": 1.1,
+      "radius": 10783.5,
+      "tilt": 0,
+      "temperature": 5600,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.00252667794377729,
+        "y": -0.0039072205244407516,
+        "z": -0.0006179747996354558
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 108874 b",
+      "type": "gas giant planet",
+      "m": 0.0013553097558,
+      "radius": 1278.5206,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.7835797853441602,
+        "y": 0.45178000152296915,
+        "z": 0.02367678660430779
+      },
+      "velocity": {
+        "x": -3.6832213596848273,
+        "y": 6.370783611104724,
+        "z": 0.33387862135079266
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 108874 c",
+      "type": "gas giant planet",
+      "m": 0.0009448639199999999,
+      "radius": 1297.3223,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -1.8029508106886383,
+        "y": -0.917390345263619,
+        "z": 0.04807839073096872
+      },
+      "velocity": {
+        "x": 2.341670643320541,
+        "y": -4.589489038099961,
+        "z": 0.24052492853067983
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 108874",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

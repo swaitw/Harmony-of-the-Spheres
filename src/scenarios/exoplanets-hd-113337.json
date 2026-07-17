@@ -1,0 +1,165 @@
+{
+  "name": "HD 113337 - System",
+  "description": "HD 113337 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 113337",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.41,
+    "m": 1.41
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 113337",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 113337"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0018,
+    "tol": 0.0001,
+    "maxDt": 0.018,
+    "minDt": 0.000018,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 113337",
+    "barycenterMassTwo": "HD 113337 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 113337",
+      "type": "star",
+      "m": 1.41,
+      "radius": 15405,
+      "tilt": 0,
+      "temperature": 6774,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.0316001642194448,
+        "y": 0.05715774388904177,
+        "z": -0.0014532727628050878
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 113337 b",
+      "type": "gas giant planet",
+      "m": 0.0031105157435652297,
+      "radius": 1231.5161,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.4993095283179961,
+        "y": -0.5397687329086416,
+        "z": -0.028288080618162906
+      },
+      "velocity": {
+        "x": 7.230050287508742,
+        "y": -6.669791542251291,
+        "z": -0.34954896301020066
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 113337 c",
+      "type": "gas giant planet",
+      "m": 0.01891792959601545,
+      "radius": 1137.5073,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -5.338553576367459,
+        "y": -1.9630981955951303,
+        "z": 0.10288161694568608
+      },
+      "velocity": {
+        "x": 1.1664620164354953,
+        "y": -3.163450153534928,
+        "z": 0.16578939741936133
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 113337",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

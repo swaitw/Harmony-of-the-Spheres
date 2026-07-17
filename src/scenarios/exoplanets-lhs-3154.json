@@ -1,0 +1,131 @@
+{
+  "name": "LHS 3154 - System",
+  "description": "LHS 3154 is a cool M-dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "LHS 3154",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.1118,
+    "m": 0.1118
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "LHS 3154",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "LHS 3154"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "LHS 3154",
+    "barycenterMassTwo": "LHS 3154 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "LHS 3154",
+      "type": "star",
+      "m": 0.1118,
+      "radius": 1442.935,
+      "tilt": 0,
+      "temperature": 2861,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.005273942083795972,
+        "y": -0.0007401884280018799,
+        "z": -0.000038791631762583764
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "LHS 3154 b",
+      "type": "sub-Neptune",
+      "m": 0.00003948945,
+      "radius": 346.8927,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.0029088402823942137,
+        "y": 0.02066910890371471,
+        "z": 0.0010832220974030223
+      },
+      "velocity": {
+        "x": -14.931246825883616,
+        "y": 2.095574039410784,
+        "z": 0.10982438172871145
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "LHS 3154",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

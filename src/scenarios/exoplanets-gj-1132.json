@@ -1,0 +1,165 @@
+{
+  "name": "GJ 1132 - System",
+  "description": "GJ 1132 is a cool M-dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "GJ 1132",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.1945,
+    "m": 0.1945
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "GJ 1132",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "GJ 1132"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "GJ 1132",
+    "barycenterMassTwo": "GJ 1132 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "GJ 1132",
+      "type": "star",
+      "m": 0.1945,
+      "radius": 2270.697,
+      "tilt": 0,
+      "temperature": 3229,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.0006316270525216091,
+        "y": 0.000754976414550144,
+        "z": -0.00003285106153174088
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "GJ 1132 b",
+      "type": "terrestial planet",
+      "m": 0.00000551665571457,
+      "radius": 112.0129,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.0015678621761561426,
+        "y": -0.015414161965010362,
+        "z": -0.0008078219980953118
+      },
+      "velocity": {
+        "x": 22.269191349206526,
+        "y": -2.258921945608018,
+        "z": -0.11838508274304302
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "GJ 1132 c",
+      "type": "super-Earth",
+      "m": 0.00000873873,
+      "radius": 142.8935,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.03855600000000001,
+        "y": 4.721748198792536e-18,
+        "z": 0
+      },
+      "velocity": {
+        "x": -1.8832201985011503e-15,
+        "y": -15.377659908247189,
+        "z": 0.8059090063610904
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "GJ 1132",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

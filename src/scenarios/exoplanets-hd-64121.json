@@ -1,0 +1,131 @@
+{
+  "name": "HD 64121 - System",
+  "description": "HD 64121 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 64121",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.64,
+    "m": 1.64
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 64121",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 64121"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00291,
+    "tol": 0.0001,
+    "maxDt": 0.0291,
+    "minDt": 0.000029,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 64121",
+    "barycenterMassTwo": "HD 64121 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 64121",
+      "type": "star",
+      "m": 1.64,
+      "radius": 55868.8,
+      "tilt": 0,
+      "temperature": 5078,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.000513361184005252,
+        "y": -0.010870879010141898,
+        "z": -0.0005697186277761621
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 64121 b",
+      "type": "gas giant planet",
+      "m": 0.00244336308792576,
+      "radius": 1240.917,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 1.3424081029613917,
+        "y": 0.06321959994371586,
+        "z": 0.003313198840212425
+      },
+      "velocity": {
+        "x": -0.3445711142682999,
+        "y": 7.296599373516611,
+        "z": 0.38239856948403533
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 64121",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

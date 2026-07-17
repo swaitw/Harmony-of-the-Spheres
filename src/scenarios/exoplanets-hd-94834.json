@@ -1,0 +1,131 @@
+{
+  "name": "HD 94834 - System",
+  "description": "HD 94834 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 94834",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.11,
+    "m": 1.11
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 94834",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 94834"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00864,
+    "tol": 0.0001,
+    "maxDt": 0.0864,
+    "minDt": 0.000086,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 94834",
+    "barycenterMassTwo": "HD 94834 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 94834",
+      "type": "star",
+      "m": 1.11,
+      "radius": 43134,
+      "tilt": 0,
+      "temperature": 4798,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.0030720460463943547,
+        "y": -0.003926650907136643,
+        "z": -0.0002057870540627707
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 94834 b",
+      "type": "gas giant planet",
+      "m": 0.0012025987974,
+      "radius": 1287.9214,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 1.8568685397988798,
+        "y": 1.4487565052654183,
+        "z": 0.07592611116282018
+      },
+      "velocity": {
+        "x": -2.8355018472245597,
+        "y": 3.6243030646171124,
+        "z": 0.18994167506530346
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 94834",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

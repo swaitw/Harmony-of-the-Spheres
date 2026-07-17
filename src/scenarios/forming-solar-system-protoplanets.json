@@ -1,0 +1,524 @@
+{
+  "name": "Forming Solar System with Twelve Protoplanets",
+  "description": "What if a young solar system were still taking shape? Twelve procedurally generated protoplanets of varied masses circle a Sun-like star on circular, coplanar orbits between 1 and 10 AU, embedded in a broad debris disk of 400,000 particles. Watch embryos grow, collide, scatter debris, and compete for material in a simulated planetary accretion phase.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Sun",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1,
+    "m": 1
+  },
+  "category": {
+    "name": "What If",
+    "subCategory": null
+  },
+  "camera": {
+    "cameraFocus": "Sun",
+    "logarithmicDepthBuffer": true,
+    "rotatingReferenceFrame": "Sun",
+    "defaultCameraPositionOnScenarioStart": true,
+    "customOrigoCameraPosition": {
+      "x": 0,
+      "y": 0,
+      "z": 55000
+    }
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.01,
+    "tol": 0.01,
+    "maxDt": 0.1,
+    "minDt": 0.001,
+    "useBarnesHut": true,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Sun",
+    "barycenterMassTwo": "Protoplanet VII",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "lagrangePoints": {
+    "display": false,
+    "selectedMassName": "Protoplanet VII"
+  },
+  "masses": [
+    {
+      "name": "Sun",
+      "type": "star",
+      "m": 1,
+      "radius": 10270,
+      "tilt": 0,
+      "temperature": 5778,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Protoplanet I",
+      "type": "moon",
+      "m": 0.0000012012,
+      "radius": 38.2094,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 1.3,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -1.3,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": -5.5122241776,
+        "z": 0
+      },
+      "nonStellarProceduralManifestation": true
+    },
+    {
+      "name": "Protoplanet II",
+      "type": "terrestial planet",
+      "m": 0.0000024024,
+      "radius": 48.0297,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 1.9,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0.5235987755982988,
+        "eccAnom": 0.5235987755982988,
+        "meanAnom": 0.5235987755982988
+      },
+      "position": {
+        "x": -1.6454482672,
+        "y": -0.95,
+        "z": 0
+      },
+      "velocity": {
+        "x": 2.2797737653,
+        "y": -3.9486839913,
+        "z": 0
+      },
+      "nonStellarProceduralManifestation": true
+    },
+    {
+      "name": "Protoplanet III",
+      "type": "terrestial planet",
+      "m": 0.0000045045,
+      "radius": 107.4578,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 2.5,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 1.0471975511965976,
+        "eccAnom": 1.0471975511965976,
+        "meanAnom": 1.0471975511965976
+      },
+      "position": {
+        "x": -1.25,
+        "y": -2.1650635095,
+        "z": 0
+      },
+      "velocity": {
+        "x": 3.4423828956,
+        "y": -1.9874606914,
+        "z": 0
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "skyblue"
+    },
+    {
+      "name": "Protoplanet IV",
+      "type": "terrestial planet",
+      "m": 0.000009009,
+      "radius": 135.0759,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 3.1,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 1.5707963267948966,
+        "eccAnom": 1.5707963267948966,
+        "meanAnom": 1.5707963267948966
+      },
+      "position": {
+        "x": 0,
+        "y": -3.1,
+        "z": 0
+      },
+      "velocity": {
+        "x": 3.5695847775,
+        "y": 0,
+        "z": 0
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "skyblue"
+    },
+    {
+      "name": "Protoplanet V",
+      "type": "terrestial planet",
+      "m": 0.000018018,
+      "radius": 169.7922,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 3.7,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 2.0943951023931953,
+        "eccAnom": 2.0943951023931953,
+        "meanAnom": 2.0943951023931953
+      },
+      "position": {
+        "x": 1.85,
+        "y": -3.204293994,
+        "z": 0
+      },
+      "velocity": {
+        "x": 2.8296213098,
+        "y": 1.6336826249,
+        "z": 0
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "skyblue"
+    },
+    {
+      "name": "Protoplanet VI",
+      "type": "sub-Neptune",
+      "m": 0.00003003,
+      "radius": 295.0036,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 4.3,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 2.6179938779914944,
+        "eccAnom": 2.6179938779914944,
+        "meanAnom": 2.6179938779914944
+      },
+      "position": {
+        "x": 3.7239092363,
+        "y": -2.15,
+        "z": 0
+      },
+      "velocity": {
+        "x": 1.5154245702,
+        "y": 2.6247923506,
+        "z": 0
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    },
+    {
+      "name": "Protoplanet VII",
+      "type": "sub-Neptune",
+      "m": 0.000054054,
+      "radius": 362.3871,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 5,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 3.141592653589793,
+        "eccAnom": 3.141592653589793,
+        "meanAnom": 3.141592653589793
+      },
+      "position": {
+        "x": 5,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": 2.8106938645,
+        "z": 0
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    },
+    {
+      "name": "Protoplanet VIII",
+      "type": "sub-Neptune",
+      "m": 0.00009009,
+      "radius": 433.331,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 5.8,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 3.665191429188092,
+        "eccAnom": 3.665191429188092,
+        "meanAnom": 3.665191429188092
+      },
+      "position": {
+        "x": 5.0229473419,
+        "y": 2.9,
+        "z": 0
+      },
+      "velocity": {
+        "x": -1.3048318692,
+        "y": 2.2600350928,
+        "z": 0
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    },
+    {
+      "name": "Protoplanet IX",
+      "type": "sub-Neptune",
+      "m": 0.000135135,
+      "radius": 499.4037,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 6.6,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 4.1887902047863905,
+        "eccAnom": 4.1887902047863905,
+        "meanAnom": 4.1887902047863905
+      },
+      "position": {
+        "x": 3.3,
+        "y": 5.715767665,
+        "z": 0
+      },
+      "velocity": {
+        "x": -2.1186402157,
+        "y": 1.2231974989,
+        "z": 0
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    },
+    {
+      "name": "Protoplanet X",
+      "type": "gas giant planet",
+      "m": 0.00021021,
+      "radius": 482.0085,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 7.5,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 4.71238898038469,
+        "eccAnom": 4.71238898038469,
+        "meanAnom": 4.71238898038469
+      },
+      "position": {
+        "x": 0,
+        "y": 7.5,
+        "z": 0
+      },
+      "velocity": {
+        "x": -2.2949219304,
+        "y": 0,
+        "z": 0
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Protoplanet XI",
+      "type": "gas giant planet",
+      "m": 0.00033033,
+      "radius": 604.2296,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 8.5,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 5.235987755982989,
+        "eccAnom": 5.235987755982989,
+        "meanAnom": 5.235987755982989
+      },
+      "position": {
+        "x": -4.25,
+        "y": 7.3612159322,
+        "z": 0
+      },
+      "velocity": {
+        "x": -1.8668942438,
+        "y": -1.0778518942,
+        "z": 0
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Protoplanet XII",
+      "type": "gas giant planet",
+      "m": 0.00054054,
+      "radius": 772.9331,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 9.5,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 5.759586531581287,
+        "eccAnom": 5.759586531581287,
+        "meanAnom": 5.759586531581287
+      },
+      "position": {
+        "x": -8.227241336,
+        "y": 4.75,
+        "z": 0
+      },
+      "velocity": {
+        "x": -1.0195458225,
+        "y": -1.7659051652,
+        "z": 0
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 400000,
+    "softening": 0,
+    "size": 40,
+    "shapes": [
+      {
+        "primary": "Sun",
+        "type": "getRingParticle",
+        "flatLand": true,
+        "tilt": [-90, 0, 0],
+        "number": 400000,
+        "minD": 1,
+        "maxD": 10,
+        "size": 40
+      }
+    ]
+  },
+  "ringToBeAdded": {
+    "primary": "Sun",
+    "a": 5.5,
+    "aInterval": 4.5,
+    "i": -90,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

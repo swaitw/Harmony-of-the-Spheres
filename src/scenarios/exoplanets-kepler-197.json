@@ -1,0 +1,233 @@
+{
+  "name": "Kepler-197 - System",
+  "description": "Kepler-197 is a Sun-like G/F-type star with 4 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-197",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.857,
+    "m": 0.857
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "4-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-197",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-197"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0002,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-197",
+    "barycenterMassTwo": "Kepler-197 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-197",
+      "type": "star",
+      "m": 0.857,
+      "radius": 11502.4,
+      "tilt": 0,
+      "temperature": 6004,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.0003377306194967801,
+        "y": 0.000032229616742005176,
+        "z": -0.000034080480547905415
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-197 b",
+      "type": "terrestial planet",
+      "m": 0.00000312312,
+      "radius": 95.889,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.0588,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": 24.199410570048137,
+        "z": 1.2682373679347771
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-197 c",
+      "type": "terrestial planet",
+      "m": 0.000015915899999999998,
+      "radius": 115.6309,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 5.0700377484700425e-18,
+        "y": 0.0828,
+        "z": 0
+      },
+      "velocity": {
+        "x": -20.984086818720584,
+        "y": 1.2849047377788165e-15,
+        "z": 1.0997293904516827
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-197 d",
+      "type": "terrestial planet",
+      "m": 0.0000059459399999999995,
+      "radius": 114.6908,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.11542999999999999,
+        "y": 1.4136098002557898e-17,
+        "z": 0
+      },
+      "velocity": {
+        "x": -2.1255116089876944e-15,
+        "y": -17.35611941718672,
+        "z": 0.9095956756260274
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-197 e",
+      "type": "terrestial planet",
+      "m": 0.000002081079,
+      "radius": 85.5481,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -1.8678312980595432e-17,
+        "y": -0.10168,
+        "z": 0
+      },
+      "velocity": {
+        "x": 21.404995432337902,
+        "y": -3.932033871296449e-15,
+        "z": 1.12178827617247
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-197",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

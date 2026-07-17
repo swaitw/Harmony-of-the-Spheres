@@ -1,0 +1,174 @@
+{
+  "name": "The Earth and Moon System (Procedural)",
+  "description": "The Earth-Moon gravitational two-body system rendered with procedurally generated WebGL shader textures — every surface generated from scratch based on mass and orbital distance.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Earth",
+    "unitName": "Lunar Units",
+    "unitMassQuantity": 3.69396868e-8,
+    "m": 1
+  },
+  "category": {
+    "name": "Solar System",
+    "subCategory": "Moons"
+  },
+  "camera": {
+    "cameraFocus": "Earth",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Earth",
+    "customOrigoCameraPosition": {
+      "x": 0,
+      "y": 40000,
+      "z": 0
+    }
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0005,
+    "tol": 0.0001,
+    "maxDt": 0.0009,
+    "minDt": 0.0001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": true,
+    "barycenterMassOne": "Earth",
+    "barycenterMassTwo": "Moon",
+    "systemBarycenter": false
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": false,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Sun",
+      "type": "star",
+      "m": 1,
+      "radius": 10270,
+      "tilt": 0,
+      "temperature": 5778,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0.00257729957449904,
+        "y": -0.004392340734313888,
+        "z": -0.00006978730929619852
+      },
+      "velocity": {
+        "x": 0.0029586689261267758,
+        "y": 0.00013186850299206433,
+        "z": -0.00008036276531728809
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Earth",
+      "type": "terrestial planet",
+      "m": 0.000003003,
+      "radius": 91.74311926605505,
+      "tilt": -23.44,
+      "atmosphere": "skyblue",
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.9939017404234283,
+        "y": 0.1352478854409775,
+        "z": -0.0000563711820259021
+      },
+      "velocity": {
+        "x": -0.9740470647877054,
+        "y": 6.197562901988265,
+        "z": 0.00041377604204935426
+      },
+      "customMassCameraPosition": {
+        "x": 700,
+        "y": -500,
+        "z": 1000
+      },
+      "nonStellarProceduralManifestation": true
+    },
+    {
+      "name": "Moon",
+      "type": "moon",
+      "m": 3.69396868e-8,
+      "radius": 22.93577981651376,
+      "tilt": -1.54,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.9956218231659631,
+        "y": 0.1372984436242337,
+        "z": -0.0001963882374615497
+      },
+      "velocity": {
+        "x": -1.1283327200261632,
+        "y": 6.334444083774614,
+        "z": -0.015608356925550449
+      },
+      "nonStellarProceduralManifestation": true
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Earth",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "name": "HD 125612 - System",
+  "description": "HD 125612 is a Sun-like G/F-type star with 3 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 125612",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.05,
+    "m": 1.05
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "3-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 125612",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 125612"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 125612",
+    "barycenterMassTwo": "HD 125612 c",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 125612",
+      "type": "star",
+      "m": 1.05,
+      "radius": 10988.9,
+      "tilt": 0,
+      "temperature": 5900,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.0009331851654016519,
+        "y": 0.04726294732914841,
+        "z": -0.0017327991723050217
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 125612 c",
+      "type": "gas giant planet",
+      "m": 0.000046767496595819995,
+      "radius": 382.6161,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.03746037738872633,
+        "y": 0.021887237759722594,
+        "z": 0.001147061525626987
+      },
+      "velocity": {
+        "x": -16.733629798939994,
+        "y": -28.561444093989557,
+        "z": -1.4968418580827256
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 125612 b",
+      "type": "gas giant planet",
+      "m": 0.00283850071230726,
+      "radius": 1240.917,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.7178935078731342,
+        "y": 0.20595116001570554,
+        "z": 0.027185929408273957
+      },
+      "velocity": {
+        "x": -2.456736674666738,
+        "y": -8.608054413432892,
+        "z": 0.33706710887528846
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 125612 d",
+      "type": "gas giant planet",
+      "m": 0.00685096103326635,
+      "radius": 1193.9126,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -3.3864001762656026,
+        "y": -0.9668954642794718,
+        "z": -0.12836032192262353
+      },
+      "velocity": {
+        "x": 0.9890866871195886,
+        "y": -3.482194506175068,
+        "z": 0.1361381920369948
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 125612",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

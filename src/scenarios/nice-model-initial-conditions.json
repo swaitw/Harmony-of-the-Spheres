@@ -1,0 +1,288 @@
+{
+  "name": "Five-Planet Nice Model Initial Conditions",
+  "description": "Initial state of the five-planet Nice model (Nesvorný 2011; Nesvorný & Morbidelli 2012): Jupiter, Saturn, and three ice giants—including a Neptune-mass fifth giant between Saturn and Uranus—in a compact 3:2, 3:2, 2:1, 3:2 mean-motion resonance chain at 5.5–20 AU, plus a planetesimal disk from 24 to 30 AU. Press play to watch planetesimal-driven migration, resonance breaking, and the likely ejection of Planet Five during the jumping-Jupiter instability.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Sun",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1,
+    "m": 1
+  },
+  "category": {
+    "name": "What If",
+    "subCategory": null
+  },
+  "camera": {
+    "cameraFocus": "Sun",
+    "logarithmicDepthBuffer": true,
+    "rotatingReferenceFrame": "Sun",
+    "defaultCameraPositionOnScenarioStart": true,
+    "customOrigoCameraPosition": {
+      "x": 0,
+      "y": 0,
+      "z": 75000
+    }
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.01,
+    "tol": 0.01,
+    "maxDt": 0.1,
+    "minDt": 0.001,
+    "useBarnesHut": true,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Sun",
+    "barycenterMassTwo": "Jupiter",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "lagrangePoints": {
+    "display": false,
+    "selectedMassName": "Jupiter"
+  },
+  "masses": [
+    {
+      "name": "Sun",
+      "type": "star",
+      "m": 1,
+      "radius": 10270,
+      "tilt": 0,
+      "temperature": 5778,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Jupiter",
+      "type": "gas giant planet",
+      "m": 0.0009543,
+      "radius": 1027.5229357798166,
+      "tilt": 0,
+      "atmosphere": "beige",
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 5.5,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -5.5,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": -2.6798914496,
+        "z": 0
+      },
+      "nonStellarProceduralManifestation": true
+    },
+    {
+      "name": "Saturn",
+      "type": "gas giant planet",
+      "m": 0.0002857,
+      "radius": 862.3853211009175,
+      "tilt": 0,
+      "atmosphere": "beige",
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 7.207038834074465,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -7.2070388341,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": -2.341100818,
+        "z": 0
+      },
+      "nonStellarProceduralManifestation": true
+    },
+    {
+      "name": "Planet Five",
+      "type": "ice giant planet",
+      "m": 0.00005151,
+      "radius": 363.5,
+      "tilt": 0,
+      "atmosphere": "lightskyblue",
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 9.443892501064987,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -9.4438925011,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": -2.0451399406,
+        "z": 0
+      },
+      "nonStellarProceduralManifestation": true
+    },
+    {
+      "name": "Uranus",
+      "type": "ice giant planet",
+      "m": 0.00004366,
+      "radius": 377.5,
+      "tilt": 0,
+      "atmosphere": "lightcyan",
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 14.991244890865149,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -14.9912448909,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": -1.6232286466,
+        "z": 0
+      },
+      "nonStellarProceduralManifestation": true
+    },
+    {
+      "name": "Neptune",
+      "type": "ice giant planet",
+      "m": 0.00005151,
+      "radius": 363.5,
+      "tilt": 0,
+      "atmosphere": "lightskyblue",
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 19.644088018106462,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -19.6440880181,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": -1.4180208354,
+        "z": 0
+      },
+      "nonStellarProceduralManifestation": true
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 500000,
+    "softening": 0,
+    "size": 35,
+    "shapes": [
+      {
+        "primary": "Sun",
+        "type": "getRingParticle",
+        "flatLand": true,
+        "tilt": [-90, 0, 0],
+        "number": 500000,
+        "minD": 24,
+        "maxD": 30,
+        "size": 35
+      }
+    ]
+  },
+  "ringToBeAdded": {
+    "primary": "Sun",
+    "a": 27,
+    "aInterval": 3,
+    "i": -90,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

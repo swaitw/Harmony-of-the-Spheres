@@ -1,0 +1,165 @@
+{
+  "name": "HIP 113103 - System",
+  "description": "HIP 113103 is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HIP 113103",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.761,
+    "m": 0.761
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HIP 113103",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HIP 113103"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0002,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HIP 113103",
+    "barycenterMassTwo": "HIP 113103 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HIP 113103",
+      "type": "star",
+      "m": 0.761,
+      "radius": 7620.34,
+      "tilt": 0,
+      "temperature": 4930,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.0004055660422345163,
+        "y": -0.00021261243515789593,
+        "z": -0.000029181488538880378
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HIP 113103 b",
+      "type": "super-Earth",
+      "m": 0.000012012,
+      "radius": 171.9422,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.056391766110659144,
+        "y": -0.00992976278489231,
+        "z": -0.0005203968163635928
+      },
+      "velocity": {
+        "x": 4.303501101109484,
+        "y": 24.3729194769252,
+        "z": 1.2773305844300322
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "HIP 113103 c",
+      "type": "super-Earth",
+      "m": 0.000019069049999999997,
+      "radius": 225.6213,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.02974744137985036,
+        "y": 0.08161841477281878,
+        "z": -0.004277439866845596
+      },
+      "velocity": {
+        "x": -18.89603380173601,
+        "y": -6.8681683461770096,
+        "z": 0.359945450765215
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HIP 113103",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

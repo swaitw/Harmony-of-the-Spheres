@@ -1,0 +1,131 @@
+{
+  "name": "TYC 2187-512-1 - System",
+  "description": "TYC 2187-512-1 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TYC 2187-512-1",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.498,
+    "m": 0.498
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TYC 2187-512-1",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TYC 2187-512-1"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00383,
+    "tol": 0.0001,
+    "maxDt": 0.0383,
+    "minDt": 0.000038,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TYC 2187-512-1",
+    "barycenterMassTwo": "TYC 2187-512-1 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TYC 2187-512-1",
+      "type": "star",
+      "m": 0.498,
+      "radius": 5083.65,
+      "tilt": 0,
+      "temperature": 3734,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.000172761331326637,
+        "y": -0.002660676715471296,
+        "z": -0.00013944015804794673
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TYC 2187-512-1 b",
+      "type": "gas giant planet",
+      "m": 0.00031496477305293,
+      "radius": 1175.1108,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 1.1565711301302157,
+        "y": 0.07489202837351794,
+        "z": 0.003924924893058588
+      },
+      "velocity": {
+        "x": -0.2731579857859437,
+        "y": 4.206873649587586,
+        "z": 0.22047290569922826
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TYC 2187-512-1",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

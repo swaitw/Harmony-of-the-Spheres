@@ -1,0 +1,131 @@
+{
+  "name": "Kepler-12 - System",
+  "description": "Kepler-12 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-12",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.166,
+    "m": 1.166
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-12",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-12"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-12",
+    "barycenterMassTwo": "Kepler-12 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-12",
+      "type": "star",
+      "m": 1.166,
+      "radius": 15230.41,
+      "tilt": 0,
+      "temperature": 5947,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.00035615564954042127,
+        "y": 0.0101849860635177,
+        "z": 0.0005337725016176864
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-12 b",
+      "type": "gas giant planet",
+      "m": 0.00041231958768,
+      "radius": 1848.2694,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.055266312734156,
+        "y": -0.0019272972489818548,
+        "z": -0.00010100536883745357
+      },
+      "velocity": {
+        "x": 1.007173803458561,
+        "y": -28.80215761002926,
+        "z": -1.509457118901779
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-12",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

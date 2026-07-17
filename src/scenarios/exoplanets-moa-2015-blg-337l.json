@@ -1,0 +1,131 @@
+{
+  "name": "MOA-2015-BLG-337L - System",
+  "description": "MOA-2015-BLG-337L is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "MOA-2015-BLG-337L",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.0094,
+    "m": 0.0094
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "MOA-2015-BLG-337L",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "MOA-2015-BLG-337L"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00251,
+    "tol": 0.0001,
+    "maxDt": 0.0251,
+    "minDt": 0.000025,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "MOA-2015-BLG-337L",
+    "barycenterMassTwo": "MOA-2015-BLG-337L b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "MOA-2015-BLG-337L",
+      "type": "star",
+      "m": 0.0094,
+      "radius": 10270,
+      "tilt": 0,
+      "temperature": 5778,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": -0.01337268576388979,
+        "z": -0.0007008327639354035
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "MOA-2015-BLG-337L b",
+      "type": "gas giant planet",
+      "m": 0.0001012011,
+      "radius": 603.5369,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.24,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": 1.2421134373101086,
+        "z": 0.06509640686704782
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "MOA-2015-BLG-337L",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

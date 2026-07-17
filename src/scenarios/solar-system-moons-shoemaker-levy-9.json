@@ -1,0 +1,895 @@
+{
+  "name": "Shoemaker-Levy 9 Impacts Jupiter",
+  "description": "On 27 March 1993, shortly after the comet's discovery, Brian Marsden calculated that the broken nucleus of Shoemaker-Levy 9 was on a collision course with Jupiter. Watch the 19 major fragments — labelled A through W — fall toward the gas giant alongside Io, Europa, Ganymede, and Callisto. Fragment positions use the jovicentric osculating elements of Chodas & Yeomans (1996); moon positions are from JPL Horizons for 27 March 1993.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Jupiter",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1,
+    "m": 0.0009543
+  },
+  "category": {
+    "name": "Solar System",
+    "subCategory": "Moons"
+  },
+  "camera": {
+    "cameraFocus": "Jupiter",
+    "logarithmicDepthBuffer": true,
+    "rotatingReferenceFrame": "Jupiter",
+    "customOrigoCameraPosition": {
+      "x": 0,
+      "y": 0,
+      "z": 80000
+    }
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0000097,
+    "tol": 0.0001,
+    "maxDt": 0.00194,
+    "minDt": 0.0000097,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Sun",
+    "barycenterMassTwo": "Jupiter",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": false,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Jupiter",
+      "type": "gas giant planet",
+      "m": 0.0009543,
+      "radius": 1027.5229357798166,
+      "tilt": -3.13,
+      "atmosphere": "beige",
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Sun",
+      "type": "star",
+      "m": 1,
+      "radius": 10270,
+      "tilt": 0,
+      "temperature": 5778,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 5.37464125586097,
+        "y": 0.911167995961827,
+        "z": -0.1241379321934604
+      },
+      "velocity": {
+        "x": -0.4254048003621271,
+        "y": 2.5922334970936878,
+        "z": -0.0011963915854250253
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Io",
+      "type": "moon",
+      "m": 4.490848296995278e-8,
+      "radius": 24.082568807339452,
+      "tilt": -3.13,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.002719468376732379,
+        "y": 0.0007182810426182395,
+        "z": 0.00006672627955556592
+      },
+      "velocity": {
+        "x": -0.9506056766364911,
+        "y": 3.5376318553071706,
+        "z": 0.11069135083638514
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Europa",
+      "type": "moon",
+      "m": 2.413291634272764e-8,
+      "radius": 22.477064220183486,
+      "tilt": -3.13,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.00316918310608162,
+        "y": -0.003117948968551751,
+        "z": -0.0001784291776203807
+      },
+      "velocity": {
+        "x": 2.06013685736855,
+        "y": -2.0724358095642392,
+        "z": -0.026724882967291357
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Ganymede",
+      "type": "moon",
+      "m": 7.450777301989e-8,
+      "radius": 34.633027522935784,
+      "tilt": -3.13,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.003566128044190695,
+        "y": 0.006201670136272937,
+        "z": 0.0002600779942826724
+      },
+      "velocity": {
+        "x": -1.988487432763533,
+        "y": 1.14419408706415,
+        "z": 0.02021326880085055
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Callisto",
+      "type": "moon",
+      "m": 5.4300826548000004e-8,
+      "radius": 35.74007220216607,
+      "tilt": -3.13,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.008545258933279185,
+        "y": 0.009164620407107789,
+        "z": 0.0004150293222729838
+      },
+      "velocity": {
+        "x": -1.2637055531247037,
+        "y": 1.192276890624654,
+        "z": 0.022961025828277262
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Fragment A",
+      "type": "comet",
+      "m": 2e-14,
+      "radius": 3,
+      "tilt": -3.13,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.07233313121646268,
+        "y": 0.24985860299155252,
+        "z": -0.24291711582873443
+      },
+      "velocity": {
+        "x": -0.07233313121646268,
+        "y": 0.24985860299155252,
+        "z": -0.24291711582873443
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Fragment B",
+      "type": "comet",
+      "m": 2e-14,
+      "radius": 3,
+      "tilt": -3.13,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.07229796087214449,
+        "y": 0.24994843145005288,
+        "z": -0.2429562241362727
+      },
+      "velocity": {
+        "x": -0.07229796087214449,
+        "y": 0.24994843145005288,
+        "z": -0.2429562241362727
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Fragment C",
+      "type": "comet",
+      "m": 2e-14,
+      "radius": 3,
+      "tilt": -3.13,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.004071989073206235,
+        "y": 0.013563056595368944,
+        "z": -0.019788084167935108
+      },
+      "velocity": {
+        "x": -0.004071989073206235,
+        "y": 0.013563056595368944,
+        "z": -0.019788084167935108
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Fragment D",
+      "type": "comet",
+      "m": 2e-14,
+      "radius": 3,
+      "tilt": -3.13,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.072404655656766,
+        "y": 0.2499778928263521,
+        "z": -0.24303769029831288
+      },
+      "velocity": {
+        "x": -0.072404655656766,
+        "y": 0.2499778928263521,
+        "z": -0.24303769029831288
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Fragment E",
+      "type": "comet",
+      "m": 2e-14,
+      "radius": 3,
+      "tilt": -3.13,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.0724185714614755,
+        "y": 0.2500049357238818,
+        "z": -0.24306475359814314
+      },
+      "velocity": {
+        "x": -0.0724185714614755,
+        "y": 0.2500049357238818,
+        "z": -0.24306475359814314
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Fragment F",
+      "type": "comet",
+      "m": 2e-14,
+      "radius": 3,
+      "tilt": -3.13,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.07243936443831758,
+        "y": 0.25010492069147644,
+        "z": -0.24313432651106529
+      },
+      "velocity": {
+        "x": -0.07243936443831758,
+        "y": 0.25010492069147644,
+        "z": -0.24313432651106529
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Fragment G",
+      "type": "comet",
+      "m": 2e-14,
+      "radius": 3,
+      "tilt": -3.13,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.0724799958041657,
+        "y": 0.25013385656194514,
+        "z": -0.24319122233338367
+      },
+      "velocity": {
+        "x": -0.0724799958041657,
+        "y": 0.25013385656194514,
+        "z": -0.24319122233338367
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Fragment H",
+      "type": "comet",
+      "m": 2e-14,
+      "radius": 3,
+      "tilt": -3.13,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.07252135545389228,
+        "y": 0.25022902766733446,
+        "z": -0.24328016139771869
+      },
+      "velocity": {
+        "x": -0.07252135545389228,
+        "y": 0.25022902766733446,
+        "z": -0.24328016139771869
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Fragment K",
+      "type": "comet",
+      "m": 2e-14,
+      "radius": 3,
+      "tilt": -3.13,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.06236245635713777,
+        "y": 0.21478564926922264,
+        "z": -0.21863914107697366
+      },
+      "velocity": {
+        "x": -0.06236245635713777,
+        "y": 0.21478564926922264,
+        "z": -0.21863914107697366
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Fragment L",
+      "type": "comet",
+      "m": 2e-14,
+      "radius": 3,
+      "tilt": -3.13,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.07266611985108978,
+        "y": 0.2504312844767114,
+        "z": -0.24349220767169272
+      },
+      "velocity": {
+        "x": -0.07266611985108978,
+        "y": 0.2504312844767114,
+        "z": -0.24349220767169272
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Fragment N",
+      "type": "comet",
+      "m": 2e-14,
+      "radius": 3,
+      "tilt": -3.13,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.07268036652352074,
+        "y": 0.25053673941587773,
+        "z": -0.24357710886258319
+      },
+      "velocity": {
+        "x": -0.07268036652352074,
+        "y": 0.25053673941587773,
+        "z": -0.24357710886258319
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Fragment P",
+      "type": "comet",
+      "m": 2e-14,
+      "radius": 3,
+      "tilt": -3.13,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.009658018206218037,
+        "y": 0.0338027929294186,
+        "z": -0.024694182835554863
+      },
+      "velocity": {
+        "x": -0.009658018206218037,
+        "y": 0.0338027929294186,
+        "z": -0.024694182835554863
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Fragment Q",
+      "type": "comet",
+      "m": 2e-14,
+      "radius": 3,
+      "tilt": -3.13,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.05807266376457988,
+        "y": 0.19992967046668508,
+        "z": -0.18485716614659156
+      },
+      "velocity": {
+        "x": -0.05807266376457988,
+        "y": 0.19992967046668508,
+        "z": -0.18485716614659156
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Fragment R",
+      "type": "comet",
+      "m": 2e-14,
+      "radius": 3,
+      "tilt": -3.13,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.006839050757411921,
+        "y": 0.02368771489799931,
+        "z": -0.031217683297121147
+      },
+      "velocity": {
+        "x": -0.006839050757411921,
+        "y": 0.02368771489799931,
+        "z": -0.031217683297121147
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Fragment S",
+      "type": "comet",
+      "m": 2e-14,
+      "radius": 3,
+      "tilt": -3.13,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.052461417976349206,
+        "y": 0.18087544958660917,
+        "z": -0.1881452412490406
+      },
+      "velocity": {
+        "x": -0.052461417976349206,
+        "y": 0.18087544958660917,
+        "z": -0.1881452412490406
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Fragment T",
+      "type": "comet",
+      "m": 2e-14,
+      "radius": 3,
+      "tilt": -3.13,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.0670650270752331,
+        "y": 0.23183421926408276,
+        "z": -0.219340719135795
+      },
+      "velocity": {
+        "x": -0.0670650270752331,
+        "y": 0.23183421926408276,
+        "z": -0.219340719135795
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Fragment U",
+      "type": "comet",
+      "m": 2e-14,
+      "radius": 3,
+      "tilt": -3.13,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.07280078012803251,
+        "y": 0.2508301371834736,
+        "z": -0.2438528988775734
+      },
+      "velocity": {
+        "x": -0.07280078012803251,
+        "y": 0.2508301371834736,
+        "z": -0.2438528988775734
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Fragment V",
+      "type": "comet",
+      "m": 2e-14,
+      "radius": 3,
+      "tilt": -3.13,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.002827674488775174,
+        "y": 0.009741858783693286,
+        "z": -0.015132332000954275
+      },
+      "velocity": {
+        "x": -0.002827674488775174,
+        "y": 0.009741858783693286,
+        "z": -0.015132332000954275
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Fragment W",
+      "type": "comet",
+      "m": 2e-14,
+      "radius": 3,
+      "tilt": -3.13,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.07290402703506114,
+        "y": 0.25087641404030003,
+        "z": -0.2439240449670486
+      },
+      "velocity": {
+        "x": -0.07290402703506114,
+        "y": 0.25087641404030003,
+        "z": -0.2439240449670486
+      },
+      "nonStellarProceduralManifestation": false
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Jupiter",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

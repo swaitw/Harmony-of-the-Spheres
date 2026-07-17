@@ -1,0 +1,301 @@
+{
+  "name": "HD 219134 - System",
+  "description": "HD 219134 is a orange K-type dwarf star with 6 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 219134",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.81,
+    "m": 0.81
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "6-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 219134",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 219134"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 219134",
+    "barycenterMassTwo": "HD 219134 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 219134",
+      "type": "star",
+      "m": 0.81,
+      "radius": 7990.06,
+      "tilt": 0,
+      "temperature": 4699,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.0002828297273024611,
+        "y": 0.0008016686006243797,
+        "z": 0.00004367180922020051
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 219134 b",
+      "type": "super-Earth",
+      "m": 0.00001423422,
+      "radius": 150.6022,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.03876,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": 28.69152150232753,
+        "z": 1.503658926188612
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "HD 219134 c",
+      "type": "super-Earth",
+      "m": 0.00001309308,
+      "radius": 142.0474,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.039303328446415334,
+        "y": 0.04688185433439255,
+        "z": 0.0030123262044468324
+      },
+      "velocity": {
+        "x": -18.033045455578375,
+        "y": -15.145064229115656,
+        "z": 0.42159665271651847
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "HD 219134 f",
+      "type": "terrestial planet",
+      "m": 0.000021921899999999998,
+      "radius": 123.1516,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.11622244197798197,
+        "y": -0.044585343796742866,
+        "z": 0.0064432355971872895
+      },
+      "velocity": {
+        "x": 6.154944572792334,
+        "y": -16.024035920693443,
+        "z": 0.1405408726592313
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "HD 219134 d",
+      "type": "super-Earth",
+      "m": 0.00004855851,
+      "radius": 151.3543,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.2027712235034122,
+        "y": -0.024863054927685136,
+        "z": 0.0013030174949522513
+      },
+      "velocity": {
+        "x": 1.6269674101601208,
+        "y": 13.232426747478948,
+        "z": -0.6934821003608876
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "HD 219134 g",
+      "type": "sub-Neptune",
+      "m": 0.00003245107866,
+      "radius": 308.3491,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.18765000000000018,
+        "y": -0.32501933404029976,
+        "z": 0
+      },
+      "velocity": {
+        "x": 7.985218661292433,
+        "y": -4.610268143635215,
+        "z": 0.4832278306145405
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 219134 h",
+      "type": "gas giant planet",
+      "m": 0.0003245107866,
+      "radius": 1193.9126,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -2.6475100694899876,
+        "y": 1.2366312198804916,
+        "z": -0.08775658360490236
+      },
+      "velocity": {
+        "x": -1.4361437066098455,
+        "y": -3.0850096169553165,
+        "z": -0.14602074223800643
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 219134",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

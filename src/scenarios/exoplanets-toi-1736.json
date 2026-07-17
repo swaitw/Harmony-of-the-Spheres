@@ -1,0 +1,165 @@
+{
+  "name": "TOI-1736 - System",
+  "description": "TOI-1736 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-1736",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.0373,
+    "m": 1.0373
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-1736",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-1736"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0002,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-1736",
+    "barycenterMassTwo": "TOI-1736 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-1736",
+      "type": "star",
+      "m": 1.0373,
+      "radius": 14671.722,
+      "tilt": 0,
+      "temperature": 5636,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.019083821382567073,
+        "y": -0.062056057982503444,
+        "z": 0.0032522201899226485
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-1736 b",
+      "type": "sub-Neptune",
+      "m": 0.0000369369,
+      "radius": 299.1132,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 4.4699608168878386e-18,
+        "y": 0.07289995603708388,
+        "z": 0.0038205248057349
+      },
+      "velocity": {
+        "x": -23.691322612367752,
+        "y": 1.4486870204054804e-15,
+        "z": 7.592246961561703e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "TOI-1736 c",
+      "type": "gas giant planet",
+      "m": 0.0084084,
+      "radius": 1175.1108,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.8238317733703032,
+        "y": -0.26382420803173906,
+        "z": 0.013826440864050526
+      },
+      "velocity": {
+        "x": 2.458343077676799,
+        "y": 7.655528869374772,
+        "z": -0.4012092672811431
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-1736",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

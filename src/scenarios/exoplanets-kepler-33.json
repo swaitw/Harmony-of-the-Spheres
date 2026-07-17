@@ -1,0 +1,267 @@
+{
+  "name": "Kepler-33 - System",
+  "description": "Kepler-33 is a Sun-like G/F-type star with 5 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-33",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.291,
+    "m": 1.291
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "5-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-33",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-33"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0002,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-33",
+    "barycenterMassTwo": "Kepler-33 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-33",
+      "type": "star",
+      "m": 1.291,
+      "radius": 18691.4,
+      "tilt": 0,
+      "temperature": 5904,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.00030690041679296064,
+        "y": -0.000047774852959636854,
+        "z": -0.000048664568338667056
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-33 b",
+      "type": "super-Earth",
+      "m": 0.00001105104,
+      "radius": 163.5754,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.0677,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": 27.407646292290213,
+        "z": 1.4363738775540082
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-33 c",
+      "type": "sub-Neptune",
+      "m": 0.00000117117,
+      "radius": 300.8284,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.036742120631181256,
+        "y": 0.11308061978749376,
+        "z": 0
+      },
+      "velocity": {
+        "x": -19.668963457929628,
+        "y": 6.390833631966631,
+        "z": 1.0838543009461654
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-33 d",
+      "type": "gas giant planet",
+      "m": 0.00001174173,
+      "radius": 502.9474,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.13445862446511625,
+        "y": 0.09768990893100904,
+        "z": 0
+      },
+      "velocity": {
+        "x": -10.281802344431876,
+        "y": -14.151686856734155,
+        "z": 0.9167402989395171
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-33 e",
+      "type": "gas giant planet",
+      "m": 0.00001672671,
+      "radius": 377.9156,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.17296783339736377,
+        "y": -0.12566848694013072,
+        "z": 0
+      },
+      "velocity": {
+        "x": 9.065273474339628,
+        "y": -12.477278514207969,
+        "z": 0.8082728335402355
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-33 f",
+      "type": "gas giant planet",
+      "m": 0.000028828799999999997,
+      "radius": 419.2795,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.07833580807404912,
+        "y": -0.24109282688082145,
+        "z": 0
+      },
+      "velocity": {
+        "x": 13.470490779305774,
+        "y": 4.376827772120195,
+        "z": 0.7422887026169216
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-33",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

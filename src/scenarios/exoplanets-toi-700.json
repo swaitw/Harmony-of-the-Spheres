@@ -1,0 +1,231 @@
+{
+  "name": "TOI-700 - System",
+  "description": "TOI-700 is a cool M-dwarf star with 4 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-700",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.415,
+    "m": 0.415
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "4-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-700",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-700"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0002,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-700",
+    "barycenterMassTwo": "TOI-700 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-700",
+      "type": "star",
+      "m": 0.415,
+      "radius": 4323.67,
+      "tilt": 0,
+      "temperature": 3459,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.0004460053534302727,
+        "y": 0.00045524255255082466,
+        "z": -0.00003614640131498279
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-700 b",
+      "type": "terrestial planet",
+      "m": 0.0000021141119999999997,
+      "radius": 85.9241,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.05423267584849101,
+        "y": -0.03126833902008414,
+        "z": -0.0016387042099118747
+      },
+      "velocity": {
+        "x": 8.387482594082597,
+        "y": -14.507636503655583,
+        "z": -0.7603130118021735
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "TOI-700 c",
+      "type": "sub-Neptune",
+      "m": 0.000021831809999999997,
+      "radius": 244.423,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.04323207064087414,
+        "y": 0.07498290433078729,
+        "z": 0.002265696816095778
+      },
+      "velocity": {
+        "x": -12.297800609558962,
+        "y": -7.109882339013897,
+        "z": 0.6445004200126158
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "TOI-700 e",
+      "type": "terrestial planet",
+      "m": 0.0000024564539999999997,
+      "radius": 89.5904,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.043126687952506904,
+        "y": -0.1183272154448175,
+        "z": 0.0062012665902088605
+      },
+      "velocity": {
+        "x": 11.025776423390353,
+        "y": -4.0075546761668726,
+        "z": 0.2100270409332731
+      },
+      "nonStellarProceduralManifestation": true
+    },
+    {
+      "name": "TOI-700 d",
+      "type": "terrestial planet",
+      "m": 0.00000375375,
+      "radius": 100.8715,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.027128534286206145,
+        "y": -0.15406470361208405,
+        "z": 0.001421746237143909
+      },
+      "velocity": {
+        "x": 10.276292894286554,
+        "y": 1.8144743729923014,
+        "z": 0.5385576898516545
+      },
+      "nonStellarProceduralManifestation": true
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-700",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

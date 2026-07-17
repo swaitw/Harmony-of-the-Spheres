@@ -1,0 +1,131 @@
+{
+  "name": "HD 82886 - System",
+  "description": "HD 82886 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 82886",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 2.53,
+    "m": 2.53
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 82886",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 82886"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0025,
+    "tol": 0.0001,
+    "maxDt": 0.025,
+    "minDt": 0.000025,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 82886",
+    "barycenterMassTwo": "HD 82886 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 82886",
+      "type": "star",
+      "m": 2.53,
+      "radius": 54020.2,
+      "tilt": 0,
+      "temperature": 4953,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.0010435700425257056,
+        "y": -0.007415210449390619,
+        "z": -0.00038861471256896425
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 82886 b",
+      "type": "gas giant planet",
+      "m": 0.0022238533317,
+      "radius": 1250.3179,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 1.4550999002088634,
+        "y": -0.20422069309985258,
+        "z": -0.01070275300900677
+      },
+      "velocity": {
+        "x": 1.1872330652182617,
+        "y": 8.436025060437336,
+        "z": 0.4421133393936042
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 82886",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

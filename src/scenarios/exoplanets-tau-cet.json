@@ -1,0 +1,199 @@
+{
+  "name": "tau Cet - System",
+  "description": "tau Cet is a Sun-like G/F-type star with 3 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "tau Cet",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.783,
+    "m": 0.783
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "3-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "tau Cet",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "tau Cet"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "tau Cet",
+    "barycenterMassTwo": "tau Cet g",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "tau Cet",
+      "type": "star",
+      "m": 0.783,
+      "radius": 8524.1,
+      "tilt": 0,
+      "temperature": 5310,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.00014177688876179816,
+        "y": -0.00011300757793197238,
+        "z": -0.000007618463196376927
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "tau Cet g",
+      "type": "terrestial planet",
+      "m": 0.00000525525,
+      "radius": 110.9305,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.10198179884183588,
+        "y": 0.07221764775449153,
+        "z": 0.0037847665438578092
+      },
+      "velocity": {
+        "x": -9.367033037314991,
+        "y": 13.191378875116655,
+        "z": 0.691330872526086
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "tau Cet h",
+      "type": "terrestial planet",
+      "m": 0.00000549549,
+      "radius": 111.8705,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.11374697131085786,
+        "y": 0.14856031246854895,
+        "z": 0.0012697152649218154
+      },
+      "velocity": {
+        "x": -11.303070116173927,
+        "y": -8.660654354618163,
+        "z": 0.7399492634918826
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "tau Cet f",
+      "type": "super-Earth",
+      "m": 0.00001180179,
+      "radius": 170.156,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 1.1193946761575484,
+        "y": -0.004222708369180371,
+        "z": 0.05091602227360555
+      },
+      "velocity": {
+        "x": 0.028021618889534323,
+        "y": 5.656385945397956,
+        "z": -0.1469475107679925
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "tau Cet",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "name": "EPIC 249893012 - System",
+  "description": "EPIC 249893012 is a Sun-like G/F-type star with 3 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "EPIC 249893012",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.05,
+    "m": 1.05
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "3-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "EPIC 249893012",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "EPIC 249893012"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "EPIC 249893012",
+    "barycenterMassTwo": "EPIC 249893012 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "EPIC 249893012",
+      "type": "star",
+      "m": 1.05,
+      "radius": 17561.7,
+      "tilt": 0,
+      "temperature": 5430,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.0004653958378256047,
+        "y": -0.0004071665066094839,
+        "z": 0.00008714388120981515
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "EPIC 249893012 b",
+      "type": "super-Earth",
+      "m": 0.000026276249999999998,
+      "radius": 183.3173,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.031239977592821676,
+        "y": -0.031197164289262804,
+        "z": -0.0016349741003284601
+      },
+      "velocity": {
+        "x": 22.305824268291744,
+        "y": -22.27525491136148,
+        "z": -1.167396642868112
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "EPIC 249893012 c",
+      "type": "sub-Neptune",
+      "m": 0.000044054009999999996,
+      "radius": 345.0125,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.11120268168390442,
+        "y": -0.04728925057371557,
+        "z": -0.0038079346744100484
+      },
+      "velocity": {
+        "x": 7.467842007828266,
+        "y": 17.625431110154132,
+        "z": -0.800793825617952
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "EPIC 249893012 d",
+      "type": "sub-Neptune",
+      "m": 0.00003057054,
+      "radius": 370.3949,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.09066327241491653,
+        "y": 0.16355164890987692,
+        "z": -0.00017080362699188481
+      },
+      "velocity": {
+        "x": -13.949252178865747,
+        "y": 7.731760067816234,
+        "z": -0.8357094781914611
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "EPIC 249893012",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "name": "GJ 3090 - System",
+  "description": "GJ 3090 is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "GJ 3090",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.519,
+    "m": 0.519
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "GJ 3090",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "GJ 3090"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "GJ 3090",
+    "barycenterMassTwo": "GJ 3090 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "GJ 3090",
+      "type": "star",
+      "m": 0.519,
+      "radius": 5299.32,
+      "tilt": 0,
+      "temperature": 3707,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.000030279287607916757,
+        "y": 9.975777262859192e-20,
+        "z": -5.4148546642773895e-21
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "GJ 3090 b",
+      "type": "super-Earth",
+      "m": 0.000013573559999999999,
+      "radius": 204.9393,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 1.4512064569896138e-18,
+        "y": 0.023667519973683403,
+        "z": 0.001240362162957769
+      },
+      "velocity": {
+        "x": -32.882366094914765,
+        "y": 2.010704836590945e-15,
+        "z": 1.0537657527940168e-16
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "GJ 3090 c",
+      "type": "sub-Neptune",
+      "m": 0.00003003,
+      "radius": 295.1878,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -1.8297859872563416e-17,
+        "y": -0.09956336461503101,
+        "z": 0.0052178948374215
+      },
+      "velocity": {
+        "x": 14.339521107651763,
+        "y": -2.632923967232654e-15,
+        "z": 4.595319026341958e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "GJ 3090",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

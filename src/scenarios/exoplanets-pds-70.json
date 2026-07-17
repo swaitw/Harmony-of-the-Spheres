@@ -1,0 +1,165 @@
+{
+  "name": "PDS 70 - System",
+  "description": "PDS 70 is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "PDS 70",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.982,
+    "m": 0.982
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "PDS 70",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "PDS 70"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.01,
+    "tol": 0.0001,
+    "maxDt": 0.1,
+    "minDt": 0.0001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "PDS 70",
+    "barycenterMassTwo": "PDS 70 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "PDS 70",
+      "type": "star",
+      "m": 0.982,
+      "radius": 12940.2,
+      "tilt": 0,
+      "temperature": 4109,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.0047826182834868666,
+        "y": 0.009595899507005195,
+        "z": -0.0000038277113408769915
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "PDS 70 b",
+      "type": "gas giant planet",
+      "m": 0.0030542038599072,
+      "radius": 2065.3374,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -16.323432689146607,
+        "y": 5.6129057697784885,
+        "z": 0.2941599267190595
+      },
+      "velocity": {
+        "x": -0.5278596027212293,
+        "y": -1.530914655507988,
+        "z": -0.08023183736703571
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "PDS 70 c",
+      "type": "gas giant planet",
+      "m": 0.007158290296657499,
+      "radius": 2086.4122,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -19.878491848232997,
+        "y": -26.34349727576348,
+        "z": 1.38060419077161
+      },
+      "velocity": {
+        "x": 0.8813168688408969,
+        "y": -0.6632097427027908,
+        "z": 0.03475734981393041
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "PDS 70",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

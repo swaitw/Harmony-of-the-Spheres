@@ -1,0 +1,295 @@
+{
+  "name": "Pluto and Its Moons",
+  "description": "Pluto and massive Charon form a true double-dwarf system locked in mutual tidal synchrony, alongside four smaller moons: Styx, Nix, Kerberos, and Hydra.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": false,
+  "massBeingModified": {
+    "name": "Pluto",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1,
+    "m": 6.551e-9
+  },
+  "category": {
+    "name": "Solar System",
+    "subCategory": "Moons"
+  },
+  "camera": {
+    "cameraFocus": "Barycenter",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Barycenter"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.000005,
+    "tol": 0.0001,
+    "maxDt": 0.0005,
+    "minDt": 0.000005,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": true,
+    "barycenterMassOne": "Pluto",
+    "barycenterMassTwo": "Charon",
+    "systemBarycenter": false
+  },
+  "graphics": {
+    "background": true,
+    "orbits": false,
+    "habitableZone": false,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Sun",
+      "type": "star",
+      "m": 1,
+      "radius": 10270,
+      "tilt": 0,
+      "temperature": 5778,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": -19.22791884619062,
+        "y": 29.65238003300192,
+        "z": 2.38752537546694
+      },
+      "velocity": {
+        "x": -0.9913671081,
+        "y": -0.3685051316,
+        "z": 0.3269093222
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Pluto",
+      "type": "dwarf planet",
+      "m": 6.551e-9,
+      "radius": 17.55,
+      "tilt": 119.61,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.000007389457957207945,
+        "y": -4.430440108702667e-7,
+        "z": 0.00001217251245074825
+      },
+      "velocity": {
+        "x": 0.0026658335,
+        "y": 0.0039987218,
+        "z": 0.001764486
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Charon",
+      "type": "moon",
+      "m": 7.979e-10,
+      "radius": 8.95,
+      "tilt": 119.61,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.00006054448211641581,
+        "y": 0.000003623608226009867,
+        "z": -0.00009974415041542394
+      },
+      "velocity": {
+        "x": -0.0218427962,
+        "y": -0.0327634706,
+        "z": -0.0144567193
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Styx",
+      "type": "moon",
+      "m": 4.485e-15,
+      "radius": 0.075,
+      "tilt": 119.61,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.0002067022637851949,
+        "y": 0.0001381633047957577,
+        "z": -0.0001382088231375871
+      },
+      "velocity": {
+        "x": -0.004200485,
+        "y": -0.0199955776,
+        "z": -0.0247727662
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Nix",
+      "type": "moon",
+      "m": 2.264e-14,
+      "radius": 0.54,
+      "tilt": 119.61,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.0001012861417327635,
+        "y": 0.0002346048290044969,
+        "z": 0.0001998863905434299
+      },
+      "velocity": {
+        "x": 0.020131499,
+        "y": 0.0089852002,
+        "z": -0.0206748655
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kerberos",
+      "type": "moon",
+      "m": 8.293e-15,
+      "radius": 0.148,
+      "tilt": 119.61,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.000264722036711647,
+        "y": -0.0002791273025923036,
+        "z": 0.00001580166209685006
+      },
+      "velocity": {
+        "x": -0.0071397657,
+        "y": 0.0083673221,
+        "z": 0.0253589877
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Hydra",
+      "type": "moon",
+      "m": 2.411e-14,
+      "radius": 0.605,
+      "tilt": 119.61,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.00006652836593314456,
+        "y": 0.0001698379725635448,
+        "z": 0.0003936678425103673
+      },
+      "velocity": {
+        "x": 0.0186010969,
+        "y": 0.0174593325,
+        "z": -0.0044849315
+      },
+      "nonStellarProceduralManifestation": false
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Pluto",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

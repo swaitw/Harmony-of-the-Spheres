@@ -1,0 +1,165 @@
+{
+  "name": "HD 12661 - System",
+  "description": "HD 12661 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 12661",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.2,
+    "m": 1.2
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 12661",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 12661"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00143,
+    "tol": 0.0001,
+    "maxDt": 0.0143,
+    "minDt": 0.000014,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 12661",
+    "barycenterMassTwo": "HD 12661 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 12661",
+      "type": "star",
+      "m": 1.2,
+      "radius": 12324,
+      "tilt": 0,
+      "temperature": 5645,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.0271262691768761,
+        "y": -0.00585451642889004,
+        "z": -0.0008054877762590803
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 12661 b",
+      "type": "gas giant planet",
+      "m": 0.0023192976807,
+      "radius": 1250.3179,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.25550427830660305,
+        "y": -0.45319542736488555,
+        "z": -0.023750965929422455
+      },
+      "velocity": {
+        "x": 9.765699661808489,
+        "y": 5.490663565423309,
+        "z": 0.2877534842541409
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 12661 c",
+      "type": "gas giant planet",
+      "m": 0.0027010615386054296,
+      "radius": 1240.917,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -1.3636252500000006,
+        "y": -2.358631357180214,
+        "z": 0.12361063157716062
+      },
+      "velocity": {
+        "x": 3.6659506992641644,
+        "y": -2.1136369818030283,
+        "z": 0.11077102042680646
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 12661",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

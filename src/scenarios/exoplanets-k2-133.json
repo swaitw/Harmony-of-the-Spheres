@@ -1,0 +1,232 @@
+{
+  "name": "K2-133 - System",
+  "description": "K2-133 is a cool M-dwarf star with 4 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "K2-133",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.461,
+    "m": 0.461
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "4-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "K2-133",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "K2-133"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "K2-133",
+    "barycenterMassTwo": "K2-133 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "K2-133",
+      "type": "star",
+      "m": 0.461,
+      "radius": 4672.85,
+      "tilt": 0,
+      "temperature": 3655,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.00015093228171519495,
+        "y": 0.00010720736383341884,
+        "z": -0.00008081807885369057
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "K2-133 b",
+      "type": "terrestial planet",
+      "m": 0.00000708708,
+      "radius": 125.9719,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.03194,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": 23.844375963447504,
+        "z": 1.2496307926342098
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "K2-133 c",
+      "type": "super-Earth",
+      "m": 0.0000096096,
+      "radius": 150.6962,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 2.65809587754933e-18,
+        "y": 0.04341,
+        "z": 0
+      },
+      "velocity": {
+        "x": -20.453070902662198,
+        "y": 1.2523893906839563e-15,
+        "z": 1.071900025527113
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "K2-133 d",
+      "type": "super-Earth",
+      "m": 0.000014024009999999999,
+      "radius": 188.2998,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.07487,
+        "y": 9.168930585216234e-18,
+        "z": 0
+      },
+      "velocity": {
+        "x": -1.907261982054018e-15,
+        "y": -15.57397596908699,
+        "z": 0.8161974951472987
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "K2-133 e",
+      "type": "super-Earth",
+      "m": 0.00001093092,
+      "radius": 162.6353,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -2.472561887478506e-17,
+        "y": -0.1346,
+        "z": 0
+      },
+      "velocity": {
+        "x": 11.615312185572469,
+        "y": -2.1336982333737856e-15,
+        "z": 0.6087327173251009
+      },
+      "nonStellarProceduralManifestation": true
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "K2-133",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

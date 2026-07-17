@@ -1,0 +1,131 @@
+{
+  "name": "Kepler-45 - System",
+  "description": "Kepler-45 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-45",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.59,
+    "m": 0.59
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-45",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-45"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-45",
+    "barycenterMassTwo": "Kepler-45 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-45",
+      "type": "star",
+      "m": 0.59,
+      "radius": 5648.5,
+      "tilt": 0,
+      "temperature": 3820,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.019478460027962167,
+        "y": 0.01632196923620496,
+        "z": 0.0008553981611956183
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-45 b",
+      "type": "gas giant planet",
+      "m": 0.00048197249100000004,
+      "radius": 1011.5354,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.017162429178630607,
+        "y": -0.02042535597574728,
+        "z": -0.0010704475477545101
+      },
+      "velocity": {
+        "x": 23.844289105906,
+        "y": -19.980314290096953,
+        "z": -1.0471239013211953
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-45",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

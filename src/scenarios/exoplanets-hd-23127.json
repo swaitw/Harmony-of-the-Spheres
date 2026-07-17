@@ -1,0 +1,131 @@
+{
+  "name": "HD 23127 - System",
+  "description": "HD 23127 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 23127",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.208,
+    "m": 1.208
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 23127",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 23127"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00669,
+    "tol": 0.0001,
+    "maxDt": 0.0669,
+    "minDt": 0.000067,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 23127",
+    "barycenterMassTwo": "HD 23127 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 23127",
+      "type": "star",
+      "m": 1.208,
+      "radius": 15302.3,
+      "tilt": 0,
+      "temperature": 5843,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.0002658256681839503,
+        "y": 0.008313094057015545,
+        "z": 0.0004356707984992323
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 23127 b",
+      "type": "gas giant planet",
+      "m": 0.00145743520923,
+      "radius": 1269.1197,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -1.4070627838477625,
+        "y": -0.04487004538520503,
+        "z": -0.002351539434967867
+      },
+      "velocity": {
+        "x": 0.2203304854531862,
+        "y": -6.890335541008603,
+        "z": -0.3611071842192732
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 23127",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

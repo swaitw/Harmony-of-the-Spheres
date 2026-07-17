@@ -1,0 +1,165 @@
+{
+  "name": "HD 43197 - System",
+  "description": "HD 43197 is a Sun-like G/F-type star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 43197",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.96,
+    "m": 0.96
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 43197",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 43197"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00172,
+    "tol": 0.0001,
+    "maxDt": 0.0172,
+    "minDt": 0.000017,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 43197",
+    "barycenterMassTwo": "HD 43197 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 43197",
+      "type": "star",
+      "m": 0.96,
+      "radius": 10270,
+      "tilt": 0,
+      "temperature": 5508,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.01546096855739901,
+        "y": 0.018372872192453548,
+        "z": -0.0009376426940297834
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 43197 b",
+      "type": "gas giant planet",
+      "m": 0.00052780460453721,
+      "radius": 1334.9259,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.005857465073656942,
+        "y": -0.22716884544199364,
+        "z": -0.011905414711907304
+      },
+      "velocity": {
+        "x": 17.03217722894129,
+        "y": -0.43796551613076784,
+        "z": -0.022952800102964507
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 43197 c",
+      "type": "gas giant planet",
+      "m": 0.0075095237405588405,
+      "radius": 1184.5117,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -6.889521080957632,
+        "y": -2.310190146529674,
+        "z": 0.12107193530118382
+      },
+      "velocity": {
+        "x": 0.7793927352227079,
+        "y": -2.317962854914378,
+        "z": 0.1214792856866408
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 43197",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

@@ -1,0 +1,233 @@
+{
+  "name": "GJ 676 A - System",
+  "description": "GJ 676 A is a orange K-type dwarf star with 4 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "GJ 676 A",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.626,
+    "m": 0.626
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "4-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "GJ 676 A",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "GJ 676 A"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "GJ 676 A",
+    "barycenterMassTwo": "GJ 676 A d",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "GJ 676 A",
+      "type": "star",
+      "m": 0.626,
+      "radius": 7086.3,
+      "tilt": 0,
+      "temperature": 3734,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.04231788264509562,
+        "y": 0.046640792110950936,
+        "z": 0.00011513353065844934
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "GJ 676 A d",
+      "type": "super-Earth",
+      "m": 0.00001145326446264,
+      "radius": 167.3358,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.017938231992457088,
+        "y": -0.02587252314557012,
+        "z": -0.0013559214825084138
+      },
+      "velocity": {
+        "x": 25.144573193678184,
+        "y": 17.38577012561269,
+        "z": 0.9111496034088015
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "GJ 676 A e",
+      "type": "super-Earth",
+      "m": 0.00002004321283965,
+      "radius": 232.2019,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.1359305139035566,
+        "y": -0.07092751775040892,
+        "z": 0.007123816370487958
+      },
+      "velocity": {
+        "x": 6.286652871440314,
+        "y": -12.081277662867198,
+        "z": -0.3294695161155412
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "GJ 676 A b",
+      "type": "gas giant planet",
+      "m": 0.00552810898642002,
+      "radius": 1203.3135,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.06033339500406165,
+        "y": -1.1783764350826458,
+        "z": 0.06175609212214824
+      },
+      "velocity": {
+        "x": 5.247082205919354,
+        "y": -0.26791707677218174,
+        "z": 0.014040939025634072
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    },
+    {
+      "name": "GJ 676 A c",
+      "type": "gas giant planet",
+      "m": 0.01287728702432172,
+      "radius": 1156.309,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -6.809282197553623,
+        "y": 0.7228035703016051,
+        "z": -0.35685935848533207
+      },
+      "velocity": {
+        "x": -0.22748890521763349,
+        "y": -2.148980387952234,
+        "z": -0.011922188333986398
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "lightcyan"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "GJ 676 A",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

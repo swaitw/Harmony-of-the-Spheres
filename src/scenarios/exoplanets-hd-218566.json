@@ -1,0 +1,131 @@
+{
+  "name": "HD 218566 - System",
+  "description": "HD 218566 is a orange K-type dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 218566",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.76,
+    "m": 0.76
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 218566",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 218566"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00132,
+    "tol": 0.0001,
+    "maxDt": 0.0132,
+    "minDt": 0.000013,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 218566",
+    "barycenterMassTwo": "HD 218566 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 218566",
+      "type": "star",
+      "m": 0.76,
+      "radius": 8729.5,
+      "tilt": 0,
+      "temperature": 4730,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.0015683440889898302,
+        "y": -0.00162184211806324,
+        "z": -0.00008499714375539836
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 218566 b",
+      "type": "gas giant planet",
+      "m": 0.000190888698,
+      "radius": 876.1626,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.3474411235635685,
+        "y": 0.3350601744422371,
+        "z": 0.017559759668706047
+      },
+      "velocity": {
+        "x": -6.244170137470742,
+        "y": 6.45716599590439,
+        "z": 0.3384057303073163
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 218566",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

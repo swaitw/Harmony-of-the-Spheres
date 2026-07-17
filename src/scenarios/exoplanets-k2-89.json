@@ -1,0 +1,131 @@
+{
+  "name": "K2-89 - System",
+  "description": "K2-89 is a cool M-dwarf star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "K2-89",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.347,
+    "m": 0.347
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "K2-89",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "K2-89"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00002,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "K2-89",
+    "barycenterMassTwo": "K2-89 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "K2-89",
+      "type": "star",
+      "m": 0.347,
+      "radius": 3265.86,
+      "tilt": 0,
+      "temperature": 3691,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.000040886250026378136,
+        "y": -0.00003272287370028575,
+        "z": -0.0000017149331423914095
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "K2-89 b",
+      "type": "terrestial planet",
+      "m": 5.1051e-7,
+      "radius": 57.8155,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.007771583063568317,
+        "y": 0.00968376294924114,
+        "z": 0.0005075045112731219
+      },
+      "velocity": {
+        "x": -27.79089294852836,
+        "y": 22.242144471213404,
+        "z": 1.1656613982288675
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "K2-89",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

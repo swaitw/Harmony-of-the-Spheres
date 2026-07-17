@@ -1,0 +1,206 @@
+{
+  "name": "Earth's Trojan Asteroids",
+  "description": "Earth shares its orbit with a handful of Trojan asteroids clustered around its Lagrange points. Simulate their stable co-orbital motion as they travel around the Sun.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Sun",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1,
+    "m": 1
+  },
+  "category": {
+    "name": "Solar System",
+    "subCategory": "Asteroids"
+  },
+  "camera": {
+    "cameraFocus": "Sun",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Sun"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.002,
+    "tol": 0.01,
+    "maxDt": 0.1,
+    "minDt": 0.002,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Earth",
+    "barycenterMassTwo": "Sun",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": false,
+    "trails": false,
+    "labels": true
+  },
+  "lagrangePoints": {
+    "display": true,
+    "selectedMassName": "Earth"
+  },
+  "masses": [
+    {
+      "name": "Earth",
+      "type": "terrestial planet",
+      "m": 0.000003003,
+      "radius": 91.74311926605505,
+      "tilt": -23.44,
+      "atmosphere": "skyblue",
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.8487642687159235,
+        "y": 0.5087640327818184,
+        "z": 0.0001346109519895234
+      },
+      "velocity": {
+        "x": -3.2907083290702817,
+        "y": 5.386850782306081,
+        "z": -0.0004136098652036093
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Sun",
+      "type": "star",
+      "m": 1,
+      "radius": 10270,
+      "tilt": 0,
+      "temperature": 5778,
+      "customMassCameraPosition": {
+        "x": 0,
+        "y": 180,
+        "z": -430
+      },
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": -0.008321029034412819,
+        "y": 0.003921806338638216,
+        "z": 0.0001624383822263851
+      },
+      "velocity": {
+        "x": -0.0015302219105728125,
+        "y": -0.0029886563680599134,
+        "z": 0.000059718901629735255
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "2010 TK7",
+      "type": "asteroid",
+      "m": 1.005570862e-45,
+      "radius": 1.2,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.7405345165343279,
+        "y": 0.6118433962916936,
+        "z": -0.3100372294182062
+      },
+      "velocity": {
+        "x": -4.357289208197114,
+        "y": 4.152202648896197,
+        "z": 1.474433203894867
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "2020 XL5",
+      "type": "asteroid",
+      "m": 1.005570862e-45,
+      "radius": 1.2,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": false,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.0729857388119351,
+        "y": 1.28408571821067,
+        "z": -0.2914552163682101
+      },
+      "velocity": {
+        "x": -4.4406342990298455,
+        "y": -0.6869510907710669,
+        "z": 0.6376301228299784
+      },
+      "nonStellarProceduralManifestation": false
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Sun",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

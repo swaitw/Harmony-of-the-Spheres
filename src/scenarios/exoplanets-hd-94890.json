@@ -1,0 +1,165 @@
+{
+  "name": "HD 94890 - System",
+  "description": "HD 94890 is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 94890",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.74,
+    "m": 1.74
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 94890",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 94890"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00459,
+    "tol": 0.0001,
+    "maxDt": 0.0459,
+    "minDt": 0.000046,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 94890",
+    "barycenterMassTwo": "HD 94890 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 94890",
+      "type": "star",
+      "m": 1.74,
+      "radius": 109991.7,
+      "tilt": 0,
+      "temperature": 4867,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.019108776949525324,
+        "y": -0.020319428652343062,
+        "z": 0.00023506417032957794
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 94890 b",
+      "type": "gas giant planet",
+      "m": 0.00203295444425073,
+      "radius": 1250.3179,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 1.5202882365081158,
+        "y": 0.5429981753085334,
+        "z": 0.02845732852266374
+      },
+      "velocity": {
+        "x": -2.4268874115944095,
+        "y": 6.776196734476042,
+        "z": 0.35512542283888504
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 94890 c",
+      "type": "gas giant planet",
+      "m": 0.008504048872429108,
+      "radius": 1175.1108,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 2.495587850846725,
+        "y": 3.265522171376512,
+        "z": -0.17113876520137775
+      },
+      "velocity": {
+        "x": -3.3296516480377387,
+        "y": 2.5376273011049153,
+        "z": -0.13299141149892593
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 94890",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

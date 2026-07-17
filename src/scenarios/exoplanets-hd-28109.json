@@ -1,0 +1,199 @@
+{
+  "name": "HD 28109 - System",
+  "description": "HD 28109 is a Sun-like G/F-type star with 3 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 28109",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.227,
+    "m": 1.227
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "3-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 28109",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 28109"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 28109",
+    "barycenterMassTwo": "HD 28109 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 28109",
+      "type": "star",
+      "m": 1.227,
+      "radius": 14634.75,
+      "tilt": 0,
+      "temperature": 6189,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.0001547820938685079,
+        "y": 0.000431228679904886,
+        "z": -0.000013248372962644532
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 28109 b",
+      "type": "sub-Neptune",
+      "m": 0.000018618599999999998,
+      "radius": 252.8838,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.00705156513840609,
+        "y": -0.13436747959547207,
+        "z": -0.007041901213458044
+      },
+      "velocity": {
+        "x": 19.007231062572796,
+        "y": -0.9947616131903327,
+        "z": -0.052133247063320974
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 28109 c",
+      "type": "gas giant planet",
+      "m": 0.000027627599999999996,
+      "radius": 388.2566,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.2861922023066609,
+        "y": 0.11007915798996969,
+        "z": 0.01010475118558332
+      },
+      "velocity": {
+        "x": -4.50141619102509,
+        "y": -11.750143434313378,
+        "z": 0.512202844701419
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HD 28109 d",
+      "type": "sub-Neptune",
+      "m": 0.0000174174,
+      "radius": 292.3676,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.3993863443430234,
+        "y": 0.0847238654664078,
+        "z": -0.020346830443731038
+      },
+      "velocity": {
+        "x": -2.273994805527453,
+        "y": -10.677153818946193,
+        "z": 0.17657436739496535
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 28109",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

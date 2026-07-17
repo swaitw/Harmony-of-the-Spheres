@@ -1,0 +1,131 @@
+{
+  "name": "TOI-329 - System",
+  "description": "TOI-329 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "TOI-329",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.0678,
+    "m": 1.0678
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "TOI-329",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "TOI-329"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0002,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "TOI-329",
+    "barycenterMassTwo": "TOI-329 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "TOI-329",
+      "type": "star",
+      "m": 1.0678,
+      "radius": 15739.802,
+      "tilt": 0,
+      "temperature": 5614,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.0007657599703799126,
+        "y": 0.004336888886100328,
+        "z": 0.00022728671551782047
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "TOI-329 b",
+      "type": "gas giant planet",
+      "m": 0.00012132119999999999,
+      "radius": 464.4581,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.03832674813172911,
+        "y": 0.006748778119798029,
+        "z": 0.0003536884741325929
+      },
+      "velocity": {
+        "x": -6.739782464826187,
+        "y": -38.170822185882855,
+        "z": -2.0004480241699616
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "TOI-329",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

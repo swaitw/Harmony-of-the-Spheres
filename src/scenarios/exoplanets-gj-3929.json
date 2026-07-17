@@ -1,0 +1,164 @@
+{
+  "name": "GJ 3929 - System",
+  "description": "GJ 3929 is a cool M-dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "GJ 3929",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.313,
+    "m": 0.313
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "GJ 3929",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "GJ 3929"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "GJ 3929",
+    "barycenterMassTwo": "GJ 3929 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "GJ 3929",
+      "type": "star",
+      "m": 0.313,
+      "radius": 3286.4,
+      "tilt": 0,
+      "temperature": 3384,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.00030492904173876794,
+        "y": 1.0153288057867334e-19,
+        "z": -3.3607760263441224e-21
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "GJ 3929 b",
+      "type": "terrestial planet",
+      "m": 0.00000525525,
+      "radius": 102.4697,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 1.543054966925665e-18,
+        "y": 0.02516546427581526,
+        "z": 0.0013188660973221847
+      },
+      "velocity": {
+        "x": -22.149832490677653,
+        "y": 1.3544273301419266e-15,
+        "z": 7.098252857299688e-17
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "GJ 3929 c",
+      "type": "super-Earth",
+      "m": 0.00001714713,
+      "radius": 212.46,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -1.4865864089043497e-17,
+        "y": -0.08088899231512048,
+        "z": 0.004239212455678451
+      },
+      "velocity": {
+        "x": 12.35458629291713,
+        "y": -2.268463926491087e-15,
+        "z": 3.959216282622623e-17
+      },
+      "nonStellarProceduralManifestation": true
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "GJ 3929",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

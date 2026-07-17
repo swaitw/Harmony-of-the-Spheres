@@ -1,0 +1,131 @@
+{
+  "name": "HD 40979 - System",
+  "description": "HD 40979 is a Sun-like G/F-type star with 1 known planet. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HD 40979",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.45,
+    "m": 1.45
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "1-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HD 40979",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HD 40979"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00132,
+    "tol": 0.0001,
+    "maxDt": 0.0132,
+    "minDt": 0.000013,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HD 40979",
+    "barycenterMassTwo": "HD 40979 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HD 40979",
+      "type": "star",
+      "m": 1.45,
+      "radius": 12426.7,
+      "tilt": 0,
+      "temperature": 6165,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.019422567993962435,
+        "y": -0.02611666888366967,
+        "z": -0.0013687166184636304
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 40979 b",
+      "type": "gas giant planet",
+      "m": 0.0044572510983,
+      "radius": 1212.7144,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.5117961404343353,
+        "y": -0.37957245305371096,
+        "z": -0.019892549341561407
+      },
+      "velocity": {
+        "x": 6.3184063383790114,
+        "y": 8.496081788114735,
+        "z": 0.4452607791221831
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HD 40979",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

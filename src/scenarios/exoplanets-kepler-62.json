@@ -1,0 +1,267 @@
+{
+  "name": "Kepler-62 - System",
+  "description": "Kepler-62 is a orange K-type dwarf star with 5 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-62",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.69,
+    "m": 0.69
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "5-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-62",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-62"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0002,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-62",
+    "barycenterMassTwo": "Kepler-62 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-62",
+      "type": "star",
+      "m": 0.69,
+      "radius": 6572.8,
+      "tilt": 0,
+      "temperature": 4925,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.0008038968256791831,
+        "y": 0.0005031511905703154,
+        "z": -0.0002238030222637402
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-62 b",
+      "type": "terrestial planet",
+      "m": 0.000027026999999999997,
+      "radius": 123.1516,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.0553,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0,
+        "y": 22.169961239447627,
+        "z": 1.16187843535055
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-62 c",
+      "type": "terrestial planet",
+      "m": 0.000012012,
+      "radius": 50.7648,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.02870767877743262,
+        "y": 0.08835315036381976,
+        "z": 0
+      },
+      "velocity": {
+        "x": -16.267693004277643,
+        "y": 5.285693869360069,
+        "z": 0.8964279722656066
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-62 d",
+      "type": "super-Earth",
+      "m": 0.000042042,
+      "radius": 183.3173,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.09708203932499368,
+        "y": 0.07053423027509678,
+        "z": 0
+      },
+      "velocity": {
+        "x": -8.846175716380523,
+        "y": -12.175716321337282,
+        "z": 0.7887377620226251
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "Kepler-62 e",
+      "type": "super-Earth",
+      "m": 0.00010810799999999999,
+      "radius": 151.3543,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.3454502565981026,
+        "y": -0.250984302728886,
+        "z": 0
+      },
+      "velocity": {
+        "x": 4.689561625100985,
+        "y": -6.454627835724413,
+        "z": 0.41812806569059896
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-62 f",
+      "type": "terrestial planet",
+      "m": 0.00010510499999999999,
+      "radius": 132.5525,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.2218742019612121,
+        "y": -0.6828585786999203,
+        "z": 0
+      },
+      "velocity": {
+        "x": 5.851559196876193,
+        "y": 1.9012868367378806,
+        "z": 0.3224490002404498
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "skyblue"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-62",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

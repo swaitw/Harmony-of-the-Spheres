@@ -1,0 +1,165 @@
+{
+  "name": "24 Sex - System",
+  "description": "24 Sex is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "24 Sex",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.54,
+    "m": 1.54
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "24 Sex",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "24 Sex"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00249,
+    "tol": 0.0001,
+    "maxDt": 0.0249,
+    "minDt": 0.000025,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "24 Sex",
+    "barycenterMassTwo": "24 Sex b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "24 Sex",
+      "type": "star",
+      "m": 1.54,
+      "radius": 50323,
+      "tilt": 0,
+      "temperature": 5098,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.003980963377095065,
+        "y": -0.011938648285987433,
+        "z": -0.0003164530290227348
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "24 Sex b",
+      "type": "gas giant planet",
+      "m": 0.00189927738,
+      "radius": 1259.7188,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 1.1974259036214865,
+        "y": 0.19367488814817851,
+        "z": 0.010150070790737433
+      },
+      "velocity": {
+        "x": -1.1820442973664216,
+        "y": 7.28816002472067,
+        "z": 0.3819562819550451
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "24 Sex c",
+      "type": "gas giant planet",
+      "m": 0.00082077996,
+      "radius": 1306.7232,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 1.1229675299981259,
+        "y": 0.9577904578723068,
+        "z": -0.05019567091557484
+      },
+      "velocity": {
+        "x": -4.734099020376134,
+        "y": 5.535321407760051,
+        "z": -0.29009390259858164
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "24 Sex",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

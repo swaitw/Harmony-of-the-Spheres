@@ -62,6 +62,7 @@ const getParticleSystem = (
   g: number,
   withOrbit: boolean,
   flatLand: boolean,
+  size?: number,
 ): ParticlesType => {
   const position = new H3();
   const velocity = new H3();
@@ -134,6 +135,7 @@ const getParticleSystem = (
         z: primary.velocity.z + velocity.z,
       },
       lives: item.lives,
+      ...(size !== undefined ? { size } : {}),
     };
   });
 
@@ -170,6 +172,7 @@ const addParticleSystems = (
       g,
       true,
       shape.flatLand,
+      shape.size ?? primaryMass.radius / 15,
     );
 
     particles.forEach((particle) => target.push(particle));

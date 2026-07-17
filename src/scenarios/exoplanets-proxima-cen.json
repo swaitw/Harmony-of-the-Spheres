@@ -1,0 +1,163 @@
+{
+  "name": "Proxima Cen - System",
+  "description": "Proxima Cen is a cool M-dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Proxima Cen",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.1221,
+    "m": 0.1221
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Proxima Cen",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Proxima Cen"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.0001,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Proxima Cen",
+    "barycenterMassTwo": "Proxima Cen d",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Proxima Cen",
+      "type": "star",
+      "m": 0.1221,
+      "radius": 1448.07,
+      "tilt": 0,
+      "temperature": 2900,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.000009126255934321898,
+        "y": 0.00017559654987246966,
+        "z": -0.000017841729504429087
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Proxima Cen d",
+      "type": "terrestial planet",
+      "m": 7.8078e-7,
+      "radius": 65.0541,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.028739820287985534,
+        "y": 0.0020069298064802183,
+        "z": 0.00010517873433457188
+      },
+      "velocity": {
+        "x": -0.9025458406616924,
+        "y": 12.889318244377764,
+        "z": 0.675500545660226
+      },
+      "nonStellarProceduralManifestation": true
+    },
+    {
+      "name": "Proxima Cen b",
+      "type": "terrestial planet",
+      "m": 0.0000031681649999999997,
+      "radius": 95.889,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.0483996112694481,
+        "y": -0.0027868794641205414,
+        "z": 0.00014605416384406983
+      },
+      "velocity": {
+        "x": 0.5741511540757946,
+        "y": -9.94394567147665,
+        "z": 0.5211401099533012
+      },
+      "nonStellarProceduralManifestation": true
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Proxima Cen",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

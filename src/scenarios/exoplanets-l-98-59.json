@@ -1,0 +1,266 @@
+{
+  "name": "L 98-59 - System",
+  "description": "L 98-59 is a cool M-dwarf star with 5 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "L 98-59",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 0.2923,
+    "m": 0.2923
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "5-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "L 98-59",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "L 98-59"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00005,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "L 98-59",
+    "barycenterMassTwo": "L 98-59 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "L 98-59",
+      "type": "star",
+      "m": 0.2923,
+      "radius": 3240.185,
+      "tilt": 0,
+      "temperature": 3415,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": -0.0005138322052302329,
+        "y": -0.0009216650296179073,
+        "z": 0.00002493250642828611
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "L 98-59 b",
+      "type": "terrestial planet",
+      "m": 0.00000138138,
+      "radius": 78.6854,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.021136498059976583,
+        "y": -0.004486544262310842,
+        "z": -0.00023512982144278152
+      },
+      "velocity": {
+        "x": 4.879854559465337,
+        "y": -22.926447671627617,
+        "z": -1.2015242093188543
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "L 98-59 c",
+      "type": "terrestial planet",
+      "m": 0.000006006,
+      "radius": 124.9378,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.027437338053030984,
+        "y": -0.013987350731186458,
+        "z": -0.0015940763239178373
+      },
+      "velocity": {
+        "x": 8.789293714523076,
+        "y": 17.258994093760816,
+        "z": -0.1585750696910142
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "L 98-59 d",
+      "type": "super-Earth",
+      "m": 0.00000492492,
+      "radius": 152.9524,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.039725646884989654,
+        "y": -0.028862371914468693,
+        "z": 3.1472000445185973e-19
+      },
+      "velocity": {
+        "x": 9.027726029531264,
+        "y": 12.425598890013836,
+        "z": -0.8049250493069896
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "L 98-59 e",
+      "type": "terrestial planet",
+      "m": 0.00000846846,
+      "radius": 140.0732,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.06565860897329165,
+        "y": 0.025229794829913266,
+        "z": 0.0009528692947438223
+      },
+      "velocity": {
+        "x": -4.608609766806232,
+        "y": 12.018160407928237,
+        "z": -0.6515213988081321
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "orange"
+    },
+    {
+      "name": "L 98-59 f",
+      "type": "terrestial planet",
+      "m": 0.000008408399999999999,
+      "radius": 139.1331,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.03766549070596506,
+        "y": -0.09325096391469614,
+        "z": 0.000367162496581364
+      },
+      "velocity": {
+        "x": 10.136378031072027,
+        "y": 4.096488599649033,
+        "z": 0.5715672578170369
+      },
+      "nonStellarProceduralManifestation": true
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "L 98-59",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

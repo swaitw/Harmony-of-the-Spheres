@@ -1,0 +1,199 @@
+{
+  "name": "Kepler-51 - System",
+  "description": "Kepler-51 is a Sun-like G/F-type star with 3 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "Kepler-51",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 1.04,
+    "m": 1.04
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "3-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "Kepler-51",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "Kepler-51"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.001,
+    "tol": 0.0001,
+    "maxDt": 0.01,
+    "minDt": 0.00001,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "Kepler-51",
+    "barycenterMassTwo": "Kepler-51 b",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "Kepler-51",
+      "type": "star",
+      "m": 1.04,
+      "radius": 9653.8,
+      "tilt": 0,
+      "temperature": 6018,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.00003639008755115806,
+        "y": 0.00011402475035863953,
+        "z": -0.00001874661339411716
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "Kepler-51 b",
+      "type": "gas giant planet",
+      "m": 0.0000063063,
+      "radius": 667.4629,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.1442332434716602,
+        "y": 0.19323855093234849,
+        "z": 0.010127203326237236
+      },
+      "velocity": {
+        "x": -10.667594366363012,
+        "y": 7.940482697005278,
+        "z": 0.41614306458546035
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-51 c",
+      "type": "gas giant planet",
+      "m": 0.000012012,
+      "radius": 846.0798,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.08723148369924927,
+        "y": 0.3683943231278461,
+        "z": -0.005694235225537867
+      },
+      "velocity": {
+        "x": -10.195656342347391,
+        "y": -2.406085495259674,
+        "z": 0.5257936312992841
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "Kepler-51 d",
+      "type": "gas giant planet",
+      "m": 0.000022822799999999998,
+      "radius": 911.886,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -0.34164290124134744,
+        "y": -0.37175150606975654,
+        "z": -0.005764629238963987
+      },
+      "velocity": {
+        "x": 6.655519186237778,
+        "y": -6.123652988943088,
+        "z": 0.4625340371260124
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "Kepler-51",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}

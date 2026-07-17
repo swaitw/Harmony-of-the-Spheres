@@ -1,0 +1,165 @@
+{
+  "name": "HIP 8541 - System",
+  "description": "HIP 8541 is a orange K-type dwarf star with 2 known planets. Planet positions and surfaces are procedurally generated. Data from the NASA Exoplanet Archive.",
+  "playing": false,
+  "isLoaded": false,
+  "elapsedTime": 0,
+  "collisions": true,
+  "massBeingModified": {
+    "name": "HIP 8541",
+    "unitName": "Solar Units",
+    "unitMassQuantity": 2.009,
+    "m": 2.009
+  },
+  "category": {
+    "name": "Exoplanets",
+    "subCategory": "2-Planet System"
+  },
+  "camera": {
+    "cameraFocus": "HIP 8541",
+    "logarithmicDepthBuffer": false,
+    "rotatingReferenceFrame": "HIP 8541"
+  },
+  "integrator": {
+    "name": "PEFRL",
+    "g": 39.5,
+    "dt": 0.00126,
+    "tol": 0.0001,
+    "maxDt": 0.0126,
+    "minDt": 0.000013,
+    "useBarnesHut": false,
+    "theta": 0.5,
+    "softeningConstant": 0
+  },
+  "barycenter": {
+    "display": false,
+    "barycenterMassOne": "HIP 8541",
+    "barycenterMassTwo": "HD 11343 c",
+    "systemBarycenter": true
+  },
+  "graphics": {
+    "background": true,
+    "orbits": true,
+    "habitableZone": true,
+    "trails": true,
+    "labels": true
+  },
+  "masses": [
+    {
+      "name": "HIP 8541",
+      "type": "star",
+      "m": 2.009,
+      "radius": 70246.8,
+      "tilt": 0,
+      "temperature": 4672,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "eccAnom": 0
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "velocity": {
+        "x": 0.01717891189548748,
+        "y": 0.020324248543020798,
+        "z": -0.0011252019361560413
+      },
+      "nonStellarProceduralManifestation": false
+    },
+    {
+      "name": "HD 11343 c",
+      "type": "gas giant planet",
+      "m": 0.00076736871980769,
+      "radius": 1306.7232,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": 0.10475872086373304,
+        "y": 0.7587840292393773,
+        "z": 0.03976618592787397
+      },
+      "velocity": {
+        "x": -10.894453752392739,
+        "y": 1.4999827953201235,
+        "z": 0.0786107672654962
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    },
+    {
+      "name": "HIP 8541 b",
+      "type": "gas giant planet",
+      "m": 0.0073625401797948,
+      "radius": 1184.5117,
+      "tilt": 0,
+      "graphics": {
+        "orbit": true,
+        "trail": true,
+        "label": true
+      },
+      "elements": {
+        "a": 0,
+        "e": 0,
+        "i": 0,
+        "argP": 0,
+        "lAn": 0,
+        "trueAnom": 0,
+        "eccAnom": 0,
+        "meanAnom": 0
+      },
+      "position": {
+        "x": -2.02645196963383,
+        "y": 1.258891676482676,
+        "z": -0.06597571712236179
+      },
+      "velocity": {
+        "x": -3.552085330661725,
+        "y": -5.7021699271021475,
+        "z": 0.2988380629739646
+      },
+      "nonStellarProceduralManifestation": true,
+      "atmosphere": "beige"
+    }
+  ],
+  "particlesConfiguration": {
+    "max": 50000,
+    "softening": 0,
+    "size": 80,
+    "shapes": []
+  },
+  "ringToBeAdded": {
+    "primary": "HIP 8541",
+    "a": 0,
+    "aInterval": 0,
+    "i": 0,
+    "lAn": 0,
+    "number": 1000,
+    "size": 0,
+    "ringsAreBeingAdded": false
+  }
+}
